@@ -7,6 +7,11 @@ export const metadata: Metadata = {
   title: "MicroWear - Premium Smartwatches",
   description:
     "Premium smartwatches designed for the modern individual. Discover our collection of feature-rich wearables.",
+  icons: {
+    icon: "/images/logos/image.svg",
+    shortcut: "/images/logos/image.svg",
+    apple: "/images/logos/image.svg",
+  },
   openGraph: {
     title: "MicroWear - Premium Smartwatches",
     description:
