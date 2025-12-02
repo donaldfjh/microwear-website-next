@@ -166,7 +166,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({
             <polyline points="22 4 12 14.01 9 11.01" />
           </svg>
           <h3>Thank you for your message!</h3>
-          <p>We'll get back to you as soon as possible.</p>
+          <p>We&apos;ll get back to you as soon as possible.</p>
         </div>
       ) : (
         <form onSubmit={handleSubmit} noValidate>

@@ -79,7 +79,9 @@ export const Testimonials: React.FC = () => {
                   ))}
                 </div>
 
-                <p className="testimonial-feedback">"{testimonial.feedback}"</p>
+                <p className="testimonial-feedback">
+                  &ldquo;{testimonial.feedback}&rdquo;
+                </p>
 
                 <div className="testimonial-author">
                   <p className="author-company">{testimonial.company}</p>
