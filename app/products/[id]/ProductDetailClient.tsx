@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 import { ImageGallery } from "@/components/ImageGallery";
 import { useComparison } from "@/contexts/ComparisonContext";
 import type { Product, ProductVariant } from "@/types/product";
@@ -96,9 +96,9 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
     }
   };
 
-  const handleContactUs = () => {
+  const getContactLink = () => {
     const subject = encodeURIComponent(`Inquiry about ${product.name}`);
-    router.push(`/contact?subject=${subject}`);
+    return `/contact?subject=${subject}`;
   };
 
   return (
@@ -163,13 +163,13 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
           )}
 
           <div className="product-detail-actions">
-            <button
+            <Link
+              href={getContactLink()}
               className="btn btn-primary"
-              onClick={handleContactUs}
               aria-label={`Contact us about ${product.name}`}
             >
               Contact Us to Purchase
-            </button>
+            </Link>
             <button
               className="btn btn-secondary"
               onClick={handleAddToComparison}

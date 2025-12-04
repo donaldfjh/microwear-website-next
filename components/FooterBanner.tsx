@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import "./FooterBanner.css";
 
 export const FooterBanner: React.FC = () => {
@@ -59,12 +60,9 @@ export const FooterBanner: React.FC = () => {
               Experience the future of wearable technology. Contact us today for
               exclusive deals and personalized recommendations.
             </p>
-            <button
-              className="banner-cta"
-              onClick={() => (window.location.href = "/contact")}
-            >
+            <Link href="/contact" className="banner-cta">
               Contact Us Now
-            </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -7,7 +7,6 @@ import { ProductGrid } from "@/components/ProductGrid";
 import type { Product } from "@/types/product";
 import { searchProducts } from "@/utils/search";
 import { filterProducts } from "@/utils/filters";
-import { useRouter } from "next/navigation";
 import "./ProductCatalogPage.css";
 
 interface ProductFilters {
@@ -21,7 +20,6 @@ interface ProductCatalogProps {
 }
 
 export const ProductCatalog: React.FC<ProductCatalogProps> = ({ products }) => {
-  const router = useRouter();
   const [searchQuery, setSearchQuery] = useState("");
   const [filters, setFilters] = useState<ProductFilters>({});
 
@@ -45,11 +43,6 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({ products }) => {
   const handleFilterChange = useCallback((newFilters: ProductFilters) => {
     setFilters(newFilters);
   }, []);
-
-  const handleProductClick = (productId: string) => {
-    // Navigate to product detail page using Next.js router
-    router.push(`/products/${productId}`);
-  };
 
   const hasActiveFilters =
     searchQuery.trim() !== "" ||
@@ -80,10 +73,7 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({ products }) => {
                   {filteredProducts.length} product
                   {filteredProducts.length !== 1 ? "s" : ""} found
                 </div>
-                <ProductGrid
-                  products={filteredProducts}
-                  onProductClick={handleProductClick}
-                />
+                <ProductGrid products={filteredProducts} />
               </>
             ) : (
               <div className="empty-results">

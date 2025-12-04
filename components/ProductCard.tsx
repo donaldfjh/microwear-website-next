@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import type { Product } from "@/types/product";
 import { useComparison } from "@/contexts/ComparisonContext";
 import "./ProductCard.css";
@@ -33,12 +34,6 @@ export const ProductCard: React.FC<ProductCardProps> = ({
     }
   };
 
-  const handleCardClick = () => {
-    if (onProductClick) {
-      onProductClick(product.id);
-    }
-  };
-
   // Get key features (first 3 features)
   const keyFeatures = product.features.slice(0, 3);
 
@@ -48,37 +43,39 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   }`;
 
   return (
-    <div className="product-card" onClick={handleCardClick}>
-      <div className="product-card-image">
-        <Image
-          src={product.images[0]}
-          alt={altText}
-          title={product.name}
-          width={300}
-          height={300}
-          loading="lazy"
-        />
+    <Link href={`/products/${product.id}`} className="product-card-link">
+      <div className="product-card">
+        <div className="product-card-image">
+          <Image
+            src={product.images[0]}
+            alt={altText}
+            title={product.name}
+            width={300}
+            height={300}
+            loading="lazy"
+          />
+        </div>
+
+        <div className="product-card-content">
+          <h3 className="product-card-name">{product.name}</h3>
+
+          <ul className="product-card-features">
+            {keyFeatures.map((feature, index) => (
+              <li key={index}>{feature}</li>
+            ))}
+          </ul>
+
+          <button
+            className={`product-card-compare-btn ${
+              isInComparison ? "added" : ""
+            }`}
+            onClick={handleAddToCompare}
+            disabled={isInComparison || (!canAddMore() && !isInComparison)}
+          >
+            {isInComparison ? "Added to Compare" : "Add to Compare"}
+          </button>
+        </div>
       </div>
-
-      <div className="product-card-content">
-        <h3 className="product-card-name">{product.name}</h3>
-
-        <ul className="product-card-features">
-          {keyFeatures.map((feature, index) => (
-            <li key={index}>{feature}</li>
-          ))}
-        </ul>
-
-        <button
-          className={`product-card-compare-btn ${
-            isInComparison ? "added" : ""
-          }`}
-          onClick={handleAddToCompare}
-          disabled={isInComparison || (!canAddMore() && !isInComparison)}
-        >
-          {isInComparison ? "Added to Compare" : "Add to Compare"}
-        </button>
-      </div>
-    </div>
+    </Link>
   );
 };
