@@ -7,12 +7,10 @@ import "./HomeProductGrid.css";
 
 interface HomeProductGridProps {
   products: Product[];
-  onProductClick?: (productId: string) => void;
 }
 
 export const HomeProductGrid: React.FC<HomeProductGridProps> = ({
   products,
-  onProductClick,
 }) => {
   if (products.length === 0) {
     return (
@@ -25,11 +23,7 @@ export const HomeProductGrid: React.FC<HomeProductGridProps> = ({
   return (
     <div className="home-product-grid">
       {products.map((product) => (
-        <HomeProductCard
-          key={product.id}
-          product={product}
-          onProductClick={onProductClick}
-        />
+        <HomeProductCard key={product.id} product={product} />
       ))}
     </div>
   );

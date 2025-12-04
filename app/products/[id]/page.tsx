@@ -32,11 +32,30 @@ export async function generateMetadata({
     };
   }
 
+  // Extract key features from specifications for SEO-rich title
+  const hasGPS = product.specifications.connectivity?.includes("GPS");
+  const displayType = product.specifications.display?.includes("AMOLED")
+    ? "AMOLED"
+    : product.specifications.display?.includes("LCD")
+    ? "LCD"
+    : "";
+
+  // Build SEO-optimized title with key features
+  const features = [];
+
+  if (hasGPS) features.push("GPS");
+  if (displayType) features.push(displayType);
+
+  const featureString = features.length > 0 ? features.join(" & ") : "";
+  const seoTitle = featureString
+    ? `${product.name} | ${featureString} Smartwatch`
+    : `${product.name} | MicroWear Smartwatch`;
+
   return {
-    title: `${product.name} - MicroWear Smartwatches`,
+    title: seoTitle,
     description: product.description,
     openGraph: {
-      title: `${product.name} - MicroWear`,
+      title: seoTitle,
       description: product.description,
       images: product.images.length > 0 ? [product.images[0]] : [],
     },

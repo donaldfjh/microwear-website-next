@@ -7,13 +7,9 @@ import "./ProductGrid.css";
 
 interface ProductGridProps {
   products: Product[];
-  onProductClick?: (productId: string) => void;
 }
 
-export const ProductGrid: React.FC<ProductGridProps> = ({
-  products,
-  onProductClick,
-}) => {
+export const ProductGrid: React.FC<ProductGridProps> = ({ products }) => {
   if (products.length === 0) {
     return (
       <div className="product-grid-empty">
@@ -25,11 +21,7 @@ export const ProductGrid: React.FC<ProductGridProps> = ({
   return (
     <div className="product-grid">
       {products.map((product) => (
-        <ProductCard
-          key={product.id}
-          product={product}
-          onProductClick={onProductClick}
-        />
+        <ProductCard key={product.id} product={product} />
       ))}
     </div>
   );

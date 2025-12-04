@@ -34,7 +34,6 @@ interface ProductDetailClientProps {
 }
 
 export function ProductDetailClient({ product }: ProductDetailClientProps) {
-  const router = useRouter();
   const { addToComparison, canAddMore, comparisonProducts } = useComparison();
   const [selectedVariant, setSelectedVariant] = useState<ProductVariant | null>(
     null

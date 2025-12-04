@@ -9,13 +9,9 @@ import "./ProductCard.css";
 
 interface ProductCardProps {
   product: Product;
-  onProductClick?: (productId: string) => void;
 }
 
-export const ProductCard: React.FC<ProductCardProps> = ({
-  product,
-  onProductClick,
-}) => {
+export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const { addToComparison, canAddMore, comparisonProducts } = useComparison();
 
   const isInComparison = comparisonProducts.some((p) => p.id === product.id);

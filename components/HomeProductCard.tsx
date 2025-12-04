@@ -9,12 +9,10 @@ import "./HomeProductCard.css";
 
 interface HomeProductCardProps {
   product: Product;
-  onProductClick?: (productId: string) => void;
 }
 
 export const HomeProductCard: React.FC<HomeProductCardProps> = ({
   product,
-  onProductClick,
 }) => {
   const { addToComparison, canAddMore, comparisonProducts } = useComparison();
 
