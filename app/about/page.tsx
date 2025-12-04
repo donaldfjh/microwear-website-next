@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { Metadata } from "next";
 import "./AboutPage.css";
 
@@ -27,10 +28,13 @@ export default function AboutPage() {
         <section className="about-section brand-story">
           <div className="story-hero">
             <div className="story-image-container">
-              <img
+              <Image
                 src="/images/products/fac2.png"
                 alt="MicroWear Headquarters - Shenzhen"
                 className="factory-image"
+                width={800}
+                height={500}
+                priority
               />
               <div className="image-overlay">
                 <div className="overlay-content">

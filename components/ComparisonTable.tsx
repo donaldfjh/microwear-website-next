@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import type { Product } from "@/types/product";
 import "./ComparisonTable.css";
 
@@ -65,10 +66,12 @@ export const ComparisonTable: React.FC<ComparisonTableProps> = ({
               >
                 ×
               </button>
-              <img
+              <Image
                 src={product.images[0]}
                 alt={product.name}
                 className="product-image"
+                width={150}
+                height={150}
               />
               <h3 className="product-name">{product.name}</h3>
               <p className="product-price">${product.price.toFixed(2)}</p>

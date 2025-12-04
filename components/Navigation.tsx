@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import "./Navigation.css";
 
@@ -32,10 +33,13 @@ export const Navigation: React.FC = () => {
       <div className="nav-container">
         <div className="nav-logo">
           <Link href="/">
-            <img
+            <Image
               src="/images/logos/image.png"
               alt="MicroWear"
               className="logo-image"
+              width={120}
+              height={40}
+              priority
             />
           </Link>
         </div>
@@ -59,7 +63,7 @@ export const Navigation: React.FC = () => {
           className="hamburger"
           onClick={toggleMobileMenu}
           aria-label="Toggle menu"
-          aria-expanded={isMobileMenuOpen}
+          aria-expanded={isMobileMenuOpen ? "true" : "false"}
         >
           <span className={isMobileMenuOpen ? "open" : ""}></span>
           <span className={isMobileMenuOpen ? "open" : ""}></span>
