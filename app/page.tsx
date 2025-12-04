@@ -1,7 +1,7 @@
 import { HeroSection } from "@/components/HeroSection";
 import { HomeProductGrid } from "@/components/HomeProductGrid";
 import { WhyChooseUs } from "@/components/WhyChooseUs";
-import { Testimonials } from "@/components/Testimonials";
+import { QA } from "@/components/QA";
 import { FooterBanner } from "@/components/FooterBanner";
 import { getProducts } from "@/lib/products";
 import Link from "next/link";
@@ -50,7 +50,7 @@ export default async function HomePage() {
 
       <WhyChooseUs />
 
-      <Testimonials />
+      <QA />
 
       <FooterBanner />
     </div>
