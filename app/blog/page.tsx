@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { getBlogPosts, getBlogCategories } from "@/lib/blogs";
+import { getAllPosts, getAllCategories } from "@/lib/markdown-blogs";
 import { BlogList } from "@/components/BlogList";
 import type { Metadata } from "next";
 import "./BlogPage.css";
@@ -12,8 +12,8 @@ export const metadata: Metadata = {
 };
 
 export default async function BlogPage() {
-  const posts = await getBlogPosts();
-  const categories = await getBlogCategories();
+  const posts = await getAllPosts();
+  const categories = await getAllCategories();
 
   return (
     <div className="blog-page">

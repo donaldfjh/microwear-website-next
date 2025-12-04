@@ -2,7 +2,11 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { getBlogPosts, getBlogPostBySlug } from "@/lib/blogs";
+import {
+  getAllPostSlugs,
+  getPostBySlug,
+  getAllPosts,
+} from "@/lib/markdown-blogs";
 import type { Metadata } from "next";
 import "./BlogDetailPage.css";
 
@@ -14,9 +18,9 @@ interface BlogDetailPageProps {
 
 // Generate static params for all blog posts at build time
 export async function generateStaticParams() {
-  const posts = await getBlogPosts();
-  return posts.map((post) => ({
-    slug: post.slug,
+  const slugs = getAllPostSlugs();
+  return slugs.map((slug) => ({
+    slug,
   }));
 }
 
@@ -24,7 +28,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: BlogDetailPageProps): Promise<Metadata> {
-  const post = await getBlogPostBySlug(params.slug);
+  const post = await getPostBySlug(params.slug);
 
   if (!post) {
     return {
@@ -45,14 +49,14 @@ export async function generateMetadata({
 }
 
 export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
-  const post = await getBlogPostBySlug(params.slug);
+  const post = await getPostBySlug(params.slug);
 
   if (!post) {
     notFound();
   }
 
   // Get related posts (same category, excluding current post)
-  const allPosts = await getBlogPosts();
+  const allPosts = await getAllPosts();
   const relatedPosts = allPosts
     .filter((p) => p.category === post.category && p.id !== post.id)
     .slice(0, 3);
@@ -85,11 +89,10 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
 
         <div className="article-content">
           <div className="article-excerpt">{post.excerpt}</div>
-          <div className="article-body">
-            {post.content.split("\n\n").map((paragraph, index) => (
-              <p key={index}>{paragraph}</p>
-            ))}
-          </div>
+          <div
+            className="article-body markdown-content"
+            dangerouslySetInnerHTML={{ __html: post.content }}
+          />
 
           <div className="article-tags">
             <strong>Tags:</strong>
