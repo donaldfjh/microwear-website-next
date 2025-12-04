@@ -13,6 +13,7 @@ export const Navigation: React.FC = () => {
   const navLinks = [
     { path: "/", label: "Home" },
     { path: "/products", label: "Products" },
+    { path: "/blog", label: "Blog" },
     { path: "/about", label: "About" },
     { path: "/contact", label: "Contact" },
   ];
