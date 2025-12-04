@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import { getAllPosts, getAllCategories } from "@/lib/markdown-blogs";
 import { BlogList } from "@/components/BlogList";
 import type { Metadata } from "next";
@@ -22,9 +21,6 @@ export default async function BlogPage() {
         <p>
           Insights, tips, and news about smartwatches and wearable technology
         </p>
-        <Link href="/blog/admin" className="admin-link">
-          ✏️ Add New Post
-        </Link>
       </div>
 
       <BlogList posts={posts} categories={categories} />
