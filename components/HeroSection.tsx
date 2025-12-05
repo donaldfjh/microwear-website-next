@@ -18,16 +18,22 @@ const heroProducts = [
     id: "W11pro",
     image: "/images/products/w11poverall.png",
     name: "Watch 11 Pro",
+    altText:
+      "Microwear W11 Pro Smart Watch - High Resolution AMOLED Display with Health Monitoring",
   },
   {
     id: "mw-fit-lite",
     image: "/images/products/S11OverAll.png",
     name: "Watch S11",
+    altText:
+      "Microwear S11 Fitness Smartwatch - Sports and Health Tracking Wearable",
   },
   {
     id: "mw-sport-ultra",
     image: "/images/products/Ultra5Overall.jpg",
     name: "Watch Ultra 5",
+    altText:
+      "Microwear Ultra 5 Premium Smartwatch - Professional OEM Wearable Technology",
   },
 ];
 
@@ -81,7 +87,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       <div className="hero-background">
         <Image
           src={currentProduct.image}
-          alt={`${currentProduct.name} - Premium Smartwatch`}
+          alt={currentProduct.altText}
           fill
           priority
           style={{ objectFit: "cover" }}

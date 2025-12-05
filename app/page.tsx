@@ -9,13 +9,18 @@ import type { Metadata } from "next";
 import "./HomePage.css";
 
 export const metadata: Metadata = {
-  title: "MicroWear - Premium Smartwatches",
+  title:
+    "Smart Watch Manufacturer & Wearable Tech Expert | OEM/ODM Services | Microwear",
   description:
-    "Premium smartwatches designed for the modern individual. Track your health, stay connected, and express your style with MicroWear's advanced wearable technology.",
+    "Explore Microwear's latest smartwatches. Leading smart watch manufacturer offering premium OEM/ODM services for global businesses. High-quality wearable technology & health monitoring solutions.",
+  alternates: {
+    canonical: "https://microwear.info/",
+  },
   openGraph: {
-    title: "MicroWear - Premium Smartwatches",
+    title: "Microwear - Professional Smart Watch Manufacturer",
     description:
-      "Premium smartwatches designed for the modern individual. Track your health, stay connected, and express your style.",
+      "Discover premium smartwatches and OEM solutions at Microwear.",
+    url: "https://microwear.info/",
     type: "website",
   },
 };
@@ -30,8 +35,8 @@ export default async function HomePage() {
   return (
     <div className="home-page">
       <HeroSection
-        title="Elevate Your Lifestyle with MicroWear"
-        subtitle="Premium smartwatches designed for the modern individual. Track your health, stay connected, and express your style."
+        title="Leading Smart Watch Manufacturer & OEM/ODM Partner"
+        subtitle="Premium wearable technology solutions for global businesses. High-quality smartwatches with advanced health monitoring, GPS tracking, and customizable OEM services."
         ctaText="Explore Products"
         ctaLink="/products"
       />

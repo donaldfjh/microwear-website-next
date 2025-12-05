@@ -61,10 +61,13 @@ export const Navigation: React.FC = () => {
 
         {/* Mobile Hamburger Button */}
         <button
+          type="button"
           className="hamburger"
           onClick={toggleMobileMenu}
           aria-label="Toggle menu"
-          aria-expanded={isMobileMenuOpen ? "true" : "false"}
+          {...(isMobileMenuOpen
+            ? { "aria-expanded": true }
+            : { "aria-expanded": false })}
         >
           <span className={isMobileMenuOpen ? "open" : ""}></span>
           <span className={isMobileMenuOpen ? "open" : ""}></span>
