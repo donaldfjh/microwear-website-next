@@ -79,7 +79,11 @@ export class ErrorBoundary extends Component<
               </details>
             )}
             <div className="error-actions">
-              <button className="btn btn-primary" onClick={this.handleReset}>
+              <button
+                type="button"
+                className="btn btn-primary"
+                onClick={this.handleReset}
+              >
                 Try Again
               </button>
               <Link href="/" className="btn btn-secondary">

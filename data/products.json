@@ -5,11 +5,11 @@
     "description": "Premium smartwatch with advanced health tracking and stunning AMOLED display. Perfect for fitness enthusiasts and professionals alike.",
     "price": 18,
     "images": [
-      "/images/products/w11poverall.png",
-      "/images/products/w11pblack.jpg",
-      "/images/products/w11ppink.jpg",
-      "/images/products/w11psilver.jpg",
-      "/images/products/w11pScreen.png"
+      "/images/products/w11poverall.webp",
+      "/images/products/w11pblack.webp",
+      "/images/products/w11ppink.webp",
+      "/images/products/w11psilver.webp",
+      "/images/products/w11pScreen.webp"
     ],
     "specifications": {
       "display": "2.07, AMOLED, 410x480 pixels, Always-On Display",
@@ -42,7 +42,7 @@
         "price": 18,
         "color": "Black",
         "bandMaterial": "Silicone",
-        "image": "/images/products/w11pblack.jpg"
+        "image": "/images/products/w11pblack.webp"
       },
       {
         "id": "mw-pro-x1-silver",
@@ -50,7 +50,7 @@
         "price": 18,
         "color": "Silver",
         "bandMaterial": "Silicone",
-        "image": "/images/products/w11psilver.jpg"
+        "image": "/images/products/w11psilver.webp"
       },
       {
         "id": "mw-pro-x1-leather",
@@ -58,17 +58,26 @@
         "price": 18,
         "color": "Rose Gold",
         "bandMaterial": "Silicone",
-        "image": "/images/products/w11ppink.jpg"
+        "image": "/images/products/w11ppink.webp"
+      },
+      {
+        "id": "mw-pro-x1-leather",
+        "name": "Orange Leather",
+        "price": 18,
+        "color": "Orange",
+        "bandMaterial": "Silicone",
+        "image": "/images/products/w11pOrange.webp"
       }
     ],
     "features": [
-      "GPS",
+      "IP68 Waterproof",
       "Heart Rate Monitor",
       "SpO2",
       "Sleep Tracking",
-      "Waterproof"
+      "WhatsApp Reply",
+      "Wechat Reply"
     ],
-    "category": "Premium"
+    "category": "Business"
   },
   {
     "id": "mw-fit-lite",
@@ -77,9 +86,9 @@
     "price": 10,
     "images": [
       "/images/products/S11OverAll.png",
-      "/images/products/w11pblack.jpg",
-      "/images/products/w11psilver.jpg",
-      "/images/products/w11ppink.jpg",
+      "/images/products/w11pblack.webp",
+      "/images/products/w11psilver.webp",
+      "/images/products/w11ppink.webp",
       "/images/products/S11Function1.png"
     ],
     "specifications": {
@@ -100,7 +109,7 @@
         "price": 10,
         "color": "Black",
         "bandMaterial": "Silicone",
-        "image": "/images/products/w11pblack.jpg"
+        "image": "/images/products/w11pblack.webp"
       },
       {
         "id": "mw-fit-lite-silver",
@@ -108,7 +117,7 @@
         "price": 10,
         "color": "Silver",
         "bandMaterial": "Silicone",
-        "image": "/images/products/w11psilver.jpg"
+        "image": "/images/products/w11psilver.webp"
       },
       {
         "id": "mw-fit-lite-roseGold",
@@ -116,7 +125,7 @@
         "price": 10,
         "color": "Rose Gold",
         "bandMaterial": "Silicone",
-        "image": "/images/products/w11ppink.jpg"
+        "image": "/images/products/w11ppink.webp"
       }
     ],
     "highlights": [
@@ -133,7 +142,7 @@
       "ECG",
       "WhatsApp"
     ],
-    "category": "Premium"
+    "category": "Business"
   },
   {
     "id": "mw-sport-ultra",
@@ -182,15 +191,16 @@
       }
     ],
     "features": [
-      "GPS",
       "WhatsApp reply",
       "AI voice assistant",
       "Heart Rate Monitor",
       "Altimeter",
       "Compass",
-      "Waterproof"
+      "Waterproof",
+      "Blood Pressure",
+      "Bluetooth calling"
     ],
-    "category": "Premium"
+    "category": "Business"
   },
   {
     "id": "mw-classic-steel",
@@ -464,6 +474,6 @@
       "Sleep Tracking",
       "Stress Monitor"
     ],
-    "category": "Woman"
+    "category": "Classic"
   }
 ]
