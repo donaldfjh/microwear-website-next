@@ -64,6 +64,7 @@ export const HomeProductCard: React.FC<HomeProductCardProps> = ({
           </ul>
 
           <button
+            type="button"
             className={`home-product-card-compare-btn ${
               isInComparison ? "added" : ""
             }`}

@@ -4,10 +4,9 @@ import { Navigation } from "@/components/Navigation";
 import { ComparisonProvider } from "@/contexts/ComparisonContext";
 
 export const metadata: Metadata = {
-  title:
-    "Smart Watch Manufacturer & Wearable Tech Expert | OEM/ODM Services | Microwear",
+  title: "Microwear | Professional Smart Watch Manufacturer & OEM/ODM Expert",
   description:
-    "Explore Microwear's latest smartwatches. Leading smart watch manufacturer offering premium OEM/ODM services for global businesses. High-quality wearable technology & health monitoring solutions.",
+    "Leading smart watch manufacturer Microwear offers premium OEM/ODM wearable solutions. High-quality sports watches, health trackers, and custom branding services for global B2B clients.",
   icons: {
     icon: "/images/logos/image.svg",
     shortcut: "/images/logos/image.svg",
@@ -40,10 +39,10 @@ export default function RootLayout({
     url: "https://microwear.info/",
     logo: "https://microwear.info/images/logos/image.png",
     description:
-      "Leading smart watch manufacturer offering premium OEM/ODM services for global businesses",
+      "Professional Smart Watch Manufacturer and OEM Service Provider",
     sameAs: [
       "https://www.facebook.com/MicrowearOfficial",
-      "https://www.instagram.com/microwear_official/",
+      "https://www.youtube.com/@Microwear",
     ],
     contactPoint: {
       "@type": "ContactPoint",
@@ -55,6 +54,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

@@ -9,10 +9,9 @@ import type { Metadata } from "next";
 import "./HomePage.css";
 
 export const metadata: Metadata = {
-  title:
-    "Smart Watch Manufacturer & Wearable Tech Expert | OEM/ODM Services | Microwear",
+  title: "Microwear | Professional Smart Watch Manufacturer & OEM/ODM Expert",
   description:
-    "Explore Microwear's latest smartwatches. Leading smart watch manufacturer offering premium OEM/ODM services for global businesses. High-quality wearable technology & health monitoring solutions.",
+    "Leading smart watch manufacturer Microwear offers premium OEM/ODM wearable solutions. High-quality sports watches, health trackers, and custom branding services for global B2B clients.",
   alternates: {
     canonical: "https://microwear.info/",
   },
