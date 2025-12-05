@@ -51,13 +51,20 @@ export async function generateMetadata({
     ? `${product.name} | ${featureString} Smartwatch`
     : `${product.name} | MicroWear Smartwatch`;
 
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://microwear.info";
+  const canonicalUrl = `${baseUrl}/products/${params.id}`;
+
   return {
     title: seoTitle,
     description: product.description,
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
       title: seoTitle,
       description: product.description,
       images: product.images.length > 0 ? [product.images[0]] : [],
+      url: canonicalUrl,
     },
   };
 }

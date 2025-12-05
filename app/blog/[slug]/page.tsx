@@ -37,13 +37,20 @@ export async function generateMetadata({
     };
   }
 
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://microwear.info";
+  const canonicalUrl = `${baseUrl}/blog/${params.slug}`;
+
   return {
     title: `${post.title} - MicroWear Blog`,
     description: post.excerpt,
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
       title: post.title,
       description: post.excerpt,
       images: post.image ? [post.image] : [],
+      url: canonicalUrl,
     },
   };
 }
