@@ -1,4 +1,5 @@
 import { HeroSection } from "@/components/HeroSection";
+import { SEOTextBlock } from "@/components/SEOTextBlock";
 import { HomeProductGrid } from "@/components/HomeProductGrid";
 import { WhyChooseUs } from "@/components/WhyChooseUs";
 import { QA } from "@/components/QA";
@@ -39,6 +40,8 @@ export default async function HomePage() {
         ctaText="Explore Products"
         ctaLink="/products"
       />
+
+      <SEOTextBlock />
 
       <section className="featured-products-section">
         <div className="featured-products-container">
