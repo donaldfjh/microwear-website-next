@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import "./HeroSection.css";
 
 interface HeroSectionProps {
@@ -70,6 +71,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
     }
   };
 
+  // If there's a custom click handler, use regular anchor to allow preventDefault
+  const CtaComponent = onCtaClick ? "a" : Link;
+
   const currentProduct = heroProducts[currentImageIndex];
 
   return (
@@ -88,9 +92,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         <div className="hero-content">
           <h1 className="hero-title">{title}</h1>
           <p className="hero-subtitle">{subtitle}</p>
-          <a href={ctaLink} className="hero-cta" onClick={handleCtaClick}>
+          <CtaComponent
+            href={ctaLink}
+            className="hero-cta"
+            onClick={onCtaClick ? handleCtaClick : undefined}
+          >
             {ctaText}
-          </a>
+          </CtaComponent>
         </div>
       </div>
     </section>
