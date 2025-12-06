@@ -64,7 +64,7 @@ export default function RootLayout({
         <link
           rel="preload"
           as="image"
-          href="/images/products/w11poverall.png"
+          href="/images/products/w11poverall.webp"
         />
         <script
           type="application/ld+json"

@@ -16,7 +16,7 @@ interface HeroSectionProps {
 const heroProducts = [
   {
     id: "W11pro",
-    image: "/images/products/w11poverall.png",
+    image: "/images/products/w11poverall.webp",
     name: "Watch 11 Pro",
     altText:
       "Microwear W11 Pro Smart Watch - High Resolution AMOLED Display with Health Monitoring",

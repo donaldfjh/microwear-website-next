@@ -47,7 +47,7 @@ export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
       date: data.date || new Date().toISOString().split("T")[0],
       category: data.category || "Uncategorized",
       tags: data.tags || [],
-      image: data.image || "/images/products/w11poverall.png",
+      image: data.image || "/images/products/w11poverall.webp",
       readTime: data.readTime || "5 min read",
     };
   } catch (error) {
