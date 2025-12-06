@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import "./CertificationBar.css";
 
 export const CertificationBar: React.FC = () => {
@@ -7,10 +8,30 @@ export const CertificationBar: React.FC = () => {
   // Then update the certifications array below with image paths
 
   const certifications = [
-    { name: "ISO 9001", placeholder: true },
-    { name: "CE Certified", placeholder: true },
-    { name: "RoHS Compliant", placeholder: true },
-    { name: "FCC Approved", placeholder: true },
+    { 
+      name: "ISO 9001", 
+      placeholder: true,
+      image: "/images/certifications/iso9001.png",
+      alt: "ISO 9001 Quality Management System Certification"
+    },
+    { 
+      name: "CE Certified", 
+      placeholder: true,
+      image: "/images/certifications/ce-certified.png",
+      alt: "CE Certified European Conformity"
+    },
+    { 
+      name: "RoHS Compliant", 
+      placeholder: true,
+      image: "/images/certifications/rohs-compliant.png",
+      alt: "RoHS Compliant - Restriction of Hazardous Substances"
+    },
+    { 
+      name: "FCC Approved", 
+      placeholder: true,
+      image: "/images/certifications/fcc-approved.png",
+      alt: "FCC Approved - Federal Communications Commission"
+    },
   ];
 
   return (
@@ -19,8 +40,21 @@ export const CertificationBar: React.FC = () => {
         <p className="certification-label">Certified Manufacturing Standards</p>
         <div className="certification-logos">
           {certifications.map((cert, index) => (
-            <div key={index} className="certification-badge">
-              {cert.name}
+            <div key={index} className="certification-item">
+              {cert.placeholder ? (
+                <div className="certification-badge">
+                  {cert.name}
+                </div>
+              ) : (
+                <Image
+                  src={cert.image}
+                  alt={cert.alt}
+                  width={120}
+                  height={60}
+                  className="certification-logo"
+                  loading="lazy"
+                />
+              )}
             </div>
           ))}
         </div>

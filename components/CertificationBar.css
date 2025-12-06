@@ -27,6 +27,12 @@
   flex-wrap: wrap;
 }
 
+.certification-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .certification-badge {
   font-weight: 700;
   font-size: 1.25rem;
@@ -39,6 +45,20 @@
   filter: grayscale(100%);
   min-width: 140px;
   text-align: center;
+}
+
+.certification-logo {
+  max-width: 120px;
+  height: auto;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+  filter: grayscale(100%);
+}
+
+.certification-logo:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+  transform: translateY(-2px);
 }
 
 .certification-badge:hover {
@@ -69,6 +89,10 @@
     padding: 0.875rem 1.25rem;
     min-width: 120px;
   }
+
+  .certification-logo {
+    max-width: 100px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -89,5 +113,9 @@
     font-size: 0.875rem;
     padding: 0.75rem 1rem;
     min-width: 100px;
+  }
+
+  .certification-logo {
+    max-width: 80px;
   }
 }

@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { ImageGallery } from "@/components/ImageGallery";
 import { useComparison } from "@/contexts/ComparisonContext";
+import { Breadcrumb } from "@/components/Breadcrumb";
 import type { Product, ProductVariant } from "@/types/product";
 
 // Helper function to map color names to hex values
@@ -102,6 +103,7 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
 
   return (
     <>
+      <Breadcrumb product={product} />
       <div className="product-detail-container">
         <div className="product-detail-gallery">
           <ImageGallery
