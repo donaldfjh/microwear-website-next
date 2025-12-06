@@ -1,0 +1,93 @@
+.certification-bar {
+  border-top: 1px solid #e5e7eb;
+  padding: 3rem 2rem;
+  background: #ffffff;
+}
+
+.certification-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.certification-label {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+}
+
+.certification-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.certification-badge {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #9ca3af;
+  border: 2px solid #d1d5db;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+  filter: grayscale(100%);
+  min-width: 140px;
+  text-align: center;
+}
+
+.certification-badge:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+  border-color: #667eea;
+  color: #667eea;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .certification-bar {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .certification-label {
+    font-size: 0.8125rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .certification-logos {
+    gap: 1.5rem;
+  }
+
+  .certification-badge {
+    font-size: 1rem;
+    padding: 0.875rem 1.25rem;
+    min-width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .certification-bar {
+    padding: 2rem 1rem;
+  }
+
+  .certification-label {
+    font-size: 0.75rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .certification-logos {
+    gap: 1rem;
+  }
+
+  .certification-badge {
+    font-size: 0.875rem;
+    padding: 0.75rem 1rem;
+    min-width: 100px;
+  }
+}

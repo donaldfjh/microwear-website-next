@@ -3,6 +3,7 @@ import { SEOTextBlock } from "@/components/SEOTextBlock";
 import { HomeProductGrid } from "@/components/HomeProductGrid";
 import { WhyChooseUs } from "@/components/WhyChooseUs";
 import { QA } from "@/components/QA";
+import { CertificationBar } from "@/components/CertificationBar";
 import { FooterBanner } from "@/components/FooterBanner";
 import { getProducts } from "@/lib/products";
 import Link from "next/link";
@@ -58,6 +59,8 @@ export default async function HomePage() {
       <WhyChooseUs />
 
       <QA />
+
+      <CertificationBar />
 
       <FooterBanner />
     </div>
