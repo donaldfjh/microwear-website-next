@@ -10,26 +10,26 @@ export const CertificationBar: React.FC = () => {
   const certifications = [
     { 
       name: "ISO 9001", 
-      placeholder: true,
-      image: "/images/certifications/iso9001.png",
+      placeholder: false,
+      image: "/images/certifications/iso9001.svg",
       alt: "ISO 9001 Quality Management System Certification"
     },
     { 
       name: "CE Certified", 
-      placeholder: true,
-      image: "/images/certifications/ce-certified.png",
+      placeholder: false,
+      image: "/images/certifications/ce-certified.svg",
       alt: "CE Certified European Conformity"
     },
     { 
       name: "RoHS Compliant", 
-      placeholder: true,
-      image: "/images/certifications/rohs-compliant.png",
+      placeholder: false,
+      image: "/images/certifications/rohs-compliant.svg",
       alt: "RoHS Compliant - Restriction of Hazardous Substances"
     },
     { 
       name: "FCC Approved", 
-      placeholder: true,
-      image: "/images/certifications/fcc-approved.png",
+      placeholder: false,
+      image: "/images/certifications/fcc-approved.svg",
       alt: "FCC Approved - Federal Communications Commission"
     },
   ];
