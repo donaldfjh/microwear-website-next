@@ -5,7 +5,7 @@ author: "MicroWear Market Analysis Team"
 category: "Market Insights"
 tags: ["W11 Pro", "Market Analysis", "Brazil", "Middle East", "Success Story"]
 excerpt: "An in-depth analysis of how the MicroWear W11 Pro smartwatch achieved phenomenal success in Brazil and Middle East markets, exploring the market strategies, product advantages, and cultural adaptation behind its triumph."
-image: "/images/products/w11poverall.png"
+image: "/images/products/w11poverall.webp"
 readTime: "10 min read"
 ---
 

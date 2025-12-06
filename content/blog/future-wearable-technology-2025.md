@@ -5,7 +5,7 @@ author: "MicroWear Team"
 category: "Technology"
 tags: ["Wearables", "Innovation", "Future Tech", "AI", "Health"]
 excerpt: "Explore the cutting-edge innovations shaping the future of smartwatches and wearable devices in 2025. From AI-powered health predictions to revolutionary battery technologies."
-image: "/images/products/w11poverall.png"
+image: "/images/products/w11poverall.webp"
 readTime: "8 min read"
 ---
 
