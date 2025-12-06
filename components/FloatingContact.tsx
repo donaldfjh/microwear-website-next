@@ -1,9 +1,9 @@
 "use client";
 
 import React from "react";
-import "./FloatingWhatsAppButton.css";
+import "./FloatingContact.css";
 
-export const FloatingWhatsAppButton: React.FC = () => {
+export const FloatingContact: React.FC = () => {
   // WhatsApp number from FooterBanner component: +852 6733 7121
   const whatsappNumber = "85267337121";
   const message = encodeURIComponent(

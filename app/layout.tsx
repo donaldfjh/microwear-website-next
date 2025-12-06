@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Navigation } from "@/components/Navigation";
-import { FloatingWhatsAppButton } from "@/components/FloatingWhatsAppButton";
+import { FloatingContact } from "@/components/FloatingContact";
 import { ComparisonProvider } from "@/contexts/ComparisonContext";
 
 export const metadata: Metadata = {
@@ -77,7 +77,7 @@ export default function RootLayout({
         <ComparisonProvider>
           <Navigation />
           {children}
-          <FloatingWhatsAppButton />
+          <FloatingContact />
         </ComparisonProvider>
       </body>
     </html>
