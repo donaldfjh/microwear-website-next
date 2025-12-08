@@ -1,0 +1,110 @@
+.core-specs {
+  position: relative;
+  padding: 4rem 1rem;
+  background: radial-gradient(1200px 400px at 50% -50%, #eef2ff 0%, #ffffff 60%);
+}
+
+.core-specs__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.core-specs__title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 2.5rem;
+}
+
+.core-specs__grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .core-specs__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .core-specs__grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2rem;
+  }
+}
+
+.core-specs__card {
+  background: #ffffff;
+  border: 1px solid #eef2f7;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 6px 20px rgba(17, 24, 39, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.core-specs__card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(17, 24, 39, 0.1);
+}
+
+.core-specs__icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+.core-specs__icon--blue { background: #eff6ff; color: #2563eb; }
+.core-specs__icon--red { background: #fee2e2; color: #dc2626; }
+.core-specs__icon--cyan { background: #ecfeff; color: #0891b2; }
+.core-specs__icon--purple { background: #f5f3ff; color: #7c3aed; }
+
+.core-specs__svg { width: 1.75rem; height: 1.75rem; }
+
+.core-specs__card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.core-specs__card-text { color: #4b5563; }
+
+.core-specs__badge {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #374151;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+}
+
+.core-specs__table-wrapper { margin-top: 2rem; }
+
+.core-specs__table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.core-specs__table thead { background: #f9fafb; }
+.core-specs__table th,
+.core-specs__table td { padding: 0.75rem 1rem; text-align: left; }
+.core-specs__table th { font-size: 0.8125rem; text-transform: uppercase; color: #374151; }
+.core-specs__table td { color: #4b5563; }
+.core-specs__table tbody tr { border-top: 1px solid #e5e7eb; }
+

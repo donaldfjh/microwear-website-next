@@ -4,6 +4,7 @@ import { HomeProductGrid } from "@/components/HomeProductGrid";
 import { WhyChooseUs } from "@/components/WhyChooseUs";
 import { QA } from "@/components/QA";
 import { CertificationBar } from "@/components/CertificationBar";
+import { CoreSpecs } from "@/components/CoreSpecs";
 import { IndustryInsights } from "@/components/IndustryInsights";
 import { FooterBanner } from "@/components/FooterBanner";
 import { getProducts } from "@/lib/products";
@@ -44,6 +45,8 @@ export default async function HomePage() {
       />
 
       <CertificationBar />
+
+      <CoreSpecs />
 
       <SEOTextBlock />
 
