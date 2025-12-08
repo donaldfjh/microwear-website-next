@@ -8,29 +8,29 @@ export const CertificationBar: React.FC = () => {
   // Then update the certifications array below with image paths
 
   const certifications = [
-    { 
-      name: "ISO 9001", 
+    {
+      name: "ISO 9001",
       placeholder: false,
-      image: "/images/certifications/iso9001.svg",
-      alt: "ISO 9001 Quality Management System Certification"
+      image: "/images/certifications/ISO9001.webp",
+      alt: "ISO 9001 Quality Management System Certification",
     },
-    { 
-      name: "CE Certified", 
+    {
+      name: "CE Certified",
       placeholder: false,
-      image: "/images/certifications/ce-certified.svg",
-      alt: "CE Certified European Conformity"
+      image: "/images/certifications/ce.webp",
+      alt: "CE Certified European Conformity",
     },
-    { 
-      name: "RoHS Compliant", 
+    {
+      name: "RoHS Compliant",
       placeholder: false,
-      image: "/images/certifications/rohs-compliant.svg",
-      alt: "RoHS Compliant - Restriction of Hazardous Substances"
+      image: "/images/certifications/rohs.webp",
+      alt: "RoHS Compliant - Restriction of Hazardous Substances",
     },
-    { 
-      name: "FCC Approved", 
+    {
+      name: "FCC Approved",
       placeholder: false,
       image: "/images/certifications/fcc-approved.svg",
-      alt: "FCC Approved - Federal Communications Commission"
+      alt: "FCC Approved - Federal Communications Commission",
     },
   ];
 
@@ -42,9 +42,7 @@ export const CertificationBar: React.FC = () => {
           {certifications.map((cert, index) => (
             <div key={index} className="certification-item">
               {cert.placeholder ? (
-                <div className="certification-badge">
-                  {cert.name}
-                </div>
+                <div className="certification-badge">{cert.name}</div>
               ) : (
                 <Image
                   src={cert.image}
