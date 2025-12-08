@@ -169,7 +169,7 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
               className="btn btn-primary"
               aria-label={`Contact factory about ${product.name} smart watch OEM/ODM`}
             >
-              {`联系工厂采购 ${product.name}（智能手表 OEM/ODM）`}
+              {`Contact Factory to Buy ${product.name} (Smart Watch OEM/ODM)`}
             </Link>
             <button
               className="btn btn-secondary"

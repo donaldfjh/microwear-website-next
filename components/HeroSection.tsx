@@ -46,7 +46,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  // 移除批量图片预加载，保留首屏 LCP 图片的优先加载由 layout 与 priority 控制
+  // Remove bulk image preloading, keep LCP image priority loading controlled by layout and priority
 
   // Auto-cycle through images every 4 seconds
   useEffect(() => {

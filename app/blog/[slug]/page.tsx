@@ -71,12 +71,16 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://microwear.info";
   const canonicalUrl = `${baseUrl}/blog/${params.slug}`;
   const articleSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
     headline: post.title,
     description: post.excerpt,
-    image: post.image ? (post.image.startsWith('http') ? post.image : `${baseUrl}${post.image}`) : undefined,
-    author: { '@type': 'Person', name: post.author },
+    image: post.image
+      ? post.image.startsWith("http")
+        ? post.image
+        : `${baseUrl}${post.image}`
+      : undefined,
+    author: { "@type": "Person", name: post.author },
     datePublished: new Date(post.date).toISOString(),
     mainEntityOfPage: canonicalUrl,
   };
@@ -90,7 +94,7 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
       <article className="blog-article">
         <div className="article-header">
           <Link href="/blog" className="back-link">
-            返回智能手表博客
+            Back to Smart Watch Blog
           </Link>
           <span className="article-category">{post.category}</span>
           <h1 className="article-title">{post.title}</h1>
@@ -140,14 +144,14 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
                 className="related-post-card"
               >
                 <div className="related-post-image">
-          <Image
-            src={relatedPost.image}
-            alt={relatedPost.title}
-            width={300}
-            height={200}
-            loading="lazy"
-            sizes="(max-width: 768px) 50vw, 300px"
-          />
+                  <Image
+                    src={relatedPost.image}
+                    alt={relatedPost.title}
+                    width={300}
+                    height={200}
+                    loading="lazy"
+                    sizes="(max-width: 768px) 50vw, 300px"
+                  />
                 </div>
                 <div className="related-post-content">
                   <h3>{relatedPost.title}</h3>

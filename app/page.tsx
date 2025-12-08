@@ -39,7 +39,7 @@ export default async function HomePage() {
       <HeroSection
         title="Microwear: Professional Smart Watch Manufacturing Solutions"
         subtitle="Premium wearable technology solutions for global businesses. High-quality smartwatches with advanced health monitoring, GPS tracking, and customizable OEM services."
-        ctaText="浏览全部智能手表产品"
+        ctaText="View All Smart Watch Products"
         ctaLink="/products"
       />
 
