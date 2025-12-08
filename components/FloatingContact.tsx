@@ -18,6 +18,15 @@ export const FloatingContact: React.FC = () => {
       rel="noopener noreferrer"
       className="floating-contact-widget"
       aria-label="Contact Microwear Factory Support"
+      onClick={() => {
+        if (typeof window !== "undefined" && (window as any).gtag) {
+          (window as any).gtag("event", "click_whatsapp", {
+            event_category: "conversion",
+            event_label: "floating_button_v1",
+          });
+          console.log("GA Event Sent: click_whatsapp");
+        }
+      }}
     >
       <svg
         className="contact-widget-icon"

@@ -4,6 +4,7 @@ import { HomeProductGrid } from "@/components/HomeProductGrid";
 import { WhyChooseUs } from "@/components/WhyChooseUs";
 import { QA } from "@/components/QA";
 import { CertificationBar } from "@/components/CertificationBar";
+import { IndustryInsights } from "@/components/IndustryInsights";
 import { FooterBanner } from "@/components/FooterBanner";
 import { getProducts } from "@/lib/products";
 import Link from "next/link";
@@ -61,6 +62,8 @@ export default async function HomePage() {
       <QA />
 
       <CertificationBar />
+
+      <IndustryInsights />
 
       <FooterBanner />
     </div>
