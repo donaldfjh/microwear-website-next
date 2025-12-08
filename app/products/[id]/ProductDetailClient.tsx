@@ -167,9 +167,9 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
             <Link
               href={getContactLink()}
               className="btn btn-primary"
-              aria-label={`Contact us about ${product.name}`}
+              aria-label={`Contact factory about ${product.name} smart watch OEM/ODM`}
             >
-              Contact Us to Purchase
+              {`联系工厂采购 ${product.name}（智能手表 OEM/ODM）`}
             </Link>
             <button
               className="btn btn-secondary"
@@ -238,6 +238,52 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
             <span>{product.specifications.weight}</span>
           </div>
         </div>
+        <table className="specifications-table" aria-label="Smart Watch Specifications">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Specification</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Display</td>
+              <td>{product.specifications.display}</td>
+            </tr>
+            <tr>
+              <td>Processor</td>
+              <td>{product.specifications.processor}</td>
+            </tr>
+            <tr>
+              <td>Battery</td>
+              <td>{product.specifications.battery}</td>
+            </tr>
+            <tr>
+              <td>Water Resistance</td>
+              <td>{product.specifications.waterResistance}</td>
+            </tr>
+            <tr>
+              <td>Connectivity</td>
+              <td>{product.specifications.connectivity.join(", ")}</td>
+            </tr>
+            <tr>
+              <td>Sensors</td>
+              <td>{product.specifications.sensors.join(", ")}</td>
+            </tr>
+            <tr>
+              <td>Compatibility</td>
+              <td>{product.specifications.compatibility.join(", ")}</td>
+            </tr>
+            <tr>
+              <td>Dimensions</td>
+              <td>{product.specifications.dimensions}</td>
+            </tr>
+            <tr>
+              <td>Weight</td>
+              <td>{product.specifications.weight}</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </>
   );

@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "Blog - MicroWear Smartwatches",
   description:
     "Stay updated with the latest news, tips, and insights about smartwatches and wearable technology from MicroWear.",
+  alternates: {
+    canonical: "https://microwear.info/blog",
+  },
 };
 
 export default async function BlogPage() {

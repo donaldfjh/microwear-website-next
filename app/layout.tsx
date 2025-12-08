@@ -63,9 +63,7 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        {/* DNS Prefetch for faster external resource loading */}
-        <link rel="dns-prefetch" href="//fonts.googleapis.com" />
-        <link rel="dns-prefetch" href="//www.google-analytics.com" />
+
         {/* Preload hero image for LCP optimization */}
         <link
           rel="preload"

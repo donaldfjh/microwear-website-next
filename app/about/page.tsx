@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "About Us - MicroWear Smartwatches",
   description:
     "Learn about MicroWear, a modern high-tech enterprise focusing on the smart wearable industry. Discover our mission, values, and commitment to innovation in wearable technology.",
+  alternates: {
+    canonical: "https://microwear.info/about",
+  },
   openGraph: {
     title: "About Us - MicroWear Smartwatches",
     description:

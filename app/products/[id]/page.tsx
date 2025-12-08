@@ -80,8 +80,45 @@ export default async function ProductDetailPage({
     notFound();
   }
 
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://microwear.info";
+  const productUrl = `${baseUrl}/products/${product.id}`;
+  const images = (product.images || []).map((img) =>
+    img.startsWith("http") ? img : `${baseUrl}${img}`
+  );
+
+  const offers = (product.variants && product.variants.length > 0
+    ? product.variants
+    : [{ id: product.id, price: product.price }]
+  ).map((v) => ({
+    '@type': 'Offer',
+    priceCurrency: 'USD',
+    price: v.price,
+    availability: 'https://schema.org/InStock',
+    url: productUrl,
+    itemCondition: 'https://schema.org/NewCondition',
+  }));
+
+  const productSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: product.name,
+    description: product.description,
+    image: images,
+    sku: product.id,
+    category: product.category,
+    brand: {
+      '@type': 'Brand',
+      name: 'Microwear',
+    },
+    offers,
+  };
+
   return (
     <div className="product-detail-page">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+      />
       <ProductDetailClient product={product} />
     </div>
   );

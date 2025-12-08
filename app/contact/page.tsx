@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: "Contact Us - MicroWear Smartwatches",
   description:
     "Have a question or want to learn more about our smartwatches? Get in touch with the MicroWear team.",
+  alternates: {
+    canonical: "https://microwear.info/contact",
+  },
 };
 
 export default function ContactPage({ searchParams }: ContactPageProps) {

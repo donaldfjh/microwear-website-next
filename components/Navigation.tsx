@@ -13,9 +13,9 @@ export const Navigation: React.FC = () => {
   const navLinks = [
     { path: "/", label: "Home" },
     { path: "/products", label: "Smart Watches" },
-    { path: "/blog", label: "Blog" },
-    { path: "/about", label: "About" },
-    { path: "/contact", label: "Contact Factory" },
+    { path: "/blog", label: "智能手表行业博客" },
+    { path: "/about", label: "关于 Microwear" },
+    { path: "/contact", label: "Contact" },
   ];
 
   const toggleMobileMenu = () => {
@@ -35,7 +35,7 @@ export const Navigation: React.FC = () => {
         <div className="nav-logo">
           <Link href="/">
             <Image
-              src="/images/logos/image.png"
+              src="/images/logos/image.svg"
               alt="MicroWear"
               className="logo-image"
               width={120}

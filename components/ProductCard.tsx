@@ -49,6 +49,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             width={300}
             height={300}
             loading="lazy"
+            sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 300px"
           />
         </div>
 

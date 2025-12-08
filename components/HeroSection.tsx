@@ -46,16 +46,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  // Preload all hero images
-  useEffect(() => {
-    heroProducts.forEach((product) => {
-      const link = document.createElement("link");
-      link.rel = "preload";
-      link.as = "image";
-      link.href = product.image;
-      document.head.appendChild(link);
-    });
-  }, []);
+  // 移除批量图片预加载，保留首屏 LCP 图片的优先加载由 layout 与 priority 控制
 
   // Auto-cycle through images every 4 seconds
   useEffect(() => {

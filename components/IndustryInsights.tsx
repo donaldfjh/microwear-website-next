@@ -39,7 +39,7 @@ export const IndustryInsights: React.FC = () => {
               <h3 className={styles["insight-title"]}>{insight.title}</h3>
               <p className={styles["insight-summary"]}>{insight.summary}</p>
               <Link href={insight.link} className={styles["insight-link"]}>
-                Read More &rarr;
+                阅读全文：{insight.title}
               </Link>
             </div>
           ))}

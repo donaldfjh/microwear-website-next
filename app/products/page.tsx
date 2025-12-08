@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Products - MicroWear Smartwatches",
   description:
     "Browse our collection of premium smartwatches. Find the perfect smartwatch with advanced features, elegant design, and cutting-edge technology.",
+  alternates: {
+    canonical: "https://microwear.info/products",
+  },
   openGraph: {
     title: "Products - MicroWear Smartwatches",
     description:

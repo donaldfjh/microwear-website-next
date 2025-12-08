@@ -63,6 +63,20 @@ export const QA: React.FC = () => {
             </div>
           ))}
         </div>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: qaData.map((q) => ({
+                '@type': 'Question',
+                name: q.question,
+                acceptedAnswer: { '@type': 'Answer', text: q.answer },
+              })),
+            }),
+          }}
+        />
       </div>
     </section>
   );

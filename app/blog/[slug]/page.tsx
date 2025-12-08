@@ -68,12 +68,29 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
     .filter((p) => p.category === post.category && p.id !== post.id)
     .slice(0, 3);
 
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://microwear.info";
+  const canonicalUrl = `${baseUrl}/blog/${params.slug}`;
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.excerpt,
+    image: post.image ? (post.image.startsWith('http') ? post.image : `${baseUrl}${post.image}`) : undefined,
+    author: { '@type': 'Person', name: post.author },
+    datePublished: new Date(post.date).toISOString(),
+    mainEntityOfPage: canonicalUrl,
+  };
+
   return (
     <div className="blog-detail-page">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <article className="blog-article">
         <div className="article-header">
           <Link href="/blog" className="back-link">
-            ← Back to Blog
+            返回智能手表博客
           </Link>
           <span className="article-category">{post.category}</span>
           <h1 className="article-title">{post.title}</h1>
@@ -123,13 +140,14 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
                 className="related-post-card"
               >
                 <div className="related-post-image">
-                  <Image
-                    src={relatedPost.image}
-                    alt={relatedPost.title}
-                    width={300}
-                    height={200}
-                    loading="lazy"
-                  />
+          <Image
+            src={relatedPost.image}
+            alt={relatedPost.title}
+            width={300}
+            height={200}
+            loading="lazy"
+            sizes="(max-width: 768px) 50vw, 300px"
+          />
                 </div>
                 <div className="related-post-content">
                   <h3>{relatedPost.title}</h3>

@@ -195,13 +195,14 @@ export function BlogList({ posts, categories }: BlogListProps) {
                 <article key={post.id} className="blog-card">
                   <Link href={`/blog/${post.slug}`} className="blog-card-link">
                     <div className="blog-card-image">
-                      <Image
-                        src={post.image}
-                        alt={post.title}
-                        width={400}
-                        height={250}
-                        loading="lazy"
-                      />
+          <Image
+            src={post.image}
+            alt={post.title}
+            width={400}
+            height={250}
+            loading="lazy"
+            sizes="(max-width: 768px) 100vw, 400px"
+          />
                       <span className="blog-category">{post.category}</span>
                     </div>
                     <div className="blog-card-content">
@@ -213,7 +214,7 @@ export function BlogList({ posts, categories }: BlogListProps) {
                       <p className="blog-excerpt">{post.excerpt}</p>
                       <div className="blog-footer">
                         <span className="blog-author">By {post.author}</span>
-                        <span className="read-more">Read More →</span>
+                        <span className="read-more">阅读全文：{post.title}</span>
                       </div>
                     </div>
                   </Link>
@@ -230,7 +231,7 @@ export function BlogList({ posts, categories }: BlogListProps) {
                   onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
                   disabled={currentPage === 1}
                 >
-                  ← Previous
+                  上一页：更多智能手表文章
                 </button>
 
                 <div className="pagination-numbers">
@@ -258,7 +259,7 @@ export function BlogList({ posts, categories }: BlogListProps) {
                   }
                   disabled={currentPage === totalPages}
                 >
-                  Next →
+                  下一页：更多可穿戴技术文章
                 </button>
               </div>
             )}
