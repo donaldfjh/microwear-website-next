@@ -45,15 +45,53 @@ export default async function HomePage() {
 
       <CertificationBar />
 
+      <div className="py-8 px-4 max-w-4xl mx-auto">
+        <h3 className="text-xl font-bold mb-4">
+          Microwear Smart Watch Specifications
+        </h3>
+        <table className="w-full border-collapse border border-gray-200 text-sm text-left">
+          <thead className="bg-gray-100">
+            <tr>
+              <th className="border p-2">Feature</th>
+              <th className="border p-2">Specification</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td className="border p-2 font-semibold">Display Type</td>
+              <td className="border p-2">
+                AMOLED / IPS HD Screen (1.9&quot; - 2.2&quot;)
+              </td>
+            </tr>
+            <tr>
+              <td className="border p-2 font-semibold">Health Monitoring</td>
+              <td className="border p-2">
+                Heart Rate, ECG, Blood Oxygen (SpO2), Sleep Tracking
+              </td>
+            </tr>
+            <tr>
+              <td className="border p-2 font-semibold">Waterproof Level</td>
+              <td className="border p-2">IP68 / 5ATM Water Resistant</td>
+            </tr>
+            <tr>
+              <td className="border p-2 font-semibold">Compatibility</td>
+              <td className="border p-2">Android & iOS (Custom App Support)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
       <SEOTextBlock />
 
       <section className="featured-products-section">
         <div className="featured-products-container">
-          <h2 className="featured-products-title">Featured Products</h2>
+          <h2 className="featured-products-title">
+            Premium OEM Smart Watch Collections
+          </h2>
           <HomeProductGrid products={featuredProducts} />
           <div className="view-all-container">
             <Link href="/products" className="view-all-link">
-              View All Products
+              View All Smart Watches
             </Link>
           </div>
         </div>

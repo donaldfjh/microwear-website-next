@@ -61,7 +61,7 @@ export const FooterBanner: React.FC = () => {
               exclusive deals and personalized recommendations.
             </p>
             <Link href="/contact" className="banner-cta">
-              Contact Us Now
+              Contact Factory Now
             </Link>
           </div>
         </div>

@@ -12,10 +12,10 @@ export const Navigation: React.FC = () => {
 
   const navLinks = [
     { path: "/", label: "Home" },
-    { path: "/products", label: "Products" },
+    { path: "/products", label: "Smart Watches" },
     { path: "/blog", label: "Blog" },
     { path: "/about", label: "About" },
-    { path: "/contact", label: "Contact" },
+    { path: "/contact", label: "Contact Factory" },
   ];
 
   const toggleMobileMenu = () => {
