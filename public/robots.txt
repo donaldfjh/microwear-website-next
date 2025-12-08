@@ -3,8 +3,8 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://microwear-website-next.vercel.app
+Host: https://microwear.info
 
 # Sitemaps
-Sitemap: https://microwear-website-next.vercel.app/sitemap.xml
-Sitemap: https://microwear-website-next.vercel.app/server-sitemap.xml
+Sitemap: https://microwear.info/sitemap.xml
+Sitemap: https://microwear.info/server-sitemap.xml

@@ -12,9 +12,9 @@ import type { Metadata } from "next";
 import "./HomePage.css";
 
 export const metadata: Metadata = {
-  title: "Microwear | Professional Smart Watch Manufacturer & OEM/ODM Expert",
+  title: "Microwear | Top Smart Watch Manufacturer & OEM/ODM Factory in China",
   description:
-    "Leading smart watch manufacturer Microwear offers premium OEM/ODM wearable solutions. High-quality sports watches, health trackers, and custom branding services for global B2B clients.",
+    "Leading smart watch manufacturer Microwear offers premium OEM/ODM wearable solutions. ISO-certified factory, wholesale smartwatches, health trackers, and GPS sports watches for global brands.",
   alternates: {
     canonical: "https://microwear.info/",
   },
@@ -37,11 +37,13 @@ export default async function HomePage() {
   return (
     <div className="home-page">
       <HeroSection
-        title="Leading Smart Watch Manufacturer & OEM/ODM Partner"
+        title="Microwear: Professional Smart Watch Manufacturing Solutions"
         subtitle="Premium wearable technology solutions for global businesses. High-quality smartwatches with advanced health monitoring, GPS tracking, and customizable OEM services."
         ctaText="Explore Products"
         ctaLink="/products"
       />
+
+      <CertificationBar />
 
       <SEOTextBlock />
 
@@ -60,8 +62,6 @@ export default async function HomePage() {
       <WhyChooseUs />
 
       <QA />
-
-      <CertificationBar />
 
       <IndustryInsights />
 

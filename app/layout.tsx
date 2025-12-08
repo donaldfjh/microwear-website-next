@@ -5,9 +5,9 @@ import { FloatingContact } from "@/components/FloatingContact";
 import { ComparisonProvider } from "@/contexts/ComparisonContext";
 
 export const metadata: Metadata = {
-  title: "Microwear | Professional Smart Watch Manufacturer & OEM/ODM Expert",
+  title: "Microwear | Top Smart Watch Manufacturer & OEM/ODM Factory in China",
   description:
-    "Leading smart watch manufacturer Microwear offers premium OEM/ODM wearable solutions. High-quality sports watches, health trackers, and custom branding services for global B2B clients.",
+    "Leading smart watch manufacturer Microwear offers premium OEM/ODM wearable solutions. ISO-certified factory, wholesale smartwatches, health trackers, and GPS sports watches for global brands.",
   icons: {
     icon: "/images/logos/image.svg",
     shortcut: "/images/logos/image.svg",
@@ -41,15 +41,20 @@ export default function RootLayout({
     logo: "https://microwear.info/images/logos/image.png",
     description:
       "Professional Smart Watch Manufacturer and OEM Service Provider",
-    sameAs: [
-      "https://www.facebook.com/MicrowearOfficial",
-      "https://www.youtube.com/@Microwear",
-    ],
+    keywords: "Smart Watch OEM, Wearable Tech Factory, Microwear",
+    address: {
+      "@type": "PostalAddress",
+      addressCountry: "CN",
+    },
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "sales",
       areaServed: "Global",
     },
+    sameAs: [
+      "https://www.facebook.com/MicrowearOfficial",
+      "https://www.youtube.com/@Microwear",
+    ],
   };
 
   return (

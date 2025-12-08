@@ -50,7 +50,6 @@ export const HomeProductCard: React.FC<HomeProductCardProps> = ({
             title={product.name}
             width={300}
             height={300}
-            priority
           />
         </div>
 
