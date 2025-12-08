@@ -23,7 +23,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 4rem;
   flex-wrap: wrap;
 }
 
@@ -31,6 +31,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100px;
+  width: 140px;
 }
 
 .certification-badge {
@@ -48,17 +50,21 @@
 }
 
 .certification-logo {
-  max-width: 120px;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
   height: auto;
-  opacity: 0.7;
+  opacity: 0.8;
   transition: all 0.3s ease;
   filter: grayscale(100%);
+  mix-blend-mode: multiply;
+  object-fit: contain;
 }
 
 .certification-logo:hover {
   opacity: 1;
   filter: grayscale(0%);
-  transform: translateY(-2px);
+  transform: scale(1.05);
 }
 
 .certification-badge:hover {

@@ -45,40 +45,54 @@ export default async function HomePage() {
 
       <CertificationBar />
 
-      <div className="py-8 px-4 max-w-4xl mx-auto">
-        <h3 className="text-xl font-bold mb-4">
+      <div className="py-12 px-4 max-w-5xl mx-auto">
+        <h3 className="text-2xl font-bold mb-8 text-center text-gray-800">
           Microwear Smart Watch Specifications
         </h3>
-        <table className="w-full border-collapse border border-gray-200 text-sm text-left">
-          <thead className="bg-gray-100">
-            <tr>
-              <th className="border p-2">Feature</th>
-              <th className="border p-2">Specification</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td className="border p-2 font-semibold">Display Type</td>
-              <td className="border p-2">
-                AMOLED / IPS HD Screen (1.9&quot; - 2.2&quot;)
-              </td>
-            </tr>
-            <tr>
-              <td className="border p-2 font-semibold">Health Monitoring</td>
-              <td className="border p-2">
-                Heart Rate, ECG, Blood Oxygen (SpO2), Sleep Tracking
-              </td>
-            </tr>
-            <tr>
-              <td className="border p-2 font-semibold">Waterproof Level</td>
-              <td className="border p-2">IP68 / 5ATM Water Resistant</td>
-            </tr>
-            <tr>
-              <td className="border p-2 font-semibold">Compatibility</td>
-              <td className="border p-2">Android & iOS (Custom App Support)</td>
-            </tr>
-          </tbody>
-        </table>
+        <div className="overflow-hidden bg-white shadow-lg rounded-xl border border-gray-100">
+          <table className="w-full text-left border-collapse">
+            <thead className="bg-gray-50 text-gray-700 uppercase tracking-wider text-xs border-b border-gray-200">
+              <tr>
+                <th className="p-4 font-bold">Feature</th>
+                <th className="p-4 font-bold">Specification</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-100">
+              <tr className="hover:bg-gray-50 transition-colors">
+                <td className="p-4 font-semibold text-gray-900 w-1/3 bg-gray-50/50">
+                  Display Type
+                </td>
+                <td className="p-4 text-gray-600">
+                  AMOLED / IPS HD Screen (1.9&quot; - 2.2&quot;)
+                </td>
+              </tr>
+              <tr className="hover:bg-gray-50 transition-colors">
+                <td className="p-4 font-semibold text-gray-900 w-1/3 bg-gray-50/50">
+                  Health Monitoring
+                </td>
+                <td className="p-4 text-gray-600">
+                  Heart Rate, ECG, Blood Oxygen (SpO2), Sleep Tracking
+                </td>
+              </tr>
+              <tr className="hover:bg-gray-50 transition-colors">
+                <td className="p-4 font-semibold text-gray-900 w-1/3 bg-gray-50/50">
+                  Waterproof Level
+                </td>
+                <td className="p-4 text-gray-600">
+                  IP68 / 5ATM Water Resistant
+                </td>
+              </tr>
+              <tr className="hover:bg-gray-50 transition-colors">
+                <td className="p-4 font-semibold text-gray-900 w-1/3 bg-gray-50/50">
+                  Compatibility
+                </td>
+                <td className="p-4 text-gray-600">
+                  Android & iOS (Custom App Support)
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
 
       <SEOTextBlock />
