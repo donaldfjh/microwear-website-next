@@ -5,7 +5,7 @@ import { getProducts } from "@/lib/products";
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl =
     process.env.NEXT_PUBLIC_SITE_URL ||
-    "https://microwear-website-next.vercel.app";
+    "https://microwear.info";
 
   // Static pages
   const staticPages: MetadataRoute.Sitemap = [

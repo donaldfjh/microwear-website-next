@@ -17,6 +17,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  manifest: "/manifest.json",
   openGraph: {
     title: "Microwear - Professional Smart Watch Manufacturer",
     description:
