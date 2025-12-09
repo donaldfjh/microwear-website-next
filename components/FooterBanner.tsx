@@ -55,7 +55,9 @@ export const FooterBanner: React.FC = () => {
         <div className="promo-banner">
           <div className="banner-content">
             <span className="banner-badge">Limited Time Offer</span>
-            <h2 className="banner-title">Get Started with MicroWear</h2>
+            <h2 className="banner-title">
+              Get Started with MicroWear Smart Watch OEM
+            </h2>
             <p className="banner-description">
               Experience the future of wearable technology. Contact us today for
               exclusive deals and personalized recommendations.

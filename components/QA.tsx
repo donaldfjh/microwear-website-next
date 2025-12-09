@@ -50,7 +50,7 @@ export const QA: React.FC = () => {
   return (
     <section className="qa-section">
       <div className="qa-container">
-        <h2 className="qa-title">Frequently Asked Questions</h2>
+        <h2 className="qa-title">Smart Watch Frequently Asked Questions</h2>
         <p className="qa-subtitle">
           Everything you need to know about MicroWear smartwatches
         </p>
@@ -67,12 +67,12 @@ export const QA: React.FC = () => {
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'FAQPage',
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
               mainEntity: qaData.map((q) => ({
-                '@type': 'Question',
+                "@type": "Question",
                 name: q.question,
-                acceptedAnswer: { '@type': 'Answer', text: q.answer },
+                acceptedAnswer: { "@type": "Answer", text: q.answer },
               })),
             }),
           }}

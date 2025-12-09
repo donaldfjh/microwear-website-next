@@ -31,7 +31,7 @@ export const IndustryInsights: React.FC = () => {
     <section className={styles["industry-insights-section"]}>
       <div className={styles["industry-insights-container"]}>
         <h2 className={styles["industry-insights-title"]}>
-          Latest Wearable Tech Insights
+          Latest Smart Watch Industry Insights
         </h2>
         <div className={styles["industry-insights-grid"]}>
           {insights.map((insight) => (

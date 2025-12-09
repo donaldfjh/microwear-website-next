@@ -6,7 +6,7 @@ export const CoreSpecs: React.FC = () => {
     <section className="core-specs">
       <div className="core-specs__container">
         <h3 className="core-specs__title">
-          Core Technologies & Specifications
+          Smart Watch Core Technologies & Specifications
         </h3>
 
         <div className="core-specs__grid">

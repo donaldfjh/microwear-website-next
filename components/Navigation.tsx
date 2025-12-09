@@ -15,7 +15,7 @@ export const Navigation: React.FC = () => {
     { path: "/products", label: "Smart Watches" },
     { path: "/blog", label: "Smart Watch Industry Blog" },
     { path: "/about", label: "About Microwear" },
-    { path: "/contact", label: "Contact" },
+    { path: "/contact", label: "Contact Factory" },
   ];
 
   const toggleMobileMenu = () => {

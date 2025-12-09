@@ -44,7 +44,7 @@ export const WhyChooseUs: React.FC = () => {
   return (
     <section className="why-choose-us">
       <div className="why-choose-us-container">
-        <h2 className="why-choose-us-title">Why Choose MicroWear?</h2>
+        <h2 className="why-choose-us-title">Why Choose MicroWear Smart Watch Manufacturer?</h2>
         <p className="why-choose-us-subtitle">
           Experience the perfect blend of technology, style, and functionality
         </p>
