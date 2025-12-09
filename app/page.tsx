@@ -23,6 +23,13 @@ const CoreSpecs = dynamic(
   () => import("@/components/CoreSpecs").then((m) => m.CoreSpecs),
   { ssr: true }
 );
+const CompetitorComparison = dynamic(
+  () =>
+    import("@/components/CompetitorComparison").then(
+      (m) => m.CompetitorComparison
+    ),
+  { ssr: true }
+);
 const IndustryInsights = dynamic(
   () => import("@/components/IndustryInsights").then((m) => m.IndustryInsights),
   { ssr: true }
@@ -72,12 +79,14 @@ export default async function HomePage() {
 
       <CoreSpecs />
 
+      <CompetitorComparison />
+
       <SEOTextBlock />
 
       <section className="featured-products-section">
         <div className="featured-products-container">
           <h2 className="featured-products-title">
-            Premium OEM Smart Watch Collections
+            Premium OEM Smart Watch Collections 2025
           </h2>
           <HomeProductGrid products={featuredProducts} />
           <div className="view-all-container">

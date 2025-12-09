@@ -1,0 +1,117 @@
+.competitor-comparison {
+  padding: 4rem 2rem;
+  background: #fff;
+  border-top: 1px solid #e5e7eb;
+}
+
+.competitor-comparison__container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.competitor-comparison__title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 2rem;
+}
+
+.competitor-comparison__table-wrapper {
+  overflow-x: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.competitor-comparison__table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  min-width: 600px;
+}
+
+.competitor-comparison__table th,
+.competitor-comparison__table td {
+  padding: 1.25rem 1.5rem;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.competitor-comparison__table th {
+  background: #f8fafc;
+  color: #4a5568;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.competitor-comparison__table th:first-child {
+  width: 25%;
+  background: #f1f5f9;
+}
+
+.competitor-comparison__table th:nth-child(2) {
+  width: 37.5%;
+  background: #e6fffa;
+  color: #047481;
+  border-bottom: 2px solid #38b2ac;
+}
+
+.competitor-comparison__table th:nth-child(3) {
+  width: 37.5%;
+  background: #fff5f5;
+  color: #c53030;
+  border-bottom: 2px solid #fc8181;
+}
+
+.competitor-comparison__table td {
+  color: #2d3748;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.competitor-comparison__table td:first-child {
+  font-weight: 600;
+  color: #1a202c;
+  background: #f8fafc;
+}
+
+.competitor-comparison__table td:nth-child(2) {
+  background: #f0fdfa;
+  font-weight: 500;
+}
+
+.competitor-comparison__table td:nth-child(3) {
+  background: #fff5f5;
+  color: #718096;
+}
+
+.check-icon {
+  color: #28a745;
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+.dash-icon {
+  color: #a0aec0;
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .competitor-comparison {
+    padding: 3rem 1.5rem;
+  }
+  
+  .competitor-comparison__title {
+    font-size: 1.75rem;
+  }
+  
+  .competitor-comparison__table th,
+  .competitor-comparison__table td {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+}
