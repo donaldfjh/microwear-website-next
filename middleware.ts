@@ -15,29 +15,23 @@ export function middleware(request: NextRequest) {
   // Add security headers
   const response = NextResponse.next();
 
-  // Strict-Transport-Security: Force HTTPS for 1 year
-  response.headers.set(
-    "Strict-Transport-Security",
-    "max-age=31536000; includeSubDomains; preload"
-  );
-
-  // X-Content-Type-Options: Prevent MIME type sniffing
-  response.headers.set("X-Content-Type-Options", "nosniff");
-
-  // X-Frame-Options: Prevent clickjacking
-  response.headers.set("X-Frame-Options", "SAMEORIGIN");
-
-  // X-XSS-Protection: Enable XSS filter
-  response.headers.set("X-XSS-Protection", "1; mode=block");
-
-  // Referrer-Policy: Control referrer information
-  response.headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
-
-  // Permissions-Policy: Control browser features
-  response.headers.set(
-    "Permissions-Policy",
-    "camera=(), microphone=(), geolocation=()"
-  );
+  if (process.env.NODE_ENV === "production") {
+    response.headers.set(
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubDomains; preload"
+    );
+    response.headers.set("X-Content-Type-Options", "nosniff");
+    response.headers.set("X-Frame-Options", "SAMEORIGIN");
+    response.headers.set("X-XSS-Protection", "1; mode=block");
+    response.headers.set(
+      "Referrer-Policy",
+      "strict-origin-when-cross-origin"
+    );
+    response.headers.set(
+      "Permissions-Policy",
+      "camera=(), microphone=(), geolocation()"
+    );
+  }
 
   return response;
 }

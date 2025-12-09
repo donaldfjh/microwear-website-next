@@ -84,7 +84,7 @@
   width: 100%;
   padding: 0.875rem;
   min-height: 44px;
-  background-color: #007bff;
+  background-color: #0056b3;
   color: #ffffff;
   border: none;
   border-radius: 4px;
@@ -96,7 +96,7 @@
 }
 
 .home-product-card-compare-btn:hover:not(:disabled) {
-  background-color: #0056b3;
+  background-color: #004494;
 }
 
 .home-product-card-compare-btn:disabled {

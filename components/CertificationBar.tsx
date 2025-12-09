@@ -47,8 +47,8 @@ export const CertificationBar: React.FC = () => {
                 <Image
                   src={cert.image}
                   alt={cert.alt}
-                  width={120}
-                  height={60}
+                  width={140}
+                  height={100}
                   className="certification-logo"
                   loading="lazy"
                 />

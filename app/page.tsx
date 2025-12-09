@@ -1,12 +1,36 @@
 import { HeroSection } from "@/components/HeroSection";
-import { SEOTextBlock } from "@/components/SEOTextBlock";
-import { HomeProductGrid } from "@/components/HomeProductGrid";
-import { WhyChooseUs } from "@/components/WhyChooseUs";
-import { QA } from "@/components/QA";
-import { CertificationBar } from "@/components/CertificationBar";
-import { CoreSpecs } from "@/components/CoreSpecs";
-import { IndustryInsights } from "@/components/IndustryInsights";
-import { FooterBanner } from "@/components/FooterBanner";
+import dynamic from "next/dynamic";
+const SEOTextBlock = dynamic(
+  () => import("@/components/SEOTextBlock").then((m) => m.SEOTextBlock),
+  { ssr: true }
+);
+const HomeProductGrid = dynamic(
+  () => import("@/components/HomeProductGrid").then((m) => m.HomeProductGrid),
+  { ssr: false }
+);
+const WhyChooseUs = dynamic(
+  () => import("@/components/WhyChooseUs").then((m) => m.WhyChooseUs),
+  { ssr: true }
+);
+const QA = dynamic(() => import("@/components/QA").then((m) => m.QA), {
+  ssr: true,
+});
+const CertificationBar = dynamic(
+  () => import("@/components/CertificationBar").then((m) => m.CertificationBar),
+  { ssr: true }
+);
+const CoreSpecs = dynamic(
+  () => import("@/components/CoreSpecs").then((m) => m.CoreSpecs),
+  { ssr: true }
+);
+const IndustryInsights = dynamic(
+  () => import("@/components/IndustryInsights").then((m) => m.IndustryInsights),
+  { ssr: true }
+);
+const FooterBanner = dynamic(
+  () => import("@/components/FooterBanner").then((m) => m.FooterBanner),
+  { ssr: false }
+);
 import { getProducts } from "@/lib/products";
 import Link from "next/link";
 import type { Metadata } from "next";

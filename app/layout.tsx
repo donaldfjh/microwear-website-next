@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Navigation } from "@/components/Navigation";
-import { FloatingContact } from "@/components/FloatingContact";
+import dynamic from "next/dynamic";
+const FloatingContact = dynamic(
+  () => import("@/components/FloatingContact").then((m) => m.FloatingContact),
+  { ssr: false }
+);
 import { ComparisonProvider } from "@/contexts/ComparisonContext";
 
 export const metadata: Metadata = {
@@ -62,7 +66,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
 
         {/* Preload hero image for LCP optimization */}
         <link

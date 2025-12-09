@@ -5,9 +5,9 @@ export const CoreSpecs: React.FC = () => {
   return (
     <section className="core-specs">
       <div className="core-specs__container">
-        <h3 className="core-specs__title">
+        <h2 className="core-specs__title">
           Smart Watch Core Technologies & Specifications
-        </h3>
+        </h2>
 
         <div className="core-specs__grid">
           <div className="core-specs__card">
@@ -26,7 +26,7 @@ export const CoreSpecs: React.FC = () => {
                 />
               </svg>
             </div>
-            <h4 className="core-specs__card-title">Display Type</h4>
+            <h3 className="core-specs__card-title">Display Type</h3>
             <p className="core-specs__card-text">
               AMOLED / IPS HD Screen (1.9&quot; – 2.2&quot;)
             </p>
@@ -46,7 +46,7 @@ export const CoreSpecs: React.FC = () => {
                 />
               </svg>
             </div>
-            <h4 className="core-specs__card-title">Health Monitoring</h4>
+            <h3 className="core-specs__card-title">Health Monitoring</h3>
             <p className="core-specs__card-text">
               Heart Rate, ECG, SpO2, Sleep Tracking
             </p>
@@ -69,7 +69,7 @@ export const CoreSpecs: React.FC = () => {
                 />
               </svg>
             </div>
-            <h4 className="core-specs__card-title">Waterproof Level</h4>
+            <h3 className="core-specs__card-title">Waterproof Level</h3>
             <p className="core-specs__card-text">IP68 / 5ATM Water Resistant</p>
             <span className="core-specs__badge">Swim‑Ready</span>
           </div>
@@ -90,7 +90,7 @@ export const CoreSpecs: React.FC = () => {
                 />
               </svg>
             </div>
-            <h4 className="core-specs__card-title">Compatibility</h4>
+            <h3 className="core-specs__card-title">Compatibility</h3>
             <p className="core-specs__card-text">
               Android & iOS (Custom App Support)
             </p>
