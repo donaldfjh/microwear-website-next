@@ -86,29 +86,29 @@ export default async function ProductDetailPage({
     img.startsWith("http") ? img : `${baseUrl}${img}`
   );
 
-  const offers = (product.variants && product.variants.length > 0
-    ? product.variants
-    : [{ id: product.id, price: product.price }]
-  ).map((v) => ({
-    '@type': 'Offer',
-    priceCurrency: 'USD',
-    price: v.price,
-    availability: 'https://schema.org/InStock',
+  const offers = (
+    product.variants && product.variants.length > 0
+      ? product.variants
+      : [{ id: product.id }]
+  ).map(() => ({
+    "@type": "Offer",
+    priceCurrency: "USD",
+    availability: "https://schema.org/InStock",
     url: productUrl,
-    itemCondition: 'https://schema.org/NewCondition',
+    itemCondition: "https://schema.org/NewCondition",
   }));
 
   const productSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'Product',
+    "@context": "https://schema.org",
+    "@type": "Product",
     name: product.name,
     description: product.description,
     image: images,
     sku: product.id,
     category: product.category,
     brand: {
-      '@type': 'Brand',
-      name: 'Microwear',
+      "@type": "Brand",
+      name: "Microwear",
     },
     offers,
   };

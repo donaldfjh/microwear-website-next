@@ -1,26 +1,8 @@
 import type { Product } from "@/types/product";
 
 export interface ProductFilters {
-  priceRange?: { min: number; max: number };
   features?: string[];
   category?: string;
-}
-
-/**
- * Filter products by price range
- * @param products - Array of products to filter
- * @param min - Minimum price (inclusive)
- * @param max - Maximum price (inclusive)
- * @returns Filtered array of products within the price range
- */
-export function filterByPriceRange(
-  products: Product[],
-  min: number,
-  max: number
-): Product[] {
-  return products.filter(
-    (product) => product.price >= min && product.price <= max
-  );
 }
 
 /**
@@ -68,12 +50,6 @@ export function filterProducts(
   filters: ProductFilters
 ): Product[] {
   let filtered = [...products];
-
-  // Filter by price range
-  if (filters.priceRange) {
-    const { min, max } = filters.priceRange;
-    filtered = filterByPriceRange(filtered, min, max);
-  }
 
   // Filter by features
   if (filters.features && filters.features.length > 0) {

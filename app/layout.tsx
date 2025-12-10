@@ -7,6 +7,7 @@ const FloatingContact = dynamic(
   { ssr: false }
 );
 import { ComparisonProvider } from "@/contexts/ComparisonContext";
+import { ToastProvider } from "@/contexts/ToastContext";
 
 export const metadata: Metadata = {
   title: "Microwear | Top Smart Watch Manufacturer & OEM/ODM Factory in China",
@@ -81,11 +82,13 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <ComparisonProvider>
-          <Navigation />
-          {children}
-          <FloatingContact />
-        </ComparisonProvider>
+        <ToastProvider>
+          <ComparisonProvider>
+            <Navigation />
+            {children}
+            <FloatingContact />
+          </ComparisonProvider>
+        </ToastProvider>
       </body>
     </html>
   );
