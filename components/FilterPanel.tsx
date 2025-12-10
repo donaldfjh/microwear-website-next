@@ -7,7 +7,7 @@ export interface ProductFilters {
   features?: string[];
 }
 
-export interface FilterPanelProps {
+interface FilterPanelProps {
   onFilterChange: (filters: ProductFilters) => void;
   availableFeatures?: string[];
 }

@@ -302,55 +302,40 @@
 
 .product-specifications {
   background-color: #f8f9fa;
-  padding: 2.5rem;
-  border-radius: 12px;
-  margin-top: 3rem;
+  padding: 2rem;
+  border-radius: 8px;
 }
 
 .product-specifications h2 {
   font-size: 1.8rem;
-  font-weight: 700;
-  color: #1a1a1a;
-  margin-bottom: 2rem;
-  text-align: center;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.5rem;
 }
 
 .specifications-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
 }
 
 .spec-item {
-  background: #ffffff;
-  padding: 1.5rem;
-  border-radius: 8px;
-  border: 1px solid #e2e8f0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  transition: all 0.3s ease;
-}
-
-.spec-item:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
-  border-color: #cbd5e0;
 }
 
 .spec-item strong {
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: #64748b;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #666;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.5px;
 }
 
 .spec-item span {
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: #1e293b;
+  font-size: 1rem;
+  color: #333;
   line-height: 1.5;
 }
 

@@ -1,13 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Navigation } from "@/components/Navigation";
-import dynamic from "next/dynamic";
-const FloatingContact = dynamic(
-  () => import("@/components/FloatingContact").then((m) => m.FloatingContact),
-  { ssr: false }
-);
+import { FloatingContact } from "@/components/FloatingContact";
 import { ComparisonProvider } from "@/contexts/ComparisonContext";
-import { ToastProvider } from "@/contexts/ToastContext";
 
 export const metadata: Metadata = {
   title: "Microwear | Top Smart Watch Manufacturer & OEM/ODM Factory in China",
@@ -82,13 +77,11 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <ToastProvider>
-          <ComparisonProvider>
-            <Navigation />
-            {children}
-            <FloatingContact />
-          </ComparisonProvider>
-        </ToastProvider>
+        <ComparisonProvider>
+          <Navigation />
+          {children}
+          <FloatingContact />
+        </ComparisonProvider>
       </body>
     </html>
   );

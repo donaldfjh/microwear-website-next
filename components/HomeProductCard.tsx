@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Product } from "@/types/product";
 import { useComparison } from "@/contexts/ComparisonContext";
-import { useToast } from "@/contexts/ToastContext";
 import "./HomeProductCard.css";
 
 interface HomeProductCardProps {
@@ -16,7 +15,6 @@ export const HomeProductCard: React.FC<HomeProductCardProps> = ({
   product,
 }) => {
   const { addToComparison, canAddMore, comparisonProducts } = useComparison();
-  const { showToast } = useToast();
 
   const isInComparison = comparisonProducts.some((p) => p.id === product.id);
 
@@ -25,15 +23,12 @@ export const HomeProductCard: React.FC<HomeProductCardProps> = ({
     e.stopPropagation();
 
     if (isInComparison) {
-      showToast("This product is already in comparison", "info");
       return;
     }
 
     const success = addToComparison(product);
-    if (success) {
-      showToast(`${product.name} added to comparison`, "success");
-    } else if (!canAddMore()) {
-      showToast("You can only compare up to 3 products at a time", "error");
+    if (!success && !canAddMore()) {
+      alert("You can only compare up to 3 products at a time.");
     }
   };
 
@@ -73,11 +68,7 @@ export const HomeProductCard: React.FC<HomeProductCardProps> = ({
             className={`home-product-card-compare-btn ${
               isInComparison ? "added" : ""
             }`}
-            onClick={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-              handleAddToCompare(e);
-            }}
+            onClick={handleAddToCompare}
             disabled={isInComparison || (!canAddMore() && !isInComparison)}
           >
             {isInComparison ? "Added to Compare" : "Add to Compare"}

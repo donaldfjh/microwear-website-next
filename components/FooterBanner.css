@@ -105,8 +105,8 @@
 }
 
 .banner-cta {
-  background: #0056b3;
-  color: #ffffff;
+  background: white;
+  color: #667eea;
   padding: 0.65rem 1.75rem;
   border: none;
   border-radius: 50px;
@@ -118,9 +118,8 @@
 }
 
 .banner-cta:hover {
-  background: #004494;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Responsive Design */

@@ -93,10 +93,26 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
       />
       <article className="blog-article">
         <div className="article-header">
-          <Link href="/blog" className="back-link">
-            Back to Smart Watch Blog
-          </Link>
-          <span className="article-category">{post.category}</span>
+          <div className="header-nav">
+            <Link href="/blog" className="back-link">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+              </svg>
+              Back to Smart Watch Blog
+            </Link>
+          </div>
+          <div className="category-wrapper">
+            <span className="article-category">{post.category}</span>
+          </div>
           <h1 className="article-title">{post.title}</h1>
           <div className="article-meta">
             <span className="article-author">By {post.author}</span>

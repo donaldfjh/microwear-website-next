@@ -44,18 +44,6 @@ const qaData: QAItem[] = [
     answer:
       "Yes, you can receive call, text, email, and app notifications directly on your smartwatch when connected to your smartphone.",
   },
-  {
-    id: 7,
-    question: "How to verify a smart watch manufacturer in China?",
-    answer:
-      "Look for ISO9001, BSCI audits, and request a factory video tour. Microwear welcomes on-site inspections and provides full transparency of our 7 production lines.",
-  },
-  {
-    id: 8,
-    question: "What is the difference between OEM and ODM?",
-    answer:
-      "OEM prints your logo on existing models (Microwear Series). ODM builds a new design from scratch. We support both with a dedicated R&D team.",
-  },
 ];
 
 export const QA: React.FC = () => {

@@ -10,6 +10,7 @@ import { filterProducts } from "@/utils/filters";
 import "./ProductCatalogPage.css";
 
 interface ProductFilters {
+  priceRange?: { min: number; max: number };
   features?: string[];
   category?: string;
 }
@@ -45,6 +46,7 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({ products }) => {
 
   const hasActiveFilters =
     searchQuery.trim() !== "" ||
+    filters.priceRange !== undefined ||
     (filters.features && filters.features.length > 0);
 
   return (

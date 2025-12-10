@@ -1,37 +1,8 @@
-.comparison-table-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.comparison-controls {
-  display: flex;
-  justify-content: flex-end;
-  padding: 0 1rem;
-}
-
-.diff-toggle {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.95rem;
-  color: #4a5568;
-  cursor: pointer;
-  user-select: none;
-}
-
-.diff-toggle input {
-  width: 18px;
-  height: 18px;
-  cursor: pointer;
-}
-
 .comparison-table {
   background: white;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   overflow: hidden;
-  border: 1px solid #e2e8f0;
 }
 
 .comparison-grid {
@@ -42,7 +13,7 @@
 
 .comparison-row {
   display: grid;
-  grid-template-columns: 200px repeat(3, 1fr);
+  grid-template-columns: 200px repeat(auto-fit, minmax(250px, 1fr));
   border-bottom: 1px solid #e2e8f0;
   transition: background-color 0.2s;
 }
@@ -52,55 +23,30 @@
 }
 
 .comparison-row.has-difference {
-  background-color: #fffaf0;
+  background-color: #fff5e6;
 }
 
-/* Sticky Header */
 .comparison-row.header-row {
-  background: white;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-
-.comparison-row.group-header {
-  background-color: #f1f5f9;
-  border-bottom: 1px solid #cbd5e0;
-}
-
-.comparison-row.group-header .spec-label-cell {
-  background: transparent;
-  font-weight: 700;
-  color: #2d3748;
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  border-right: none;
-}
-
-.comparison-row.group-header .spec-value-cell {
-  background: transparent;
-  border-right: none;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-bottom: 2px solid #5568d3;
 }
 
 .spec-label-cell {
-  padding: 1rem 1.5rem;
+  padding: 1.25rem 1.5rem;
   font-weight: 600;
   background-color: #f8f9fa;
   display: flex;
   align-items: center;
   border-right: 1px solid #e2e8f0;
   font-size: 0.9rem;
-  color: #4a5568;
+  color: #2d3748;
 }
 
 .header-row .spec-label-cell {
-  background: white;
-  color: transparent; /* Hide "Product" label visually if needed, or keep it */
-  color: #2d3748;
-  font-size: 1.1rem;
-  border-right: 1px solid #e2e8f0;
+  background: transparent;
+  color: white;
+  font-size: 1rem;
 }
 
 .product-cell {
@@ -110,60 +56,25 @@
   align-items: center;
   text-align: center;
   position: relative;
-  border-right: 1px solid #e2e8f0;
-  background: white;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .product-cell:last-child {
   border-right: none;
 }
 
-.placeholder-cell {
-  background-color: #f8f9fa;
-  justify-content: center;
-}
-
-.placeholder-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  color: #a0aec0;
-}
-
-.placeholder-icon {
-  font-size: 2.5rem;
-  line-height: 1;
-  font-weight: 300;
-  color: #cbd5e0;
-}
-
-.add-product-btn {
-  padding: 0.5rem 1.25rem;
-  background-color: #3182ce;
-  color: white;
-  border-radius: 6px;
-  font-weight: 600;
-  font-size: 0.9rem;
-  text-decoration: none;
-  transition: all 0.2s;
-}
-
-.add-product-btn:hover {
-  background-color: #2b6cb0;
-  transform: translateY(-1px);
-}
-
 .remove-btn {
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
-  background: transparent;
-  color: #cbd5e0;
+  background: rgba(255, 255, 255, 0.9);
+  color: #e53e3e;
   border: none;
   border-radius: 50%;
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
+  min-width: 44px;
+  min-height: 44px;
   font-size: 1.5rem;
   line-height: 1;
   cursor: pointer;
@@ -171,51 +82,48 @@
   align-items: center;
   justify-content: center;
   transition: all 0.2s;
+  font-weight: 700;
+  touch-action: manipulation;
 }
 
 .remove-btn:hover {
-  background: #fff5f5;
-  color: #e53e3e;
-}
-
-.product-image-wrapper {
-  width: 120px;
-  height: 120px;
-  margin-bottom: 1rem;
-  position: relative;
+  background: #e53e3e;
+  color: white;
+  transform: scale(1.1);
 }
 
 .product-image {
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  background: white;
 }
 
 .product-name {
-  font-size: 1.1rem;
-  font-weight: 700;
+  font-size: 1.125rem;
+  font-weight: 600;
   margin: 0 0 0.5rem 0;
-  color: #2d3748;
-  line-height: 1.3;
+  color: white;
 }
 
 .product-price {
   font-size: 1.25rem;
   font-weight: 700;
   margin: 0;
-  color: #3182ce;
+  color: #ffd700;
 }
 
 .spec-value-cell {
-  padding: 1rem 1.5rem;
+  padding: 1.25rem 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   border-right: 1px solid #e2e8f0;
-  font-size: 0.95rem;
-  color: #2d3748;
-  line-height: 1.5;
+  font-size: 0.9rem;
+  color: #4a5568;
 }
 
 .spec-value-cell:last-child {
@@ -232,9 +140,8 @@
 
 .highlights-list li {
   padding: 0.5rem 0;
-  border-bottom: 1px solid #f1f5f9;
-  font-size: 0.9rem;
-  color: #4a5568;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 0.875rem;
 }
 
 .highlights-list li:last-child {
@@ -243,7 +150,7 @@
 
 .highlights-list li::before {
   content: "✓";
-  color: #38a169;
+  color: #48bb78;
   font-weight: 700;
   margin-right: 0.5rem;
 }
@@ -251,15 +158,15 @@
 /* Responsive design */
 @media (max-width: 1024px) {
   .comparison-row {
-    grid-template-columns: 160px repeat(3, minmax(200px, 1fr));
+    grid-template-columns: 180px repeat(auto-fit, minmax(220px, 1fr));
   }
 
   .spec-label-cell {
-    padding: 0.75rem 1rem;
+    padding: 1rem 1.25rem;
     font-size: 0.85rem;
   }
 
-  .product-image-wrapper {
+  .product-image {
     width: 100px;
     height: 100px;
   }
@@ -267,19 +174,101 @@
   .product-name {
     font-size: 1rem;
   }
+
+  .product-price {
+    font-size: 1.125rem;
+  }
+
+  .spec-value-cell {
+    padding: 1rem 1.25rem;
+    font-size: 0.85rem;
+  }
 }
 
 @media (max-width: 768px) {
-  .comparison-table-wrapper {
+  .comparison-table {
     overflow-x: auto;
-    padding-bottom: 1rem; /* Space for scrollbar */
   }
 
-  .comparison-table {
-    min-width: 800px; /* Ensure table doesn't squash */
+  .comparison-grid {
+    min-width: 800px;
   }
-  
-  /* Make header sticky only within the scrolling container context if supported, 
-     but often horizontal scroll + sticky left column is preferred. 
-     For simplicity, we keep top sticky but ensure min-width. */
+
+  .comparison-row {
+    grid-template-columns: 150px repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .spec-label-cell {
+    padding: 0.875rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .product-cell {
+    padding: 1rem;
+  }
+
+  .product-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .product-name {
+    font-size: 0.9rem;
+  }
+
+  .product-price {
+    font-size: 1rem;
+  }
+
+  .spec-value-cell {
+    padding: 0.875rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .remove-btn {
+    width: 24px;
+    height: 24px;
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .comparison-grid {
+    min-width: 700px;
+  }
+
+  .comparison-row {
+    grid-template-columns: 120px repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  .spec-label-cell {
+    padding: 0.75rem 0.875rem;
+    font-size: 0.75rem;
+  }
+
+  .product-cell {
+    padding: 0.875rem;
+  }
+
+  .product-image {
+    width: 70px;
+    height: 70px;
+  }
+
+  .product-name {
+    font-size: 0.85rem;
+  }
+
+  .product-price {
+    font-size: 0.9rem;
+  }
+
+  .spec-value-cell {
+    padding: 0.75rem 0.875rem;
+    font-size: 0.75rem;
+  }
+
+  .highlights-list li {
+    font-size: 0.75rem;
+  }
 }

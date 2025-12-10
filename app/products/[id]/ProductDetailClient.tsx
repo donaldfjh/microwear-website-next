@@ -4,7 +4,6 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { ImageGallery } from "@/components/ImageGallery";
 import { useComparison } from "@/contexts/ComparisonContext";
-import { useToast } from "@/contexts/ToastContext";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import type { Product, ProductVariant } from "@/types/product";
 
@@ -37,7 +36,6 @@ interface ProductDetailClientProps {
 
 export function ProductDetailClient({ product }: ProductDetailClientProps) {
   const { addToComparison, canAddMore, comparisonProducts } = useComparison();
-  const { showToast } = useToast();
   const [selectedVariant, setSelectedVariant] = useState<ProductVariant | null>(
     null
   );
@@ -87,15 +85,14 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
 
   const handleAddToComparison = () => {
     if (isInComparison) {
-      showToast("This product is already in comparison", "info");
       return;
     }
 
     const success = addToComparison(product);
     if (success) {
-      showToast(`${product.name} added to comparison`, "success");
+      alert("Product added to comparison!");
     } else {
-      showToast("You can only compare up to 3 products at a time", "error");
+      alert("Cannot add more products. Maximum 3 products allowed.");
     }
   };
 
@@ -241,6 +238,52 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
             <span>{product.specifications.weight}</span>
           </div>
         </div>
+        <table className="specifications-table" aria-label="Smart Watch Specifications">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Specification</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Display</td>
+              <td>{product.specifications.display}</td>
+            </tr>
+            <tr>
+              <td>Processor</td>
+              <td>{product.specifications.processor}</td>
+            </tr>
+            <tr>
+              <td>Battery</td>
+              <td>{product.specifications.battery}</td>
+            </tr>
+            <tr>
+              <td>Water Resistance</td>
+              <td>{product.specifications.waterResistance}</td>
+            </tr>
+            <tr>
+              <td>Connectivity</td>
+              <td>{product.specifications.connectivity.join(", ")}</td>
+            </tr>
+            <tr>
+              <td>Sensors</td>
+              <td>{product.specifications.sensors.join(", ")}</td>
+            </tr>
+            <tr>
+              <td>Compatibility</td>
+              <td>{product.specifications.compatibility.join(", ")}</td>
+            </tr>
+            <tr>
+              <td>Dimensions</td>
+              <td>{product.specifications.dimensions}</td>
+            </tr>
+            <tr>
+              <td>Weight</td>
+              <td>{product.specifications.weight}</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </>
   );

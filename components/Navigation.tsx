@@ -4,13 +4,11 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { useComparison } from "@/contexts/ComparisonContext";
 import "./Navigation.css";
 
 export const Navigation: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
-  const { comparisonProducts } = useComparison();
 
   const navLinks = [
     { path: "/", label: "Home" },
@@ -31,10 +29,8 @@ export const Navigation: React.FC = () => {
     return pathname.startsWith(path);
   };
 
-  const isHomePage = pathname === "/";
-
   return (
-    <nav className={`navigation ${!isHomePage ? "light-theme" : ""}`}>
+    <nav className="navigation">
       <div className="nav-container">
         <div className="nav-logo">
           <Link href="/">
@@ -61,22 +57,6 @@ export const Navigation: React.FC = () => {
               </Link>
             </li>
           ))}
-          <li>
-            <Link
-              href="/comparison"
-              className={`nav-compare-btn ${
-                isActive("/comparison") ? "active" : ""
-              }`}
-              aria-label="View Product Comparison"
-            >
-              Compare
-              {comparisonProducts.length > 0 && (
-                <span className="compare-badge">
-                  {comparisonProducts.length}
-                </span>
-              )}
-            </Link>
-          </li>
         </ul>
 
         {/* Mobile Hamburger Button */}
@@ -108,20 +88,6 @@ export const Navigation: React.FC = () => {
             </Link>
           </li>
         ))}
-        <li>
-          <Link
-            href="/comparison"
-            className={isActive("/comparison") ? "active" : ""}
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
-            Compare Products
-            {comparisonProducts.length > 0 && (
-              <span className="compare-badge mobile">
-                {comparisonProducts.length}
-              </span>
-            )}
-          </Link>
-        </li>
       </ul>
     </nav>
   );

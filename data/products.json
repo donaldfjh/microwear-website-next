@@ -3,6 +3,7 @@
     "id": "W11pro",
     "name": "Microwear W11 Pro",
     "description": "Premium smartwatch with advanced health tracking and stunning AMOLED display. Perfect for fitness enthusiasts and professionals alike.",
+    "price": 18,
     "images": [
       "/images/products/w11poverall.webp",
       "/images/products/w11pblack.webp",
@@ -38,6 +39,7 @@
       {
         "id": "mw-pro-x1-black",
         "name": "Midnight Black",
+        "price": 18,
         "color": "Black",
         "bandMaterial": "Silicone",
         "image": "/images/products/w11pblack.webp"
@@ -45,6 +47,7 @@
       {
         "id": "mw-pro-x1-silver",
         "name": "Arctic Silver",
+        "price": 18,
         "color": "Silver",
         "bandMaterial": "Silicone",
         "image": "/images/products/w11psilver.webp"
@@ -52,6 +55,7 @@
       {
         "id": "mw-pro-x1-leather",
         "name": "Classic Leather",
+        "price": 18,
         "color": "Rose Gold",
         "bandMaterial": "Silicone",
         "image": "/images/products/w11ppink.webp"
@@ -59,6 +63,7 @@
       {
         "id": "mw-pro-x1-leather",
         "name": "Orange Leather",
+        "price": 18,
         "color": "Orange",
         "bandMaterial": "Silicone",
         "image": "/images/products/w11pOrange.webp"
@@ -78,6 +83,7 @@
     "id": "mw-fit-lite",
     "name": "Microwear Watch S11",
     "description": "Affordable fitness tracker with essential health features. Your perfect companion for an active lifestyle without breaking the bank.",
+    "price": 10,
     "images": [
       "/images/products/S11OverAll.png",
       "/images/products/w11pblack.webp",
@@ -100,6 +106,7 @@
       {
         "id": "mw-fit-lite-black",
         "name": "Matte Black",
+        "price": 10,
         "color": "Black",
         "bandMaterial": "Silicone",
         "image": "/images/products/w11pblack.webp"
@@ -107,6 +114,7 @@
       {
         "id": "mw-fit-lite-silver",
         "name": "Matte Silver",
+        "price": 10,
         "color": "Silver",
         "bandMaterial": "Silicone",
         "image": "/images/products/w11psilver.webp"
@@ -114,6 +122,7 @@
       {
         "id": "mw-fit-lite-roseGold",
         "name": "Matte Rose Gold",
+        "price": 10,
         "color": "Rose Gold",
         "bandMaterial": "Silicone",
         "image": "/images/products/w11ppink.webp"
@@ -139,6 +148,7 @@
     "id": "mw-sport-ultra",
     "name": "Watch Ultra 5",
     "description": "Rugged sports watch designed for extreme athletes. Military-grade durability meets cutting-edge performance tracking.",
+    "price": 10,
     "images": [
       "/images/products/Ultra5Overall.jpg",
       "/images/products/Ultra5Black.png",

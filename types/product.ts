@@ -1,6 +1,7 @@
 export interface ProductVariant {
   id: string;
   name: string;
+  price: number;
   color?: string;
   bandMaterial?: string;
   storageSize?: string;
@@ -23,6 +24,7 @@ export interface Product {
   id: string;
   name: string;
   description: string;
+  price: number;
   images: string[];
   specifications: ProductSpecifications;
   highlights: string[];
