@@ -2,36 +2,63 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import type { Product } from "@/types/product";
 import "./ComparisonTable.css";
 
 interface ComparisonTableProps {
   products: Product[];
   onRemoveProduct: (productId: string) => void;
+  showDifferencesOnly?: boolean;
 }
 
 export const ComparisonTable: React.FC<ComparisonTableProps> = ({
   products,
   onRemoveProduct,
+  showDifferencesOnly = false,
 }) => {
   if (products.length === 0) {
     return null;
   }
 
-  // Extract all unique specification keys
-  const allSpecKeys = new Set<string>();
-  products.forEach((product) => {
-    Object.keys(product.specifications).forEach((key) => allSpecKeys.add(key));
-  });
-
-  const specKeys = Array.from(allSpecKeys);
+  // Define spec groups for better organization
+  const SPEC_GROUPS = [
+    {
+      title: "Display & Design",
+      keys: ["display", "dimensions", "weight", "waterResistance"],
+    },
+    {
+      title: "Performance",
+      keys: ["processor", "battery", "connectivity", "compatibility"],
+    },
+    {
+      title: "Sensors & Features",
+      keys: ["sensors"],
+    },
+  ];
 
   // Helper function to format spec key for display
   const formatSpecKey = (key: string): string => {
-    return key
-      .replace(/([A-Z])/g, " $1")
-      .replace(/^./, (str) => str.toUpperCase())
-      .trim();
+    // Map specific keys to display names if needed
+    const keyMap: Record<string, string> = {
+      display: "Display Spec",
+      dimensions: "Dimensions",
+      weight: "Weight",
+      waterResistance: "Water Resistance",
+      processor: "Processor",
+      battery: "Battery Life",
+      connectivity: "Connectivity",
+      compatibility: "Compatibility",
+      sensors: "Sensors",
+    };
+
+    return (
+      keyMap[key] ||
+      key
+        .replace(/([A-Z])/g, " $1")
+        .replace(/^./, (str) => str.toUpperCase())
+        .trim()
+    );
   };
 
   // Helper function to get spec value as string
@@ -56,7 +83,7 @@ export const ComparisonTable: React.FC<ComparisonTableProps> = ({
       <div className="comparison-grid">
         {/* Header row with product names and images */}
         <div className="comparison-row header-row">
-          <div className="spec-label-cell">Product</div>
+          <div className="spec-label-cell"></div>
           {products.map((product) => (
             <div key={product.id} className="product-cell">
               <button
@@ -66,63 +93,55 @@ export const ComparisonTable: React.FC<ComparisonTableProps> = ({
               >
                 ×
               </button>
-              <Image
-                src={product.images[0]}
-                alt={product.name}
-                className="product-image"
-                width={150}
-                height={150}
-              />
-              <h3 className="product-name">{product.name}</h3>
-              <p className="product-price">${product.price.toFixed(2)}</p>
-            </div>
-          ))}
-        </div>
-
-        {/* Price row */}
-        <div
-          className={`comparison-row ${
-            hasDifference("price") ? "has-difference" : ""
-          }`}
-        >
-          <div className="spec-label-cell">Price</div>
-          {products.map((product) => (
-            <div key={product.id} className="spec-value-cell">
-              ${product.price.toFixed(2)}
-            </div>
-          ))}
-        </div>
-
-        {/* Specification rows */}
-        {specKeys.map((key) => (
-          <div
-            key={key}
-            className={`comparison-row ${
-              hasDifference(key) ? "has-difference" : ""
-            }`}
-          >
-            <div className="spec-label-cell">{formatSpecKey(key)}</div>
-            {products.map((product) => (
-              <div key={product.id} className="spec-value-cell">
-                {getSpecValue(product, key)}
+              <div className="product-image-wrapper">
+                <Image
+                  src={product.images[0]}
+                  alt={product.name}
+                  className="product-image"
+                  width={120}
+                  height={120}
+                />
               </div>
-            ))}
-          </div>
-        ))}
-
-        {/* Highlights row */}
-        <div className="comparison-row">
-          <div className="spec-label-cell">Key Highlights</div>
-          {products.map((product) => (
-            <div key={product.id} className="spec-value-cell">
-              <ul className="highlights-list">
-                {product.highlights.map((highlight, index) => (
-                  <li key={index}>{highlight}</li>
-                ))}
-              </ul>
+              <h3 className="product-name">{product.name}</h3>
+              <Link href={`/products/${product.id}`} className="inquire-btn">
+                Inquire
+              </Link>
             </div>
           ))}
         </div>
+
+        {/* Grouped Specification rows */}
+        {SPEC_GROUPS.map((group) => {
+          // Filter keys based on showDifferencesOnly
+          const visibleKeys = group.keys.filter(
+            (key) => !showDifferencesOnly || hasDifference(key)
+          );
+
+          if (visibleKeys.length === 0) return null;
+
+          return (
+            <React.Fragment key={group.title}>
+              <div className="group-header">{group.title.toUpperCase()}</div>
+              {visibleKeys.map((key) => (
+                <div
+                  key={key}
+                  className={`comparison-row ${
+                    hasDifference(key) ? "has-difference" : ""
+                  }`}
+                >
+                  <div className="spec-label-cell">{formatSpecKey(key)}</div>
+                  {products.map((product) => (
+                    <div key={product.id} className="spec-value-cell">
+                      <span className="spec-value">
+                        {getSpecValue(product, key)}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              ))}
+            </React.Fragment>
+          );
+        })}
       </div>
     </div>
   );

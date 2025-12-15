@@ -1,13 +1,19 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { ComparisonTable } from "@/components/ComparisonTable";
 import { useComparison } from "@/contexts/ComparisonContext";
 import "./ComparisonPage.css";
 
 export default function ComparisonPage() {
-  const { comparisonProducts, removeFromComparison, clearComparison } =
-    useComparison();
+  const {
+    comparisonProducts,
+    removeFromComparison,
+    clearComparison,
+    showDiffOnly,
+    toggleDiffOnly,
+  } = useComparison();
 
   const handleRemoveProduct = (productId: string) => {
     removeFromComparison(productId);
@@ -17,16 +23,16 @@ export default function ComparisonPage() {
     clearComparison();
   };
 
-  const handleBrowseProducts = () => {
-    window.location.href = "/products";
-  };
-
   if (comparisonProducts.length === 0) {
     return (
       <div className="comparison-page">
         <div className="comparison-header">
-          <h1>Product Comparison</h1>
-          <p>Compare up to 3 smartwatches side by side</p>
+          <div className="header-content">
+            <div className="header-text">
+              <h1>Compare Products</h1>
+              <p>Comparing 0 of 3 selected products</p>
+            </div>
+          </div>
         </div>
 
         <div className="empty-comparison">
@@ -48,9 +54,9 @@ export default function ComparisonPage() {
             Start adding products to your comparison list to see them side by
             side. You can compare up to 3 products at once.
           </p>
-          <button className="browse-btn" onClick={handleBrowseProducts}>
+          <Link href="/products" className="browse-btn">
             Browse Products
-          </button>
+          </Link>
         </div>
       </div>
     );
@@ -60,13 +66,24 @@ export default function ComparisonPage() {
     <div className="comparison-page">
       <div className="comparison-header">
         <div className="header-content">
-          <div>
-            <h1>Product Comparison</h1>
-            <p>Comparing {comparisonProducts.length} of 3 products</p>
+          <div className="header-text">
+            <h1>Compare Products</h1>
+            <p>Comparing {comparisonProducts.length} of 3 selected products</p>
           </div>
-          <button className="clear-all-btn" onClick={handleClearAll}>
-            Clear All
-          </button>
+          <div className="header-actions">
+            <label className="toggle-switch">
+              <input
+                type="checkbox"
+                checked={showDiffOnly}
+                onChange={toggleDiffOnly}
+              />
+              <span className="toggle-slider"></span>
+              <span className="toggle-label">Show differences only</span>
+            </label>
+            <button className="clear-all-btn" onClick={handleClearAll}>
+              Clear All
+            </button>
+          </div>
         </div>
       </div>
 
@@ -74,6 +91,7 @@ export default function ComparisonPage() {
         <ComparisonTable
           products={comparisonProducts}
           onRemoveProduct={handleRemoveProduct}
+          showDifferencesOnly={showDiffOnly}
         />
 
         {comparisonProducts.length < 3 && (
@@ -97,9 +115,9 @@ export default function ComparisonPage() {
               {3 - comparisonProducts.length !== 1 ? "s" : ""} to your
               comparison.
             </span>
-            <button className="add-more-btn" onClick={handleBrowseProducts}>
+            <Link href="/products" className="add-more-btn">
               Add More Products
-            </button>
+            </Link>
           </div>
         )}
       </div>

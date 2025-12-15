@@ -15,6 +15,8 @@ interface ComparisonContextType {
   removeFromComparison: (productId: string) => void;
   clearComparison: () => void;
   canAddMore: () => boolean;
+  showDiffOnly: boolean;
+  toggleDiffOnly: () => void;
 }
 
 const COMPARISON_LIMIT = 3;
@@ -28,6 +30,7 @@ export const ComparisonProvider: React.FC<{ children: ReactNode }> = ({
   children,
 }) => {
   const [comparisonProducts, setComparisonProducts] = useState<Product[]>([]);
+  const [showDiffOnly, setShowDiffOnly] = useState(false);
   const [isInitialized, setIsInitialized] = useState(false);
 
   // Load from localStorage on mount
@@ -44,6 +47,10 @@ export const ComparisonProvider: React.FC<{ children: ReactNode }> = ({
       setIsInitialized(true);
     }
   }, []);
+
+  const toggleDiffOnly = () => {
+    setShowDiffOnly((prev) => !prev);
+  };
 
   // Save to localStorage whenever comparisonProducts changes
   useEffect(() => {
@@ -91,6 +98,8 @@ export const ComparisonProvider: React.FC<{ children: ReactNode }> = ({
     removeFromComparison,
     clearComparison,
     canAddMore,
+    showDiffOnly,
+    toggleDiffOnly,
   };
 
   return (

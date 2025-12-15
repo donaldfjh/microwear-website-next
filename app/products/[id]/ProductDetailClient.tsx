@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { ImageGallery } from "@/components/ImageGallery";
 import { useComparison } from "@/contexts/ComparisonContext";
+import { useToast } from "@/contexts/ToastContext";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import type { Product, ProductVariant } from "@/types/product";
 
@@ -36,6 +37,7 @@ interface ProductDetailClientProps {
 
 export function ProductDetailClient({ product }: ProductDetailClientProps) {
   const { addToComparison, canAddMore, comparisonProducts } = useComparison();
+  const { showToast } = useToast();
   const [selectedVariant, setSelectedVariant] = useState<ProductVariant | null>(
     null
   );
@@ -85,14 +87,15 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
 
   const handleAddToComparison = () => {
     if (isInComparison) {
+      showToast("This product is already in comparison", "info");
       return;
     }
 
     const success = addToComparison(product);
     if (success) {
-      alert("Product added to comparison!");
+      showToast(`${product.name} added to comparison`, "success");
     } else {
-      alert("Cannot add more products. Maximum 3 products allowed.");
+      showToast("You can only compare up to 3 products at a time", "error");
     }
   };
 
@@ -238,7 +241,10 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
             <span>{product.specifications.weight}</span>
           </div>
         </div>
-        <table className="specifications-table" aria-label="Smart Watch Specifications">
+        <table
+          className="specifications-table"
+          aria-label="Smart Watch Specifications"
+        >
           <thead>
             <tr>
               <th>Feature</th>

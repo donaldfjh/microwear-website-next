@@ -1,12 +1,13 @@
 .comparison-page {
   min-height: 100vh;
-  background-color: #f8f9fa;
+  background-color: #fff;
 }
 
 .comparison-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  padding: 3rem 2rem;
+  background: white;
+  color: #1a202c;
+  padding: 4rem 2rem 2rem;
+  border-bottom: 1px solid #edf2f7;
 }
 
 .header-content {
@@ -14,46 +15,93 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   gap: 2rem;
 }
 
-.comparison-header h1 {
+.header-text h1 {
   font-size: 2.5rem;
-  font-weight: 700;
-  margin: 0 0 0.5rem 0;
+  font-weight: 800;
+  margin: 0 0 0.5rem;
+  color: #1a202c;
+  letter-spacing: -0.03em;
 }
 
-.comparison-header p {
-  font-size: 1.125rem;
+.header-text p {
+  font-size: 1rem;
   margin: 0;
-  opacity: 0.95;
+  color: #718096;
+  font-weight: 500;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.toggle-switch {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.toggle-switch input {
+  display: none;
+}
+
+.toggle-slider {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 4px;
+  border: 2px solid #cbd5e0;
+  position: relative;
+  transition: all 0.2s;
+}
+
+.toggle-switch input:checked + .toggle-slider {
+  background-color: #e53e3e;
+  border-color: #e53e3e;
+}
+
+.toggle-switch input:checked + .toggle-slider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 6px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: translate(-50%, -60%) rotate(-45deg);
+}
+
+.toggle-label {
+  color: #4a5568;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 .clear-all-btn {
-  background: rgba(255, 255, 255, 0.2);
-  color: white;
-  border: 2px solid white;
-  padding: 0.875rem 1.75rem;
-  min-height: 48px;
-  border-radius: 8px;
-  font-size: 1rem;
+  background: white;
+  color: #718096;
+  border: 1px solid #e2e8f0;
+  padding: 0.5rem 1.25rem;
+  border-radius: 20px;
   font-weight: 600;
+  font-size: 0.9rem;
   cursor: pointer;
   transition: all 0.2s;
-  white-space: nowrap;
-  touch-action: manipulation;
 }
 
 .clear-all-btn:hover {
-  background: white;
-  color: #667eea;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.clear-all-btn:active {
-  transform: translateY(0);
+  border-color: #cbd5e0;
+  color: #4a5568;
 }
 
 .comparison-content {
@@ -110,6 +158,10 @@
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s;
   touch-action: manipulation;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
 .browse-btn:hover {
@@ -162,6 +214,10 @@
   transition: all 0.2s;
   white-space: nowrap;
   touch-action: manipulation;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
 .add-more-btn:hover {
