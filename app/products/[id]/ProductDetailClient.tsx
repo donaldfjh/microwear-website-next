@@ -6,6 +6,7 @@ import { ImageGallery } from "@/components/ImageGallery";
 import { useComparison } from "@/contexts/ComparisonContext";
 import { useToast } from "@/contexts/ToastContext";
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { ProductSpecs } from "@/components/ProductSpecs";
 import type { Product, ProductVariant } from "@/types/product";
 
 // Helper function to map color names to hex values
@@ -200,97 +201,8 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
         </div>
       </div>
 
-      {/* Specifications Section */}
-      <div className="product-specifications">
-        <h2>Technical Specifications</h2>
-        <div className="specifications-grid">
-          <div className="spec-item">
-            <strong>Display</strong>
-            <span>{product.specifications.display}</span>
-          </div>
-          <div className="spec-item">
-            <strong>Processor</strong>
-            <span>{product.specifications.processor}</span>
-          </div>
-          <div className="spec-item">
-            <strong>Battery</strong>
-            <span>{product.specifications.battery}</span>
-          </div>
-          <div className="spec-item">
-            <strong>Water Resistance</strong>
-            <span>{product.specifications.waterResistance}</span>
-          </div>
-          <div className="spec-item">
-            <strong>Connectivity</strong>
-            <span>{product.specifications.connectivity.join(", ")}</span>
-          </div>
-          <div className="spec-item">
-            <strong>Sensors</strong>
-            <span>{product.specifications.sensors.join(", ")}</span>
-          </div>
-          <div className="spec-item">
-            <strong>Compatibility</strong>
-            <span>{product.specifications.compatibility.join(", ")}</span>
-          </div>
-          <div className="spec-item">
-            <strong>Dimensions</strong>
-            <span>{product.specifications.dimensions}</span>
-          </div>
-          <div className="spec-item">
-            <strong>Weight</strong>
-            <span>{product.specifications.weight}</span>
-          </div>
-        </div>
-        <table
-          className="specifications-table"
-          aria-label="Smart Watch Specifications"
-        >
-          <thead>
-            <tr>
-              <th>Feature</th>
-              <th>Specification</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Display</td>
-              <td>{product.specifications.display}</td>
-            </tr>
-            <tr>
-              <td>Processor</td>
-              <td>{product.specifications.processor}</td>
-            </tr>
-            <tr>
-              <td>Battery</td>
-              <td>{product.specifications.battery}</td>
-            </tr>
-            <tr>
-              <td>Water Resistance</td>
-              <td>{product.specifications.waterResistance}</td>
-            </tr>
-            <tr>
-              <td>Connectivity</td>
-              <td>{product.specifications.connectivity.join(", ")}</td>
-            </tr>
-            <tr>
-              <td>Sensors</td>
-              <td>{product.specifications.sensors.join(", ")}</td>
-            </tr>
-            <tr>
-              <td>Compatibility</td>
-              <td>{product.specifications.compatibility.join(", ")}</td>
-            </tr>
-            <tr>
-              <td>Dimensions</td>
-              <td>{product.specifications.dimensions}</td>
-            </tr>
-            <tr>
-              <td>Weight</td>
-              <td>{product.specifications.weight}</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      {/* Specifications Section - Replaced with new ProductSpecs component */}
+      <ProductSpecs product={product} />
     </>
   );
 }

@@ -1,0 +1,238 @@
+.product-specs-section {
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
+  border-top: 1px solid #e9ecef;
+}
+
+.specs-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 3rem;
+}
+
+/* Header */
+.specs-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.specs-header h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin: 0;
+}
+
+/* Tabs */
+.specs-tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.tab-btn {
+  padding: 0.75rem 1.5rem;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #718096;
+  cursor: pointer;
+  position: relative;
+  bottom: -2px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.tab-btn.active {
+  color: #2b6cb0;
+  border-bottom-color: #2b6cb0;
+}
+
+.tab-btn:hover:not(.active) {
+  color: #4a5568;
+}
+
+/* Technical Specs Table */
+.technical-specs-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.technical-specs-table tr:nth-child(odd) {
+  background-color: #f7fafc;
+}
+
+.technical-specs-table td {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #edf2f7;
+  font-size: 0.95rem;
+}
+
+.spec-label {
+  font-weight: 600;
+  color: #4a5568;
+  width: 30%;
+}
+
+.spec-value {
+  color: #2d3748;
+}
+
+/* OEM Grid */
+.oem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+
+.oem-card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.oem-card.available {
+  border-color: #90cdf4;
+  background-color: #ebf8ff;
+}
+
+.oem-icon {
+  margin-bottom: 1rem;
+  color: #2b6cb0;
+  display: flex;
+  justify-content: center;
+}
+
+.oem-card h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  color: #2d3748;
+}
+
+.oem-card p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #718096;
+}
+
+/* Sidebar */
+.specs-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.usps-box {
+  background-color: #2d3748;
+  color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.usps-box h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 0.5rem;
+}
+
+.usps-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.usps-box li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.usps-box li svg {
+  color: #48bb78;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.contact-card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  text-align: center;
+}
+
+.contact-card h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  color: #2d3748;
+}
+
+.contact-card p {
+  margin: 0 0 1.5rem 0;
+  color: #718096;
+  font-size: 0.9rem;
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #e53e3e;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+  width: 100%;
+}
+
+.contact-btn:hover {
+  background-color: #c53030;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .specs-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-specs-section {
+    padding: 2rem 1rem;
+  }
+
+  .specs-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .download-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .specs-tabs {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 2px;
+  }
+}

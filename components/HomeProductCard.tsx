@@ -4,8 +4,6 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import type { Product } from "@/types/product";
-import { useComparison } from "@/contexts/ComparisonContext";
-import { useToast } from "@/contexts/ToastContext";
 import "./HomeProductCard.css";
 
 interface HomeProductCardProps {
@@ -15,28 +13,6 @@ interface HomeProductCardProps {
 export const HomeProductCard: React.FC<HomeProductCardProps> = ({
   product,
 }) => {
-  const { addToComparison, canAddMore, comparisonProducts } = useComparison();
-  const { showToast } = useToast();
-
-  const isInComparison = comparisonProducts.some((p) => p.id === product.id);
-
-  const handleAddToCompare = (e: React.MouseEvent) => {
-    e.preventDefault();
-    e.stopPropagation();
-
-    if (isInComparison) {
-      showToast("This product is already in comparison", "info");
-      return;
-    }
-
-    const success = addToComparison(product);
-    if (success) {
-      showToast(`${product.name} added to comparison`, "success");
-    } else if (!canAddMore()) {
-      showToast("You can only compare up to 3 products at a time", "error");
-    }
-  };
-
   // Get key features (first 3 features)
   const keyFeatures = product.features.slice(0, 3);
 
@@ -57,6 +33,7 @@ export const HomeProductCard: React.FC<HomeProductCardProps> = ({
             height={300}
             sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 300px"
           />
+          <div className="moq-badge">MOQ: 500 Pcs</div>
         </div>
 
         <div className="home-product-card-content">
@@ -70,13 +47,29 @@ export const HomeProductCard: React.FC<HomeProductCardProps> = ({
 
           <button
             type="button"
-            className={`home-product-card-compare-btn ${
-              isInComparison ? "added" : ""
-            }`}
-            onClick={handleAddToCompare}
-            disabled={isInComparison || (!canAddMore() && !isInComparison)}
+            className="home-product-card-compare-btn"
+            onClick={(e) => {
+              e.preventDefault(); // Prevent link navigation
+              // Add inquire logic here, e.g., redirect to contact with product param
+              window.location.href = `/contact?product=${product.id}`;
+            }}
           >
-            {isInComparison ? "Added to Compare" : "Add to Compare"}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              style={{ marginRight: "8px" }}
+            >
+              <rect width="20" height="16" x="2" y="4" rx="2" />
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+            </svg>
+            Inquire This Model
           </button>
         </div>
       </div>

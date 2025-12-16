@@ -10,6 +10,8 @@ interface HeroSectionProps {
   subtitle?: string;
   ctaText?: string;
   ctaLink?: string;
+  secondaryCtaText?: string;
+  secondaryCtaLink?: string;
   onCtaClick?: () => void;
 }
 
@@ -42,6 +44,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   subtitle = "Premium smartwatches designed for the modern individual. Track your health, stay connected, and express your style.",
   ctaText = "Explore Products",
   ctaLink = "/products",
+  secondaryCtaText,
+  secondaryCtaLink,
   onCtaClick,
 }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -89,13 +93,20 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         <div className="hero-content">
           <h1 className="hero-title">{title}</h1>
           <p className="hero-subtitle">{subtitle}</p>
-          <CtaComponent
-            href={ctaLink}
-            className="hero-cta"
-            onClick={onCtaClick ? handleCtaClick : undefined}
-          >
-            {ctaText}
-          </CtaComponent>
+          <div className="hero-cta-group">
+            <CtaComponent
+              href={ctaLink}
+              className="hero-cta"
+              onClick={onCtaClick ? handleCtaClick : undefined}
+            >
+              {ctaText}
+            </CtaComponent>
+            {secondaryCtaText && secondaryCtaLink && (
+              <Link href={secondaryCtaLink} className="hero-cta secondary">
+                {secondaryCtaText}
+              </Link>
+            )}
+          </div>
         </div>
       </div>
     </section>

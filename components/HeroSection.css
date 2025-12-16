@@ -90,6 +90,12 @@
   opacity: 0.95;
 }
 
+.hero-cta-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
 .hero-cta {
   display: inline-block;
   padding: 1rem 2rem;
@@ -107,11 +113,24 @@
   align-items: center;
   justify-content: center;
   touch-action: manipulation;
+  border: 2px solid #ffffff;
 }
 
 .hero-cta:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.hero-cta.secondary {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  box-shadow: none;
+}
+
+.hero-cta.secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .hero-image {

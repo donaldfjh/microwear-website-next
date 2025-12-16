@@ -13,8 +13,8 @@ export const Navigation: React.FC = () => {
   const navLinks = [
     { path: "/", label: "Home" },
     { path: "/products", label: "Smart Watches" },
-    { path: "/blog", label: "Smart Watch Industry Blog" },
-    { path: "/about", label: "About Microwear" },
+    { path: "/blog", label: "Industry Blog" },
+    { path: "/about", label: "About Us" },
     { path: "/contact", label: "Contact Factory" },
   ];
 

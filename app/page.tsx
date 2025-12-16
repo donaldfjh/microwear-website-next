@@ -38,10 +38,12 @@ export default async function HomePage() {
   return (
     <div className="home-page">
       <HeroSection
-        title="Microwear: Professional Smart Watch Manufacturing Solutions"
-        subtitle="Premium wearable technology solutions for global businesses. High-quality smartwatches with advanced health monitoring, GPS tracking, and customizable OEM services."
-        ctaText="View All Smart Watch Products"
-        ctaLink="/products"
+        title="Professional Smart Watch Manufacturer & OEM/ODM Solutions"
+        subtitle="10 Years Experience | ISO9001 Certified | 500+ Global Partners"
+        ctaText="Get Free Quote"
+        ctaLink="/contact"
+        secondaryCtaText="Download Catalog"
+        secondaryCtaLink="/products"
       />
 
       <CertificationBar />

@@ -30,6 +30,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+
+.moq-badge {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  padding: 4px 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
 }
 
 .home-product-card-image img {
@@ -93,6 +107,9 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   touch-action: manipulation;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .home-product-card-compare-btn:hover:not(:disabled) {

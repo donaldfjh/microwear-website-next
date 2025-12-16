@@ -18,6 +18,19 @@ export interface ProductSpecifications {
   compatibility: string[];
   dimensions: string;
   weight: string;
+  // B2B Specific Fields
+  chipset?: string;
+  appName?: string;
+  certification?: string;
+  materials?: string;
+}
+
+export interface ProductOEMOptions {
+  laserLogo: boolean;
+  bootScreen: boolean;
+  customStrap: boolean;
+  giftBox: boolean;
+  appSdk: boolean;
 }
 
 export interface Product {
@@ -31,4 +44,6 @@ export interface Product {
   variants?: ProductVariant[];
   features: string[];
   category: string;
+  oemOptions?: ProductOEMOptions;
+  distributorUSPs?: string[];
 }
