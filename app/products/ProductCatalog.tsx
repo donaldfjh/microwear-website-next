@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import { SearchBar } from "@/components/SearchBar";
 import { FilterPanel } from "@/components/FilterPanel";
 import { ProductGrid } from "@/components/ProductGrid";
@@ -50,12 +51,18 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({ products }) => {
     filters.priceRange !== undefined ||
     (filters.features && filters.features.length > 0);
 
+  const pageTitle = filters.category ? filters.category : "Product Catalog";
+  const pageDescription =
+    filters.category === "AI Glasses"
+      ? "Next-generation smart glasses with AI assistant and AR capabilities"
+      : "Discover our collection of premium smartwatches";
+
   return (
     <div className="product-catalog-page">
       <ScrollReveal>
         <div className="catalog-header">
-          <h1>Product Catalog</h1>
-          <p>Discover our collection of premium smartwatches</p>
+          <h1>{pageTitle}</h1>
+          <p>{pageDescription}</p>
         </div>
       </ScrollReveal>
 

@@ -3,16 +3,18 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import "./Navigation.css";
 
 export const Navigation: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
+  const searchParams = useSearchParams();
 
   const navLinks = [
     { path: "/", label: "Home" },
     { path: "/products", label: "Smart Watches" },
+    { path: "/products?category=AI Glasses", label: "AI Glasses" },
     { path: "/blog", label: "Industry Blog" },
     { path: "/about", label: "About Us" },
     { path: "/contact", label: "Contact Factory" },
@@ -26,6 +28,29 @@ export const Navigation: React.FC = () => {
     if (path === "/") {
       return pathname === "/";
     }
+
+    // Handle paths with query parameters (e.g., AI Glasses)
+    if (path.includes("?")) {
+      const [basePath, queryString] = path.split("?");
+      if (pathname !== basePath) return false;
+
+      const params = new URLSearchParams(queryString);
+      let match = true;
+      params.forEach((value, key) => {
+        if (searchParams.get(key) !== value) match = false;
+      });
+      return match;
+    }
+
+    // Special handling for /products to avoid highlighting when viewing AI Glasses
+    if (path === "/products") {
+      const category = searchParams.get("category");
+      // If we are on /products but have the AI Glasses category, don't highlight "Smart Watches"
+      if (pathname === "/products" && category === "AI Glasses") {
+        return false;
+      }
+    }
+
     return pathname.startsWith(path);
   };
 
