@@ -2,6 +2,8 @@ import { MetadataRoute } from "next";
 import { getAllPosts } from "@/lib/markdown-blogs";
 import { getProducts } from "@/lib/products";
 
+export const dynamic = "force-static";
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl =
     process.env.NEXT_PUBLIC_SITE_URL ||
