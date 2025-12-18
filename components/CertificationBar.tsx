@@ -45,7 +45,7 @@ export const CertificationBar: React.FC = () => {
         </ScrollReveal>
         <div className="certification-logos">
           {certifications.map((cert, index) => (
-            <ScrollReveal key={index} delay={index * 0.1}>
+            <ScrollReveal key={index} delay={index * 0.1} width="fit-content">
               <div className="certification-item">
                 {cert.placeholder ? (
                   <div className="certification-badge">{cert.name}</div>
