@@ -478,11 +478,21 @@
   },
   {
     "id": "mw-ai-glasses",
-    "name": "Microwear AI Smart Glasses",
+    "name": "Microwear AI 3 Smart Glasses",
     "description": "Next-generation smart glasses with integrated AI assistant, open-ear audio, and heads-up display. Experience the future of wearable computing.",
-    "price": 89,
     "images": [
-      "/images/products/technology_sense.png"
+      "/images/glasses/01.webp",
+      "/images/glasses/02.webp",
+      "/images/glasses/03.webp",
+      "/images/glasses/04.webp",
+      "/images/glasses/05.webp",
+      "/images/glasses/06.webp",
+      "/images/glasses/07.webp",
+      "/images/glasses/08.webp",
+      "/images/glasses/09.webp",
+      "/images/glasses/glasses1.webp",
+      "/images/glasses/glasses2.webp",
+      "/images/glasses/glasses3.webp"
     ],
     "specifications": {
       "display": "Micro-OLED Heads-up Display",
@@ -490,7 +500,12 @@
       "battery": "150mAh, up to 6 hours continuous use",
       "waterResistance": "IPX4 (Splash resistant)",
       "connectivity": ["Bluetooth 5.3", "Wi-Fi 6"],
-      "sensors": ["Touch Sensor", "Accelerometer", "Gyroscope", "Proximity Sensor"],
+      "sensors": [
+        "Touch Sensor",
+        "Accelerometer",
+        "Gyroscope",
+        "Proximity Sensor"
+      ],
       "compatibility": ["iOS 14+", "Android 10+"],
       "dimensions": "155 x 150 x 45 mm",
       "weight": "45g"
@@ -506,10 +521,9 @@
       {
         "id": "mw-ai-glasses-black",
         "name": "Carbon Black",
-        "price": 89,
         "color": "Black",
         "bandMaterial": "TR90 Polymer",
-        "image": "/images/products/technology_sense.png"
+        "image": "/images/glasses/glasses1.webp"
       }
     ],
     "features": [
