@@ -1,7 +1,6 @@
 import { getProducts } from "@/lib/products";
 import { ProductGrid } from "@/components/ProductGrid";
 import { ScrollReveal } from "@/components/ScrollReveal";
-import { HeroSection } from "@/components/HeroSection";
 import type { Metadata } from "next";
 import "./page.css";
 
