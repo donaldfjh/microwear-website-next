@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { ScrollReveal } from "@/components/ScrollReveal";
 import "./CertificationBar.css";
 
 export const CertificationBar: React.FC = () => {
@@ -37,23 +38,29 @@ export const CertificationBar: React.FC = () => {
   return (
     <section className="certification-bar">
       <div className="certification-container">
-        <p className="certification-label">Certified Manufacturing Standards</p>
+        <ScrollReveal>
+          <p className="certification-label">
+            Certified Manufacturing Standards
+          </p>
+        </ScrollReveal>
         <div className="certification-logos">
           {certifications.map((cert, index) => (
-            <div key={index} className="certification-item">
-              {cert.placeholder ? (
-                <div className="certification-badge">{cert.name}</div>
-              ) : (
-                <Image
-                  src={cert.image}
-                  alt={cert.alt}
-                  width={120}
-                  height={60}
-                  className="certification-logo"
-                  loading="lazy"
-                />
-              )}
-            </div>
+            <ScrollReveal key={index} delay={index * 0.1}>
+              <div className="certification-item">
+                {cert.placeholder ? (
+                  <div className="certification-badge">{cert.name}</div>
+                ) : (
+                  <Image
+                    src={cert.image}
+                    alt={cert.alt}
+                    width={120}
+                    height={60}
+                    className="certification-logo"
+                    loading="lazy"
+                  />
+                )}
+              </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>

@@ -47,9 +47,7 @@ export default async function HomePage() {
         secondaryCtaLink="/products"
       />
 
-      <ScrollReveal delay={0.1}>
-        <CertificationBar />
-      </ScrollReveal>
+      <CertificationBar />
 
       <ScrollReveal delay={0.2}>
         <CoreSpecs />
@@ -85,17 +83,13 @@ export default async function HomePage() {
         <WhyChooseUs />
       </ScrollReveal>
 
-      <ScrollReveal>
-        <QA />
-      </ScrollReveal>
+      <QA />
 
       <ScrollReveal>
         <IndustryInsights />
       </ScrollReveal>
 
-      <ScrollReveal>
-        <FooterBanner />
-      </ScrollReveal>
+      <FooterBanner />
     </div>
   );
 }

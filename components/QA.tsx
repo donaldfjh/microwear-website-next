@@ -1,4 +1,5 @@
 import React from "react";
+import { ScrollReveal } from "@/components/ScrollReveal";
 import "./QA.css";
 
 interface QAItem {
@@ -50,17 +51,21 @@ export const QA: React.FC = () => {
   return (
     <section className="qa-section">
       <div className="qa-container">
-        <h2 className="qa-title">Smart Watch Frequently Asked Questions</h2>
-        <p className="qa-subtitle">
-          Everything you need to know about MicroWear smartwatches
-        </p>
+        <ScrollReveal>
+          <h2 className="qa-title">Smart Watch Frequently Asked Questions</h2>
+          <p className="qa-subtitle">
+            Everything you need to know about MicroWear smartwatches
+          </p>
+        </ScrollReveal>
 
         <div className="qa-grid">
-          {qaData.map((item) => (
-            <div key={item.id} className="qa-card">
-              <h3 className="qa-question">{item.question}</h3>
-              <p className="qa-answer">{item.answer}</p>
-            </div>
+          {qaData.map((item, index) => (
+            <ScrollReveal key={item.id} delay={index * 0.1}>
+              <div className="qa-card">
+                <h3 className="qa-question">{item.question}</h3>
+                <p className="qa-answer">{item.answer}</p>
+              </div>
+            </ScrollReveal>
           ))}
         </div>
         <script
