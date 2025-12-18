@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 import "./HeroSection.css";
 
 interface HeroSectionProps {
@@ -80,20 +81,47 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   return (
     <section className="hero-section">
       <div className="hero-background">
-        <Image
-          src={currentProduct.image}
-          alt={currentProduct.altText}
-          fill
-          priority
-          style={{ objectFit: "cover" }}
-          sizes="100vw"
-        />
+        <motion.div
+          key={currentProduct.id}
+          initial={{ opacity: 0, scale: 1.05 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+          style={{ width: "100%", height: "100%", position: "relative" }}
+        >
+          <Image
+            src={currentProduct.image}
+            alt={currentProduct.altText}
+            fill
+            priority
+            style={{ objectFit: "cover" }}
+            sizes="100vw"
+          />
+        </motion.div>
       </div>
       <div className="hero-container">
         <div className="hero-content">
-          <h1 className="hero-title">{title}</h1>
-          <p className="hero-subtitle">{subtitle}</p>
-          <div className="hero-cta-group">
+          <motion.h1
+            className="hero-title"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+          >
+            {title}
+          </motion.h1>
+          <motion.p
+            className="hero-subtitle"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+          >
+            {subtitle}
+          </motion.p>
+          <motion.div
+            className="hero-cta-group"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
+          >
             <CtaComponent
               href={ctaLink}
               className="hero-cta"
@@ -106,7 +134,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 {secondaryCtaText}
               </Link>
             )}
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

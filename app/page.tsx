@@ -8,6 +8,7 @@ import { CoreSpecs } from "@/components/CoreSpecs";
 import { IndustryInsights } from "@/components/IndustryInsights";
 import { FooterBanner } from "@/components/FooterBanner";
 import { getProducts } from "@/lib/products";
+import { ScrollReveal } from "@/components/ScrollReveal";
 import Link from "next/link";
 import type { Metadata } from "next";
 import "./HomePage.css";
@@ -46,33 +47,55 @@ export default async function HomePage() {
         secondaryCtaLink="/products"
       />
 
-      <CertificationBar />
+      <ScrollReveal delay={0.1}>
+        <CertificationBar />
+      </ScrollReveal>
 
-      <CoreSpecs />
+      <ScrollReveal delay={0.2}>
+        <CoreSpecs />
+      </ScrollReveal>
 
-      <SEOTextBlock />
+      <ScrollReveal>
+        <SEOTextBlock />
+      </ScrollReveal>
 
       <section className="featured-products-section">
         <div className="featured-products-container">
-          <h2 className="featured-products-title">
-            Premium OEM Smart Watch Collections
-          </h2>
-          <HomeProductGrid products={featuredProducts} />
-          <div className="view-all-container">
-            <Link href="/products" className="view-all-link">
-              View All Smart Watches
-            </Link>
-          </div>
+          <ScrollReveal>
+            <h2 className="featured-products-title">
+              Premium OEM Smart Watch Collections
+            </h2>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.2}>
+            <HomeProductGrid products={featuredProducts} />
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.3}>
+            <div className="view-all-container">
+              <Link href="/products" className="view-all-link">
+                View All Smart Watches
+              </Link>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 
-      <WhyChooseUs />
+      <ScrollReveal>
+        <WhyChooseUs />
+      </ScrollReveal>
 
-      <QA />
+      <ScrollReveal>
+        <QA />
+      </ScrollReveal>
 
-      <IndustryInsights />
+      <ScrollReveal>
+        <IndustryInsights />
+      </ScrollReveal>
 
-      <FooterBanner />
+      <ScrollReveal>
+        <FooterBanner />
+      </ScrollReveal>
     </div>
   );
 }

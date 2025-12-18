@@ -1,6 +1,7 @@
 import React from "react";
 import { getAllPosts, getAllCategories } from "@/lib/markdown-blogs";
 import { BlogList } from "@/components/BlogList";
+import { ScrollReveal } from "@/components/ScrollReveal";
 import type { Metadata } from "next";
 import "./BlogPage.css";
 
@@ -19,14 +20,18 @@ export default async function BlogPage() {
 
   return (
     <div className="blog-page">
-      <div className="blog-hero">
-        <h1>MicroWear Blog</h1>
-        <p>
-          Insights, tips, and news about smartwatches and wearable technology
-        </p>
-      </div>
+      <ScrollReveal>
+        <div className="blog-hero">
+          <h1>MicroWear Blog</h1>
+          <p>
+            Insights, tips, and news about smartwatches and wearable technology
+          </p>
+        </div>
+      </ScrollReveal>
 
-      <BlogList posts={posts} categories={categories} />
+      <ScrollReveal delay={0.2}>
+        <BlogList posts={posts} categories={categories} />
+      </ScrollReveal>
     </div>
   );
 }

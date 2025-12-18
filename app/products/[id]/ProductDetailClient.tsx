@@ -7,6 +7,7 @@ import { useComparison } from "@/contexts/ComparisonContext";
 import { useToast } from "@/contexts/ToastContext";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { ProductSpecs } from "@/components/ProductSpecs";
+import { ScrollReveal } from "@/components/ScrollReveal";
 import type { Product, ProductVariant } from "@/types/product";
 
 // Helper function to map color names to hex values
@@ -107,102 +108,117 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
 
   return (
     <>
-      <Breadcrumb product={product} />
+      <ScrollReveal>
+        <Breadcrumb product={product} />
+      </ScrollReveal>
+
       <div className="product-detail-container">
         <div className="product-detail-gallery">
-          <ImageGallery
-            images={getDisplayImages()}
-            alt={product.name}
-            key={selectedVariant?.id || "default"}
-          />
+          <ScrollReveal delay={0.1}>
+            <ImageGallery
+              images={getDisplayImages()}
+              alt={product.name}
+              key={selectedVariant?.id || "default"}
+            />
+          </ScrollReveal>
         </div>
 
         <div className="product-detail-info">
-          <h1 className="product-detail-title">{product.name}</h1>
-          <p className="product-detail-description">{product.description}</p>
+          <ScrollReveal delay={0.2}>
+            <h1 className="product-detail-title">{product.name}</h1>
+            <p className="product-detail-description">{product.description}</p>
+          </ScrollReveal>
 
           {/* Color Selector */}
           {product.variants && product.variants.length > 0 && (
-            <div className="color-selector-section">
-              <h2>Available Colors</h2>
-              <div className="color-options">
-                {product.variants.map((variant: ProductVariant) => (
-                  <button
-                    key={variant.id}
-                    className={`color-option ${
-                      selectedVariant?.id === variant.id ? "selected" : ""
-                    }`}
-                    onClick={() => setSelectedVariant(variant)}
-                    aria-label={`Select ${variant.color} color`}
-                    title={variant.name}
-                  >
-                    <div
-                      className="color-swatch"
-                      style={{
-                        backgroundColor: getColorHex(variant.color || ""),
-                        border:
-                          variant.color?.toLowerCase() === "white" ||
-                          variant.color?.toLowerCase() === "silver"
-                            ? "1px solid #ddd"
-                            : "none",
-                      }}
-                    />
-                    <span className="color-name">{variant.color}</span>
-                  </button>
-                ))}
-              </div>
-              {selectedVariant && (
-                <div className="selected-variant-info">
-                  <p>
-                    <strong>Selected:</strong> {selectedVariant.name}
-                  </p>
-                  {selectedVariant.bandMaterial && (
-                    <p>
-                      <strong>Band Material:</strong>{" "}
-                      {selectedVariant.bandMaterial}
-                    </p>
-                  )}
+            <ScrollReveal delay={0.3}>
+              <div className="color-selector-section">
+                <h2>Available Colors</h2>
+                <div className="color-options">
+                  {product.variants.map((variant: ProductVariant) => (
+                    <button
+                      key={variant.id}
+                      className={`color-option ${
+                        selectedVariant?.id === variant.id ? "selected" : ""
+                      }`}
+                      onClick={() => setSelectedVariant(variant)}
+                      aria-label={`Select ${variant.color} color`}
+                      title={variant.name}
+                    >
+                      <div
+                        className="color-swatch"
+                        style={{
+                          backgroundColor: getColorHex(variant.color || ""),
+                          border:
+                            variant.color?.toLowerCase() === "white" ||
+                            variant.color?.toLowerCase() === "silver"
+                              ? "1px solid #ddd"
+                              : "none",
+                        }}
+                      />
+                      <span className="color-name">{variant.color}</span>
+                    </button>
+                  ))}
                 </div>
-              )}
-            </div>
+                {selectedVariant && (
+                  <div className="selected-variant-info">
+                    <p>
+                      <strong>Selected:</strong> {selectedVariant.name}
+                    </p>
+                    {selectedVariant.bandMaterial && (
+                      <p>
+                        <strong>Band Material:</strong>{" "}
+                        {selectedVariant.bandMaterial}
+                      </p>
+                    )}
+                  </div>
+                )}
+              </div>
+            </ScrollReveal>
           )}
 
-          <div className="product-detail-actions">
-            <Link
-              href={getContactLink()}
-              className="btn btn-primary"
-              aria-label={`Contact factory about ${product.name} smart watch OEM/ODM`}
-            >
-              {`Contact Factory to Buy ${product.name} (Smart Watch OEM/ODM)`}
-            </Link>
-            <button
-              className="btn btn-secondary"
-              onClick={handleAddToComparison}
-              disabled={isInComparison || !canAddMore()}
-              aria-label={
-                isInComparison ? "Already in comparison" : "Add to comparison"
-              }
-            >
-              {isInComparison ? "In Comparison" : "Add to Compare"}
-            </button>
-          </div>
+          <ScrollReveal delay={0.4}>
+            <div className="product-detail-actions">
+              <Link
+                href={getContactLink()}
+                className="btn btn-primary"
+                aria-label={`Contact factory about ${product.name} smart watch OEM/ODM`}
+              >
+                {`Contact Factory to Buy ${product.name} (Smart Watch OEM/ODM)`}
+              </Link>
+              <button
+                className="btn btn-secondary"
+                onClick={handleAddToComparison}
+                disabled={isInComparison || !canAddMore()}
+                aria-label={
+                  isInComparison ? "Already in comparison" : "Add to comparison"
+                }
+              >
+                {isInComparison ? "In Comparison" : "Add to Compare"}
+              </button>
+            </div>
+          </ScrollReveal>
 
           {/* Highlights Section */}
           {product.highlights && product.highlights.length > 0 && (
-            <div className="product-detail-section">
-              <h2>Key Highlights</h2>
-              <ul className="product-highlights-list">
-                {product.highlights.map((highlight, index) => (
-                  <li key={index}>{highlight}</li>
-                ))}
-              </ul>
-            </div>
+            <ScrollReveal delay={0.5}>
+              <div className="product-detail-section">
+                <h2>Key Highlights</h2>
+                <ul className="product-highlights-list">
+                  {product.highlights.map((highlight, index) => (
+                    <li key={index}>{highlight}</li>
+                  ))}
+                </ul>
+              </div>
+            </ScrollReveal>
           )}
         </div>
       </div>
 
       {/* Specifications Section - Replaced with new ProductSpecs component */}
-      <ProductSpecs product={product} />
+      <ScrollReveal delay={0.2}>
+        <ProductSpecs product={product} />
+      </ScrollReveal>
     </>
   );
 }
