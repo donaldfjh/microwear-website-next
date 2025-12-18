@@ -487,10 +487,7 @@
       "/images/glasses/04.webp",
       "/images/glasses/06.webp",
       "/images/glasses/08.webp",
-      "/images/glasses/09.webp",
-      "/images/glasses/glasses1.webp",
-      "/images/glasses/glasses2.webp",
-      "/images/glasses/glasses3.webp"
+      "/images/glasses/09.webp"
     ],
     "specifications": {
       "display": "Micro-OLED Heads-up Display",
@@ -519,6 +516,7 @@
       {
         "id": "mw-ai-glasses-black",
         "name": "Carbon Black",
+        "price": 50,
         "color": "Black",
         "bandMaterial": "TR90 Polymer",
         "image": "/images/glasses/glasses1.webp"
