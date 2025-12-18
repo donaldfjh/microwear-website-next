@@ -57,9 +57,11 @@ export const ProductSpecs: React.FC<ProductSpecsProps> = ({ product }) => {
                 <table>
                   <tbody>
                     <tr>
-                      <td className="spec-label">Chipset</td>
+                      <td className="spec-label">Processor</td>
                       <td className="spec-value">
-                        {specifications.chipset || "Realtek 8763EWE"}
+                        {specifications.processor ||
+                          specifications.chipset ||
+                          "High Performance Chipset"}
                       </td>
                     </tr>
                     <tr>
@@ -76,12 +78,12 @@ export const ProductSpecs: React.FC<ProductSpecsProps> = ({ product }) => {
                         {specifications.waterResistance}
                       </td>
                     </tr>
-                    <tr>
-                      <td className="spec-label">App Name</td>
-                      <td className="spec-value">
-                        {specifications.appName || "MActivePro / FitCloudPro"}
-                      </td>
-                    </tr>
+                    {specifications.appName && (
+                      <tr>
+                        <td className="spec-label">App Name</td>
+                        <td className="spec-value">{specifications.appName}</td>
+                      </tr>
+                    )}
                     <tr>
                       <td className="spec-label">Certification</td>
                       <td className="spec-value">
@@ -91,8 +93,7 @@ export const ProductSpecs: React.FC<ProductSpecsProps> = ({ product }) => {
                     <tr>
                       <td className="spec-label">Materials</td>
                       <td className="spec-value">
-                        {specifications.materials ||
-                          "Zinc Alloy Case + Silicone Strap"}
+                        {specifications.materials || "Premium Build Quality"}
                       </td>
                     </tr>
                     <tr>
@@ -134,7 +135,7 @@ export const ProductSpecs: React.FC<ProductSpecsProps> = ({ product }) => {
                     </svg>
                   </div>
                   <h4>Laser Logo</h4>
-                  <p>Custom branding on watch case</p>
+                  <p>Custom branding on device casing</p>
                 </div>
 
                 <div
