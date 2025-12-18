@@ -25,16 +25,6 @@ export default async function AIGlassesPage() {
 
   return (
     <div className="ai-glasses-page">
-      <HeroSection
-        title="Experience the Future of Vision"
-        subtitle="Next-Gen AI Smart Glasses with AR Display & Voice Assistant"
-        ctaText="Explore Collection"
-        ctaLink="#collection"
-        secondaryCtaText="Contact Factory"
-        secondaryCtaLink="/contact"
-        backgroundImage="/images/glasses/01.webp" 
-      />
-
       <div id="collection" className="ai-collection-section">
         <div className="container">
           <ScrollReveal>
