@@ -44,7 +44,7 @@ export const Breadcrumb: React.FC<BreadcrumbProps> = ({ product }) => {
             ›{" "}
           </span>
           <Link href="/products" className="breadcrumb-link">
-            Smart Watches
+            Products
           </Link>
           <span className="breadcrumb-separator" aria-hidden="true">
             {" "}

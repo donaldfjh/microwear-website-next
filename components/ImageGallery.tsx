@@ -46,7 +46,7 @@ export const ImageGallery: React.FC<ImageGalleryProps> = ({ images, alt }) => {
       "Features Detail",
     ];
     const description = imageDescriptions[index] || `View ${index + 1}`;
-    return `${alt} - ${description} | Premium Smartwatch`;
+    return `${alt} - ${description}`;
   };
 
   return (
