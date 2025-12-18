@@ -531,5 +531,61 @@
       "Translation"
     ],
     "category": "AI Glasses"
+  },
+  {
+    "id": "mw-ai-glasses-pro",
+    "name": "Microwear AI 3 PRO Smart Glasses",
+    "description": "Next-generation smart glasses with integrated AI assistant, open-ear audio, and heads-up display. Experience the future of wearable computing.",
+    "images": [
+      "/public/images/AI_PRO/14.webp",
+      "/public/images/AI_PRO/15.webp",
+      "/public/images/AI_PRO/16.webp",
+      "/public/images/AI_PRO/17.webp",
+      "/public/images/AI_PRO/18.webp",
+      "/public/images/AI_PRO/19.webp",
+      "/public/images/AI_PRO/20.webp"
+    ],
+    "specifications": {
+      "display": "Micro-OLED Heads-up Display",
+      "processor": "Qualcomm Snapdragon AR2 Gen 1",
+      "battery": "150mAh, up to 6 hours continuous use",
+      "waterResistance": "IPX4 (Splash resistant)",
+      "connectivity": ["Bluetooth 5.3", "Wi-Fi 6"],
+      "sensors": [
+        "Touch Sensor",
+        "Accelerometer",
+        "Gyroscope",
+        "Proximity Sensor"
+      ],
+      "compatibility": ["iOS 14+", "Android 10+"],
+      "dimensions": "155 x 150 x 45 mm",
+      "weight": "45g"
+    },
+    "highlights": [
+      "Integrated AI Voice Assistant (ChatGPT/Gemini supported)",
+      "Open-ear directional audio system",
+      "Real-time translation and navigation",
+      "Hands-free calling and media control",
+      "Blue light filtering lenses"
+    ],
+    "variants": [
+      {
+        "id": "mw-ai-glasses-black",
+        "name": "Carbon Black",
+        "price": 50,
+        "color": "Black",
+        "bandMaterial": "TR90 Polymer",
+        "image": "/images/AI_PRO/Pro_3.webp"
+      }
+    ],
+    "features": [
+      "AI Assistant",
+      "Open-ear Audio",
+      "Hands-free Calling",
+      "Voice Control",
+      "Navigation",
+      "Translation"
+    ],
+    "category": "AI Glasses"
   }
 ]
