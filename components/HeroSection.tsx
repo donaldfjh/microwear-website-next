@@ -13,6 +13,7 @@ interface HeroSectionProps {
   ctaLink?: string;
   secondaryCtaText?: string;
   secondaryCtaLink?: string;
+  backgroundImage?: string;
   onCtaClick?: () => void;
 }
 

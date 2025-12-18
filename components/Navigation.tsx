@@ -14,7 +14,7 @@ export const Navigation: React.FC = () => {
   const navLinks = [
     { path: "/", label: "Home" },
     { path: "/products", label: "Smart Watches" },
-    { path: "/products?category=AI Glasses", label: "AI Glasses" },
+    { path: "/ai-glasses", label: "AI Glasses" },
     { path: "/blog", label: "Industry Blog" },
     { path: "/about", label: "About Us" },
     { path: "/contact", label: "Contact Factory" },
@@ -30,6 +30,7 @@ export const Navigation: React.FC = () => {
     }
 
     // Handle paths with query parameters (e.g., AI Glasses)
+    // Note: AI Glasses now has its own route /ai-glasses, so this logic is mostly for legacy support
     if (path.includes("?")) {
       const [basePath, queryString] = path.split("?");
       if (pathname !== basePath) return false;
@@ -43,9 +44,14 @@ export const Navigation: React.FC = () => {
     }
 
     // Special handling for /products to avoid highlighting when viewing AI Glasses
+    // (This is less relevant now that AI Glasses has its own route, but kept for safety)
     if (path === "/products") {
+      // If we are on /ai-glasses, don't highlight Smart Watches
+      if (pathname === "/ai-glasses") {
+        return false;
+      }
+
       const category = searchParams.get("category");
-      // If we are on /products but have the AI Glasses category, don't highlight "Smart Watches"
       if (pathname === "/products" && category === "AI Glasses") {
         return false;
       }

@@ -1,0 +1,91 @@
+.ai-glasses-page {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.ai-collection-section {
+  padding: 80px 0;
+}
+
+.ai-collection-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+}
+
+.section-header p {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.features-section {
+  background-color: #ffffff;
+  padding: 80px 0;
+  border-top: 1px solid #eaeaea;
+}
+
+.features-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.features-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #1a1a1a;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.feature-card {
+  background: #f8f9fa;
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  color: #1a1a1a;
+}
+
+.feature-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .section-header h1 {
+    font-size: 2rem;
+  }
+  
+  .features-title {
+    font-size: 2rem;
+  }
+}
