@@ -536,14 +536,15 @@
     "id": "mw-ai-glasses-pro",
     "name": "Microwear AI 3 PRO Smart Glasses",
     "description": "Next-generation smart glasses with integrated AI assistant, open-ear audio, and heads-up display. Experience the future of wearable computing.",
+    "price": 50,
     "images": [
-      "/public/images/AI_PRO/14.webp",
-      "/public/images/AI_PRO/15.webp",
-      "/public/images/AI_PRO/16.webp",
-      "/public/images/AI_PRO/17.webp",
-      "/public/images/AI_PRO/18.webp",
-      "/public/images/AI_PRO/19.webp",
-      "/public/images/AI_PRO/20.webp"
+      "/images/AI_PRO/14.webp",
+      "/images/AI_PRO/15.webp",
+      "/images/AI_PRO/16.webp",
+      "/images/AI_PRO/17.webp",
+      "/images/AI_PRO/18.webp",
+      "/images/AI_PRO/19.webp",
+      "/images/AI_PRO/20.webp"
     ],
     "specifications": {
       "display": "Micro-OLED Heads-up Display",
