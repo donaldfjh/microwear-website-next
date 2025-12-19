@@ -5,9 +5,7 @@ import { getProducts } from "@/lib/products";
 export const dynamic = "force-static";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl =
-    process.env.NEXT_PUBLIC_SITE_URL ||
-    "https://microwear.info";
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://microwear.info";
 
   // Static pages
   const staticPages: MetadataRoute.Sitemap = [
@@ -25,6 +23,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
     {
       url: `${baseUrl}/products`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/ai-glasses`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9,
