@@ -20,6 +20,9 @@ export const metadata: Metadata = {
 export default async function ProductsPage() {
   // Fetch all products at build time (SSG)
   const products = await getProducts();
+  
+  // Filter out AI Glasses as they have their own dedicated page
+  const smartWatches = products.filter((p) => p.category !== "AI Glasses");
 
-  return <ProductCatalog products={products} />;
+  return <ProductCatalog products={smartWatches} />;
 }
