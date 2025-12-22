@@ -1,7 +1,6 @@
 "use client";
 
-import React, { useState, useCallback, useEffect } from "react";
-import { useSearchParams } from "next/navigation";
+import React, { useState, useCallback } from "react";
 import { SearchBar } from "@/components/SearchBar";
 import { FilterPanel } from "@/components/FilterPanel";
 import { ProductGrid } from "@/components/ProductGrid";
