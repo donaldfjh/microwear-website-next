@@ -34,7 +34,12 @@ export default async function HomePage() {
   const products = await getProducts();
 
   // Get featured products (first 6 products for the homepage)
-  const featuredProducts = products.slice(0, 6);
+  const featuredProducts = products
+    .filter((p) => p.category !== "AI Glasses")
+    .slice(0, 6);
+
+  // Get AI Glasses products
+  const aiGlassesProducts = products.filter((p) => p.category === "AI Glasses");
 
   return (
     <div className="home-page">
