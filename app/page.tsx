@@ -38,9 +38,6 @@ export default async function HomePage() {
     .filter((p) => p.category !== "AI Glasses")
     .slice(0, 6);
 
-  // Get AI Glasses products
-  const aiGlassesProducts = products.filter((p) => p.category === "AI Glasses");
-
   return (
     <div className="home-page">
       <HeroSection
