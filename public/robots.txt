@@ -1,0 +1,11 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /api/*
+Disallow: /_next/*
+
+# Host
+Host: https://microwear.info
+
+# Sitemaps
+Sitemap: https://microwear.info/sitemap.xml
