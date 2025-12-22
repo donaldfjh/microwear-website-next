@@ -2,8 +2,6 @@ import { MetadataRoute } from "next";
 import { getAllPosts } from "@/lib/markdown-blogs";
 import { getProducts } from "@/lib/products";
 
-export const dynamic = "force-static";
-
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://microwear.info";
 
@@ -53,23 +51,31 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
   ];
 
-  // Product pages
-  const products = await getProducts();
-  const productPages: MetadataRoute.Sitemap = products.map((product) => ({
-    url: `${baseUrl}/products/${product.id}`,
-    lastModified: new Date(),
-    changeFrequency: "weekly",
-    priority: 0.9,
-  }));
+  let productPages: MetadataRoute.Sitemap = [];
+  try {
+    const products = await getProducts();
+    productPages = products.map((product) => ({
+      url: `${baseUrl}/products/${product.id}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    }));
+  } catch (error) {
+    console.error("Failed to generate product sitemap URLs:", error);
+  }
 
-  // Blog posts
-  const posts = await getAllPosts();
-  const blogPages: MetadataRoute.Sitemap = posts.map((post) => ({
-    url: `${baseUrl}/blog/${post.slug}`,
-    lastModified: new Date(post.date),
-    changeFrequency: "weekly",
-    priority: 0.8,
-  }));
+  let blogPages: MetadataRoute.Sitemap = [];
+  try {
+    const posts = await getAllPosts();
+    blogPages = posts.map((post) => ({
+      url: `${baseUrl}/blog/${post.slug}`,
+      lastModified: new Date(post.date),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    }));
+  } catch (error) {
+    console.error("Failed to generate blog sitemap URLs:", error);
+  }
 
   return [...staticPages, ...productPages, ...blogPages];
 }
