@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { notFound } from "next/navigation";
 import { getProducts, getProductById } from "@/lib/products";
 import { ProductDetailClient } from "./ProductDetailClient";
@@ -173,7 +173,9 @@ export default async function ProductDetailPage({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(ma31FaqSchema) }}
         />
       )}
-      <ProductDetailClient product={product} />
+      <Suspense fallback={<div>Loading product details...</div>}>
+        <ProductDetailClient product={product} />
+      </Suspense>
     </div>
   );
 }

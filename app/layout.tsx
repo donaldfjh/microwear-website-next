@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import type { Metadata } from "next";
 import "./globals.css";
 import { Navigation } from "@/components/Navigation";
@@ -81,7 +82,9 @@ export default function RootLayout({
       <body>
         <ToastProvider>
           <ComparisonProvider>
-            <Navigation />
+            <Suspense fallback={null}>
+              <Navigation />
+            </Suspense>
             {children}
             <FloatingContact />
             <FloatingComparisonBar />
