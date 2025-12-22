@@ -106,6 +106,14 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
     return `/contact?subject=${subject}`;
   };
 
+  // Construct SEO-rich Alt Text
+  const hasGPS = product.specifications.connectivity?.includes("GPS");
+  const displayType = product.specifications.display?.includes("AMOLED")
+    ? "AMOLED"
+    : "HD";
+  const featureAlt = hasGPS ? "GPS" : displayType;
+  const imageAlt = `Microwear ${product.name} ${featureAlt} Smartwatch`;
+
   return (
     <>
       <ScrollReveal>
@@ -117,7 +125,7 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
           <ScrollReveal delay={0.1}>
             <ImageGallery
               images={getDisplayImages()}
-              alt={product.name}
+              alt={imageAlt}
               key={selectedVariant?.id || "default"}
             />
           </ScrollReveal>
