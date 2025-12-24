@@ -8,6 +8,7 @@ import { IndustryInsights } from "@/components/IndustryInsights";
 import { FooterBanner } from "@/components/FooterBanner";
 import { getProducts } from "@/lib/products";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { ProductSchema } from "@/components/SEO/ProductSchema";
 import Link from "next/link";
 import type { Metadata } from "next";
 import "./HomePage.css";
@@ -39,6 +40,7 @@ export default async function HomePage() {
 
   return (
     <div className="home-page">
+      <ProductSchema products={featuredProducts} />
       <HeroSection
         title="Professional Smart Watch Manufacturer & OEM/ODM Solutions"
         subtitle="10 Years Experience | ISO9001 Certified | 500+ Global Partners"
