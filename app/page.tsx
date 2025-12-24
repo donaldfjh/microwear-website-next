@@ -2,7 +2,6 @@ import { HeroSection } from "@/components/HeroSection";
 import { SEOTextBlock } from "@/components/SEOTextBlock";
 import { HomeProductGrid } from "@/components/HomeProductGrid";
 import { WhyChooseUs } from "@/components/WhyChooseUs";
-import { QA } from "@/components/QA";
 import { CertificationBar } from "@/components/CertificationBar";
 import { CoreSpecs } from "@/components/CoreSpecs";
 import { IndustryInsights } from "@/components/IndustryInsights";
@@ -56,7 +55,7 @@ export default async function HomePage() {
       </ScrollReveal>
 
       <ScrollReveal>
-        <SEOTextBlock />
+        <SEOTextBlock category="homepage" />
       </ScrollReveal>
 
       <section className="featured-products-section">
@@ -84,8 +83,6 @@ export default async function HomePage() {
       <ScrollReveal>
         <WhyChooseUs />
       </ScrollReveal>
-
-      <QA />
 
       <ScrollReveal>
         <IndustryInsights />

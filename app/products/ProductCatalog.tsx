@@ -5,6 +5,7 @@ import { SearchBar } from "@/components/SearchBar";
 import { FilterPanel } from "@/components/FilterPanel";
 import { ProductGrid } from "@/components/ProductGrid";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { SEOTextBlock } from "@/components/SEOTextBlock";
 import type { Product } from "@/types/product";
 import { searchProducts } from "@/utils/search";
 import { filterProducts } from "@/utils/filters";
@@ -90,6 +91,13 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({ products }) => {
                 </ScrollReveal>
                 <ScrollReveal delay={0.4}>
                   <ProductGrid products={filteredProducts} />
+                </ScrollReveal>
+
+                {/* Inject SEO Block at the bottom of the list */}
+                <ScrollReveal delay={0.5}>
+                  <div className="mt-12">
+                    <SEOTextBlock category="product-list" />
+                  </div>
                 </ScrollReveal>
               </>
             ) : (
