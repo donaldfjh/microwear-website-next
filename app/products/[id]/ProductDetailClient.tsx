@@ -228,11 +228,6 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
       <ScrollReveal delay={0.2}>
         <ProductSpecs product={product} />
       </ScrollReveal>
-
-      {/* SEO Optimized FAQ Section */}
-      <ScrollReveal delay={0.3}>
-        <QA product={product} />
-      </ScrollReveal>
     </>
   );
 }

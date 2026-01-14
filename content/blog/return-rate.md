@@ -42,13 +42,13 @@ After inspecting over 500,000 units on the production line, I’ve isolated the 
 
 **The Problem:** After a month of gym use, the watch stops charging because the pins are green/rusty. The Root Cause: Using cheap iron pins instead of gold-plated copper, which react to human sweat.
 **✅ Our Factory Fix:** We mandate a 24-hour Salt Spray Test on the charging components. We also verify the plating thickness to ensure it can withstand daily exposure to sweat and skin oils.
-
+r
 ## 5. Skin Allergies & Rashes
 
 **The Problem:** Customers complain of red, itchy wrists. This leads to the worst kind of negative reviews. The Root Cause: Suppliers cutting costs by using recycled industrial rubber instead of food-grade silicone.
 **✅ Our Factory Fix:** We require RoHS and FDA certification for all strap materials. We treat the strap as a "skin-contact product," ensuring no harmful plasticizers are used.
 
-### The Bottom Line for Importers
+### The Tips for Importers
 
 Quality isn't inspected into a product; it is built into the process.
 

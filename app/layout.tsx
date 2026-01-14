@@ -41,24 +41,23 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "Microwear",
-    url: "https://microwear.info",
+    url: "https://microwear.info/",
     logo: "https://microwear.info/images/logos/image.png",
-    description: "Professional Smart Watch Manufacturer & OEM/ODM Solutions",
+    description:
+      "Professional Smart Watch Manufacturer and OEM Service Provider",
+    keywords: "Smart Watch OEM, Wearable Tech Factory, Microwear",
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Shenzhen",
       addressCountry: "CN",
     },
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+852 6733 7121",
       contactType: "sales",
       areaServed: "Global",
     },
     sameAs: [
       "https://www.facebook.com/MicrowearOfficial",
       "https://www.youtube.com/@Microwear",
-      "https://www.linkedin.com/company/microwear",
     ],
   };
 

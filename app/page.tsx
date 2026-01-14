@@ -2,13 +2,13 @@ import { HeroSection } from "@/components/HeroSection";
 import { SEOTextBlock } from "@/components/SEOTextBlock";
 import { HomeProductGrid } from "@/components/HomeProductGrid";
 import { WhyChooseUs } from "@/components/WhyChooseUs";
+import { QA } from "@/components/QA";
 import { CertificationBar } from "@/components/CertificationBar";
 import { CoreSpecs } from "@/components/CoreSpecs";
 import { IndustryInsights } from "@/components/IndustryInsights";
 import { FooterBanner } from "@/components/FooterBanner";
 import { getProducts } from "@/lib/products";
 import { ScrollReveal } from "@/components/ScrollReveal";
-import { ProductSchema } from "@/components/SEO/ProductSchema";
 import Link from "next/link";
 import type { Metadata } from "next";
 import "./HomePage.css";
@@ -40,7 +40,6 @@ export default async function HomePage() {
 
   return (
     <div className="home-page">
-      <ProductSchema products={featuredProducts} />
       <HeroSection
         title="Professional Smart Watch Manufacturer & OEM/ODM Solutions"
         subtitle="10 Years Experience | ISO9001 Certified | 500+ Global Partners"
@@ -57,7 +56,7 @@ export default async function HomePage() {
       </ScrollReveal>
 
       <ScrollReveal>
-        <SEOTextBlock category="homepage" />
+        <SEOTextBlock />
       </ScrollReveal>
 
       <section className="featured-products-section">
@@ -85,6 +84,8 @@ export default async function HomePage() {
       <ScrollReveal>
         <WhyChooseUs />
       </ScrollReveal>
+
+      <QA />
 
       <ScrollReveal>
         <IndustryInsights />

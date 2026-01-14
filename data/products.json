@@ -491,10 +491,10 @@
     ],
     "specifications": {
       "display": "Micro-OLED Heads-up Display",
-      "processor": "Qualcomm Snapdragon AR2 Gen 1",
+      "processor": "Allwinner V821 chipset",
       "battery": "150mAh, up to 6 hours continuous use",
-      "waterResistance": "IPX4 (Splash resistant)",
-      "connectivity": ["Bluetooth 5.3", "Wi-Fi 6"],
+      "waterResistance": "IP54 (Splash resistant)",
+      "connectivity": ["Bluetooth 5.4 & 3.0", "Wi-Fi 6"],
       "sensors": [
         "Touch Sensor",
         "Accelerometer",
@@ -502,8 +502,8 @@
         "Proximity Sensor"
       ],
       "compatibility": ["iOS 14+", "Android 10+"],
-      "dimensions": "155 x 150 x 45 mm",
-      "weight": "45g"
+      "dimensions": "164 x 158.5 x 48.3 mm",
+      "weight": "44g"
     },
     "highlights": [
       "Integrated AI Voice Assistant (ChatGPT/Gemini supported)",
@@ -548,10 +548,10 @@
     ],
     "specifications": {
       "display": "Micro-OLED Heads-up Display",
-      "processor": "Qualcomm Snapdragon AR2 Gen 1",
+      "processor": "Allwinner V821 chipset",
       "battery": "150mAh, up to 6 hours continuous use",
-      "waterResistance": "IPX4 (Splash resistant)",
-      "connectivity": ["Bluetooth 5.3", "Wi-Fi 6"],
+      "waterResistance": "IP54 (Splash resistant)",
+      "connectivity": ["Bluetooth 5.4 & 3.0", "Wi-Fi 6"],
       "sensors": [
         "Touch Sensor",
         "Accelerometer",
@@ -559,15 +559,17 @@
         "Proximity Sensor"
       ],
       "compatibility": ["iOS 14+", "Android 10+"],
-      "dimensions": "155 x 150 x 45 mm",
-      "weight": "45g"
+      "dimensions": "164 x 158.5 x 48.3 mm",
+      "weight": "44g"
     },
     "highlights": [
-      "Integrated AI Voice Assistant (ChatGPT/Gemini supported)",
-      "Open-ear directional audio system",
+      "Integrated AI Voice Assistant (ChatGPT/DOUBAO supported)",
+      "Featuring 'Black Tech' dual-microphone arrays",
       "Real-time translation and navigation",
       "Hands-free calling and media control",
-      "Blue light filtering lenses"
+      "Capture life from your perspective with a Sony 8MP",
+      "Activate voice assistant by saying 'Hey Cyan'",
+      "High-fidelity voice recording and seamless Bluetooth calling"
     ],
     "variants": [
       {
