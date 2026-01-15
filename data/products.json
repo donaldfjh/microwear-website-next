@@ -564,10 +564,10 @@
     },
     "highlights": [
       "Integrated AI Voice Assistant (ChatGPT/DOUBAO supported)",
-      "Featuring 'Black Tech' dual-microphone arrays",
+      "First-person video recording glasses supplier",
       "Real-time translation and navigation",
       "Hands-free calling and media control",
-      "Capture life from your perspective with a Sony 8MP",
+      "Sony IMX219 smart glasses factory",
       "Activate voice assistant by saying 'Hey Cyan'",
       "High-fidelity voice recording and seamless Bluetooth calling"
     ],
@@ -587,6 +587,64 @@
       "Hands-free Calling",
       "Voice Control",
       "Navigation",
+      "Translation"
+    ],
+    "category": "AI Glasses"
+  },
+  {
+    "id": "mw-ai-glasses-4",
+    "name": "Microwear AI 4 Smart Glasses",
+    "description": "Next-generation smart glasses with integrated AI assistant",
+    "price": 50,
+    "images": [
+      "/images/AI_4/01.webp",
+      "/images/AI_4/02.webp",
+      "/images/AI_4/03.webp",
+      "/images/AI_4/08.webp",
+      "/images/AI_4/09.webp",
+      "/images/AI_4/10.webp",
+      "/images/AI_4/11.webp"
+    ],
+    "specifications": {
+      "display": "Micro-OLED Heads-up Display",
+      "processor": "Allwinner V821 chipset",
+      "battery": "220mAh, can standby 39 days",
+      "waterResistance": "IP54 (Splash resistant)",
+      "connectivity": ["Bluetooth 6.0 & 3.0", "Wi-Fi 6"],
+      "sensors": [
+        "Touch Sensor",
+        "Accelerometer",
+        "Gyroscope",
+        "Proximity Sensor"
+      ],
+      "compatibility": ["iOS 14+", "Android 10+"],
+      "dimensions": "160.8 x 151 x 44 mm",
+      "weight": "30g"
+    },
+    "highlights": [
+      "Integrated AI Voice Assistant (ChatGPT/DOUBAO supported)",
+      "Lightweight smart glasses 38g manufacturer",
+      "Real-time translation and navigation",
+      "Hands-free calling and media control",
+      "Voice cencelation",
+      "Activate voice assistant by saying 'Hey XiaoJie'",
+      "High-fidelity voice recording and seamless Bluetooth calling"
+    ],
+    "variants": [
+      {
+        "id": "mw-ai-glasses-black",
+        "name": "Carbon Black",
+        "price": 50,
+        "color": "Black",
+        "bandMaterial": "TR90 Polymer",
+        "image": "/images/AI_4/12.webp"
+      }
+    ],
+    "features": [
+      "AI Assistant",
+      "Open-ear Audio",
+      "Hands-free Calling",
+      "Voice Control",
       "Translation"
     ],
     "category": "AI Glasses"
