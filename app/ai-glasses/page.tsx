@@ -38,13 +38,16 @@ export default function AIGlassesPage() {
                   <div className="usp-item">
                     <h3>38g Lightweight</h3>
                     <p>
-                      "Air-Like" wearing experience with medical-grade
+                      &quot;Air-Like&quot; wearing experience with medical-grade
                       materials.
                     </p>
                   </div>
                   <div className="usp-item">
                     <h3>ChatGPT Integrated</h3>
-                    <p>Voice wake-up "Xiao Jie" for instant AI assistance.</p>
+                    <p>
+                      Voice wake-up &quot;Xiao Jie&quot; for instant AI
+                      assistance.
+                    </p>
                   </div>
                   <div className="usp-item">
                     <h3>11h Battery</h3>
