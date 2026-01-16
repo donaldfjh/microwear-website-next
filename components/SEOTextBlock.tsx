@@ -1,7 +1,11 @@
 import React from "react";
 import "./SEOTextBlock.css";
 
-export const SEOTextBlock: React.FC = () => {
+interface SEOTextBlockProps {
+  category?: string;
+}
+
+export const SEOTextBlock: React.FC<SEOTextBlockProps> = ({ category }) => {
   return (
     <section className="seo-text-block">
       <div className="seo-text-container">
