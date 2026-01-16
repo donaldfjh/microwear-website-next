@@ -39,6 +39,17 @@
   letter-spacing: 1px;
 }
 
+.product-title-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  transition: opacity 0.3s ease;
+}
+
+.product-title-link:hover {
+  opacity: 0.8;
+}
+
 h2 {
   font-size: 3.5rem;
   font-weight: 800;
@@ -102,7 +113,7 @@ h2 {
   width: 100%;
   height: auto;
   object-fit: contain;
-  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.1));
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.1));
 }
 
 .tech-specs-mini {
@@ -182,7 +193,7 @@ h2 {
 
 .section-dark .btn-outline-dark:hover {
   border-color: #fff;
-  background-color: rgba(255,255,255,0.05);
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 .section-dark .product-image {
@@ -212,7 +223,7 @@ h2 {
   background: #fff;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 .comparison-table th,
@@ -294,7 +305,7 @@ h2 {
   .cta-group {
     justify-content: center;
   }
-  
+
   .trust-grid {
     grid-template-columns: repeat(2, 1fr);
   }

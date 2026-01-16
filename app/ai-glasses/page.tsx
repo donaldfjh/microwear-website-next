@@ -31,7 +31,12 @@ export default function AIGlassesPage() {
             <div className="section-content">
               <div className="text-block">
                 <span className="badge-new">New Release</span>
-                <h2>W Ai 4 AI Voice Glasses</h2>
+                <Link
+                  href="/products/mw-ai-glasses-4"
+                  className="product-title-link"
+                >
+                  <h2>W Ai 4 AI Voice Glasses</h2>
+                </Link>
                 <p className="subtitle">The Invisible Assistant. Only 38g.</p>
 
                 <div className="usp-grid">
@@ -57,30 +62,32 @@ export default function AIGlassesPage() {
 
                 <div className="cta-group">
                   <Link
-                    href="/contact?subject=Inquiry for W Ai 4 Samples"
+                    href="/products/mw-ai-glasses-4"
                     className="btn btn-primary"
                   >
-                    Inquire for Samples
+                    View Details
                   </Link>
                   <Link
-                    href="/contact?subject=Request W Ai 4 Specs"
+                    href="/contact?subject=Inquiry for W Ai 4 Samples"
                     className="btn btn-outline"
                   >
-                    Download OEM Specs
+                    Inquire for Samples
                   </Link>
                 </div>
               </div>
 
               <div className="image-block">
                 <div className="image-wrapper">
-                  <Image
-                    src="/images/glasses/glasses1.webp"
-                    alt="W Ai 4 Lightweight AI Glasses"
-                    width={600}
-                    height={400}
-                    className="product-image"
-                    priority
-                  />
+                  <Link href="/products/mw-ai-glasses-4">
+                    <Image
+                      src="/images/glasses/glasses1.webp"
+                      alt="W Ai 4 Lightweight AI Glasses"
+                      width={600}
+                      height={400}
+                      className="product-image"
+                      priority
+                    />
+                  </Link>
                 </div>
                 <div className="tech-specs-mini">
                   <span>
@@ -103,7 +110,12 @@ export default function AIGlassesPage() {
             <div className="section-content reverse">
               <div className="text-block">
                 <span className="badge-pro">Professional Series</span>
-                <h2>W AI 3 Camera Glasses</h2>
+                <Link
+                  href="/products/mw-ai-glasses-pro"
+                  className="product-title-link"
+                >
+                  <h2>W AI 3 Camera Glasses</h2>
+                </Link>
                 <p className="subtitle">Visual Creator. Sony IMX219 Sensor.</p>
 
                 <div className="usp-grid">
@@ -127,29 +139,31 @@ export default function AIGlassesPage() {
 
                 <div className="cta-group">
                   <Link
-                    href="/contact?subject=Quote for W AI 3"
+                    href="/products/mw-ai-glasses-pro"
                     className="btn btn-primary-dark"
                   >
-                    Get Quote
+                    View Details
                   </Link>
                   <Link
-                    href="/contact?subject=Demo Video W AI 3"
+                    href="/contact?subject=Quote for W AI 3"
                     className="btn btn-outline-dark"
                   >
-                    Watch Demo Video
+                    Get Quote
                   </Link>
                 </div>
               </div>
 
               <div className="image-block">
                 <div className="image-wrapper">
-                  <Image
-                    src="/images/AI_PRO/Pro_3.webp"
-                    alt="W AI 3 Camera Glasses"
-                    width={600}
-                    height={400}
-                    className="product-image"
-                  />
+                  <Link href="/products/mw-ai-glasses-pro">
+                    <Image
+                      src="/images/AI_PRO/Pro_3.webp"
+                      alt="W AI 3 Camera Glasses"
+                      width={600}
+                      height={400}
+                      className="product-image"
+                    />
+                  </Link>
                 </div>
                 <div className="tech-specs-mini">
                   <span>

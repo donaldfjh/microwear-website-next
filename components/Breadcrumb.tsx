@@ -7,6 +7,11 @@ interface BreadcrumbProps {
 }
 
 export const Breadcrumb: React.FC<BreadcrumbProps> = ({ product }) => {
+  const isAIGlasses = product.category === "AI Glasses";
+  const parentName = isAIGlasses ? "AI Glasses" : "Smart Watches";
+  const parentPath = isAIGlasses ? "/ai-glasses" : "/products";
+  const baseUrl = "https://microwear.info";
+
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -15,19 +20,19 @@ export const Breadcrumb: React.FC<BreadcrumbProps> = ({ product }) => {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://microwear.info/",
+        item: `${baseUrl}/`,
       },
       {
         "@type": "ListItem",
         position: 2,
-        name: "Smart Watches",
-        item: "https://microwear.info/products",
+        name: parentName,
+        item: `${baseUrl}${parentPath}`,
       },
       {
         "@type": "ListItem",
         position: 3,
         name: product.name,
-        item: `https://microwear.info/products/${product.id}`,
+        item: `${baseUrl}/products/${product.id}`,
       },
     ],
   };
@@ -43,8 +48,8 @@ export const Breadcrumb: React.FC<BreadcrumbProps> = ({ product }) => {
             {" "}
             ›{" "}
           </span>
-          <Link href="/products" className="breadcrumb-link">
-            Products
+          <Link href={parentPath} className="breadcrumb-link">
+            {parentName}
           </Link>
           <span className="breadcrumb-separator" aria-hidden="true">
             {" "}
