@@ -7,7 +7,7 @@ interface SEOTextBlockProps {
 
 export const SEOTextBlock: React.FC<SEOTextBlockProps> = ({ category }) => {
   return (
-    <section className="seo-text-block">
+    <section className={`seo-text-block ${category ? `seo-${category}` : ""}`}>
       <div className="seo-text-container">
         <h2 className="seo-text-title">
           Your Trusted Smart Watch Manufacturer & OEM Partner
