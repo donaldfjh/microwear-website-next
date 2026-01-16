@@ -50,7 +50,7 @@ export const Navigation: React.FC = () => {
       if (pathname === "/ai-glasses") {
         return false;
       }
-      
+
       // If viewing an AI Glasses product detail (based on ID convention), don't highlight Smart Watches
       if (pathname.includes("/products/mw-ai-glasses")) {
         return false;
@@ -61,10 +61,10 @@ export const Navigation: React.FC = () => {
         return false;
       }
     }
-    
+
     // Highlight AI Glasses tab when viewing AI Glasses product details
     if (path === "/ai-glasses") {
-       if (pathname.includes("/products/mw-ai-glasses")) {
+      if (pathname.includes("/products/mw-ai-glasses")) {
         return true;
       }
     }

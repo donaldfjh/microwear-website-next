@@ -22,8 +22,67 @@ export const metadata: Metadata = {
 };
 
 export default function AIGlassesPage() {
+  const productSchema = {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    name: "Microwear W Ai 4 Smart Glasses",
+    image: [
+      "https://microwear.info/images/AI_4/01.webp",
+      "https://microwear.info/images/AI_4/02.webp",
+    ],
+    description:
+      "Ultra-lightweight 38g AI smart glasses with ChatGPT integration and 11-hour battery life. Featuring medical-grade ergonomic design.",
+    brand: {
+      "@type": "Brand",
+      name: "Microwear",
+    },
+    manufacturer: {
+      "@type": "Organization",
+      name: "NJY Technology Co., Ltd",
+      foundingDate: "2008",
+    },
+    offers: {
+      "@type": "Offer",
+      url: "https://microwear.info/products/mw-ai-glasses-4",
+      priceCurrency: "USD",
+      price: "0.00",
+      itemCondition: "https://schema.org/NewCondition",
+      availability: "https://schema.org/InStock",
+      seller: {
+        "@type": "Organization",
+        name: "NJY Technology",
+      },
+    },
+    additionalProperty: [
+      {
+        "@type": "PropertyValue",
+        name: "Weight",
+        value: "38g",
+      },
+      {
+        "@type": "PropertyValue",
+        name: "AI Model",
+        value: "ChatGPT & Tongyi",
+      },
+      {
+        "@type": "PropertyValue",
+        name: "Chipset",
+        value: "JL7012A6 (160MHz)",
+      },
+      {
+        "@type": "PropertyValue",
+        name: "Battery Life",
+        value: "11 Hours Music Playback",
+      },
+    ],
+  };
+
   return (
     <div className="ai-glasses-landing">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+      />
       {/* Section A: W Ai 4 (White/Minimalist) */}
       <section className="product-section section-white" id="w-ai-4">
         <div className="container">
