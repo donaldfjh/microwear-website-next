@@ -7,7 +7,6 @@ import { useComparison } from "@/contexts/ComparisonContext";
 import { useToast } from "@/contexts/ToastContext";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { ProductSpecs } from "@/components/ProductSpecs";
-import { QA } from "@/components/QA";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import type { Product, ProductVariant } from "@/types/product";
 
