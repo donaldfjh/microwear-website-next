@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { QA } from "@/components/QA";
 import type { Metadata } from "next";
 import "./page.css";
 
@@ -76,6 +77,27 @@ export default function AIGlassesPage() {
       },
     ],
   };
+
+  const aiFaqItems = [
+    {
+      id: 1,
+      question: "What is the lightest AI smart glass for OEM?",
+      answer:
+        'The Microwear W Ai 4 is currently one of the market leaders, weighing only 38g. It uses nano-injection molding to achieve an "air-like" wearing experience suitable for 8+ hours of use.',
+    },
+    {
+      id: 2,
+      question: "Can Microwear W AI 3 record first-person video?",
+      answer:
+        "Yes. The W AI 3 features a Sony IMX219 (8MP) sensor with EIS neural-network stabilization. It supports 1200p video recording at 30fps, ideal for content creation.",
+    },
+    {
+      id: 3,
+      question: "Is NJY Technology a factory or trading company?",
+      answer:
+        "NJY Technology is a manufacturer established in 2008 with 450+ employees and over 300 core patents. We provide OEM/ODM services for global brands.",
+    },
+  ];
 
   return (
     <div className="ai-glasses-landing">
@@ -298,6 +320,13 @@ export default function AIGlassesPage() {
           </ScrollReveal>
         </div>
       </section>
+
+      {/* FAQ Section (GEO Optimized) */}
+      <QA
+        items={aiFaqItems}
+        title="Common Questions (B2B)"
+        subtitle="Frequently asked questions about our AI Smart Glasses OEM services"
+      />
 
       {/* Trust & Factory Info */}
       <section className="trust-section">

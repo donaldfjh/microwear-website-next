@@ -47,20 +47,28 @@ const qaData: QAItem[] = [
   },
 ];
 
-export const QA: React.FC = () => {
+export interface QAProps {
+  items?: QAItem[];
+  title?: string;
+  subtitle?: string;
+}
+
+export const QA: React.FC<QAProps> = ({ 
+  items = qaData, 
+  title = "Smart Watch Frequently Asked Questions", 
+  subtitle = "Everything you need to know about MicroWear smartwatches" 
+}) => {
   return (
     <section className="qa-section">
       <div className="qa-container">
         <ScrollReveal>
-          <h2 className="qa-title">Smart Watch Frequently Asked Questions</h2>
-          <p className="qa-subtitle">
-            Everything you need to know about MicroWear smartwatches
-          </p>
+          <h2 className="qa-title">{title}</h2>
+          {subtitle && <p className="qa-subtitle">{subtitle}</p>}
         </ScrollReveal>
 
         <div className="qa-grid">
-          {qaData.map((item, index) => (
-            <ScrollReveal key={item.id} delay={index * 0.1}>
+          {items.map((item, index) => (
+            <ScrollReveal key={item.id || index} delay={index * 0.1}>
               <div className="qa-card">
                 <h3 className="qa-question">{item.question}</h3>
                 <p className="qa-answer">{item.answer}</p>
@@ -74,7 +82,7 @@ export const QA: React.FC = () => {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "FAQPage",
-              mainEntity: qaData.map((q) => ({
+              mainEntity: items.map((q) => ({
                 "@type": "Question",
                 name: q.question,
                 acceptedAnswer: { "@type": "Answer", text: q.answer },
