@@ -14,7 +14,8 @@ import type { Metadata } from "next";
 import "./HomePage.css";
 
 export const metadata: Metadata = {
-  title: "Microwear - Your Premier Partner for Custom Smart Wearables. 10 Years OEM Experience | <24h Prototyping | Defect Rate <0.1%",
+  title:
+    "Microwear - Your Premier Partner for Custom Smart Wearables. 10 Years OEM Experience | <24h Prototyping | Defect Rate <0.1%",
   description:
     "Leading smart watch manufacturer Microwear offers premium OEM/ODM wearable solutions. ISO-certified factory, wholesale smartwatches, health trackers, and GPS sports watches for global brands.",
   alternates: {
@@ -37,6 +38,11 @@ export default async function HomePage() {
   const featuredProducts = products
     .filter((p) => p.category !== "AI Glasses")
     .slice(0, 6);
+
+  // Get AI Glasses for homepage display
+  const featuredAIGlasses = products
+    .filter((p) => p.category === "AI Glasses")
+    .slice(0, 3);
 
   return (
     <div className="home-page">
@@ -80,6 +86,34 @@ export default async function HomePage() {
           </ScrollReveal>
         </div>
       </section>
+
+      {/* AI Glasses Section */}
+      {featuredAIGlasses.length > 0 && (
+        <section className="featured-products-section ai-glasses-home-section">
+          <div className="featured-products-container">
+            <ScrollReveal>
+              <h2 className="featured-products-title">
+                Next-Gen AI Smart Glasses
+              </h2>
+              <p className="section-subtitle">
+                Merge digital and physical worlds with our advanced AR wearables
+              </p>
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.2}>
+              <HomeProductGrid products={featuredAIGlasses} />
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.3}>
+              <div className="view-all-container">
+                <Link href="/ai-glasses" className="view-all-link">
+                  View All AI Glasses
+                </Link>
+              </div>
+            </ScrollReveal>
+          </div>
+        </section>
+      )}
 
       <ScrollReveal>
         <WhyChooseUs />
