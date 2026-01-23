@@ -46,4 +46,8 @@ export interface Product {
   category: string;
   oemOptions?: ProductOEMOptions;
   distributorUSPs?: string[];
+  useCase?: {
+    title: string;
+    content: string;
+  };
 }

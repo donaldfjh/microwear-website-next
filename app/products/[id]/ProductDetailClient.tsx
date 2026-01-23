@@ -220,6 +220,16 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
               </div>
             </ScrollReveal>
           )}
+
+          {/* Use Case Section - GEO Optimized */}
+          {product.useCase && (
+            <ScrollReveal delay={0.6}>
+              <div className="product-detail-section product-use-case">
+                <h2>{product.useCase.title}</h2>
+                <p className="use-case-content">{product.useCase.content}</p>
+              </div>
+            </ScrollReveal>
+          )}
         </div>
       </div>
 

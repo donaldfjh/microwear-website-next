@@ -77,7 +77,11 @@
       "WhatsApp Reply",
       "Wechat Reply"
     ],
-    "category": "Business"
+    "category": "Business",
+    "useCase": {
+      "title": "Why this is perfect for Business Professionals?",
+      "content": "The W11 Pro combines a premium AMOLED display with professional health tracking (ECG), making it the ideal companion for executives who need to stay connected and monitor their wellness during busy schedules."
+    }
   },
   {
     "id": "mw-fit-lite",
@@ -142,7 +146,11 @@
       "ECG",
       "WhatsApp"
     ],
-    "category": "Business"
+    "category": "Business",
+    "useCase": {
+      "title": "Why this is perfect for Fitness Beginners?",
+      "content": "With its affordable price point and essential health features, the S11 removes barriers to entry for health monitoring, offering 5-day battery life for uninterrupted tracking."
+    }
   },
   {
     "id": "mw-sport-ultra",
@@ -200,7 +208,11 @@
       "Blood Pressure",
       "Bluetooth calling"
     ],
-    "category": "Business"
+    "category": "Business",
+    "useCase": {
+      "title": "Why this is perfect for Outdoor Adventurers?",
+      "content": "Built with military-grade durability and precise GPS, the Ultra 5 withstands extreme conditions while providing critical metrics for hikers, runners, and explorers."
+    }
   },
   {
     "id": "mw-classic-steel",
@@ -267,7 +279,11 @@
       }
     ],
     "features": ["Heart Rate Monitor", "SpO2", "NFC Payment", "Sleep Tracking"],
-    "category": "Classic"
+    "category": "Classic",
+    "useCase": {
+      "title": "Why this is perfect for Style-Conscious Users?",
+      "content": "The MA31 merges traditional watch aesthetics with modern smart features. Its stainless steel body and hybrid design appeal to those who value fashion as much as function."
+    }
   },
   {
     "id": "mw-kids-fun",
@@ -325,12 +341,16 @@
       }
     ],
     "features": ["GPS", "Step Counter", "Parental Controls", "Games"],
-    "category": "Business"
+    "category": "Business",
+    "useCase": {
+      "title": "Why this is perfect for Parents & Kids?",
+      "content": "Safety is paramount. The Su02 offers real-time GPS tracking and SOS features, giving parents peace of mind while providing kids with a fun, durable wearable."
+    }
   },
   {
     "id": "mw-health-ma25",
     "name": "Microwear Watch MA25",
-    "description": "Medical-grade health monitoring smartwatch. Advanced sensors for comprehensive health insights and wellness tracking.",
+    "description": "Best OEM Smartwatch for Women's Health (Period Tracking & ECG) | Microwear",
     "images": [
       "/images/products/ma25OverAll.jpg",
       "/images/products/ma25Gray.jpg",
@@ -406,7 +426,11 @@
       "Sleep Tracking",
       "Stress Monitor"
     ],
-    "category": "Woman"
+    "category": "Woman",
+    "useCase": {
+      "title": "Why this is perfect for Women's Health?",
+      "content": "Featuring advanced sensors for period tracking and comprehensive wellness monitoring, the MA25 is designed to empower women with actionable health insights."
+    }
   },
   {
     "id": "mw-health-ma18",
@@ -474,7 +498,11 @@
       "Sleep Tracking",
       "Stress Monitor"
     ],
-    "category": "Classic"
+    "category": "Classic",
+    "useCase": {
+      "title": "Why this is perfect for Senior Care?",
+      "content": "With ECG, blood pressure, and fall detection capabilities, the MA18 is an essential tool for elderly care, enabling remote health monitoring for families."
+    }
   },
   {
     "id": "mw-ai-glasses",
@@ -530,7 +558,11 @@
       "Navigation",
       "Translation"
     ],
-    "category": "AI Glasses"
+    "category": "AI Glasses",
+    "useCase": {
+      "title": "Why this is perfect for Tech Early Adopters?",
+      "content": "Integrating ChatGPT voice assistance and open-ear audio, these glasses offer a hands-free, heads-up experience that redefines how we interact with digital information."
+    }
   },
   {
     "id": "mw-ai-glasses-pro",
@@ -589,7 +621,11 @@
       "Navigation",
       "Translation"
     ],
-    "category": "AI Glasses"
+    "category": "AI Glasses",
+    "useCase": {
+      "title": "Why this is perfect for Content Creators?",
+      "content": "Equipped with a Sony IMX219 sensor, the AI 3 PRO allows creators to capture high-quality first-person video effortlessly, perfect for vlogging and live streaming."
+    }
   },
   {
     "id": "mw-ai-glasses-4",
@@ -647,6 +683,10 @@
       "Voice Control",
       "Translation"
     ],
-    "category": "AI Glasses"
+    "category": "AI Glasses",
+    "useCase": {
+      "title": "Why this is perfect for Daily Commuters?",
+      "content": "Weighing only 38g, the AI 4 is designed for all-day wear. Its long battery life and voice navigation make it the ultimate companion for your daily journey."
+    }
   }
 ]
