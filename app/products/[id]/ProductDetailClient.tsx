@@ -7,6 +7,7 @@ import { useComparison } from "@/contexts/ComparisonContext";
 import { useToast } from "@/contexts/ToastContext";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { ProductSpecs } from "@/components/ProductSpecs";
+import { ProductFAQ } from "@/components/ProductFAQ";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import type { Product, ProductVariant } from "@/types/product";
 
@@ -236,6 +237,11 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
       {/* Specifications Section - Replaced with new ProductSpecs component */}
       <ScrollReveal delay={0.2}>
         <ProductSpecs product={product} />
+      </ScrollReveal>
+
+      {/* Technical FAQ Section */}
+      <ScrollReveal delay={0.3}>
+        <ProductFAQ />
       </ScrollReveal>
     </>
   );
