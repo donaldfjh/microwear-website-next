@@ -14,16 +14,17 @@ import "./HomePage.css";
 
 export const metadata: Metadata = {
   title:
-    "Microwear - Your Premier Partner for Custom Smart Wearables. 10 Years OEM Experience | <24h Prototyping | Defect Rate <0.1%",
+    "China Top Smartwatch & AI Glasses OEM Factory | 24h Prototyping | Microwear",
   description:
-    "Leading smart watch manufacturer Microwear offers premium OEM/ODM wearable solutions. ISO-certified factory, wholesale smartwatches, health trackers, and GPS sports watches for global brands.",
+    "Looking for reliable wearable tech supplier? Microwear offers ISO-certified smartwatch & AI glasses OEM/ODM services. Supports SDK, custom logo & app. Get a Free Quote & Sample today!",
   alternates: {
     canonical: "https://microwear.info/",
   },
   openGraph: {
-    title: "Microwear - Professional Smart Watch Manufacturer",
+    title:
+      "China Top Smartwatch & AI Glasses OEM Factory | 24h Prototyping | Microwear",
     description:
-      "Discover premium smartwatches and OEM solutions at Microwear.",
+      "Looking for reliable wearable tech supplier? Microwear offers ISO-certified smartwatch & AI glasses OEM/ODM services. Supports SDK, custom logo & app. Get a Free Quote & Sample today!",
     url: "https://microwear.info/",
     type: "website",
   },

@@ -3,16 +3,16 @@ import { ProductCatalog } from "./ProductCatalog";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Products - MicroWear Smartwatches",
+  title: "Custom AMOLED Smart Watch Manufacturer (Bulk & Wholesale) | MOQ 500",
   description:
-    "Browse our collection of premium smartwatches. Find the perfect smartwatch with advanced features, elegant design, and cutting-edge technology.",
+    "Looking for reliable wearable tech supplier? Microwear offers ISO-certified smartwatch & AI glasses OEM/ODM services. Supports SDK, custom logo & app. Get a Free Quote & Sample today!",
   alternates: {
     canonical: "https://microwear.info/products",
   },
   openGraph: {
-    title: "Products - MicroWear Smartwatches",
+    title: "Custom AMOLED Smart Watch Manufacturer (Bulk & Wholesale) | MOQ 500",
     description:
-      "Browse our collection of premium smartwatches with advanced features and elegant design.",
+      "Looking for reliable wearable tech supplier? Microwear offers ISO-certified smartwatch & AI glasses OEM/ODM services. Supports SDK, custom logo & app. Get a Free Quote & Sample today!",
     type: "website",
   },
 };
