@@ -44,7 +44,7 @@ export default function AIGlassesPage() {
     },
     offers: {
       "@type": "Offer",
-      url: "https://microwear.info/products/mw-ai-glasses-4",
+      url: "https://microwear.info/products/chatgpt-compatible-smart-glasses-anti-leakage-ai4",
       priceCurrency: "USD",
       price: "0.00",
       itemCondition: "https://schema.org/NewCondition",
@@ -113,7 +113,7 @@ export default function AIGlassesPage() {
               <div className="text-block">
                 <span className="badge-new">New Release</span>
                 <Link
-                  href="/products/mw-ai-glasses-4"
+                  href="/products/chatgpt-compatible-smart-glasses-anti-leakage-ai4"
                   className="product-title-link"
                 >
                   <h2>W Ai 4 AI Voice Glasses</h2>
@@ -143,7 +143,7 @@ export default function AIGlassesPage() {
 
                 <div className="cta-group">
                   <Link
-                    href="/products/mw-ai-glasses-4"
+                    href="/products/chatgpt-compatible-smart-glasses-anti-leakage-ai4"
                     className="btn btn-primary"
                   >
                     View Details
@@ -159,7 +159,7 @@ export default function AIGlassesPage() {
 
               <div className="image-block">
                 <div className="image-wrapper">
-                  <Link href="/products/mw-ai-glasses-4">
+                  <Link href="/products/chatgpt-compatible-smart-glasses-anti-leakage-ai4">
                     <Image
                       src="/images/glasses/glasses1.webp"
                       alt="W Ai 4 Lightweight AI Glasses"
@@ -192,7 +192,7 @@ export default function AIGlassesPage() {
               <div className="text-block">
                 <span className="badge-pro">Professional Series</span>
                 <Link
-                  href="/products/mw-ai-glasses-pro"
+                  href="/products/ray-ban-meta-alternative-manufacturer-ai3-pro"
                   className="product-title-link"
                 >
                   <h2>W AI 3 Camera Glasses</h2>
@@ -220,7 +220,7 @@ export default function AIGlassesPage() {
 
                 <div className="cta-group">
                   <Link
-                    href="/products/mw-ai-glasses-pro"
+                    href="/products/ray-ban-meta-alternative-manufacturer-ai3-pro"
                     className="btn btn-primary-dark"
                   >
                     View Details
@@ -236,7 +236,7 @@ export default function AIGlassesPage() {
 
               <div className="image-block">
                 <div className="image-wrapper">
-                  <Link href="/products/mw-ai-glasses-pro">
+                  <Link href="/products/ray-ban-meta-alternative-manufacturer-ai3-pro">
                     <Image
                       src="/images/AI_PRO/Pro_3.webp"
                       alt="W AI 3 Camera Glasses"
