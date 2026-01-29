@@ -27,7 +27,7 @@ For global importers and brand owners entering the smart eyewear market, the big
 
 If smart glasses sound like tiny loudspeakers strapped to your head, they fail as a consumer product.
 
-At **Microwear**, we understand that privacy isn't just a feature; it's a necessity. That’s why our latest AI Smart Glasses (Series AI 3 & AI 4) utilize advanced Directional Audio Technology to solve this pain point. Here is how we did it.
+At **Microwear**, we understand that privacy isn't just a feature; it's a necessity. That’s why our latest AI Smart Glasses ([Series AI 3](/products/smart-audio-glasses-oem-blue-light-blocking-ai3) & [AI 4](/products/chatgpt-compatible-smart-glasses-anti-leakage-ai4)) utilize advanced Directional Audio Technology to solve this pain point. Here is how we did it.
 
 ## What is Directional Audio?
 
