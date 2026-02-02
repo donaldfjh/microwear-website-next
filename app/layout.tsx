@@ -4,6 +4,7 @@ import "./globals.css";
 import { Navigation } from "@/components/Navigation";
 import { FloatingContact } from "@/components/FloatingContact";
 import { FloatingComparisonBar } from "@/components/FloatingComparisonBar";
+import { DifyChatbot } from "@/components/DifyChatbot";
 import { ComparisonProvider } from "@/contexts/ComparisonContext";
 import { ToastProvider } from "@/contexts/ToastContext";
 
@@ -88,6 +89,7 @@ export default function RootLayout({
             {children}
             <FloatingContact />
             <FloatingComparisonBar />
+            <DifyChatbot />
           </ComparisonProvider>
         </ToastProvider>
       </body>
