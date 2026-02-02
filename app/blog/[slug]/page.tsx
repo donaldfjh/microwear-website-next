@@ -42,14 +42,15 @@ export async function generateMetadata({
   const canonicalUrl = `${baseUrl}/blog/${params.slug}`;
 
   return {
-    title: `${post.title} - MicroWear Blog`,
-    description: post.excerpt,
+    title: post.metaTitle || `${post.title} - MicroWear Blog`,
+    description: post.metaDescription || post.excerpt,
+    keywords: post.keywords,
     alternates: {
       canonical: canonicalUrl,
     },
     openGraph: {
-      title: post.title,
-      description: post.excerpt,
+      title: post.metaTitle || post.title,
+      description: post.metaDescription || post.excerpt,
       images: post.image ? [post.image] : [],
       url: canonicalUrl,
     },

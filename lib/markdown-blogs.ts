@@ -49,6 +49,9 @@ export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
       tags: data.tags || [],
       image: data.image || "/images/products/w11poverall.webp",
       readTime: data.readTime || "5 min read",
+      metaTitle: data.metaTitle,
+      metaDescription: data.metaDescription,
+      keywords: data.keywords,
     };
   } catch (error) {
     console.error(`Error reading post ${slug}:`, error);

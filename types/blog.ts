@@ -10,6 +10,9 @@ export interface BlogPost {
   tags: string[];
   image: string;
   readTime: string;
+  metaTitle?: string;
+  metaDescription?: string;
+  keywords?: string[];
 }
 
 export interface BlogCategory {
