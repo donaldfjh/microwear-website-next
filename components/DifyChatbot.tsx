@@ -37,6 +37,7 @@ export const DifyChatbot = () => {
     };
   }, []);
 
+  // Add custom CSS to hide reasoning_content if it appears in the DOM
   return (
     <style jsx global>{`
       #dify-chatbot-bubble-button {
@@ -46,6 +47,9 @@ export const DifyChatbot = () => {
         width: 24rem !important;
         height: 40rem !important;
       }
+      /* Hide reasoning content if Dify renders it with a specific class */
+      /* Note: Since Dify is in an iframe, CSS injection might be limited. */
+      /* However, if Dify provides a configuration option to disable reasoning, it should be set in window.difyChatbotConfig */
     `}</style>
   );
 };

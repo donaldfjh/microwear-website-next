@@ -1,0 +1,63 @@
+{
+  "keywords": [
+    {
+      "id": 1,
+      "keyword": "AI glasses OEM",
+      "category": "AI Glasses",
+      "priority": "high",
+      "targetPosition": 10
+    },
+    {
+      "id": 2,
+      "keyword": "smart glasses manufacturer",
+      "category": "AI Glasses",
+      "priority": "high",
+      "targetPosition": 10
+    },
+    {
+      "id": 3,
+      "keyword": "AI smart glasses",
+      "category": "AI Glasses",
+      "priority": "medium",
+      "targetPosition": 20
+    },
+    {
+      "id": 4,
+      "keyword": "smart eyewear OEM",
+      "category": "AI Glasses",
+      "priority": "medium",
+      "targetPosition": 20
+    },
+    {
+      "id": 5,
+      "keyword": "智能眼镜",
+      "category": "AI Glasses CN",
+      "priority": "high",
+      "targetPosition": 10
+    },
+    {
+      "id": 6,
+      "keyword": "smart watch OEM manufacturer",
+      "category": "Smart Watch",
+      "priority": "high",
+      "targetPosition": 10
+    },
+    {
+      "id": 7,
+      "keyword": "smartwatch factory China",
+      "category": "Smart Watch",
+      "priority": "medium",
+      "targetPosition": 20
+    },
+    {
+      "id": 8,
+      "keyword": "wearable technology manufacturer",
+      "category": "Smart Watch",
+      "priority": "low",
+      "targetPosition": 30
+    }
+  ],
+  "targetDomain": "microwear.info",
+  "monitorSchedule": "daily",
+  "reportPath": "/Users/donaldf/Desktop/website/nextjs-microwear/seo-reports/"
+}

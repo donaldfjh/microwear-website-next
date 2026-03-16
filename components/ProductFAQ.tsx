@@ -42,7 +42,8 @@ export const ProductFAQ = () => {
       category: "AI Privacy & Enterprise",
     },
     {
-      question: "Why do you use the Sony IMX219 sensor for the W AI 3 glasses?",
+      question:
+        "Why do you use the Sony IMX219 sensor for the W AI 3 glasses?",
       answer: (
         <>
           While many competitors use generic 2MP sensors, we chose the{" "}
@@ -80,7 +81,7 @@ export const ProductFAQ = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
-
+      
       <div className="product-faq-container">
         <h2 className="product-faq-title">
           Technical Support & Enterprise FAQ
