@@ -9,11 +9,17 @@ interface ContactPageProps {
 }
 
 export const metadata: Metadata = {
-  title: "Contact Us - MicroWear Smartwatches",
+  title: "Contact Microwear | Get Free Quote for OEM/ODM Smart Watch | Bulk Orders",
   description:
-    "Have a question or want to learn more about our smartwatches? Get in touch with the MicroWear team.",
+    "Contact Microwear for smartwatch OEM/ODM inquiries. MOQ 500pcs, free samples for qualified partners, 24h prototyping. Email: donaldfang@njytech.com.cn | WhatsApp: +852 6733 7121. Get your custom quote today!",
+  keywords: ["smartwatch OEM quote", "bulk order smartwatch", "contact manufacturer", "ODM inquiry", "wholesale smartwatch"],
   alternates: {
     canonical: "https://microwear.info/contact",
+  },
+  openGraph: {
+    title: "Contact Microwear | Get Free Quote for OEM/ODM Smart Watch",
+    description:
+      "Contact Microwear for smartwatch OEM/ODM inquiries. MOQ 500pcs, free samples, 24h prototyping.",
   },
 };
 
@@ -23,8 +29,69 @@ export default function ContactPage({ searchParams }: ContactPageProps) {
     ? decodeURIComponent(searchParams.subject)
     : "";
 
+  // JSON-LD Structured Data for ContactPoint and LocalBusiness
+  const contactSchema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Microwear",
+    "alternateName": "Shenzhen NJY Technology Co., Ltd",
+    "url": "https://microwear.info",
+    "logo": "https://microwear.info/logo.png",
+    "image": "https://microwear.info/images/factory.jpg",
+    "description": "Professional smartwatch OEM/ODM manufacturer with 15+ years experience",
+    "telephone": "+852 6733 7121",
+    "email": "donaldfang@njytech.com.cn",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "JiaDa R&D Building, North Hi-Tech Park, Nanshan District",
+      "addressLocality": "Shenzhen",
+      "postalCode": "518057",
+      "addressCountry": "CN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "22.5431",
+      "longitude": "114.0579"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    },
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+852 6733 7121",
+        "contactType": "sales",
+        "areaServed": "Global",
+        "availableLanguage": ["English", "Chinese"],
+        "contactOption": "TollFree"
+      },
+      {
+        "@type": "ContactPoint",
+        "email": "donaldfang@njytech.com.cn",
+        "contactType": "customer service",
+        "areaServed": "Global"
+      }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61578917438987",
+      "https://www.linkedin.com/in/donald-microwear/",
+      "https://twitter.com/microwear",
+      "https://instagram.com/microwear"
+    ],
+    "priceRange": "$$",
+    "paymentAccepted": ["T/T", "PayPal", "L/C", "Western Union"],
+    "currenciesAccepted": "USD"
+  };
+
   return (
     <div className="contact-page">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }}
+      />
       <div className="contact-container">
         <ScrollReveal>
           <div className="contact-header">

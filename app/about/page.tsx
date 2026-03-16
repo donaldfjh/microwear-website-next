@@ -5,22 +5,91 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import "./AboutPage.css";
 
 export const metadata: Metadata = {
-  title: "About Us - MicroWear Smartwatches",
+  title: "About Microwear | Smart Watch OEM/ODM Manufacturer Since 2008 | ISO9001 Factory",
   description:
-    "Learn about MicroWear, a modern high-tech enterprise focusing on the smart wearable industry. Discover our mission, values, and commitment to innovation in wearable technology.",
+    "Microwear is a leading smartwatch manufacturer with 15+ years experience. ISO9001 certified OEM/ODM factory with 300+ employees, 1000+ patents. Free samples, custom logo, SDK support. Partner with us for your wearable brand.",
+  keywords: ["smartwatch manufacturer", "OEM factory China", "ODM wearable tech", "Microwear factory", "ISO9001 certified", "custom smartwatch"],
   alternates: {
     canonical: "https://microwear.info/about",
   },
   openGraph: {
-    title: "About Us - MicroWear Smartwatches",
+    title: "About Microwear | Smart Watch OEM/ODM Manufacturer Since 2008 | ISO9001 Factory",
     description:
-      "Learn about MicroWear, a modern high-tech enterprise focusing on the smart wearable industry. Discover our mission, values, and commitment to innovation in wearable technology.",
+      "Microwear is a leading smartwatch manufacturer with 15+ years experience. ISO9001 certified OEM/ODM factory with 300+ employees, 1000+ patents.",
   },
 };
 
 export default function AboutPage() {
+  // JSON-LD Structured Data for Organization
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Microwear",
+    "alternateName": "Shenzhen NJY Technology Co., Ltd",
+    "url": "https://microwear.info",
+    "logo": "https://microwear.info/logo.png",
+    "description": "Leading smartwatch manufacturer with 15+ years experience, ISO9001 certified OEM/ODM factory",
+    "foundingDate": "2008",
+    "founders": [
+      {
+        "@type": "Person",
+        "name": "Microwear Team"
+      }
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "JiaDa R&D Building, North Hi-Tech Park, Nanshan District",
+      "addressLocality": "Shenzhen",
+      "postalCode": "518057",
+      "addressCountry": "CN"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+852 6733 7121",
+      "email": "donaldfang@njytech.com.cn",
+      "contactType": "sales",
+      "areaServed": "Global",
+      "availableLanguage": ["English", "Chinese"]
+    },
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61578917438987",
+      "https://www.linkedin.com/in/donald-microwear/",
+      "https://twitter.com/microwear",
+      "https://instagram.com/microwear"
+    ],
+    "numberOfEmployees": 300,
+    "knowsAbout": ["Smart Watch", "Wearable Technology", "OEM Manufacturing", "ODM Services"],
+    "award": "1000+ Patents",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Smart Watch Product Line",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Product",
+            "name": "OEM Smart Watch Manufacturing",
+            "description": "Custom smartwatch manufacturing with MOQ 500pcs"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Product",
+            "name": "ODM Design Services",
+            "description": "Custom design and development for wearable products"
+          }
+        }
+      ]
+    }
+  };
+
   return (
     <div className="about-page">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
       <div className="about-container">
         <ScrollReveal>
           <div className="about-header">
