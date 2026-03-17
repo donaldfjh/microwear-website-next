@@ -14,18 +14,18 @@ import "./HomePage.css";
 
 export const metadata: Metadata = {
   title:
-    "Microwear Smartwatch Manufacturer | OEM/ODM Factory | AI Glasses 2026",
+    "Microwear Smartwatch | OEM/ODM Manufacturer & Factory | AI Glasses 2026",
   description:
-    "Microwear is a leading smartwatch manufacturer with 10+ years experience. ISO9001 certified OEM/ODM factory for AI glasses & wearable tech. Free samples, 24h prototyping. Global shipping.",
-  keywords: ["microwear smartwatch", "smartwatch manufacturer", "OEM smart watch", "AI glasses factory", "wearable tech supplier", "China smartwatch factory"],
+    "Microwear smartwatch - leading OEM/ODM manufacturer with 10+ years experience. ISO9001 certified factory for smartwatches & AI glasses. Wholesale bulk orders, free samples, 24h prototyping. Global B2B shipping.",
+  keywords: ["microwear smartwatch", "microwear smartwatches", "smartwatch manufacturer", "OEM smart watch", "ODM smartwatch", "wholesale smartwatch", "bulk smartwatch orders", "AI glasses factory", "wearable tech supplier", "China smartwatch factory", "B2B smartwatch"],
   alternates: {
     canonical: "https://microwear.info/",
   },
   openGraph: {
     title:
-      "Microwear Smartwatch Manufacturer | OEM/ODM Factory | AI Glasses 2026",
+      "Microwear Smartwatch | OEM/ODM Manufacturer & Factory | AI Glasses 2026",
     description:
-      "Microwear is a leading smartwatch manufacturer with 10+ years experience. ISO9001 certified OEM/ODM factory for AI glasses & wearable tech. Free samples, 24h prototyping.",
+      "Microwear smartwatch - ISO9001 certified OEM/ODM manufacturer. 10+ years experience, wholesale bulk orders, free samples for B2B partners. 24h prototyping.",
     url: "https://microwear.info/",
     type: "website",
   },
@@ -74,7 +74,8 @@ export default async function HomePage() {
   const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": "Microwear Smart Watch",
+    "name": "Microwear Smartwatch",
+    "alternateName": "Microwear Smart Watch",
     "brand": {
       "@type": "Brand",
       "name": "Microwear"
@@ -82,10 +83,12 @@ export default async function HomePage() {
     "manufacturer": {
       "@type": "Organization",
       "name": "Microwear",
-      "url": "https://microwear.info"
+      "url": "https://microwear.info",
+      "description": "Professional Microwear smartwatch OEM/ODM manufacturer with 10+ years experience"
     },
-    "description": "ISO9001 certified smartwatch with 3-5 days battery life, IP68 waterproof, GPS tracking. OEM/ODM services available.",
+    "description": "Microwear smartwatch - ISO9001 certified OEM/ODM smartwatch manufacturer. Wholesale bulk orders, custom logo, SDK support. B2B pricing for qualified partners.",
     "category": "Smart Watch",
+    "keywords": "microwear smartwatch, OEM smartwatch, ODM smartwatch, wholesale smartwatch, bulk smartwatch orders, B2B smartwatch manufacturer",
     "offers": {
       "@type": "Offer",
       "url": "https://microwear.info/products",
@@ -94,7 +97,14 @@ export default async function HomePage() {
       "seller": {
         "@type": "Organization",
         "name": "Microwear"
-      }
+      },
+      "eligibleTransactionVolume": {
+        "@type": "PriceSpecification",
+        "minPrice": "15.00",
+        "maxPrice": "50.00",
+        "priceCurrency": "USD"
+      },
+      "businessFunction": "wholesale"
     },
     "additionalProperty": [
       {
@@ -115,7 +125,17 @@ export default async function HomePage() {
       {
         "@type": "PropertyValue",
         "name": "MOQ",
-        "value": "500 pcs"
+        "value": "200-500 pcs (negotiable for B2B)"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Lead Time",
+        "value": "7-15 days for samples, 20-30 days for bulk orders"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Customization",
+        "value": "OEM/ODM, custom logo, packaging, SDK"
       }
     ]
   };
