@@ -14,10 +14,10 @@ import "./HomePage.css";
 
 export const metadata: Metadata = {
   title:
-    "Microwear Smartwatch | OEM/ODM Manufacturer & Factory | AI Glasses 2026",
+    "Microwear Smartwatch Manufacturer | OEM/ODM Factory | Wholesale Bulk Orders 2026",
   description:
-    "Microwear smartwatch - leading OEM/ODM manufacturer with 10+ years experience. ISO9001 certified factory for smartwatches & AI glasses. Wholesale bulk orders, free samples, 24h prototyping. Global B2B shipping.",
-  keywords: ["microwear smartwatch", "microwear smartwatches", "smartwatch manufacturer", "OEM smart watch", "ODM smartwatch", "wholesale smartwatch", "bulk smartwatch orders", "AI glasses factory", "wearable tech supplier", "China smartwatch factory", "B2B smartwatch"],
+    "Microwear Smartwatch - ISO9001 OEM/ODM manufacturer since 2015. MOQ 200pcs, $15-50 wholesale pricing. Free samples, 7-15 day lead time. Custom logo & SDK. 500+ global B2B partners. Get quote now!",
+  keywords: ["microwear smartwatch", "microwear smartwatches", "smartwatch manufacturer", "OEM smart watch", "ODM smartwatch", "wholesale smartwatch", "bulk smartwatch orders", "AI glasses factory", "wearable tech supplier", "China smartwatch factory", "B2B smartwatch", "smartwatch OEM factory", "custom smartwatch"],
   alternates: {
     canonical: "https://microwear.info/",
   },
@@ -86,7 +86,7 @@ export default async function HomePage() {
       "url": "https://microwear.info",
       "description": "Professional Microwear smartwatch OEM/ODM manufacturer with 10+ years experience"
     },
-    "description": "Microwear smartwatch - ISO9001 certified OEM/ODM smartwatch manufacturer. Wholesale bulk orders, custom logo, SDK support. B2B pricing for qualified partners.",
+    "description": "Microwear Smartwatch - ISO9001 OEM/ODM manufacturer since 2015. MOQ 200pcs, $15-50 wholesale pricing. Free samples, 7-15 day lead time. Custom logo & SDK support. 500+ global B2B partners.",
     "category": "Smart Watch",
     "keywords": "microwear smartwatch, OEM smartwatch, ODM smartwatch, wholesale smartwatch, bulk smartwatch orders, B2B smartwatch manufacturer",
     "offers": {

@@ -3,10 +3,10 @@ import { ProductCatalog } from "./ProductCatalog";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Microwear Smartwatch Collection | OEM/ODM Wholesale & Bulk Orders | 2026",
+  title: "Microwear Smartwatch Catalog | OEM/ODM Wholesale | $15-50 Bulk Pricing 2026",
   description:
-    "Microwear smartwatch complete catalog - ISO9001 certified OEM/ODM manufacturer. Wholesale bulk orders, B2B pricing, custom logo, SDK support. MOQ 200pcs. Free samples for qualified partners. Global shipping.",
-  keywords: ["microwear smartwatch", "microwear smartwatches", "smartwatch collection", "OEM smart watch bulk", "wholesale smartwatch", "bulk smartwatch orders", "custom smartwatch manufacturer", "B2B smartwatch", "ODM smartwatch factory"],
+    "Microwear Smartwatch full catalog - ISO9001 OEM/ODM factory. MOQ 200pcs, wholesale $15-50. Custom logo, SDK, free samples. 7-15 day lead time. B2B pricing for global partners.",
+  keywords: ["microwear smartwatch", "microwear smartwatches", "smartwatch collection", "OEM smart watch bulk", "wholesale smartwatch", "bulk smartwatch orders", "custom smartwatch manufacturer", "B2B smartwatch", "ODM smartwatch factory", "smartwatch wholesale price"],
   alternates: {
     canonical: "https://microwear.info/products",
   },
