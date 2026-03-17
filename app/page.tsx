@@ -75,7 +75,7 @@ export default async function HomePage() {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "Microwear Smartwatch",
-    "alternateName": "Microwear Smart Watch",
+    "alternateName": ["Microwear Smart Watch", "microwear smartwatch", "Microwear OEM Smartwatch"],
     "brand": {
       "@type": "Brand",
       "name": "Microwear"
@@ -84,11 +84,11 @@ export default async function HomePage() {
       "@type": "Organization",
       "name": "Microwear",
       "url": "https://microwear.info",
-      "description": "Professional Microwear smartwatch OEM/ODM manufacturer with 10+ years experience"
+      "description": "Professional microwear smartwatch OEM/ODM manufacturer with 10+ years experience, ISO9001 certified factory"
     },
-    "description": "Microwear Smartwatch - ISO9001 OEM/ODM manufacturer since 2015. MOQ 200pcs, $15-50 wholesale pricing. Free samples, 7-15 day lead time. Custom logo & SDK support. 500+ global B2B partners.",
+    "description": "Microwear Smartwatch - ISO9001 OEM/ODM manufacturer since 2015. MOQ 200pcs, $15-50 wholesale pricing. Free samples, 7-15 day lead time. Custom logo & SDK support. 500+ global B2B partners. Bulk smartwatch orders welcome.",
     "category": "Smart Watch",
-    "keywords": "microwear smartwatch, OEM smartwatch, ODM smartwatch, wholesale smartwatch, bulk smartwatch orders, B2B smartwatch manufacturer",
+    "keywords": "microwear smartwatch, microwear smartwatches, OEM smartwatch, ODM smartwatch, wholesale smartwatch, bulk smartwatch orders, B2B smartwatch manufacturer, smartwatch factory China",
     "offers": {
       "@type": "Offer",
       "url": "https://microwear.info/products",
@@ -152,8 +152,8 @@ export default async function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedSchema) }}
       />
       <HeroSection
-        title="Professional Smart Watch Manufacturer & OEM/ODM Solutions"
-        subtitle="10 Years Experience | ISO9001 Certified | 500+ Global Partners"
+        title="Microwear Smartwatch Manufacturer | OEM/ODM Factory Direct"
+        subtitle="10 Years Experience | ISO9001 Certified | 500+ Global B2B Partners | Wholesale Bulk Orders"
         ctaText="Get Free Quote"
         ctaLink="/contact"
         secondaryCtaText="Download Catalog"
