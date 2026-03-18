@@ -112,6 +112,17 @@
   margin-bottom: 0;
 }
 
+/* Improve readability with better spacing */
+.article-content {
+  padding: 40px;
+}
+
+@media (min-width: 768px) {
+  .article-content {
+    padding: 60px;
+  }
+}
+
 /* Markdown Content Styles */
 .markdown-content h1,
 .markdown-content h2,
