@@ -75,7 +75,7 @@ export default async function HomePage() {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "Microwear Smartwatch",
-    "alternateName": ["Microwear Smart Watch", "microwear smartwatch", "Microwear OEM Smartwatch"],
+    "alternateName": ["Microwear Smart Watch", "microwear smartwatch", "Microwear OEM Smartwatch", "microwear smart watch manufacturer"],
     "brand": {
       "@type": "Brand",
       "name": "Microwear"
@@ -84,11 +84,11 @@ export default async function HomePage() {
       "@type": "Organization",
       "name": "Microwear",
       "url": "https://microwear.info",
-      "description": "Professional microwear smartwatch OEM/ODM manufacturer with 10+ years experience, ISO9001 certified factory"
+      "description": "Professional microwear smartwatch OEM/ODM manufacturer with 10+ years experience, ISO9001 certified factory specializing in microwear smartwatch bulk orders and wholesale B2B partnerships"
     },
-    "description": "Microwear Smartwatch - ISO9001 OEM/ODM manufacturer since 2015. MOQ 200pcs, $15-50 wholesale pricing. Free samples, 7-15 day lead time. Custom logo & SDK support. 500+ global B2B partners. Bulk smartwatch orders welcome.",
+    "description": "Microwear Smartwatch - ISO9001 OEM/ODM manufacturer since 2015. MOQ 200pcs, $15-50 wholesale pricing. Free samples, 7-15 day lead time. Custom logo & SDK support. 500+ global B2B partners. Bulk smartwatch orders welcome. Every microwear smartwatch features advanced health tracking, GPS, and long battery life.",
     "category": "Smart Watch",
-    "keywords": "microwear smartwatch, microwear smartwatches, OEM smartwatch, ODM smartwatch, wholesale smartwatch, bulk smartwatch orders, B2B smartwatch manufacturer, smartwatch factory China",
+    "keywords": "microwear smartwatch, microwear smartwatches, OEM smartwatch, ODM smartwatch, wholesale smartwatch, bulk smartwatch orders, B2B smartwatch manufacturer, smartwatch factory China, microwear smart watch OEM, microwear wearable technology",
     "offers": {
       "@type": "Offer",
       "url": "https://microwear.info/products",
@@ -152,7 +152,7 @@ export default async function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedSchema) }}
       />
       <HeroSection
-        title="Microwear Smartwatch Manufacturer | OEM/ODM Factory Direct"
+        title="Microwear Smartwatch - OEM/ODM Manufacturer & Factory Direct"
         subtitle="10 Years Experience | ISO9001 Certified | 500+ Global B2B Partners | Wholesale Bulk Orders"
         ctaText="Get Free Quote"
         ctaLink="/contact"
@@ -169,6 +169,29 @@ export default async function HomePage() {
       <ScrollReveal>
         <SEOTextBlock />
       </ScrollReveal>
+
+      {/* Microwear Smartwatch Collection Section - SEO Optimization */}
+      <section className="microwear-smartwatch-section">
+        <div className="microwear-smartwatch-container">
+          <ScrollReveal>
+            <h2 className="microwear-smartwatch-title">
+              Explore Our Microwear Smartwatch Collection
+            </h2>
+            <p className="microwear-smartwatch-description">
+              Discover the complete range of <strong>microwear smartwatch</strong> models designed for B2B partners.
+              From fitness trackers to premium wearables, every microwear smartwatch delivers exceptional quality
+              and performance. Browse our full catalog and request free samples today.
+            </p>
+          </ScrollReveal>
+          <ScrollReveal delay={0.2}>
+            <div className="microwear-smartwatch-cta">
+              <Link href="/products" className="microwear-smartwatch-link">
+                View All Microwear Smartwatch Models →
+              </Link>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
 
       <section className="featured-products-section">
         <div className="featured-products-container">

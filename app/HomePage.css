@@ -3,6 +3,58 @@
   overflow-x: hidden;
 }
 
+/* Microwear Smartwatch Section - SEO Optimization */
+.microwear-smartwatch-section {
+  padding: 3rem 2rem;
+  background-color: #eef2ff;
+  border-top: 1px solid #e0e7ff;
+  border-bottom: 1px solid #e0e7ff;
+}
+
+.microwear-smartwatch-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.microwear-smartwatch-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.microwear-smartwatch-description {
+  font-size: 1.1rem;
+  color: #4b5563;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.microwear-smartwatch-cta {
+  margin-top: 1.5rem;
+}
+
+.microwear-smartwatch-link {
+  display: inline-block;
+  padding: 0.875rem 1.75rem;
+  background-color: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.microwear-smartwatch-link:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.microwear-smartwatch-link:active {
+  background-color: #1e40af;
+}
+
 /* Featured Products Section */
 .featured-products-section {
   padding: 4rem 2rem;
@@ -66,6 +118,23 @@
 
 /* Responsive design */
 @media (max-width: 768px) {
+  .microwear-smartwatch-section {
+    padding: 2rem 1rem;
+  }
+
+  .microwear-smartwatch-title {
+    font-size: 1.5rem;
+  }
+
+  .microwear-smartwatch-description {
+    font-size: 1rem;
+  }
+
+  .microwear-smartwatch-link {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.875rem;
+  }
+
   .featured-products-section {
     padding: 2rem 1rem;
   }

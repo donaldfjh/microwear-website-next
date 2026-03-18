@@ -23,7 +23,13 @@ export const SEOTextBlock: React.FC<SEOTextBlockProps> = ({ category }) => {
           Whether you are looking for health-tracking wearables, GPS sports
           watches, or budget-friendly fitness trackers, our factory ensures
           rigorous quality control (ISO9001 certified) and competitive wholesale
-          pricing. Partner with Microwear for bulk smartwatch orders and scale your wearable business today.
+          pricing. Every <strong>microwear smartwatch</strong> is built with precision engineering,
+          advanced health monitoring sensors, and long battery life. Partner with Microwear for bulk smartwatch orders and scale your wearable business today.
+        </p>
+        <p className="seo-text-paragraph">
+          Our <strong>microwear smartwatch collection</strong> includes fitness trackers, sports watches,
+          and premium wearables suitable for retail brands, corporate gifts, and distribution partners.
+          Request free samples and experience the quality that 500+ B2B partners trust worldwide.
         </p>
       </div>
     </section>
