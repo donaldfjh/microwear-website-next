@@ -71,14 +71,14 @@ This guide covers the essentials: MOQ, certifications, pricing, and how to avoid
 
 ### 4. Lead Times
 
-**ODM Orders:**
-- 100-500 units: 15-20 days
-- 500-1,000 units: 20-25 days
-- 1,000-3,000 units: 25-30 days
+**ODM Orders**
+- 100-500 units → 15-20 days
+- 500-1,000 units → 20-25 days
+- 1,000-3,000 units → 25-30 days
 
-**OEM Orders:** 10-16 weeks (design to production)
+**OEM Orders:** 10-16 weeks (from design to production)
 
-**Microwear capacity:** 50,000+ units/month
+**Microwear capacity:** 50,000+ units per month
 
 ---
 
