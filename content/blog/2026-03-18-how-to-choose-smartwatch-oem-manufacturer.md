@@ -47,25 +47,27 @@ This guide covers the essentials: MOQ, certifications, pricing, and how to avoid
 
 ### 2. Essential Certifications
 
-| Certification | Market | Purpose |
-|---------------|--------|---------|
-| **CE** | EU | Safety & health |
-| **FCC** | USA | Electromagnetic |
-| **RoHS** | Global | Hazardous substances |
-| **ISO 9001** | Global | Quality management |
+**CE** — European Union (Safety & health compliance)
+
+**FCC** — United States (Electromagnetic compatibility)
+
+**RoHS** — Global (Restriction of hazardous substances)
+
+**ISO 9001** — Global (Quality management systems)
 
 **Microwear:** ISO 9001, CE, FCC, RoHS certified. [View certifications](/about)
 
 ### 3. MOQ & Pricing
 
-| Order Type | MOQ | Price Range |
-|------------|-----|-------------|
-| ODM (logo only) | 100-500 | $25-$45 |
-| ODM (custom pack) | 500-1,000 | $23-$42 |
-| OEM (minor mods) | 1,000-3,000 | $20-$40 |
-| OEM (full custom) | 3,000-5,000+ | $18-$35 |
+**ODM (logo only)** — 100-500 units @ $25-$45
 
-**Volume discounts:** 5-20% off for 1,000+ units
+**ODM (custom packaging)** — 500-1,000 units @ $23-$42
+
+**OEM (minor modifications)** — 1,000-3,000 units @ $20-$40
+
+**OEM (full custom)** — 3,000-5,000+ units @ $18-$35
+
+**Volume discounts:** 5-20% off for orders over 1,000 units
 
 **Microwear MOQ:** Starting from 100 units for select models. [Request a sample](/contact)
 
@@ -85,9 +87,13 @@ This guide covers the essentials: MOQ, certifications, pricing, and how to avoid
 ## Red Flags to Avoid
 
 ❌ No references or certifications
+
 ❌ Prices far below market rate
+
 ❌ 100% payment upfront (standard is 30% deposit)
+
 ❌ No physical factory address
+
 ❌ Poor communication
 
 ---
