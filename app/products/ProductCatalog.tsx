@@ -51,11 +51,11 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({ products }) => {
     filters.priceRange !== undefined ||
     (filters.features && filters.features.length > 0);
 
-  const pageTitle = filters.category ? filters.category : "Product Catalog";
+  const pageTitle = filters.category ? filters.category : "Microwear Smartwatch Collection";
   const pageDescription =
     filters.category === "AI Glasses"
       ? "Next-generation smart glasses with AI assistant and AR capabilities"
-      : "Discover our collection of premium smartwatches";
+      : "Browse complete microwear smartwatch collection - OEM/ODM manufacturer direct with ISO9001 certification. Wholesale bulk orders, B2B pricing, free samples.";
 
   return (
     <div className="product-catalog-page">
