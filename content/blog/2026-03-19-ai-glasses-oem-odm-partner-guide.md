@@ -5,7 +5,7 @@ author: "Microwear Team"
 category: "Industry Insights"
 tags: ["AI glasses OEM", "smart glasses manufacturer", "XR glasses ODM", "wearable technology", "B2B electronics", "OEM partner"]
 excerpt: "The AI glasses market is exploding in 2026. Learn how to evaluate OEM/ODM partners, key technical specs to consider, and why Microwear is your ideal manufacturing partner for smart eyewear."
-image: "/images/blog/Article007.webp"
+image: "/images/blog/Article012.webp"
 readTime: "5 min read"
 metaTitle: "AI Glasses OEM/ODM Partner Guide 2026 | Smart Glasses Manufacturer"
 metaDescription: "Complete B2B buyer's guide for choosing AI glasses OEM/ODM manufacturer. Technical specs, MOQ, certifications, and how to evaluate smart glasses suppliers."
