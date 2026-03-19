@@ -14,10 +14,10 @@ import "./HomePage.css";
 
 export const metadata: Metadata = {
   title:
-    "Microwear Smartwatch Manufacturer | OEM/ODM Factory | Wholesale Bulk Orders 2026",
+    "Microwear Smartwatch | OEM/ODM Manufacturer & Factory Direct | Wholesale B2B 2026",
   description:
-    "Microwear Smartwatch - ISO9001 OEM/ODM manufacturer since 2015. MOQ 200pcs, $15-50 wholesale pricing. Free samples, 7-15 day lead time. Custom logo & SDK. 500+ global B2B partners. Get quote now!",
-  keywords: ["microwear smartwatch", "microwear smartwatches", "smartwatch manufacturer", "OEM smart watch", "ODM smartwatch", "wholesale smartwatch", "bulk smartwatch orders", "AI glasses factory", "wearable tech supplier", "China smartwatch factory", "B2B smartwatch", "smartwatch OEM factory", "custom smartwatch"],
+    "Microwear smartwatch - ISO9001 OEM/ODM manufacturer since 2015. MOQ 200pcs, $15-50 wholesale pricing. Free samples, 7-15 day lead time. Custom logo & SDK. 500+ global B2B partners. Get quote now!",
+  keywords: ["microwear smartwatch", "microwear smartwatches", "microwear smart watch", "smartwatch microwear", "smartwatch manufacturer", "OEM smart watch", "ODM smartwatch", "wholesale smartwatch", "bulk smartwatch orders", "AI glasses factory", "wearable tech supplier", "China smartwatch factory", "B2B smartwatch", "smartwatch OEM factory", "custom smartwatch", "microwear watch manufacturer", "microwear bulk orders"],
   alternates: {
     canonical: "https://microwear.info/",
   },
@@ -152,8 +152,8 @@ export default async function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedSchema) }}
       />
       <HeroSection
-        title="Microwear Smartwatch - OEM/ODM Manufacturer & Factory Direct"
-        subtitle="10 Years Experience | ISO9001 Certified | 500+ Global B2B Partners | Wholesale Bulk Orders"
+        title="Microwear Smartwatch - OEM/ODM Manufacturer & Factory Direct | B2B Wholesale"
+        subtitle="10 Years Experience | ISO9001 Certified | 500+ Global B2B Partners | Wholesale Bulk Orders | Free Samples"
         ctaText="Get Free Quote"
         ctaLink="/contact"
         secondaryCtaText="Download Catalog"
@@ -175,12 +175,14 @@ export default async function HomePage() {
         <div className="microwear-smartwatch-container">
           <ScrollReveal>
             <h2 className="microwear-smartwatch-title">
-              Explore Our Microwear Smartwatch Collection
+              Explore Our Microwear Smartwatch Collection - OEM/ODM Factory Direct
             </h2>
             <p className="microwear-smartwatch-description">
               Discover the complete range of <strong>microwear smartwatch</strong> models designed for B2B partners.
               From fitness trackers to premium wearables, every microwear smartwatch delivers exceptional quality
-              and performance. Browse our full catalog and request free samples today.
+              and performance. As a leading microwear smart watch manufacturer, we offer wholesale bulk orders,
+              custom logo, SDK support, and free samples. Browse our full catalog of microwear smartwatches and
+              request your free sample today - MOQ 200pcs, 7-15 day lead time.
             </p>
           </ScrollReveal>
           <ScrollReveal delay={0.2}>
