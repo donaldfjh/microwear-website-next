@@ -80,117 +80,16 @@ Not all manufacturers are created equal. Watch out for these warning signs:
 
 ---
 
-## Manufacturer Evaluation Scorecard
-
-Use this scorecard to systematically compare potential OEM/ODM partners. Rate each manufacturer on a scale of 1-10 for each factor, then calculate the weighted score.
-
-| Factor | Weight | Manufacturer A | Manufacturer B | Manufacturer C |
-|--------|--------|----------------|----------------|----------------|
-| **Price** | 25% | /10 | /10 | /10 |
-| **Quality** | 25% | /10 | /10 | /10 |
-| **Lead Time** | 15% | /10 | /10 | /10 |
-| **MOQ Flexibility** | 15% | /10 | /10 | /10 |
-| **Communication** | 10% | /10 | /10 | /10 |
-| **Certifications** | 10% | /10 | /10 | /10 |
-| **Total Score** | **100%** | **___** | **___** | **___** |
-
-### How to Use This Scorecard
-
-**1. Price (25%)**
-- Compare unit costs at your target order quantity
-- Factor in tooling/mold fees amortized over order volume
-- Consider payment terms (30% deposit vs. 50% deposit)
-- Include shipping and import duties in total landed cost
-
-**2. Quality (25%)**
-- Request detailed spec sheets and compare component brands
-- Ask about QC processes (AQL standards, testing equipment)
-- Review defect rates and return policies
-- Check if they serve premium vs. budget market segments
-
-**3. Lead Time (15%)**
-- Sample production time (target: 7-15 days)
-- Mass production lead time (target: 20-30 days)
-- On-time delivery track record
-- Capacity to scale during peak demand
-
-**4. MOQ Flexibility (15%)**
-- Minimum order quantity for first order
-- MOQ reduction options for pilot runs
-- Willingness to grow with your business
-- Inventory management support
-
-**5. Communication (10%)**
-- Response time to inquiries (target: <24 hours)
-- English proficiency of sales/engineering team
-- Proactive updates during production
-- Cultural alignment and time zone overlap
-
-**6. Certifications (10%)**
-- ISO9001 (quality management)
-- CE, FCC, RoHS (product compliance)
-- BSCI, Sedex (social compliance)
-- Industry-specific certifications (e.g., medical grade)
-
----
-
 ## 🎯 Critical Next Step: Request Samples
 
-**Don't commit based on spec sheets alone.** Once you've narrowed down to 2-3 top choices using the scorecard above:
+**Don't commit based on spec sheets alone.** Request samples from your top 2-3 choices and test them thoroughly:
 
-### Sample Testing Checklist
+- **Build quality:** Check materials, fit and finish, weight, and comfort
+- **Functionality:** Test battery life, camera quality, audio, and connectivity
+- **Software:** Evaluate companion app, firmware updates, and AI features
+- **Durability:** Perform stress tests for drops, water resistance, and temperature extremes
 
-**Physical Inspection:**
-- [ ] Build quality and materials
-- [ ] Fit and finish (no gaps, even seams)
-- [ ] Weight and comfort for extended wear
-- [ ] Button tactility and port accessibility
-
-**Functional Testing:**
-- [ ] Battery life (real-world usage, not just specs)
-- [ ] Camera quality (photos, videos, stabilization)
-- [ ] Audio quality (speaker, microphone, noise cancellation)
-- [ ] Connectivity (Bluetooth range, Wi-Fi stability)
-- [ ] Sensor accuracy (if applicable)
-
-**Software & UX:**
-- [ ] Companion app functionality
-- [ ] Firmware update process
-- [ ] AI feature responsiveness
-- [ ] User interface intuitiveness
-
-**Stress Testing:**
-- [ ] Drop test (from typical use height)
-- [ ] Water resistance (IP rating verification)
-- [ ] Temperature extremes
-- [ ] Continuous operation (battery cycles)
-
-### Sample Request Template
-
-```
-Subject: Sample Request - AI Glasses OEM Partnership
-
-Dear [Manufacturer Name],
-
-We are evaluating potential OEM/ODM partners for our upcoming AI glasses line 
-[target market: e.g., enterprise, consumer, sports].
-
-Based on our research, we're interested in your [specific model/platform].
-
-Could you please provide:
-1. Sample availability and cost
-2. Lead time for sample delivery
-3. Customization options for pilot run
-4. MOQ and pricing for 500/1000/5000 units
-
-We plan to make our manufacturing decision by [date].
-
-Best regards,
-[Your Name]
-[Company]
-```
-
-**Pro Tip:** Order samples from multiple manufacturers simultaneously. Testing them side-by-side reveals differences that spec sheets never show.
+Order samples from multiple manufacturers simultaneously. Testing them side-by-side reveals differences that spec sheets never show.
 
 ## Why Microwear Is Your Ideal AI Glasses OEM Partner
 

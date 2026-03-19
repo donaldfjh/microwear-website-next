@@ -4,6 +4,7 @@ import { HomeProductGrid } from "@/components/HomeProductGrid";
 import { QA } from "@/components/QA";
 import { CertificationBar } from "@/components/CertificationBar";
 import { CoreSpecs } from "@/components/CoreSpecs";
+import { ManufacturingCapacity } from "@/components/ManufacturingCapacity";
 import { IndustryInsights } from "@/components/IndustryInsights";
 import { FooterBanner } from "@/components/FooterBanner";
 import { getProducts } from "@/lib/products";
@@ -165,6 +166,8 @@ export default async function HomePage() {
       <ScrollReveal delay={0.2}>
         <CoreSpecs />
       </ScrollReveal>
+
+      <ManufacturingCapacity />
 
       <ScrollReveal>
         <SEOTextBlock />
