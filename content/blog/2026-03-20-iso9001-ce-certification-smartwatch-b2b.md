@@ -1,6 +1,6 @@
 ---
 title: "ISO9001 and CE Certification for Smartwatches: Why It Matters for B2B Partnerships"
-date: 2026-03-20
+date: "2026-03-20"
 tags: ["ISO9001", "CE certification", "quality assurance", "B2B", "smartwatch manufacturer", "compliance", "OEM", "ODM"]
 excerpt: "Learn why ISO9001 and CE certifications are critical for B2B smartwatch partnerships. Discover how certified manufacturing ensures quality, compliance, and trust for your brand."
 image: "/images/blog/Article013.webp"
