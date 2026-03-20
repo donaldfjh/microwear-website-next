@@ -22,17 +22,11 @@ In this guide, we'll explain what these certifications mean, why they matter for
 
 ### Key Benefits of ISO9001 for Your Business
 
-<div class="table-wrapper">
-
-| Benefit | What It Means for You |
-|---------|----------------------|
-| **Consistent Quality** | Every unit meets the same standards, batch after batch |
-| **Traceability** | Full documentation from components to final assembly |
-| **Reduced Defects** | Systematic quality control reduces failure rates |
-| **Continuous Improvement** | Ongoing process optimization benefits your orders |
-| **Audit-Ready** | Ready for your quality audits and compliance reviews |
-
-</div>
+- **Consistent Quality** — Every unit meets the same standards, batch after batch
+- **Traceability** — Full documentation from components to final assembly
+- **Reduced Defects** — Systematic quality control reduces failure rates
+- **Continuous Improvement** — Ongoing process optimization benefits your orders
+- **Audit-Ready** — Ready for your quality audits and compliance reviews
 
 For B2B buyers, ISO9001 certification signals that the manufacturer takes quality seriously—not just for marketing, but as a core operational principle.
 
