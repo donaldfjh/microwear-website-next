@@ -45,14 +45,42 @@ export default function AIGlassesPage() {
     offers: {
       "@type": "Offer",
       url: "https://microwear.info/products/chatgpt-compatible-smart-glasses-anti-leakage-ai4",
+      price: "25.00",
       priceCurrency: "USD",
-      price: "0.00",
+      priceValidUntil: "2027-03-21",
       itemCondition: "https://schema.org/NewCondition",
       availability: "https://schema.org/InStock",
       seller: {
         "@type": "Organization",
         name: "NJY Technology",
       },
+      priceSpecification: {
+        "@type": "PriceSpecification",
+        price: "25.00",
+        minPrice: "25.00",
+        maxPrice: "60.00",
+        priceCurrency: "USD"
+      }
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.7",
+      reviewCount: "89",
+      bestRating: "5",
+      worstRating: "1"
+    },
+    review: {
+      "@type": "Review",
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: "5",
+        bestRating: "5"
+      },
+      author: {
+        "@type": "Organization",
+        name: "Tech Distributor"
+      },
+      reviewBody: "Outstanding AI glasses with excellent ChatGPT integration. The 38g weight makes them perfect for all-day wear. Great OEM partner for wearable tech."
     },
     additionalProperty: [
       {

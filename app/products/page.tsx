@@ -51,15 +51,20 @@ export default async function ProductsPage() {
           "category": product.category,
           "offers": {
             "@type": "Offer",
+            "price": "15.00",
+            "priceCurrency": "USD",
+            "priceValidUntil": "2027-03-21",
             "availability": "https://schema.org/InStock",
             "seller": {
               "@type": "Organization",
               "name": "Microwear"
             },
             "businessFunction": "wholesale",
-            "eligibleTransactionVolume": {
+            "priceSpecification": {
               "@type": "PriceSpecification",
+              "price": "15.00",
               "minPrice": "15.00",
+              "maxPrice": "80.00",
               "priceCurrency": "USD"
             }
           }

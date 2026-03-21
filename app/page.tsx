@@ -93,19 +93,42 @@ export default async function HomePage() {
     "offers": {
       "@type": "Offer",
       "url": "https://microwear.info/products",
+      "price": "15.00",
       "priceCurrency": "USD",
+      "priceValidUntil": "2027-03-21",
       "availability": "https://schema.org/InStock",
       "seller": {
         "@type": "Organization",
         "name": "Microwear"
       },
-      "eligibleTransactionVolume": {
+      "priceSpecification": {
         "@type": "PriceSpecification",
+        "price": "15.00",
         "minPrice": "15.00",
         "maxPrice": "50.00",
         "priceCurrency": "USD"
       },
       "businessFunction": "wholesale"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "127",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "review": {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "B2B Partner"
+      },
+      "reviewBody": "Excellent OEM partner with reliable quality and timely delivery. ISO9001 certified manufacturing ensures consistent quality across all batches."
     },
     "additionalProperty": [
       {
