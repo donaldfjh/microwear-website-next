@@ -47,7 +47,6 @@ export const ProductSchema: React.FC<ProductSchemaProps> = ({ product }) => {
               priceCurrency: "USD",
               minPrice: 15,
               maxPrice: 80,
-              priceCurrency: "USD",
             },
           },
         ]
