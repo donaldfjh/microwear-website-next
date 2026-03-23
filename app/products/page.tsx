@@ -3,10 +3,10 @@ import { ProductCatalog } from "./ProductCatalog";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Microwear Smartwatch Collection | OEM/ODM Factory Direct | Wholesale B2B Bulk Orders 2026",
+  title: "Microwear Smartwatch Collection | OEM ODM Manufacturer | Wholesale Bulk Orders 2026",
   description:
-    "Shop microwear smartwatch collection - ISO9001 OEM/ODM manufacturer direct. MOQ 200pcs, wholesale $15-50. Every microwear smartwatch includes custom logo, SDK, free samples. 7-15 day lead time. B2B bulk orders welcome. Smartwatch microwear factory direct pricing.",
-  keywords: ["microwear smartwatch", "microwear smartwatches", "microwear smart watch", "smartwatch microwear", "smartwatch collection", "OEM smart watch bulk", "wholesale smartwatch", "bulk smartwatch orders", "custom smartwatch manufacturer", "B2B smartwatch", "ODM smartwatch factory", "smartwatch wholesale price", "microwear smart watch models", "microwear manufacturer", "microwear factory direct", "microwear watch bulk", "smartwatch OEM China", "microwear smartwatch supplier"],
+    "Browse microwear smartwatch collection - ISO9001 OEM/ODM manufacturer direct. Smartwatch microwear factory pricing $15-50. MOQ 200pcs, wholesale bulk orders. Custom logo, SDK, free samples. 7-15 day lead time. B2B partners worldwide.",
+  keywords: ["microwear smartwatch", "microwear smartwatches", "microwear smart watch", "smartwatch microwear", "smartwatch collection", "microwear smartwatch collection", "OEM smart watch bulk", "wholesale smartwatch", "bulk smartwatch orders", "custom smartwatch manufacturer", "B2B smartwatch", "ODM smartwatch factory", "smartwatch wholesale price", "microwear smart watch models", "microwear manufacturer", "microwear factory direct", "microwear watch bulk", "smartwatch OEM China", "microwear smartwatch supplier", "smartwatch microwear factory", "microwear OEM ODM"],
   alternates: {
     canonical: "https://microwear.info/products",
   },
@@ -30,10 +30,10 @@ export default async function ProductsPage() {
   const collectionSchema = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "name": "Microwear Smartwatch Collection | OEM/ODM Manufacturer Direct | Wholesale B2B",
-    "description": "Complete catalog of microwear smartwatch OEM/ODM products with ISO9001 certification. B2B wholesale pricing, bulk orders, custom manufacturing. Every microwear smartwatch features advanced health tracking, GPS, and premium build quality. Smartwatch microwear factory direct with 10+ years expertise. MOQ 200pcs, free samples, 7-15 day lead time. Microwear smart watch manufacturer for global B2B partners.",
+    "name": "Microwear Smartwatch Collection | OEM/ODM Manufacturer Direct | Wholesale B2B Bulk Orders",
+    "description": "Complete catalog of microwear smartwatch OEM/ODM products with ISO9001 certification. B2B wholesale pricing $15-50, bulk orders, custom manufacturing. Every microwear smartwatch features advanced health tracking, GPS, premium build quality. Smartwatch microwear factory direct with 10+ years expertise. MOQ 200pcs, free samples, 7-15 day lead time. Microwear smart watch manufacturer for global B2B partners. OEM ODM services available.",
     "url": "https://microwear.info/products",
-    "keywords": "microwear smartwatch, microwear smartwatches, microwear smart watch, smartwatch microwear, wholesale smartwatch, bulk smartwatch orders, OEM ODM smartwatch, B2B smartwatch manufacturer, microwear smart watch collection, microwear factory direct, smartwatch manufacturer China, microwear bulk orders, smartwatch OEM factory, microwear supplier",
+    "keywords": "microwear smartwatch, microwear smartwatches, microwear smart watch, smartwatch microwear, wholesale smartwatch, bulk smartwatch orders, OEM ODM smartwatch, B2B smartwatch manufacturer, microwear smart watch collection, microwear factory direct, smartwatch manufacturer China, microwear bulk orders, smartwatch OEM factory, microwear supplier, smartwatch microwear factory, microwear OEM ODM manufacturer",
     "mainEntity": {
       "@type": "ItemList",
       "numberOfItems": smartWatches.length,
