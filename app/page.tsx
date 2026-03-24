@@ -15,10 +15,10 @@ import "./HomePage.css";
 
 export const metadata: Metadata = {
   title:
-    "Microwear Smartwatch Manufacturer | OEM/ODM Factory Direct | Wholesale B2B 2026",
+    "Microwear Smartwatch - OEM/ODM Manufacturer Direct | Wholesale B2B Bulk Orders 2026",
   description:
-    "Microwear smartwatch manufacturer - ISO9001 OEM/ODM factory since 2015. MOQ 200pcs, $15-50 wholesale pricing. Free samples, 7-15 day lead time. Custom logo, SDK, bulk orders. 500+ B2B partners worldwide. Get quote now!",
-  keywords: ["microwear smartwatch", "microwear smartwatches", "microwear smart watch", "smartwatch microwear", "microwear smartwatch manufacturer", "microwear smartwatch factory", "smartwatch manufacturer", "OEM smart watch", "ODM smartwatch", "wholesale smartwatch", "bulk smartwatch orders", "AI glasses factory", "wearable tech supplier", "China smartwatch factory", "B2B smartwatch", "smartwatch OEM factory", "custom smartwatch", "microwear watch manufacturer", "microwear bulk orders", "smartwatch supplier China", "OEM smartwatch manufacturer"],
+    "Microwear smartwatch - ISO9001 OEM/ODM manufacturer since 2015. MOQ 200pcs, $15-50 wholesale pricing. Free samples, 7-15 day lead time. Custom logo, SDK, bulk orders. 500+ B2B partners worldwide. Get quote now!",
+  keywords: ["microwear smartwatch", "microwear smartwatches", "microwear smart watch", "smartwatch microwear", "microwear smartwatch manufacturer", "microwear smartwatch factory", "smartwatch manufacturer", "OEM smart watch", "ODM smartwatch", "wholesale smartwatch", "bulk smartwatch orders", "AI glasses factory", "wearable tech supplier", "China smartwatch factory", "B2B smartwatch", "smartwatch OEM factory", "custom smartwatch", "microwear watch manufacturer", "microwear bulk orders", "smartwatch supplier China", "OEM smartwatch manufacturer", "microwear smartwatch wholesale", "smartwatch microwear factory direct"],
   alternates: {
     canonical: "https://microwear.info/",
   },
@@ -87,7 +87,7 @@ export default async function HomePage() {
       "url": "https://microwear.info",
       "description": "Professional microwear smartwatch OEM/ODM manufacturer with 10+ years experience, ISO9001 certified factory specializing in microwear smartwatch bulk orders, wholesale B2B partnerships, and smartwatch microwear factory direct pricing"
     },
-    "description": "Microwear Smartwatch - ISO9001 OEM/ODM manufacturer since 2015. MOQ 200pcs, $15-50 wholesale pricing. Free samples, 7-15 day lead time. Custom logo & SDK support. 500+ global B2B partners. Bulk smartwatch orders welcome. Every microwear smartwatch features advanced health tracking, GPS, and long battery life. Smartwatch microwear factory direct.",
+    "description": "Microwear Smartwatch - ISO9001 OEM/ODM manufacturer since 2015. MOQ 200pcs, $15-50 wholesale pricing. Free samples, 7-15 day lead time. Custom logo & SDK support. 500+ global B2B partners. Bulk smartwatch orders welcome. Every microwear smartwatch features advanced health tracking, GPS, and long battery life. Smartwatch microwear factory direct. Professional microwear smartwatch supplier for OEM ODM partnerships.",
     "category": "Smart Watch",
     "keywords": "microwear smartwatch, microwear smartwatches, OEM smartwatch, ODM smartwatch, wholesale smartwatch, bulk smartwatch orders, B2B smartwatch manufacturer, smartwatch factory China, microwear smart watch OEM, microwear wearable technology, smartwatch microwear, microwear smartwatch supplier, OEM ODM smartwatch manufacturer",
     "offers": {

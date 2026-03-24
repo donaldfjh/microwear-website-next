@@ -3,10 +3,10 @@ import { ProductCatalog } from "./ProductCatalog";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Microwear Smartwatch Collection | OEM ODM Manufacturer | Wholesale Bulk Orders 2026",
+  title: "Microwear Smartwatch Collection - OEM/ODM Factory Direct | Wholesale B2B 2026",
   description:
     "Browse microwear smartwatch collection - ISO9001 OEM/ODM manufacturer direct. Smartwatch microwear factory pricing $15-50. MOQ 200pcs, wholesale bulk orders. Custom logo, SDK, free samples. 7-15 day lead time. B2B partners worldwide.",
-  keywords: ["microwear smartwatch", "microwear smartwatches", "microwear smart watch", "smartwatch microwear", "smartwatch collection", "microwear smartwatch collection", "OEM smart watch bulk", "wholesale smartwatch", "bulk smartwatch orders", "custom smartwatch manufacturer", "B2B smartwatch", "ODM smartwatch factory", "smartwatch wholesale price", "microwear smart watch models", "microwear manufacturer", "microwear factory direct", "microwear watch bulk", "smartwatch OEM China", "microwear smartwatch supplier", "smartwatch microwear factory", "microwear OEM ODM"],
+  keywords: ["microwear smartwatch", "microwear smartwatches", "microwear smart watch", "smartwatch microwear", "smartwatch collection", "microwear smartwatch collection", "OEM smart watch bulk", "wholesale smartwatch", "bulk smartwatch orders", "custom smartwatch manufacturer", "B2B smartwatch", "ODM smartwatch factory", "smartwatch wholesale price", "microwear smart watch models", "microwear manufacturer", "microwear factory direct", "microwear watch bulk", "smartwatch OEM China", "microwear smartwatch supplier", "smartwatch microwear factory", "microwear OEM ODM", "microwear smartwatch bulk", "smartwatch microwear wholesale"],
   alternates: {
     canonical: "https://microwear.info/products",
   },
