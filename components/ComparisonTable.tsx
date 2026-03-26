@@ -96,7 +96,7 @@ export const ComparisonTable: React.FC<ComparisonTableProps> = ({
               <div className="product-image-wrapper">
                 <Image
                   src={product.images[0]}
-                  alt={product.name}
+                  alt={`${product.name} - ${product.category} Smartwatch Comparison View`}
                   className="product-image"
                   width={120}
                   height={120}

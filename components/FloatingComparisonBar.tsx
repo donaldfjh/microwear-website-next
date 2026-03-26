@@ -30,7 +30,7 @@ export const FloatingComparisonBar: React.FC = () => {
                 <div className="comparison-bar-image">
                   <Image
                     src={product.images[0]}
-                    alt={product.name}
+                    alt={`${product.name} - ${product.category || 'Smartwatch'} for Comparison`}
                     width={48}
                     height={48}
                     className="rounded-image"

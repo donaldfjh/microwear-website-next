@@ -190,7 +190,7 @@ export default function AIGlassesPage() {
                   <Link href="/products/chatgpt-compatible-smart-glasses-anti-leakage-ai4">
                     <Image
                       src="/images/glasses/glasses1.webp"
-                      alt="W Ai 4 Lightweight AI Glasses"
+                      alt="Microwear W Ai 4 AI Smart Glasses - 38g Lightweight Voice Assistant with ChatGPT Integration"
                       width={600}
                       height={400}
                       className="product-image"
@@ -267,7 +267,7 @@ export default function AIGlassesPage() {
                   <Link href="/products/ray-ban-meta-alternative-manufacturer-ai3-pro">
                     <Image
                       src="/images/AI_PRO/Pro_3.webp"
-                      alt="W AI 3 Camera Glasses"
+                      alt="Microwear W AI 3 Camera Glasses - Sony IMX219 8MP Sensor with First-Person Video Recording"
                       width={600}
                       height={400}
                       className="product-image"

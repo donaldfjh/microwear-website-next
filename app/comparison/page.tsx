@@ -31,7 +31,7 @@ export default function ComparisonPage() {
           <div className="comparison-header">
             <div className="header-content">
               <div className="header-text">
-                <h1>Compare Products</h1>
+                <h1>Compare Smart Watches - Side by Side Comparison | Microwear</h1>
                 <p>Comparing 0 of 3 selected products</p>
               </div>
             </div>
@@ -73,7 +73,7 @@ export default function ComparisonPage() {
         <div className="comparison-header">
           <div className="header-content">
             <div className="header-text">
-              <h1>Compare Products</h1>
+              <h1>Compare Smart Watches - Side by Side Comparison | Microwear</h1>
               <p>
                 Comparing {comparisonProducts.length} of 3 selected products
               </p>
