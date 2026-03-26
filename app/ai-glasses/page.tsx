@@ -3,22 +3,42 @@ import Link from "next/link";
 import Image from "next/image";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { QA } from "@/components/QA";
+import { BreadcrumbSchema } from "@/components/SEO/BreadcrumbSchema";
 import type { Metadata } from "next";
 import "./page.css";
 
 export const metadata: Metadata = {
   title:
-    "AI Smart Glasses Manufacturer | ChatGPT Voice & Sony 8MP Camera Wearables | NJY Tech",
+    "AI Glasses OEM Factory | Smart Glasses Manufacturer Microwear | ChatGPT & Sony Camera",
   description:
-    "Premier OEM factory for AI eyewear. Featuring W Ai 4 (38g Lightweight with ChatGPT) and W AI 3 (Sony IMX219 Video Recording). ISO9001 Certified, 300+ Patents.",
+    "Leading AI glasses OEM manufacturer Microwear. ChatGPT voice assistant & Sony 8MP camera smart glasses. ISO9001 certified factory, MOQ 200pcs, $25-60 wholesale. Free samples, 7-15 day delivery. 300+ patents. B2B bulk orders welcome.",
+  keywords: [
+    "AI glasses manufacturer",
+    "smart glasses OEM",
+    "ChatGPT glasses factory",
+    "AI smart glasses wholesale",
+    "OEM AI eyewear China",
+    "smart glasses with camera",
+    "voice assistant glasses",
+    "AR glasses manufacturer",
+    "wearable AI device factory",
+    "B2B AI glasses supplier",
+    "microwear AI glasses",
+    "smart glasses bulk orders",
+    "AI glasses MOQ 200",
+    "custom smart glasses manufacturer"
+  ],
   alternates: {
     canonical: "https://microwear.info/ai-glasses",
   },
   openGraph: {
-    title: "AI Smart Glasses Manufacturer | NJY Tech",
+    title: "AI Glasses OEM Factory | Smart Glasses Manufacturer Microwear",
     description:
-      "Premier OEM factory for AI eyewear. Featuring W Ai 4 and W AI 3 models.",
+      "Leading AI glasses OEM manufacturer Microwear. ChatGPT & Sony camera smart glasses. ISO9001 certified, MOQ 200pcs, $25-60 wholesale. Free samples.",
     type: "website",
+    images: [
+      "https://microwear.info/images/glasses/glasses1.webp"
+    ]
   },
 };
 
@@ -129,6 +149,8 @@ export default function AIGlassesPage() {
 
   return (
     <div className="ai-glasses-landing">
+      {/* SEO: Structured Data */}
+      <BreadcrumbSchema items={[{ name: "AI Glasses", url: "/ai-glasses" }]} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}

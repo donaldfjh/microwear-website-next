@@ -7,6 +7,7 @@ import { CoreSpecs } from "@/components/CoreSpecs";
 import { ManufacturingCapacity } from "@/components/ManufacturingCapacity";
 import { IndustryInsights } from "@/components/IndustryInsights";
 import { FooterBanner } from "@/components/FooterBanner";
+import { LocalBusinessSchema } from "@/components/SEO/LocalBusinessSchema";
 import { getProducts } from "@/lib/products";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import Link from "next/link";
@@ -15,10 +16,48 @@ import "./HomePage.css";
 
 export const metadata: Metadata = {
   title:
-    "Microwear Smartwatch - OEM/ODM Manufacturer Direct | Wholesale B2B Bulk Orders 2026",
+    "Smartwatch OEM Factory | AI Glasses Manufacturer Microwear | Wholesale $15-50 | B2B Bulk Orders",
   description:
-    "Microwear smartwatch - ISO9001 OEM/ODM manufacturer since 2015. MOQ 200pcs, $15-50 wholesale pricing. Free samples, 7-15 day lead time. Custom logo, SDK, bulk orders. 500+ B2B partners worldwide. Get quote now!",
-  keywords: ["microwear smartwatch", "microwear smartwatches", "microwear smart watch", "smartwatch microwear", "microwear smartwatch manufacturer", "microwear smartwatch factory", "smartwatch manufacturer", "OEM smart watch", "ODM smartwatch", "wholesale smartwatch", "bulk smartwatch orders", "AI glasses factory", "wearable tech supplier", "China smartwatch factory", "B2B smartwatch", "smartwatch OEM factory", "custom smartwatch", "microwear watch manufacturer", "microwear bulk orders", "smartwatch supplier China", "OEM smartwatch manufacturer", "microwear smartwatch wholesale", "smartwatch microwear factory direct"],
+    "Leading smartwatch & AI glasses OEM manufacturer Microwear. ISO9001 certified factory, 10+ years experience. MOQ 200pcs, wholesale $15-50. Free samples, 7-15 day delivery. Custom logo, SDK support. 500+ global B2B partners. ChatGPT & Sony camera smart glasses available.",
+  keywords: [
+    // Brand keywords
+    "microwear smartwatch",
+    "microwear ai glasses",
+    "microwear manufacturer",
+    
+    // Core business keywords
+    "smartwatch manufacturer",
+    "smartwatch OEM factory",
+    "AI glasses manufacturer",
+    "smart glasses OEM",
+    
+    // Product type keywords
+    "health smartwatch OEM",
+    "fitness tracker factory",
+    "GPS smartwatch wholesale",
+    "AMOLED smartwatch manufacturer",
+    "ECG smartwatch factory",
+    
+    // Business attribute keywords
+    "smartwatch wholesale China",
+    "OEM smartwatch B2B",
+    "smartwatch MOQ 200",
+    "bulk smartwatch orders",
+    "white label smartwatch supplier",
+    
+    // Long-tail keywords
+    "best smartwatch manufacturer for startups",
+    "affordable smartwatch OEM factory",
+    "custom smartwatch with logo",
+    "smartwatch factory direct pricing",
+    "ISO9001 smartwatch manufacturer",
+    "AI glasses with ChatGPT OEM",
+    "smart glasses with camera factory",
+    
+    // Comparison/alternative keywords
+    "Ray-Ban Meta alternative manufacturer",
+    "smartwatch manufacturer like Fitbit OEM"
+  ],
   alternates: {
     canonical: "https://microwear.info/",
   },
@@ -171,10 +210,13 @@ export default async function HomePage() {
 
   return (
     <div className="home-page">
+      {/* Structured Data for SEO */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedSchema) }}
       />
+      <LocalBusinessSchema />
+      
       <HeroSection
         title="Microwear Smartwatch Manufacturer - OEM/ODM Factory Direct | B2B Wholesale Bulk Orders"
         subtitle="10+ Years Experience | ISO9001 Certified Factory | 500+ Global B2B Partners | Wholesale Pricing $15-50 | Free Samples | MOQ 200pcs"

@@ -1,5 +1,6 @@
 import { getProducts } from "@/lib/products";
 import { ProductCatalog } from "./ProductCatalog";
+import { BreadcrumbSchema } from "@/components/SEO/BreadcrumbSchema";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -75,6 +76,8 @@ export default async function ProductsPage() {
 
   return (
     <>
+      {/* SEO: Structured Data */}
+      <BreadcrumbSchema items={[{ name: "Products", url: "/products" }]} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }}

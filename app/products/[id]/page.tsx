@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { getProducts, getProductById } from "@/lib/products";
 import { ProductDetailClient } from "./ProductDetailClient";
 import { ProductSchema } from "@/components/SEO/ProductSchema";
+import { BreadcrumbSchema } from "@/components/SEO/BreadcrumbSchema";
 import type { Metadata } from "next";
 import "./ProductDetailPage.css";
 
@@ -20,7 +21,7 @@ export async function generateStaticParams() {
   }));
 }
 
-// Generate metadata for each product
+// Generate metadata for each product with SEO optimization
 export async function generateMetadata({
   params,
 }: ProductDetailPageProps): Promise<Metadata> {
@@ -28,7 +29,7 @@ export async function generateMetadata({
 
   if (!product) {
     return {
-      title: "Product Not Found - MicroWear",
+      title: "Product Not Found - Microwear",
       description: "The product you're looking for doesn't exist.",
     };
   }
@@ -36,79 +37,149 @@ export async function generateMetadata({
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://microwear.info";
   const canonicalUrl = `${baseUrl}/products/${params.id}`;
 
-  // SEO-Optimized Titles for Specific Products
+  // Extract core features for SEO
+  const coreFeatures = extractCoreFeatures(product);
+  const priceRange = getPriceRange(params.id);
+  const productKeywords = generateProductKeywords(product, params.id);
+
+  // SEO-Optimized Titles with OEM/wholesale focus
   const customTitles: Record<string, string> = {
     "mw-health-ma25":
-      "Best OEM Smartwatch for Women's Health (Period Tracking & ECG) | Microwear",
+      "Women's Health Smartwatch OEM | Period Tracking & ECG | Wholesale $25-45",
     "mw-kids-fun":
-      "GPS Tracking Smartwatch for Kids & Seniors Safety | OEM Factory",
+      "GPS Kids Smartwatch Factory | Safety Tracking Watch OEM | Wholesale $15-30",
     W11pro:
-      "Premium AMOLED Smartwatch with ECG & 100+ Sport Modes | Microwear W11 Pro",
+      "AMOLED Smartwatch OEM | ECG & GPS Health Tracker | Wholesale $35-55",
     "mw-fit-lite":
-      "Best Affordable Fitness Tracker & Smartwatch Manufacturer | Microwear S11",
+      "Budget Fitness Tracker OEM | Affordable Smartwatch Factory | Wholesale $15-30",
     "mw-sport-ultra":
-      "Rugged Military Smartwatch for Outdoor Sports (GPS & Waterproof) | Watch Ultra 5",
+      "Rugged Military Smartwatch OEM | GPS & Waterproof | Wholesale $40-65",
     "mw-classic-steel":
-      "Classic Stainless Steel Hybrid Smartwatch Manufacturer (NFC) | Microwear MA31",
+      "Stainless Steel Smartwatch OEM | NFC Hybrid Watch | Wholesale $30-50",
     "mw-health-ma18":
-      "Medical-Grade Health Monitor Smartwatch (ECG, BP & SpO2) | Microwear MA18",
+      "Medical Smartwatch OEM | ECG BP SpO2 Monitor | Wholesale $35-55",
     "mw-ai-glasses":
-      "Smart Audio Glasses with Open-Ear Speaker & Voice Assistant | Microwear AI 3",
+      "AI Voice Glasses OEM | Open-Ear Speaker & Assistant | Wholesale $25-45",
     "mw-ai-glasses-pro":
-      "AI Camera Glasses with Sony Sensor & Live Translation | Microwear AI 3 Pro",
+      "AI Camera Glasses OEM | Sony Sensor & Translation | Wholesale $40-60",
     "mw-ai-glasses-4":
-      "Lightweight AI Voice Glasses (38g) with ChatGPT Integration | Microwear AI 4",
+      "Lightweight AI Glasses OEM | ChatGPT & 38g Frame | Wholesale $25-45",
+    "chatgpt-compatible-smart-glasses-anti-leakage-ai4":
+      "AI Voice Glasses OEM | ChatGPT & 38g Lightweight | Wholesale $25-45",
+    "ray-ban-meta-alternative-manufacturer-ai3-pro":
+      "AI Camera Glasses OEM | Sony 8MP & Live Translation | Wholesale $40-60",
   };
 
   if (customTitles[params.id]) {
-    const customTitle = customTitles[params.id];
+    const customTitle = `${customTitles[params.id]} | Microwear Factory`;
+    const seoDescription = `${product.name} OEM smartwatch by Microwear manufacturer. ${coreFeatures}. ISO9001 certified factory, MOQ 200pcs, wholesale ${priceRange}. Free samples, 7-15 day delivery. Custom logo & SDK support. 500+ global B2B partners.`;
+    
     return {
       title: customTitle,
-      description: product.description,
+      description: seoDescription,
+      keywords: productKeywords,
       alternates: {
         canonical: canonicalUrl,
       },
       openGraph: {
         title: customTitle,
-        description: product.description,
+        description: seoDescription,
         images: product.images.length > 0 ? [product.images[0]] : [],
         url: canonicalUrl,
+        type: "website",
       },
     };
   }
 
-  // Extract key features from specifications for SEO-rich title
-  const hasGPS = product.specifications.connectivity?.includes("GPS");
-  const displayType = product.specifications.display?.includes("AMOLED")
-    ? "AMOLED"
-    : product.specifications.display?.includes("LCD")
-    ? "LCD"
-    : "";
+  // Default SEO-optimized title with features
+  const seoTitle = coreFeatures
+    ? `${product.name} ${coreFeatures} OEM | Smartwatch Wholesale ${priceRange} | Microwear`
+    : `${product.name} Smartwatch OEM | Wholesale ${priceRange} | Microwear Factory`;
 
-  // Build SEO-optimized title with key features
-  const features = [];
-
-  if (hasGPS) features.push("GPS");
-  if (displayType) features.push(displayType);
-
-  const featureString = features.length > 0 ? features.join(" & ") : "";
-  const seoTitle = featureString
-    ? `${product.name} | ${featureString} Smartwatch`
-    : `${product.name} | MicroWear Smartwatch`;
+  const seoDescription = `${product.name} OEM smartwatch by Microwear. ${coreFeatures}. ISO9001 certified factory, MOQ 200pcs, wholesale ${priceRange}. Free samples, 7-15 day lead time. Custom logo & SDK. 500+ global B2B partners.`;
 
   return {
     title: seoTitle,
-    description: product.description,
+    description: seoDescription,
+    keywords: productKeywords,
     alternates: {
       canonical: canonicalUrl,
     },
     openGraph: {
       title: seoTitle,
-      description: product.description,
+      description: seoDescription,
       images: product.images.length > 0 ? [product.images[0]] : [],
       url: canonicalUrl,
+      type: "website",
     },
   };
+}
+
+// Helper function: Extract core features from product specifications
+function extractCoreFeatures(product: any): string {
+  const features: string[] = [];
+  
+  if (product.specifications?.display?.includes("AMOLED")) features.push("AMOLED");
+  if (product.specifications?.health?.includes("ECG")) features.push("ECG");
+  if (product.specifications?.connectivity?.includes("GPS")) features.push("GPS");
+  if (product.specifications?.water_resistance?.includes("IP68")) features.push("IP68");
+  if (product.specifications?.battery?.includes("7-14")) features.push("14-Day Battery");
+  if (product.specifications?.display?.includes("1.95")) features.push("1.95\" HD");
+  
+  return features.slice(0, 2).join(" & ");
+}
+
+// Helper function: Get price range for product
+function getPriceRange(productId: string): string {
+  const priceRanges: Record<string, string> = {
+    "W11pro": "$35-55",
+    "mw-health-ma25": "$25-45",
+    "mw-fit-lite": "$15-30",
+    "mw-sport-ultra": "$40-65",
+    "mw-classic-steel": "$30-50",
+    "mw-health-ma18": "$35-55",
+    "mw-ai-glasses": "$25-45",
+    "mw-ai-glasses-pro": "$40-60",
+    "mw-ai-glasses-4": "$25-45",
+    "chatgpt-compatible-smart-glasses-anti-leakage-ai4": "$25-45",
+    "ray-ban-meta-alternative-manufacturer-ai3-pro": "$40-60",
+    "mw-kids-fun": "$15-30",
+  };
+  return priceRanges[productId] || "$15-50";
+}
+
+// Helper function: Generate product-specific keywords
+function generateProductKeywords(product: any, productId: string): string[] {
+  const baseKeywords = [
+    `${product.name} OEM`,
+    `${product.name} wholesale`,
+    `${product.name.toLowerCase()} manufacturer`,
+    "smartwatch OEM",
+    "smartwatch factory China",
+    "B2B smartwatch supplier",
+    "smartwatch MOQ 200",
+    "wholesale smartwatch",
+    "ISO9001 smartwatch factory"
+  ];
+  
+  // Add feature-specific keywords
+  if (product.specifications?.health?.includes("ECG")) {
+    baseKeywords.push("ECG smartwatch OEM", "health monitoring watch factory", "medical smartwatch manufacturer");
+  }
+  
+  if (product.specifications?.connectivity?.includes("GPS")) {
+    baseKeywords.push("GPS smartwatch OEM", "fitness tracker with GPS factory");
+  }
+  
+  if (product.category === "AI Glasses") {
+    baseKeywords.push("AI glasses OEM", "smart glasses manufacturer", "AR glasses factory", "voice assistant glasses");
+  }
+  
+  // Add price-related keywords
+  const priceRange = getPriceRange(productId);
+  baseKeywords.push(`smartwatch wholesale ${priceRange}`, "affordable smartwatch OEM");
+  
+  return baseKeywords;
 }
 
 // Product Detail Page Component
@@ -124,6 +195,13 @@ export default async function ProductDetailPage({
 
   return (
     <div className="product-detail-page">
+      {/* SEO: Breadcrumb Schema for better navigation in search results */}
+      <BreadcrumbSchema 
+        items={[
+          { name: "Products", url: "/products" },
+          { name: product.name, url: `/products/${params.id}` }
+        ]} 
+      />
       <ProductSchema product={product} />
       <Suspense fallback={<div>Loading product details...</div>}>
         <ProductDetailClient product={product} />
