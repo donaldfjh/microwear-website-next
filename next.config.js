@@ -1,5 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // i18n for German market localization
+  i18n: {
+    locales: ['en', 'de'],
+    defaultLocale: 'en',
+    localeDetection: true,
+  },
+
   // Image optimization for better Core Web Vitals
   images: {
     formats: ["image/avif", "image/webp"],
