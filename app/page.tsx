@@ -7,6 +7,7 @@ import { CoreSpecs } from "@/components/CoreSpecs";
 import { ManufacturingCapacity } from "@/components/ManufacturingCapacity";
 import { IndustryInsights } from "@/components/IndustryInsights";
 import { FooterBanner } from "@/components/FooterBanner";
+import { WhyChooseUs } from "@/components/WhyChooseUs";
 import { LocalBusinessSchema } from "@/components/SEO/LocalBusinessSchema";
 import { getProducts } from "@/lib/products";
 import { ScrollReveal } from "@/components/ScrollReveal";
@@ -234,6 +235,10 @@ export default async function HomePage() {
       </ScrollReveal>
 
       <ManufacturingCapacity />
+
+      <ScrollReveal>
+        <WhyChooseUs />
+      </ScrollReveal>
 
       <ScrollReveal>
         <SEOTextBlock />
