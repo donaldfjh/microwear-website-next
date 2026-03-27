@@ -16,9 +16,9 @@ import "./HomePage.css";
 
 export const metadata: Metadata = {
   title:
-    "Smartwatch OEM Factory | AI Glasses Manufacturer Microwear | Wholesale $15-50 | B2B Bulk Orders",
+    "AI Smart Glasses & Smartwatch OEM Manufacturer | Microwear B2B",
   description:
-    "Leading smartwatch & AI glasses OEM manufacturer Microwear. ISO9001 certified factory, 10+ years experience. MOQ 200pcs, wholesale $15-50. Free samples, 7-15 day delivery. Custom logo, SDK support. 500+ global B2B partners. ChatGPT & Sony camera smart glasses available.",
+    "Professional AI glasses & smartwatch OEM/ODM manufacturer. MOQ 100pcs, CE/FCC/RoHS certified, 15+ years experience. Get quote in 24h. Free samples for B2B buyers.",
   keywords: [
     // Brand keywords
     "microwear smartwatch",
@@ -63,9 +63,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      "Microwear Smartwatch | OEM/ODM Manufacturer & Factory | AI Glasses 2026",
+      "Microwear | AI Glasses & Smartwatch OEM Manufacturer",
     description:
-      "Microwear smartwatch - ISO9001 certified OEM/ODM manufacturer. 10+ years experience, wholesale bulk orders, free samples for B2B partners. 24h prototyping.",
+      "Professional AI glasses & smartwatch OEM/ODM manufacturer. CE, FCC, RoHS certified, 15+ years experience. MOQ 100pcs, free samples for B2B partners.",
     url: "https://microwear.info/",
     type: "website",
   },
@@ -92,8 +92,8 @@ export default async function HomePage() {
     "name": "Microwear",
     "url": "https://microwear.info",
     "logo": "https://microwear.info/logo.png",
-    "description": "Professional Microwear Smartwatch Manufacturer & OEM/ODM Factory Direct Solutions with 10+ years experience. ISO9001 certified smartwatch microwear supplier for B2B wholesale bulk orders worldwide.",
-    "foundingDate": "2015",
+    "description": "Professional AI glasses and smartwatch OEM/ODM manufacturer with 15+ years experience. CE, FCC, RoHS certified factory serving 500+ B2B partners worldwide.",
+    "foundingDate": "2010",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Shenzhen",
@@ -103,7 +103,8 @@ export default async function HomePage() {
       "@type": "ContactPoint",
       "telephone": "+852 6733 7121",
       "contactType": "sales",
-      "areaServed": "Global"
+      "areaServed": "Global",
+      "availableLanguage": ["English", "Chinese", "German"]
     },
     "sameAs": [
       "https://www.facebook.com/Microwear",
@@ -114,8 +115,8 @@ export default async function HomePage() {
   const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": "Microwear Smartwatch",
-    "alternateName": ["Microwear Smart Watch", "microwear smartwatch", "Microwear OEM Smartwatch", "microwear smart watch manufacturer", "smartwatch microwear", "microwear smartwatches bulk", "microwear smartwatch factory"],
+    "name": "AI Smart Glasses & Smartwatch",
+    "alternateName": ["AI Glasses OEM", "Smart Glasses Manufacturer", "Smartwatch OEM", "Wearable Device Factory"],
     "brand": {
       "@type": "Brand",
       "name": "Microwear"
@@ -124,17 +125,17 @@ export default async function HomePage() {
       "@type": "Organization",
       "name": "Microwear",
       "url": "https://microwear.info",
-      "description": "Professional microwear smartwatch OEM/ODM manufacturer with 10+ years experience, ISO9001 certified factory specializing in microwear smartwatch bulk orders, wholesale B2B partnerships, and smartwatch microwear factory direct pricing"
+      "description": "Professional AI glasses and smartwatch OEM/ODM manufacturer with 15+ years experience, CE/FCC/RoHS certified factory serving 500+ B2B partners worldwide."
     },
-    "description": "Microwear Smartwatch - ISO9001 OEM/ODM manufacturer since 2015. MOQ 200pcs, $15-50 wholesale pricing. Free samples, 7-15 day lead time. Custom logo & SDK support. 500+ global B2B partners. Bulk smartwatch orders welcome. Every microwear smartwatch features advanced health tracking, GPS, and long battery life. Smartwatch microwear factory direct. Professional microwear smartwatch supplier for OEM ODM partnerships.",
-    "category": "Smart Watch",
-    "keywords": "microwear smartwatch, microwear smartwatches, OEM smartwatch, ODM smartwatch, wholesale smartwatch, bulk smartwatch orders, B2B smartwatch manufacturer, smartwatch factory China, microwear smart watch OEM, microwear wearable technology, smartwatch microwear, microwear smartwatch supplier, OEM ODM smartwatch manufacturer",
+    "description": "Professional AI glasses and smartwatch OEM/ODM manufacturer. Micro-LED display, Android XR, health sensors, GPS. MOQ 100pcs, CE/FCC/RoHS certified. Free samples, 7-day prototype, 15-25 day production.",
+    "category": "Wearable Technology",
+    "keywords": "AI glasses OEM, smart glasses manufacturer, smartwatch OEM, wearable technology, B2B electronics, custom smartwatch, OEM manufacturer China",
     "offers": {
       "@type": "Offer",
       "url": "https://microwear.info/products",
       "price": "15.00",
       "priceCurrency": "USD",
-      "priceValidUntil": "2027-03-21",
+      "priceValidUntil": "2027-03-27",
       "availability": "https://schema.org/InStock",
       "seller": {
         "@type": "Organization",
@@ -165,40 +166,40 @@ export default async function HomePage() {
       },
       "author": {
         "@type": "Organization",
-        "name": "B2B Partner"
+        "name": "German Tech Distributor"
       },
-      "reviewBody": "Excellent OEM partner with reliable quality and timely delivery. ISO9001 certified manufacturing ensures consistent quality across all batches."
+      "reviewBody": "Excellent OEM partner. Their AI glasses are now our best-selling product in Germany. CE certification made EU import seamless."
     },
     "additionalProperty": [
       {
         "@type": "PropertyValue",
         "name": "Battery Life",
-        "value": "3-5 Days"
+        "value": "3-7 Days (smartwatch), 4-6 Hours (AI glasses)"
       },
       {
         "@type": "PropertyValue",
         "name": "Water Resistance",
-        "value": "IP68"
+        "value": "IP68, 5ATM"
       },
       {
         "@type": "PropertyValue",
         "name": "Certification",
-        "value": "ISO9001, CE, FCC, RoHS"
+        "value": "CE, FCC, RoHS, ISO 9001"
       },
       {
         "@type": "PropertyValue",
         "name": "MOQ",
-        "value": "200-500 pcs (negotiable for B2B)"
+        "value": "100 pcs (negotiable for B2B)"
       },
       {
         "@type": "PropertyValue",
         "name": "Lead Time",
-        "value": "7-15 days for samples, 20-30 days for bulk orders"
+        "value": "7 days for samples, 15-25 days for bulk orders"
       },
       {
         "@type": "PropertyValue",
         "name": "Customization",
-        "value": "OEM/ODM, custom logo, packaging, SDK"
+        "value": "OEM/ODM, custom logo, packaging, software, hardware"
       }
     ]
   };
@@ -218,8 +219,8 @@ export default async function HomePage() {
       <LocalBusinessSchema />
       
       <HeroSection
-        title="Microwear Smartwatch Manufacturer - OEM/ODM Factory Direct | B2B Wholesale Bulk Orders"
-        subtitle="10+ Years Experience | ISO9001 Certified Factory | 500+ Global B2B Partners | Wholesale Pricing $15-50 | Free Samples | MOQ 200pcs"
+        title="Your Trusted AI Glasses & Smartwatch OEM Partner"
+        subtitle="15+ Years Experience | CE, FCC, RoHS Certified | MOQ 100pcs | 500+ Global B2B Partners | Free Samples | 7-Day Prototype"
         ctaText="Get Free Quote"
         ctaLink="/contact"
         secondaryCtaText="Download Catalog"
