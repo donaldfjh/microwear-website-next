@@ -48,6 +48,64 @@ body {
   min-height: 100vh;
 }
 
+/* Microwear Brand Section (Homepage) */
+.microwear-brand-section {
+  margin: 60px 0;
+}
+
+.microwear-brand-section h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.microwear-brand-section p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #666;
+}
+
+/* Products Intro Section */
+.products-intro-section {
+  margin-bottom: 0;
+}
+
+.products-intro-section h1 {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.products-intro-section p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* RTL Support for Arabic */
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] .container {
+  direction: rtl;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .microwear-brand-section h2 {
+    font-size: 28px;
+  }
+  
+  .products-intro-section h1 {
+    font-size: 32px;
+  }
+  
+  .microwear-brand-section p,
+  .products-intro-section p {
+    font-size: 16px;
+  }
+}
+
 body {
   display: flex;
   flex-direction: column;

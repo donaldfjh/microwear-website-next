@@ -17,18 +17,24 @@ import "./HomePage.css";
 
 export const metadata: Metadata = {
   title:
-    "AI Smart Glasses & Smartwatch OEM Manufacturer | Microwear B2B",
+    "Microwear Smartwatch Manufacturer & OEM Factory | AI Glasses B2B",
   description:
-    "Professional AI glasses & smartwatch OEM/ODM manufacturer. MOQ 100pcs, CE/FCC/RoHS certified, 15+ years experience. Get quote in 24h. Free samples for B2B buyers.",
+    "Microwear smartwatch OEM manufacturer direct - ISO9001 certified factory. MOQ 200pcs, $15-50 wholesale. Free samples, 24h quotes. 15+ years experience, CE/FCC/RoHS certified. Get your microwear smartwatch quote now!",
   keywords: [
-    // Brand keywords
+    // Core brand keywords (Priority for ranking improvement)
+    "microwear",
     "microwear smartwatch",
-    "microwear ai glasses",
+    "microwear smart watch",
     "microwear manufacturer",
+    "microwear factory",
+    "microwear official website",
+    "microwear ai glasses",
     
     // Core business keywords
     "smartwatch manufacturer",
     "smartwatch OEM factory",
+    "smart watch manufacturer China",
+    "OEM smartwatch supplier",
     "AI glasses manufacturer",
     "smart glasses OEM",
     
@@ -64,9 +70,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      "Microwear | AI Glasses & Smartwatch OEM Manufacturer",
+      "Microwear Smartwatch Manufacturer & OEM Factory | B2B Direct",
     description:
-      "Professional AI glasses & smartwatch OEM/ODM manufacturer. CE, FCC, RoHS certified, 15+ years experience. MOQ 100pcs, free samples for B2B partners.",
+      "Microwear smartwatch OEM manufacturer - ISO9001 certified factory direct. MOQ 200pcs, $15-50 wholesale. Free samples, 24h quotes. 15+ years experience.",
     url: "https://microwear.info/",
     type: "website",
   },
@@ -229,6 +235,84 @@ export default async function HomePage() {
       />
 
       <CertificationBar />
+
+      {/* Microwear Brand Section - SEO Optimization for core keywords */}
+      <ScrollReveal>
+        <section className="microwear-brand-section" style={{
+          padding: '80px 24px',
+          backgroundColor: '#f8f9fa',
+          textAlign: 'center'
+        }}>
+          <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+            <h2 style={{ 
+              fontSize: '36px', 
+              fontWeight: '700',
+              marginBottom: '24px',
+              color: '#1a1a1a'
+            }}>
+              Why Choose Microwear Smartwatch?
+            </h2>
+            <p style={{ 
+              fontSize: '18px', 
+              lineHeight: '1.8',
+              color: '#666',
+              maxWidth: '800px',
+              margin: '0 auto 40px'
+            }}>
+              As a leading <strong>microwear smartwatch manufacturer</strong>, we deliver premium quality 
+              wearable technology with 15+ years of OEM/ODM expertise. Our factory serves 500+ B2B partners 
+              globally, offering competitive pricing, fast delivery, and comprehensive customization services.
+            </p>
+            
+            <div style={{ 
+              display: 'grid', 
+              gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', 
+              gap: '32px',
+              marginTop: '48px'
+            }}>
+              <div style={{ padding: '24px', background: 'white', borderRadius: '12px' }}>
+                <div style={{ fontSize: '42px', marginBottom: '16px' }}>🏭</div>
+                <h3 style={{ fontSize: '20px', fontWeight: '600', marginBottom: '12px' }}>
+                  Factory Direct
+                </h3>
+                <p style={{ color: '#666', lineHeight: '1.6' }}>
+                  ISO9001 certified microwear smartwatch factory with 450+ employees and 300+ patents
+                </p>
+              </div>
+              
+              <div style={{ padding: '24px', background: 'white', borderRadius: '12px' }}>
+                <div style={{ fontSize: '42px', marginBottom: '16px' }}>💰</div>
+                <h3 style={{ fontSize: '20px', fontWeight: '600', marginBottom: '12px' }}>
+                  Competitive Pricing
+                </h3>
+                <p style={{ color: '#666', lineHeight: '1.6' }}>
+                  Wholesale $15-50 per unit, MOQ 200pcs. Best value for microwear smart watch bulk orders
+                </p>
+              </div>
+              
+              <div style={{ padding: '24px', background: 'white', borderRadius: '12px' }}>
+                <div style={{ fontSize: '42px', marginBottom: '16px' }}>🚀</div>
+                <h3 style={{ fontSize: '20px', fontWeight: '600', marginBottom: '12px' }}>
+                  Fast Delivery
+                </h3>
+                <p style={{ color: '#666', lineHeight: '1.6' }}>
+                  7-day sampling, 15-25 day production. Express shipping to global markets
+                </p>
+              </div>
+              
+              <div style={{ padding: '24px', background: 'white', borderRadius: '12px' }}>
+                <div style={{ fontSize: '42px', marginBottom: '16px' }}>🛡️</div>
+                <h3 style={{ fontSize: '20px', fontWeight: '600', marginBottom: '12px' }}>
+                  Quality Assurance
+                </h3>
+                <p style={{ color: '#666', lineHeight: '1.6' }}>
+                  CE, FCC, RoHS certified. 100% quality inspection before shipment
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </ScrollReveal>
 
       <ScrollReveal delay={0.2}>
         <CoreSpecs />
