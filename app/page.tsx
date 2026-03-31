@@ -17,9 +17,9 @@ import "./HomePage.css";
 
 export const metadata: Metadata = {
   title:
-    "Microwear Smartwatch Manufacturer & OEM Factory | AI Glasses B2B",
+    "Microwear Official | Smartwatch OEM Manufacturer & AI Glasses Factory",
   description:
-    "Microwear smartwatch OEM manufacturer direct - ISO9001 certified factory. MOQ 200pcs, $15-50 wholesale. Free samples, 24h quotes. 15+ years experience, CE/FCC/RoHS certified. Get your microwear smartwatch quote now!",
+    "Microwear official website - ISO9001 certified smartwatch OEM manufacturer. MOQ 200pcs, $15-50 wholesale. Free samples, 24h quotes. 15+ years experience, CE/FCC/RoHS certified. Get your microwear smartwatch quote now!",
   keywords: [
     // Core brand keywords (Priority for ranking improvement)
     "microwear",
@@ -70,9 +70,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      "Microwear Smartwatch Manufacturer & OEM Factory | B2B Direct",
+      "Microwear Official | Smartwatch OEM Manufacturer & AI Glasses Factory",
     description:
-      "Microwear smartwatch OEM manufacturer - ISO9001 certified factory direct. MOQ 200pcs, $15-50 wholesale. Free samples, 24h quotes. 15+ years experience.",
+      "Microwear official website - ISO9001 certified smartwatch OEM manufacturer. MOQ 200pcs, $15-50 wholesale. Free samples, 24h quotes. 15+ years experience.",
     url: "https://microwear.info/",
     type: "website",
   },
@@ -97,9 +97,10 @@ export default async function HomePage() {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Microwear",
+    "alternateName": ["Microwear Official", "Microwear Smartwatch", "Microwear Factory"],
     "url": "https://microwear.info",
     "logo": "https://microwear.info/logo.png",
-    "description": "Professional AI glasses and smartwatch OEM/ODM manufacturer with 15+ years experience. CE, FCC, RoHS certified factory serving 500+ B2B partners worldwide.",
+    "description": "Microwear official - Professional AI glasses and smartwatch OEM/ODM manufacturer with 15+ years experience. CE, FCC, RoHS certified factory serving 500+ B2B partners worldwide.",
     "foundingDate": "2010",
     "address": {
       "@type": "PostalAddress",
@@ -211,9 +212,23 @@ export default async function HomePage() {
     ]
   };
 
+  // WebSite schema to reinforce official website status
+  const webSiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Microwear Official",
+    "alternateName": ["Microwear Smartwatch Official Website", "Microwear Factory Direct"],
+    "url": "https://microwear.info",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Microwear"
+    },
+    "description": "Official Microwear website - Smartwatch OEM manufacturer and AI glasses factory direct. B2B wholesale, custom logo, free samples."
+  };
+
   const combinedSchema = {
     "@context": "https://schema.org",
-    "@graph": [organizationSchema, productSchema]
+    "@graph": [webSiteSchema, organizationSchema, productSchema]
   };
 
   return (
@@ -226,7 +241,7 @@ export default async function HomePage() {
       <LocalBusinessSchema />
       
       <HeroSection
-        title="Your Trusted AI Glasses & Smartwatch OEM Partner"
+        title="Microwear Official - Smartwatch OEM & AI Glasses Manufacturer"
         subtitle="15+ Years Experience | CE, FCC, RoHS Certified | MOQ 100pcs | 500+ Global B2B Partners | Free Samples | 7-Day Prototype"
         ctaText="Get Free Quote"
         ctaLink="/contact"
