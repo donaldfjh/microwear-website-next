@@ -255,7 +255,7 @@ export default function H2ProductPage() {
             <div className="specs-table">
               <div className="spec-row">
                 <span className="spec-label">Display</span>
-                <span className="spec-value">1.96" AMOLED, 410x502 pixels, Always-On</span>
+                <span className="spec-value">1.96&quot; AMOLED, 410x502 pixels, Always-On</span>
               </div>
               <div className="spec-row">
                 <span className="spec-label">Processor</span>
