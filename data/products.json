@@ -688,5 +688,73 @@
       "title": "Why this is perfect for Daily Commuters?",
       "content": "Featuring real-time simultaneous interpretation and conversation translation, the AI 4 breaks language barriers instantly. An essential companion for international business travelers, cross-border trade, and multicultural communication."
     }
+  },
+  {
+    "id": "h2",
+    "name": "Microwear H2 Rugged Smartwatch",
+    "description": "Industrial grade rugged smartwatch designed for enterprise and outdoor use. IP68 waterproof, military-grade durability, extended battery life. ODM/OEM services available.",
+    "price": 45,
+    "images": [
+      "/images/products/h2-main.webp",
+      "/images/products/h2-side.webp"
+    ],
+    "specifications": {
+      "display": "1.96\" AMOLED, 410x502 pixels, Always-On",
+      "processor": "Dual-core 300MHz",
+      "battery": "450mAh, 10-14 days typical, wireless charging optional",
+      "waterResistance": "IP68 + MIL-STD-810H",
+      "connectivity": ["Bluetooth 5.2", "GPS", "NFC"],
+      "sensors": [
+        "Heart Rate",
+        "SpO2",
+        "Accelerometer",
+        "Gyroscope",
+        "Barometer"
+      ],
+      "compatibility": ["iOS 12+", "Android 6.0+"],
+      "dimensions": "48 x 48 x 12 mm",
+      "weight": "68g (without strap)"
+    },
+    "highlights": [
+      "Military-grade durability (MIL-STD-810H certified)",
+      "IP68 waterproof + dustproof",
+      "10-14 days battery life",
+      "100+ sport modes with GPS tracking",
+      "24/7 health monitoring (HR, SpO2, sleep)",
+      "Custom firmware available for enterprise"
+    ],
+    "variants": [
+      {
+        "id": "h2-black",
+        "name": "Tactical Black",
+        "price": 45,
+        "color": "Black",
+        "bandMaterial": "Silicone",
+        "image": "/images/products/h2-main.webp"
+      },
+      {
+        "id": "h2-green",
+        "name": "Army Green",
+        "price": 45,
+        "color": "Green",
+        "bandMaterial": "Silicone",
+        "image": "/images/products/h2-side.webp"
+      }
+    ],
+    "features": [
+      "IP68 Waterproof",
+      "MIL-STD-810H Certified",
+      "Heart Rate Monitor",
+      "SpO2",
+      "Sleep Tracking",
+      "GPS Tracking",
+      "100+ Sport Modes",
+      "Wireless Charging"
+    ],
+    "category": "Rugged",
+    "useCase": {
+      "title": "Why this is perfect for Enterprise & Outdoor?",
+      "content": "The H2 is built for extreme conditions with military-grade durability and IP68 protection. Ideal for construction, logistics, outdoor sports, and industrial applications where reliability matters."
+    }
   }
 ]
