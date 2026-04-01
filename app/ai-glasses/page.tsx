@@ -9,10 +9,18 @@ import "./page.css";
 
 export const metadata: Metadata = {
   title:
-    "AI Glasses OEM Factory | Smart Glasses Manufacturer Microwear | ChatGPT & Sony Camera",
+    "ODM Smart Glasses Manufacturer | AI/AR/Camera/Telephone Eyewear Factory",
   description:
-    "Leading AI glasses OEM manufacturer Microwear. ChatGPT voice assistant & Sony 8MP camera smart glasses. ISO9001 certified factory, MOQ 200pcs, $25-60 wholesale. Free samples, 7-15 day delivery. 300+ patents. B2B bulk orders welcome.",
+    "Professional ODM manufacturer for smart glasses, AR glasses, camera glasses, and telephone glasses. Custom design, firmware, branding. MOQ 500pcs. CE/FCC certified. Get factory direct quote today.",
   keywords: [
+    "odm smart glasses",
+    "odm ar glasses",
+    "odm camera glasses",
+    "odm telephone glasses",
+    "smart glasses manufacturer",
+    "AR glasses factory",
+    "camera glasses OEM",
+    "telephone glasses supplier",
     "AI glasses manufacturer",
     "smart glasses OEM",
     "ChatGPT glasses factory",
@@ -20,21 +28,22 @@ export const metadata: Metadata = {
     "OEM AI eyewear China",
     "smart glasses with camera",
     "voice assistant glasses",
-    "AR glasses manufacturer",
     "wearable AI device factory",
     "B2B AI glasses supplier",
     "microwear AI glasses",
     "smart glasses bulk orders",
     "AI glasses MOQ 200",
-    "custom smart glasses manufacturer"
+    "custom smart glasses manufacturer",
+    "augmented reality eyewear factory",
+    "smart audio glasses OEM"
   ],
   alternates: {
     canonical: "https://microwear.info/ai-glasses",
   },
   openGraph: {
-    title: "AI Glasses OEM Factory | Smart Glasses Manufacturer Microwear",
+    title: "ODM Smart Glasses Manufacturer | AI/AR/Camera/Telephone Eyewear Factory",
     description:
-      "Leading AI glasses OEM manufacturer Microwear. ChatGPT & Sony camera smart glasses. ISO9001 certified, MOQ 200pcs, $25-60 wholesale. Free samples.",
+      "Professional ODM manufacturer for smart glasses, AR glasses, camera glasses, and telephone glasses. Custom design, firmware, branding. MOQ 500pcs. CE/FCC certified.",
     type: "website",
     images: [
       "https://microwear.info/images/glasses/glasses1.webp"
@@ -144,6 +153,41 @@ export default function AIGlassesPage() {
       question: "Is NJY Technology a factory or trading company?",
       answer:
         "NJY Technology is a manufacturer established in 2008 with 450+ employees and over 300 core patents. We provide OEM/ODM services for global brands.",
+    },
+  ];
+
+  const glassesCategories = [
+    {
+      id: "telephone",
+      name: "Telephone Glasses",
+      keyword: "odm telephone glasses",
+      description: "Smart audio glasses with Bluetooth calling, open-ear speakers, and voice assistant integration. Perfect for hands-free communication.",
+      features: ["Bluetooth Calling", "Open-Ear Audio", "Voice Assistant", "12h+ Battery"],
+      link: "/contact?subject=Telephone Glasses OEM",
+    },
+    {
+      id: "camera",
+      name: "Camera Glasses",
+      keyword: "odm camera glasses",
+      description: "First-person video recording glasses with Sony sensors. Capture life from your perspective. Live streaming capable.",
+      features: ["Sony 8MP Sensor", "1080P/4K Recording", "EIS Stabilization", "Live Streaming"],
+      link: "/contact?subject=Camera Glasses OEM",
+    },
+    {
+      id: "ar",
+      name: "AR Glasses",
+      keyword: "odm ar glasses",
+      description: "Augmented reality glasses with MicroLED displays and waveguide optics. Enterprise and consumer models available.",
+      features: ["MicroLED Display", "Waveguide Optics", "Android/Linux OS", "6DoF Tracking"],
+      link: "/contact?subject=AR Glasses OEM",
+    },
+    {
+      id: "smart",
+      name: "Smart Glasses",
+      keyword: "odm smart glasses",
+      description: "All-in-one intelligent eyewear with AI integration. ChatGPT, translation, navigation, and more.",
+      features: ["AI Integration", "Real-time Translation", "Navigation", "Touch Controls"],
+      link: "/contact?subject=Smart Glasses OEM",
     },
   ];
 
@@ -366,6 +410,50 @@ export default function AIGlassesPage() {
                   </tr>
                 </tbody>
               </table>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* Product Categories Section - ODM Smart Glasses Collection */}
+      <section className="glasses-categories-section">
+        <div className="container">
+          <ScrollReveal>
+            <h2 className="section-title">ODM Smart Glasses Categories</h2>
+            <p className="section-subtitle">
+              Professional ODM manufacturer for all types of smart eyewear. Custom design, firmware, and branding available.
+            </p>
+          </ScrollReveal>
+          
+          <ScrollReveal>
+            <div className="categories-grid">
+              {glassesCategories.map((category) => (
+                <div key={category.id} className="category-card">
+                  <div className="category-header">
+                    <h3>{category.name}</h3>
+                    <span className="category-keyword">{category.keyword}</span>
+                  </div>
+                  <p className="category-description">{category.description}</p>
+                  <ul className="category-features">
+                    {category.features.map((feature, idx) => (
+                      <li key={idx}>✓ {feature}</li>
+                    ))}
+                  </ul>
+                  <Link href={category.link} className="btn btn-category">
+                    Inquire for {category.name}
+                  </Link>
+                </div>
+              ))}
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal>
+            <div className="categories-cta">
+              <h3>Need Custom Smart Glasses?</h3>
+              <p>We provide full ODM/OEM services for all glasses categories. MOQ 500pcs, 15-25 day production.</p>
+              <Link href="/contact?subject=Custom Smart Glasses Project" className="btn btn-primary">
+                Start Your ODM Project
+              </Link>
             </div>
           </ScrollReveal>
         </div>

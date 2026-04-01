@@ -256,6 +256,129 @@ h2 {
   border-bottom: none;
 }
 
+/* Product Categories Section */
+.glasses-categories-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 1.125rem;
+  color: #666;
+  max-width: 700px;
+  margin: -40px auto 60px;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  margin-bottom: 60px;
+}
+
+.category-card {
+  background: white;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e0e0e0;
+}
+
+.category-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.category-header {
+  margin-bottom: 16px;
+}
+
+.category-header h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.category-keyword {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: #666;
+  background: #f0f0f0;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-family: monospace;
+}
+
+.category-description {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.category-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+}
+
+.category-features li {
+  font-size: 0.875rem;
+  color: #4CAF50;
+  padding: 6px 0;
+  font-weight: 500;
+}
+
+.btn-category {
+  display: block;
+  text-align: center;
+  padding: 12px 24px;
+  background-color: #1a1a1a;
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-category:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+}
+
+.categories-cta {
+  text-align: center;
+  padding: 48px;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  border-radius: 16px;
+  color: white;
+}
+
+.categories-cta h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.categories-cta p {
+  font-size: 1.125rem;
+  opacity: 0.9;
+  margin-bottom: 32px;
+}
+
+.categories-cta .btn-primary {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+
+.categories-cta .btn-primary:hover {
+  background-color: #45a049;
+}
+
 /* Trust Section */
 .trust-section {
   padding: 60px 0;
@@ -313,10 +436,22 @@ h2 {
   .faq-grid {
     grid-template-columns: 1fr;
   }
+
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 600px) {
   .trust-grid {
     grid-template-columns: 1fr;
+  }
+
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-subtitle {
+    margin-top: 20px;
   }
 }

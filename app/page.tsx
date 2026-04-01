@@ -17,9 +17,9 @@ import "./HomePage.css";
 
 export const metadata: Metadata = {
   title:
-    "Microwear Official | Smartwatch OEM Manufacturer & AI Glasses Factory",
+    "Microwear | Smart Watch & AI Glasses ODM Manufacturer from China",
   description:
-    "Microwear official website - ISO9001 certified smartwatch OEM manufacturer. MOQ 200pcs, $15-50 wholesale. Free samples, 24h quotes. 15+ years experience, CE/FCC/RoHS certified. Get your microwear smartwatch quote now!",
+    "Leading smartwatch and AI glasses manufacturer. ODM/OEM services for global brands. 10+ years experience. ISO certified. Factory direct, wholesale pricing. Request bulk quote today.",
   keywords: [
     // Core brand keywords (Priority for ranking improvement)
     "microwear",
@@ -70,9 +70,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      "Microwear Official | Smartwatch OEM Manufacturer & AI Glasses Factory",
+      "Microwear | Smart Watch & AI Glasses ODM Manufacturer from China",
     description:
-      "Microwear official website - ISO9001 certified smartwatch OEM manufacturer. MOQ 200pcs, $15-50 wholesale. Free samples, 24h quotes. 15+ years experience.",
+      "Leading smartwatch and AI glasses manufacturer. ODM/OEM services for global brands. 10+ years experience. ISO certified. Factory direct, wholesale pricing.",
     url: "https://microwear.info/",
     type: "website",
   },
