@@ -1,6 +1,7 @@
 import { HeroSection } from "@/components/HeroSection";
 import { CertificationBar } from "@/components/CertificationBar";
 import { HomeProductGrid } from "@/components/HomeProductGrid";
+import { LocalBusinessSchema } from "@/components/SEO/LocalBusinessSchema";
 import { getProducts } from "@/lib/products";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import Link from "next/link";
