@@ -207,6 +207,327 @@ export default async function HomePage() {
         </div>
       </section>
 
+      {/* B2B Solutions - 4 categories */}
+      <section className="b2b-solutions" style={{
+        padding: '100px 0',
+        background: '#0f172a'
+      }}>
+        <div className="container">
+          <div style={{
+            textAlign: 'center',
+            marginBottom: '80px'
+          }}>
+            <span style={{
+              display: 'inline-block',
+              padding: '8px 20px',
+              background: 'rgba(14, 165, 233, 0.1)',
+              border: '1px solid rgba(14, 165, 233, 0.3)',
+              borderRadius: '100px',
+              color: '#0ea5e9',
+              fontSize: '14px',
+              fontWeight: '500',
+              marginBottom: '20px',
+              letterSpacing: '0.5px'
+            }}>
+              INDUSTRY SOLUTIONS
+            </span>
+            <h2 style={{
+              fontSize: '42px',
+              fontWeight: '700',
+              color: 'white',
+              marginBottom: '16px',
+              letterSpacing: '-0.5px'
+            }}>
+              Custom Solutions for Every Segment
+            </h2>
+            <p style={{
+              color: '#64748b',
+              fontSize: '18px',
+              maxWidth: '600px',
+              margin: '0 auto',
+              lineHeight: '1.7'
+            }}>
+              From fitness tracking to kids safety, we deliver specialized OEM/ODM solutions tailored to your target market.
+            </p>
+          </div>
+
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(4, 1fr)',
+            gap: '24px'
+          }}>
+            {/* Fitness Tracker */}
+            <Link href="/products/fitness-tracker" style={{
+              position: 'relative',
+              padding: '40px 28px',
+              background: 'linear-gradient(180deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.8) 100%)',
+              borderRadius: '20px',
+              border: '1px solid rgba(255,255,255,0.06)',
+              textAlign: 'left',
+              textDecoration: 'none',
+              overflow: 'hidden',
+              transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)'
+            }}>
+              <div style={{
+                position: 'absolute',
+                top: '0',
+                right: '0',
+                width: '120px',
+                height: '120px',
+                background: 'radial-gradient(circle, rgba(14, 165, 233, 0.15) 0%, transparent 70%)',
+                borderRadius: '50%',
+                transform: 'translate(30%, -30%)'
+              }} />
+              <div style={{
+                width: '56px',
+                height: '56px',
+                background: 'linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%)',
+                borderRadius: '14px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                marginBottom: '24px'
+              }}>
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                </svg>
+              </div>
+              <h3 style={{
+                fontSize: '20px',
+                fontWeight: '600',
+                marginBottom: '12px',
+                color: 'white'
+              }}>
+                Fitness Tracker
+              </h3>
+              <p style={{
+                color: '#94a3b8',
+                fontSize: '14px',
+                lineHeight: '1.6',
+                marginBottom: '20px'
+              }}>
+                Heart rate, SpO2, GPS tracking, 100+ sport modes
+              </p>
+              <span style={{
+                color: '#0ea5e9',
+                fontSize: '14px',
+                fontWeight: '500',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '6px'
+              }}>
+                Learn more
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </span>
+            </Link>
+
+            {/* Kids Smartwatch */}
+            <Link href="/products/kids-smartwatch" style={{
+              position: 'relative',
+              padding: '40px 28px',
+              background: 'linear-gradient(180deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.8) 100%)',
+              borderRadius: '20px',
+              border: '1px solid rgba(255,255,255,0.06)',
+              textAlign: 'left',
+              textDecoration: 'none',
+              overflow: 'hidden',
+              transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)'
+            }}>
+              <div style={{
+                position: 'absolute',
+                top: '0',
+                right: '0',
+                width: '120px',
+                height: '120px',
+                background: 'radial-gradient(circle, rgba(168, 85, 247, 0.15) 0%, transparent 70%)',
+                borderRadius: '50%',
+                transform: 'translate(30%, -30%)'
+              }} />
+              <div style={{
+                width: '56px',
+                height: '56px',
+                background: 'linear-gradient(135deg, #a855f7 0%, #7c3aed 100%)',
+                borderRadius: '14px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                marginBottom: '24px'
+              }}>
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 6v6l4 2" />
+                </svg>
+              </div>
+              <h3 style={{
+                fontSize: '20px',
+                fontWeight: '600',
+                marginBottom: '12px',
+                color: 'white'
+              }}>
+                Kids Smartwatch
+              </h3>
+              <p style={{
+                color: '#94a3b8',
+                fontSize: '14px',
+                lineHeight: '1.6',
+                marginBottom: '20px'
+              }}>
+                GPS tracking, SOS button, parental controls
+              </p>
+              <span style={{
+                color: '#a855f7',
+                fontSize: '14px',
+                fontWeight: '500',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '6px'
+              }}>
+                Learn more
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </span>
+            </Link>
+
+            {/* Rugged Smartwatch */}
+            <Link href="/products/rugged-smartwatch" style={{
+              position: 'relative',
+              padding: '40px 28px',
+              background: 'linear-gradient(180deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.8) 100%)',
+              borderRadius: '20px',
+              border: '1px solid rgba(255,255,255,0.06)',
+              textAlign: 'left',
+              textDecoration: 'none',
+              overflow: 'hidden',
+              transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)'
+            }}>
+              <div style={{
+                position: 'absolute',
+                top: '0',
+                right: '0',
+                width: '120px',
+                height: '120px',
+                background: 'radial-gradient(circle, rgba(245, 158, 11, 0.15) 0%, transparent 70%)',
+                borderRadius: '50%',
+                transform: 'translate(30%, -30%)'
+              }} />
+              <div style={{
+                width: '56px',
+                height: '56px',
+                background: 'linear-gradient(135deg, #f59e0b 0%, #d97706 100%)',
+                borderRadius: '14px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                marginBottom: '24px'
+              }}>
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </div>
+              <h3 style={{
+                fontSize: '20px',
+                fontWeight: '600',
+                marginBottom: '12px',
+                color: 'white'
+              }}>
+                Rugged Smartwatch
+              </h3>
+              <p style={{
+                color: '#94a3b8',
+                fontSize: '14px',
+                lineHeight: '1.6',
+                marginBottom: '20px'
+              }}>
+                IP68 waterproof, MIL-STD-810H certified
+              </p>
+              <span style={{
+                color: '#f59e0b',
+                fontSize: '14px',
+                fontWeight: '500',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '6px'
+              }}>
+                Learn more
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </span>
+            </Link>
+
+            {/* Health Smartwatch */}
+            <Link href="/products/health-smartwatch" style={{
+              position: 'relative',
+              padding: '40px 28px',
+              background: 'linear-gradient(180deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.8) 100%)',
+              borderRadius: '20px',
+              border: '1px solid rgba(255,255,255,0.06)',
+              textAlign: 'left',
+              textDecoration: 'none',
+              overflow: 'hidden',
+              transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)'
+            }}>
+              <div style={{
+                position: 'absolute',
+                top: '0',
+                right: '0',
+                width: '120px',
+                height: '120px',
+                background: 'radial-gradient(circle, rgba(34, 197, 94, 0.15) 0%, transparent 70%)',
+                borderRadius: '50%',
+                transform: 'translate(30%, -30%)'
+              }} />
+              <div style={{
+                width: '56px',
+                height: '56px',
+                background: 'linear-gradient(135deg, #22c55e 0%, #16a34a 100%)',
+                borderRadius: '14px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                marginBottom: '24px'
+              }}>
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                </svg>
+              </div>
+              <h3 style={{
+                fontSize: '20px',
+                fontWeight: '600',
+                marginBottom: '12px',
+                color: 'white'
+              }}>
+                Health Smartwatch
+              </h3>
+              <p style={{
+                color: '#94a3b8',
+                fontSize: '14px',
+                lineHeight: '1.6',
+                marginBottom: '20px'
+              }}>
+                ECG, SpO2, blood pressure monitoring
+              </p>
+              <span style={{
+                color: '#22c55e',
+                fontSize: '14px',
+                fontWeight: '500',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '6px'
+              }}>
+                Learn more
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="cta-section" style={{
         padding: '80px 0',
