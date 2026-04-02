@@ -52,7 +52,7 @@ export default function KidsSmartwatchPage() {
             maxWidth: '800px',
             margin: '0 auto 40px'
           }}>
-            Professional children's smartwatch factory with advanced GPS tracking, SOS emergency button, 
+            Professional children&apos;s smartwatch factory with advanced GPS tracking, SOS emergency button, 
             and comprehensive parental controls. CE/FCC/RoHS certified, trusted by 50+ kids brands worldwide.
           </p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center' }}>

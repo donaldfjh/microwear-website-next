@@ -10,7 +10,7 @@ interface B2BInfoBoxProps {
 
 export const B2BInfoBox: React.FC<B2BInfoBoxProps> = ({
   moq = 100,
-  priceRange = "$15-32",
+  priceRange,
   leadTime = "15-25 days",
   certifications = ["CE", "FCC", "RoHS", "ISO9001"]
 }) => {
@@ -32,7 +32,7 @@ export const B2BInfoBox: React.FC<B2BInfoBoxProps> = ({
         </div>
         <div>
           <span style={{ opacity: 0.8 }}>Price Range</span>
-          <p style={{ fontSize: '18px', fontWeight: '600' }}>{priceRange}</p>
+          <p style={{ fontSize: '18px', fontWeight: '600' }}>{priceRange || 'Contact for pricing'}</p>
         </div>
         <div>
           <span style={{ opacity: 0.8 }}>Lead Time</span>

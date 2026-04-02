@@ -89,7 +89,8 @@
     "useCase": {
       "title": "Why this is perfect for Business Professionals?",
       "content": "The W11 Pro combines a premium AMOLED display with professional health tracking (ECG), making it the ideal companion for executives who need to stay connected and monitor their wellness during busy schedules."
-    }
+    },
+    "priceRange": null
   },
   {
     "id": "mw-fit-lite",
@@ -166,7 +167,8 @@
     "useCase": {
       "title": "Why this is perfect for Fitness Beginners?",
       "content": "With its affordable price point and essential health features, the S11 removes barriers to entry for health monitoring, offering 5-day battery life for uninterrupted tracking."
-    }
+    },
+    "priceRange": null
   },
   {
     "id": "mw-sport-ultra",
@@ -240,7 +242,8 @@
     "useCase": {
       "title": "Why this is perfect for Outdoor Adventurers?",
       "content": "Built with military-grade durability and precise GPS, the Ultra 5 withstands extreme conditions while providing critical metrics for hikers, runners, and explorers."
-    }
+    },
+    "priceRange": null
   },
   {
     "id": "mw-classic-steel",
@@ -327,7 +330,8 @@
     "useCase": {
       "title": "Why this is perfect for Style-Conscious Users?",
       "content": "The MA31 merges traditional watch aesthetics with modern smart features. Its stainless steel body and hybrid design appeal to those who value fashion as much as function."
-    }
+    },
+    "priceRange": null
   },
   {
     "id": "mw-kids-fun",
@@ -403,7 +407,8 @@
     "useCase": {
       "title": "Why this is perfect for Parents & Kids?",
       "content": "Safety is paramount. The Su02 offers real-time GPS tracking and SOS features, giving parents peace of mind while providing kids with a fun, durable wearable."
-    }
+    },
+    "priceRange": null
   },
   {
     "id": "mw-health-ma25",
@@ -495,7 +500,8 @@
     "useCase": {
       "title": "Why this is perfect for Women's Health?",
       "content": "Featuring advanced sensors for period tracking and comprehensive wellness monitoring, the MA25 is designed to empower women with actionable health insights."
-    }
+    },
+    "priceRange": null
   },
   {
     "id": "mw-health-ma18",
@@ -574,7 +580,8 @@
     "useCase": {
       "title": "Why this is perfect for Senior Care?",
       "content": "With ECG, blood pressure, and fall detection capabilities, the MA18 is an essential tool for elderly care, enabling remote health monitoring for families."
-    }
+    },
+    "priceRange": null
   },
   {
     "id": "smart-audio-glasses-oem-blue-light-blocking-ai3",
@@ -640,7 +647,8 @@
     "useCase": {
       "title": "Why this is perfect for Tech Early Adopters?",
       "content": "Leveraging AI intelligent Q&A and photo-based object recognition, these glasses are ideal for hands-free learning and instant information retrieval. Perfect for tourism, museum guides, and interactive educational scenarios."
-    }
+    },
+    "priceRange": null
   },
   {
     "id": "ray-ban-meta-alternative-manufacturer-ai3-pro",
@@ -709,7 +717,8 @@
     "useCase": {
       "title": "Why this is perfect for Content Creators?",
       "content": "With 8MP wide-angle photo capture and video recording, plus meeting recording and summary generation, the AI 3 PRO is the ultimate tool for vloggers, journalists, and professionals needing efficient documentation."
-    }
+    },
+    "priceRange": null
   },
   {
     "id": "chatgpt-compatible-smart-glasses-anti-leakage-ai4",
@@ -777,6 +786,7 @@
     "useCase": {
       "title": "Why this is perfect for Daily Commuters?",
       "content": "Featuring real-time simultaneous interpretation and conversation translation, the AI 4 breaks language barriers instantly. An essential companion for international business travelers, cross-border trade, and multicultural communication."
-    }
+    },
+    "priceRange": null
   }
 ]

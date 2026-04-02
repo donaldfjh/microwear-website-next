@@ -38,6 +38,7 @@ export interface Product {
   name: string;
   description: string;
   price: number;
+  priceRange?: string; // B2B price range, e.g. "$18-32", manually configured
   images: string[];
   specifications: ProductSpecifications;
   highlights: string[];
