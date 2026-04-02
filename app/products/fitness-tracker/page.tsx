@@ -204,6 +204,134 @@ export default function FitnessTrackerPage() {
         </div>
       </section>
 
+      {/* Related Products */}
+      <section className="related-products" style={{
+        padding: '80px 0',
+        background: '#f8fafc'
+      }}>
+        <div className="container">
+          <h2 style={{
+            textAlign: 'center',
+            fontSize: '36px',
+            marginBottom: '40px',
+            color: '#1e293b'
+          }}>
+            Related Products
+          </h2>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+            gap: '24px',
+            maxWidth: '1200px',
+            margin: '0 auto'
+          }}>
+            <Link href="/products/W11pro" style={{
+              textDecoration: 'none',
+              background: 'white',
+              borderRadius: '12px',
+              overflow: 'hidden',
+              boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
+              transition: 'transform 0.2s'
+            }}>
+              <div style={{
+                height: '200px',
+                background: '#f1f5f9',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center'
+              }}>
+                <img 
+                  src="/images/products/w11poverall.webp" 
+                  alt="Microwear W11 Pro"
+                  style={{ maxHeight: '180px', maxWidth: '90%', objectFit: 'contain' }}
+                />
+              </div>
+              <div style={{ padding: '16px' }}>
+                <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#1e293b', marginBottom: '8px' }}>
+                  Microwear W11 Pro
+                </h3>
+                <p style={{ fontSize: '14px', color: '#64748b' }}>
+                  Premium smartwatch with advanced health tracking and stunning AMOLED display.
+                </p>
+              </div>
+            </Link>
+            <Link href="/products/mw-fit-lite" style={{
+              textDecoration: 'none',
+              background: 'white',
+              borderRadius: '12px',
+              overflow: 'hidden',
+              boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
+              transition: 'transform 0.2s'
+            }}>
+              <div style={{
+                height: '200px',
+                background: '#f1f5f9',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center'
+              }}>
+                <img 
+                  src="/images/products/S11OverAll.png" 
+                  alt="Microwear Watch S11"
+                  style={{ maxHeight: '180px', maxWidth: '90%', objectFit: 'contain' }}
+                />
+              </div>
+              <div style={{ padding: '16px' }}>
+                <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#1e293b', marginBottom: '8px' }}>
+                  Microwear Watch S11
+                </h3>
+                <p style={{ fontSize: '14px', color: '#64748b' }}>
+                  Affordable fitness tracker with essential health features.
+                </p>
+              </div>
+            </Link>
+            <Link href="/products/mw-sport-ultra" style={{
+              textDecoration: 'none',
+              background: 'white',
+              borderRadius: '12px',
+              overflow: 'hidden',
+              boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
+              transition: 'transform 0.2s'
+            }}>
+              <div style={{
+                height: '200px',
+                background: '#f1f5f9',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center'
+              }}>
+                <img 
+                  src="/images/products/Ultra5Overall.jpg" 
+                  alt="Watch Ultra 5"
+                  style={{ maxHeight: '180px', maxWidth: '90%', objectFit: 'contain' }}
+                />
+              </div>
+              <div style={{ padding: '16px' }}>
+                <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#1e293b', marginBottom: '8px' }}>
+                  Watch Ultra 5
+                </h3>
+                <p style={{ fontSize: '14px', color: '#64748b' }}>
+                  Rugged sports watch designed for extreme athletes.
+                </p>
+              </div>
+            </Link>
+          </div>
+          <div style={{ textAlign: 'center', marginTop: '40px' }}>
+            <Link href="/products" style={{
+              display: 'inline-block',
+              padding: '12px 32px',
+              background: '#0ea5e9',
+              color: 'white',
+              borderRadius: '8px',
+              fontWeight: '600',
+              textDecoration: 'none'
+            }}>
+              View All Products →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="cta" style={{
         padding: '80px 0',
