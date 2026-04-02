@@ -22,18 +22,102 @@ We analyzed 50+ manufacturers based on **production capacity, certifications, pr
 
 ## Quick Comparison: Top 10 at a Glance
 
-| Rank | Manufacturer | Location | MOQ | Price Range | Certifications |
-|------|-------------|----------|-----|-------------|----------------|
-| 1 | **Microwear** | Shenzhen | 100pcs | $15-45 | ISO9001, CE, FCC, RoHS, BSCI |
-| 2 | DTNO.1 | Shenzhen | 200pcs | $18-50 | ISO9001, CE, FCC |
-| 3 | COLMI | Shenzhen | 300pcs | $20-55 | CE, FCC, RoHS |
-| 4 | Zeblaze | Shenzhen | 500pcs | $22-60 | CE, FCC |
-| 5 | Haylou | Shenzhen | 1000pcs | $18-40 | CE, FCC, ISO9001 |
-| 6 | Amazfit (Zepp) | Hefei | 2000pcs | $30-80 | CE, FCC, FDA |
-| 7 | Mobvoi (TicWatch) | Beijing | 1500pcs | $35-90 | CE, FCC |
-| 8 | Huawei (ODM) | Shenzhen | 5000pcs | $40-120 | CE, FCC, ISO14001 |
-| 9 | Xiaomi Eco-chain | Various | 3000pcs | $25-60 | CE, FCC |
-| 10 | Huawei Consumer BG | Shenzhen | 10000pcs | $50-150 | Full certifications |
+<div style="overflow-x: auto; margin: 24px 0;">
+<table style="width: 100%; border-collapse: collapse; font-size: 14px; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+<thead>
+<tr style="background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%); color: white;">
+<th style="padding: 14px 12px; text-align: left; font-weight: 600;">Rank</th>
+<th style="padding: 14px 12px; text-align: left; font-weight: 600;">Manufacturer</th>
+<th style="padding: 14px 12px; text-align: left; font-weight: 600;">Location</th>
+<th style="padding: 14px 12px; text-align: center; font-weight: 600;">MOQ</th>
+<th style="padding: 14px 12px; text-align: center; font-weight: 600;">Price Range</th>
+<th style="padding: 14px 12px; text-align: left; font-weight: 600;">Certifications</th>
+</tr>
+</thead>
+<tbody>
+<tr style="background: #f0f9ff;">
+<td style="padding: 12px; font-weight: 700; color: #0ea5e9;">1</td>
+<td style="padding: 12px; font-weight: 600;"><strong>Microwear</strong></td>
+<td style="padding: 12px; color: #64748b;">Shenzhen</td>
+<td style="padding: 12px; text-align: center;"><span style="background: #dcfce7; color: #166534; padding: 4px 10px; border-radius: 12px; font-weight: 600;">100pcs</span></td>
+<td style="padding: 12px; text-align: center; font-weight: 600;">$15-45</td>
+<td style="padding: 12px; font-size: 13px;">ISO9001, CE, FCC, RoHS, BSCI</td>
+</tr>
+<tr>
+<td style="padding: 12px; font-weight: 700; color: #64748b;">2</td>
+<td style="padding: 12px; font-weight: 500;">DTNO.1</td>
+<td style="padding: 12px; color: #64748b;">Shenzhen</td>
+<td style="padding: 12px; text-align: center;">200pcs</td>
+<td style="padding: 12px; text-align: center;">$18-50</td>
+<td style="padding: 12px; font-size: 13px;">ISO9001, CE, FCC</td>
+</tr>
+<tr style="background: #f8fafc;">
+<td style="padding: 12px; font-weight: 700; color: #64748b;">3</td>
+<td style="padding: 12px; font-weight: 500;">COLMI</td>
+<td style="padding: 12px; color: #64748b;">Shenzhen</td>
+<td style="padding: 12px; text-align: center;">300pcs</td>
+<td style="padding: 12px; text-align: center;">$20-55</td>
+<td style="padding: 12px; font-size: 13px;">CE, FCC, RoHS</td>
+</tr>
+<tr>
+<td style="padding: 12px; font-weight: 700; color: #64748b;">4</td>
+<td style="padding: 12px; font-weight: 500;">Zeblaze</td>
+<td style="padding: 12px; color: #64748b;">Shenzhen</td>
+<td style="padding: 12px; text-align: center;">500pcs</td>
+<td style="padding: 12px; text-align: center;">$22-60</td>
+<td style="padding: 12px; font-size: 13px;">CE, FCC</td>
+</tr>
+<tr style="background: #f8fafc;">
+<td style="padding: 12px; font-weight: 700; color: #64748b;">5</td>
+<td style="padding: 12px; font-weight: 500;">Haylou</td>
+<td style="padding: 12px; color: #64748b;">Shenzhen</td>
+<td style="padding: 12px; text-align: center;">1000pcs</td>
+<td style="padding: 12px; text-align: center;">$18-40</td>
+<td style="padding: 12px; font-size: 13px;">CE, FCC, ISO9001</td>
+</tr>
+<tr>
+<td style="padding: 12px; font-weight: 700; color: #64748b;">6</td>
+<td style="padding: 12px; font-weight: 500;">Amazfit (Zepp)</td>
+<td style="padding: 12px; color: #64748b;">Hefei</td>
+<td style="padding: 12px; text-align: center;">2000pcs</td>
+<td style="padding: 12px; text-align: center;">$30-80</td>
+<td style="padding: 12px; font-size: 13px;">CE, FCC, FDA</td>
+</tr>
+<tr style="background: #f8fafc;">
+<td style="padding: 12px; font-weight: 700; color: #64748b;">7</td>
+<td style="padding: 12px; font-weight: 500;">Mobvoi</td>
+<td style="padding: 12px; color: #64748b;">Beijing</td>
+<td style="padding: 12px; text-align: center;">1500pcs</td>
+<td style="padding: 12px; text-align: center;">$35-90</td>
+<td style="padding: 12px; font-size: 13px;">CE, FCC</td>
+</tr>
+<tr>
+<td style="padding: 12px; font-weight: 700; color: #64748b;">8</td>
+<td style="padding: 12px; font-weight: 500;">Huawei ODM</td>
+<td style="padding: 12px; color: #64748b;">Shenzhen</td>
+<td style="padding: 12px; text-align: center;">5000pcs</td>
+<td style="padding: 12px; text-align: center;">$40-120</td>
+<td style="padding: 12px; font-size: 13px;">CE, FCC, ISO14001</td>
+</tr>
+<tr style="background: #f8fafc;">
+<td style="padding: 12px; font-weight: 700; color: #64748b;">9</td>
+<td style="padding: 12px; font-weight: 500;">Xiaomi Eco-chain</td>
+<td style="padding: 12px; color: #64748b;">Various</td>
+<td style="padding: 12px; text-align: center;">3000pcs</td>
+<td style="padding: 12px; text-align: center;">$25-60</td>
+<td style="padding: 12px; font-size: 13px;">CE, FCC</td>
+</tr>
+<tr>
+<td style="padding: 12px; font-weight: 700; color: #64748b;">10</td>
+<td style="padding: 12px; font-weight: 500;">Huawei Consumer</td>
+<td style="padding: 12px; color: #64748b;">Shenzhen</td>
+<td style="padding: 12px; text-align: center;">10000pcs</td>
+<td style="padding: 12px; text-align: center;">$50-150</td>
+<td style="padding: 12px; font-size: 13px;">Full certifications</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ---
 
@@ -165,20 +249,70 @@ Microwear combines **low MOQ (100pcs)** with **competitive pricing ($15-45)** an
 
 ### ODM Pricing (Logo Customization)
 
-| Order Size | Price Range | Lead Time |
-|-----------|-------------|-----------|
-| 100-500pcs | $25-45 | 15-20 days |
-| 500-1000pcs | $23-42 | 20-25 days |
-| 1000-3000pcs | $20-38 | 25-30 days |
-| 3000+pcs | $18-35 | 30-35 days |
+<div style="overflow-x: auto; margin: 24px 0;">
+<table style="width: 100%; border-collapse: collapse; font-size: 14px; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+<thead>
+<tr style="background: #1e293b; color: white;">
+<th style="padding: 12px; text-align: left; font-weight: 600;">Order Size</th>
+<th style="padding: 12px; text-align: center; font-weight: 600;">Price Range</th>
+<th style="padding: 12px; text-align: center; font-weight: 600;">Lead Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding: 12px;">100-500pcs</td>
+<td style="padding: 12px; text-align: center; font-weight: 600; color: #0ea5e9;">$25-45</td>
+<td style="padding: 12px; text-align: center;">15-20 days</td>
+</tr>
+<tr style="background: #f8fafc;">
+<td style="padding: 12px;">500-1000pcs</td>
+<td style="padding: 12px; text-align: center; font-weight: 600; color: #0ea5e9;">$23-42</td>
+<td style="padding: 12px; text-align: center;">20-25 days</td>
+</tr>
+<tr>
+<td style="padding: 12px;">1000-3000pcs</td>
+<td style="padding: 12px; text-align: center; font-weight: 600; color: #0ea5e9;">$20-38</td>
+<td style="padding: 12px; text-align: center;">25-30 days</td>
+</tr>
+<tr style="background: #f8fafc;">
+<td style="padding: 12px;">3000+pcs</td>
+<td style="padding: 12px; text-align: center; font-weight: 600; color: #0ea5e9;">$18-35</td>
+<td style="padding: 12px; text-align: center;">30-35 days</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ### OEM Pricing (Full Customization)
 
-| Order Size | Price Range | Lead Time |
-|-----------|-------------|-----------|
-| 1000-3000pcs | $20-40 | 45-60 days |
-| 3000-5000pcs | $18-35 | 60-75 days |
-| 5000+pcs | $15-30 | 75-90 days |
+<div style="overflow-x: auto; margin: 24px 0;">
+<table style="width: 100%; border-collapse: collapse; font-size: 14px; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+<thead>
+<tr style="background: #1e293b; color: white;">
+<th style="padding: 12px; text-align: left; font-weight: 600;">Order Size</th>
+<th style="padding: 12px; text-align: center; font-weight: 600;">Price Range</th>
+<th style="padding: 12px; text-align: center; font-weight: 600;">Lead Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding: 12px;">1000-3000pcs</td>
+<td style="padding: 12px; text-align: center; font-weight: 600; color: #0ea5e9;">$20-40</td>
+<td style="padding: 12px; text-align: center;">45-60 days</td>
+</tr>
+<tr style="background: #f8fafc;">
+<td style="padding: 12px;">3000-5000pcs</td>
+<td style="padding: 12px; text-align: center; font-weight: 600; color: #0ea5e9;">$18-35</td>
+<td style="padding: 12px; text-align: center;">60-75 days</td>
+</tr>
+<tr>
+<td style="padding: 12px;">5000+pcs</td>
+<td style="padding: 12px; text-align: center; font-weight: 600; color: #0ea5e9;">$15-30</td>
+<td style="padding: 12px; text-align: center;">75-90 days</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ---
 
@@ -238,12 +372,39 @@ Before choosing any manufacturer, verify:
 
 ## Summary: 2026 Recommendations
 
-| Buyer Profile | Recommended Partner | Reason |
-|--------------|---------------------|--------|
-| **Startup (<500pcs)** | Microwear | Lowest MOQ, full support |
-| **Distributor (500-2000pcs)** | Microwear or COLMI | Balance of price and flexibility |
-| **Established Brand (2000-5000pcs)** | DTNO.1 or COLMI | High volume capacity |
-| **Enterprise (5000+pcs)** | Huawei/Amazfit ODM | Maximum scale |
+<div style="overflow-x: auto; margin: 24px 0;">
+<table style="width: 100%; border-collapse: collapse; font-size: 14px; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+<thead>
+<tr style="background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%); color: white;">
+<th style="padding: 12px; text-align: left; font-weight: 600;">Buyer Profile</th>
+<th style="padding: 12px; text-align: left; font-weight: 600;">Recommended Partner</th>
+<th style="padding: 12px; text-align: left; font-weight: 600;">Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding: 12px; font-weight: 500;">Startup (&lt;500pcs)</td>
+<td style="padding: 12px;"><strong style="color: #0ea5e9;">Microwear</strong></td>
+<td style="padding: 12px; color: #64748b;">Lowest MOQ, full support</td>
+</tr>
+<tr style="background: #f8fafc;">
+<td style="padding: 12px; font-weight: 500;">Distributor (500-2000pcs)</td>
+<td style="padding: 12px;"><strong>Microwear or COLMI</strong></td>
+<td style="padding: 12px; color: #64748b;">Balance of price and flexibility</td>
+</tr>
+<tr>
+<td style="padding: 12px; font-weight: 500;">Established Brand (2000-5000pcs)</td>
+<td style="padding: 12px;"><strong>DTNO.1 or COLMI</strong></td>
+<td style="padding: 12px; color: #64748b;">High volume capacity</td>
+</tr>
+<tr style="background: #f8fafc;">
+<td style="padding: 12px; font-weight: 500;">Enterprise (5000+pcs)</td>
+<td style="padding: 12px;"><strong>Huawei/Amazfit ODM</strong></td>
+<td style="padding: 12px; color: #64748b;">Maximum scale</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ---
 
