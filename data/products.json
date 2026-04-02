@@ -16,7 +16,12 @@
       "processor": "Dual-core 192MHz",
       "battery": "375mAh, up to 5 days typical use",
       "waterResistance": "3ATM (30 meters)",
-      "connectivity": ["Bluetooth 5.2", "Wi-Fi", "GPS", "NFC"],
+      "connectivity": [
+        "Bluetooth 5.2",
+        "Wi-Fi",
+        "GPS",
+        "NFC"
+      ],
       "sensors": [
         "Heart Rate",
         "SpO2",
@@ -24,7 +29,10 @@
         "Barometer",
         "Compass"
       ],
-      "compatibility": ["iOS 12+", "Android 6.0+"],
+      "compatibility": [
+        "iOS 12+",
+        "Android 6.0+"
+      ],
       "dimensions": "46 x 39.8 x 9.7 mm",
       "weight": "55g (without strap)"
     },
@@ -100,9 +108,17 @@
       "processor": "Dual-core 192MHz",
       "battery": "250mAh, up to 5 days typical use",
       "waterResistance": "IP67",
-      "connectivity": ["Bluetooth 5.4+3.0"],
-      "sensors": ["Heart Rate", "Accelerometer"],
-      "compatibility": ["iOS 10+", "Android 5.0+"],
+      "connectivity": [
+        "Bluetooth 5.4+3.0"
+      ],
+      "sensors": [
+        "Heart Rate",
+        "Accelerometer"
+      ],
+      "compatibility": [
+        "iOS 10+",
+        "Android 5.0+"
+      ],
       "dimensions": "47.5 x 36.3 x 10.18 mm",
       "weight": "55g (without strap)"
     },
@@ -170,9 +186,21 @@
       "processor": "Qual-core 192MHz",
       "battery": "340mAh, up to 4 days typical use",
       "waterResistance": "IP68",
-      "connectivity": ["Bluetooth 5.2+3.0", "Wi-Fi", "GPS"],
-      "sensors": ["Heart Rate", "Accelerometer", "Compass", "Temperature"],
-      "compatibility": ["iOS 12+", "Android 6.0+"],
+      "connectivity": [
+        "Bluetooth 5.2+3.0",
+        "Wi-Fi",
+        "GPS"
+      ],
+      "sensors": [
+        "Heart Rate",
+        "Accelerometer",
+        "Compass",
+        "Temperature"
+      ],
+      "compatibility": [
+        "iOS 12+",
+        "Android 6.0+"
+      ],
       "dimensions": "49 x 44 x 14.4 mm",
       "weight": "50g (without strap)"
     },
@@ -234,9 +262,20 @@
       "processor": "Dual-core 192GHz",
       "battery": "350mAh, up to 5 days typical use",
       "waterResistance": "3ATM (30 meters)",
-      "connectivity": ["Bluetooth 5.4", "NFC"],
-      "sensors": ["Heart Rate", "SpO2", "Accelerometer", "Gyroscope"],
-      "compatibility": ["iOS 11+", "Android 5.0+"],
+      "connectivity": [
+        "Bluetooth 5.4",
+        "NFC"
+      ],
+      "sensors": [
+        "Heart Rate",
+        "SpO2",
+        "Accelerometer",
+        "Gyroscope"
+      ],
+      "compatibility": [
+        "iOS 11+",
+        "Android 5.0+"
+      ],
       "dimensions": "47.6 x 45.6 x 13.2 mm",
       "weight": "56g (without strap)"
     },
@@ -278,7 +317,12 @@
         "image": "/images/products/MA31Green1.jpg"
       }
     ],
-    "features": ["Heart Rate Monitor", "SpO2", "NFC Payment", "Sleep Tracking"],
+    "features": [
+      "Heart Rate Monitor",
+      "SpO2",
+      "NFC Payment",
+      "Sleep Tracking"
+    ],
     "category": "Classic",
     "useCase": {
       "title": "Why this is perfect for Style-Conscious Users?",
@@ -304,9 +348,18 @@
       "processor": "Single-core 1.0GHz",
       "battery": "400mAh, up to 5 days typical use",
       "waterResistance": "IP67 (splash and dust resistant)",
-      "connectivity": ["Bluetooth 5.0", "GPS"],
-      "sensors": ["Accelerometer", "GPS Tracker"],
-      "compatibility": ["iOS 10+", "Android 5.0+"],
+      "connectivity": [
+        "Bluetooth 5.0",
+        "GPS"
+      ],
+      "sensors": [
+        "Accelerometer",
+        "GPS Tracker"
+      ],
+      "compatibility": [
+        "iOS 10+",
+        "Android 5.0+"
+      ],
       "dimensions": "38 x 38 x 12 mm",
       "weight": "35g (without strap)"
     },
@@ -340,7 +393,12 @@
         "image": "/images/products/Su02Purple.png"
       }
     ],
-    "features": ["GPS", "Step Counter", "Parental Controls", "Games"],
+    "features": [
+      "GPS",
+      "Step Counter",
+      "Parental Controls",
+      "Games"
+    ],
     "category": "Business",
     "useCase": {
       "title": "Why this is perfect for Parents & Kids?",
@@ -365,7 +423,11 @@
       "processor": "Dual-core 1.3GHz",
       "battery": "420mAh, up to 12 days typical use",
       "waterResistance": "5ATM (50 meters)",
-      "connectivity": ["Bluetooth 5.2", "Wi-Fi", "GPS"],
+      "connectivity": [
+        "Bluetooth 5.2",
+        "Wi-Fi",
+        "GPS"
+      ],
       "sensors": [
         "ECG",
         "PPG Heart Rate",
@@ -376,7 +438,10 @@
         "Accelerometer",
         "Gyroscope"
       ],
-      "compatibility": ["iOS 12+", "Android 6.0+"],
+      "compatibility": [
+        "iOS 12+",
+        "Android 6.0+"
+      ],
       "dimensions": "44 x 44 x 11.2 mm",
       "weight": "48g (without strap)"
     },
@@ -451,7 +516,11 @@
       "processor": "Dual-core 1.3GHz",
       "battery": "420mAh, up to 12 days typical use",
       "waterResistance": "5ATM (50 meters)",
-      "connectivity": ["Bluetooth 5.2", "Wi-Fi", "GPS"],
+      "connectivity": [
+        "Bluetooth 5.2",
+        "Wi-Fi",
+        "GPS"
+      ],
       "sensors": [
         "ECG",
         "PPG Heart Rate",
@@ -462,7 +531,10 @@
         "Accelerometer",
         "Gyroscope"
       ],
-      "compatibility": ["iOS 12+", "Android 6.0+"],
+      "compatibility": [
+        "iOS 12+",
+        "Android 6.0+"
+      ],
       "dimensions": "44 x 44 x 11.2 mm",
       "weight": "48g (without strap)"
     },
@@ -522,14 +594,20 @@
       "processor": "Allwinner V821 chipset",
       "battery": "150mAh, up to 6 hours continuous use",
       "waterResistance": "IP54 (Splash resistant)",
-      "connectivity": ["Bluetooth 5.4 & 3.0", "Wi-Fi 6"],
+      "connectivity": [
+        "Bluetooth 5.4 & 3.0",
+        "Wi-Fi 6"
+      ],
       "sensors": [
         "Touch Sensor",
         "Accelerometer",
         "Gyroscope",
         "Proximity Sensor"
       ],
-      "compatibility": ["iOS 14+", "Android 10+"],
+      "compatibility": [
+        "iOS 14+",
+        "Android 10+"
+      ],
       "dimensions": "164 x 158.5 x 48.3 mm",
       "weight": "44g"
     },
@@ -583,14 +661,20 @@
       "processor": "Allwinner V821 chipset",
       "battery": "150mAh, up to 6 hours continuous use",
       "waterResistance": "IP54 (Splash resistant)",
-      "connectivity": ["Bluetooth 5.4 & 3.0", "Wi-Fi 6"],
+      "connectivity": [
+        "Bluetooth 5.4 & 3.0",
+        "Wi-Fi 6"
+      ],
       "sensors": [
         "Touch Sensor",
         "Accelerometer",
         "Gyroscope",
         "Proximity Sensor"
       ],
-      "compatibility": ["iOS 14+", "Android 10+"],
+      "compatibility": [
+        "iOS 14+",
+        "Android 10+"
+      ],
       "dimensions": "164 x 158.5 x 48.3 mm",
       "weight": "44g"
     },
@@ -646,14 +730,20 @@
       "processor": "Allwinner V821 chipset",
       "battery": "220mAh, can standby 39 days",
       "waterResistance": "IP54 (Splash resistant)",
-      "connectivity": ["Bluetooth 6.0 & 3.0", "Wi-Fi 6"],
+      "connectivity": [
+        "Bluetooth 6.0 & 3.0",
+        "Wi-Fi 6"
+      ],
       "sensors": [
         "Touch Sensor",
         "Accelerometer",
         "Gyroscope",
         "Proximity Sensor"
       ],
-      "compatibility": ["iOS 14+", "Android 10+"],
+      "compatibility": [
+        "iOS 14+",
+        "Android 10+"
+      ],
       "dimensions": "160.8 x 151 x 44 mm",
       "weight": "30g"
     },
@@ -687,74 +777,6 @@
     "useCase": {
       "title": "Why this is perfect for Daily Commuters?",
       "content": "Featuring real-time simultaneous interpretation and conversation translation, the AI 4 breaks language barriers instantly. An essential companion for international business travelers, cross-border trade, and multicultural communication."
-    }
-  },
-  {
-    "id": "h2",
-    "name": "Microwear H2 Rugged Smartwatch",
-    "description": "Industrial grade rugged smartwatch designed for enterprise and outdoor use. IP68 waterproof, military-grade durability, extended battery life. ODM/OEM services available.",
-    "price": 45,
-    "images": [
-      "/images/products/h2-main.webp",
-      "/images/products/h2-side.webp"
-    ],
-    "specifications": {
-      "display": "1.96\" AMOLED, 410x502 pixels, Always-On",
-      "processor": "Dual-core 300MHz",
-      "battery": "450mAh, 10-14 days typical, wireless charging optional",
-      "waterResistance": "IP68 + MIL-STD-810H",
-      "connectivity": ["Bluetooth 5.2", "GPS", "NFC"],
-      "sensors": [
-        "Heart Rate",
-        "SpO2",
-        "Accelerometer",
-        "Gyroscope",
-        "Barometer"
-      ],
-      "compatibility": ["iOS 12+", "Android 6.0+"],
-      "dimensions": "48 x 48 x 12 mm",
-      "weight": "68g (without strap)"
-    },
-    "highlights": [
-      "Military-grade durability (MIL-STD-810H certified)",
-      "IP68 waterproof + dustproof",
-      "10-14 days battery life",
-      "100+ sport modes with GPS tracking",
-      "24/7 health monitoring (HR, SpO2, sleep)",
-      "Custom firmware available for enterprise"
-    ],
-    "variants": [
-      {
-        "id": "h2-black",
-        "name": "Tactical Black",
-        "price": 45,
-        "color": "Black",
-        "bandMaterial": "Silicone",
-        "image": "/images/products/h2-main.webp"
-      },
-      {
-        "id": "h2-green",
-        "name": "Army Green",
-        "price": 45,
-        "color": "Green",
-        "bandMaterial": "Silicone",
-        "image": "/images/products/h2-side.webp"
-      }
-    ],
-    "features": [
-      "IP68 Waterproof",
-      "MIL-STD-810H Certified",
-      "Heart Rate Monitor",
-      "SpO2",
-      "Sleep Tracking",
-      "GPS Tracking",
-      "100+ Sport Modes",
-      "Wireless Charging"
-    ],
-    "category": "Rugged",
-    "useCase": {
-      "title": "Why this is perfect for Enterprise & Outdoor?",
-      "content": "The H2 is built for extreme conditions with military-grade durability and IP68 protection. Ideal for construction, logistics, outdoor sports, and industrial applications where reliability matters."
     }
   }
 ]
