@@ -10,7 +10,7 @@ interface B2BInfoBoxProps {
 
 export const B2BInfoBox: React.FC<B2BInfoBoxProps> = ({
   moq = 100,
-  priceRange = "$15-50",
+  priceRange = "$15-32",
   leadTime = "15-25 days",
   certifications = ["CE", "FCC", "RoHS", "ISO9001"]
 }) => {

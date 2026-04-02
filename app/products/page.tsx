@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Microwear Smartwatch Collection | OEM/ODM Factory Direct 2026",
   description:
-    "Browse complete microwear smartwatch collection - 20+ models for B2B wholesale. ISO9001 certified OEM/ODM factory. MOQ 200pcs, $15-50. Free samples, 24h quotes. Custom logo, SDK, packaging. Every microwear smart watch features advanced health tracking, GPS, premium build.",
+    "Browse complete microwear smartwatch collection - 20+ models for B2B wholesale. ISO9001 certified OEM/ODM factory. MOQ 200pcs, $15-30. Free samples, 24h quotes. Custom logo, SDK, packaging. Every microwear smart watch features advanced health tracking, GPS, premium build.",
   keywords: [
     "microwear smartwatch",
     "microwear smartwatches",
