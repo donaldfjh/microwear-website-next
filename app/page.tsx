@@ -17,9 +17,9 @@ import "./HomePage.css";
 
 export const metadata: Metadata = {
   title:
-    "Microwear | Smart Watch & AI Glasses ODM Manufacturer from China",
+    "Microwear Official | Smartwatch OEM Manufacturer & AI Glasses Factory",
   description:
-    "Leading smartwatch and AI glasses manufacturer. ODM/OEM services for global brands. 10+ years experience. ISO certified. Factory direct, wholesale pricing. Request bulk quote today.",
+    "Microwear official website - Professional smartwatch OEM/ODM manufacturer with 15+ years experience. CE, FCC, RoHS certified factory. Wholesale pricing, MOQ 100pcs. 500+ B2B partners worldwide. Get free quote for microwear smartwatch bulk orders.",
   keywords: [
     // Core brand keywords (Priority for ranking improvement)
     "microwear",
@@ -70,9 +70,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      "Microwear | Smart Watch & AI Glasses ODM Manufacturer from China",
+      "Microwear Official | Smartwatch OEM Manufacturer & AI Glasses Factory",
     description:
-      "Leading smartwatch and AI glasses manufacturer. ODM/OEM services for global brands. 10+ years experience. ISO certified. Factory direct, wholesale pricing.",
+      "Microwear official website - Professional smartwatch OEM/ODM manufacturer with 15+ years experience. CE, FCC, RoHS certified factory. Wholesale pricing, MOQ 100pcs. 500+ B2B partners worldwide.",
     url: "https://microwear.info/",
     type: "website",
   },
@@ -226,9 +226,57 @@ export default async function HomePage() {
     "description": "Official Microwear website - Smartwatch OEM manufacturer and AI glasses factory direct. B2B wholesale, custom logo, free samples."
   };
 
+  // FAQ schema for rich snippets - targeting "microwear" and B2B keywords
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Microwear?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Microwear is a professional smartwatch OEM/ODM manufacturer with 15+ years experience. We specialize in smartwatches and AI glasses for global B2B brands, offering factory direct pricing, CE/FCC/RoHS certification, and MOQ from 100pcs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Microwear a manufacturer or trading company?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Microwear is a certified manufacturer (not a trading company) with our own factory in Shenzhen. We control the entire production process from R&D to assembly, ensuring quality and competitive wholesale pricing for microwear smartwatch bulk orders."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the MOQ for Microwear smartwatch OEM orders?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our standard MOQ is 100 pieces per model for OEM/ODM orders. For microwear official products with custom logo, we can negotiate lower quantities for trial orders. Contact our sales team for bulk pricing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Microwear offer free samples?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Microwear provides free samples for qualified B2B partners. We offer 7-day prototype service for custom projects. Shipping costs may apply depending on your location and order volume."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What certifications do Microwear products have?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "All Microwear smartwatches and AI glasses are CE, FCC, and RoHS certified. Our factory is ISO9001 certified. We also support additional certifications for specific markets (UKCA, BQB, etc.)."
+        }
+      }
+    ]
+  };
+
   const combinedSchema = {
     "@context": "https://schema.org",
-    "@graph": [webSiteSchema, organizationSchema, productSchema]
+    "@graph": [webSiteSchema, organizationSchema, productSchema, faqSchema]
   };
 
   return (
@@ -278,6 +326,44 @@ export default async function HomePage() {
               wearable technology with 15+ years of OEM/ODM expertise. Our factory serves 500+ B2B partners 
               globally, offering competitive pricing, fast delivery, and comprehensive customization services.
             </p>
+            
+            {/* Brand Story - Additional SEO content for "microwear" keyword */}
+            <div style={{
+              backgroundColor: 'white',
+              padding: '40px',
+              borderRadius: '16px',
+              marginTop: '48px',
+              textAlign: 'left'
+            }}>
+              <h3 style={{
+                fontSize: '24px',
+                fontWeight: '700',
+                marginBottom: '20px',
+                color: '#1a1a1a'
+              }}>
+                About Microwear Official
+              </h3>
+              <p style={{
+                fontSize: '16px',
+                lineHeight: '1.8',
+                color: '#444',
+                marginBottom: '16px'
+              }}>
+                <strong>Microwear</strong> is a professional smartwatch OEM/ODM manufacturer headquartered in Shenzhen, China. 
+                Since 2010, Microwear has been dedicated to designing and manufacturing high-quality wearable devices for global brands. 
+                The <strong>Microwear official</strong> product line includes smartwatches, fitness trackers, and AI glasses with advanced features 
+                like health monitoring, GPS tracking, and voice assistant integration.
+              </p>
+              <p style={{
+                fontSize: '16px',
+                lineHeight: '1.8',
+                color: '#444'
+              }}>
+                Every <strong>microwear smartwatch</strong> undergoes rigorous quality testing to meet international standards. 
+                With CE, FCC, and RoHS certifications, Microwear products are trusted by distributors and retailers in Europe, 
+                North America, and 50+ countries worldwide. Partner with Microwear for reliable OEM manufacturing and factory direct pricing.
+              </p>
+            </div>
             
             <div style={{ 
               display: 'grid', 
