@@ -1,0 +1,139 @@
+{
+  "auditDate": "2026-04-02",
+  "website": "microwear.info",
+  "auditor": "太子 (OpenClaw)",
+  "summary": {
+    "criticalIssues": 0,
+    "mediumIssues": 2,
+    "suggestions": 3,
+    "healthyItems": 10
+  },
+  "criticalIssues": [],
+  "mediumIssues": [
+    {
+      "issue": "移动端触摸元素过小",
+      "details": "14 个可点击元素小于 44x44 像素（Google 移动端可访问性标准）",
+      "affectedElements": ["导航链接", "页脚链接", "小按钮"],
+      "impact": "可能影响移动端用户体验和 Google 移动端友好度评分",
+      "fix": "增加 CSS padding 或 min-width/min-height，确保所有可点击区域至少 44x44 像素"
+    },
+    {
+      "issue": "sitemap.xml 更新频率",
+      "details": "sitemap.xml 最后更新时间为 2026-03-21，距今约 12 天",
+      "impact": "如有新内容发布，可能延迟搜索引擎收录",
+      "fix": "确认 next-sitemap 是否在每次部署后自动运行，或设置定时任务每日更新"
+    }
+  ],
+  "suggestions": [
+    {
+      "suggestion": "添加 CDN preconnect",
+      "details": "如果使用外部 CDN 或字体服务，添加 <link rel=\"preconnect\"> 可加速资源加载",
+      "example": "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\" crossorigin>"
+    },
+    {
+      "suggestion": "添加结构化数据 (Schema.org)",
+      "details": "为产品页面添加 Product schema，为博客文章添加 Article schema",
+      "impact": "可在搜索结果中显示丰富摘要（价格、评分、作者等）"
+    },
+    {
+      "suggestion": "考虑添加面包屑导航结构化数据",
+      "details": "使用 BreadcrumbList schema 帮助搜索引擎理解网站结构",
+      "impact": "可能在搜索结果中显示面包屑路径"
+    }
+  ],
+  "healthyItems": [
+    {
+      "item": "robots.txt 配置正确",
+      "details": "正确配置 User-agent、Allow、Disallow、Host 和 Sitemap 指令"
+    },
+    {
+      "item": "HTTPS 完全启用",
+      "details": "所有页面使用 HTTPS，无混合内容警告"
+    },
+    {
+      "item": "移动端友好",
+      "details": "viewport 设置正确 (width=device-width, initial-scale=1)"
+    },
+    {
+      "item": "无 404 死链",
+      "details": "检查的所有页面（首页、产品页、博客页、关于页）均返回 200 状态"
+    },
+    {
+      "item": "无重定向链",
+      "details": "所有 URL 直接返回内容，无 A→B→C 多次重定向"
+    },
+    {
+      "item": "canonical 标签完整",
+      "details": "首页、产品页、博客页都有正确的 self-referencing canonical"
+    },
+    {
+      "item": "页面加载速度快",
+      "details": "首页加载时间约 133ms，资源总量约 2KB（可能使用了缓存/CDN）"
+    },
+    {
+      "item": "图片 lazy loading 已启用",
+      "details": "13 张图片使用 loading=\"lazy\" 属性"
+    },
+    {
+      "item": "meta description 完整",
+      "details": "所有检查页面都有 unique 的 meta description"
+    },
+    {
+      "item": "sitemap.xml 结构正确",
+      "details": "包含 30 个 URL，涵盖首页、产品页、博客页、分类页，格式符合 sitemap 协议"
+    }
+  ],
+  "technicalDetails": {
+    "robotsTxt": {
+      "status": "200",
+      "url": "https://microwear.info/robots.txt",
+      "configuration": "正确"
+    },
+    "sitemapXml": {
+      "status": "200",
+      "url": "https://microwear.info/sitemap.xml",
+      "urlCount": 30,
+      "lastModified": "2026-03-21",
+      "format": "正确"
+    },
+    "https": {
+      "enabled": true,
+      "mixedContent": 0
+    },
+    "mobile": {
+      "viewport": "width=device-width, initial-scale=1",
+      "responsive": true
+    },
+    "performance": {
+      "domContentLoaded": "99ms",
+      "loadComplete": "133ms",
+      "resourceCount": 36,
+      "totalTransferKB": 2
+    },
+    "seo": {
+      "canonical": "已配置",
+      "metaDescription": "已配置",
+      "ogTags": "已配置",
+      "lazyLoading": "已启用"
+    }
+  },
+  "checkedUrls": [
+    "https://microwear.info/",
+    "https://microwear.info/products",
+    "https://microwear.info/products/W11pro",
+    "https://microwear.info/products/mw-fit-lite",
+    "https://microwear.info/products/mw-sport-ultra",
+    "https://microwear.info/about",
+    "https://microwear.info/blog",
+    "https://microwear.info/blog/2026-03-16-smartwatch-health-monitoring-accuracy",
+    "https://microwear.info/blog/AI-glasses-sound",
+    "https://microwear.info/blog/2026-03-20-iso9001-ce-certification-smartwatch-b2b",
+    "https://microwear.info/comparison",
+    "https://microwear.info/ai-glasses"
+  ],
+  "nextSteps": [
+    "修复移动端触摸元素大小问题（优先级：中）",
+    "确认 sitemap 自动更新机制是否正常运作（优先级：低）",
+    "考虑添加结构化数据增强搜索结果展示（优先级：低）"
+  ]
+}
