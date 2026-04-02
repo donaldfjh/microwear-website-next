@@ -379,7 +379,7 @@ export default async function HomePage() {
                   Quality Guarantee
                 </h3>
                 <p style={{ color: '#94a3b8', lineHeight: '1.6', fontSize: '15px' }}>
-                  100% QC inspection, 12-month warranty, defect rate <0.3%. ISO9001 quality management.
+                  100% QC inspection, 12-month warranty, defect rate &lt;0.3%. ISO9001 quality management.
                 </p>
               </div>
               

@@ -305,7 +305,7 @@ export default function FactoryPage() {
             }}>
               <p style={{ marginBottom: '20px' }}>
                 Microwear operates a state-of-the-art <strong>15,000 square meter manufacturing facility</strong> in 
-                Shenzhen, China's electronics manufacturing hub. Established in 2010, our factory has grown to become 
+                Shenzhen, China&apos;s electronics manufacturing hub. Established in 2010, our factory has grown to become 
                 a trusted partner for 500+ B2B clients worldwide.
               </p>
               <p style={{ marginBottom: '20px' }}>
