@@ -17,9 +17,9 @@ import "./HomePage.css";
 
 export const metadata: Metadata = {
   title:
-    "Microwear Official | Smartwatch OEM Manufacturer & AI Glasses Factory",
+    "Microwear | OEM/ODM Smartwatch Manufacturer | Factory Direct Bulk Orders",
   description:
-    "Microwear official website - Professional smartwatch OEM/ODM manufacturer with 15+ years experience. CE, FCC, RoHS certified factory. Wholesale pricing, MOQ 100pcs. 500+ B2B partners worldwide. Get free quote for microwear smartwatch bulk orders.",
+    "Microwear - Leading smartwatch OEM/ODM manufacturer with 15+ years B2B experience. Factory direct pricing, MOQ 100pcs, CE/FCC/RoHS/ISO certified. Custom logo, firmware, packaging. 7-day samples, 15-25 day delivery. 500+ global partners. Get free quote for bulk orders.",
   keywords: [
     // Core brand keywords (Priority for ranking improvement)
     "microwear",
@@ -289,8 +289,8 @@ export default async function HomePage() {
       <LocalBusinessSchema />
       
       <HeroSection
-        title="Microwear Official - Smartwatch OEM & AI Glasses Manufacturer"
-        subtitle="15+ Years Experience | CE, FCC, RoHS Certified | MOQ 100pcs | 500+ Global B2B Partners | Free Samples | 7-Day Prototype"
+        title="OEM/ODM Smartwatch Manufacturer | Factory Direct Bulk Orders"
+        subtitle="15+ Years B2B Experience | 500+ Global Partners | MOQ 100pcs | CE, FCC, RoHS, ISO Certified | Custom Logo & Firmware | 7-Day Samples | 15-25 Day Delivery"
         ctaText="Get Free Quote"
         ctaLink="/contact"
         secondaryCtaText="Download Catalog"
@@ -298,6 +298,161 @@ export default async function HomePage() {
       />
 
       <CertificationBar />
+
+      {/* B2B Value Proposition Section */}
+      <ScrollReveal>
+        <section className="b2b-value-section" style={{
+          padding: '80px 24px',
+          backgroundColor: '#0f172a',
+          color: 'white',
+          textAlign: 'center'
+        }}>
+          <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+            <h2 style={{ 
+              fontSize: '36px', 
+              fontWeight: '700',
+              marginBottom: '16px',
+              color: 'white'
+            }}>
+              Why Partner With Microwear for B2B Orders?
+            </h2>
+            <p style={{ 
+              fontSize: '18px', 
+              lineHeight: '1.8',
+              color: '#94a3b8',
+              maxWidth: '800px',
+              margin: '0 auto 48px'
+            }}>
+              Trusted by 500+ distributors, retailers, and brands worldwide. We deliver factory-direct pricing, 
+              full customization, and reliable supply chain for your smartwatch business.
+            </p>
+            
+            <div style={{ 
+              display: 'grid', 
+              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', 
+              gap: '32px',
+              marginTop: '48px'
+            }}>
+              <div style={{ padding: '32px', background: 'rgba(255,255,255,0.05)', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.1)' }}>
+                <div style={{ fontSize: '42px', marginBottom: '16px' }}>🏭</div>
+                <h3 style={{ fontSize: '20px', fontWeight: '600', marginBottom: '12px', color: 'white' }}>
+                  OEM/ODM Services
+                </h3>
+                <p style={{ color: '#94a3b8', lineHeight: '1.6', fontSize: '15px' }}>
+                  Custom logo, firmware, packaging, and hardware modifications. Full SDK support for app integration.
+                </p>
+              </div>
+              
+              <div style={{ padding: '32px', background: 'rgba(255,255,255,0.05)', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.1)' }}>
+                <div style={{ fontSize: '42px', marginBottom: '16px' }}>💰</div>
+                <h3 style={{ fontSize: '20px', fontWeight: '600', marginBottom: '12px', color: 'white' }}>
+                  Factory Direct Pricing
+                </h3>
+                <p style={{ color: '#94a3b8', lineHeight: '1.6', fontSize: '15px' }}>
+                  Wholesale $15-50/unit, MOQ 100pcs. No middleman markup. Volume discounts available.
+                </p>
+              </div>
+              
+              <div style={{ padding: '32px', background: 'rgba(255,255,255,0.05)', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.1)' }}>
+                <div style={{ fontSize: '42px', marginBottom: '16px' }}>📜</div>
+                <h3 style={{ fontSize: '20px', fontWeight: '600', marginBottom: '12px', color: 'white' }}>
+                  Full Certification
+                </h3>
+                <p style={{ color: '#94a3b8', lineHeight: '1.6', fontSize: '15px' }}>
+                  CE, FCC, RoHS, ISO9001 certified. Support for UKCA, BQB, and market-specific certifications.
+                </p>
+              </div>
+              
+              <div style={{ padding: '32px', background: 'rgba(255,255,255,0.05)', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.1)' }}>
+                <div style={{ fontSize: '42px', marginBottom: '16px' }}>🚀</div>
+                <h3 style={{ fontSize: '20px', fontWeight: '600', marginBottom: '12px', color: 'white' }}>
+                  Fast Turnaround
+                </h3>
+                <p style={{ color: '#94a3b8', lineHeight: '1.6', fontSize: '15px' }}>
+                  7-day sampling, 15-25 day production. Express shipping to Europe, North America, and 50+ countries.
+                </p>
+              </div>
+              
+              <div style={{ padding: '32px', background: 'rgba(255,255,255,0.05)', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.1)' }}>
+                <div style={{ fontSize: '42px', marginBottom: '16px' }}>🛡️</div>
+                <h3 style={{ fontSize: '20px', fontWeight: '600', marginBottom: '12px', color: 'white' }}>
+                  Quality Guarantee
+                </h3>
+                <p style={{ color: '#94a3b8', lineHeight: '1.6', fontSize: '15px' }}>
+                  100% QC inspection, 12-month warranty, defect rate <0.3%. ISO9001 quality management.
+                </p>
+              </div>
+              
+              <div style={{ padding: '32px', background: 'rgba(255,255,255,0.05)', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.1)' }}>
+                <div style={{ fontSize: '42px', marginBottom: '16px' }}>🤝</div>
+                <h3 style={{ fontSize: '20px', fontWeight: '600', marginBottom: '12px', color: 'white' }}>
+                  Dedicated Support
+                </h3>
+                <p style={{ color: '#94a3b8', lineHeight: '1.6', fontSize: '15px' }}>
+                  English-speaking account managers, technical support, and after-sales service for all B2B partners.
+                </p>
+              </div>
+            </div>
+            
+            {/* Trust Signals */}
+            <div style={{
+              marginTop: '64px',
+              padding: '32px',
+              background: 'rgba(255,255,255,0.03)',
+              borderRadius: '16px'
+            }}>
+              <h3 style={{
+                fontSize: '22px',
+                fontWeight: '600',
+                marginBottom: '24px',
+                color: 'white'
+              }}>
+                Trusted by B2B Partners Worldwide
+              </h3>
+              <div style={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                justifyContent: 'center',
+                gap: '24px',
+                alignItems: 'center'
+              }}>
+                <div style={{ color: '#94a3b8', fontSize: '15px' }}>🇺🇸 USA Distributors</div>
+                <div style={{ color: '#94a3b8', fontSize: '15px' }}>🇩🇪 Germany Retailers</div>
+                <div style={{ color: '#94a3b8', fontSize: '15px' }}>🇬🇧 UK Electronics Chains</div>
+                <div style={{ color: '#94a3b8', fontSize: '15px' }}>🇫🇷 France Tech Stores</div>
+                <div style={{ color: '#94a3b8', fontSize: '15px' }}>🇪🇸 Spain Importers</div>
+                <div style={{ color: '#94a3b8', fontSize: '15px' }}>🇦🇪 UAE Trading Companies</div>
+              </div>
+              <div style={{
+                marginTop: '24px',
+                paddingTop: '24px',
+                borderTop: '1px solid rgba(255,255,255,0.1)',
+                display: 'flex',
+                justifyContent: 'center',
+                gap: '48px',
+                flexWrap: 'wrap'
+              }}>
+                <div style={{ textAlign: 'center' }}>
+                  <div style={{ fontSize: '32px', fontWeight: '700', color: 'white' }}>15+</div>
+                  <div style={{ fontSize: '14px', color: '#94a3b8' }}>Years B2B Experience</div>
+                </div>
+                <div style={{ textAlign: 'center' }}>
+                  <div style={{ fontSize: '32px', fontWeight: '700', color: 'white' }}>500+</div>
+                  <div style={{ fontSize: '14px', color: '#94a3b8' }}>Global Partners</div>
+                </div>
+                <div style={{ textAlign: 'center' }}>
+                  <div style={{ fontSize: '32px', fontWeight: '700', color: 'white' }}>2M+</div>
+                  <div style={{ fontSize: '14px', color: '#94a3b8' }}>Units Shipped Annually</div>
+                </div>
+                <div style={{ textAlign: 'center' }}>
+                  <div style={{ fontSize: '32px', fontWeight: '700', color: 'white' }}>&lt;0.3%</div>
+                  <div style={{ fontSize: '14px', color: '#94a3b8' }}>Defect Rate</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </ScrollReveal>
 
       {/* Microwear Brand Section - SEO Optimization for core keywords */}
       <ScrollReveal>

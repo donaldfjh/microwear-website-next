@@ -1,0 +1,104 @@
+{
+  "source": "GSC Performance on Search 2026-03-30",
+  "generatedAt": "2026-04-02T10:15:00+08:00",
+  "b2bKeywords": [
+    {
+      "keyword": "odm telephone glasses",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": "0%",
+      "position": 62,
+      "b2bType": "ODM"
+    },
+    {
+      "keyword": "odm camera glasses",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": "0%",
+      "position": 99.5,
+      "b2bType": "ODM"
+    },
+    {
+      "keyword": "odm ar glasses",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": "0%",
+      "position": 74,
+      "b2bType": "ODM"
+    },
+    {
+      "keyword": "odm smart glasses",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": "0%",
+      "position": 78,
+      "b2bType": "ODM"
+    },
+    {
+      "keyword": "micro led ar glasses",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": "0%",
+      "position": 117,
+      "b2bType": "Manufacturer"
+    },
+    {
+      "keyword": "microwear manufacturer",
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": "0%",
+      "position": 0,
+      "b2bType": "Manufacturer",
+      "note": "Target keyword - not in current GSC data"
+    },
+    {
+      "keyword": "microwear factory",
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": "0%",
+      "position": 0,
+      "b2bType": "Factory",
+      "note": "Target keyword - not in current GSC data"
+    },
+    {
+      "keyword": "smartwatch OEM",
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": "0%",
+      "position": 0,
+      "b2bType": "OEM",
+      "note": "Target keyword - not in current GSC data"
+    },
+    {
+      "keyword": "smartwatch wholesale",
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": "0%",
+      "position": 0,
+      "b2bType": "Wholesale",
+      "note": "Target keyword - not in current GSC data"
+    },
+    {
+      "keyword": "bulk smartwatch orders",
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": "0%",
+      "position": 0,
+      "b2bType": "Wholesale",
+      "note": "Target keyword - not in current GSC data"
+    }
+  ],
+  "summary": {
+    "totalB2BKeywords": 10,
+    "fromGSC": 5,
+    "targetKeywords": 5,
+    "b2bTypes": {
+      "OEM": 1,
+      "ODM": 4,
+      "Manufacturer": 2,
+      "Factory": 1,
+      "Wholesale": 2
+    },
+    "note": "Current GSC data has limited B2B query volume. Focus on ranking improvement for target B2B keywords through on-page optimization."
+  }
+}
