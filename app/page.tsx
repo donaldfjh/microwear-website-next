@@ -14,16 +14,30 @@ export const metadata: Metadata = {
   description:
     "Microwear - Leading smartwatch OEM/ODM manufacturer with 15+ years B2B experience. Factory direct pricing, MOQ 100pcs, CE/FCC/RoHS/ISO certified. Custom logo, firmware, packaging. 7-day samples, 15-25 day delivery. 500+ global partners. Get free quote for bulk orders.",
   keywords: [
-    "microwear",
-    "microwear smartwatch",
-    "microwear smart watch",
-    "microwear manufacturer",
-    "microwear factory",
-    "smartwatch manufacturer",
-    "smartwatch OEM factory",
-    "OEM smartwatch supplier",
+    // B2B 核心词（高优先级）
+    "smartwatch manufacturer China",
+    "smartwatch OEM supplier Shenzhen",
+    "smartwatch ODM factory",
+    "wearable device manufacturer",
+    
+    // 产品类型 + B2B
+    "fitness tracker manufacturer",
+    "rugged smartwatch OEM",
+    "kids smartwatch factory",
+    "health smartwatch manufacturer",
+    "GPS watch OEM supplier",
     "AI glasses manufacturer",
-    "smart glasses OEM",
+    "smart glasses ODM",
+    
+    // 采购意图词
+    "smartwatch wholesale bulk",
+    "custom smartwatch OEM",
+    "white label smartwatch",
+    "smartwatch MOQ 100",
+    
+    // 品牌词（保留少量）
+    "Microwear smartwatch factory",
+    "Microwear OEM manufacturer"
   ],
   alternates: {
     canonical: "https://microwear.info/",

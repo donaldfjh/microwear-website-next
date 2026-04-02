@@ -9,6 +9,7 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { ProductSpecs } from "@/components/ProductSpecs";
 import { ProductFAQ } from "@/components/ProductFAQ";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { B2BInfoBox } from "@/components/B2BInfoBox";
 import type { Product, ProductVariant } from "@/types/product";
 
 // Helper function to map color names to hex values
@@ -185,6 +186,15 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
               </div>
             </ScrollReveal>
           )}
+
+          {/* B2B Info Box */}
+          <ScrollReveal delay={0.35}>
+            <B2BInfoBox 
+              moq={100} 
+              priceRange={`$${product.price}-${product.price + 30}`}
+              leadTime="15-25 days"
+            />
+          </ScrollReveal>
 
           <ScrollReveal delay={0.4}>
             <div className="product-detail-actions">
