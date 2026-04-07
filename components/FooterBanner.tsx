@@ -59,6 +59,17 @@ export const FooterBanner: React.FC = () => {
                 </div>
               </div>
             </ScrollReveal>
+            <ScrollReveal delay={0.5}>
+              <div className="location-item">
+                <span className="location-icon">❓</span>
+                <div className="location-text">
+                  <p className="location-label">FAQ</p>
+                  <Link href="/factory-faq" className="location-value faq-link">
+                    View Factory FAQ →
+                  </Link>
+                </div>
+              </div>
+            </ScrollReveal>
           </div>
         </div>
 

@@ -16,6 +16,7 @@ export const Navigation: React.FC = () => {
     { path: "/products", label: "Smart Watches" },
     { path: "/ai-glasses", label: "AI Glasses" },
     { path: "/blog", label: "Industry Blog" },
+    { path: "/factory-faq", label: "FAQ" },
     { path: "/about", label: "About Us" },
     { path: "/contact", label: "Contact Factory" },
   ];

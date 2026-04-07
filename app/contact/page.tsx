@@ -103,6 +103,22 @@ export default function ContactPage({ searchParams }: ContactPageProps) {
           </div>
         </ScrollReveal>
 
+        {/* FAQ Quick Access - Added for GEO optimization */}
+        <ScrollReveal delay={0.1}>
+          <div className="faq-quick-access">
+            <div className="faq-icon">❓</div>
+            <div className="faq-content">
+              <h3>Quick Answer: Check Our FAQ First</h3>
+              <p>
+                Find instant answers to common questions about MOQ, pricing, certifications, lead time, and more.
+              </p>
+              <a href="/factory-faq" className="faq-link">
+                View Factory FAQ →
+              </a>
+            </div>
+          </div>
+        </ScrollReveal>
+
         <div className="contact-content">
           <ScrollReveal delay={0.2} className="contact-form-wrapper">
             <div className="contact-form-section">

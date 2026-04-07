@@ -287,6 +287,19 @@ export default function AboutPage() {
           </section>
         </ScrollReveal>
 
+        <ScrollReveal delay={0.55}>
+          <section className="about-section faq-cta">
+            <h2>Have Questions About Microwear?</h2>
+            <p>
+              Find instant answers to common questions about our factory, certifications, 
+              MOQ, pricing, OEM/ODM services, and ordering process.
+            </p>
+            <a href="/factory-faq" className="faq-cta-button">
+              View Factory FAQ
+            </a>
+          </section>
+        </ScrollReveal>
+
         <ScrollReveal delay={0.6}>
           <section className="about-section connect">
             <h2>Connect With Us</h2>

@@ -54,6 +54,42 @@
   margin-bottom: 0;
 }
 
+/* FAQ CTA Section */
+.about-section.faq-cta {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.about-section.faq-cta h2 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.about-section.faq-cta p {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 1.05rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+.faq-cta-button {
+  display: inline-block;
+  background: white;
+  color: #667eea;
+  padding: 14px 32px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.faq-cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
 /* Brand Story Section */
 .brand-story {
   padding: 0;

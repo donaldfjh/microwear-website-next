@@ -65,6 +65,18 @@
   line-height: 1.5;
 }
 
+.location-value.faq-link {
+  color: #4285f4;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.location-value.faq-link:hover {
+  color: #2b6cb0;
+  text-decoration: underline;
+}
+
 .promo-banner {
   background: #000000;
   padding: 3rem 2rem;
