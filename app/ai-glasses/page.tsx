@@ -415,6 +415,120 @@ export default function AIGlassesPage() {
         </div>
       </section>
 
+      {/* Application Scenarios Section */}
+      <section className="scenarios-section">
+        <div className="container">
+          <ScrollReveal>
+            <h2 className="section-title">Application Scenarios</h2>
+            <p className="section-subtitle">
+              AI smart glasses designed for real-world use across industries and lifestyles
+            </p>
+          </ScrollReveal>
+          
+          <ScrollReveal>
+            <div className="scenarios-grid">
+              <div className="scenario-card">
+                <div className="scenario-icon">💼</div>
+                <h3>Business & Meetings</h3>
+                <p>AI-powered meeting assistant with real-time transcription, translation, and summary generation. Perfect for international business communications.</p>
+                <ul className="scenario-features">
+                  <li>Real-time translation 40+ languages</li>
+                  <li>Meeting notes & summaries</li>
+                  <li>Voice commands for presentations</li>
+                </ul>
+              </div>
+              <div className="scenario-card">
+                <div className="scenario-icon">🏃</div>
+                <h3>Outdoor & Sports</h3>
+                <p>First-person video recording for cycling, hiking, and adventure sports. GPS tracking and voice navigation for hands-free operation.</p>
+                <ul className="scenario-features">
+                  <li>1080P POV video recording</li>
+                  <li>IP68 waterproof models</li>
+                  <li>GPS navigation assistance</li>
+                </ul>
+              </div>
+              <div className="scenario-card">
+                <div className="scenario-icon">🎬</div>
+                <h3>Content Creation</h3>
+                <p>Create engaging first-person content for social media, vlogs, and streaming. Professional-grade Sony sensors for crisp video quality.</p>
+                <ul className="scenario-features">
+                  <li>Sony IMX219 sensor</li>
+                  <li>EIS stabilization</li>
+                  <li>Live streaming support</li>
+                </ul>
+              </div>
+              <div className="scenario-card">
+                <div className="scenario-icon">❤️</div>
+                <h3>Health & Wellness</h3>
+                <p>AI health assistant with voice queries for medication reminders, fitness tracking, and wellness tips. Stay connected to your health data.</p>
+                <ul className="scenario-features">
+                  <li>Voice health queries</li>
+                  <li>Medication reminders</li>
+                  <li>Fitness goal tracking</li>
+                </ul>
+              </div>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* OEM Options Section */}
+      <section className="oem-options-section">
+        <div className="container">
+          <ScrollReveal>
+            <h2 className="section-title">OEM/ODM Options</h2>
+            <p className="section-subtitle">
+              Full customization services to build your unique smart glasses brand
+            </p>
+          </ScrollReveal>
+          
+          <ScrollReveal>
+            <div className="oem-grid">
+              <div className="oem-item">
+                <h3>🎨 Custom Design</h3>
+                <p>Frame shape, colors, materials, and branding. Create eyewear that matches your brand identity.</p>
+              </div>
+              <div className="oem-item">
+                <h3>⚡ Firmware Custom</h3>
+                <p>AI model selection, voice assistant branding, app integration. Tailored software experience.</p>
+              </div>
+              <div className="oem-item">
+                <h3>📦 Packaging & Logo</h3>
+                <p>Custom packaging design, user manuals, logo placement. Complete brand packaging solution.</p>
+              </div>
+              <div className="oem-item">
+                <h3>🔧 SDK Support</h3>
+                <p>Full SDK documentation for app integration. API access for custom features and data.</p>
+              </div>
+              <div className="oem-item">
+                <h3>🌍 Certification</h3>
+                <p>CE, FCC, RoHS certification support for your market. Regulatory compliance assistance.</p>
+              </div>
+              <div className="oem-item">
+                <h3>🚚 Fast Delivery</h3>
+                <p>7-day sample delivery, 15-25 day bulk production. MOQ starts from 200pcs for select models.</p>
+              </div>
+            </div>
+          </ScrollReveal>
+          
+          <ScrollReveal>
+            <div style={{ textAlign: 'center', marginTop: '40px' }}>
+              <Link href="/contact?subject=Smart Glasses OEM Project" className="btn btn-primary-dark" style={{
+                display: 'inline-block',
+                padding: '16px 40px',
+                background: 'linear-gradient(90deg, #00f2ea, #00c2ff)',
+                color: '#000',
+                borderRadius: '8px',
+                fontWeight: '600',
+                textDecoration: 'none'
+              }}>
+                Start Your OEM Project →
+              </Link>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* Product Categories Section - ODM Smart Glasses Collection */}
       <section className="glasses-categories-section">
         <div className="container">

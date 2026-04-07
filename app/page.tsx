@@ -528,6 +528,92 @@ export default async function HomePage() {
         </div>
       </section>
 
+      {/* Trusted Partners Section */}
+      <section className="trusted-partners" style={{
+        padding: '60px 0',
+        background: '#1e293b'
+      }}>
+        <div className="container">
+          <div style={{ textAlign: 'center', marginBottom: '40px' }}>
+            <span style={{
+              display: 'inline-block',
+              padding: '6px 16px',
+              background: 'rgba(34, 197, 94, 0.1)',
+              border: '1px solid rgba(34, 197, 94, 0.3)',
+              borderRadius: '100px',
+              color: '#22c55e',
+              fontSize: '13px',
+              fontWeight: '500',
+              marginBottom: '16px'
+            }}>
+              TRUSTED BY GLOBAL BRANDS
+            </span>
+            <h2 style={{
+              fontSize: '28px',
+              fontWeight: '600',
+              color: 'white',
+              marginBottom: '8px'
+            }}>
+              500+ B2B Partners Worldwide
+            </h2>
+            <p style={{
+              color: '#64748b',
+              fontSize: '16px'
+            }}>
+              From startups to enterprise brands, we power wearable solutions across 30+ countries
+            </p>
+          </div>
+          <div style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            gap: '48px',
+            flexWrap: 'wrap'
+          }}>
+            <div style={{
+              padding: '20px 32px',
+              background: 'rgba(255,255,255,0.05)',
+              borderRadius: '12px',
+              border: '1px solid rgba(255,255,255,0.1)',
+              textAlign: 'center'
+            }}>
+              <div style={{ fontSize: '24px', fontWeight: '700', color: '#22c55e' }}>🇪🇺 Europe</div>
+              <div style={{ fontSize: '14px', color: '#94a3b8', marginTop: '4px' }}>150+ Partners</div>
+            </div>
+            <div style={{
+              padding: '20px 32px',
+              background: 'rgba(255,255,255,0.05)',
+              borderRadius: '12px',
+              border: '1px solid rgba(255,255,255,0.1)',
+              textAlign: 'center'
+            }}>
+              <div style={{ fontSize: '24px', fontWeight: '700', color: '#0ea5e9' }}>🇺🇸 Americas</div>
+              <div style={{ fontSize: '14px', color: '#94a3b8', marginTop: '4px' }}>120+ Partners</div>
+            </div>
+            <div style={{
+              padding: '20px 32px',
+              background: 'rgba(255,255,255,0.05)',
+              borderRadius: '12px',
+              border: '1px solid rgba(255,255,255,0.1)',
+              textAlign: 'center'
+            }}>
+              <div style={{ fontSize: '24px', fontWeight: '700', color: '#f59e0b' }}>🇮🇩 Asia Pacific</div>
+              <div style={{ fontSize: '14px', color: '#94a3b8', marginTop: '4px' }}>180+ Partners</div>
+            </div>
+            <div style={{
+              padding: '20px 32px',
+              background: 'rgba(255,255,255,0.05)',
+              borderRadius: '12px',
+              border: '1px solid rgba(255,255,255,0.1)',
+              textAlign: 'center'
+            }}>
+              <div style={{ fontSize: '24px', fontWeight: '700', color: '#a855f7' }}>🇸🇦 Middle East</div>
+              <div style={{ fontSize: '14px', color: '#94a3b8', marginTop: '4px' }}>50+ Partners</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="cta-section" style={{
         padding: '80px 0',

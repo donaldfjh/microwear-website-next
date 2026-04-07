@@ -287,7 +287,132 @@ export default function AboutPage() {
           </section>
         </ScrollReveal>
 
+        <ScrollReveal delay={0.5}>
+          <section className="about-section timeline">
+            <h2>Our Journey</h2>
+            <p className="timeline-intro">
+              From a small startup to a global smartwatch manufacturer, our growth story reflects commitment to innovation and quality.
+            </p>
+            <div className="timeline-grid">
+              <div className="timeline-item">
+                <div className="timeline-year">2008</div>
+                <div className="timeline-content">
+                  <h3>Company Founded</h3>
+                  <p>Established Shenzhen NJY Technology Co., Ltd. Started with 20 employees focusing on wearable R&D.</p>
+                </div>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-year">2010</div>
+                <div className="timeline-content">
+                  <h3>First Smartwatch</h3>
+                  <p>Released our first generation smartwatch product. Achieved 50,000 units sold in first year.</p>
+                </div>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-year">2015</div>
+                <div className="timeline-content">
+                  <h3>ISO9001 Certified</h3>
+                  <p>Obtained ISO9001 quality management certification. Expanded to 150+ employees and 5 production lines.</p>
+                </div>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-year">2018</div>
+                <div className="timeline-content">
+                  <h3>Global Expansion</h3>
+                  <p>Reached 300+ global B2B partners. Opened European and American market channels.</p>
+                </div>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-year">2020</div>
+                <div className="timeline-content">
+                  <h3>AI Glasses Launch</h3>
+                  <p>Entered smart glasses market with AI-powered eyewear. Achieved 1000+ patent milestone.</p>
+                </div>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-year">2024</div>
+                <div className="timeline-content">
+                  <h3>AI Innovation</h3>
+                  <p>Released W Ai 4 (38g ultra-light) and W AI 3 camera glasses with ChatGPT integration. 500+ partners worldwide.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </ScrollReveal>
+
         <ScrollReveal delay={0.55}>
+          <section className="about-section certifications">
+            <h2>Quality Certifications</h2>
+            <p>
+              Our manufacturing facility meets international quality and safety standards, ensuring reliable products for global markets.
+            </p>
+            <div className="certifications-grid">
+              <div className="cert-card">
+                <div className="cert-icon">🏆</div>
+                <h3>ISO 9001:2015</h3>
+                <p>Quality Management System Certified</p>
+              </div>
+              <div className="cert-card">
+                <div className="cert-icon">🇪🇺</div>
+                <h3>CE Marking</h3>
+                <p>European Conformity Certification</p>
+              </div>
+              <div className="cert-card">
+                <div className="cert-icon">🇺🇸</div>
+                <h3>FCC Approved</h3>
+                <p>Federal Communications Commission</p>
+              </div>
+              <div className="cert-card">
+                <div className="cert-icon">🌱</div>
+                <h3>RoHS Compliant</h3>
+                <p>Restriction of Hazardous Substances</p>
+              </div>
+              <div className="cert-card">
+                <div className="cert-icon">🇨🇳</div>
+                <h3>CCC Certified</h3>
+                <p>China Compulsory Product Certification</p>
+              </div>
+              <div className="cert-card">
+                <div className="cert-icon">🔬</div>
+                <h3>1000+ Patents</h3>
+                <p>Core Technology Patents Owned</p>
+              </div>
+            </div>
+          </section>
+        </ScrollReveal>
+
+        <ScrollReveal delay={0.56}>
+          <section className="about-section production">
+            <h2>Production Capacity</h2>
+            <p>
+              State-of-the-art manufacturing facility with advanced SMT lines and rigorous quality control processes.
+            </p>
+            <div className="production-stats">
+              <div className="prod-stat">
+                <div className="prod-number">8</div>
+                <div className="prod-label">SMT Lines</div>
+                <div className="prod-desc">High-speed automated assembly</div>
+              </div>
+              <div className="prod-stat">
+                <div className="prod-number">2M+</div>
+                <div className="prod-label">Units/Year</div>
+                <div className="prod-desc">Annual production capacity</div>
+              </div>
+              <div className="prod-stat">
+                <div className="prod-number">300+</div>
+                <div className="prod-label">Employees</div>
+                <div className="prod-desc">Skilled workforce</div>
+              </div>
+              <div className="prod-stat">
+                <div className="prod-number">15-25</div>
+                <div className="prod-label">Days Delivery</div>
+                <div className="prod-desc">Fast turnaround time</div>
+              </div>
+            </div>
+          </section>
+        </ScrollReveal>
+
+        <ScrollReveal delay={0.57}>
           <section className="about-section faq-cta">
             <h2>Have Questions About Microwear?</h2>
             <p>
