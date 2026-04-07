@@ -399,7 +399,7 @@ export default function FactoryFAQ() {
         <ScrollReveal>
           <h2>Still Have Questions?</h2>
           <p>
-            Can't find the answer you're looking for? Our team is here to help.
+            Can&apos;t find the answer you&apos;re looking for? Our team is here to help.
           </p>
           <a href="/contact" className="cta-button">
             Contact Our Team
