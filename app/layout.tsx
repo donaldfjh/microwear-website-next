@@ -9,9 +9,9 @@ import { ComparisonProvider } from "@/contexts/ComparisonContext";
 import { ToastProvider } from "@/contexts/ToastContext";
 
 export const metadata: Metadata = {
-  title: "Microwear | Top Smart Watch Manufacturer & OEM/ODM Factory in China",
+  title: "Microwear | Smart Watch & AI Glasses OEM/ODM Manufacturer from China (2008)",
   description:
-    "Leading smart watch manufacturer Microwear offers premium OEM/ODM wearable solutions. ISO-certified factory, wholesale smartwatches, health trackers, and GPS sports watches for global brands.",
+    "Microwear - ISO9001 certified smart watch & AI glasses OEM/ODM manufacturer since 2008. MOQ 100pcs, $15-50 wholesale. 8 SMT lines, 2M+ units/year. Free samples, 24h quotes. CE/FCC/RoHS certified. Get your quote today!",
   icons: {
     icon: "/images/logos/image.svg",
     shortcut: "/images/logos/image.svg",

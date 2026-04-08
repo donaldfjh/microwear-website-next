@@ -584,6 +584,76 @@
     "priceRange": null
   },
   {
+    "id": "mw-health-ma15",
+    "name": "Microwear Watch MA15MAX",
+    "description": "Health monitoring smartwatch. Advanced sensors for comprehensive wellness tracking.",
+    "images": [
+      "/images/products/MA15MAX_01.webp",
+      "/images/products/MA15MAX_03.webp",
+      "/images/products/MA15MAX_04.webp",
+      "/images/products/MA15MAX_05.webp",
+      "/images/products/MA15MAX_06.webp",
+      "/images/products/MA15MAX_07.webp",
+      "/images/products/MA15MAX_08.webp"
+    ],
+    "specifications": {
+      "display": "1.51\" IPS, 360x360 pixels, Always-On Display",
+      "processor": "Dual-core 192MHz",
+      "battery": "300mAh, 90mins to full charge",
+      "waterResistance": "IP68",
+      "connectivity": [
+        "Bluetooth 3.0+6.1",
+        "Wi-Fi"
+      ],
+      "sensors": [
+        "ECG",
+        "SpO2",
+        "Blood Pressure",
+        "Body Temperature",
+        "Stress Monitor",
+        "Accelerometer"
+      ],
+      "compatibility": [
+        "iOS 12+",
+        "Android 6.0+"
+      ],
+      "dimensions": "50.6 * 49 * 14.3 mm",
+      "weight": "67g (without strap)"
+    },
+    "highlights": [
+      "Medical-grade ECG monitoring",
+      "Blood pressure tracking",
+      "Body temperature sensor",
+      "Stress and breathing exercises",
+      "Sleep apnea detection"
+    ],
+    "variants": [
+      {
+        "id": "mw-health-plus-white",
+        "name": "Black Green",
+        "color": "Black Green",
+        "image": "/images/products/MA15MAXBlackGreen-01.webp",
+        "bandMaterial": "22mm standard Easy-kit changing straps"
+      }
+
+    ],
+    "features": [
+      "ECG",
+      "Heart Rate Monitor",
+      "SpO2",
+      "Blood Pressure",
+      "Temperature",
+      "Sleep Tracking",
+      "Stress Monitor"
+    ],
+    "category": "Classic",
+    "useCase": {
+      "title": "Why this is perfect for Senior Care?",
+      "content": "With ECG, blood pressure, and fall detection capabilities, the MA18 is an essential tool for elderly care, enabling remote health monitoring for families."
+    },
+    "priceRange": null
+  },
+  {
     "id": "smart-audio-glasses-oem-blue-light-blocking-ai3",
     "name": "Microwear AI 3 Smart Audio Glasses OEM (Blue Light Blocking)",
     "description": "Next-generation smart glasses with integrated AI assistant, open-ear audio, and heads-up display. Experience the future of wearable computing. White label smart glasses for health monitoring projects and AR navigation solutions.",

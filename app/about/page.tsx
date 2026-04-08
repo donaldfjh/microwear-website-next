@@ -93,10 +93,29 @@ export default function AboutPage() {
       <div className="about-container">
         <ScrollReveal>
           <div className="about-header">
-            <h1>About MicroWear</h1>
+            <div className="header-badge">15+ Years of Excellence</div>
+            <h1>About Microwear</h1>
             <p className="about-tagline">
-              Redefining wearable technology for the modern lifestyle
+              Your Trusted Smart Watch & AI Glasses OEM/ODM Partner Since 2008
             </p>
+            <div className="header-stats">
+              <div className="stat-card">
+                <div className="stat-value">300+</div>
+                <div className="stat-label">Employees</div>
+              </div>
+              <div className="stat-card">
+                <div className="stat-value">8</div>
+                <div className="stat-label">SMT Production Lines</div>
+              </div>
+              <div className="stat-card">
+                <div className="stat-value">2M+</div>
+                <div className="stat-label">Units/Year Capacity</div>
+              </div>
+              <div className="stat-card">
+                <div className="stat-value">500+</div>
+                <div className="stat-label">Global Partners</div>
+              </div>
+            </div>
           </div>
         </ScrollReveal>
 
@@ -124,7 +143,7 @@ export default function AboutPage() {
               <div className="story-header">
                 <h2>Our Story</h2>
                 <div className="story-subtitle">
-                  Building the Future of Wearable Technology
+                  Building the Future of Wearable Technology Since 2008
                 </div>
               </div>
               <div className="story-text">
@@ -136,16 +155,19 @@ export default function AboutPage() {
                 </p>
                 <div className="story-stats">
                   <div className="stat-item">
+                    <div className="stat-icon">👥</div>
                     <div className="stat-number">300+</div>
-                    <div className="stat-label">Employees</div>
+                    <div className="stat-label">Skilled Employees</div>
                   </div>
                   <div className="stat-item">
-                    <div className="stat-number">1,000+</div>
-                    <div className="stat-label">Patents</div>
+                    <div className="stat-icon">🏭</div>
+                    <div className="stat-number">8</div>
+                    <div className="stat-label">SMT Production Lines</div>
                   </div>
                   <div className="stat-item">
-                    <div className="stat-number">15+</div>
-                    <div className="stat-label">Years Experience</div>
+                    <div className="stat-icon">⚡</div>
+                    <div className="stat-number">2M+</div>
+                    <div className="stat-label">Annual Capacity</div>
                   </div>
                 </div>
                 <p>
@@ -169,6 +191,73 @@ export default function AboutPage() {
               into their daily routines. We believe technology should adapt to
               you, not the other way around.
             </p>
+          </section>
+        </ScrollReveal>
+
+        <ScrollReveal delay={0.35}>
+          <section className="about-section timeline">
+            <div className="section-header">
+              <h2>Our Journey</h2>
+              <p className="section-intro">From a small startup to a global smartwatch manufacturer, our growth story reflects commitment to innovation and quality.</p>
+            </div>
+            <div className="timeline-container">
+              <div className="timeline-item">
+                <div className="timeline-badge">🚀</div>
+                <div className="timeline-year">2008</div>
+                <div className="timeline-content">
+                  <h3>Company Founded</h3>
+                  <p>Established in Shenzhen, focusing on smart wearable technology R&D and manufacturing</p>
+                </div>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-badge">🏭</div>
+                <div className="timeline-year">2012</div>
+                <div className="timeline-content">
+                  <h3>First Production Line</h3>
+                  <p>Launched first SMT production line, marking the beginning of in-house manufacturing</p>
+                </div>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-badge">✅</div>
+                <div className="timeline-year">2015</div>
+                <div className="timeline-content">
+                  <h3>ISO9001 Certified</h3>
+                  <p>Achieved ISO9001 quality management certification, ensuring international standards</p>
+                </div>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-badge">🌍</div>
+                <div className="timeline-year">2018</div>
+                <div className="timeline-content">
+                  <h3>Global Expansion</h3>
+                  <p>Expanded to 30+ countries, serving 500+ B2B partners worldwide</p>
+                </div>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-badge">⚡</div>
+                <div className="timeline-year">2020</div>
+                <div className="timeline-content">
+                  <h3>8 SMT Lines</h3>
+                  <p>Reached 2M+ units/year production capacity with 8 advanced SMT lines</p>
+                </div>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-badge">👓</div>
+                <div className="timeline-year">2023</div>
+                <div className="timeline-content">
+                  <h3>AI Glasses Launch</h3>
+                  <p>Launched AI Glasses product line, expanding into next-gen wearable technology</p>
+                </div>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-badge">🏆</div>
+                <div className="timeline-year">2026</div>
+                <div className="timeline-content">
+                  <h3>Industry Leadership</h3>
+                  <p>Continuing to innovate with 15+ years of experience in smart wearable manufacturing</p>
+                </div>
+              </div>
+            </div>
           </section>
         </ScrollReveal>
 
@@ -284,59 +373,6 @@ export default function AboutPage() {
               we include to the ones we deliberately leave out. The result is a
               product line that feels natural, intuitive, and genuinely helpful.
             </p>
-          </section>
-        </ScrollReveal>
-
-        <ScrollReveal delay={0.5}>
-          <section className="about-section timeline">
-            <h2>Our Journey</h2>
-            <p className="timeline-intro">
-              From a small startup to a global smartwatch manufacturer, our growth story reflects commitment to innovation and quality.
-            </p>
-            <div className="timeline-grid">
-              <div className="timeline-item">
-                <div className="timeline-year">2008</div>
-                <div className="timeline-content">
-                  <h3>Company Founded</h3>
-                  <p>Established Shenzhen NJY Technology Co., Ltd. Started with 20 employees focusing on wearable R&D.</p>
-                </div>
-              </div>
-              <div className="timeline-item">
-                <div className="timeline-year">2010</div>
-                <div className="timeline-content">
-                  <h3>First Smartwatch</h3>
-                  <p>Released our first generation smartwatch product. Achieved 50,000 units sold in first year.</p>
-                </div>
-              </div>
-              <div className="timeline-item">
-                <div className="timeline-year">2015</div>
-                <div className="timeline-content">
-                  <h3>ISO9001 Certified</h3>
-                  <p>Obtained ISO9001 quality management certification. Expanded to 150+ employees and 5 production lines.</p>
-                </div>
-              </div>
-              <div className="timeline-item">
-                <div className="timeline-year">2018</div>
-                <div className="timeline-content">
-                  <h3>Global Expansion</h3>
-                  <p>Reached 300+ global B2B partners. Opened European and American market channels.</p>
-                </div>
-              </div>
-              <div className="timeline-item">
-                <div className="timeline-year">2020</div>
-                <div className="timeline-content">
-                  <h3>AI Glasses Launch</h3>
-                  <p>Entered smart glasses market with AI-powered eyewear. Achieved 1000+ patent milestone.</p>
-                </div>
-              </div>
-              <div className="timeline-item">
-                <div className="timeline-year">2024</div>
-                <div className="timeline-content">
-                  <h3>AI Innovation</h3>
-                  <p>Released W Ai 4 (38g ultra-light) and W AI 3 camera glasses with ChatGPT integration. 500+ partners worldwide.</p>
-                </div>
-              </div>
-            </div>
           </section>
         </ScrollReveal>
 
