@@ -1,5 +1,101 @@
 [
   {
+    "id": "MA35",
+    "name": "Microwear MA35",
+    "description": "Premium smartwatch with advanced health tracking and stunning AMOLED display. Perfect for fitness enthusiasts and professionals alike.",
+    "price": 18,
+    "images": [
+      "/images/products/MA35-00.webp",
+      "/images/products/MA35-01.webp",
+      "/images/products/MA35-02.webp",
+      "/images/products/MA35-03.webp",
+      "/images/products/MA35-04.webp",
+      "/images/products/MA35-05.webp",
+      "/images/products/MA35-06.webp",
+      "/images/products/MA35-07.webp"
+    ],
+    "specifications": {
+      "display": "1.51, IPS, 360*360 pixels, Always-On Display",
+      "processor": "Dual-core 192MHz",
+      "battery": "300mAh, up to 5 days typical use",
+      "waterResistance": "IP68",
+      "connectivity": [
+        "Bluetooth 3.0 + 6.1",
+        "Wi-Fi",
+        "GPS",
+        "NFC"
+      ],
+      "sensors": [
+        "Heart Rate",
+        "SpO2",
+        "Accelerometer",
+        "Barometer",
+        "Compass"
+      ],
+      "compatibility": [
+        "iOS 12+",
+        "Android 6.0+"
+      ],
+      "dimensions": "50.6 * 49 * 14.3 mm",
+      "weight": "67g (without strap)"
+    },
+    "highlights": [
+      "24/7 heart rate and ECG monitoring",
+      "100+ sport modes with AI coaching",
+      "Built-in GPS for accurate tracking",
+      "Wireless charging support",
+      "Premium IP68/3ATM waterproof support swimming and diving "
+    ],
+    "variants": [
+      {
+        "id": "mw-pro-x1-black",
+        "name": "Midnight Black",
+        "price": 18,
+        "color": "Black",
+        "bandMaterial": "Silicone",
+        "image": "/images/products/MA35Black01.webp"
+      },
+      {
+        "id": "mw-pro-x1-silver",
+        "name": "Arctic Silver",
+        "price": 18,
+        "color": "Silver",
+        "bandMaterial": "Silicone",
+        "image": "/images/products/MA35Silver01.webp"
+      },
+      {
+        "id": "mw-pro-x1-leather",
+        "name": "Classic Leather",
+        "price": 18,
+        "color": "Gold",
+        "bandMaterial": "Silicone",
+        "image": "/images/products/MA35Gold01.webp"
+      },
+      {
+        "id": "mw-pro-x1-leather",
+        "name": "Orange Leather",
+        "price": 18,
+        "color": "Orange",
+        "bandMaterial": "Silicone",
+        "image": "/images/products/MA35BlackOrange01.webp"
+      }
+    ],
+    "features": [
+      "IP68 Waterproof",
+      "Heart Rate Monitor",
+      "SpO2",
+      "Sleep Tracking",
+      "WhatsApp Reply",
+      "Wechat Reply"
+    ],
+    "category": "Business",
+    "useCase": {
+      "title": "Why this is perfect for Business Professionals?",
+      "content": "The W11 Pro combines a premium AMOLED display with professional health tracking (ECG), making it the ideal companion for executives who need to stay connected and monitor their wellness during busy schedules."
+    },
+    "priceRange": null
+  },
+  {
     "id": "W11pro",
     "name": "Microwear W11 Pro",
     "description": "Premium smartwatch with advanced health tracking and stunning AMOLED display. Perfect for fitness enthusiasts and professionals alike.",

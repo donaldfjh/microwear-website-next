@@ -1,25 +1,25 @@
 {
-  "auditDate": "2026-04-02",
+  "auditDate": "2026-04-09",
   "website": "microwear.info",
   "auditor": "太子 (OpenClaw)",
   "summary": {
     "criticalIssues": 0,
     "mediumIssues": 2,
-    "suggestions": 3,
-    "healthyItems": 10
+    "suggestions": 4,
+    "healthyItems": 11
   },
   "criticalIssues": [],
   "mediumIssues": [
     {
-      "issue": "移动端触摸元素过小",
-      "details": "14 个可点击元素小于 44x44 像素（Google 移动端可访问性标准）",
-      "affectedElements": ["导航链接", "页脚链接", "小按钮"],
-      "impact": "可能影响移动端用户体验和 Google 移动端友好度评分",
-      "fix": "增加 CSS padding 或 min-width/min-height，确保所有可点击区域至少 44x44 像素"
+      "issue": "缺少 meta robots 标签",
+      "details": "所有检查页面（首页、产品页、博客页）均未设置 meta robots 标签",
+      "affectedPages": ["全网站页面"],
+      "impact": "虽然默认行为是 index/follow，但明确声明可避免搜索引擎误判，建议添加 <meta name=\"robots\" content=\"index, follow\">",
+      "fix": "在 app/layout.tsx 的 metadata 中添加 robots 配置，或在各页面 metadata 中显式声明"
     },
     {
       "issue": "sitemap.xml 更新频率",
-      "details": "sitemap.xml 最后更新时间为 2026-03-21，距今约 12 天",
+      "details": "sitemap.xml 最后更新时间为 2026-03-21，距今约 19 天",
       "impact": "如有新内容发布，可能延迟搜索引擎收录",
       "fix": "确认 next-sitemap 是否在每次部署后自动运行，或设置定时任务每日更新"
     }
@@ -39,24 +39,29 @@
       "suggestion": "考虑添加面包屑导航结构化数据",
       "details": "使用 BreadcrumbList schema 帮助搜索引擎理解网站结构",
       "impact": "可能在搜索结果中显示面包屑路径"
+    },
+    {
+      "suggestion": "启用图片 lazy loading 审计",
+      "details": "检查首屏以下图片是否都启用了 loading=\"lazy\"，避免影响 LCP",
+      "impact": "可进一步提升页面加载速度和 Core Web Vitals 评分"
     }
   ],
   "healthyItems": [
     {
       "item": "robots.txt 配置正确",
-      "details": "正确配置 User-agent、Allow、Disallow、Host 和 Sitemap 指令"
+      "details": "正确配置 User-agent、Allow、Disallow、Host 和 Sitemap 指令，排除 /api/ 和 /_next/"
     },
     {
       "item": "HTTPS 完全启用",
-      "details": "所有页面使用 HTTPS，无混合内容警告"
+      "details": "所有页面使用 HTTPS，next.config.js 中配置了完整的安全头（HSTS、X-Content-Type-Options、X-Frame-Options 等）"
     },
     {
       "item": "移动端友好",
-      "details": "viewport 设置正确 (width=device-width, initial-scale=1)"
+      "details": "viewport 设置正确 (width=device-width, initial-scale=1)，响应式设计正常"
     },
     {
       "item": "无 404 死链",
-      "details": "检查的所有页面（首页、产品页、博客页、关于页）均返回 200 状态"
+      "details": "检查的所有页面（首页、产品页、博客页、关于页、联系页、FAQ、分类页）均返回 200 状态"
     },
     {
       "item": "无重定向链",
@@ -64,15 +69,11 @@
     },
     {
       "item": "canonical 标签完整",
-      "details": "首页、产品页、博客页都有正确的 self-referencing canonical"
+      "details": "首页、产品页、博客页都有正确的 self-referencing canonical 标签"
     },
     {
       "item": "页面加载速度快",
-      "details": "首页加载时间约 133ms，资源总量约 2KB（可能使用了缓存/CDN）"
-    },
-    {
-      "item": "图片 lazy loading 已启用",
-      "details": "13 张图片使用 loading=\"lazy\" 属性"
+      "details": "首页加载时间约 1.3-1.7s，资源优化良好"
     },
     {
       "item": "meta description 完整",
@@ -80,41 +81,60 @@
     },
     {
       "item": "sitemap.xml 结构正确",
-      "details": "包含 30 个 URL，涵盖首页、产品页、博客页、分类页，格式符合 sitemap 协议"
+      "details": "包含 29 个 URL，涵盖首页、产品页、博客页、分类页，格式符合 sitemap 协议"
+    },
+    {
+      "item": "图片优化配置完善",
+      "details": "next.config.js 中配置了 WebP/AVIF 格式、多尺寸响应、缓存策略"
+    },
+    {
+      "item": "安全头配置完整",
+      "details": "HSTS (31536000s)、X-Content-Type-Options、X-Frame-Options、X-XSS-Protection、Referrer-Policy、Permissions-Policy 全部配置"
     }
   ],
   "technicalDetails": {
     "robotsTxt": {
       "status": "200",
       "url": "https://microwear.info/robots.txt",
-      "configuration": "正确"
+      "configuration": "正确",
+      "details": "User-agent: *, Allow: /, Disallow: /api/, /_next/, Host: https://microwear.info, Sitemap: https://microwear.info/sitemap.xml"
     },
     "sitemapXml": {
       "status": "200",
       "url": "https://microwear.info/sitemap.xml",
-      "urlCount": 30,
+      "urlCount": 29,
       "lastModified": "2026-03-21",
-      "format": "正确"
+      "format": "正确",
+      "changefreq": "daily",
+      "priority": "0.7"
     },
     "https": {
       "enabled": true,
-      "mixedContent": 0
+      "mixedContent": 0,
+      "securityHeaders": {
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Permissions-Policy": "camera=(), microphone=(), geolocation=()"
+      }
     },
     "mobile": {
       "viewport": "width=device-width, initial-scale=1",
       "responsive": true
     },
     "performance": {
-      "domContentLoaded": "99ms",
-      "loadComplete": "133ms",
-      "resourceCount": 36,
-      "totalTransferKB": 2
+      "fetchTime": "1.3-1.7s",
+      "imageOptimization": "WebP/AVIF enabled",
+      "cacheStrategy": "configured"
     },
     "seo": {
       "canonical": "已配置",
       "metaDescription": "已配置",
-      "ogTags": "已配置",
-      "lazyLoading": "已启用"
+      "metaRobots": "缺失",
+      "ogTags": "已配置（首页）",
+      "structuredData": "Organization schema（首页）"
     }
   },
   "checkedUrls": [
@@ -123,17 +143,25 @@
     "https://microwear.info/products/W11pro",
     "https://microwear.info/products/mw-fit-lite",
     "https://microwear.info/products/mw-sport-ultra",
+    "https://microwear.info/products/mw-classic-steel",
+    "https://microwear.info/products/mw-kids-fun",
+    "https://microwear.info/products/mw-health-ma25",
+    "https://microwear.info/products/fitness-tracker",
+    "https://microwear.info/products/kids-smartwatch",
+    "https://microwear.info/products/rugged-smartwatch",
+    "https://microwear.info/products/health-smartwatch",
     "https://microwear.info/about",
     "https://microwear.info/blog",
     "https://microwear.info/blog/2026-03-16-smartwatch-health-monitoring-accuracy",
-    "https://microwear.info/blog/AI-glasses-sound",
-    "https://microwear.info/blog/2026-03-20-iso9001-ce-certification-smartwatch-b2b",
-    "https://microwear.info/comparison",
-    "https://microwear.info/ai-glasses"
+    "https://microwear.info/contact",
+    "https://microwear.info/factory-faq",
+    "https://microwear.info/ai-glasses",
+    "https://microwear.info/comparison"
   ],
   "nextSteps": [
-    "修复移动端触摸元素大小问题（优先级：中）",
+    "在 layout.tsx 或各页面 metadata 中添加 robots 配置（优先级：中）",
     "确认 sitemap 自动更新机制是否正常运作（优先级：低）",
-    "考虑添加结构化数据增强搜索结果展示（优先级：低）"
+    "考虑添加 Product 和 Article 结构化数据（优先级：低）",
+    "审计首屏以下图片的 lazy loading 配置（优先级：低）"
   ]
 }
