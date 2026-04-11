@@ -4,9 +4,9 @@ import { BreadcrumbSchema } from "@/components/SEO/BreadcrumbSchema";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Microwear Smartwatch Collection | OEM/ODM Factory Direct 2026",
+  title: "Microwear Smartwatch Collection | OEM Factory Direct 2026",
   description:
-    "Browse complete microwear smartwatch collection - 20+ models for B2B wholesale. ISO9001 certified OEM/ODM factory. MOQ 200pcs, $15-30. Free samples, 24h quotes. Custom logo, SDK, packaging. Every microwear smart watch features advanced health tracking, GPS, premium build.",
+    "Browse complete microwear smartwatch collection - 20+ models for B2B wholesale. ISO9001 certified OEM factory. MOQ 200pcs, $15-30. Free samples, 24h quotes. Custom logo, SDK, packaging. Every microwear smart watch features advanced health tracking, GPS, premium build.",
   keywords: [
     "microwear smartwatch",
     "microwear smartwatches",
@@ -21,7 +21,6 @@ export const metadata: Metadata = {
     "microwear smartwatch catalog",
     "microwear smartwatch wholesale",
     "OEM smartwatch manufacturer",
-    "ODM smartwatch factory",
     "wholesale smartwatch bulk",
     "bulk smartwatch orders",
     "B2B smartwatch supplier",
@@ -32,7 +31,7 @@ export const metadata: Metadata = {
     canonical: "https://microwear.info/products",
   },
   openGraph: {
-    title: "Microwear Smartwatch Collection | OEM/ODM Factory Direct",
+    title: "Microwear Smartwatch Collection | OEM Factory Direct",
     description:
       "Complete microwear smartwatch collection - 20+ models for B2B wholesale. ISO9001 certified factory, MOQ 200pcs, $15-50. Free samples, custom logo, SDK support.",
     type: "website",
@@ -50,10 +49,10 @@ export default async function ProductsPage() {
   const collectionSchema = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "name": "Microwear Smartwatch OEM/ODM Manufacturer | Wholesale B2B Bulk Orders",
-    "description": "Complete microwear smartwatch OEM/ODM product catalog - ISO9001 certified manufacturer direct. B2B wholesale pricing $15-50, bulk orders welcome. Custom logo, SDK, packaging. Every microwear smartwatch features advanced health tracking, GPS, premium build. Smartwatch microwear factory with 10+ years expertise. MOQ 200pcs, free samples, 24h quotes, 7-15 day lead time. Professional smartwatch microwear manufacturer for global B2B partners.",
+    "name": "Microwear Smartwatch OEM Manufacturer | Wholesale B2B Bulk Orders",
+    "description": "Complete microwear smartwatch OEM product catalog - ISO9001 certified manufacturer direct. B2B wholesale pricing $15-50, bulk orders welcome. Custom logo, SDK, packaging. Every microwear smartwatch features advanced health tracking, GPS, premium build. Smartwatch microwear factory with 10+ years expertise. MOQ 200pcs, free samples, 24h quotes, 7-15 day lead time. Professional smartwatch microwear manufacturer for global B2B partners.",
     "url": "https://microwear.info/products",
-    "keywords": "microwear smartwatch, microwear smartwatches, microwear smart watch, smartwatch microwear, microwear smartwatch manufacturer, microwear smartwatch factory, wholesale smartwatch bulk, bulk smartwatch orders, OEM ODM smartwatch, B2B smartwatch manufacturer, smartwatch microwear factory, microwear factory direct, smartwatch manufacturer China, microwear bulk orders, smartwatch OEM factory, microwear supplier, microwear OEM ODM manufacturer, smartwatch microwear wholesale",
+    "keywords": "microwear smartwatch, microwear smartwatches, microwear smart watch, smartwatch microwear, microwear smartwatch manufacturer, microwear smartwatch factory, wholesale smartwatch bulk, bulk smartwatch orders, OEM smartwatch, B2B smartwatch manufacturer, smartwatch microwear factory, microwear factory direct, smartwatch manufacturer China, microwear bulk orders, smartwatch OEM factory, microwear supplier, microwear OEM manufacturer, smartwatch microwear wholesale",
     "mainEntity": {
       "@type": "ItemList",
       "numberOfItems": smartWatches.length,
@@ -166,7 +165,7 @@ export default async function ProductsPage() {
             textAlign: 'center',
             marginBottom: '48px'
           }}>
-            OEM/ODM Services for Microwear Smartwatch
+            OEM Services for Microwear Smartwatch
           </h2>
           
           <div style={{ 
@@ -217,7 +216,7 @@ export default async function ProductsPage() {
           
           <div style={{ textAlign: 'center', marginTop: '48px' }}>
             <a 
-              href="/contact?subject=OEM/ODM Inquiry" 
+              href="/contact?subject=OEM Inquiry" 
               style={{
                 display: 'inline-block',
                 padding: '16px 48px',
@@ -229,7 +228,7 @@ export default async function ProductsPage() {
                 fontSize: '16px'
               }}
             >
-              Request OEM/ODM Quote →
+              Request OEM Quote →
             </a>
           </div>
         </div>
@@ -256,8 +255,7 @@ export default async function ProductsPage() {
               What is the MOQ for microwear smartwatch OEM orders?
             </h3>
             <p style={{ color: '#666', lineHeight: '1.6' }}>
-              Our standard MOQ is 200 pieces per model for OEM orders. For ODM projects with custom 
-              hardware/software, MOQ starts from 500pcs. Contact us for flexible terms based on your requirements.
+              Our standard MOQ is 200 pieces per model for OEM orders. Contact us for flexible terms based on your requirements.
             </p>
           </div>
           

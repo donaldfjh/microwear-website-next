@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "شركة Microwear لتصنيع الساعات الذكية | OEM/ODM",
+  title: "شركة Microwear لتصنيع الساعات الذكية | OEM",
   description: "شركة Microwear - شركة تصنيع ساعات ذكية معتمدة ISO9001. أسعار الجملة 15-50 دولار، MOQ 200 قطعة. عينات مجانية، توصيل خلال 7-15 يوم. خدمة عملاء باللغة العربية.",
   alternates: {
     canonical: "https://microwear.info/ar/",
@@ -26,7 +26,7 @@ export default function ArabicLandingPage() {
           شركة ميكرووير لتصنيع الساعات الذكية
         </h1>
         <p style={{ fontSize: '20px', opacity: 0.9, maxWidth: '800px', margin: '0 auto 32px' }}>
-          تصنيع OEM/ODM محترف مع 15+ عاماً من الخبرة. معتمد ISO9001، CE، FCC، RoHS
+          تصنيع OEM محترف مع 15+ عاماً من الخبرة. معتمد ISO9001، CE، FCC، RoHS
         </p>
         <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
           <Link 

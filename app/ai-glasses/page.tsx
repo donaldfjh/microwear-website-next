@@ -9,14 +9,10 @@ import "./page.css";
 
 export const metadata: Metadata = {
   title:
-    "ODM Smart Glasses Manufacturer | AI/AR/Camera/Telephone Eyewear Factory",
+    "OEM Smart Glasses Manufacturer | AI/AR/Camera/Telephone Eyewear Factory",
   description:
-    "Professional ODM manufacturer for smart glasses, AR glasses, camera glasses, and telephone glasses. Custom design, firmware, branding. MOQ 500pcs. CE/FCC certified. Get factory direct quote today.",
+    "Professional OEM manufacturer for smart glasses, AR glasses, camera glasses, and telephone glasses. Custom design, firmware, branding. MOQ 500pcs. CE/FCC certified. Get factory direct quote today.",
   keywords: [
-    "odm smart glasses",
-    "odm ar glasses",
-    "odm camera glasses",
-    "odm telephone glasses",
     "smart glasses manufacturer",
     "AR glasses factory",
     "camera glasses OEM",
@@ -41,9 +37,9 @@ export const metadata: Metadata = {
     canonical: "https://microwear.info/ai-glasses",
   },
   openGraph: {
-    title: "ODM Smart Glasses Manufacturer | AI/AR/Camera/Telephone Eyewear Factory",
+    title: "OEM Smart Glasses Manufacturer | AI/AR/Camera/Telephone Eyewear Factory",
     description:
-      "Professional ODM manufacturer for smart glasses, AR glasses, camera glasses, and telephone glasses. Custom design, firmware, branding. MOQ 500pcs. CE/FCC certified.",
+      "Professional OEM manufacturer for smart glasses, AR glasses, camera glasses, and telephone glasses. Custom design, firmware, branding. MOQ 500pcs. CE/FCC certified.",
     type: "website",
     images: [
       "https://microwear.info/images/glasses/glasses1.webp"
@@ -152,7 +148,7 @@ export default function AIGlassesPage() {
       id: 3,
       question: "Is NJY Technology a factory or trading company?",
       answer:
-        "NJY Technology is a manufacturer established in 2008 with 450+ employees and over 300 core patents. We provide OEM/ODM services for global brands.",
+        "NJY Technology is a manufacturer established in 2008 with 450+ employees and over 300 core patents. We provide OEM services for global brands.",
     },
   ];
 
@@ -160,7 +156,7 @@ export default function AIGlassesPage() {
     {
       id: "telephone",
       name: "Telephone Glasses",
-      keyword: "odm telephone glasses",
+      keyword: "telephone glasses OEM",
       description: "Smart audio glasses with Bluetooth calling, open-ear speakers, and voice assistant integration. Perfect for hands-free communication.",
       features: ["Bluetooth Calling", "Open-Ear Audio", "Voice Assistant", "12h+ Battery"],
       link: "/contact?subject=Telephone Glasses OEM",
@@ -168,7 +164,7 @@ export default function AIGlassesPage() {
     {
       id: "camera",
       name: "Camera Glasses",
-      keyword: "odm camera glasses",
+      keyword: "camera glasses OEM",
       description: "First-person video recording glasses with Sony sensors. Capture life from your perspective. Live streaming capable.",
       features: ["Sony 8MP Sensor", "1080P/4K Recording", "EIS Stabilization", "Live Streaming"],
       link: "/contact?subject=Camera Glasses OEM",
@@ -176,7 +172,7 @@ export default function AIGlassesPage() {
     {
       id: "ar",
       name: "AR Glasses",
-      keyword: "odm ar glasses",
+      keyword: "ar glasses OEM",
       description: "Augmented reality glasses with MicroLED displays and waveguide optics. Enterprise and consumer models available.",
       features: ["MicroLED Display", "Waveguide Optics", "Android/Linux OS", "6DoF Tracking"],
       link: "/contact?subject=AR Glasses OEM",
@@ -184,7 +180,7 @@ export default function AIGlassesPage() {
     {
       id: "smart",
       name: "Smart Glasses",
-      keyword: "odm smart glasses",
+      keyword: "smart glasses OEM",
       description: "All-in-one intelligent eyewear with AI integration. ChatGPT, translation, navigation, and more.",
       features: ["AI Integration", "Real-time Translation", "Navigation", "Touch Controls"],
       link: "/contact?subject=Smart Glasses OEM",
@@ -476,7 +472,7 @@ export default function AIGlassesPage() {
       <section className="oem-options-section">
         <div className="container">
           <ScrollReveal>
-            <h2 className="section-title">OEM/ODM Options</h2>
+            <h2 className="section-title">OEM Options</h2>
             <p className="section-subtitle">
               Full customization services to build your unique smart glasses brand
             </p>

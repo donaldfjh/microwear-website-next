@@ -10,14 +10,13 @@ import "./HomePage.css";
 
 export const metadata: Metadata = {
   title:
-    "Microwear | OEM/ODM Smartwatch Manufacturer | Factory Direct Bulk Orders",
+    "Microwear | OEM Smartwatch Manufacturer | Factory Direct Bulk Orders",
   description:
-    "Microwear - Leading smartwatch OEM/ODM manufacturer with 15+ years B2B experience. Factory direct pricing, MOQ 100pcs, CE/FCC/RoHS/ISO certified. Custom logo, firmware, packaging. 7-day samples, 15-25 day delivery. 500+ global partners. Get free quote for bulk orders.",
+    "Microwear - Leading smartwatch OEM manufacturer with 15+ years B2B experience. Factory direct pricing, MOQ 100pcs, CE/FCC/RoHS/ISO certified. Custom logo, firmware, packaging. 7-day samples, 15-25 day delivery. 500+ global partners. Get free quote for bulk orders.",
   keywords: [
     // B2B 核心词（高优先级）
     "smartwatch manufacturer China",
     "smartwatch OEM supplier Shenzhen",
-    "smartwatch ODM factory",
     "wearable device manufacturer",
     
     // 产品类型 + B2B
@@ -27,7 +26,6 @@ export const metadata: Metadata = {
     "health smartwatch manufacturer",
     "GPS watch OEM supplier",
     "AI glasses manufacturer",
-    "smart glasses ODM",
     
     // 采购意图词
     "smartwatch wholesale bulk",
@@ -46,7 +44,7 @@ export const metadata: Metadata = {
     title:
       "Microwear Official | Smartwatch OEM Manufacturer & AI Glasses Factory",
     description:
-      "Microwear official website - Professional smartwatch OEM/ODM manufacturer with 15+ years experience. CE, FCC, RoHS certified factory. Wholesale pricing, MOQ 100pcs. 500+ B2B partners worldwide.",
+      "Microwear official website - Professional smartwatch OEM manufacturer with 15+ years experience. CE, FCC, RoHS certified factory. Wholesale pricing, MOQ 100pcs. 500+ B2B partners worldwide.",
     url: "https://microwear.info/",
     type: "website",
   },
@@ -65,7 +63,7 @@ export default async function HomePage() {
     "name": "Microwear",
     "url": "https://microwear.info",
     "logo": "https://microwear.info/logo.png",
-    "description": "Professional smartwatch OEM/ODM manufacturer with 15+ years experience. CE, FCC, RoHS certified factory serving 500+ B2B partners worldwide.",
+    "description": "Professional smartwatch OEM manufacturer with 15+ years experience. CE, FCC, RoHS certified factory serving 500+ B2B partners worldwide.",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Shenzhen",
@@ -90,7 +88,7 @@ export default async function HomePage() {
       
       {/* Hero Section - B2B focused */}
       <HeroSection
-        title="OEM/ODM Smartwatch Manufacturer | Factory Direct"
+        title="OEM Smartwatch Manufacturer | Factory Direct"
         subtitle="15+ Years B2B Experience | 500+ Partners | MOQ 100pcs"
         ctaText="Get Free Quote"
         ctaLink="/contact"
@@ -247,7 +245,7 @@ export default async function HomePage() {
               margin: '0 auto',
               lineHeight: '1.7'
             }}>
-              From fitness tracking to kids safety, we deliver specialized OEM/ODM solutions tailored to your target market.
+              From fitness tracking to kids safety, we deliver specialized OEM solutions tailored to your target market.
             </p>
           </div>
 

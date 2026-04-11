@@ -4,15 +4,14 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import "./FactoryFAQ.css";
 
 export const metadata: Metadata = {
-  title: "Microwear Factory FAQ | MOQ, Pricing, Certifications & OEM/ODM Services",
+  title: "Microwear Factory FAQ | MOQ, Pricing, Certifications & OEM Services",
   description:
-    "Frequently asked questions about Microwear factory. Learn about MOQ (100pcs), pricing ($15-50), certifications (CE, RoHS, FCC, ISO9001), lead time, OEM/ODM services, and how to place orders.",
+    "Frequently asked questions about Microwear factory. Learn about MOQ (100pcs), pricing ($15-50), certifications (CE, RoHS, FCC, ISO9001), lead time, OEM services, and how to place orders.",
   keywords: [
     "Microwear FAQ",
     "smartwatch MOQ",
     "OEM factory questions",
     "smartwatch manufacturer China",
-    "ODM services",
     "factory certifications",
     "wholesale smartwatch",
     "bulk order smartwatch"
@@ -21,9 +20,9 @@ export const metadata: Metadata = {
     canonical: "https://microwear.info/factory-faq",
   },
   openGraph: {
-    title: "Microwear Factory FAQ | MOQ, Pricing, Certifications & OEM/ODM Services",
+    title: "Microwear Factory FAQ | MOQ, Pricing, Certifications & OEM Services",
     description:
-      "Get answers to common questions about Microwear factory. MOQ, pricing, certifications, lead time, OEM/ODM services, and ordering process.",
+      "Get answers to common questions about Microwear factory. MOQ, pricing, certifications, lead time, OEM services, and ordering process.",
   },
 };
 
@@ -38,7 +37,7 @@ export default function FactoryFAQ() {
         "name": "Who is Microwear?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Microwear is a leading smartwatch and AI glasses manufacturer established in 2008, specializing in OEM/ODM services for B2B clients worldwide. We are a Shenzhen-based factory with 300+ employees, 1000+ patents, and ISO9001 certification. We export to 100+ countries with offices in 10+ countries."
+          "text": "Microwear is a leading smartwatch and AI glasses manufacturer established in 2008, specializing in OEM services for B2B clients worldwide. We are a Shenzhen-based factory with 300+ employees, 1000+ patents, and ISO9001 certification. We export to 100+ countries with offices in 10+ countries."
         }
       },
       {
@@ -46,15 +45,15 @@ export default function FactoryFAQ() {
         "name": "What is Microwear's MOQ (Minimum Order Quantity)?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Our MOQ is 100 pieces for most smartwatch models. For custom ODM projects with unique designs or firmware, the MOQ is 500 pieces. We offer flexible terms for trial orders and can discuss lower quantities for long-term partnership prospects."
+          "text": "Our MOQ is 100 pieces for most smartwatch models. We offer flexible terms for trial orders and can discuss lower quantities for long-term partnership prospects."
         }
       },
       {
         "@type": "Question",
-        "name": "Does Microwear offer OEM and ODM services?",
+        "name": "Does Microwear offer OEM services?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, we specialize in both OEM and ODM services. OEM: We manufacture products with your brand logo and packaging. ODM: We provide full design and development services, from concept to mass production. Our engineering team can customize hardware, software, firmware, and industrial design to meet your specific requirements."
+          "text": "Yes, we specialize in OEM services. We manufacture products with your brand logo and packaging. Our engineering team can customize firmware and industrial design to meet your specific requirements."
         }
       },
       {
@@ -78,7 +77,7 @@ export default function FactoryFAQ() {
         "name": "What is the production lead time?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Standard orders: 7-15 days after payment confirmation. Custom ODM projects: 25-35 days including mold development and sample approval. Rush orders may be accommodated depending on production capacity. We recommend placing orders 2-3 months before your target launch date for new product development."
+          "text": "Standard orders: 7-15 days after payment confirmation. Rush orders may be accommodated depending on production capacity. We recommend placing orders 2-3 months before your target launch date for new product development."
         }
       },
       {
@@ -102,7 +101,7 @@ export default function FactoryFAQ() {
         "name": "What products does Microwear manufacture?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Our product lineup includes: Smart Watches (fitness trackers, sports watches, kids watches, rugged watches), AI Glasses (camera glasses, audio glasses, AR glasses), and Wearable Accessories. We specialize in B2B OEM/ODM manufacturing with customization options for hardware, software, branding, and packaging."
+          "text": "Our product lineup includes: Smart Watches (fitness trackers, sports watches, kids watches, rugged watches), AI Glasses (camera glasses, audio glasses, AR glasses), and Wearable Accessories. We specialize in B2B OEM manufacturing with customization options for hardware, software, branding, and packaging."
         }
       },
       {
@@ -110,7 +109,7 @@ export default function FactoryFAQ() {
         "name": "Can I customize my own smartwatch brand?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Absolutely! We offer comprehensive ODM services for brand customization including: Custom logo (laser engraving, printing, embossing), Custom packaging (gift boxes, manuals, accessories), Custom firmware (UI design, app development, feature customization), Custom hardware (component selection, color options, material choices), and Custom industrial design (unique case design, strap options). Our engineering team supports you from concept to mass production."
+          "text": "Absolutely! We offer comprehensive customization including: Custom logo (laser engraving, printing, embossing), Custom packaging (gift boxes, manuals, accessories), Custom firmware (UI design, app development, feature customization), Custom hardware (component selection, color options, material choices), and Custom industrial design (unique case design, strap options). Our engineering team supports you from concept to mass production."
         }
       },
       {
@@ -182,7 +181,7 @@ export default function FactoryFAQ() {
         "name": "Are there alternatives to Ray-Ban Meta glasses from Microwear?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes! Microwear offers AI glasses that serve as excellent alternatives to Ray-Ban Meta glasses. Our AI glasses feature: HD cameras (1080p/4K recording), Open-ear audio speakers, Voice assistant integration (Alexa, Google Assistant), Long battery life (8-12 hours), Lightweight design (30-40g), Custom branding options. We offer OEM/ODM services for AI glasses with competitive pricing ($35-80 wholesale) and MOQ from 100 pieces."
+          "text": "Yes! Microwear offers AI glasses that serve as excellent alternatives to Ray-Ban Meta glasses. Our AI glasses feature: HD cameras (1080p/4K recording), Open-ear audio speakers, Voice assistant integration (Alexa, Google Assistant), Long battery life (8-12 hours), Lightweight design (30-40g), Custom branding options. We offer OEM services for AI glasses with competitive pricing ($35-80 wholesale) and MOQ from 100 pieces."
         }
       },
       {
@@ -202,7 +201,7 @@ export default function FactoryFAQ() {
       questions: [
         {
           q: "Who is Microwear?",
-          a: "Microwear is a leading smartwatch and AI glasses manufacturer established in 2008, specializing in OEM/ODM services for B2B clients worldwide. We are a Shenzhen-based factory with 300+ employees, 1000+ patents, and ISO9001 certification. We export to 100+ countries with offices in 10+ countries."
+          a: "Microwear is a leading smartwatch and AI glasses manufacturer established in 2008, specializing in OEM services for B2B clients worldwide. We are a Shenzhen-based factory with 300+ employees, 1000+ patents, and ISO9001 certification. We export to 100+ countries with offices in 10+ countries."
         },
         {
           q: "Is Microwear a legitimate and verified company?",
@@ -219,7 +218,7 @@ export default function FactoryFAQ() {
       questions: [
         {
           q: "What is Microwear's MOQ (Minimum Order Quantity)?",
-          a: "Our MOQ is 100 pieces for most smartwatch models. For custom ODM projects with unique designs or firmware, the MOQ is 500 pieces. We offer flexible terms for trial orders and can discuss lower quantities for long-term partnership prospects."
+          a: "Our MOQ is 100 pieces for most smartwatch models. We offer flexible terms for trial orders and can discuss lower quantities for long-term partnership prospects."
         },
         {
           q: "What is the price range for Microwear smartwatches?",
@@ -232,11 +231,11 @@ export default function FactoryFAQ() {
       ]
     },
     {
-      category: "🔧 OEM/ODM Services",
+      category: "🔧 OEM Services",
       questions: [
         {
-          q: "Does Microwear offer OEM and ODM services?",
-          a: "Yes, we specialize in both. OEM: We manufacture products with your brand logo and packaging. ODM: We provide full design and development from concept to mass production. Our engineering team customizes hardware, software, firmware, and industrial design to your specifications."
+          q: "Does Microwear offer OEM services?",
+          a: "Yes, we specialize in OEM services. We manufacture products with your brand logo and packaging. Our engineering team can customize firmware and industrial design to your specifications."
         },
         {
           q: "Can I customize my own smartwatch brand?",
@@ -270,7 +269,7 @@ export default function FactoryFAQ() {
       questions: [
         {
           q: "What is the production lead time?",
-          a: "Standard orders: 7-15 days after payment. Custom ODM projects: 25-35 days including mold development and sample approval. Rush orders may be accommodated. Recommend ordering 2-3 months before target launch for new product development."
+          a: "Standard orders: 7-15 days after payment. Rush orders may be accommodated. Recommend ordering 2-3 months before target launch for new product development."
         },
         {
           q: "How do I place an order with Microwear?",
@@ -291,7 +290,7 @@ export default function FactoryFAQ() {
       questions: [
         {
           q: "What products does Microwear manufacture?",
-          a: "Smart Watches (fitness trackers, sports watches, kids watches, rugged watches), AI Glasses (camera glasses, audio glasses, AR glasses), and Wearable Accessories. B2B OEM/ODM with customization for hardware, software, branding, packaging."
+          a: "Smart Watches (fitness trackers, sports watches, kids watches, rugged watches), AI Glasses (camera glasses, audio glasses, AR glasses), and Wearable Accessories. B2B OEM manufacturing with customization for hardware, software, branding, packaging."
         },
         {
           q: "Are there alternatives to Ray-Ban Meta glasses?",
@@ -320,13 +319,13 @@ export default function FactoryFAQ() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      
+
       {/* Hero Section */}
       <section className="faq-hero">
         <ScrollReveal>
           <h1>Microwear Factory FAQ</h1>
           <p className="hero-subtitle">
-            Everything you need to know about our OEM/ODM services, pricing, certifications, and ordering process
+            Everything you need to know about our OEM services, pricing, certifications, and ordering process
           </p>
           <div className="hero-stats">
             <div className="stat">

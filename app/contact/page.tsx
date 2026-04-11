@@ -9,17 +9,17 @@ interface ContactPageProps {
 }
 
 export const metadata: Metadata = {
-  title: "Contact Microwear | Get Free Quote for OEM/ODM Smart Watch | Bulk Orders",
+  title: "Contact Microwear | Get Free Quote for OEM Smart Watch | Bulk Orders",
   description:
-    "Contact Microwear for smartwatch OEM/ODM inquiries. MOQ 500pcs, free samples for qualified partners, 24h prototyping. Email: donaldfang@njytech.com.cn | WhatsApp: +852 6733 7121. Get your custom quote today!",
-  keywords: ["smartwatch OEM quote", "bulk order smartwatch", "contact manufacturer", "ODM inquiry", "wholesale smartwatch"],
+    "Contact Microwear for smartwatch OEM inquiries. MOQ 500pcs, free samples for qualified partners, 24h prototyping. Email: donaldfang@njytech.com.cn | WhatsApp: +852 6733 7121. Get your custom quote today!",
+  keywords: ["smartwatch OEM quote", "bulk order smartwatch", "contact manufacturer", "wholesale smartwatch"],
   alternates: {
     canonical: "https://microwear.info/contact",
   },
   openGraph: {
-    title: "Contact Microwear | Get Free Quote for OEM/ODM Smart Watch",
+    title: "Contact Microwear | Get Free Quote for OEM Smart Watch",
     description:
-      "Contact Microwear for smartwatch OEM/ODM inquiries. MOQ 500pcs, free samples, 24h prototyping.",
+      "Contact Microwear for smartwatch OEM inquiries. MOQ 500pcs, free samples, 24h prototyping.",
   },
 };
 
@@ -38,7 +38,7 @@ export default function ContactPage({ searchParams }: ContactPageProps) {
     "url": "https://microwear.info",
     "logo": "https://microwear.info/logo.png",
     "image": "https://microwear.info/images/factory.jpg",
-    "description": "Professional smartwatch OEM/ODM manufacturer with 15+ years experience",
+    "description": "Professional smartwatch OEM manufacturer with 15+ years experience",
     "telephone": "+852 6733 7121",
     "email": "donaldfang@njytech.com.cn",
     "address": {

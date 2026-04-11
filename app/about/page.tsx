@@ -5,17 +5,17 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import "./AboutPage.css";
 
 export const metadata: Metadata = {
-  title: "About Microwear | Smart Watch OEM/ODM Manufacturer Since 2008 | ISO9001 Factory",
+  title: "About Microwear | Smart Watch OEM Manufacturer Since 2008 | ISO9001 Factory",
   description:
-    "Microwear is a leading smartwatch manufacturer with 15+ years experience. ISO9001 certified OEM/ODM factory with 300+ employees, 1000+ patents. Free samples, custom logo, SDK support. Partner with us for your wearable brand.",
-  keywords: ["smartwatch manufacturer", "OEM factory China", "ODM wearable tech", "Microwear factory", "ISO9001 certified", "custom smartwatch"],
+    "Microwear is a leading smartwatch manufacturer with 15+ years experience. ISO9001 certified OEM factory with 300+ employees, 1000+ patents. Free samples, custom logo, SDK support. Partner with us for your wearable brand.",
+  keywords: ["smartwatch manufacturer", "OEM factory China", "wearable tech", "Microwear factory", "ISO9001 certified", "custom smartwatch"],
   alternates: {
     canonical: "https://microwear.info/about",
   },
   openGraph: {
-    title: "About Microwear | Smart Watch OEM/ODM Manufacturer Since 2008 | ISO9001 Factory",
+    title: "About Microwear | Smart Watch OEM Manufacturer Since 2008 | ISO9001 Factory",
     description:
-      "Microwear is a leading smartwatch manufacturer with 15+ years experience. ISO9001 certified OEM/ODM factory with 300+ employees, 1000+ patents.",
+      "Microwear is a leading smartwatch manufacturer with 15+ years experience. ISO9001 certified OEM factory with 300+ employees, 1000+ patents.",
   },
 };
 
@@ -28,7 +28,7 @@ export default function AboutPage() {
     "alternateName": "Shenzhen NJY Technology Co., Ltd",
     "url": "https://microwear.info",
     "logo": "https://microwear.info/logo.png",
-    "description": "Leading smartwatch manufacturer with 15+ years experience, ISO9001 certified OEM/ODM factory",
+    "description": "Leading smartwatch manufacturer with 15+ years experience, ISO9001 certified OEM factory",
     "foundingDate": "2008",
     "founders": [
       {
@@ -58,7 +58,7 @@ export default function AboutPage() {
       "https://instagram.com/microwear"
     ],
     "numberOfEmployees": 300,
-    "knowsAbout": ["Smart Watch", "Wearable Technology", "OEM Manufacturing", "ODM Services"],
+    "knowsAbout": ["Smart Watch", "Wearable Technology", "OEM Manufacturing"],
     "award": "1000+ Patents",
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
@@ -69,15 +69,7 @@ export default function AboutPage() {
           "itemOffered": {
             "@type": "Product",
             "name": "OEM Smart Watch Manufacturing",
-            "description": "Custom smartwatch manufacturing with MOQ 500pcs"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Product",
-            "name": "ODM Design Services",
-            "description": "Custom design and development for wearable products"
+            "description": "Custom smartwatch manufacturing with MOQ 100pcs"
           }
         }
       ]
@@ -96,7 +88,7 @@ export default function AboutPage() {
             <div className="header-badge">15+ Years of Excellence</div>
             <h1>About Microwear</h1>
             <p className="about-tagline">
-              Your Trusted Smart Watch & AI Glasses OEM/ODM Partner Since 2008
+              Your Trusted Smart Watch & AI Glasses OEM Partner Since 2008
             </p>
             <div className="header-stats">
               <div className="stat-card">
@@ -453,7 +445,7 @@ export default function AboutPage() {
             <h2>Have Questions About Microwear?</h2>
             <p>
               Find instant answers to common questions about our factory, certifications, 
-              MOQ, pricing, OEM/ODM services, and ordering process.
+              MOQ, pricing, OEM services, and ordering process.
             </p>
             <a href="/factory-faq" className="faq-cta-button">
               View Factory FAQ

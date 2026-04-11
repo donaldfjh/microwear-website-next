@@ -9,9 +9,9 @@ import { ComparisonProvider } from "@/contexts/ComparisonContext";
 import { ToastProvider } from "@/contexts/ToastContext";
 
 export const metadata: Metadata = {
-  title: "Microwear | Smart Watch & AI Glasses OEM/ODM Manufacturer from China (2008)",
+  title: "Microwear | Smart Watch & AI Glasses OEM Manufacturer from China (2008)",
   description:
-    "Microwear - ISO9001 certified smart watch & AI glasses OEM/ODM manufacturer since 2008. MOQ 100pcs, $15-50 wholesale. 8 SMT lines, 2M+ units/year. Free samples, 24h quotes. CE/FCC/RoHS certified. Get your quote today!",
+    "Microwear - ISO9001 certified smart watch & AI glasses OEM manufacturer since 2008. MOQ 100pcs, $15-50 wholesale. 8 SMT lines, 2M+ units/year. Free samples, 24h quotes. CE/FCC/RoHS certified. Get your quote today!",
   icons: {
     icon: "/images/logos/image.svg",
     shortcut: "/images/logos/image.svg",
