@@ -1,5 +1,5 @@
 ---
-title: "Meta Ray-Ban Smart Glasses Blocked in EU: How AI Glasses Manufacturers Can Tackle Compliance Challenges"
+title: "Stop EU Customs Seizures: AI Glasses Compliance Guide (Lessons from Meta)"
 date: "2026-03-26"
 author: "Microwear Team"
 category: "Industry Insights"
@@ -8,7 +8,7 @@ excerpt: "Deep dive into the Meta Ray-Ban EU ban, comprehensive guide to EU Batt
 image: "/images/blog/Article013.webp"
 readTime: "8 min read"
 metaTitle: "AI Glasses EU Compliance Guide 2026 | Smart Glasses Certification"
-metaDescription: "Complete B2B guide to EU Battery Regulation (EU 2023/1542) for AI glasses manufacturers. Compliance checklist, CE certification, battery replaceability requirements, and export timeline."
+metaDescription: "Is your AI glasses design compliant with EU 2023/1542? Avoid Meta's $100M mistake. Learn the 5 key requirements for replaceable batteries and get our B2B export checklist. Don't let customs seize your cargo."
 keywords: ["AI glasses compliance", "smart glasses certification", "wearable export", "EU battery regulation", "CE certification", "battery replaceability", "B2B electronics", "China manufacturer"]
 draft: false
 ---

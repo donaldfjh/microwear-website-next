@@ -163,3 +163,5 @@ body {
 }
 
 /* Removed dark mode styles - using light mode only */
+
+/* About Page Dark Mode - handled in AboutPage.css via wrapper */

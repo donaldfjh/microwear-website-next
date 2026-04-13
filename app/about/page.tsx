@@ -77,39 +77,185 @@ export default function AboutPage() {
   };
 
   return (
-    <div className="about-page">
+    <div className="about-page-wrapper">
+      <div className="about-page">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
       />
       <div className="about-container">
-        <ScrollReveal>
-          <div className="about-header">
-            <div className="header-badge">15+ Years of Excellence</div>
-            <h1>About Microwear</h1>
-            <p className="about-tagline">
-              Your Trusted Smart Watch & AI Glasses OEM Partner Since 2008
-            </p>
-            <div className="header-stats">
-              <div className="stat-card">
-                <div className="stat-value">300+</div>
-                <div className="stat-label">Employees</div>
+        {/* Hero Section - React Bits Style */}
+        <section className="hero-section">
+          <div className="hero-badge">✨ 15+ Years of Excellence</div>
+          <h1 className="hero-title">
+            <span className="title-gradient">About Microwear</span>
+          </h1>
+          <p className="hero-subtitle">
+            Your Trusted Smart Watch & AI Glasses <span className="highlight">OEM Partner</span> Since 2008
+          </p>
+          
+          {/* Stats Cards - Large Numbers */}
+          <div className="hero-stats-grid">
+            <div className="hero-stat-card">
+              <div className="stat-number">300+</div>
+              <div className="stat-title">Employees</div>
+              <div className="stat-desc">Skilled workforce</div>
+            </div>
+            <div className="hero-stat-card">
+              <div className="stat-number">8</div>
+              <div className="stat-title">SMT Lines</div>
+              <div className="stat-desc">Advanced production</div>
+            </div>
+            <div className="hero-stat-card">
+              <div className="stat-number">2M+</div>
+              <div className="stat-title">Units/Year</div>
+              <div className="stat-desc">Annual capacity</div>
+            </div>
+            <div className="hero-stat-card">
+              <div className="stat-number">500+</div>
+              <div className="stat-title">Global Partners</div>
+              <div className="stat-desc">B2B clients worldwide</div>
+            </div>
+          </div>
+          
+          {/* CTA Buttons */}
+          <div className="hero-cta">
+            <a href="/contact" className="cta-primary">
+              <span>Get Free Quote</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+            <a href="/products" className="cta-secondary">View Products</a>
+          </div>
+        </section>
+
+        {/* OEM Services Section - React Bits Style */}
+        <section className="services-section">
+          <div className="services-header">
+            <h2 className="services-title">
+              <span className="title-gradient">Our OEM Services</span>
+            </h2>
+            <p className="services-subtitle">Comprehensive manufacturing solutions for your wearable brand</p>
+          </div>
+          
+          <div className="services-grid">
+            {/* Smart Watch OEM */}
+            <div className="service-card">
+              <div className="service-image">
+                <Image
+                  src="/images/products/W11pro-1.webp"
+                  alt="Smart Watch OEM Manufacturing"
+                  width={400}
+                  height={300}
+                />
               </div>
-              <div className="stat-card">
-                <div className="stat-value">8</div>
-                <div className="stat-label">SMT Production Lines</div>
+              <div className="service-content">
+                <h3 className="service-title">Smart Watch OEM</h3>
+                <p className="service-desc">
+                  Full-scale smartwatch manufacturing with MOQ 100pcs. Custom branding, firmware, and packaging solutions.
+                </p>
+                <div className="service-features">
+                  <span className="feature-tag">MOQ 100pcs</span>
+                  <span className="feature-tag">Custom Logo</span>
+                  <span className="feature-tag">SDK Support</span>
+                </div>
+                <a href="/contact?subject=Smart Watch OEM" className="service-cta">
+                  <span>Get Quote</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </a>
               </div>
-              <div className="stat-card">
-                <div className="stat-value">2M+</div>
-                <div className="stat-label">Units/Year Capacity</div>
+            </div>
+            
+            {/* AI Glasses OEM */}
+            <div className="service-card">
+              <div className="service-image">
+                <Image
+                  src="/images/glasses/glasses1.webp"
+                  alt="AI Glasses OEM Manufacturing"
+                  width={400}
+                  height={300}
+                />
               </div>
-              <div className="stat-card">
-                <div className="stat-value">500+</div>
-                <div className="stat-label">Global Partners</div>
+              <div className="service-content">
+                <h3 className="service-title">AI Glasses OEM</h3>
+                <p className="service-desc">
+                  Next-gen smart eyewear manufacturing. Voice assistant integration, camera modules, and AR capabilities.
+                </p>
+                <div className="service-features">
+                  <span className="feature-tag">ChatGPT Ready</span>
+                  <span className="feature-tag">8MP Camera</span>
+                  <span className="feature-tag">38g Lightweight</span>
+                </div>
+                <a href="/contact?subject=AI Glasses OEM" className="service-cta">
+                  <span>Get Quote</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            
+            {/* Custom Firmware */}
+            <div className="service-card">
+              <div className="service-icon-wrapper">
+                <div className="service-icon">
+                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2 2 0 0 1-2.83-2.83l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                  </svg>
+                </div>
+              </div>
+              <div className="service-content">
+                <h3 className="service-title">Custom Firmware</h3>
+                <p className="service-desc">
+                  In-house firmware development team. UI customization, feature integration, and OTA update support.
+                </p>
+                <div className="service-features">
+                  <span className="feature-tag">UI Design</span>
+                  <span className="feature-tag">OTA Update</span>
+                  <span className="feature-tag">App Dev</span>
+                </div>
+                <a href="/contact?subject=Custom Firmware" className="service-cta">
+                  <span>Get Quote</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            
+            {/* Full Customization */}
+            <div className="service-card">
+              <div className="service-icon-wrapper">
+                <div className="service-icon">
+                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                    <circle cx="12" cy="12" r="3"/>
+                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                  </svg>
+                </div>
+              </div>
+              <div className="service-content">
+                <h3 className="service-title">Full Customization</h3>
+                <p className="service-desc">
+                  Complete brand customization. Logo engraving, packaging design, color options, and material selection.
+                </p>
+                <div className="service-features">
+                  <span className="feature-tag">Logo Engraving</span>
+                  <span className="feature-tag">Packaging</span>
+                  <span className="feature-tag">Materials</span>
+                </div>
+                <a href="/contact?subject=Full Customization" className="service-cta">
+                  <span>Get Quote</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
-        </ScrollReveal>
+        </section>
 
         <ScrollReveal delay={0.2}>
           <section className="about-section brand-story">
@@ -529,6 +675,7 @@ export default function AboutPage() {
           </section>
         </ScrollReveal>
       </div>
+    </div>
     </div>
   );
 }
