@@ -13,7 +13,7 @@ keywords: ["AI glasses compliance", "smart glasses certification", "wearable exp
 draft: false
 ---
 
-# Meta Ray-Ban Smart Glasses Blocked in EU: How AI Glasses Manufacturers Can Tackle Compliance Challenges
+# Stop EU Customs Seizures: AI Glasses Compliance Guide (Lessons from Meta)
 
 > **⚡ Key Takeaway:** In 2024, Meta's Ray-Ban smart glasses faced EU sales restrictions due to new battery regulations. For AI glasses manufacturers, **compliance is no longer optional—it's a hard threshold for market access**.
 
