@@ -88,8 +88,8 @@ export default async function HomePage() {
       
       {/* Hero Section - B2B focused */}
       <HeroSection
-        title="OEM Smartwatch Manufacturer | Factory Direct"
-        subtitle="15+ Years B2B Experience | 500+ Partners | MOQ 100pcs"
+        title="Microwear | OEM Smartwatch Manufacturer & AI Glasses Factory"
+        subtitle="15+ Years B2B Experience | 500+ Partners | MOQ 100pcs | CE/FCC/RoHS Certified"
         ctaText="Get Free Quote"
         ctaLink="/contact"
         secondaryCtaText="View Products"
