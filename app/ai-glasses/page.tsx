@@ -491,7 +491,7 @@ export default function AIGlassesPage() {
                     </tr>
                     <tr style={{ borderBottom: '1px solid #e2e8f0' }}>
                       <td style={{ padding: '12px 0', fontWeight: '600' }}>Voice Wake-up</td>
-                      <td style={{ padding: '12px 0' }}>"Xiao Jie" voice assistant</td>
+                      <td style={{ padding: '12px 0' }}>&quot;Xiao Jie&quot; voice assistant</td>
                     </tr>
                     <tr style={{ borderBottom: '1px solid #e2e8f0' }}>
                       <td style={{ padding: '12px 0', fontWeight: '600' }}>Lenses</td>
