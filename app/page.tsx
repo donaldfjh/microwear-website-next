@@ -10,7 +10,7 @@ import "./HomePage.css";
 
 export const metadata: Metadata = {
   title:
-    "Microwear | OEM Smartwatch Manufacturer | Factory Direct Bulk Orders",
+    "Microwear | OEM Smartwatch Manufacturer China | Factory Direct Bulk Orders",
   description:
     "Microwear - Leading smartwatch OEM manufacturer with 15+ years B2B experience. Factory direct pricing, MOQ 100pcs, CE/FCC/RoHS/ISO certified. Custom logo, firmware, packaging. 7-day samples, 15-25 day delivery. 500+ global partners. Get free quote for bulk orders.",
   keywords: [

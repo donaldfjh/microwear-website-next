@@ -411,6 +411,326 @@ export default function AIGlassesPage() {
         </div>
       </section>
 
+      {/* Detailed Product Parameters Table */}
+      <section style={{
+        padding: '80px 24px',
+        backgroundColor: '#f8fafc'
+      }}>
+        <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
+          <ScrollReveal>
+            <h2 style={{
+              fontSize: '36px',
+              fontWeight: '700',
+              textAlign: 'center',
+              marginBottom: '16px',
+              color: '#1e293b'
+            }}>
+              Product Specifications
+            </h2>
+            <p style={{
+              fontSize: '16px',
+              textAlign: 'center',
+              color: '#64748b',
+              marginBottom: '48px'
+            }}>
+              Technical parameters for OEM customization reference
+            </p>
+          </ScrollReveal>
+
+          <ScrollReveal>
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(2, 1fr)',
+              gap: '32px',
+              marginBottom: '48px'
+            }}>
+              {/* W Ai 4 Specs Card */}
+              <div style={{
+                padding: '32px',
+                background: 'white',
+                borderRadius: '16px',
+                boxShadow: '0 4px 6px rgba(0,0,0,0.05)'
+              }}>
+                <h3 style={{
+                  fontSize: '24px',
+                  fontWeight: '600',
+                  marginBottom: '24px',
+                  color: '#0ea5e9'
+                }}>
+                  W Ai 4 - Voice Assistant Model
+                </h3>
+                <table style={{
+                  width: '100%',
+                  fontSize: '14px',
+                  color: '#475569'
+                }}>
+                  <tbody>
+                    <tr style={{ borderBottom: '1px solid #e2e8f0' }}>
+                      <td style={{ padding: '12px 0', fontWeight: '600' }}>Weight</td>
+                      <td style={{ padding: '12px 0' }}>38g (Ultra-lightweight)</td>
+                    </tr>
+                    <tr style={{ borderBottom: '1px solid #e2e8f0' }}>
+                      <td style={{ padding: '12px 0', fontWeight: '600' }}>Camera</td>
+                      <td style={{ padding: '12px 0' }}>N/A (Voice-focused)</td>
+                    </tr>
+                    <tr style={{ borderBottom: '1px solid #e2e8f0' }}>
+                      <td style={{ padding: '12px 0', fontWeight: '600' }}>Battery Capacity</td>
+                      <td style={{ padding: '12px 0' }}>220mAh</td>
+                    </tr>
+                    <tr style={{ borderBottom: '1px solid #e2e8f0' }}>
+                      <td style={{ padding: '12px 0', fontWeight: '600' }}>Battery Life</td>
+                      <td style={{ padding: '12px 0' }}>11 hours music playback</td>
+                    </tr>
+                    <tr style={{ borderBottom: '1px solid #e2e8f0' }}>
+                      <td style={{ padding: '12px 0', fontWeight: '600' }}>AI Integration</td>
+                      <td style={{ padding: '12px 0' }}>ChatGPT Ready / Tongyi Qianwen</td>
+                    </tr>
+                    <tr style={{ borderBottom: '1px solid #e2e8f0' }}>
+                      <td style={{ padding: '12px 0', fontWeight: '600' }}>Chipset</td>
+                      <td style={{ padding: '12px 0' }}>JL7012A6 (160MHz)</td>
+                    </tr>
+                    <tr style={{ borderBottom: '1px solid #e2e8f0' }}>
+                      <td style={{ padding: '12px 0', fontWeight: '600' }}>Voice Wake-up</td>
+                      <td style={{ padding: '12px 0' }}>"Xiao Jie" voice assistant</td>
+                    </tr>
+                    <tr style={{ borderBottom: '1px solid #e2e8f0' }}>
+                      <td style={{ padding: '12px 0', fontWeight: '600' }}>Lenses</td>
+                      <td style={{ padding: '12px 0' }}>Anti-blue light (optional)</td>
+                    </tr>
+                    <tr>
+                      <td style={{ padding: '12px 0', fontWeight: '600' }}>Water Resistance</td>
+                      <td style={{ padding: '12px 0' }}>IPX4</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              {/* W AI 3 Specs Card */}
+              <div style={{
+                padding: '32px',
+                background: 'white',
+                borderRadius: '16px',
+                boxShadow: '0 4px 6px rgba(0,0,0,0.05)'
+              }}>
+                <h3 style={{
+                  fontSize: '24px',
+                  fontWeight: '600',
+                  marginBottom: '24px',
+                  color: '#0ea5e9'
+                }}>
+                  W AI 3 - Camera Model
+                </h3>
+                <table style={{
+                  width: '100%',
+                  fontSize: '14px',
+                  color: '#475569'
+                }}>
+                  <tbody>
+                    <tr style={{ borderBottom: '1px solid #e2e8f0' }}>
+                      <td style={{ padding: '12px 0', fontWeight: '600' }}>Weight</td>
+                      <td style={{ padding: '12px 0' }}>44g (Camera-equipped)</td>
+                    </tr>
+                    <tr style={{ borderBottom: '1px solid #e2e8f0' }}>
+                      <td style={{ padding: '12px 0', fontWeight: '600' }}>Camera</td>
+                      <td style={{ padding: '12px 0' }}>Sony IMX219 8MP (13MP interpolated)</td>
+                    </tr>
+                    <tr style={{ borderBottom: '1px solid #e2e8f0' }}>
+                      <td style={{ padding: '12px 0', fontWeight: '600' }}>Video Recording</td>
+                      <td style={{ padding: '12px 0' }}>1200p @ 30fps with EIS stabilization</td>
+                    </tr>
+                    <tr style={{ borderBottom: '1px solid #e2e8f0' }}>
+                      <td style={{ padding: '12px 0', fontWeight: '600' }}>Battery Capacity</td>
+                      <td style={{ padding: '12px 0' }}>300mAh (Magnetic charging)</td>
+                    </tr>
+                    <tr style={{ borderBottom: '1px solid #e2e8f0' }}>
+                      <td style={{ padding: '12px 0', fontWeight: '600' }}>AI Integration</td>
+                      <td style={{ padding: '12px 0' }}>Meeting Assistant / Live Translation</td>
+                    </tr>
+                    <tr style={{ borderBottom: '1px solid #e2e8f0' }}>
+                      <td style={{ padding: '12px 0', fontWeight: '600' }}>Chipset</td>
+                      <td style={{ padding: '12px 0' }}>Allwinner V821</td>
+                    </tr>
+                    <tr style={{ borderBottom: '1px solid #e2e8f0' }}>
+                      <td style={{ padding: '12px 0', fontWeight: '600' }}>Wireless</td>
+                      <td style={{ padding: '12px 0' }}>WiFi 4 + Bluetooth 5.4</td>
+                    </tr>
+                    <tr style={{ borderBottom: '1px solid #e2e8f0' }}>
+                      <td style={{ padding: '12px 0', fontWeight: '600' }}>Lenses</td>
+                      <td style={{ padding: '12px 0' }}>3 interchangeable (Clear/Purple/Gray)</td>
+                    </tr>
+                    <tr>
+                      <td style={{ padding: '12px 0', fontWeight: '600' }}>Live Streaming</td>
+                      <td style={{ padding: '12px 0' }}>Supported</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* AI Glasses vs Smartwatch Comparison */}
+      <section style={{
+        padding: '80px 24px',
+        backgroundColor: '#0f172a'
+      }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          <ScrollReveal>
+            <h2 style={{
+              fontSize: '36px',
+              fontWeight: '700',
+              textAlign: 'center',
+              marginBottom: '16px',
+              color: 'white'
+            }}>
+              Why Choose AI Glasses Over Smartwatch?
+            </h2>
+            <p style={{
+              fontSize: '16px',
+              textAlign: 'center',
+              color: '#94a3b8',
+              marginBottom: '64px'
+            }}>
+              Unique advantages that smartwatches cannot deliver
+            </p>
+          </ScrollReveal>
+
+          <ScrollReveal>
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(4, 1fr)',
+              gap: '24px'
+            }}>
+              <div style={{
+                padding: '32px',
+                background: 'rgba(14, 165, 233, 0.1)',
+                borderRadius: '16px',
+                border: '1px solid rgba(14, 165, 233, 0.3)',
+                textAlign: 'center'
+              }}>
+                <div style={{ fontSize: '48px', marginBottom: '16px' }}>🎥</div>
+                <h3 style={{
+                  fontSize: '20px',
+                  fontWeight: '600',
+                  marginBottom: '12px',
+                  color: 'white'
+                }}>
+                  First-Person Video
+                </h3>
+                <p style={{ fontSize: '14px', color: '#94a3b8', lineHeight: '1.6' }}>
+                  POV recording from your perspective, not from a wrist-mounted angle
+                </p>
+              </div>
+
+              <div style={{
+                padding: '32px',
+                background: 'rgba(168, 85, 247, 0.1)',
+                borderRadius: '16px',
+                border: '1px solid rgba(168, 85, 247, 0.3)',
+                textAlign: 'center'
+              }}>
+                <div style={{ fontSize: '48px', marginBottom: '16px' }}>👁️</div>
+                <h3 style={{
+                  fontSize: '20px',
+                  fontWeight: '600',
+                  marginBottom: '12px',
+                  color: 'white'
+                }}>
+                  Hands-Free Vision
+                </h3>
+                <p style={{ fontSize: '14px', color: '#94a3b8', lineHeight: '1.6' }}>
+                  No need to lift your wrist. Information overlays directly in your eyewear
+                </p>
+              </div>
+
+              <div style={{
+                padding: '32px',
+                background: 'rgba(34, 197, 94, 0.1)',
+                borderRadius: '16px',
+                border: '1px solid rgba(34, 197, 94, 0.3)',
+                textAlign: 'center'
+              }}>
+                <div style={{ fontSize: '48px', marginBottom: '16px' }}>🤖</div>
+                <h3 style={{
+                  fontSize: '20px',
+                  fontWeight: '600',
+                  marginBottom: '12px',
+                  color: 'white'
+                }}>
+                  ChatGPT Ready
+                </h3>
+                <p style={{ fontSize: '14px', color: '#94a3b8', lineHeight: '1.6' }}>
+                  Voice-activated AI assistant. Just speak and get instant answers
+                </p>
+              </div>
+
+              <div style={{
+                padding: '32px',
+                background: 'rgba(245, 158, 11, 0.1)',
+                borderRadius: '16px',
+                border: '1px solid rgba(245, 158, 11, 0.3)',
+                textAlign: 'center'
+              }}>
+                <div style={{ fontSize: '48px', marginBottom: '16px' }}>⚡</div>
+                <h3 style={{
+                  fontSize: '20px',
+                  fontWeight: '600',
+                  marginBottom: '12px',
+                  color: 'white'
+                }}>
+                  38g Ultra-Light
+                </h3>
+                <p style={{ fontSize: '14px', color: '#94a3b8', lineHeight: '1.6' }}>
+                  Lighter than most smartwatches. All-day comfort without wrist fatigue
+                </p>
+              </div>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal>
+            <div style={{
+              marginTop: '48px',
+              padding: '32px',
+              background: 'rgba(255,255,255,0.05)',
+              borderRadius: '16px',
+              border: '1px solid rgba(255,255,255,0.1)',
+              textAlign: 'center'
+            }}>
+              <h3 style={{
+                fontSize: '24px',
+                fontWeight: '600',
+                marginBottom: '16px',
+                color: 'white'
+              }}>
+                Perfect Complement to Your Smartwatch Line
+              </h3>
+              <p style={{
+                fontSize: '16px',
+                color: '#94a3b8',
+                lineHeight: '1.7',
+                marginBottom: '24px'
+              }}>
+                Expand your wearable portfolio. AI glasses target content creators, business professionals,
+                and outdoor enthusiasts who need hands-free AI assistance and POV recording. Offer both
+                smartwatches and AI glasses to capture different market segments.
+              </p>
+              <Link href="/products" style={{
+                display: 'inline-block',
+                padding: '12px 32px',
+                background: '#0ea5e9',
+                color: 'white',
+                borderRadius: '8px',
+                fontWeight: '600',
+                textDecoration: 'none'
+              }}>
+                View Full Smartwatch Collection →
+              </Link>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* Application Scenarios Section */}
       <section className="scenarios-section">
         <div className="container">

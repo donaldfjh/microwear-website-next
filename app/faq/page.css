@@ -1,0 +1,32 @@
+/* FAQ Page Styles */
+
+.faq-page {
+  min-height: 100vh;
+}
+
+/* Override QA component spacing for FAQ page */
+.faq-page .qa-section {
+  background: white;
+  padding: 48px;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.faq-page .qa-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+
+.faq-page .qa-subtitle {
+  font-size: 18px;
+  color: #64748b;
+  margin-bottom: 48px;
+}
+
+/* FAQ answer text styling */
+.faq-page .qa-answer {
+  white-space: pre-wrap;
+  line-height: 1.8;
+}
