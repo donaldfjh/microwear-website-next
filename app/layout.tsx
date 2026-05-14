@@ -1,12 +1,15 @@
 import { Suspense } from "react";
+import dynamic from "next/dynamic";
 import type { Metadata } from "next";
 import "./globals.css";
 import { Navigation } from "@/components/Navigation";
-import { FloatingContact } from "@/components/FloatingContact";
-import { FloatingComparisonBar } from "@/components/FloatingComparisonBar";
-import { DifyChatbot } from "@/components/DifyChatbot";
 import { ComparisonProvider } from "@/contexts/ComparisonContext";
 import { ToastProvider } from "@/contexts/ToastContext";
+
+// Lazy load non-critical components to reduce initial bundle size
+const FloatingContact = dynamic(() => import("@/components/FloatingContact").then((mod) => mod.FloatingContact), { ssr: false });
+const FloatingComparisonBar = dynamic(() => import("@/components/FloatingComparisonBar").then((mod) => mod.FloatingComparisonBar), { ssr: false });
+const DifyChatbot = dynamic(() => import("@/components/DifyChatbot").then((mod) => mod.DifyChatbot), { ssr: false });
 
 export const metadata: Metadata = {
   title: "Microwear | Smart Watch & AI Glasses OEM Manufacturer from China (2008)",
@@ -86,7 +89,9 @@ export default function RootLayout({
             <Suspense fallback={null}>
               <Navigation />
             </Suspense>
-            {children}
+            <main role="main" id="main-content">
+              {children}
+            </main>
             <FloatingContact />
             <FloatingComparisonBar />
             <DifyChatbot />

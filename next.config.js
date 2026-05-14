@@ -19,9 +19,24 @@ const nextConfig = {
   compress: true,
   poweredByHeader: false,
   
+  // Bundle optimization
+  compiler: {
+    // Remove console.log in production
+    removeConsole: process.env.NODE_ENV === 'production',
+  },
+  
+  // Modularize imports for smaller bundles
+  modularizeImports: {
+    // Optimize framer-motion imports
+    'framer-motion': {
+      transform: 'framer-motion/dist/esm/{{member}}.mjs',
+    },
+  },
+  
   // Experimental features for better performance
   experimental: {
     optimizeCss: true,
+    optimizePackageImports: ['framer-motion', '@vercel/analytics'],
   },
   async headers() {
     return [
