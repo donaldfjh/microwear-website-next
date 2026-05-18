@@ -1,0 +1,372 @@
+{
+  "auditDate": "2026-05-18",
+  "website": "microwear.info",
+  "summary": {
+    "totalPages": 16,
+    "pagesWithSchema": 11,
+    "pagesWithoutSchema": 5,
+    "criticalIssues": 4,
+    "warnings": 7,
+    "opportunities": 8
+  },
+  "existingStructuredData": [
+    {
+      "page": "/",
+      "schemas": ["Organization (layout.tsx)", "Organization (page.tsx)", "LocalBusiness (LocalBusinessSchema)"],
+      "status": "⚠️ 重复 Organization Schema",
+      "issues": [
+        "layout.tsx 和 page.tsx 各有一个 Organization Schema，导致重复",
+        "layout.tsx 的 logo 指向 /images/logos/image.png（正确）",
+        "page.tsx 的 logo 指向 /logo.png（不存在）",
+        "LocalBusinessSchema 组件在 page.tsx 中被调用，但没有 BreadcrumbList"
+      ]
+    },
+    {
+      "page": "/about",
+      "schemas": ["Organization"],
+      "status": "✅ 基本正确",
+      "issues": [
+        "logo 指向 /logo.png（不存在，应为 /images/logos/image.png）",
+        "缺少 BreadcrumbList Schema",
+        "foundingDate: 2008 ✅"
+      ]
+    },
+    {
+      "page": "/products",
+      "schemas": ["CollectionPage", "ItemList", "BreadcrumbList"],
+      "status": "✅ 正确",
+      "issues": [
+        "ItemList 中所有 Product 的 price 都是固定 $15，未反映实际价格区间",
+        "priceValidUntil: 2027-03-21（硬编码，建议动态生成）"
+      ]
+    },
+    {
+      "page": "/products/[id]",
+      "schemas": ["Product", "FAQPage", "BreadcrumbList"],
+      "status": "✅ 正确",
+      "issues": [
+        "aggregateRating 使用占位数据 (4.8/127 reviews)，非真实数据",
+        "review 是虚构的 B2B Partner 评论",
+        "FAQ 是通用问题（battery/waterproof/display），非产品特定"
+      ]
+    },
+    {
+      "page": "/faq",
+      "schemas": ["FAQPage", "BreadcrumbList"],
+      "status": "✅ 正确",
+      "issues": []
+    },
+    {
+      "page": "/contact",
+      "schemas": ["LocalBusiness", "ContactPoint", "GeoCoordinates"],
+      "status": "✅ 正确",
+      "issues": [
+        "logo 指向 /logo.png（不存在）",
+        "image 指向 /images/factory.jpg（需确认是否存在）"
+      ]
+    },
+    {
+      "page": "/blog",
+      "schemas": ["Blog", "BlogPosting (list)"],
+      "status": "⚠️ 字段不完整",
+      "issues": [
+        "BlogPosting 列表缺少 image 字段",
+        "BlogPosting 列表缺少 dateModified 字段",
+        "缺少 BreadcrumbList Schema"
+      ]
+    },
+    {
+      "page": "/blog/[slug]",
+      "schemas": ["BlogPosting"],
+      "status": "⚠️ 字段不完整",
+      "issues": [
+        "缺少 dateModified 字段",
+        "缺少 publisher 字段",
+        "缺少 BreadcrumbList Schema",
+        "缺少 mainEntityOfPage 的完整 URL 格式（应为 https://...）"
+      ]
+    },
+    {
+      "page": "/ai-glasses",
+      "schemas": ["Product", "BreadcrumbList"],
+      "status": "✅ 正确",
+      "issues": [
+        "aggregateRating (4.7/89) 和 review 是占位数据",
+        "FAQ 组件 (QA) 渲染了 FAQPage Schema，但 QA 使用的是默认 qaData（通用手表 FAQ），不是 AI Glasses 特定的",
+        "aiFaqItems 定义了 3 个 AI Glasses 特定问题，但没有注入 Schema"
+      ]
+    },
+    {
+      "page": "/factory-faq",
+      "schemas": ["FAQPage"],
+      "status": "✅ 正确",
+      "issues": [
+        "缺少 BreadcrumbList Schema"
+      ]
+    },
+    {
+      "page": "/layout.tsx (全局)",
+      "schemas": ["Organization"],
+      "status": "⚠️ 与 page.tsx 冲突",
+      "issues": [
+        "全局 Organization Schema 与首页 page.tsx 的 Organization Schema 重复",
+        "所有页面都会注入全局 Organization，但部分页面有自己的 Organization Schema，导致同一页面出现多个 Organization"
+      ]
+    }
+  ],
+  "pagesWithoutSchema": [
+    {
+      "page": "/oem-services",
+      "recommendedSchemas": ["Service", "BreadcrumbList"],
+      "priority": "高",
+      "reason": "核心 B2B 服务页面，缺少 Service Schema 影响 OEM 搜索排名"
+    },
+    {
+      "page": "/factory",
+      "recommendedSchemas": ["LocalBusiness", "BreadcrumbList"],
+      "priority": "高",
+      "reason": "工厂展示页，应有 LocalBusiness 增强本地 SEO"
+    },
+    {
+      "page": "/comparison",
+      "recommendedSchemas": ["WebPage", "BreadcrumbList"],
+      "priority": "中",
+      "reason": "产品对比页，可考虑添加 Comparison 相关 Schema"
+    },
+    {
+      "page": "/ar",
+      "recommendedSchemas": ["Organization", "BreadcrumbList"],
+      "priority": "低",
+      "reason": "阿拉伯语页面，流量较低"
+    },
+    {
+      "page": "/products/[id]/not-found",
+      "recommendedSchemas": [],
+      "priority": "低",
+      "reason": "404 页面，不需要 Schema"
+    }
+  ],
+  "criticalIssues": [
+    {
+      "id": "CRIT-001",
+      "title": "Logo URL 不一致 - 多个页面指向不存在的 /logo.png",
+      "severity": "高",
+      "affected": ["/", "/about", "/contact", "OrganizationSchema.tsx"],
+      "detail": "public 目录中 logo 文件位于 /images/logos/image.png 和 /images/logos/image.svg，但多个 Schema 使用 /logo.png（不存在）",
+      "fix": "统一使用 https://microwear.info/images/logos/image.png"
+    },
+    {
+      "id": "CRIT-002",
+      "title": "OrganizationSchema.tsx 包含过时/错误数据",
+      "severity": "高",
+      "affected": ["components/SEO/OrganizationSchema.tsx"],
+      "detail": "foundingDate: 2015（应为 2008）; 电话号码为占位符 +86-755-8888-8888（应为 +852 6733 7121）; sameAs 中的 Facebook 链接与实际不符",
+      "fix": "更新 foundingDate 为 2008，更新电话号码，修正社交媒体链接"
+    },
+    {
+      "id": "CRIT-003",
+      "title": "首页重复 Organization Schema",
+      "severity": "高",
+      "affected": ["/"],
+      "detail": "layout.tsx 的全局 Organization + page.tsx 的 Organization + LocalBusinessSchema 组件，首页出现 3 个结构化数据块",
+      "fix": "移除 layout.tsx 中的 Organization Schema（让各页面自行管理），或移除 page.tsx 中的重复项"
+    },
+    {
+      "id": "CRIT-004",
+      "title": "虚构的 aggregateRating 和 review 数据",
+      "severity": "高",
+      "affected": ["ProductSchema.tsx", "/ai-glasses"],
+      "detail": "ProductSchema 和 AI Glasses 页面使用虚构的评分 (4.8/127 reviews, 4.7/89 reviews) 和虚构评论。Google 可能将其视为结构化数据滥用",
+      "fix": "移除虚构评分，或仅在有真实用户评论时添加"
+    }
+  ],
+  "warnings": [
+    {
+      "id": "WARN-001",
+      "title": "多个页面缺少 BreadcrumbList Schema",
+      "severity": "中",
+      "affected": ["/", "/about", "/blog", "/blog/[slug]", "/factory-faq"],
+      "detail": "这些页面有清晰的层级结构，但缺少 BreadcrumbList"
+    },
+    {
+      "id": "WARN-002",
+      "title": "BlogPosting 缺少 dateModified 和 publisher",
+      "severity": "中",
+      "affected": ["/blog", "/blog/[slug]"],
+      "detail": "Google News 和 Rich Snippets 推荐包含 dateModified 和 publisher"
+    },
+    {
+      "id": "WARN-003",
+      "title": "AI Glasses 页面的 QA 组件使用默认 FAQ 数据",
+      "severity": "中",
+      "affected": ["/ai-glasses"],
+      "detail": "QA 组件注入了 FAQPage Schema，但使用的是默认的通用手表 FAQ（battery/warranty 等），而非 AI Glasses 特定的 aiFaqItems"
+    },
+    {
+      "id": "WARN-004",
+      "title": "Products 页面 ItemList 价格硬编码",
+      "severity": "低",
+      "affected": ["/products"],
+      "detail": "所有产品的 price 都是 $15，priceValidUntil 硬编码为 2027-03-21"
+    },
+    {
+      "id": "WARN-005",
+      "title": "Product FAQ 是通用问题，非产品特定",
+      "severity": "低",
+      "affected": ["ProductSchema.tsx"],
+      "detail": "FAQPage 中的问题基于 product.specifications 动态生成，但问题模板是通用的（battery/waterproof/display），缺少 OEM 相关的问题"
+    },
+    {
+      "id": "WARN-006",
+      "title": "Contact 页面 image 字段指向可能不存在的文件",
+      "severity": "低",
+      "affected": ["/contact"],
+      "detail": "image: /images/factory.jpg，需确认该文件是否存在"
+    },
+    {
+      "id": "WARN-007",
+      "title": "sameAs 社交媒体链接可能无效",
+      "severity": "低",
+      "affected": ["多个页面"],
+      "detail": "多个 Schema 中的 sameAs 链接（twitter.com/microwear, instagram.com/microwear）可能已失效或重定向"
+    }
+  ],
+  "optimizationOpportunities": [
+    {
+      "id": "OPT-001",
+      "title": "/oem-services 添加 Service Schema",
+      "description": "OEM 服务页应添加 Service Schema，包含 serviceName、provider、areaServed、priceRange 等字段",
+      "priority": "高",
+      "estimatedImpact": "提升 OEM 相关搜索的 Rich Snippets 展示"
+    },
+    {
+      "id": "OPT-002",
+      "title": "/factory 添加 LocalBusiness + ImageGallery Schema",
+      "description": "工厂页面应添加完整的 LocalBusiness Schema（含 openingHours、geo 等）和 ImageGallery Schema 展示工厂照片",
+      "priority": "高",
+      "estimatedImpact": "增强工厂可信度，提升本地搜索排名"
+    },
+    {
+      "id": "OPT-003",
+      "title": "产品页添加 HowTo Schema（OEM 流程教程）",
+      "description": "在产品页或 OEM 服务页添加 HowTo Schema，描述 OEM 合作流程（需求分析→设计→打样→量产→交付）",
+      "priority": "中",
+      "estimatedImpact": "在 Google 搜索结果中展示步骤式富媒体摘要"
+    },
+    {
+      "id": "OPT-004",
+      "title": "添加 WebSite Schema（全局 Sitelinks Search）",
+      "description": "OrganizationSchema.tsx 中已定义 WebSiteSchema 组件但未在任何页面使用。应在首页或 layout 中使用",
+      "priority": "中",
+      "estimatedImpact": "启用 Google 搜索结果中的站点链接搜索框"
+    },
+    {
+      "id": "OPT-005",
+      "title": "Blog 文章添加 Article Schema（替代 BlogPosting）",
+      "description": "对于技术性/行业分析类博客文章，使用 Article Schema 替代 BlogPosting，可获得更丰富的展示",
+      "priority": "低",
+      "estimatedImpact": "提升博客文章的搜索展示效果"
+    },
+    {
+      "id": "OPT-006",
+      "title": "添加 VideoObject Schema（工厂视频/产品视频）",
+      "description": "如果页面包含视频内容（工厂参观、产品演示），添加 VideoObject Schema 可在 Google 视频搜索中展示",
+      "priority": "低",
+      "estimatedImpact": "提升视频内容在 Google 视频搜索中的可见性"
+    },
+    {
+      "id": "OPT-007",
+      "title": "统一 Logo URL 为正确的路径",
+      "description": "将所有 Schema 中的 logo URL 统一为 https://microwear.info/images/logos/image.png",
+      "priority": "高",
+      "estimatedImpact": "确保 Google Knowledge Panel 正确显示品牌 Logo"
+    },
+    {
+      "id": "OPT-008",
+      "title": "添加 Product Schema 到 /products 列表页的每个产品卡片",
+      "description": "当前 /products 页面的 ItemList 中 Product Schema 过于简化，缺少 image、sku、mpn 等字段",
+      "priority": "中",
+      "estimatedImpact": "提升产品列表在 Google Shopping 中的展示"
+    }
+  ],
+  "richSnippetsAssessment": {
+    "methodology": "基于 Schema 类型和字段完整性的静态分析",
+    "assessment": [
+      {
+        "page": "/products/[id]",
+        "expectedRichSnippets": ["Product (价格、库存、评分)", "FAQ"],
+        "status": "⚠️ 有 Product Schema 但评分数据为虚构",
+        "googleRichResultsTest": "未实际运行，需手动验证"
+      },
+      {
+        "page": "/faq",
+        "expectedRichSnippets": ["FAQ"],
+        "status": "✅ FAQPage Schema 完整，应有 FAQ Rich Snippets",
+        "googleRichResultsTest": "未实际运行，需手动验证"
+      },
+      {
+        "page": "/factory-faq",
+        "expectedRichSnippets": ["FAQ"],
+        "status": "✅ FAQPage Schema 完整（20 个问题），应有 FAQ Rich Snippets",
+        "googleRichResultsTest": "未实际运行，需手动验证"
+      },
+      {
+        "page": "/ai-glasses",
+        "expectedRichSnippets": ["Product (价格、库存)", "FAQ"],
+        "status": "⚠️ 有 Product Schema 但评分数据为虚构，FAQ 使用了错误的数据",
+        "googleRichResultsTest": "未实际运行，需手动验证"
+      },
+      {
+        "page": "/blog/[slug]",
+        "expectedRichSnippets": ["Article/BlogPosting"],
+        "status": "⚠️ BlogPosting 缺少 dateModified 和 publisher",
+        "googleRichResultsTest": "未实际运行，需手动验证"
+      },
+      {
+        "page": "/contact",
+        "expectedRichSnippets": ["LocalBusiness"],
+        "status": "✅ LocalBusiness Schema 较完整",
+        "googleRichResultsTest": "未实际运行，需手动验证"
+      }
+    ]
+  },
+  "actionItems": [
+    {
+      "priority": "P0 - 立即修复",
+      "items": [
+        "CRIT-001: 统一所有 Logo URL 为 /images/logos/image.png",
+        "CRIT-002: 修复 OrganizationSchema.tsx 中的 foundingDate 和电话号码",
+        "CRIT-003: 解决首页 Organization Schema 重复问题",
+        "CRIT-004: 移除虚构的 aggregateRating 和 review 数据"
+      ]
+    },
+    {
+      "priority": "P1 - 本周修复",
+      "items": [
+        "WARN-001: 为缺失 BreadcrumbList 的页面添加",
+        "WARN-002: 为 BlogPosting 添加 dateModified 和 publisher",
+        "WARN-003: 修复 AI Glasses 页面的 FAQ Schema 数据源",
+        "OPT-001: 为 /oem-services 添加 Service Schema",
+        "OPT-002: 为 /factory 添加 LocalBusiness Schema"
+      ]
+    },
+    {
+      "priority": "P2 - 本月优化",
+      "items": [
+        "OPT-003: 添加 HowTo Schema（OEM 流程）",
+        "OPT-004: 启用 WebSiteSchema 组件",
+        "OPT-008: 完善 /products 列表页的 Product Schema",
+        "WARN-004: 动态生成价格信息"
+      ]
+    },
+    {
+      "priority": "P3 - 持续改进",
+      "items": [
+        "OPT-005: 评估 Article vs BlogPosting 的使用场景",
+        "OPT-006: 为含视频页面添加 VideoObject Schema",
+        "WARN-007: 验证并更新所有 sameAs 社交媒体链接",
+        "定期运行 Google Rich Results Test 验证"
+      ]
+    }
+  ]
+}
