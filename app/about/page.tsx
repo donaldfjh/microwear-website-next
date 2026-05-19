@@ -5,10 +5,25 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import "./AboutPage.css";
 
 export const metadata: Metadata = {
-  title: "About Microwear | Smart Watch OEM Manufacturer Since 2008 | ISO9001 Factory",
+  title: "About Microwear | Smart Watch & AI Glasses OEM Manufacturer Since 2008 | ISO9001 Factory",
   description:
-    "Microwear is a leading smartwatch manufacturer with 15+ years experience. ISO9001 certified OEM factory with 300+ employees, 1000+ patents. Free samples, custom logo, SDK support. Partner with us for your wearable brand.",
-  keywords: ["smartwatch manufacturer", "OEM factory China", "wearable tech", "Microwear factory", "ISO9001 certified", "custom smartwatch"],
+    "About Microwear - Shenzhen NJY Technology, leading smartwatch and AI glasses OEM manufacturer since 2008. ISO9001 certified factory with 300+ employees, 8 SMT lines, 2M+ units/year. CE/FCC/RoHS certified. Custom logo, firmware, packaging. Free samples, SDK support. 500+ B2B partners worldwide. Learn about our history, mission, and manufacturing capabilities.",
+  keywords: [
+    "about microwear",
+    "microwear company",
+    "microwear manufacturer",
+    "microwear factory",
+    "smartwatch manufacturer China",
+    "AI glasses OEM manufacturer",
+    "wearable tech company Shenzhen",
+    "ISO9001 certified factory",
+    "smartwatch OEM since 2008",
+    "NJY Technology",
+    "Shenzhen wearable manufacturer",
+    "custom smartwatch factory",
+    "smartwatch wholesale manufacturer",
+    "B2B smartwatch supplier",
+  ],
   alternates: {
     canonical: "https://microwear.info/about",
   },
@@ -586,9 +601,89 @@ export default function AboutPage() {
           </section>
         </ScrollReveal>
 
+        {/* FAQ Section with JSON-LD Structured Data */}
         <ScrollReveal delay={0.57}>
+          <section className="about-section faq-section">
+            <h2>Frequently Asked Questions About Microwear</h2>
+            <div className="faq-grid">
+              <div className="faq-item">
+                <h3>What is Microwear?</h3>
+                <p>Microwear (Shenzhen NJY Technology Co., Ltd) is a leading smartwatch and AI glasses OEM manufacturer based in Shenzhen, China. Founded in 2008, we have 15+ years of experience in designing, manufacturing, and delivering wearable technology to 500+ B2B partners across 30+ countries.</p>
+              </div>
+              <div className="faq-item">
+                <h3>What products does Microwear manufacture?</h3>
+                <p>Microwear specializes in smartwatches (fitness trackers, health smartwatches, rugged smartwatches, kids smartwatches) and AI glasses with camera, voice assistant, and AR capabilities. All products support full OEM/ODM customization including logo, firmware, packaging, and hardware specifications.</p>
+              </div>
+              <div className="faq-item">
+                <h3>What is the MOQ for Microwear OEM orders?</h3>
+                <p>Our standard MOQ starts from 100 pieces for smartwatch OEM orders and 50 pieces for AI Glasses. We offer flexible terms for first-time partners and provide free samples for qualified B2B buyers.</p>
+              </div>
+              <div className="faq-item">
+                <h3>Is Microwear a certified manufacturer?</h3>
+                <p>Yes, Microwear is ISO9001:2015 certified with CE, FCC, and RoHS certifications for all products. Our factory operates 8 SMT production lines with an annual capacity of 2M+ units and 300+ skilled employees.</p>
+              </div>
+              <div className="faq-item">
+                <h3>Where is Microwear located?</h3>
+                <p>Microwear headquarters and manufacturing facility is located in JiaDa R&amp;D Building, North Hi-Tech Park, Nanshan District, Shenzhen, China — the global hub for electronics manufacturing and innovation.</p>
+              </div>
+            </div>
+          </section>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "What is Microwear?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Microwear (Shenzhen NJY Technology Co., Ltd) is a leading smartwatch and AI glasses OEM manufacturer based in Shenzhen, China. Founded in 2008, we have 15+ years of experience in designing, manufacturing, and delivering wearable technology to 500+ B2B partners across 30+ countries."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "What products does Microwear manufacture?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Microwear specializes in smartwatches (fitness trackers, health smartwatches, rugged smartwatches, kids smartwatches) and AI glasses with camera, voice assistant, and AR capabilities. All products support full OEM/ODM customization including logo, firmware, packaging, and hardware specifications."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "What is the MOQ for Microwear OEM orders?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Our standard MOQ starts from 100 pieces for smartwatch OEM orders and 50 pieces for AI Glasses. We offer flexible terms for first-time partners and provide free samples for qualified B2B buyers."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Is Microwear a certified manufacturer?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes, Microwear is ISO9001:2015 certified with CE, FCC, and RoHS certifications for all products. Our factory operates 8 SMT production lines with an annual capacity of 2M+ units and 300+ skilled employees."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Where is Microwear located?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Microwear headquarters and manufacturing facility is located in JiaDa R&D Building, North Hi-Tech Park, Nanshan District, Shenzhen, China."
+                    }
+                  }
+                ]
+              })
+            }}
+          />
+        </ScrollReveal>
+
+        <ScrollReveal delay={0.58}>
           <section className="about-section faq-cta">
-            <h2>Have Questions About Microwear?</h2>
+            <h2>Have More Questions About Microwear?</h2>
             <p>
               Find instant answers to common questions about our factory, certifications, 
               MOQ, pricing, OEM services, and ordering process.

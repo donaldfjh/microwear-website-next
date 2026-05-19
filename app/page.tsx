@@ -10,9 +10,9 @@ import "./HomePage.css";
 
 export const metadata: Metadata = {
   title:
-    "Microwear | OEM Smartwatch Manufacturer China | Factory Direct Bulk Orders",
+    "Microwear | OEM Smartwatch Manufacturer China | Microwear Smartwatch Official",
   description:
-    "Microwear - Leading smartwatch OEM manufacturer with 15+ years B2B experience. Factory direct pricing, MOQ 100pcs, CE/FCC/RoHS/ISO certified. Custom logo, firmware, packaging. 7-day samples, 15-25 day delivery. 500+ global partners. Get free quote for bulk orders.",
+    "Microwear official website - Leading smartwatch OEM manufacturer with 15+ years B2B experience. Factory direct pricing, MOQ 100pcs, CE/FCC/RoHS/ISO certified. Custom logo, firmware, packaging. 7-day samples, 15-25 day delivery. 500+ global partners. Get free quote for bulk orders.",
   keywords: [
     // B2B 核心词（高优先级）
     "smartwatch manufacturer China",
@@ -611,6 +611,123 @@ export default async function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section - Brand SEO */}
+      <section className="homepage-faq" style={{
+        padding: '80px 0',
+        background: '#0f172a'
+      }}>
+        <div className="container">
+          <h2 style={{
+            textAlign: 'center',
+            fontSize: '36px',
+            fontWeight: '700',
+            color: 'white',
+            marginBottom: '16px'
+          }}>
+            Frequently Asked Questions About Microwear
+          </h2>
+          <p style={{
+            textAlign: 'center',
+            color: '#64748b',
+            fontSize: '16px',
+            marginBottom: '48px',
+            maxWidth: '600px',
+            margin: '0 auto 48px'
+          }}>
+            Everything you need to know about Microwear — the leading smartwatch OEM manufacturer from China.
+          </p>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+            gap: '24px',
+            maxWidth: '900px',
+            margin: '0 auto'
+          }}>
+            <div style={{
+              padding: '28px',
+              background: 'rgba(255,255,255,0.05)',
+              borderRadius: '16px',
+              border: '1px solid rgba(255,255,255,0.08)'
+            }}>
+              <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#0ea5e9', marginBottom: '12px' }}>What is Microwear?</h3>
+              <p style={{ color: '#94a3b8', fontSize: '14px', lineHeight: '1.7' }}>Microwear (Shenzhen NJY Technology) is a professional smartwatch and AI glasses OEM manufacturer founded in 2008. We serve 500+ B2B partners across 30+ countries with ISO9001 certified production.</p>
+            </div>
+            <div style={{
+              padding: '28px',
+              background: 'rgba(255,255,255,0.05)',
+              borderRadius: '16px',
+              border: '1px solid rgba(255,255,255,0.08)'
+            }}>
+              <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#0ea5e9', marginBottom: '12px' }}>What is the MOQ for Microwear OEM orders?</h3>
+              <p style={{ color: '#94a3b8', fontSize: '14px', lineHeight: '1.7' }}>Our standard MOQ starts from 100 pieces for smartwatch orders. We offer flexible terms for first-time partners and provide free samples for qualified B2B buyers.</p>
+            </div>
+            <div style={{
+              padding: '28px',
+              background: 'rgba(255,255,255,0.05)',
+              borderRadius: '16px',
+              border: '1px solid rgba(255,255,255,0.08)'
+            }}>
+              <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#0ea5e9', marginBottom: '12px' }}>Where is Microwear located?</h3>
+              <p style={{ color: '#94a3b8', fontSize: '14px', lineHeight: '1.7' }}>Microwear headquarters and factory is in Shenzhen, China — the global hub for electronics manufacturing. We operate 8 SMT lines with 2M+ units/year capacity and 300+ employees.</p>
+            </div>
+            <div style={{
+              padding: '28px',
+              background: 'rgba(255,255,255,0.05)',
+              borderRadius: '16px',
+              border: '1px solid rgba(255,255,255,0.08)'
+            }}>
+              <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#0ea5e9', marginBottom: '12px' }}>What certifications does Microwear have?</h3>
+              <p style={{ color: '#94a3b8', fontSize: '14px', lineHeight: '1.7' }}>Microwear is ISO9001:2015 certified. All products carry CE, FCC, and RoHS certifications. Additional certifications (BQB, REACH) are available upon request.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is Microwear?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Microwear (Shenzhen NJY Technology) is a professional smartwatch and AI glasses OEM manufacturer founded in 2008. We serve 500+ B2B partners across 30+ countries with ISO9001 certified production."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the MOQ for Microwear OEM orders?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Our standard MOQ starts from 100 pieces for smartwatch orders. We offer flexible terms for first-time partners and provide free samples for qualified B2B buyers."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where is Microwear located?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Microwear headquarters and factory is in Shenzhen, China. We operate 8 SMT lines with 2M+ units/year capacity and 300+ employees."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What certifications does Microwear have?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Microwear is ISO9001:2015 certified. All products carry CE, FCC, and RoHS certifications. Additional certifications (BQB, REACH) are available upon request."
+                }
+              }
+            ]
+          })
+        }}
+      />
 
       {/* CTA Section */}
       <section className="cta-section" style={{

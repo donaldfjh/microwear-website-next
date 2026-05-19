@@ -4,9 +4,9 @@ import { BreadcrumbSchema } from "@/components/SEO/BreadcrumbSchema";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Microwear Smartwatch Collection | OEM Factory Direct 2026",
+  title: "Microwear Smartwatch Collection | OEM Factory Direct | 20+ Models 2026",
   description:
-    "Browse complete microwear smartwatch collection - 20+ models for B2B wholesale. ISO9001 certified OEM factory. MOQ 200pcs, $15-30. Free samples, 24h quotes. Custom logo, SDK, packaging. Every microwear smart watch features advanced health tracking, GPS, premium build.",
+    "Browse the complete Microwear smartwatch collection - 20+ models for B2B wholesale and OEM orders. ISO9001 certified factory, MOQ 100pcs, $15-50. Free samples, 24h quotes, custom logo, SDK, packaging. Every Microwear smart watch features advanced health tracking, GPS, AMOLED display, and premium build quality. Trusted by 500+ global partners.",
   keywords: [
     "microwear smartwatch",
     "microwear smartwatches",
@@ -234,7 +234,7 @@ export default async function ProductsPage() {
         </div>
       </section>
 
-      {/* FAQ Section */}
+      {/* FAQ Section with JSON-LD Structured Data */}
       <section style={{
         padding: '60px 24px',
         maxWidth: '800px',
@@ -246,22 +246,22 @@ export default async function ProductsPage() {
           textAlign: 'center',
           marginBottom: '48px'
         }}>
-          Frequently Asked Questions
+          Frequently Asked Questions About Microwear Smartwatch
         </h2>
         
         <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
           <div style={{ padding: '24px', border: '1px solid #e0e0e0', borderRadius: '8px' }}>
             <h3 style={{ fontSize: '18px', fontWeight: '600', marginBottom: '12px' }}>
-              What is the MOQ for microwear smartwatch OEM orders?
+              What is the MOQ for Microwear smartwatch OEM orders?
             </h3>
             <p style={{ color: '#666', lineHeight: '1.6' }}>
-              Our standard MOQ is 200 pieces per model for OEM orders. Contact us for flexible terms based on your requirements.
+              Our standard MOQ is 100 pieces per model for OEM orders. We offer flexible terms for first-time B2B partners and provide free samples for qualified buyers.
             </p>
           </div>
           
           <div style={{ padding: '24px', border: '1px solid #e0e0e0', borderRadius: '8px' }}>
             <h3 style={{ fontSize: '18px', fontWeight: '600', marginBottom: '12px' }}>
-              How long is the lead time for microwear smartwatch bulk orders?
+              How long is the lead time for Microwear smartwatch bulk orders?
             </h3>
             <p style={{ color: '#666', lineHeight: '1.6' }}>
               Sample production: 7-10 days. Bulk orders: 15-25 days after deposit and design confirmation. 
@@ -271,25 +271,106 @@ export default async function ProductsPage() {
           
           <div style={{ padding: '24px', border: '1px solid #e0e0e0', borderRadius: '8px' }}>
             <h3 style={{ fontSize: '18px', fontWeight: '600', marginBottom: '12px' }}>
-              Do you provide free samples of microwear smartwatch?
+              Do you provide free samples of Microwear smartwatch?
             </h3>
             <p style={{ color: '#666', lineHeight: '1.6' }}>
               Yes! We provide free samples for qualified B2B buyers. You only need to cover shipping cost. 
-              Sample fee will be refunded when you place bulk order (MOQ 200pcs).
+              Sample fee will be refunded when you place bulk order.
             </p>
           </div>
           
           <div style={{ padding: '24px', border: '1px solid #e0e0e0', borderRadius: '8px' }}>
             <h3 style={{ fontSize: '18px', fontWeight: '600', marginBottom: '12px' }}>
-              What certifications do microwear smartwatches have?
+              What certifications do Microwear smartwatches have?
             </h3>
             <p style={{ color: '#666', lineHeight: '1.6' }}>
-              All microwear smartwatch models are CE, FCC, RoHS certified. Our factory is ISO9001:2015 
+              All Microwear smartwatch models are CE, FCC, RoHS certified. Our factory is ISO9001:2015 
               certified. Additional certifications (BQB, REACH, etc.) available upon request.
+            </p>
+          </div>
+          
+          <div style={{ padding: '24px', border: '1px solid #e0e0e0', borderRadius: '8px' }}>
+            <h3 style={{ fontSize: '18px', fontWeight: '600', marginBottom: '12px' }}>
+              Can I customize the Microwear smartwatch with my brand logo?
+            </h3>
+            <p style={{ color: '#666', lineHeight: '1.6' }}>
+              Absolutely. We offer full OEM customization including laser engraving, silk printing, custom UI/UX, 
+              firmware modifications, packaging design, and SDK integration for your Microwear smartwatch brand.
+            </p>
+          </div>
+          
+          <div style={{ padding: '24px', border: '1px solid #e0e0e0', borderRadius: '8px' }}>
+            <h3 style={{ fontSize: '18px', fontWeight: '600', marginBottom: '12px' }}>
+              Where is Microwear smartwatch manufactured?
+            </h3>
+            <p style={{ color: '#666', lineHeight: '1.6' }}>
+              All Microwear smartwatches are designed and manufactured in our ISO9001 certified facility 
+              in Shenzhen, China. We operate 8 SMT production lines with 2M+ units annual capacity.
             </p>
           </div>
         </div>
       </section>
+
+      {/* FAQ JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is the MOQ for Microwear smartwatch OEM orders?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Our standard MOQ is 100 pieces per model for OEM orders. We offer flexible terms for first-time B2B partners and provide free samples for qualified buyers."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How long is the lead time for Microwear smartwatch bulk orders?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sample production: 7-10 days. Bulk orders: 15-25 days after deposit and design confirmation. Express production available for urgent projects (10-15 days, +15% surcharge)."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you provide free samples of Microwear smartwatch?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes! We provide free samples for qualified B2B buyers. You only need to cover shipping cost. Sample fee will be refunded when you place bulk order."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What certifications do Microwear smartwatches have?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "All Microwear smartwatch models are CE, FCC, RoHS certified. Our factory is ISO9001:2015 certified. Additional certifications (BQB, REACH, etc.) available upon request."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I customize the Microwear smartwatch with my brand logo?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Absolutely. We offer full OEM customization including laser engraving, silk printing, custom UI/UX, firmware modifications, packaging design, and SDK integration for your Microwear smartwatch brand."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where is Microwear smartwatch manufactured?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "All Microwear smartwatches are designed and manufactured in our ISO9001 certified facility in Shenzhen, China. We operate 8 SMT production lines with 2M+ units annual capacity."
+                }
+              }
+            ]
+          })
+        }}
+      />
 
       <ProductCatalog products={smartWatches} />
     </>
