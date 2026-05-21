@@ -9,7 +9,7 @@ import { ToastProvider } from "@/contexts/ToastContext";
 // Lazy load non-critical components to reduce initial bundle size
 const FloatingContact = dynamic(() => import("@/components/FloatingContact").then((mod) => mod.FloatingContact), { ssr: false });
 const FloatingComparisonBar = dynamic(() => import("@/components/FloatingComparisonBar").then((mod) => mod.FloatingComparisonBar), { ssr: false });
-const DifyChatbot = dynamic(() => import("@/components/DifyChatbot").then((mod) => mod.DifyChatbot), { ssr: false });
+const OpenClawChat = dynamic(() => import("@/components/OpenClawChat").then((mod) => mod.OpenClawChat), { ssr: false });
 
 export const metadata: Metadata = {
   title: "Microwear | Smart Watch & AI Glasses OEM Manufacturer from China (2008)",
@@ -94,7 +94,7 @@ export default function RootLayout({
             </main>
             <FloatingContact />
             <FloatingComparisonBar />
-            <DifyChatbot />
+            <OpenClawChat />
           </ComparisonProvider>
         </ToastProvider>
       </body>

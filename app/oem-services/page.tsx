@@ -3,28 +3,34 @@ import Link from "next/link";
 import { ScrollReveal } from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "OEM/ODM Services | Custom Smartwatch Manufacturing | Microwear",
+  title: "OEM/ODM Services | Custom Smartwatch & AI Glasses Manufacturing | Microwear",
   description:
-    "Microwear OEM/ODM services: Custom logo, firmware, packaging, and hardware modifications. MOQ 100pcs, 7-day sampling, 15-25 day production. CE, FCC, RoHS certified. Get free quote for custom smartwatch projects.",
+    "Microwear OEM/ODM services for smartwatches and AI glasses — custom logo, firmware, packaging, and hardware modifications. ISO9001 certified factory, MOQ 100pcs, 7-day sampling, 15-25 day production. CE, FCC, RoHS certified. Get free quote for custom wearable projects.",
   keywords: [
     "smartwatch OEM services",
+    "AI glasses OEM manufacturer",
     "custom smartwatch manufacturer",
     "ODM smartwatch supplier",
+    "ODM telephone glasses",
     "white label smartwatch",
     "custom logo smartwatch",
     "smartwatch private label",
     "OEM wearable manufacturer",
     "custom firmware smartwatch",
     "smartwatch customization",
-    "bulk smartwatch orders"
+    "bulk smartwatch orders",
+    "telephone glasses OEM",
+    "camera glasses manufacturer",
+    "smartwatch wholesale China",
+    "AI glasses ODM"
   ],
   alternates: {
     canonical: "https://microwear.info/oem-services",
   },
   openGraph: {
-    title: "OEM/ODM Services | Custom Smartwatch Manufacturing | Microwear",
+    title: "OEM/ODM Services | Smartwatch & AI Glasses Custom Manufacturing | Microwear",
     description:
-      "Full-service OEM/ODM smartwatch manufacturing. Custom logo, firmware, packaging. MOQ 100pcs, fast sampling, certified quality.",
+      "Full-service OEM/ODM smartwatch and AI glasses manufacturing from Microwear. Custom logo, firmware, packaging. ISO9001 certified, MOQ 100pcs, fast sampling.",
     url: "https://microwear.info/oem-services",
     type: "website",
   },
@@ -551,6 +557,29 @@ export default function OEMServicesPage() {
                 </div>
               </div>
             </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
+      {/* SEO Text Section - B2B Keyword Density */}
+      <section style={{
+        padding: '60px 24px',
+        background: '#f8f9fa'
+      }}>
+        <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+          <h2 style={{ fontSize: '28px', fontWeight: '700', marginBottom: '24px', textAlign: 'center', color: '#1a1a1a' }}>
+            Microwear OEM/ODM — Full-Service Wearable Technology Manufacturing
+          </h2>
+          <div style={{ lineHeight: '1.8', fontSize: '16px', color: '#555' }}>
+            <p style={{ marginBottom: '16px' }}>
+              <strong>Microwear</strong> is a leading <strong>smartwatch OEM manufacturer</strong> and <strong>AI glasses factory</strong> in Shenzhen, China. Our OEM/ODM services cover the entire product lifecycle — from concept design and prototyping to mass production and global shipping. With ISO9001 certification and 8 SMT production lines, we deliver <strong>custom smartwatch manufacturing</strong> at scale.
+            </p>
+            <p style={{ marginBottom: '16px' }}>
+              Beyond smartwatches, Microwear also offers <strong>AI glasses OEM</strong> and <strong>telephone glasses ODM</strong> services. Our AI glasses with camera, voice assistant, and AR capabilities are gaining traction among B2B buyers looking for next-generation wearable products. Whether you need <strong>camera glasses manufacturer</strong> partnership or <strong>telephone glasses factory</strong> sourcing, Microwear has the expertise and capacity.
+            </p>
+            <p>
+              Our <strong>smartwatch wholesale</strong> program supports orders from 100pcs to 100,000+ units, with flexible payment terms and dedicated account management. Every OEM project includes free samples, 24-hour quote response, and after-sales support. <a href="/contact?subject=OEM Inquiry" style={{ color: '#0ea5e9', textDecoration: 'underline' }}>Start your OEM project today</a>.
+            </p>
           </div>
         </div>
       </section>

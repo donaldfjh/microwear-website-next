@@ -5,15 +5,18 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import "./AboutPage.css";
 
 export const metadata: Metadata = {
-  title: "About Microwear | Smart Watch & AI Glasses OEM Manufacturer Since 2008 | ISO9001 Factory",
+  title: "About Microwear | Smartwatch & AI Glasses OEM Manufacturer Since 2008 | ISO9001",
   description:
-    "About Microwear - Shenzhen NJY Technology, leading smartwatch and AI glasses OEM manufacturer since 2008. ISO9001 certified factory with 300+ employees, 8 SMT lines, 2M+ units/year. CE/FCC/RoHS certified. Custom logo, firmware, packaging. Free samples, SDK support. 500+ B2B partners worldwide. Learn about our history, mission, and manufacturing capabilities.",
+    "About Microwear — Shenzhen NJY Technology, a leading smartwatch and AI glasses OEM manufacturer from China since 2008. ISO9001 certified factory with 300+ employees, 8 SMT lines, 2M+ units/year capacity. CE/FCC/RoHS certified. Custom smartwatch OEM, wholesale bulk orders, MOQ 100pcs. Free samples, SDK support. 500+ B2B partners in 30+ countries.",
   keywords: [
-    "about microwear",
-    "microwear company",
-    "microwear manufacturer",
-    "microwear factory",
+    "about Microwear",
+    "Microwear manufacturer",
+    "Microwear factory",
+    "Microwear company",
+    "Microwear smartwatch",
+    "Microwear AI glasses",
     "smartwatch manufacturer China",
+    "smartwatch OEM manufacturer",
     "AI glasses OEM manufacturer",
     "wearable tech company Shenzhen",
     "ISO9001 certified factory",
@@ -23,6 +26,8 @@ export const metadata: Metadata = {
     "custom smartwatch factory",
     "smartwatch wholesale manufacturer",
     "B2B smartwatch supplier",
+    "telephone glasses manufacturer",
+    "camera glasses OEM",
   ],
   alternates: {
     canonical: "https://microwear.info/about",
@@ -602,6 +607,31 @@ export default function AboutPage() {
         </ScrollReveal>
 
         {/* FAQ Section with JSON-LD Structured Data */}
+        {/* SEO Text Section - Brand Keyword Density */}
+        <ScrollReveal delay={0.565}>
+          <section className="about-section" style={{
+            padding: '60px 0',
+            background: 'linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%)'
+          }}>
+            <div style={{ maxWidth: '800px', margin: '0 auto', padding: '0 24px' }}>
+              <h2 style={{ fontSize: '28px', fontWeight: '700', marginBottom: '24px', textAlign: 'center', color: '#1a1a1a' }}>
+                Microwear — Your Trusted Smartwatch & AI Glasses OEM Partner
+              </h2>
+              <div style={{ lineHeight: '1.8', fontSize: '16px', color: '#555' }}>
+                <p style={{ marginBottom: '16px' }}>
+                  <strong>Microwear</strong> (Shenzhen NJY Technology Co., Ltd) is a professional <strong>smartwatch OEM manufacturer</strong> and <strong>AI glasses factory</strong> based in Shenzhen, China. Since 2008, we have grown from a small R&D team into a modern high-tech enterprise with 300+ employees, 8 SMT production lines, and an annual capacity of 2M+ units.
+                </p>
+                <p style={{ marginBottom: '16px' }}>
+                  Our <strong>Microwear smartwatch</strong> product line covers fitness trackers, health smartwatches, rugged smartwatches, kids smartwatches, and GPS watches — all available for <strong>custom OEM/ODM orders</strong> with MOQ starting from 100 pieces. In 2023, we expanded into next-generation wearable technology with our <strong>AI glasses</strong> featuring camera modules, ChatGPT integration, and ultra-lightweight 38g design.
+                </p>
+                <p>
+                  As an <strong>ISO9001:2015 certified manufacturer</strong>, every Microwear product carries CE, FCC, and RoHS certifications. We serve 500+ B2B partners across 30+ countries, from startups to enterprise brands. Whether you need <strong>smartwatch wholesale bulk orders</strong>, custom firmware, or complete white-label solutions, Microwear delivers factory-direct pricing with 7-day sampling and 15-25 day production turnaround.
+                </p>
+              </div>
+            </div>
+          </section>
+        </ScrollReveal>
+
         <ScrollReveal delay={0.57}>
           <section className="about-section faq-section">
             <h2>Frequently Asked Questions About Microwear</h2>

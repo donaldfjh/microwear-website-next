@@ -372,6 +372,30 @@ export default async function ProductsPage() {
         }}
       />
 
+      {/* SEO Text Section - Brand Keyword Density for "microwear smartwatch" */}
+      <section style={{
+        padding: '60px 24px',
+        backgroundColor: '#f8f9fa',
+        color: '#333'
+      }}>
+        <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+          <h2 style={{ fontSize: '28px', fontWeight: '700', marginBottom: '24px', textAlign: 'center' }}>
+            Why Choose Microwear Smartwatch for Your Brand?
+          </h2>
+          <div style={{ lineHeight: '1.8', fontSize: '16px', color: '#555' }}>
+            <p style={{ marginBottom: '16px' }}>
+              <strong>Microwear smartwatch</strong> is a trusted brand among B2B buyers worldwide. As one of the leading <strong>smartwatch OEM manufacturers in China</strong>, Microwear offers 20+ smartwatch models with advanced features including health monitoring, GPS tracking, AMOLED displays, and long battery life — all at competitive wholesale prices starting from $15.
+            </p>
+            <p style={{ marginBottom: '16px' }}>
+              Every <strong>Microwear smart watch</strong> is manufactured in our ISO9001 certified factory in Shenzhen, with CE, FCC, and RoHS certifications for global market compliance. Whether you need <strong>smartwatch wholesale bulk orders</strong>, custom logo engraving, or complete white-label solutions, Microwear delivers factory-direct pricing with MOQ starting from just 100 pieces.
+            </p>
+            <p>
+              Our <strong>Microwear smartwatches</strong> are trusted by 500+ B2B partners across 30+ countries. From fitness trackers to rugged smartwatches, kids smartwatches to health monitoring devices — we have the right product for your target market. <a href="/contact?subject=Smartwatch Wholesale" style={{ color: '#0ea5e9', textDecoration: 'underline' }}>Request a free quote today</a>.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <ProductCatalog products={smartWatches} />
     </>
   );

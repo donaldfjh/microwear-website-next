@@ -10,10 +10,17 @@ import "./HomePage.css";
 
 export const metadata: Metadata = {
   title:
-    "Microwear | OEM Smartwatch Manufacturer China | Microwear Smartwatch Official",
+    "Microwear | Smartwatch & AI Glasses OEM Manufacturer China | Official Site",
   description:
-    "Microwear official website - Leading smartwatch OEM manufacturer with 15+ years B2B experience. Factory direct pricing, MOQ 100pcs, CE/FCC/RoHS/ISO certified. Custom logo, firmware, packaging. 7-day samples, 15-25 day delivery. 500+ global partners. Get free quote for bulk orders.",
+    "Microwear official website — leading smartwatch and AI glasses OEM manufacturer from Shenzhen, China. 15+ years B2B experience, ISO9001 certified factory. Custom smartwatch OEM, wholesale bulk orders, MOQ 100pcs. CE/FCC/RoHS certified. Free samples, 24h quotes. 500+ global partners."
   keywords: [
+    // 品牌核心词
+    "Microwear",
+    "Microwear smartwatch",
+    "Microwear official",
+    "Microwear manufacturer",
+    "Microwear factory",
+    
     // B2B 核心词（高优先级）
     "smartwatch manufacturer China",
     "smartwatch OEM supplier Shenzhen",
@@ -26,25 +33,24 @@ export const metadata: Metadata = {
     "health smartwatch manufacturer",
     "GPS watch OEM supplier",
     "AI glasses manufacturer",
+    "telephone glasses OEM",
+    "camera glasses manufacturer",
     
     // 采购意图词
     "smartwatch wholesale bulk",
     "custom smartwatch OEM",
     "white label smartwatch",
     "smartwatch MOQ 100",
-    
-    // 品牌词（保留少量）
-    "Microwear smartwatch factory",
-    "Microwear OEM manufacturer"
+    "smartwatch bulk order",
   ],
   alternates: {
     canonical: "https://microwear.info/",
   },
   openGraph: {
     title:
-      "Microwear Official | Smartwatch OEM Manufacturer & AI Glasses Factory",
+      "Microwear Official | Smartwatch & AI Glasses OEM Manufacturer from China",
     description:
-      "Microwear official website - Professional smartwatch OEM manufacturer with 15+ years experience. CE, FCC, RoHS certified factory. Wholesale pricing, MOQ 100pcs. 500+ B2B partners worldwide.",
+      "Microwear official website — leading smartwatch and AI glasses OEM manufacturer from Shenzhen, China. 15+ years B2B experience, ISO9001 certified. Wholesale pricing, MOQ 100pcs. 500+ B2B partners worldwide.",
     url: "https://microwear.info/",
     type: "website",
   },
@@ -728,6 +734,38 @@ export default async function HomePage() {
           })
         }}
       />
+
+      {/* SEO Text Section - Brand Keyword Density */}
+      <section className="seo-text-section" style={{
+        padding: '80px 0',
+        background: '#1e293b'
+      }}>
+        <div className="container" style={{ maxWidth: '800px' }}>
+          <h2 style={{
+            fontSize: '28px',
+            fontWeight: '700',
+            color: 'white',
+            marginBottom: '24px',
+            textAlign: 'center'
+          }}>
+            What is Microwear?
+          </h2>
+          <div style={{ color: '#94a3b8', lineHeight: '1.8', fontSize: '16px' }}>
+            <p style={{ marginBottom: '16px' }}>
+              <strong style={{ color: 'white' }}>Microwear</strong> is a professional <strong style={{ color: '#0ea5e9' }}>smartwatch OEM manufacturer</strong> and <strong style={{ color: '#0ea5e9' }}>AI glasses factory</strong> based in Shenzhen, China. Founded in 2008, Microwear (Shenzhen NJY Technology Co., Ltd) has grown into one of the leading <strong style={{ color: '#0ea5e9' }}>smartwatch manufacturers in China</strong>, serving 500+ B2B partners across 30+ countries.
+            </p>
+            <p style={{ marginBottom: '16px' }}>
+              Our <strong style={{ color: 'white' }}>Microwear smartwatch</strong> product line includes fitness trackers, health smartwatches, rugged smartwatches, kids smartwatches, and GPS watches — all available for <strong style={{ color: '#0ea5e9' }}>custom OEM orders</strong> with MOQ starting from just 100 pieces. Every Microwear smartwatch is ISO9001 certified with CE, FCC, and RoHS compliance.
+            </p>
+            <p style={{ marginBottom: '16px' }}>
+              In 2023, Microwear expanded into next-generation wearable technology with our <strong style={{ color: '#0ea5e9' }}>AI glasses</strong> product line — featuring camera modules, voice assistant integration (ChatGPT), and ultra-lightweight 38g design. Like our smartwatches, all Microwear AI glasses support full OEM/ODM customization.
+            </p>
+            <p>
+              Whether you need <strong style={{ color: '#0ea5e9' }}>smartwatch wholesale bulk orders</strong>, custom logo engraving, firmware customization, or complete white-label solutions, Microwear delivers factory-direct pricing with 7-day sampling and 15-25 day production turnaround. <Link href="/contact" style={{ color: '#0ea5e9', textDecoration: 'underline' }}>Contact us today</Link> for a free quote.
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* CTA Section */}
       <section className="cta-section" style={{
