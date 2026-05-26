@@ -4,9 +4,9 @@ import { BreadcrumbSchema } from "@/components/SEO/BreadcrumbSchema";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Microwear Smartwatch Collection | OEM Factory Direct | 20+ Models 2026",
+  title: "Microwear Smartwatch OEM Manufacturer | Wholesale & Bulk Orders 2026",
   description:
-    "Browse the complete Microwear smartwatch collection - 20+ models for B2B wholesale and OEM orders. ISO9001 certified factory, MOQ 100pcs, $15-50. Free samples, 24h quotes, custom logo, SDK, packaging. Every Microwear smart watch features advanced health tracking, GPS, AMOLED display, and premium build quality. Trusted by 500+ global partners.",
+    "Microwear smartwatch OEM manufacturer — 20+ models for wholesale & bulk orders. ISO9001 factory, MOQ 100pcs, $15-50. Custom logo, SDK, packaging. CE/FCC/RoHS. Free samples, 24h quotes. Trusted by 500+ B2B partners.",
   keywords: [
     "microwear smartwatch",
     "microwear smartwatches",
@@ -390,7 +390,7 @@ export default async function ProductsPage() {
               Every <strong>Microwear smart watch</strong> is manufactured in our ISO9001 certified factory in Shenzhen, with CE, FCC, and RoHS certifications for global market compliance. Whether you need <strong>smartwatch wholesale bulk orders</strong>, custom logo engraving, or complete white-label solutions, Microwear delivers factory-direct pricing with MOQ starting from just 100 pieces.
             </p>
             <p>
-              Our <strong>Microwear smartwatches</strong> are trusted by 500+ B2B partners across 30+ countries. From fitness trackers to rugged smartwatches, kids smartwatches to health monitoring devices — we have the right product for your target market. <a href="/contact?subject=Smartwatch Wholesale" style={{ color: '#0ea5e9', textDecoration: 'underline' }}>Request a free quote today</a>.
+              Our <strong>Microwear smartwatches</strong> are trusted by 500+ B2B partners across 30+ countries. From fitness trackers to rugged smartwatches, kids smartwatches to health monitoring devices — we have the right product for your target market. <a href="/contact?subject=Smartwatch Wholesale" style={{ color: '#0ea5e9', textDecoration: 'underline' }}>Request a free quote today</a>. Learn more about our company on our <a href="/about" style={{ color: '#0ea5e9', textDecoration: 'underline' }}>About Microwear</a> page.
             </p>
           </div>
         </div>

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title:
     "Microwear | Smartwatch & AI Glasses OEM Manufacturer China | Official Site",
   description:
-    "Microwear official website — leading smartwatch and AI glasses OEM manufacturer from Shenzhen, China. 15+ years B2B experience, ISO9001 certified factory. Custom smartwatch OEM, wholesale bulk orders, MOQ 100pcs. CE/FCC/RoHS certified. Free samples, 24h quotes. 500+ global partners."
+    "Microwear — #1 smartwatch & AI glasses OEM manufacturer from China. 15+ years, ISO9001 factory. Custom OEM/ODM, wholesale bulk, MOQ 100pcs. CE/FCC/RoHS. Free samples, 24h quotes. 500+ B2B partners worldwide.",
   keywords: [
     // 品牌核心词
     "Microwear",
@@ -204,9 +204,14 @@ export default async function HomePage() {
             <HomeProductGrid products={featuredProducts} />
           </ScrollReveal>
           <div style={{ textAlign: 'center', marginTop: '40px' }}>
-            <Link href="/products" className="view-all-btn">
-              View All Products →
-            </Link>
+            <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
+              <Link href="/products" className="view-all-btn">
+                View All Products →
+              </Link>
+              <Link href="/about" className="view-all-btn" style={{ background: 'transparent', border: '2px solid #0ea5e9', color: '#0ea5e9' }}>
+                About Microwear →
+              </Link>
+            </div>
           </div>
         </div>
       </section>
