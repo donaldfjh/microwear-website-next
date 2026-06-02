@@ -4,9 +4,9 @@ import { BreadcrumbSchema } from "@/components/SEO/BreadcrumbSchema";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Microwear Smartwatch OEM Manufacturer | Wholesale & Bulk Orders 2026",
+  title: "Microwear Smartwatch Collection | OEM Manufacturer Wholesale Bulk 2026",
   description:
-    "Microwear smartwatch OEM manufacturer — 20+ models for wholesale & bulk orders. ISO9001 factory, MOQ 100pcs, $15-50. Custom logo, SDK, packaging. CE/FCC/RoHS. Free samples, 24h quotes. Trusted by 500+ B2B partners.",
+    "Explore the complete Microwear smartwatch collection — 20+ models for B2B wholesale & bulk orders. ISO9001 certified OEM manufacturer, MOQ 100pcs, $15-50. Custom logo, SDK, packaging. CE/FCC/RoHS. Trusted by 500+ partners worldwide.",
   keywords: [
     "microwear smartwatch",
     "microwear smartwatches",
@@ -20,6 +20,9 @@ export const metadata: Metadata = {
     "microwear smartwatch price",
     "microwear smartwatch catalog",
     "microwear smartwatch wholesale",
+    "microwear smartwatch OEM",
+    "microwear smartwatch bulk",
+    "microwear smartwatch supplier",
     "OEM smartwatch manufacturer",
     "wholesale smartwatch bulk",
     "bulk smartwatch orders",

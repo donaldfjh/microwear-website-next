@@ -5,9 +5,9 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import "./AboutPage.css";
 
 export const metadata: Metadata = {
-  title: "About Microwear | Smartwatch & AI Glasses OEM Manufacturer Since 2008 | ISO9001",
+  title: "About Microwear | Smartwatch & AI Glasses OEM Manufacturer Since 2008",
   description:
-    "About Microwear — Shenzhen NJY Technology, a leading smartwatch and AI glasses OEM manufacturer from China since 2008. ISO9001 certified factory with 300+ employees, 8 SMT lines, 2M+ units/year capacity. CE/FCC/RoHS certified. Custom smartwatch OEM, wholesale bulk orders, MOQ 100pcs. Free samples, SDK support. 500+ B2B partners in 30+ countries.",
+    "Learn about Microwear — Shenzhen NJY Technology, a leading smartwatch and AI glasses OEM manufacturer from China since 2008. ISO9001 certified factory, 300+ employees, 8 SMT lines, 2M+ units/year. 500+ B2B partners in 30+ countries.",
   keywords: [
     "about Microwear",
     "Microwear manufacturer",
