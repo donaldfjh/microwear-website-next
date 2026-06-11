@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Microwear Smartwatch Collection | OEM Manufacturer Wholesale Bulk 2026",
   description:
-    "Explore the complete Microwear smartwatch collection — 20+ models for B2B wholesale & bulk orders. ISO9001 certified OEM manufacturer, MOQ 100pcs, $15-50. Custom logo, SDK, packaging. CE/FCC/RoHS. Trusted by 500+ partners worldwide.",
+    "Browse 20+ Microwear smartwatch models — fitness trackers, health watches, rugged & kids smartwatches. OEM/ODM manufacturer direct, wholesale bulk from $15, MOQ 100pcs. ISO9001, CE/FCC/RoHS. Free samples. 500+ B2B partners.",
   keywords: [
     "microwear smartwatch",
     "microwear smartwatches",
@@ -393,7 +393,7 @@ export default async function ProductsPage() {
               Every <strong>Microwear smart watch</strong> is manufactured in our ISO9001 certified factory in Shenzhen, with CE, FCC, and RoHS certifications for global market compliance. Whether you need <strong>smartwatch wholesale bulk orders</strong>, custom logo engraving, or complete white-label solutions, Microwear delivers factory-direct pricing with MOQ starting from just 100 pieces.
             </p>
             <p>
-              Our <strong>Microwear smartwatches</strong> are trusted by 500+ B2B partners across 30+ countries. From fitness trackers to rugged smartwatches, kids smartwatches to health monitoring devices — we have the right product for your target market. <a href="/contact?subject=Smartwatch Wholesale" style={{ color: '#0ea5e9', textDecoration: 'underline' }}>Request a free quote today</a>. Learn more about our company on our <a href="/about" style={{ color: '#0ea5e9', textDecoration: 'underline' }}>About Microwear</a> page.
+              Our <strong>Microwear smartwatches</strong> are trusted by 500+ B2B partners across 30+ countries. From fitness trackers to rugged smartwatches, kids smartwatches to health monitoring devices — we have the right product for your target market. <a href="/contact?subject=Smartwatch Wholesale" style={{ color: '#0ea5e9', textDecoration: 'underline' }}>Request a free quote today</a>. Learn more about our company on our <a href="/about" style={{ color: '#0ea5e9', textDecoration: 'underline' }}>About Microwear</a> page. Explore our <a href="/ai-glasses" style={{ color: '#0ea5e9', textDecoration: 'underline' }}>AI glasses collection</a> for next-gen wearable solutions.
             </p>
           </div>
         </div>
