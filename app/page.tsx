@@ -782,7 +782,7 @@ export default async function HomePage() {
           </h2>
           <div style={{ color: '#94a3b8', lineHeight: '1.8', fontSize: '15px' }}>
             <p style={{ marginBottom: '12px' }}>
-              Whether you search for <strong style={{ color: 'white' }}>Microwear smartwatch</strong>, <strong style={{ color: 'white' }}>Microwear smart watches</strong>, or even <strong style={{ color: 'white' }}>micro wear</strong> — you'll find the same trusted OEM manufacturer. Our smartwatch lineup includes fitness trackers, health monitoring watches, rugged outdoor watches, kids GPS watches, and AMOLED premium wearables.
+              Whether you search for <strong style={{ color: 'white' }}>Microwear smartwatch</strong>, <strong style={{ color: 'white' }}>Microwear smart watches</strong>, or even <strong style={{ color: 'white' }}>micro wear</strong> — you&apos;ll find the same trusted OEM manufacturer. Our smartwatch lineup includes fitness trackers, health monitoring watches, rugged outdoor watches, kids GPS watches, and AMOLED premium wearables.
             </p>
             <p style={{ marginBottom: '12px' }}>
               Every <strong style={{ color: '#0ea5e9' }}>Microwear smartwatch</strong> is designed and manufactured in-house at our Shenzhen facility. From concept to production, we control every step of the process — ensuring consistent quality, competitive pricing, and fast turnaround for <strong style={{ color: '#0ea5e9' }}>smartwatch wholesale bulk</strong> orders.
