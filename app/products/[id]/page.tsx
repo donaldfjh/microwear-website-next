@@ -48,7 +48,7 @@ export async function generateMetadata({
       "Women's Health Smartwatch OEM | Period Tracking & ECG | Wholesale $25-45",
     "mw-kids-fun":
       "GPS Kids Smartwatch Factory | Safety Tracking Watch OEM | Wholesale $15-30",
-    W11pro:
+    W12pro:
       "AMOLED Smartwatch OEM | ECG & GPS Health Tracker | Wholesale $35-55",
     "mw-fit-lite":
       "Budget Fitness Tracker OEM | Affordable Smartwatch Factory | Wholesale $15-30",
@@ -132,7 +132,7 @@ function extractCoreFeatures(product: any): string {
 // Helper function: Get price range for product
 function getPriceRange(productId: string): string {
   const priceRanges: Record<string, string> = {
-    "W11pro": "$35-55",
+    "W12pro": "$35-55",
     "mw-health-ma25": "$25-45",
     "mw-fit-lite": "$15-30",
     "mw-sport-ultra": "$40-65",

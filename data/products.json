@@ -91,13 +91,13 @@
     "category": "Business",
     "useCase": {
       "title": "Why this is perfect for Business Professionals?",
-      "content": "The W11 Pro combines a premium AMOLED display with professional health tracking (ECG), making it the ideal companion for executives who need to stay connected and monitor their wellness during busy schedules."
+      "content": "The W12 Pro combines a premium AMOLED display with professional health tracking (ECG), making it the ideal companion for executives who need to stay connected and monitor their wellness during busy schedules."
     },
     "priceRange": null
   },
   {
-    "id": "W11pro",
-    "name": "Microwear W11 Pro",
+    "id": "W12pro",
+    "name": "Microwear W12 Pro",
     "description": "Premium smartwatch with advanced health tracking and stunning AMOLED display. Perfect for fitness enthusiasts and professionals alike.",
     "price": 18,
     "images": [
@@ -184,13 +184,13 @@
     "category": "Business",
     "useCase": {
       "title": "Why this is perfect for Business Professionals?",
-      "content": "The W11 Pro combines a premium AMOLED display with professional health tracking (ECG), making it the ideal companion for executives who need to stay connected and monitor their wellness during busy schedules."
+      "content": "The W12 Pro combines a premium AMOLED display with professional health tracking (ECG), making it the ideal companion for executives who need to stay connected and monitor their wellness during busy schedules."
     },
     "priceRange": null
   },
   {
     "id": "mw-fit-lite",
-    "name": "Microwear Watch S11",
+    "name": "Microwear Watch S12",
     "description": "Affordable fitness tracker with essential health features. Your perfect companion for an active lifestyle without breaking the bank.",
     "price": 10,
     "images": [
@@ -262,7 +262,7 @@
     "category": "Business",
     "useCase": {
       "title": "Why this is perfect for Fitness Beginners?",
-      "content": "With its affordable price point and essential health features, the S11 removes barriers to entry for health monitoring, offering 5-day battery life for uninterrupted tracking."
+      "content": "With its affordable price point and essential health features, the S12 removes barriers to entry for health monitoring, offering 5-day battery life for uninterrupted tracking."
     },
     "priceRange": null
   },

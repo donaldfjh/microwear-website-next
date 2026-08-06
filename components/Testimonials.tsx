@@ -17,7 +17,7 @@ const testimonials: Testimonial[] = [
     company: "Tech Innovators Inc.",
     logo: "/images/logos/company1.png",
     feedback:
-      "The Watch 11 Pro has transformed how I track my fitness goals. The battery life is incredible and the health monitoring features are top-notch!",
+      "The Watch 12 Pro has transformed how I track my fitness goals. The battery life is incredible and the health monitoring features are top-notch!",
     rating: 5,
   },
   {

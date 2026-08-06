@@ -1,0 +1,62 @@
+========================================
+  如何新增一款产品（模块方式）
+========================================
+
+只需 3 步：
+
+【第 1 步】复制参数模板
+  把本目录下的 _TEMPLATE.json 复制一份
+  改名为：产品ID.json
+  例如：W13pro.json / MA40.json / S13.json
+
+【第 2 步】填参数
+  打开你的 json，把 YOUR-PRODUCT-ID 全部替换成真实 ID
+  然后填写：
+    - name          产品名称
+    - description   简介
+    - price         起订价（数字）
+    - priceRange    批发价区间，如 "$18-32"
+    - category      分类，可选：
+                    Business / Classic / Woman / AI Glasses
+    - specifications 屏幕、电池、防水、传感器等参数
+    - highlights     卖点（详情页展示）
+    - features       短标签（列表卡片展示）
+    - variants       颜色款（有几色加几条）
+    - images         图片路径（见下一步）
+
+【第 3 步】放产品图
+  1. 复制文件夹：
+     public/images/products/_TEMPLATE/
+     改名为你的产品 ID，例如：
+     public/images/products/W13pro/
+
+  2. 把图片丢进去，建议命名：
+     00-overall.webp   主图（必填）
+     01.webp / 02.webp 详情图
+     black.webp        黑色款图
+     silver.webp       银色款图
+
+  3. JSON 里的 images / variants.image 路径要对上，例如：
+     "/images/products/W13pro/00-overall.webp"
+
+【完成】
+  保存后刷新网站即可：
+  http://localhost:3000/products
+  http://localhost:3000/products/你的产品ID
+
+----------------------------------------
+注意
+----------------------------------------
+- 文件名不要用 _ 开头（_ 开头是模板，不会上架）
+- id 必须唯一，不要和现有产品重复
+- 现有老产品仍在 data/products.json，不要动
+- 新模块产品会自动合并进产品列表
+- 如果 id 和老产品冲突，模块文件会覆盖老数据
+
+现有产品 ID 参考（勿重复）：
+  MA35, W12pro, mw-fit-lite, mw-sport-ultra,
+  mw-classic-steel, mw-kids-fun, mw-health-ma25,
+  mw-health-ma18, mw-health-ma15,
+  smart-audio-glasses-oem-blue-light-blocking-ai3,
+  ray-ban-meta-alternative-manufacturer-ai3-pro,
+  chatgpt-compatible-smart-glasses-anti-leakage-ai4

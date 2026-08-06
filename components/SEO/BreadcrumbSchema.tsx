@@ -50,7 +50,7 @@ export const BreadcrumbSchema: React.FC<BreadcrumbSchemaProps> = ({ items }) => 
  * <BreadcrumbSchema 
  *   items={[
  *     { name: "Products", url: "/products" },
- *     { name: "W11 Pro", url: "/products/W11pro" }
+ *     { name: "W12 Pro", url: "/products/W12pro" }
  *   ]} 
  * />
  */

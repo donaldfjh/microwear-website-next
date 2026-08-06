@@ -1,0 +1,86 @@
+{
+  "id": "YOUR-PRODUCT-ID",
+  "name": "Microwear YOUR MODEL",
+  "description": "一句话产品描述（英文，会显示在产品列表和详情页）",
+  "price": 18,
+  "priceRange": "$18-32",
+  "category": "Business",
+  "images": [
+    "/images/products/YOUR-PRODUCT-ID/00-overall.webp",
+    "/images/products/YOUR-PRODUCT-ID/01.webp",
+    "/images/products/YOUR-PRODUCT-ID/02.webp",
+    "/images/products/YOUR-PRODUCT-ID/03.webp"
+  ],
+  "specifications": {
+    "display": "2.0, AMOLED, 410x502 pixels, Always-On Display",
+    "processor": "Dual-core 192MHz",
+    "battery": "300mAh, up to 5 days typical use",
+    "waterResistance": "IP68",
+    "connectivity": [
+      "Bluetooth 5.3",
+      "GPS"
+    ],
+    "sensors": [
+      "Heart Rate",
+      "SpO2",
+      "Accelerometer"
+    ],
+    "compatibility": [
+      "iOS 12+",
+      "Android 6.0+"
+    ],
+    "dimensions": "46 x 40 x 10 mm",
+    "weight": "45g (without strap)",
+    "chipset": "",
+    "appName": "",
+    "certification": "CE, FCC, RoHS",
+    "materials": "Zinc alloy + Silicone"
+  },
+  "highlights": [
+    "卖点 1（英文）",
+    "卖点 2（英文）",
+    "卖点 3（英文）",
+    "卖点 4（英文）",
+    "卖点 5（英文）"
+  ],
+  "features": [
+    "IP68 Waterproof",
+    "Heart Rate Monitor",
+    "SpO2",
+    "Sleep Tracking"
+  ],
+  "variants": [
+    {
+      "id": "YOUR-PRODUCT-ID-black",
+      "name": "Midnight Black",
+      "price": 18,
+      "color": "Black",
+      "bandMaterial": "Silicone",
+      "image": "/images/products/YOUR-PRODUCT-ID/black.webp"
+    },
+    {
+      "id": "YOUR-PRODUCT-ID-silver",
+      "name": "Arctic Silver",
+      "price": 18,
+      "color": "Silver",
+      "bandMaterial": "Silicone",
+      "image": "/images/products/YOUR-PRODUCT-ID/silver.webp"
+    }
+  ],
+  "useCase": {
+    "title": "Why this is perfect for [目标客户]?",
+    "content": "一段英文说明，解释这款产品适合谁、为什么适合。"
+  },
+  "oemOptions": {
+    "laserLogo": true,
+    "bootScreen": true,
+    "customStrap": true,
+    "giftBox": true,
+    "appSdk": false
+  },
+  "distributorUSPs": [
+    "MOQ 100pcs",
+    "7-day samples",
+    "Custom logo available"
+  ]
+}

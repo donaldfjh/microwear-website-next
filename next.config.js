@@ -1,11 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // i18n for German market localization
-  i18n: {
-    locales: ['en', 'de'],
-    defaultLocale: 'en',
-    localeDetection: true,
-  },
+  // NOTE: next.config i18n is Pages Router only and breaks App Router routing
+  // (all routes 404). Use app/[locale] + middleware if DE locale is needed.
+  // i18n: {
+  //   locales: ['en', 'de'],
+  //   defaultLocale: 'en',
+  //   localeDetection: false,
+  // },
 
   // Image optimization for better Core Web Vitals
   images: {
@@ -38,6 +39,16 @@ const nextConfig = {
     optimizeCss: true,
     optimizePackageImports: ['framer-motion', '@vercel/analytics'],
   },
+  async redirects() {
+    return [
+      {
+        source: "/products/W11pro",
+        destination: "/products/W12pro",
+        permanent: true,
+      },
+    ];
+  },
+
   async headers() {
     return [
       {

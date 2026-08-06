@@ -19,18 +19,18 @@ interface HeroSectionProps {
 
 const heroProducts = [
   {
-    id: "W11pro",
+    id: "W12pro",
     image: "/images/products/w11poverall.webp",
-    name: "Watch 11 Pro",
+    name: "Watch 12 Pro",
     altText:
-      "Microwear W11 Pro Smart Watch - High Resolution AMOLED Display with Health Monitoring",
+      "Microwear W12 Pro Smart Watch - High Resolution AMOLED Display with Health Monitoring",
   },
   {
     id: "mw-fit-lite",
     image: "/images/products/S11OverAll.png",
-    name: "Watch S11",
+    name: "Watch S12",
     altText:
-      "Microwear S11 Fitness Smartwatch - Sports and Health Tracking Wearable",
+      "Microwear S12 Fitness Smartwatch - Sports and Health Tracking Wearable",
   },
   {
     id: "mw-sport-ultra",

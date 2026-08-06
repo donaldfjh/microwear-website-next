@@ -225,7 +225,7 @@ export default function FitnessTrackerPage() {
             maxWidth: '1200px',
             margin: '0 auto'
           }}>
-            <Link href="/products/W11pro" style={{
+            <Link href="/products/W12pro" style={{
               textDecoration: 'none',
               background: 'white',
               borderRadius: '12px',
@@ -242,13 +242,13 @@ export default function FitnessTrackerPage() {
               }}>
                 <img 
                   src="/images/products/w11poverall.webp" 
-                  alt="Microwear W11 Pro"
+                  alt="Microwear W12 Pro"
                   style={{ maxHeight: '180px', maxWidth: '90%', objectFit: 'contain' }}
                 />
               </div>
               <div style={{ padding: '16px' }}>
                 <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#1e293b', marginBottom: '8px' }}>
-                  Microwear W11 Pro
+                  Microwear W12 Pro
                 </h3>
                 <p style={{ fontSize: '14px', color: '#64748b' }}>
                   Premium smartwatch with advanced health tracking and stunning AMOLED display.
@@ -272,13 +272,13 @@ export default function FitnessTrackerPage() {
               }}>
                 <img 
                   src="/images/products/S11OverAll.png" 
-                  alt="Microwear Watch S11"
+                  alt="Microwear Watch S12"
                   style={{ maxHeight: '180px', maxWidth: '90%', objectFit: 'contain' }}
                 />
               </div>
               <div style={{ padding: '16px' }}>
                 <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#1e293b', marginBottom: '8px' }}>
-                  Microwear Watch S11
+                  Microwear Watch S12
                 </h3>
                 <p style={{ fontSize: '14px', color: '#64748b' }}>
                   Affordable fitness tracker with essential health features.

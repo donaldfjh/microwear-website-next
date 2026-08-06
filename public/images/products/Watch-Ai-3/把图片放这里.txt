@@ -1,0 +1,27 @@
+产品图片目录约定
+================
+
+1. 复制本文件夹，改名为你的产品 ID（必须和 JSON 里的 id 一致）
+   例如：W13pro / MA40 / S13
+
+2. 把图片放进该文件夹，建议命名：
+
+   00-overall.webp   ← 主图 / 列表封面（必填）
+   01.webp           ← 详情图
+   02.webp
+   03.webp
+   black.webp        ← 黑色款（颜色图，可选）
+   silver.webp       ← 银色款（可选）
+   pink.webp         ← 其他颜色（可选）
+
+3. 然后在 data/product-modules/ 里复制 _TEMPLATE.json
+   改名为：你的产品ID.json（例如 W13pro.json）
+   把里面的 YOUR-PRODUCT-ID 全部换成真实 ID
+   填好参数即可
+
+4. 刷新 http://localhost:3000/products 即可看到新产品
+
+注意：
+- 图片路径格式：/images/products/产品ID/文件名.webp
+- 支持 .webp / .jpg / .png
+- 不要改动文件名以 _ 开头的模板文件夹

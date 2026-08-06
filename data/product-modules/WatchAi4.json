@@ -1,0 +1,91 @@
+{
+  "id": "Watch-Ai-4",
+  "name": "Microwear Watch Ai 4",
+  "description": "AI-powered smartwatch with advanced health tracking and stunning AMOLED like display. Perfect for fitness enthusiasts and professionals alike.",
+  "price": 18,
+  "priceRange": "$18-32",
+  "category": "Business",
+  "images": [
+    "/images/products/Watch-Ai-4/01.webp",
+    "/images/products/Watch-Ai-4/02.webp",
+    "/images/products/Watch-Ai-4/03.webp",
+    "/images/products/Watch-Ai-4/04.webp",
+    "/images/products/Watch-Ai-4/05.webp",
+    "/images/products/Watch-Ai-4/06.webp",
+    "/images/products/Watch-Ai-4/07.webp"
+  ],
+  "specifications": {
+    "display": "2.0, AMOLED, 410x502 pixels, Always-On Display",
+    "processor": "Dual-core 192MHz",
+    "battery": "300mAh, up to 5 days typical use",
+    "waterResistance": "IP68",
+    "connectivity": [
+      "Bluetooth 5.3",
+      "GPS"
+    ],
+    "sensors": [
+      "Heart Rate",
+      "SpO2",
+      "Accelerometer"
+    ],
+    "compatibility": [
+      "iOS 12+",
+      "Android 6.0+"
+    ],
+    "dimensions": "46 x 40 x 10 mm",
+    "weight": "45g (without strap)",
+    "chipset": "",
+    "appName": "",
+    "certification": "CE, FCC, RoHS",
+    "materials": "Zinc alloy + Silicone"
+  },
+  "highlights": [
+    "2.0, AMOLED, 410x502 pixels, Always-On Display",
+    "Dual-core 192MHz",
+    "300mAh, up to 5 days typical use",
+    "IP68 Waterproof",
+    "Heart Rate Monitor",
+    "SpO2",
+    "Sleep Tracking"
+  ],
+  "features": [
+    "IP68 Waterproof",
+    "Heart Rate Monitor",
+    "SpO2",
+    "Sleep Tracking"
+  ],
+  "variants": [
+    {
+      "id": "YOUR-PRODUCT-ID-black",
+      "name": "Midnight Black",
+      "price": 18,
+      "color": "Black",
+      "bandMaterial": "Silicone",
+      "image": "/images/products/YOUR-PRODUCT-ID/black.webp"
+    },
+    {
+      "id": "YOUR-PRODUCT-ID-silver",
+      "name": "Arctic Silver",
+      "price": 18,
+      "color": "Silver",
+      "bandMaterial": "Silicone",
+      "image": "/images/products/YOUR-PRODUCT-ID/silver.webp"
+    }
+  ],
+  "useCase": {
+    "title": "Why this is perfect for Fitness Enthusiasts and Professionals?",
+    "content": "The Watch Ai 4 is perfect for fitness enthusiasts and professionals alike. It has a 2.0, AMOLED, 410x502 pixels, Always-On Display, Dual-core 192MHz, 300mAh, up to 5 days typical use, IP68 Waterproof, Heart Rate Monitor, SpO2, and Sleep Tracking. It is also compatible with iOS 12+ and Android 6.0+."
+  },
+  "oemOptions": {
+    "laserLogo": true,
+    "bootScreen": true,
+    "customStrap": true,
+    "giftBox": true,
+    "appSdk": false
+  },
+  "distributorUSPs": [
+    "MOQ 100pcs",
+    "7-day samples",
+    "Custom logo available"
+  ]
+}

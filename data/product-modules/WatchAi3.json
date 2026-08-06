@@ -1,0 +1,91 @@
+{
+  "id": "Watch-Ai-3",
+  "name": "Microwear Watch Ai 3",
+  "description": "AI-powered smartwatch with advanced health tracking and stunning AMOLED like display. Perfect for fitness enthusiasts and professionals alike.",
+  "price": 18,
+  "priceRange": "$18-32",
+  "category": "Business",
+  "images": [
+    "/images/products/Watch-Ai-3/main1.webp",
+    "/images/products/Watch-Ai-3/main2.webp",
+    "/images/products/Watch-Ai-3/main3.webp",
+    "/images/products/Watch-Ai-3/main4.webp",
+    "/images/products/Watch-Ai-3/main5.webp",
+    "/images/products/Watch-Ai-3/main6.webp",
+    "/images/products/Watch-Ai-3/main7.webp"
+  ],
+  "specifications": {
+    "display": "1.45-inch HD Full-Version, Always-On Display",
+    "processor": "Dual-core 192MHz",
+    "battery": "350mAh, up to 5 days typical use",
+    "waterResistance": "IP68",
+    "connectivity": [
+      "Bluetooth 5.3",
+      "GPS"
+    ],
+    "sensors": [
+      "Heart Rate",
+      "SpO2",
+      "Accelerometer"
+    ],
+    "compatibility": [
+      "iOS 12+",
+      "Android 6.0+"
+    ],
+    "dimensions": "46 x 40 x 10 mm",
+    "weight": "45g (without strap)",
+    "chipset": "",
+    "appName": "",
+    "certification": "CE, FCC, RoHS",
+    "materials": "Zinc alloy + Silicone"
+  },
+  "highlights": [
+    "1.45-inch HD Full-Version, Always-On Display",
+    "Dual-core 192MHz",
+    "350mAh, up to 5 days typical use",
+    "IP68 Waterproof",
+    "Heart Rate Monitor",
+    "SpO2",
+    "Sleep Tracking"
+  ],
+  "features": [
+    "IP68 Waterproof",
+    "Heart Rate Monitor",
+    "SpO2",
+    "Sleep Tracking"
+  ],
+  "variants": [
+    {
+      "id": "Watch-Ai-3-black",
+      "name": "Midnight Black",
+      "price": 18,
+      "color": "Black",
+      "bandMaterial": "Silicone",
+      "image": "/images/products/Watch-Ai-3/black.webp"
+    },
+    {
+      "id": "Watch-Ai-3-silver",
+      "name": "Arctic Silver",
+      "price": 18,
+      "color": "Silver",
+      "bandMaterial": "Silicone",
+      "image": "/images/products/Watch-Ai-3/silver.webp"
+    }
+  ],
+  "useCase": {
+    "title": "Why this is perfect for Fitness Enthusiasts and Professionals?",
+    "content": "The Watch Ai 3 is perfect for fitness enthusiasts and professionals alike. It has a 1.45-inch HD Full-Version, Always-On Display, Dual-core 192MHz, 350mAh, up to 5 days typical use, IP68 Waterproof, Heart Rate Monitor, SpO2, and Sleep Tracking. It is also compatible with iOS 12+ and Android 6.0+."
+  },
+  "oemOptions": {
+    "laserLogo": true,
+    "bootScreen": true,
+    "customStrap": true,
+    "giftBox": true,
+    "appSdk": false
+  },
+  "distributorUSPs": [
+    "MOQ 100pcs",
+    "7-day samples",
+    "Custom logo available"
+  ]
+}
