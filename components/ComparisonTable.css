@@ -1,5 +1,5 @@
 .comparison-table {
-  background: white;
+  background: linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035));
   border-radius: 0;
   box-shadow: none;
   overflow: visible;
@@ -22,8 +22,8 @@
 }
 
 .comparison-row.header-row {
-  background: white;
-  color: #1a202c;
+  background: linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035));
+  color: var(--mw-text);
   border-bottom: 2px solid #edf2f7;
   align-items: flex-end;
 }
@@ -31,11 +31,11 @@
 .spec-label-cell {
   padding: 1.5rem;
   font-weight: 600;
-  background-color: white;
+  background-color: transparent;
   display: flex;
   align-items: center;
   font-size: 0.95rem;
-  color: #718096;
+  color: var(--mw-muted);
 }
 
 .header-row .spec-label-cell {
@@ -88,7 +88,7 @@
   font-size: 1rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: #1a202c;
+  color: var(--mw-text);
   min-height: 2.5rem;
   display: flex;
   align-items: center;
@@ -114,8 +114,8 @@
 }
 
 .group-header {
-  background-color: #f7fafc;
-  color: #718096;
+  background-color: rgba(255,255,255,0.04);
+  color: var(--mw-muted);
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.05em;
@@ -131,7 +131,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #1a202c;
+  color: var(--mw-text);
 }
 
 .spec-value {

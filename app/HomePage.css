@@ -1,155 +1,515 @@
+/* Homepage — cool gray-blue, volumetric white mist */
 .home-page {
+  --mw-bg: #0a0e14;
+  --mw-bg-elevated: #121820;
+  --mw-cyan: #a8c0d4;
+  --mw-cyan-soft: #c5d4e0;
+  --mw-text: #e8eef4;
+  --mw-muted: #8a97a8;
+  --mw-glass: rgba(220, 228, 236, 0.06);
+  --mw-glass-strong: rgba(232, 238, 244, 0.1);
+  --mw-border: rgba(220, 228, 236, 0.12);
+  --mw-border-cyan: rgba(168, 192, 212, 0.35);
+  --mw-shadow-soft:
+    0 2px 4px rgba(0, 0, 0, 0.18),
+    0 18px 48px rgba(0, 0, 0, 0.38),
+    0 0 0 1px rgba(255, 255, 255, 0.04) inset;
+  --mw-shadow-float:
+    0 4px 8px rgba(0, 0, 0, 0.16),
+    0 28px 64px rgba(0, 0, 0, 0.42),
+    0 0 60px rgba(232, 238, 244, 0.05);
+  --font-display: var(--font-syne), "Syne", system-ui, sans-serif;
+  --font-body: var(--font-outfit), "Outfit", system-ui, sans-serif;
+
   width: 100%;
   overflow-x: hidden;
+  background: transparent;
+  color: var(--mw-text);
+  font-family: var(--font-body);
+  position: relative;
 }
 
-/* Microwear Smartwatch Section - SEO Optimization */
-.microwear-smartwatch-section {
-  padding: 3rem 2rem;
-  background-color: #eef2ff;
-  border-top: 1px solid #e0e7ff;
-  border-bottom: 1px solid #e0e7ff;
+/* Local mist bloom for homepage sections */
+.home-page::before {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background:
+    radial-gradient(ellipse 60% 45% at 50% 8%, rgba(255, 255, 255, 0.08), transparent 60%),
+    radial-gradient(ellipse at center, transparent 38%, rgba(8, 11, 16, 0.5) 100%);
+  opacity: 1;
 }
 
-.microwear-smartwatch-container {
+.home-page > * {
+  position: relative;
+  z-index: 1;
+}
+
+.home-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 24px;
+  width: 100%;
+}
+
+.home-container--narrow {
+  max-width: 900px;
+}
+
+.home-container--tight {
   max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
 }
 
-.microwear-smartwatch-title {
-  font-size: 1.75rem;
-  font-weight: 700;
-  color: #1f2937;
-  margin-bottom: 1rem;
+.section-shell {
+  padding: 96px 0;
+  position: relative;
 }
 
-.microwear-smartwatch-description {
-  font-size: 1.1rem;
-  color: #4b5563;
-  line-height: 1.7;
-  margin-bottom: 2rem;
+.section-shell--compact {
+  padding: 64px 0;
 }
 
-.microwear-smartwatch-cta {
-  margin-top: 1.5rem;
-}
-
-.microwear-smartwatch-link {
+.section-eyebrow {
   display: inline-block;
-  padding: 0.875rem 1.75rem;
-  background-color: #2563eb;
-  color: white;
-  text-decoration: none;
-  border-radius: 0.5rem;
-  font-weight: 600;
-  transition: all 0.3s ease;
+  padding: 9px 20px;
+  margin-bottom: 18px;
+  font-size: 11px;
+  font-weight: 650;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--mw-cyan-soft);
+  border: 1px solid rgba(168, 192, 212, 0.28);
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(232, 238, 244, 0.12), rgba(168, 192, 212, 0.04));
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 
-.microwear-smartwatch-link:hover {
-  background-color: #1d4ed8;
-  transform: translateY(-2px);
-}
-
-.microwear-smartwatch-link:active {
-  background-color: #1e40af;
-}
-
-/* Featured Products Section */
-.featured-products-section {
-  padding: 4rem 2rem;
-  background-color: #f8f9fa;
-}
-
-.featured-products-container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.featured-products-title {
-  text-align: center;
-  font-size: 2rem;
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.85rem, 3.2vw, 2.65rem);
   font-weight: 700;
-  color: #1f2937;
-  margin-bottom: 2rem;
+  letter-spacing: -0.04em;
+  color: var(--mw-text);
+  text-align: center;
+  margin: 0 0 14px;
+  text-shadow:
+    0 0 48px rgba(232, 238, 244, 0.16),
+    0 8px 40px rgba(0, 0, 0, 0.3);
 }
 
 .section-subtitle {
   text-align: center;
-  font-size: 1.1rem;
-  color: #666;
-  margin-top: -1.5rem;
-  margin-bottom: 3rem;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 1.02rem;
+  color: var(--mw-muted);
+  line-height: 1.75;
+  max-width: 640px;
+  margin: 0 auto 44px;
+  font-weight: 400;
 }
 
-/* AI Glasses Section Variant */
-.ai-glasses-home-section {
-  background-color: #ffffff; /* White background to contrast with grey */
-  border-top: 1px solid #e5e7eb;
+/* Soft 3D panels — solid edge, studio shadow (no gradient stroke) */
+.glass-panel,
+.glass-card {
+  position: relative;
+  isolation: isolate;
 }
 
-.view-all-container {
+.glass-panel {
+  background:
+    linear-gradient(165deg, rgba(232, 238, 244, 0.1) 0%, rgba(168, 192, 212, 0.04) 100%);
+  border: 1px solid var(--mw-border);
+  border-radius: 28px;
+  backdrop-filter: blur(28px) saturate(0.95);
+  -webkit-backdrop-filter: blur(28px) saturate(0.95);
+  box-shadow: var(--mw-shadow-soft);
+  overflow: hidden;
+}
+
+.glass-panel::before,
+.glass-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.18) 0%,
+    rgba(232, 238, 244, 0.06) 14%,
+    transparent 45%
+  );
+  z-index: 0;
+}
+
+.glass-card {
+  background:
+    linear-gradient(165deg, rgba(232, 238, 244, 0.1) 0%, rgba(168, 192, 212, 0.035) 55%, rgba(220, 228, 236, 0.05) 100%);
+  border: 1px solid var(--mw-border);
+  border-radius: 24px;
+  padding: 30px 26px;
+  backdrop-filter: blur(22px) saturate(0.95);
+  -webkit-backdrop-filter: blur(22px) saturate(0.95);
+  box-shadow: var(--mw-shadow-soft);
+  transition:
+    transform 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.4s ease;
+}
+
+.glass-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.glass-card:hover {
+  transform: translateY(-8px) scale(1.01);
+  border-color: rgba(255, 255, 255, 0.18);
+  box-shadow: var(--mw-shadow-float);
+}
+
+.glass-card--link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+  height: 100%;
+}
+
+.glass-card__icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+  background:
+    radial-gradient(circle at 30% 25%, rgba(255, 255, 255, 0.4), transparent 45%),
+    linear-gradient(145deg, rgba(232, 238, 244, 0.22), rgba(168, 192, 212, 0.1));
+  border: 1px solid rgba(168, 192, 212, 0.32);
+  color: var(--mw-cyan-soft);
+  box-shadow:
+    0 10px 24px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.28);
+}
+
+.glass-card__index {
+  font-family: var(--font-display);
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: var(--mw-cyan-soft);
+  opacity: 0.95;
+  margin-bottom: 12px;
+  letter-spacing: -0.03em;
+  text-shadow: 0 0 28px rgba(232, 238, 244, 0.22);
+}
+
+.glass-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.18rem;
+  font-weight: 650;
+  color: var(--mw-text);
+  margin: 0 0 10px;
+  letter-spacing: -0.02em;
+}
+
+.glass-card p {
+  color: var(--mw-muted);
+  font-size: 0.94rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.glass-card__more {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 20px;
+  color: var(--mw-cyan);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* Glance table */
+.glance-table-wrap {
+  overflow-x: auto;
+  border-radius: 22px;
+}
+
+.glance-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+
+.glance-table thead tr {
+  background: rgba(5, 8, 15, 0.55);
+}
+
+.glance-table th {
+  text-align: left;
+  padding: 16px 20px;
+  font-weight: 650;
+  color: var(--mw-cyan);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glance-table td {
+  padding: 14px 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  color: var(--mw-muted);
+}
+
+.glance-table td:first-child {
+  font-weight: 600;
+  color: var(--mw-text);
+  width: 36%;
+}
+
+.glance-table tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.adv-grid,
+.solutions-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.partners-row {
   display: flex;
   justify-content: center;
-  margin-top: 3rem;
+  flex-wrap: wrap;
+  gap: 18px;
 }
 
-.view-all-link {
-  display: inline-block;
-  padding: 1rem 2rem;
-  background-color: #2563eb;
-  color: white;
+.partner-chip {
+  min-width: 168px;
+  text-align: center;
+  padding: 22px 28px;
+}
+
+.partner-chip__region {
+  font-family: var(--font-display);
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: var(--mw-cyan-soft);
+}
+
+.partner-chip__count {
+  font-size: 0.875rem;
+  color: var(--mw-muted);
+  margin-top: 6px;
+}
+
+.featured-products.section-shell {
+  padding: 96px 0;
+  position: relative;
+}
+
+.featured-products.section-shell::before {
+  content: "";
+  position: absolute;
+  inset: 8% 4%;
+  border-radius: 40px;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 70% 60% at 50% 40%, rgba(80, 40, 120, 0.14), transparent 65%),
+    radial-gradient(ellipse at center, rgba(4, 6, 12, 0.55), transparent 75%);
+  filter: blur(28px);
+  z-index: 0;
+}
+
+.featured-products .home-container {
+  position: relative;
+  z-index: 1;
+}
+
+.featured-products .section-title {
+  margin-bottom: 48px;
+}
+
+.home-cta-row {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 48px;
+}
+
+.home-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  min-height: 50px;
+  border-radius: 999px;
+  font-weight: 650;
+  font-size: 0.95rem;
   text-decoration: none;
-  border-radius: 0.5rem;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.4s ease;
+}
+
+.home-btn--primary {
+  background: linear-gradient(180deg, #f0f4f8 0%, #d0dce8 48%, #b0c2d2 100%);
+  color: #121820;
+  border: none;
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.65) inset,
+    0 12px 36px rgba(200, 214, 228, 0.24),
+    0 0 40px rgba(232, 238, 244, 0.12);
+}
+
+.home-btn--primary:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.75) inset,
+    0 18px 44px rgba(200, 214, 228, 0.32),
+    0 0 48px rgba(255, 255, 255, 0.14);
+}
+
+.home-btn--ghost {
+  background: rgba(232, 238, 244, 0.06);
+  color: var(--mw-text);
+  border: 1px solid rgba(220, 228, 236, 0.16);
+  backdrop-filter: blur(12px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.home-btn--ghost:hover {
+  border-color: rgba(168, 192, 212, 0.45);
+  color: var(--mw-cyan-soft);
+}
+
+.seo-block {
+  text-align: center;
+}
+
+.seo-block p {
+  color: var(--mw-muted);
+  line-height: 1.9;
+  font-size: 0.98rem;
+  margin: 0 0 14px;
+}
+
+.seo-block p:last-child {
+  margin-bottom: 0;
+}
+
+.seo-block strong {
+  color: var(--mw-text);
   font-weight: 600;
-  transition: background-color 0.3s ease;
 }
 
-.view-all-link:hover {
-  background-color: #1d4ed8;
+.seo-block a {
+  color: var(--mw-cyan);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
-.view-all-link:active {
-  background-color: #1e40af;
+.seo-block .accent {
+  color: var(--mw-cyan-soft);
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-  .microwear-smartwatch-section {
-    padding: 2rem 1rem;
+.home-cta-banner {
+  padding: 80px 24px 100px;
+  text-align: center;
+  position: relative;
+}
+
+.home-cta-banner .glass-panel {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 56px 36px;
+}
+
+.home-cta-banner h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.55rem, 3vw, 2.1rem);
+  margin: 0 0 12px;
+  color: var(--mw-text);
+  letter-spacing: -0.03em;
+}
+
+.home-cta-banner p {
+  color: var(--mw-muted);
+  margin: 0 0 30px;
+}
+
+/* Soft volumetric light orbs */
+.home-orb {
+  pointer-events: none;
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.55;
+  animation: home-orb-drift 18s ease-in-out infinite;
+}
+
+.home-orb--a {
+  width: 360px;
+  height: 360px;
+  background: rgba(168, 192, 212, 0.22);
+  top: -80px;
+  right: 6%;
+}
+
+.home-orb--b {
+  width: 300px;
+  height: 300px;
+  background: rgba(125, 211, 252, 0.18);
+  bottom: 8%;
+  left: 4%;
+  animation-delay: -7s;
+}
+
+@keyframes home-orb-drift {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(18px, -22px) scale(1.1);
+  }
+}
+
+@media (max-width: 1024px) {
+  .adv-grid,
+  .solutions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .section-shell {
+    padding: 64px 0;
   }
 
-  .microwear-smartwatch-title {
-    font-size: 1.5rem;
+  .adv-grid,
+  .solutions-grid {
+    grid-template-columns: 1fr;
   }
 
-  .microwear-smartwatch-description {
-    font-size: 1rem;
+  .home-container {
+    padding: 0 16px;
   }
 
-  .microwear-smartwatch-link {
-    padding: 0.75rem 1.25rem;
-    font-size: 0.875rem;
-  }
-
-  .featured-products-section {
-    padding: 2rem 1rem;
-  }
-
-  .featured-products-title {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .view-all-container {
-    margin-top: 2rem;
-  }
-
-  .view-all-link {
-    padding: 0.75rem 1.5rem;
-    font-size: 0.875rem;
+  .glass-card:hover {
+    transform: translateY(-4px);
   }
 }

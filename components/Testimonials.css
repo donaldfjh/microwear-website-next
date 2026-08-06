@@ -1,6 +1,6 @@
 .testimonials-section {
   padding: 3rem 2rem;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: radial-gradient(ellipse 60% 50% at 70% 20%, rgba(94,234,212,0.1), transparent 55%), linear-gradient(165deg, #0a1220, #060912);
   position: relative;
   width: 100%;
   z-index: 0;
@@ -15,14 +15,14 @@
   font-size: 1.75rem;
   font-weight: 700;
   text-align: center;
-  color: #1a1a1a;
+  color: var(--mw-text);
   margin-bottom: 0.5rem;
 }
 
 .testimonials-subtitle {
   font-size: 0.95rem;
   text-align: center;
-  color: #666;
+  color: var(--mw-muted);
   margin-bottom: 2.5rem;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .testimonial-card {
-  background: white;
+  background: linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035));
   border-radius: 10px;
   padding: 1.25rem 1rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -84,7 +84,7 @@
 .testimonial-name {
   font-size: 0.95rem;
   font-weight: 700;
-  color: #1a1a1a;
+  color: var(--mw-text);
   margin: 0;
   text-align: center;
 }
@@ -102,7 +102,7 @@
 .testimonial-feedback {
   font-size: 0.75rem;
   line-height: 1.4;
-  color: #333;
+  color: var(--mw-text);
   font-style: italic;
   margin-bottom: 0.75rem;
   flex-grow: 1;
@@ -117,7 +117,7 @@
 
 .author-company {
   font-size: 0.7rem;
-  color: #007bff;
+  color: var(--mw-cyan);
   font-weight: 500;
   margin: 0;
 }

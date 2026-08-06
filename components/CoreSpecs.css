@@ -1,7 +1,7 @@
 .core-specs {
   position: relative;
   padding: 4rem 1rem;
-  background: radial-gradient(1200px 400px at 50% -50%, #eef2ff 0%, #ffffff 60%);
+  background: radial-gradient(1200px 400px at 50% -50%, rgba(94,234,212,0.12) 0%, transparent 60%);
 }
 
 .core-specs__container {
@@ -13,7 +13,7 @@
   text-align: center;
   font-size: 2rem;
   font-weight: 800;
-  color: #111827;
+  color: var(--mw-text);
   margin-bottom: 2.5rem;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .core-specs__card {
-  background: #ffffff;
+  background: transparent;
   border: 1px solid #eef2f7;
   border-radius: 1rem;
   padding: 1.5rem;
@@ -59,20 +59,20 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 1rem;
-  color: #1f2937;
+  color: var(--mw-text);
 }
 
-.core-specs__icon--blue { background: #eff6ff; color: #2563eb; }
+.core-specs__icon--blue { background: rgba(94,234,212,0.12); color: #5eead4; }
 .core-specs__icon--red { background: #fee2e2; color: #dc2626; }
 .core-specs__icon--cyan { background: #ecfeff; color: #0891b2; }
-.core-specs__icon--purple { background: #f5f3ff; color: #7c3aed; }
+.core-specs__icon--purple { background: rgba(94,234,212,0.12); color: #5eead4; }
 
 .core-specs__svg { width: 1.75rem; height: 1.75rem; }
 
 .core-specs__card-title {
   font-size: 1rem;
   font-weight: 700;
-  color: #111827;
+  color: var(--mw-text);
   margin-bottom: 0.5rem;
 }
 
@@ -96,7 +96,7 @@
   width: 100%;
   border-collapse: collapse;
   border: 1px solid #e5e7eb;
-  background: #ffffff;
+  background: transparent;
   border-radius: 0.75rem;
   overflow: hidden;
 }

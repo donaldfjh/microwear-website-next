@@ -7,7 +7,7 @@ export const WhyChooseUs: React.FC = () => {
       icon: "🏭",
       title: "15+ Years Experience",
       description:
-        "Deep expertise in wearable technology manufacturing. Professional OEM/ODM partner serving 500+ B2B clients worldwide.",
+        "Deep expertise in wearable technology manufacturing. Professional OEM partner serving 500+ B2B clients worldwide.",
     },
     {
       icon: "✅",
@@ -29,7 +29,7 @@ export const WhyChooseUs: React.FC = () => {
     },
     {
       icon: "🔧",
-      title: "Custom ODM/OEM",
+      title: "Custom OEM",
       description:
         "Full customization: hardware, software, branding, packaging. Your vision, our manufacturing expertise.",
     },
@@ -46,7 +46,7 @@ export const WhyChooseUs: React.FC = () => {
       <div className="why-choose-us-container">
         <h2 className="why-choose-us-title">Why 500+ B2B Partners Trust Microwear</h2>
         <p className="why-choose-us-subtitle">
-          Professional AI glasses and smartwatch OEM/ODM manufacturer with proven track record
+          Professional AI glasses and smartwatch OEM manufacturer with proven track record
         </p>
         <div className="features-grid">
           {features.map((feature, index) => (

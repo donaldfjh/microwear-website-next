@@ -55,7 +55,7 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({ products }) => {
   const pageDescription =
     filters.category === "AI Glasses"
       ? "Next-generation smart glasses with AI assistant and AR capabilities"
-      : "Browse complete microwear smartwatch collection - OEM/ODM manufacturer direct with ISO9001 certification. Wholesale bulk orders, B2B pricing, free samples.";
+      : "Browse complete microwear smartwatch collection - OEM manufacturer direct with ISO9001 certification. Wholesale bulk orders, B2B pricing, free samples.";
 
   return (
     <div className="product-catalog-page">

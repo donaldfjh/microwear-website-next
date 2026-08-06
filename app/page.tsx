@@ -12,26 +12,20 @@ export const metadata: Metadata = {
   title:
     "Microwear — Official Site | Smartwatch & AI Glasses OEM Manufacturer China",
   description:
-    "Microwear — official smartwatch & AI glasses manufacturer. Explore our Microwear smartwatch collection, AI-powered glasses, and wearable devices. ISO9001 certified OEM/ODM factory, wholesale bulk orders from $15. 500+ B2B partners worldwide. Get free quote today.",
+    "Microwear — official smartwatch & AI glasses manufacturer. Explore our Microwear smartwatch collection, AI-powered glasses, and wearable devices. ISO9001 certified OEM factory, wholesale bulk orders from $15. 500+ B2B partners worldwide. Get free quote today.",
   keywords: [
-    // 品牌核心词
     "Microwear",
     "Microwear smartwatch",
     "Microwear official",
     "Microwear manufacturer",
     "Microwear factory",
-    "Microwear smartwatch",
     "Microwear smart watches",
     "Microwear wearable",
     "Microwear smartwatch manufacturer",
     "Microwear AI glasses manufacturer",
-    
-    // B2B 核心词（高优先级）
     "smartwatch manufacturer China",
     "smartwatch OEM supplier Shenzhen",
     "wearable device manufacturer",
-    
-    // 产品类型 + B2B
     "fitness tracker manufacturer",
     "rugged smartwatch OEM",
     "kids smartwatch factory",
@@ -40,8 +34,6 @@ export const metadata: Metadata = {
     "AI glasses manufacturer",
     "telephone glasses OEM",
     "camera glasses manufacturer",
-    
-    // 采购意图词
     "smartwatch wholesale bulk",
     "custom smartwatch OEM",
     "white label smartwatch",
@@ -61,52 +53,184 @@ export const metadata: Metadata = {
   },
 };
 
+const glanceRows: [string, string][] = [
+  ["Company", "Microwear (Shenzhen NJY Technology Co., Ltd)"],
+  ["Founded", "2008 — 15+ years wearable OEM"],
+  ["Location", "Nanshan, Shenzhen, China"],
+  ["MOQ", "From 100 pcs per model"],
+  [
+    "Wholesale price range",
+    "Typically $15–50 USD (model & customization dependent)",
+  ],
+  ["Production capacity", "8 SMT lines, 2M+ units/year, 300+ staff"],
+  [
+    "Lead time",
+    "Samples in 7 days; bulk 15–25 days after sample approval",
+  ],
+  [
+    "Certifications",
+    "ISO9001:2015, CE, FCC, RoHS (BQB/REACH on request)",
+  ],
+  ["Customization", "Logo, firmware, SDK, packaging, white-label app"],
+  ["Markets served", "500+ B2B partners in 30+ countries"],
+];
+
+const advantages = [
+  {
+    index: "01",
+    title: "Production Capacity",
+    body: "8 SMT lines, 2M+ units/year",
+  },
+  {
+    index: "02",
+    title: "Quality Assurance",
+    body: "ISO9001, CE, FCC certified",
+  },
+  {
+    index: "03",
+    title: "Custom Solutions",
+    body: "Logo, firmware, packaging",
+  },
+  {
+    index: "04",
+    title: "Fast Delivery",
+    body: "7-day samples, 15-25 day bulk",
+  },
+];
+
+const solutions = [
+  {
+    href: "/products/fitness-tracker",
+    title: "Fitness Tracker",
+    body: "Heart rate, SpO2, GPS tracking, 100+ sport modes",
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+      </svg>
+    ),
+  },
+  {
+    href: "/products/kids-smartwatch",
+    title: "Kids Smartwatch",
+    body: "GPS tracking, SOS button, parental controls",
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="12" cy="12" r="10" />
+        <path d="M12 6v6l4 2" />
+      </svg>
+    ),
+  },
+  {
+    href: "/products/rugged-smartwatch",
+    title: "Rugged Smartwatch",
+    body: "IP68 waterproof, MIL-STD-810H certified",
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+      </svg>
+    ),
+  },
+  {
+    href: "/products/health-smartwatch",
+    title: "Health Smartwatch",
+    body: "ECG, SpO2, blood pressure monitoring",
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+      </svg>
+    ),
+  },
+];
+
+const faqs = [
+  {
+    q: "What is Microwear?",
+    a: "Microwear (Shenzhen NJY Technology Co., Ltd) is a smartwatch and AI glasses OEM manufacturer founded in 2008 in Shenzhen, China. The factory runs 8 SMT lines with 2M+ units/year capacity and supplies 500+ B2B partners in 30+ countries under ISO9001:2015 production.",
+  },
+  {
+    q: "What is the MOQ and wholesale price for Microwear?",
+    a: "Standard MOQ starts at 100 pieces per model. Wholesale pricing typically ranges from $15–50 USD depending on sensors, display, and customization. Qualified B2B buyers can request free samples; quotes are usually returned within 24 hours.",
+  },
+  {
+    q: "Where is Microwear located?",
+    a: "Microwear headquarters and factory are in Nanshan District, Shenzhen, China. The facility operates 8 SMT lines, employs 300+ staff, and ships CE/FCC/RoHS-certified wearables worldwide.",
+  },
+  {
+    q: "What certifications does Microwear have?",
+    a: "Microwear is ISO9001:2015 certified. Standard product shipments include CE, FCC, and RoHS. Additional documentation such as BQB or REACH can be arranged for specific markets on request.",
+  },
+  {
+    q: "What can Microwear customize for OEM orders?",
+    a: "Microwear OEM focuses on branding and configuration of existing base models — laser logo, boot screen, packaging, watch faces, firmware language packs, and optional SDK/app white-label. Samples typically ship in 7 days; bulk production is usually 15–25 days after approval.",
+  },
+  {
+    q: "How fast can Microwear deliver samples and bulk orders?",
+    a: "Functional samples are typically ready within 7 days after requirements are confirmed. Mass production usually takes 15–25 days after sample approval, depending on order quantity and customization depth.",
+  },
+];
+
+const partners = [
+  { region: "Europe", count: "150+ Partners" },
+  { region: "Americas", count: "120+ Partners" },
+  { region: "Asia Pacific", count: "180+ Partners" },
+  { region: "Middle East", count: "50+ Partners" },
+];
+
 export default async function HomePage() {
   const products = await getProducts();
-  
-  // 精选 6 款产品（手表 + AI 眼镜混合）
   const featuredProducts = products.slice(0, 6);
 
-  // JSON-LD Structured Data - 简化版
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Microwear",
-    "url": "https://microwear.info",
-    "logo": "https://microwear.info/logo.png",
-    "description": "Professional smartwatch OEM manufacturer with 15+ years experience. CE, FCC, RoHS certified factory serving 500+ B2B partners worldwide.",
-    "address": {
+    name: "Microwear",
+    url: "https://microwear.info",
+    logo: "https://microwear.info/logo.png",
+    description:
+      "Professional smartwatch OEM manufacturer with 15+ years experience. CE, FCC, RoHS certified factory serving 500+ B2B partners worldwide.",
+    address: {
       "@type": "PostalAddress",
-      "addressLocality": "Shenzhen",
-      "addressCountry": "CN"
+      addressLocality: "Shenzhen",
+      addressCountry: "CN",
     },
-    "contactPoint": {
+    contactPoint: {
       "@type": "ContactPoint",
-      "telephone": "+852 6733 7121",
-      "contactType": "sales",
-      "areaServed": "Global"
-    }
+      telephone: "+852 6733 7121",
+      contactType: "sales",
+      areaServed: "Global",
+    },
   };
 
-  // WebSite schema with SearchAction for rich results
   const webSiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Microwear",
-    "url": "https://microwear.info",
-    "potentialAction": {
+    name: "Microwear",
+    url: "https://microwear.info",
+    potentialAction: {
       "@type": "SearchAction",
-      "target": {
+      target: {
         "@type": "EntryPoint",
-        "urlTemplate": "https://microwear.info/products?q={search_term_string}"
+        urlTemplate: "https://microwear.info/products?q={search_term_string}",
       },
-      "query-input": "required name=search_term_string"
-    }
+      "query-input": "required name=search_term_string",
+    },
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.a,
+      },
+    })),
   };
 
   return (
     <div className="home-page">
-      {/* Structured Data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
@@ -116,745 +240,243 @@ export default async function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }}
       />
       <LocalBusinessSchema />
-      
-      {/* Hero Section - B2B focused */}
+
       <HeroSection
-        title="Microwear — Smartwatch & AI Glasses OEM Manufacturer"
-        subtitle="15+ Years B2B Experience | 500+ Partners | MOQ 100pcs | CE/FCC/RoHS Certified"
+        title="Smartwatch & AI Glasses OEM Manufacturer"
+        subtitle="Microwear is a Shenzhen-based smartwatch and AI glasses OEM manufacturer founded in 2008. MOQ from 100pcs, wholesale typically $15–50, ISO9001 / CE / FCC / RoHS certified — serving 500+ B2B partners across 30+ countries."
         ctaText="Get Free Quote"
         ctaLink="/contact"
         secondaryCtaText="View Products"
         secondaryCtaLink="/products"
       />
 
-      {/* Certifications Bar */}
       <CertificationBar />
 
-      {/* B2B Core Advantages - 4 points */}
-      <section className="b2b-advantages" style={{
-        padding: '80px 0',
-        background: 'linear-gradient(180deg, #0f172a 0%, #1e293b 100%)'
-      }}>
-        <div className="container">
-          <h2 style={{
-            textAlign: 'center',
-            fontSize: '36px',
-            marginBottom: '60px',
-            color: 'white'
-          }}>
-            Why Partner With Microwear
-          </h2>
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(4, 1fr)',
-            gap: '32px'
-          }}>
-            <div style={{
-              padding: '32px',
-              background: 'rgba(255,255,255,0.05)',
-              borderRadius: '16px',
-              border: '1px solid rgba(255,255,255,0.1)',
-              textAlign: 'center'
-            }}>
-              <div style={{ fontSize: '42px', marginBottom: '16px' }}>🏭</div>
-              <h3 style={{ fontSize: '20px', fontWeight: '600', marginBottom: '12px', color: 'white' }}>
-                Production Capacity
-              </h3>
-              <p style={{ color: '#94a3b8', lineHeight: '1.6' }}>
-                8 SMT lines, 2M+ units/year
-              </p>
-            </div>
-            <div style={{
-              padding: '32px',
-              background: 'rgba(255,255,255,0.05)',
-              borderRadius: '16px',
-              border: '1px solid rgba(255,255,255,0.1)',
-              textAlign: 'center'
-            }}>
-              <div style={{ fontSize: '42px', marginBottom: '16px' }}>✅</div>
-              <h3 style={{ fontSize: '20px', fontWeight: '600', marginBottom: '12px', color: 'white' }}>
-                Quality Assurance
-              </h3>
-              <p style={{ color: '#94a3b8', lineHeight: '1.6' }}>
-                ISO9001, CE, FCC certified
-              </p>
-            </div>
-            <div style={{
-              padding: '32px',
-              background: 'rgba(255,255,255,0.05)',
-              borderRadius: '16px',
-              border: '1px solid rgba(255,255,255,0.1)',
-              textAlign: 'center'
-            }}>
-              <div style={{ fontSize: '42px', marginBottom: '16px' }}>🔧</div>
-              <h3 style={{ fontSize: '20px', fontWeight: '600', marginBottom: '12px', color: 'white' }}>
-                Custom Solutions
-              </h3>
-              <p style={{ color: '#94a3b8', lineHeight: '1.6' }}>
-                Logo, firmware, packaging
-              </p>
-            </div>
-            <div style={{
-              padding: '32px',
-              background: 'rgba(255,255,255,0.05)',
-              borderRadius: '16px',
-              border: '1px solid rgba(255,255,255,0.1)',
-              textAlign: 'center'
-            }}>
-              <div style={{ fontSize: '42px', marginBottom: '16px' }}>🚚</div>
-              <h3 style={{ fontSize: '20px', fontWeight: '600', marginBottom: '12px', color: 'white' }}>
-                Fast Delivery
-              </h3>
-              <p style={{ color: '#94a3b8', lineHeight: '1.6' }}>
-                7-day samples, 15-25 day bulk
-              </p>
+      <section className="section-shell section-shell--compact geo-key-facts">
+        <div className="home-orb home-orb--a" aria-hidden />
+        <div className="home-container home-container--narrow">
+          <h2 className="section-title">Microwear at a Glance</h2>
+          <p className="section-subtitle">
+            Key factory facts buyers and AI systems use when comparing China
+            smartwatch OEM suppliers.
+          </p>
+          <div className="glass-panel">
+            <div className="glance-table-wrap">
+              <table className="glance-table">
+                <thead>
+                  <tr>
+                    <th>Fact</th>
+                    <th>Microwear</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {glanceRows.map(([fact, value]) => (
+                    <tr key={fact}>
+                      <td>{fact}</td>
+                      <td>{value}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Featured Products - 6 items */}
-      <section className="featured-products">
-        <div className="container">
+      <section className="section-shell b2b-advantages">
+        <div className="home-container">
+          <h2 className="section-title">Why Partner With Microwear</h2>
+          <div className="adv-grid">
+            {advantages.map((item) => (
+              <div key={item.index} className="glass-card">
+                <div className="glass-card__index">{item.index}</div>
+                <h3>{item.title}</h3>
+                <p>{item.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section-shell featured-products">
+        <div className="home-container">
           <ScrollReveal>
-            <h2 style={{
-              textAlign: 'center',
-              fontSize: '36px',
-              marginBottom: '48px'
-            }}>
-              Featured Products
-            </h2>
+            <h2 className="section-title">Featured Products</h2>
           </ScrollReveal>
-          <ScrollReveal delay={0.2}>
+          <ScrollReveal delay={0.15}>
             <HomeProductGrid products={featuredProducts} />
           </ScrollReveal>
-          <div style={{ textAlign: 'center', marginTop: '40px' }}>
-            <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
-              <Link href="/products" className="view-all-btn">
-                View All Microwear Smartwatch Models →
-              </Link>
-              <Link href="/about" className="view-all-btn" style={{ background: 'transparent', border: '2px solid #0ea5e9', color: '#0ea5e9' }}>
-                About Microwear →
-              </Link>
-            </div>
+          <div className="home-cta-row">
+            <Link href="/products" className="home-btn home-btn--primary">
+              View All Microwear Smartwatch Models →
+            </Link>
+            <Link href="/about" className="home-btn home-btn--ghost">
+              About Microwear →
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* B2B Solutions - 4 categories */}
-      <section className="b2b-solutions" style={{
-        padding: '100px 0',
-        background: '#0f172a'
-      }}>
-        <div className="container">
-          <div style={{
-            textAlign: 'center',
-            marginBottom: '80px'
-          }}>
-            <span style={{
-              display: 'inline-block',
-              padding: '8px 20px',
-              background: 'rgba(14, 165, 233, 0.1)',
-              border: '1px solid rgba(14, 165, 233, 0.3)',
-              borderRadius: '100px',
-              color: '#0ea5e9',
-              fontSize: '14px',
-              fontWeight: '500',
-              marginBottom: '20px',
-              letterSpacing: '0.5px'
-            }}>
-              INDUSTRY SOLUTIONS
-            </span>
-            <h2 style={{
-              fontSize: '42px',
-              fontWeight: '700',
-              color: 'white',
-              marginBottom: '16px',
-              letterSpacing: '-0.5px'
-            }}>
-              Custom Solutions for Every Segment
-            </h2>
-            <p style={{
-              color: '#64748b',
-              fontSize: '18px',
-              maxWidth: '600px',
-              margin: '0 auto',
-              lineHeight: '1.7'
-            }}>
-              From fitness tracking to kids safety, we deliver specialized OEM solutions tailored to your target market.
+      <section className="section-shell b2b-solutions">
+        <div className="home-orb home-orb--b" aria-hidden />
+        <div className="home-container">
+          <div style={{ textAlign: "center", marginBottom: 48 }}>
+            <span className="section-eyebrow">Industry Solutions</span>
+            <h2 className="section-title">Custom Solutions for Every Segment</h2>
+            <p className="section-subtitle">
+              From fitness tracking to kids safety, we deliver specialized OEM
+              solutions tailored to your target market.
             </p>
           </div>
-
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(4, 1fr)',
-            gap: '24px'
-          }}>
-            {/* Fitness Tracker */}
-            <Link href="/products/fitness-tracker" style={{
-              position: 'relative',
-              padding: '40px 28px',
-              background: 'linear-gradient(180deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.8) 100%)',
-              borderRadius: '20px',
-              border: '1px solid rgba(255,255,255,0.06)',
-              textAlign: 'left',
-              textDecoration: 'none',
-              overflow: 'hidden',
-              transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)'
-            }}>
-              <div style={{
-                position: 'absolute',
-                top: '0',
-                right: '0',
-                width: '120px',
-                height: '120px',
-                background: 'radial-gradient(circle, rgba(14, 165, 233, 0.15) 0%, transparent 70%)',
-                borderRadius: '50%',
-                transform: 'translate(30%, -30%)'
-              }} />
-              <div style={{
-                width: '56px',
-                height: '56px',
-                background: 'linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%)',
-                borderRadius: '14px',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                marginBottom: '24px'
-              }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                </svg>
-              </div>
-              <h3 style={{
-                fontSize: '20px',
-                fontWeight: '600',
-                marginBottom: '12px',
-                color: 'white'
-              }}>
-                Fitness Tracker
-              </h3>
-              <p style={{
-                color: '#94a3b8',
-                fontSize: '14px',
-                lineHeight: '1.6',
-                marginBottom: '20px'
-              }}>
-                Heart rate, SpO2, GPS tracking, 100+ sport modes
-              </p>
-              <span style={{
-                color: '#0ea5e9',
-                fontSize: '14px',
-                fontWeight: '500',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '6px'
-              }}>
-                Learn more
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </span>
-            </Link>
-
-            {/* Kids Smartwatch */}
-            <Link href="/products/kids-smartwatch" style={{
-              position: 'relative',
-              padding: '40px 28px',
-              background: 'linear-gradient(180deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.8) 100%)',
-              borderRadius: '20px',
-              border: '1px solid rgba(255,255,255,0.06)',
-              textAlign: 'left',
-              textDecoration: 'none',
-              overflow: 'hidden',
-              transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)'
-            }}>
-              <div style={{
-                position: 'absolute',
-                top: '0',
-                right: '0',
-                width: '120px',
-                height: '120px',
-                background: 'radial-gradient(circle, rgba(168, 85, 247, 0.15) 0%, transparent 70%)',
-                borderRadius: '50%',
-                transform: 'translate(30%, -30%)'
-              }} />
-              <div style={{
-                width: '56px',
-                height: '56px',
-                background: 'linear-gradient(135deg, #a855f7 0%, #7c3aed 100%)',
-                borderRadius: '14px',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                marginBottom: '24px'
-              }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="12" cy="12" r="10" />
-                  <path d="M12 6v6l4 2" />
-                </svg>
-              </div>
-              <h3 style={{
-                fontSize: '20px',
-                fontWeight: '600',
-                marginBottom: '12px',
-                color: 'white'
-              }}>
-                Kids Smartwatch
-              </h3>
-              <p style={{
-                color: '#94a3b8',
-                fontSize: '14px',
-                lineHeight: '1.6',
-                marginBottom: '20px'
-              }}>
-                GPS tracking, SOS button, parental controls
-              </p>
-              <span style={{
-                color: '#a855f7',
-                fontSize: '14px',
-                fontWeight: '500',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '6px'
-              }}>
-                Learn more
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </span>
-            </Link>
-
-            {/* Rugged Smartwatch */}
-            <Link href="/products/rugged-smartwatch" style={{
-              position: 'relative',
-              padding: '40px 28px',
-              background: 'linear-gradient(180deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.8) 100%)',
-              borderRadius: '20px',
-              border: '1px solid rgba(255,255,255,0.06)',
-              textAlign: 'left',
-              textDecoration: 'none',
-              overflow: 'hidden',
-              transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)'
-            }}>
-              <div style={{
-                position: 'absolute',
-                top: '0',
-                right: '0',
-                width: '120px',
-                height: '120px',
-                background: 'radial-gradient(circle, rgba(245, 158, 11, 0.15) 0%, transparent 70%)',
-                borderRadius: '50%',
-                transform: 'translate(30%, -30%)'
-              }} />
-              <div style={{
-                width: '56px',
-                height: '56px',
-                background: 'linear-gradient(135deg, #f59e0b 0%, #d97706 100%)',
-                borderRadius: '14px',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                marginBottom: '24px'
-              }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                </svg>
-              </div>
-              <h3 style={{
-                fontSize: '20px',
-                fontWeight: '600',
-                marginBottom: '12px',
-                color: 'white'
-              }}>
-                Rugged Smartwatch
-              </h3>
-              <p style={{
-                color: '#94a3b8',
-                fontSize: '14px',
-                lineHeight: '1.6',
-                marginBottom: '20px'
-              }}>
-                IP68 waterproof, MIL-STD-810H certified
-              </p>
-              <span style={{
-                color: '#f59e0b',
-                fontSize: '14px',
-                fontWeight: '500',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '6px'
-              }}>
-                Learn more
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </span>
-            </Link>
-
-            {/* Health Smartwatch */}
-            <Link href="/products/health-smartwatch" style={{
-              position: 'relative',
-              padding: '40px 28px',
-              background: 'linear-gradient(180deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.8) 100%)',
-              borderRadius: '20px',
-              border: '1px solid rgba(255,255,255,0.06)',
-              textAlign: 'left',
-              textDecoration: 'none',
-              overflow: 'hidden',
-              transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)'
-            }}>
-              <div style={{
-                position: 'absolute',
-                top: '0',
-                right: '0',
-                width: '120px',
-                height: '120px',
-                background: 'radial-gradient(circle, rgba(34, 197, 94, 0.15) 0%, transparent 70%)',
-                borderRadius: '50%',
-                transform: 'translate(30%, -30%)'
-              }} />
-              <div style={{
-                width: '56px',
-                height: '56px',
-                background: 'linear-gradient(135deg, #22c55e 0%, #16a34a 100%)',
-                borderRadius: '14px',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                marginBottom: '24px'
-              }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-                </svg>
-              </div>
-              <h3 style={{
-                fontSize: '20px',
-                fontWeight: '600',
-                marginBottom: '12px',
-                color: 'white'
-              }}>
-                Health Smartwatch
-              </h3>
-              <p style={{
-                color: '#94a3b8',
-                fontSize: '14px',
-                lineHeight: '1.6',
-                marginBottom: '20px'
-              }}>
-                ECG, SpO2, blood pressure monitoring
-              </p>
-              <span style={{
-                color: '#22c55e',
-                fontSize: '14px',
-                fontWeight: '500',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '6px'
-              }}>
-                Learn more
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </span>
-            </Link>
+          <div className="solutions-grid">
+            {solutions.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="glass-card glass-card--link"
+              >
+                <div className="glass-card__icon">{item.icon}</div>
+                <h3>{item.title}</h3>
+                <p>{item.body}</p>
+                <span className="glass-card__more">
+                  Learn more
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </span>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Trusted Partners Section */}
-      <section className="trusted-partners" style={{
-        padding: '60px 0',
-        background: '#1e293b'
-      }}>
-        <div className="container">
-          <div style={{ textAlign: 'center', marginBottom: '40px' }}>
-            <span style={{
-              display: 'inline-block',
-              padding: '6px 16px',
-              background: 'rgba(34, 197, 94, 0.1)',
-              border: '1px solid rgba(34, 197, 94, 0.3)',
-              borderRadius: '100px',
-              color: '#22c55e',
-              fontSize: '13px',
-              fontWeight: '500',
-              marginBottom: '16px'
-            }}>
-              TRUSTED BY GLOBAL BRANDS
-            </span>
-            <h2 style={{
-              fontSize: '28px',
-              fontWeight: '600',
-              color: 'white',
-              marginBottom: '8px'
-            }}>
-              500+ B2B Partners Worldwide
-            </h2>
-            <p style={{
-              color: '#64748b',
-              fontSize: '16px'
-            }}>
-              From startups to enterprise brands, we power wearable solutions across 30+ countries
+      <section className="section-shell--compact trusted-partners">
+        <div className="home-container">
+          <div style={{ textAlign: "center", marginBottom: 36 }}>
+            <span className="section-eyebrow">Trusted by Global Brands</span>
+            <h2 className="section-title">500+ B2B Partners Worldwide</h2>
+            <p className="section-subtitle">
+              From startups to enterprise brands, we power wearable solutions
+              across 30+ countries
             </p>
           </div>
-          <div style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            gap: '48px',
-            flexWrap: 'wrap'
-          }}>
-            <div style={{
-              padding: '20px 32px',
-              background: 'rgba(255,255,255,0.05)',
-              borderRadius: '12px',
-              border: '1px solid rgba(255,255,255,0.1)',
-              textAlign: 'center'
-            }}>
-              <div style={{ fontSize: '24px', fontWeight: '700', color: '#22c55e' }}>🇪🇺 Europe</div>
-              <div style={{ fontSize: '14px', color: '#94a3b8', marginTop: '4px' }}>150+ Partners</div>
-            </div>
-            <div style={{
-              padding: '20px 32px',
-              background: 'rgba(255,255,255,0.05)',
-              borderRadius: '12px',
-              border: '1px solid rgba(255,255,255,0.1)',
-              textAlign: 'center'
-            }}>
-              <div style={{ fontSize: '24px', fontWeight: '700', color: '#0ea5e9' }}>🇺🇸 Americas</div>
-              <div style={{ fontSize: '14px', color: '#94a3b8', marginTop: '4px' }}>120+ Partners</div>
-            </div>
-            <div style={{
-              padding: '20px 32px',
-              background: 'rgba(255,255,255,0.05)',
-              borderRadius: '12px',
-              border: '1px solid rgba(255,255,255,0.1)',
-              textAlign: 'center'
-            }}>
-              <div style={{ fontSize: '24px', fontWeight: '700', color: '#f59e0b' }}>🇮🇩 Asia Pacific</div>
-              <div style={{ fontSize: '14px', color: '#94a3b8', marginTop: '4px' }}>180+ Partners</div>
-            </div>
-            <div style={{
-              padding: '20px 32px',
-              background: 'rgba(255,255,255,0.05)',
-              borderRadius: '12px',
-              border: '1px solid rgba(255,255,255,0.1)',
-              textAlign: 'center'
-            }}>
-              <div style={{ fontSize: '24px', fontWeight: '700', color: '#a855f7' }}>🇸🇦 Middle East</div>
-              <div style={{ fontSize: '14px', color: '#94a3b8', marginTop: '4px' }}>50+ Partners</div>
-            </div>
+          <div className="partners-row">
+            {partners.map((p) => (
+              <div key={p.region} className="glass-card partner-chip">
+                <div className="partner-chip__region">{p.region}</div>
+                <div className="partner-chip__count">{p.count}</div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* FAQ Section - Brand SEO */}
-      <section className="homepage-faq" style={{
-        padding: '80px 0',
-        background: '#0f172a'
-      }}>
-        <div className="container">
-          <h2 style={{
-            textAlign: 'center',
-            fontSize: '36px',
-            fontWeight: '700',
-            color: 'white',
-            marginBottom: '16px'
-          }}>
+      <section className="section-shell homepage-faq">
+        <div className="home-container">
+          <h2 className="section-title">
             Frequently Asked Questions About Microwear
           </h2>
-          <p style={{
-            textAlign: 'center',
-            color: '#64748b',
-            fontSize: '16px',
-            marginBottom: '48px',
-            maxWidth: '600px',
-            margin: '0 auto 48px'
-          }}>
-            Everything you need to know about Microwear — the leading smartwatch OEM manufacturer from China.
+          <p className="section-subtitle">
+            Everything you need to know about Microwear — the leading smartwatch
+            OEM manufacturer from China.
           </p>
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-            gap: '24px',
-            maxWidth: '900px',
-            margin: '0 auto'
-          }}>
-            <div style={{
-              padding: '28px',
-              background: 'rgba(255,255,255,0.05)',
-              borderRadius: '16px',
-              border: '1px solid rgba(255,255,255,0.08)'
-            }}>
-              <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#0ea5e9', marginBottom: '12px' }}>What is Microwear?</h3>
-              <p style={{ color: '#94a3b8', fontSize: '14px', lineHeight: '1.7' }}>Microwear (Shenzhen NJY Technology) is a professional smartwatch and AI glasses OEM manufacturer founded in 2008. We serve 500+ B2B partners across 30+ countries with ISO9001 certified production.</p>
-            </div>
-            <div style={{
-              padding: '28px',
-              background: 'rgba(255,255,255,0.05)',
-              borderRadius: '16px',
-              border: '1px solid rgba(255,255,255,0.08)'
-            }}>
-              <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#0ea5e9', marginBottom: '12px' }}>What is the MOQ for Microwear OEM orders?</h3>
-              <p style={{ color: '#94a3b8', fontSize: '14px', lineHeight: '1.7' }}>Our standard MOQ starts from 100 pieces for smartwatch orders. We offer flexible terms for first-time partners and provide free samples for qualified B2B buyers.</p>
-            </div>
-            <div style={{
-              padding: '28px',
-              background: 'rgba(255,255,255,0.05)',
-              borderRadius: '16px',
-              border: '1px solid rgba(255,255,255,0.08)'
-            }}>
-              <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#0ea5e9', marginBottom: '12px' }}>Where is Microwear located?</h3>
-              <p style={{ color: '#94a3b8', fontSize: '14px', lineHeight: '1.7' }}>Microwear headquarters and factory is in Shenzhen, China — the global hub for electronics manufacturing. We operate 8 SMT lines with 2M+ units/year capacity and 300+ employees.</p>
-            </div>
-            <div style={{
-              padding: '28px',
-              background: 'rgba(255,255,255,0.05)',
-              borderRadius: '16px',
-              border: '1px solid rgba(255,255,255,0.08)'
-            }}>
-              <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#0ea5e9', marginBottom: '12px' }}>What certifications does Microwear have?</h3>
-              <p style={{ color: '#94a3b8', fontSize: '14px', lineHeight: '1.7' }}>Microwear is ISO9001:2015 certified. All products carry CE, FCC, and RoHS certifications. Additional certifications (BQB, REACH) are available upon request.</p>
-            </div>
+          <div className="faq-grid">
+            {faqs.map((item) => (
+              <div key={item.q} className="glass-card">
+                <h3 style={{ color: "var(--mw-cyan)" }}>{item.q}</h3>
+                <p>{item.a}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* FAQ JSON-LD Structured Data */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "What is Microwear?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Microwear (Shenzhen NJY Technology) is a professional smartwatch and AI glasses OEM manufacturer founded in 2008. We serve 500+ B2B partners across 30+ countries with ISO9001 certified production."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What is the MOQ for Microwear OEM orders?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Our standard MOQ starts from 100 pieces for smartwatch orders. We offer flexible terms for first-time partners and provide free samples for qualified B2B buyers."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Where is Microwear located?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Microwear headquarters and factory is in Shenzhen, China. We operate 8 SMT lines with 2M+ units/year capacity and 300+ employees."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What certifications does Microwear have?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Microwear is ISO9001:2015 certified. All products carry CE, FCC, and RoHS certifications. Additional certifications (BQB, REACH) are available upon request."
-                }
-              }
-            ]
-          })
-        }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      {/* Semantic Keyword Section - Targeting rank 20-50 keywords */}
-      <section className="semantic-keywords-section" style={{
-        padding: '40px 0',
-        background: '#1e293b'
-      }}>
-        <div className="container" style={{ maxWidth: '800px' }}>
-          <h2 style={{
-            fontSize: '24px',
-            fontWeight: '700',
-            color: 'white',
-            marginBottom: '16px',
-            textAlign: 'center'
-          }}>
-            Microwear Smartwatch — Your Complete Guide
-          </h2>
-          <div style={{ color: '#94a3b8', lineHeight: '1.8', fontSize: '15px' }}>
-            <p style={{ marginBottom: '12px' }}>
-              Whether you search for <strong style={{ color: 'white' }}>Microwear smartwatch</strong>, <strong style={{ color: 'white' }}>Microwear smart watches</strong>, or even <strong style={{ color: 'white' }}>micro wear</strong> — you&apos;ll find the same trusted OEM manufacturer. Our smartwatch lineup includes fitness trackers, health monitoring watches, rugged outdoor watches, kids GPS watches, and AMOLED premium wearables.
-            </p>
-            <p style={{ marginBottom: '12px' }}>
-              Every <strong style={{ color: '#0ea5e9' }}>Microwear smartwatch</strong> is designed and manufactured in-house at our Shenzhen facility. From concept to production, we control every step of the process — ensuring consistent quality, competitive pricing, and fast turnaround for <strong style={{ color: '#0ea5e9' }}>smartwatch wholesale bulk</strong> orders.
-            </p>
-            <p>
-              Looking for a <strong style={{ color: '#0ea5e9' }}>smartwatch manufacturer in China</strong>? Microwear has been serving B2B partners since 2008 with full OEM/ODM capabilities, custom firmware, SDK integration, and white-label solutions. <Link href="/products" style={{ color: '#0ea5e9', textDecoration: 'underline' }}>Browse all smartwatch models →</Link>
-            </p>
+      <section className="section-shell--compact semantic-keywords-section">
+        <div className="home-container home-container--tight">
+          <div className="glass-panel" style={{ padding: "36px 28px" }}>
+            <h2 className="section-title" style={{ fontSize: "1.5rem" }}>
+              Microwear Smartwatch OEM — Quick Answers
+            </h2>
+            <div className="seo-block">
+              <p>
+                A <strong>Microwear smartwatch</strong> is a factory-built
+                wearable from Microwear&apos;s Shenzhen OEM line, covering
+                fitness trackers, health monitors, rugged outdoor watches, kids
+                GPS watches, and AMOLED business models — all available for
+                wholesale bulk and white-label branding.
+              </p>
+              <p>
+                Buyers comparing a{" "}
+                <strong className="accent">smartwatch manufacturer in China</strong>{" "}
+                typically evaluate MOQ, certifications, and lead time.
+                Microwear&apos;s baseline is MOQ 100pcs, ISO9001 / CE / FCC /
+                RoHS, 7-day sampling, and 15–25 day bulk production after sample
+                approval.
+              </p>
+              <p>
+                For{" "}
+                <strong className="accent">smartwatch wholesale bulk</strong>{" "}
+                projects, Microwear supports custom logo, firmware, SDK, and
+                packaging under one Shenzhen factory.{" "}
+                <Link href="/products">Browse all smartwatch models →</Link>
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* SEO Text Section - Brand Keyword Density */}
-      <section className="seo-text-section" style={{
-        padding: '80px 0',
-        background: '#1e293b'
-      }}>
-        <div className="container" style={{ maxWidth: '800px' }}>
-          <h2 style={{
-            fontSize: '28px',
-            fontWeight: '700',
-            color: 'white',
-            marginBottom: '24px',
-            textAlign: 'center'
-          }}>
-            What is Microwear?
-          </h2>
-          <div style={{ color: '#94a3b8', lineHeight: '1.8', fontSize: '16px' }}>
-            <p style={{ marginBottom: '16px' }}>
-              <strong style={{ color: 'white' }}>Microwear</strong> is a professional <strong style={{ color: '#0ea5e9' }}>smartwatch OEM manufacturer</strong> and <strong style={{ color: '#0ea5e9' }}>AI glasses factory</strong> based in Shenzhen, China. Founded in 2008, Microwear (Shenzhen NJY Technology Co., Ltd) has grown into one of the leading <strong style={{ color: '#0ea5e9' }}>smartwatch manufacturers in China</strong>, serving 500+ B2B partners across 30+ countries.
-            </p>
-            <p style={{ marginBottom: '16px' }}>
-              Our <strong style={{ color: 'white' }}>Microwear smartwatch</strong> product line includes fitness trackers, health smartwatches, rugged smartwatches, kids smartwatches, and GPS watches — all available for <strong style={{ color: '#0ea5e9' }}>custom OEM orders</strong> with MOQ starting from just 100 pieces. Every Microwear smartwatch is ISO9001 certified with CE, FCC, and RoHS compliance. <Link href="/products" style={{ color: '#0ea5e9', textDecoration: 'underline' }}>Explore our complete smartwatch collection →</Link>
-            </p>
-            <p style={{ marginBottom: '16px' }}>
-              In 2023, Microwear expanded into next-generation wearable technology with our <strong style={{ color: '#0ea5e9' }}>AI glasses</strong> product line — featuring camera modules, voice assistant integration (ChatGPT), and ultra-lightweight 38g design. Like our smartwatches, all Microwear AI glasses support full OEM/ODM customization. <Link href="/ai-glasses" style={{ color: '#0ea5e9', textDecoration: 'underline' }}>Discover Microwear AI glasses →</Link>
-            </p>
-            <p>
-              Whether you need <strong style={{ color: '#0ea5e9' }}>smartwatch wholesale bulk orders</strong>, custom logo engraving, firmware customization, or complete white-label solutions, Microwear delivers factory-direct pricing with 7-day sampling and 15-25 day production turnaround. <Link href="/contact" style={{ color: '#0ea5e9', textDecoration: 'underline' }}>Contact us today</Link> for a free quote.
-            </p>
+      <section className="section-shell seo-text-section">
+        <div className="home-container home-container--tight">
+          <div className="glass-panel" style={{ padding: "40px 28px" }}>
+            <h2 className="section-title">What is Microwear?</h2>
+            <div className="seo-block">
+              <p>
+                <strong>Microwear</strong> is a professional{" "}
+                <strong className="accent">smartwatch OEM manufacturer</strong>{" "}
+                and <strong className="accent">AI glasses factory</strong>{" "}
+                operated by Shenzhen NJY Technology Co., Ltd. Founded in 2008,
+                Microwear focuses on B2B wearable manufacturing — not retail
+                consumer sales — with ISO9001:2015 systems and export
+                certifications for Europe, North America, and emerging markets.
+              </p>
+              <p>
+                The <strong>Microwear smartwatch</strong> catalog includes
+                fitness, health, rugged, kids, and GPS models for{" "}
+                <strong className="accent">custom OEM orders</strong> from 100
+                pieces. Typical wholesale sits in the $15–50 range; exact quotes
+                depend on sensors, display, and branding scope.{" "}
+                <Link href="/products">Explore the smartwatch collection →</Link>
+              </p>
+              <p>
+                Since 2023, Microwear has also supplied{" "}
+                <strong className="accent">AI glasses</strong> OEM projects with
+                camera modules, voice-assistant integration, and lightweight
+                frames — using the same factory QC and customization workflow as
+                its smartwatches.{" "}
+                <Link href="/ai-glasses">Discover Microwear AI glasses →</Link>
+              </p>
+              <p>
+                Note: lead times and pricing can change with component
+                availability and customization depth. For current figures,
+                request a factory quote.{" "}
+                <Link href="/contact">Contact Microwear</Link> for a free
+                consultation within 24 hours.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="cta-section" style={{
-        padding: '80px 0',
-        background: '#0ea5e9',
-        textAlign: 'center'
-      }}>
-        <div className="container">
-          <h2 style={{
-            color: 'white',
-            fontSize: '32px',
-            marginBottom: '20px'
-          }}>
-            Ready to Start Your OEM Project?
-          </h2>
-          <p style={{
-            color: 'rgba(255,255,255,0.9)',
-            marginBottom: '30px'
-          }}>
-            Get a free quote within 24 hours. MOQ starts from 100pcs.
-          </p>
-          <Link href="/contact" style={{
-            display: 'inline-block',
-            padding: '16px 40px',
-            background: 'white',
-            color: '#0ea5e9',
-            borderRadius: '8px',
-            fontWeight: '600',
-            textDecoration: 'none'
-          }}>
+      <section className="home-cta-banner">
+        <div className="glass-panel">
+          <h2>Ready to Start Your OEM Project?</h2>
+          <p>Get a free quote within 24 hours. MOQ starts from 100pcs.</p>
+          <Link href="/contact" className="home-btn home-btn--primary">
             Get Free Quote
           </Link>
         </div>

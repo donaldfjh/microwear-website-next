@@ -15,7 +15,7 @@ export const OrganizationSchema: React.FC = () => {
     url: baseUrl,
     logo: `${baseUrl}/logo.png`,
     description:
-      "Leading OEM/ODM smartwatch manufacturer specializing in health monitoring, GPS tracking, and AI-powered wearable devices.",
+      "Leading OEM smartwatch manufacturer specializing in health monitoring, GPS tracking, and AI-powered wearable devices.",
     foundingDate: "2015",
     founders: [
       {
@@ -59,7 +59,7 @@ export const OrganizationSchema: React.FC = () => {
       "Wearable Technology",
       "Health Monitoring Devices",
       "GPS Tracking",
-      "OEM/ODM Services",
+      "OEM Services",
       "AI Smart Glasses",
     ],
     numberOfEmployees: {

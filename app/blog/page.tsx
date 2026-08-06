@@ -6,9 +6,9 @@ import type { Metadata } from "next";
 import "./BlogPage.css";
 
 export const metadata: Metadata = {
-  title: "Smart Watch Industry Insights | OEM/ODM Trends & Technology | Microwear Blog",
+  title: "Smart Watch Industry Insights | OEM Trends & Technology | Microwear Blog",
   description:
-    "Expert insights on smartwatch industry trends, OEM/ODM manufacturing, wearable technology innovations. Learn about battery life, health sensors, AI features from Microwear's 15+ years of expertise.",
+    "Expert insights on smartwatch industry trends, OEM manufacturing, wearable technology innovations. Learn about battery life, health sensors, AI features from Microwear's 15+ years of expertise.",
   keywords: ["smartwatch industry trends", "OEM manufacturing insights", "wearable technology blog", "smartwatch battery life", "health sensor technology"],
   alternates: {
     canonical: "https://microwear.info/blog",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Smart Watch Industry Insights | Microwear Blog",
     description:
-      "Expert insights on smartwatch industry trends, OEM/ODM manufacturing, wearable technology innovations.",
+      "Expert insights on smartwatch industry trends, OEM manufacturing, wearable technology innovations.",
     type: "website",
   },
 };
@@ -30,7 +30,7 @@ export default async function BlogPage() {
     "@context": "https://schema.org",
     "@type": "Blog",
     "name": "Microwear Smart Watch Industry Blog",
-    "description": "Expert insights on smartwatch industry trends, OEM/ODM manufacturing, and wearable technology innovations",
+    "description": "Expert insights on smartwatch industry trends, OEM manufacturing, and wearable technology innovations",
     "url": "https://microwear.info/blog",
     "publisher": {
       "@type": "Organization",

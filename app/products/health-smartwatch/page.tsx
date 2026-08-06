@@ -106,7 +106,7 @@ export default function HealthSmartwatchPage() {
           }}>
             <div style={{
               padding: '32px',
-              background: 'white',
+              background: 'linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035))', border: '1px solid rgba(255,255,255,0.1)', boxShadow: 'var(--mw-shadow-soft)',
               borderRadius: '12px',
               boxShadow: '0 4px 6px rgba(0,0,0,0.1)'
             }}>
@@ -121,7 +121,7 @@ export default function HealthSmartwatchPage() {
             </div>
             <div style={{
               padding: '32px',
-              background: 'white',
+              background: 'linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035))', border: '1px solid rgba(255,255,255,0.1)', boxShadow: 'var(--mw-shadow-soft)',
               borderRadius: '12px',
               boxShadow: '0 4px 6px rgba(0,0,0,0.1)'
             }}>
@@ -136,7 +136,7 @@ export default function HealthSmartwatchPage() {
             </div>
             <div style={{
               padding: '32px',
-              background: 'white',
+              background: 'linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035))', border: '1px solid rgba(255,255,255,0.1)', boxShadow: 'var(--mw-shadow-soft)',
               borderRadius: '12px',
               boxShadow: '0 4px 6px rgba(0,0,0,0.1)'
             }}>
@@ -227,7 +227,7 @@ export default function HealthSmartwatchPage() {
           }}>
             <Link href="/products/mw-health-ma25" style={{
               textDecoration: 'none',
-              background: 'white',
+              background: 'linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035))', border: '1px solid rgba(255,255,255,0.1)', boxShadow: 'var(--mw-shadow-soft)',
               borderRadius: '12px',
               overflow: 'hidden',
               boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
@@ -257,7 +257,7 @@ export default function HealthSmartwatchPage() {
             </Link>
             <Link href="/products/mw-health-ma18" style={{
               textDecoration: 'none',
-              background: 'white',
+              background: 'linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035))', border: '1px solid rgba(255,255,255,0.1)', boxShadow: 'var(--mw-shadow-soft)',
               borderRadius: '12px',
               overflow: 'hidden',
               boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
@@ -326,7 +326,7 @@ export default function HealthSmartwatchPage() {
           <Link href="/contact" style={{
             display: 'inline-block',
             padding: '16px 40px',
-            background: 'white',
+            background: 'linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035))', border: '1px solid rgba(255,255,255,0.1)', boxShadow: 'var(--mw-shadow-soft)',
             color: '#0ea5e9',
             borderRadius: '8px',
             fontWeight: '600',

@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Microwear Smartwatch Collection | OEM Manufacturer Wholesale Bulk 2026",
   description:
-    "Browse 20+ Microwear smartwatch models — fitness trackers, health watches, rugged & kids smartwatches. OEM/ODM manufacturer direct, wholesale bulk from $15, MOQ 100pcs. ISO9001, CE/FCC/RoHS. Free samples. 500+ B2B partners.",
+    "Browse 20+ Microwear smartwatch models — fitness trackers, health watches, rugged & kids smartwatches. OEM manufacturer direct, wholesale bulk from $15, MOQ 100pcs. ISO9001, CE/FCC/RoHS. Free samples. 500+ B2B partners.",
   keywords: [
     "microwear smartwatch",
     "microwear smartwatches",
@@ -107,7 +107,7 @@ export default async function ProductsPage() {
       {/* Products Intro Section - Enhanced content for better engagement */}
       <section className="products-intro-section" style={{
         padding: '60px 24px',
-        backgroundColor: '#1a1a1a',
+        backgroundColor: 'transparent',
         color: 'white',
         textAlign: 'center'
       }}>
@@ -156,10 +156,10 @@ export default async function ProductsPage() {
         </div>
       </section>
 
-      {/* OEM/ODM Services Section */}
+      {/* OEM Services Section */}
       <section style={{
         padding: '60px 24px',
-        backgroundColor: '#f8f9fa'
+        backgroundColor: 'transparent'
       }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <h2 style={{ 
@@ -176,41 +176,41 @@ export default async function ProductsPage() {
             gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', 
             gap: '32px'
           }}>
-            <div style={{ padding: '32px', background: 'white', borderRadius: '12px' }}>
+            <div style={{ padding: '32px', background: 'linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035))', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '24px', boxShadow: 'var(--mw-shadow-soft)' }}>
               <h3 style={{ fontSize: '20px', fontWeight: '600', marginBottom: '16px' }}>
                 🎨 Custom Logo & Branding
               </h3>
-              <p style={{ color: '#666', lineHeight: '1.6' }}>
+              <p style={{ color: 'var(--mw-muted)', lineHeight: '1.6' }}>
                 Laser engraving, silk printing, or embossed logo on watch face, case back, and packaging. 
                 Build your brand with microwear smartwatch OEM services.
               </p>
             </div>
             
-            <div style={{ padding: '32px', background: 'white', borderRadius: '12px' }}>
+            <div style={{ padding: '32px', background: 'linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035))', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '24px', boxShadow: 'var(--mw-shadow-soft)' }}>
               <h3 style={{ fontSize: '20px', fontWeight: '600', marginBottom: '16px' }}>
                 ⚙️ Hardware Customization
               </h3>
-              <p style={{ color: '#666', lineHeight: '1.6' }}>
+              <p style={{ color: 'var(--mw-muted)', lineHeight: '1.6' }}>
                 Custom sensors, battery capacity, display type (AMOLED/LCD), and strap materials. 
                 Tailor every microwear smart watch to your market needs.
               </p>
             </div>
             
-            <div style={{ padding: '32px', background: 'white', borderRadius: '12px' }}>
+            <div style={{ padding: '32px', background: 'linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035))', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '24px', boxShadow: 'var(--mw-shadow-soft)' }}>
               <h3 style={{ fontSize: '20px', fontWeight: '600', marginBottom: '16px' }}>
                 💻 Software & SDK
               </h3>
-              <p style={{ color: '#666', lineHeight: '1.6' }}>
+              <p style={{ color: 'var(--mw-muted)', lineHeight: '1.6' }}>
                 Custom firmware, app development, and full SDK support. Integrate your unique features 
                 into microwear smartwatch platform.
               </p>
             </div>
             
-            <div style={{ padding: '32px', background: 'white', borderRadius: '12px' }}>
+            <div style={{ padding: '32px', background: 'linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035))', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '24px', boxShadow: 'var(--mw-shadow-soft)' }}>
               <h3 style={{ fontSize: '20px', fontWeight: '600', marginBottom: '16px' }}>
                 📦 Packaging Design
               </h3>
-              <p style={{ color: '#666', lineHeight: '1.6' }}>
+              <p style={{ color: 'var(--mw-muted)', lineHeight: '1.6' }}>
                 Custom retail boxes, user manuals, and accessories. Premium packaging solutions for 
                 your microwear smartwatch products.
               </p>
@@ -223,7 +223,7 @@ export default async function ProductsPage() {
               style={{
                 display: 'inline-block',
                 padding: '16px 48px',
-                backgroundColor: '#1a1a1a',
+                backgroundColor: 'transparent',
                 color: 'white',
                 textDecoration: 'none',
                 borderRadius: '8px',
@@ -253,60 +253,60 @@ export default async function ProductsPage() {
         </h2>
         
         <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
-          <div style={{ padding: '24px', border: '1px solid #e0e0e0', borderRadius: '8px' }}>
+          <div style={{ padding: '24px', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '20px', background: 'linear-gradient(165deg, rgba(255,255,255,0.07), rgba(255,255,255,0.03))' }}>
             <h3 style={{ fontSize: '18px', fontWeight: '600', marginBottom: '12px' }}>
               What is the MOQ for Microwear smartwatch OEM orders?
             </h3>
-            <p style={{ color: '#666', lineHeight: '1.6' }}>
+            <p style={{ color: 'var(--mw-muted)', lineHeight: '1.6' }}>
               Our standard MOQ is 100 pieces per model for OEM orders. We offer flexible terms for first-time B2B partners and provide free samples for qualified buyers.
             </p>
           </div>
           
-          <div style={{ padding: '24px', border: '1px solid #e0e0e0', borderRadius: '8px' }}>
+          <div style={{ padding: '24px', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '20px', background: 'linear-gradient(165deg, rgba(255,255,255,0.07), rgba(255,255,255,0.03))' }}>
             <h3 style={{ fontSize: '18px', fontWeight: '600', marginBottom: '12px' }}>
               How long is the lead time for Microwear smartwatch bulk orders?
             </h3>
-            <p style={{ color: '#666', lineHeight: '1.6' }}>
+            <p style={{ color: 'var(--mw-muted)', lineHeight: '1.6' }}>
               Sample production: 7-10 days. Bulk orders: 15-25 days after deposit and design confirmation. 
               Express production available for urgent projects (10-15 days, +15% surcharge).
             </p>
           </div>
           
-          <div style={{ padding: '24px', border: '1px solid #e0e0e0', borderRadius: '8px' }}>
+          <div style={{ padding: '24px', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '20px', background: 'linear-gradient(165deg, rgba(255,255,255,0.07), rgba(255,255,255,0.03))' }}>
             <h3 style={{ fontSize: '18px', fontWeight: '600', marginBottom: '12px' }}>
               Do you provide free samples of Microwear smartwatch?
             </h3>
-            <p style={{ color: '#666', lineHeight: '1.6' }}>
+            <p style={{ color: 'var(--mw-muted)', lineHeight: '1.6' }}>
               Yes! We provide free samples for qualified B2B buyers. You only need to cover shipping cost. 
               Sample fee will be refunded when you place bulk order.
             </p>
           </div>
           
-          <div style={{ padding: '24px', border: '1px solid #e0e0e0', borderRadius: '8px' }}>
+          <div style={{ padding: '24px', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '20px', background: 'linear-gradient(165deg, rgba(255,255,255,0.07), rgba(255,255,255,0.03))' }}>
             <h3 style={{ fontSize: '18px', fontWeight: '600', marginBottom: '12px' }}>
               What certifications do Microwear smartwatches have?
             </h3>
-            <p style={{ color: '#666', lineHeight: '1.6' }}>
+            <p style={{ color: 'var(--mw-muted)', lineHeight: '1.6' }}>
               All Microwear smartwatch models are CE, FCC, RoHS certified. Our factory is ISO9001:2015 
               certified. Additional certifications (BQB, REACH, etc.) available upon request.
             </p>
           </div>
           
-          <div style={{ padding: '24px', border: '1px solid #e0e0e0', borderRadius: '8px' }}>
+          <div style={{ padding: '24px', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '20px', background: 'linear-gradient(165deg, rgba(255,255,255,0.07), rgba(255,255,255,0.03))' }}>
             <h3 style={{ fontSize: '18px', fontWeight: '600', marginBottom: '12px' }}>
               Can I customize the Microwear smartwatch with my brand logo?
             </h3>
-            <p style={{ color: '#666', lineHeight: '1.6' }}>
+            <p style={{ color: 'var(--mw-muted)', lineHeight: '1.6' }}>
               Absolutely. We offer full OEM customization including laser engraving, silk printing, custom UI/UX, 
               firmware modifications, packaging design, and SDK integration for your Microwear smartwatch brand.
             </p>
           </div>
           
-          <div style={{ padding: '24px', border: '1px solid #e0e0e0', borderRadius: '8px' }}>
+          <div style={{ padding: '24px', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '20px', background: 'linear-gradient(165deg, rgba(255,255,255,0.07), rgba(255,255,255,0.03))' }}>
             <h3 style={{ fontSize: '18px', fontWeight: '600', marginBottom: '12px' }}>
               Where is Microwear smartwatch manufactured?
             </h3>
-            <p style={{ color: '#666', lineHeight: '1.6' }}>
+            <p style={{ color: 'var(--mw-muted)', lineHeight: '1.6' }}>
               All Microwear smartwatches are designed and manufactured in our ISO9001 certified facility 
               in Shenzhen, China. We operate 8 SMT production lines with 2M+ units annual capacity.
             </p>
@@ -378,14 +378,14 @@ export default async function ProductsPage() {
       {/* SEO Text Section - Brand Keyword Density for "microwear smartwatch" */}
       <section style={{
         padding: '60px 24px',
-        backgroundColor: '#f8f9fa',
-        color: '#333'
+        backgroundColor: 'transparent',
+        color: 'var(--mw-text)'
       }}>
         <div style={{ maxWidth: '800px', margin: '0 auto' }}>
           <h2 style={{ fontSize: '28px', fontWeight: '700', marginBottom: '24px', textAlign: 'center' }}>
             Why Choose Microwear Smartwatch for Your Brand?
           </h2>
-          <div style={{ lineHeight: '1.8', fontSize: '16px', color: '#555' }}>
+          <div style={{ lineHeight: '1.8', fontSize: '16px', color: 'var(--mw-muted)' }}>
             <p style={{ marginBottom: '16px' }}>
               <strong>Microwear smartwatch</strong> is a trusted brand among B2B buyers worldwide. As one of the leading <strong>smartwatch OEM manufacturers in China</strong>, Microwear offers 20+ smartwatch models with advanced features including health monitoring, GPS tracking, AMOLED displays, and long battery life — all at competitive wholesale prices starting from $15.
             </p>
@@ -393,7 +393,7 @@ export default async function ProductsPage() {
               Every <strong>Microwear smart watch</strong> is manufactured in our ISO9001 certified factory in Shenzhen, with CE, FCC, and RoHS certifications for global market compliance. Whether you need <strong>smartwatch wholesale bulk orders</strong>, custom logo engraving, or complete white-label solutions, Microwear delivers factory-direct pricing with MOQ starting from just 100 pieces.
             </p>
             <p>
-              Our <strong>Microwear smartwatches</strong> are trusted by 500+ B2B partners across 30+ countries. From fitness trackers to rugged smartwatches, kids smartwatches to health monitoring devices — we have the right product for your target market. <a href="/contact?subject=Smartwatch Wholesale" style={{ color: '#0ea5e9', textDecoration: 'underline' }}>Request a free quote today</a>. Learn more about our company on our <a href="/about" style={{ color: '#0ea5e9', textDecoration: 'underline' }}>About Microwear</a> page. Explore our <a href="/ai-glasses" style={{ color: '#0ea5e9', textDecoration: 'underline' }}>AI glasses collection</a> for next-gen wearable solutions.
+              Our <strong>Microwear smartwatches</strong> are trusted by 500+ B2B partners across 30+ countries. From fitness trackers to rugged smartwatches, kids smartwatches to health monitoring devices — we have the right product for your target market. <a href="/contact?subject=Smartwatch Wholesale" style={{ color: 'var(--mw-cyan)', textDecoration: 'underline' }}>Request a free quote today</a>. Learn more about our company on our <a href="/about" style={{ color: 'var(--mw-cyan)', textDecoration: 'underline' }}>About Microwear</a> page. Explore our <a href="/ai-glasses" style={{ color: 'var(--mw-cyan)', textDecoration: 'underline' }}>AI glasses collection</a> for next-gen wearable solutions.
             </p>
           </div>
         </div>

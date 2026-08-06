@@ -26,7 +26,7 @@ export const LocalBusinessSchema: React.FC = () => {
       "https://microwear.info/images/products/fac2.png",
       "https://microwear.info/images/products/w11poverall.webp"
     ],
-    "description": "Leading smartwatch and AI glasses OEM/ODM manufacturer with 15+ years experience. ISO9001 certified factory specializing in B2B wholesale, custom smartwatch manufacturing, and wearable technology solutions. MOQ 200pcs, wholesale pricing $15-50, free samples for qualified partners.",
+    "description": "Leading smartwatch and AI glasses OEM manufacturer with 15+ years experience. ISO9001 certified factory specializing in B2B wholesale, custom smartwatch manufacturing, and wearable technology solutions. MOQ 200pcs, wholesale pricing $15-50, free samples for qualified partners.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "JiaDa R&D Building, North Hi-Tech Park, Nanshan District",
@@ -126,7 +126,7 @@ export const LocalBusinessSchema: React.FC = () => {
               "itemOffered": {
                 "@type": "Product",
                 "name": "Health & Fitness Smartwatches",
-                "description": "ECG, SpO2, Heart Rate monitoring smartwatches for OEM/ODM"
+                "description": "ECG, SpO2, Heart Rate monitoring smartwatches for OEM"
               }
             },
             {
@@ -186,7 +186,7 @@ export const LocalBusinessSchema: React.FC = () => {
     "knowsAbout": [
       "Smart Watch Manufacturing",
       "Wearable Technology",
-      "OEM/ODM Services",
+      "OEM Services",
       "AI Glasses Development",
       "Health Monitoring Devices",
       "GPS Tracking Technology",

@@ -60,7 +60,7 @@ export function B2BTrustSection() {
           <div className="section-header">
             <h2>Why 500+ Global Brands Choose Microwear</h2>
             <p className="section-subtitle">
-              Trusted OEM/ODM partner for smartwatches and AI glasses worldwide
+              Trusted OEM partner for smartwatches and AI glasses worldwide
             </p>
           </div>
         </ScrollReveal>

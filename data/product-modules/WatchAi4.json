@@ -11,8 +11,7 @@
     "/images/products/Watch-Ai-4/03.webp",
     "/images/products/Watch-Ai-4/04.webp",
     "/images/products/Watch-Ai-4/05.webp",
-    "/images/products/Watch-Ai-4/06.webp",
-    "/images/products/Watch-Ai-4/07.webp"
+    "/images/products/Watch-Ai-4/06.webp"
   ],
   "specifications": {
     "display": "2.0, AMOLED, 410x502 pixels, Always-On Display",
@@ -56,20 +55,20 @@
   ],
   "variants": [
     {
-      "id": "YOUR-PRODUCT-ID-black",
+      "id": "Watch-Ai-3-black",
       "name": "Midnight Black",
       "price": 18,
       "color": "Black",
       "bandMaterial": "Silicone",
-      "image": "/images/products/YOUR-PRODUCT-ID/black.webp"
+      "image": "/images/products/Watch-Ai-3/black.webp"
     },
     {
-      "id": "YOUR-PRODUCT-ID-silver",
+      "id": "Watch-Ai-3-silver",
       "name": "Arctic Silver",
       "price": 18,
       "color": "Silver",
       "bandMaterial": "Silicone",
-      "image": "/images/products/YOUR-PRODUCT-ID/silver.webp"
+      "image": "/images/products/Watch-Ai-3/silver.webp"
     }
   ],
   "useCase": {

@@ -11,7 +11,7 @@ export function ManufacturingCapacity() {
             Manufacturing Excellence & R&D Capability
           </h2>
           <p className="manufacturing-capacity-subtitle">
-            10+ Years of OEM/ODM Expertise | ISO9001 Certified Factory | Global B2B Partner
+            10+ Years of OEM Expertise | ISO9001 Certified Factory | Global B2B Partner
           </p>
         </ScrollReveal>
 
@@ -118,7 +118,7 @@ export function ManufacturingCapacity() {
       <style jsx>{`
         .manufacturing-capacity-section {
           padding: 80px 20px;
-          background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ec 100%);
+          background: radial-gradient(ellipse 60% 50% at 70% 20%, rgba(94,234,212,0.1), transparent 55%), linear-gradient(165deg, #0a1220, #060912);
         }
 
         .manufacturing-capacity-container {
@@ -130,14 +130,14 @@ export function ManufacturingCapacity() {
           text-align: center;
           font-size: 2.5rem;
           font-weight: 700;
-          color: #1a1a1a;
+          color: var(--mw-text);
           margin-bottom: 12px;
         }
 
         .manufacturing-capacity-subtitle {
           text-align: center;
           font-size: 1.1rem;
-          color: #666;
+          color: var(--mw-muted);
           margin-bottom: 50px;
         }
 
@@ -149,16 +149,16 @@ export function ManufacturingCapacity() {
         }
 
         .capacity-card {
-          background: white;
+          background: linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035));
           border-radius: 12px;
           padding: 30px;
-          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+          box-shadow: var(--mw-shadow-soft); border: 1px solid rgba(255,255,255,0.1);
           transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .capacity-card:hover {
           transform: translateY(-5px);
-          box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+          box-shadow: var(--mw-shadow-float);
         }
 
         .capacity-icon {
@@ -169,7 +169,7 @@ export function ManufacturingCapacity() {
         .capacity-card-title {
           font-size: 1.4rem;
           font-weight: 600;
-          color: #1a1a1a;
+          color: var(--mw-text);
           margin-bottom: 20px;
         }
 
@@ -181,9 +181,9 @@ export function ManufacturingCapacity() {
 
         .capacity-list li {
           padding: 8px 0;
-          color: #555;
+          color: var(--mw-muted);
           font-size: 0.95rem;
-          border-bottom: 1px solid #f0f0f0;
+          border-bottom: 1px solid rgba(255,255,255,0.08);
         }
 
         .capacity-list li:last-child {
@@ -191,7 +191,7 @@ export function ManufacturingCapacity() {
         }
 
         .capacity-list strong {
-          color: #2563eb;
+          color: #5eead4;
           font-weight: 600;
         }
 
@@ -201,10 +201,10 @@ export function ManufacturingCapacity() {
           justify-content: center;
           gap: 40px;
           padding: 40px 20px;
-          background: white;
+          background: linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035));
           border-radius: 12px;
           margin-bottom: 40px;
-          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+          box-shadow: var(--mw-shadow-soft); border: 1px solid rgba(255,255,255,0.1);
         }
 
         .metric-item {
@@ -215,14 +215,14 @@ export function ManufacturingCapacity() {
           display: block;
           font-size: 3rem;
           font-weight: 700;
-          color: #2563eb;
+          color: #5eead4;
           margin-bottom: 8px;
         }
 
         .metric-label {
           display: block;
           font-size: 0.95rem;
-          color: #666;
+          color: var(--mw-muted);
           font-weight: 500;
         }
 
@@ -237,28 +237,28 @@ export function ManufacturingCapacity() {
         .manufacturing-cta-button {
           display: inline-block;
           padding: 16px 32px;
-          background: #2563eb;
-          color: white;
+          background: linear-gradient(180deg, #7ef0dc 0%, #5eead4 48%, #2dd4bf 100%);
+          color: #04201c;
           text-decoration: none;
-          border-radius: 8px;
+          border-radius: 999px;
           font-weight: 600;
           font-size: 1.1rem;
           transition: background 0.3s ease, transform 0.2s ease;
         }
 
         .manufacturing-cta-button:hover {
-          background: #1d4ed8;
+          background: #2dd4bf;
           transform: translateY(-2px);
         }
 
         .manufacturing-cta-button.secondary {
-          background: white;
-          color: #2563eb;
-          border: 2px solid #2563eb;
+          background: linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035));
+          color: #5eead4;
+          border: 2px solid #5eead4;
         }
 
         .manufacturing-cta-button.secondary:hover {
-          background: #eff6ff;
+          background: rgba(94,234,212,0.12);
         }
 
         @media (max-width: 768px) {

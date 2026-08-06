@@ -337,12 +337,9 @@ export default function AIGlassesPage() {
                   </Link>
                 </div>
                 <div className="tech-specs-mini">
-                  <span>
-                    <i className="icon-lens"></i> 3 Interchangeable Lenses
-                  </span>
-                  <span>
-                    <i className="icon-wifi"></i> WiFi 4 + BT 5.4
-                  </span>
+                  <span>3 Interchangeable Lenses</span>
+                  <span>WiFi 6+</span>
+                  <span>BT 5.4</span>
                 </div>
               </div>
             </div>
@@ -414,7 +411,7 @@ export default function AIGlassesPage() {
       {/* Detailed Product Parameters Table */}
       <section style={{
         padding: '80px 24px',
-        backgroundColor: '#f8fafc'
+        backgroundColor: 'transparent'
       }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
           <ScrollReveal>
@@ -447,7 +444,7 @@ export default function AIGlassesPage() {
               {/* W Ai 4 Specs Card */}
               <div style={{
                 padding: '32px',
-                background: 'white',
+                background: 'linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035))', border: '1px solid rgba(255,255,255,0.1)', boxShadow: 'var(--mw-shadow-soft)',
                 borderRadius: '16px',
                 boxShadow: '0 4px 6px rgba(0,0,0,0.05)'
               }}>
@@ -508,7 +505,7 @@ export default function AIGlassesPage() {
               {/* W AI 3 Specs Card */}
               <div style={{
                 padding: '32px',
-                background: 'white',
+                background: 'linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035))', border: '1px solid rgba(255,255,255,0.1)', boxShadow: 'var(--mw-shadow-soft)',
                 borderRadius: '16px',
                 boxShadow: '0 4px 6px rgba(0,0,0,0.05)'
               }}>
@@ -845,13 +842,13 @@ export default function AIGlassesPage() {
         </div>
       </section>
 
-      {/* Product Categories Section - ODM Smart Glasses Collection */}
+      {/* Product Categories Section - OEM Smart Glasses Collection */}
       <section className="glasses-categories-section">
         <div className="container">
           <ScrollReveal>
-            <h2 className="section-title">ODM Smart Glasses Categories</h2>
+            <h2 className="section-title">OEM Smart Glasses Categories</h2>
             <p className="section-subtitle">
-              Professional ODM manufacturer for all types of smart eyewear. Custom design, firmware, and branding available.
+              Professional OEM manufacturer for smart eyewear. Custom branding, firmware, and packaging on base models.
             </p>
           </ScrollReveal>
           
@@ -880,9 +877,9 @@ export default function AIGlassesPage() {
           <ScrollReveal>
             <div className="categories-cta">
               <h3>Need Custom Smart Glasses?</h3>
-              <p>We provide full ODM/OEM services for all glasses categories. MOQ 500pcs, 15-25 day production.</p>
+              <p>We provide OEM services for all glasses categories. MOQ 500pcs, 15-25 day production.</p>
               <Link href="/contact?subject=Custom Smart Glasses Project" className="btn btn-primary">
-                Start Your ODM Project
+                Start Your OEM Project
               </Link>
             </div>
           </ScrollReveal>

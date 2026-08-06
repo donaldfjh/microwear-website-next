@@ -1,0 +1,69 @@
+.oem-services-page {
+  min-height: 100vh;
+  color: var(--mw-text);
+  background: transparent;
+}
+
+.oem-services-page .oem-hero {
+  background:
+    radial-gradient(ellipse 60% 50% at 70% 25%, rgba(94, 234, 212, 0.14), transparent 55%),
+    linear-gradient(165deg, #0a1220 0%, #060912 100%) !important;
+  border-bottom: 1px solid var(--mw-border);
+}
+
+.oem-services-page .oem-section-light {
+  background: transparent !important;
+}
+
+.oem-services-page .oem-section-dark {
+  background:
+    radial-gradient(ellipse 50% 40% at 20% 0%, rgba(94, 234, 212, 0.08), transparent 50%),
+    linear-gradient(180deg, rgba(10, 18, 32, 0.9), rgba(6, 9, 18, 0.98)) !important;
+}
+
+.oem-services-page .oem-card {
+  background: linear-gradient(165deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.035)) !important;
+  border: 1px solid var(--mw-border) !important;
+  border-radius: 24px !important;
+  box-shadow: var(--mw-shadow-soft) !important;
+  backdrop-filter: blur(18px);
+  color: var(--mw-text);
+}
+
+.oem-services-page h1,
+.oem-services-page h2,
+.oem-services-page h3 {
+  font-family: var(--font-display);
+  color: var(--mw-text) !important;
+  letter-spacing: -0.02em;
+}
+
+.oem-services-page p,
+.oem-services-page li {
+  color: var(--mw-muted) !important;
+}
+
+.oem-services-page a[href="/contact"],
+.oem-services-page .oem-btn-primary {
+  background: linear-gradient(180deg, #7ef0dc, #5eead4 50%, #2dd4bf) !important;
+  color: #04201c !important;
+  border-radius: 999px !important;
+  border: none !important;
+  font-weight: 650 !important;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset, 0 12px 28px rgba(94, 234, 212, 0.28) !important;
+}
+
+.oem-services-page table {
+  background: rgba(255, 255, 255, 0.03) !important;
+  border-color: var(--mw-border) !important;
+}
+
+.oem-services-page th {
+  background: rgba(6, 9, 18, 0.85) !important;
+  color: var(--mw-cyan) !important;
+}
+
+.oem-services-page td {
+  color: var(--mw-muted) !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}

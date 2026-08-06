@@ -8,7 +8,7 @@
 .product-grid-empty {
   text-align: center;
   padding: 4rem 2rem;
-  color: #666;
+  color: var(--mw-muted);
 }
 
 .product-grid-empty p {

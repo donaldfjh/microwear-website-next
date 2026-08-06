@@ -1,6 +1,6 @@
 .breadcrumb {
   padding: 1rem 0;
-  background-color: #f8f9fa;
+  background-color: transparent;
   border-bottom: 1px solid #e9ecef;
 }
 
@@ -15,19 +15,19 @@
 }
 
 .breadcrumb-link {
-  color: #007bff;
+  color: var(--mw-cyan);
   text-decoration: none;
   font-size: 0.9rem;
   transition: color 0.2s ease;
 }
 
 .breadcrumb-link:hover {
-  color: #0056b3;
+  color: var(--mw-cyan-soft);
   text-decoration: underline;
 }
 
 .breadcrumb-separator {
-  color: #6c757d;
+  color: var(--mw-muted);
   font-size: 0.9rem;
 }
 

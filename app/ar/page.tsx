@@ -18,7 +18,7 @@ export default function ArabicLandingPage() {
       {/* Hero Section */}
       <section style={{
         padding: '80px 24px',
-        backgroundColor: '#1a1a1a',
+        backgroundColor: 'transparent',
         color: 'white',
         textAlign: 'center'
       }}>
@@ -69,31 +69,31 @@ export default function ArabicLandingPage() {
           gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', 
           gap: '32px' 
         }}>
-          <div style={{ padding: '32px', textAlign: 'center', border: '1px solid #e0e0e0', borderRadius: '12px' }}>
+          <div style={{ padding: '32px', textAlign: 'center', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '12px' }}>
             <div style={{ fontSize: '48px', marginBottom: '16px' }}>🏭</div>
             <h3 style={{ fontSize: '20px', marginBottom: '12px' }}>مصنع مباشر</h3>
-            <p style={{ color: '#666' }}>أسعار تنافسية بدون وسطاء</p>
+            <p style={{ color: 'var(--mw-muted)' }}>أسعار تنافسية بدون وسطاء</p>
           </div>
-          <div style={{ padding: '32px', textAlign: 'center', border: '1px solid #e0e0e0', borderRadius: '12px' }}>
+          <div style={{ padding: '32px', textAlign: 'center', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '12px' }}>
             <div style={{ fontSize: '48px', marginBottom: '16px' }}>✅</div>
             <h3 style={{ fontSize: '20px', marginBottom: '12px' }}>شهادات معتمدة</h3>
-            <p style={{ color: '#666' }}>CE، FCC، RoHS، ISO9001</p>
+            <p style={{ color: 'var(--mw-muted)' }}>CE، FCC، RoHS، ISO9001</p>
           </div>
-          <div style={{ padding: '32px', textAlign: 'center', border: '1px solid #e0e0e0', borderRadius: '12px' }}>
+          <div style={{ padding: '32px', textAlign: 'center', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '12px' }}>
             <div style={{ fontSize: '48px', marginBottom: '16px' }}>🚀</div>
             <h3 style={{ fontSize: '20px', marginBottom: '12px' }}>توصيل سريع</h3>
-            <p style={{ color: '#666' }}>7-15 يوم إنتاج، شحن لدول الخليج</p>
+            <p style={{ color: 'var(--mw-muted)' }}>7-15 يوم إنتاج، شحن لدول الخليج</p>
           </div>
-          <div style={{ padding: '32px', textAlign: 'center', border: '1px solid #e0e0e0', borderRadius: '12px' }}>
+          <div style={{ padding: '32px', textAlign: 'center', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '12px' }}>
             <div style={{ fontSize: '48px', marginBottom: '16px' }}>💬</div>
             <h3 style={{ fontSize: '20px', marginBottom: '12px' }}>دعم عربي</h3>
-            <p style={{ color: '#666' }}>فريق مبيعات يتحدث العربية</p>
+            <p style={{ color: 'var(--mw-muted)' }}>فريق مبيعات يتحدث العربية</p>
           </div>
         </div>
       </section>
 
       {/* Products Preview */}
-      <section style={{ padding: '60px 24px', backgroundColor: '#f8f9fa' }}>
+      <section style={{ padding: '60px 24px', backgroundColor: 'transparent' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <h2 style={{ fontSize: '32px', textAlign: 'center', marginBottom: '48px' }}>
             منتجاتنا
@@ -103,7 +103,7 @@ export default function ArabicLandingPage() {
               href="/products"
               style={{
                 padding: '16px 48px',
-                backgroundColor: '#1a1a1a',
+                backgroundColor: 'transparent',
                 color: 'white',
                 textDecoration: 'none',
                 borderRadius: '8px',
@@ -118,7 +118,7 @@ export default function ArabicLandingPage() {
       </section>
 
       {/* Contact CTA */}
-      <section style={{ padding: '60px 24px', backgroundColor: '#1a1a1a', color: 'white', textAlign: 'center' }}>
+      <section style={{ padding: '60px 24px', backgroundColor: 'transparent', color: 'white', textAlign: 'center' }}>
         <h2 style={{ fontSize: '32px', marginBottom: '24px' }}>
           جاهز لبدء طلبك؟
         </h2>

@@ -1,8 +1,10 @@
 .filter-panel {
-  background-color: #ffffff;
-  border-radius: 8px;
+  background: linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.04));
+  border-radius: 22px;
   padding: 1.5rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--mw-shadow-soft);
+  border: 1px solid var(--mw-border);
+  backdrop-filter: blur(18px);
 }
 
 .filter-header {
@@ -11,19 +13,19 @@
   align-items: center;
   margin-bottom: 1.5rem;
   padding-bottom: 1rem;
-  border-bottom: 2px solid #e0e0e0;
+  border-bottom: 2px solid rgba(255,255,255,0.12);
 }
 
 .filter-header h3 {
   margin: 0;
   font-size: 1.25rem;
-  color: #333;
+  color: var(--mw-text);
 }
 
 .clear-filters-btn {
   background: none;
   border: none;
-  color: #007bff;
+  color: var(--mw-cyan);
   font-size: 0.875rem;
   cursor: pointer;
   padding: 0.5rem 0.75rem;
@@ -33,7 +35,7 @@
 }
 
 .clear-filters-btn:hover {
-  color: #0056b3;
+  color: var(--mw-cyan-soft);
   text-decoration: underline;
 }
 
@@ -48,7 +50,7 @@
 .filter-section h4 {
   margin: 0 0 1rem 0;
   font-size: 1rem;
-  color: #333;
+  color: var(--mw-text);
   font-weight: 600;
 }
 
@@ -69,14 +71,14 @@
 
 .price-input-group label {
   font-size: 0.75rem;
-  color: #666;
+  color: var(--mw-muted);
   font-weight: 500;
 }
 
 .price-input-group input {
   width: 100%;
   padding: 0.5rem;
-  border: 1px solid #e0e0e0;
+  border: 1px solid rgba(255,255,255,0.12);
   border-radius: 4px;
   font-size: 0.875rem;
   outline: none;
@@ -84,7 +86,7 @@
 }
 
 .price-input-group input:focus {
-  border-color: #007bff;
+  border-color: var(--mw-cyan);
 }
 
 .price-separator {
@@ -94,11 +96,11 @@
 
 .price-display {
   font-size: 0.875rem;
-  color: #007bff;
+  color: var(--mw-cyan);
   font-weight: 600;
   text-align: center;
   padding: 0.5rem;
-  background-color: #f0f8ff;
+  background-color: rgba(94,234,212,0.1);
   border-radius: 4px;
 }
 
@@ -120,7 +122,7 @@
 }
 
 .feature-checkbox:hover {
-  background-color: #f5f5f5;
+  background-color: rgba(255,255,255,0.04);
 }
 
 .feature-checkbox input[type="checkbox"] {
@@ -129,7 +131,7 @@
   min-width: 20px;
   min-height: 20px;
   cursor: pointer;
-  accent-color: #007bff;
+  accent-color: var(--mw-cyan);
 }
 
 /* Larger touch targets on mobile */
@@ -149,7 +151,7 @@
 
 .feature-checkbox span {
   font-size: 0.875rem;
-  color: #333;
+  color: var(--mw-text);
   user-select: none;
 }
 

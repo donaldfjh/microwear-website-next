@@ -7,7 +7,7 @@ import "./AboutPage.css";
 export const metadata: Metadata = {
   title: "About Microwear | Smartwatch & AI Glasses OEM Manufacturer Since 2008",
   description:
-    "About Microwear — Shenzhen NJY Technology, a leading smartwatch and AI glasses OEM manufacturer from China since 2008. ISO9001 certified factory, 300+ employees, 8 SMT lines, 2M+ units/year. 500+ B2B partners in 30+ countries. Custom smartwatch OEM/ODM, wholesale bulk orders from $15. CE/FCC/RoHS certified.",
+    "About Microwear — Shenzhen NJY Technology, a leading smartwatch and AI glasses OEM manufacturer from China since 2008. ISO9001 certified factory, 300+ employees, 8 SMT lines, 2M+ units/year. 500+ B2B partners in 30+ countries. Custom smartwatch OEM, wholesale bulk orders from $15. CE/FCC/RoHS certified.",
   keywords: [
     "about Microwear",
     "Microwear manufacturer",
@@ -103,53 +103,54 @@ export default function AboutPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
       />
-      <div className="about-container">
-        {/* Hero Section - React Bits Style */}
-        <section className="hero-section">
-          <div className="hero-badge">✨ 15+ Years of Excellence</div>
-          <h1 className="hero-title">
-            <span className="title-gradient">About Microwear</span>
-          </h1>
-          <p className="hero-subtitle">
-            Your Trusted Smart Watch & AI Glasses <span className="highlight">OEM Partner</span> Since 2008
+      {/* Hero — full-bleed; scoped classes avoid collision with homepage HeroSection.css */}
+      <section className="about-hero">
+        <div className="about-hero__inner">
+          <div className="about-hero__badge">15+ Years of Excellence</div>
+          <h1 className="about-hero__title">About Microwear</h1>
+          <p className="about-hero__subtitle">
+            Your Trusted Smart Watch & AI Glasses{" "}
+            <span className="about-hero__highlight">OEM Partner</span> Since 2008
           </p>
-          
-          {/* Stats Cards - Large Numbers */}
-          <div className="hero-stats-grid">
-            <div className="hero-stat-card">
-              <div className="stat-number">300+</div>
-              <div className="stat-title">Employees</div>
-              <div className="stat-desc">Skilled workforce</div>
+
+          <div className="about-hero__stats">
+            <div className="about-hero__stat">
+              <div className="about-hero__stat-num">300+</div>
+              <div className="about-hero__stat-label">Employees</div>
+              <div className="about-hero__stat-desc">Skilled workforce</div>
             </div>
-            <div className="hero-stat-card">
-              <div className="stat-number">8</div>
-              <div className="stat-title">SMT Lines</div>
-              <div className="stat-desc">Advanced production</div>
+            <div className="about-hero__stat">
+              <div className="about-hero__stat-num">8</div>
+              <div className="about-hero__stat-label">SMT Lines</div>
+              <div className="about-hero__stat-desc">Advanced production</div>
             </div>
-            <div className="hero-stat-card">
-              <div className="stat-number">2M+</div>
-              <div className="stat-title">Units/Year</div>
-              <div className="stat-desc">Annual capacity</div>
+            <div className="about-hero__stat">
+              <div className="about-hero__stat-num">2M+</div>
+              <div className="about-hero__stat-label">Units/Year</div>
+              <div className="about-hero__stat-desc">Annual capacity</div>
             </div>
-            <div className="hero-stat-card">
-              <div className="stat-number">500+</div>
-              <div className="stat-title">Global Partners</div>
-              <div className="stat-desc">B2B clients worldwide</div>
+            <div className="about-hero__stat">
+              <div className="about-hero__stat-num">500+</div>
+              <div className="about-hero__stat-label">Global Partners</div>
+              <div className="about-hero__stat-desc">B2B clients worldwide</div>
             </div>
           </div>
-          
-          {/* CTA Buttons */}
-          <div className="hero-cta">
-            <a href="/contact" className="cta-primary">
+
+          <div className="about-hero__cta">
+            <a href="/contact" className="about-hero__btn about-hero__btn--primary">
               <span>Get Free Quote</span>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M5 12h14M12 5l7 7-7 7"/>
               </svg>
             </a>
-            <a href="/products" className="cta-secondary">View Products</a>
+            <a href="/products" className="about-hero__btn about-hero__btn--ghost">
+              View Products
+            </a>
           </div>
-        </section>
+        </div>
+      </section>
 
+      <div className="about-container">
         {/* OEM Services Section - React Bits Style */}
         <section className="services-section">
           <div className="services-header">
@@ -611,18 +612,18 @@ export default function AboutPage() {
         <ScrollReveal delay={0.565}>
           <section className="about-section" style={{
             padding: '60px 0',
-            background: 'linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%)'
+            background: 'transparent'
           }}>
             <div style={{ maxWidth: '800px', margin: '0 auto', padding: '0 24px' }}>
-              <h2 style={{ fontSize: '28px', fontWeight: '700', marginBottom: '24px', textAlign: 'center', color: '#1a1a1a' }}>
+              <h2 style={{ fontSize: '28px', fontWeight: '700', marginBottom: '24px', textAlign: 'center', color: 'var(--mw-text)' }}>
                 Microwear — Your Trusted Smartwatch & AI Glasses OEM Partner
               </h2>
-              <div style={{ lineHeight: '1.8', fontSize: '16px', color: '#555' }}>
+              <div style={{ lineHeight: '1.8', fontSize: '16px', color: 'var(--mw-muted)' }}>
                 <p style={{ marginBottom: '16px' }}>
                   <strong>Microwear</strong> (Shenzhen NJY Technology Co., Ltd) is a professional <strong>smartwatch OEM manufacturer</strong> and <strong>AI glasses factory</strong> based in Shenzhen, China. Since 2008, we have grown from a small R&D team into a modern high-tech enterprise with 300+ employees, 8 SMT production lines, and an annual capacity of 2M+ units.
                 </p>
                 <p style={{ marginBottom: '16px' }}>
-                  Our <strong>Microwear smartwatch</strong> product line covers fitness trackers, health smartwatches, rugged smartwatches, kids smartwatches, and GPS watches — all available for <strong>custom OEM/ODM orders</strong> with MOQ starting from 100 pieces. In 2023, we expanded into next-generation wearable technology with our <strong>AI glasses</strong> featuring camera modules, ChatGPT integration, and ultra-lightweight 38g design.
+                  Our <strong>Microwear smartwatch</strong> product line covers fitness trackers, health smartwatches, rugged smartwatches, kids smartwatches, and GPS watches — all available for <strong>custom OEM orders</strong> with MOQ starting from 100 pieces. In 2023, we expanded into next-generation wearable technology with our <strong>AI glasses</strong> featuring camera modules, ChatGPT integration, and ultra-lightweight 38g design.
                 </p>
                 <p>
                   As an <strong>ISO9001:2015 certified manufacturer</strong>, every Microwear product carries CE, FCC, and RoHS certifications. We serve 500+ B2B partners across 30+ countries, from startups to enterprise brands. Whether you need <strong>smartwatch wholesale bulk orders</strong>, custom firmware, or complete white-label solutions, Microwear delivers factory-direct pricing with 7-day sampling and 15-25 day production turnaround.
@@ -642,7 +643,7 @@ export default function AboutPage() {
               </div>
               <div className="faq-item">
                 <h3>What products does Microwear manufacture?</h3>
-                <p>Microwear specializes in smartwatches (fitness trackers, health smartwatches, rugged smartwatches, kids smartwatches) and AI glasses with camera, voice assistant, and AR capabilities. All products support full OEM/ODM customization including logo, firmware, packaging, and hardware specifications.</p>
+                <p>Microwear specializes in smartwatches (fitness trackers, health smartwatches, rugged smartwatches, kids smartwatches) and AI glasses with camera, voice assistant, and AR capabilities. All products support OEM customization including logo, firmware, packaging, and selected catalog options.</p>
               </div>
               <div className="faq-item">
                 <h3>What is the MOQ for Microwear OEM orders?</h3>
@@ -678,7 +679,7 @@ export default function AboutPage() {
                     "name": "What products does Microwear manufacture?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Microwear specializes in smartwatches (fitness trackers, health smartwatches, rugged smartwatches, kids smartwatches) and AI glasses with camera, voice assistant, and AR capabilities. All products support full OEM/ODM customization including logo, firmware, packaging, and hardware specifications."
+                      "text": "Microwear specializes in smartwatches (fitness trackers, health smartwatches, rugged smartwatches, kids smartwatches) and AI glasses with camera, voice assistant, and AR capabilities. All products support OEM customization including logo, firmware, packaging, and selected catalog options."
                     }
                   },
                   {

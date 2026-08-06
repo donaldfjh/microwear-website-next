@@ -1,6 +1,6 @@
 .contact-page {
   min-height: calc(100vh - 80px);
-  background-color: #f8f9fa;
+  background-color: transparent;
   padding: 3rem 0;
 }
 
@@ -17,20 +17,20 @@
 
 .contact-header h1 {
   font-size: 2.5rem;
-  color: #333;
+  color: var(--mw-text);
   margin-bottom: 1rem;
 }
 
 .contact-header p {
   font-size: 1.125rem;
-  color: #666;
+  color: var(--mw-muted);
   max-width: 600px;
   margin: 0 auto;
 }
 
 /* FAQ Quick Access Box */
 .faq-quick-access {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: radial-gradient(ellipse 60% 50% at 70% 20%, rgba(94,234,212,0.14), transparent 55%), linear-gradient(165deg, #0a1220, #060912);
   border-radius: 12px;
   padding: 24px;
   display: flex;
@@ -61,8 +61,8 @@
 
 .faq-link {
   display: inline-block;
-  background: white;
-  color: #667eea;
+  background: linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035));
+  color: var(--mw-cyan);
   padding: 10px 20px;
   border-radius: 6px;
   text-decoration: none;
@@ -85,7 +85,7 @@
 
 .contact-form-section,
 .contact-info-section {
-  background-color: white;
+  background-color: transparent;
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -94,7 +94,7 @@
 .contact-form-section h2,
 .contact-info-section h2 {
   font-size: 1.5rem;
-  color: #333;
+  color: var(--mw-text);
   margin-bottom: 1.5rem;
 }
 
@@ -108,43 +108,43 @@
 .contact-info-item svg {
   width: 24px;
   height: 24px;
-  color: #007bff;
+  color: var(--mw-cyan);
   flex-shrink: 0;
   margin-top: 0.25rem;
 }
 
 .contact-info-item h3 {
   font-size: 1.125rem;
-  color: #333;
+  color: var(--mw-text);
   margin: 0 0 0.5rem 0;
 }
 
 .contact-info-item p {
   margin: 0;
-  color: #666;
+  color: var(--mw-muted);
   line-height: 1.6;
 }
 
 .contact-info-item a {
-  color: #007bff;
+  color: var(--mw-cyan);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .contact-info-item a:hover {
-  color: #0056b3;
+  color: var(--mw-cyan-soft);
   text-decoration: underline;
 }
 
 .social-links {
   margin-top: 2.5rem;
   padding-top: 2rem;
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid rgba(255,255,255,0.1);
 }
 
 .social-links h3 {
   font-size: 1.125rem;
-  color: #333;
+  color: var(--mw-text);
   margin-bottom: 1rem;
 }
 
@@ -161,15 +161,15 @@
   height: 48px;
   min-width: 44px;
   min-height: 44px;
-  background-color: #f0f0f0;
+  background-color: rgba(255,255,255,0.06);
   border-radius: 50%;
-  color: #333;
+  color: var(--mw-text);
   transition: all 0.3s ease;
   touch-action: manipulation;
 }
 
 .social-icons a:hover {
-  background-color: #007bff;
+  background-color: var(--mw-cyan);
   color: white;
   transform: translateY(-2px);
 }

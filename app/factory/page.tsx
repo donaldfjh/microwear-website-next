@@ -201,7 +201,7 @@ export default function FactoryPage() {
                 href="/contact" 
                 style={{
                   padding: '16px 32px',
-                  background: '#3b82f6',
+                  background: 'var(--mw-cyan)',
                   color: 'white',
                   borderRadius: '8px',
                   textDecoration: 'none',
@@ -258,7 +258,7 @@ export default function FactoryPage() {
               <ScrollReveal key={index} delay={index * 0.1}>
                 <div style={{
                   padding: '32px 24px',
-                  background: 'white',
+                  background: 'linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035))', border: '1px solid rgba(255,255,255,0.1)', boxShadow: 'var(--mw-shadow-soft)',
                   borderRadius: '16px',
                   textAlign: 'center',
                   boxShadow: '0 4px 6px rgba(0,0,0,0.05)'
@@ -267,7 +267,7 @@ export default function FactoryPage() {
                   <div style={{
                     fontSize: '32px',
                     fontWeight: '700',
-                    color: '#3b82f6',
+                    color: 'var(--mw-cyan)',
                     marginBottom: '8px'
                   }}>
                     {stat.value}
@@ -285,7 +285,7 @@ export default function FactoryPage() {
       {/* Factory Introduction Section */}
       <section style={{
         padding: '100px 24px',
-        backgroundColor: 'white'
+        backgroundColor: 'transparent'
       }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
           <ScrollReveal>
@@ -397,7 +397,7 @@ export default function FactoryPage() {
               <ScrollReveal key={index} delay={index * 0.1}>
                 <div style={{
                   padding: '32px',
-                  background: 'white',
+                  background: 'linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035))', border: '1px solid rgba(255,255,255,0.1)', boxShadow: 'var(--mw-shadow-soft)',
                   borderRadius: '16px',
                   boxShadow: '0 4px 6px rgba(0,0,0,0.05)',
                   border: '1px solid #e2e8f0'
@@ -413,7 +413,7 @@ export default function FactoryPage() {
                   </h3>
                   <div style={{
                     fontSize: '14px',
-                    color: '#3b82f6',
+                    color: 'var(--mw-cyan)',
                     fontWeight: '500',
                     marginBottom: '12px'
                   }}>
@@ -436,7 +436,7 @@ export default function FactoryPage() {
       {/* Quality Control Section */}
       <section style={{
         padding: '100px 24px',
-        backgroundColor: 'white'
+        backgroundColor: 'transparent'
       }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <ScrollReveal>
@@ -479,7 +479,7 @@ export default function FactoryPage() {
                     fontSize: '18px',
                     fontWeight: '600',
                     marginBottom: '12px',
-                    color: '#3b82f6'
+                    color: 'var(--mw-cyan)'
                   }}>
                     {process.stage}
                   </h3>
@@ -492,7 +492,7 @@ export default function FactoryPage() {
                     {process.description}
                   </p>
                   <div style={{
-                    background: 'white',
+                    background: 'linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035))', border: '1px solid rgba(255,255,255,0.1)', boxShadow: 'var(--mw-shadow-soft)',
                     padding: '16px',
                     borderRadius: '8px'
                   }}>
@@ -545,7 +545,7 @@ export default function FactoryPage() {
                 textAlign: 'center'
               }}>
                 <div>
-                  <div style={{ fontSize: '36px', fontWeight: '700', color: '#3b82f6', marginBottom: '8px' }}>
+                  <div style={{ fontSize: '36px', fontWeight: '700', color: 'var(--mw-cyan)', marginBottom: '8px' }}>
                     &lt;0.3%
                   </div>
                   <div style={{ fontSize: '14px', color: '#94a3b8' }}>
@@ -553,7 +553,7 @@ export default function FactoryPage() {
                   </div>
                 </div>
                 <div>
-                  <div style={{ fontSize: '36px', fontWeight: '700', color: '#3b82f6', marginBottom: '8px' }}>
+                  <div style={{ fontSize: '36px', fontWeight: '700', color: 'var(--mw-cyan)', marginBottom: '8px' }}>
                     100%
                   </div>
                   <div style={{ fontSize: '14px', color: '#94a3b8' }}>
@@ -561,7 +561,7 @@ export default function FactoryPage() {
                   </div>
                 </div>
                 <div>
-                  <div style={{ fontSize: '36px', fontWeight: '700', color: '#3b82f6', marginBottom: '8px' }}>
+                  <div style={{ fontSize: '36px', fontWeight: '700', color: 'var(--mw-cyan)', marginBottom: '8px' }}>
                     12 Months
                   </div>
                   <div style={{ fontSize: '14px', color: '#94a3b8' }}>
@@ -569,7 +569,7 @@ export default function FactoryPage() {
                   </div>
                 </div>
                 <div>
-                  <div style={{ fontSize: '36px', fontWeight: '700', color: '#3b82f6', marginBottom: '8px' }}>
+                  <div style={{ fontSize: '36px', fontWeight: '700', color: 'var(--mw-cyan)', marginBottom: '8px' }}>
                     24 Hours
                   </div>
                   <div style={{ fontSize: '14px', color: '#94a3b8' }}>
@@ -620,7 +620,7 @@ export default function FactoryPage() {
               <ScrollReveal key={index} delay={index * 0.1}>
                 <div style={{
                   padding: '32px',
-                  background: 'white',
+                  background: 'linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035))', border: '1px solid rgba(255,255,255,0.1)', boxShadow: 'var(--mw-shadow-soft)',
                   borderRadius: '16px',
                   boxShadow: '0 4px 6px rgba(0,0,0,0.05)'
                 }}>
@@ -651,7 +651,7 @@ export default function FactoryPage() {
                         alignItems: 'flex-start',
                         gap: '10px'
                       }}>
-                        <span style={{ color: '#3b82f6', marginTop: '2px' }}>▸</span>
+                        <span style={{ color: 'var(--mw-cyan)', marginTop: '2px' }}>▸</span>
                         {item}
                       </li>
                     ))}
@@ -693,7 +693,7 @@ export default function FactoryPage() {
       {/* CTA Section */}
       <section style={{
         padding: '80px 24px',
-        backgroundColor: 'white',
+        backgroundColor: 'transparent',
         textAlign: 'center'
       }}>
         <div style={{ maxWidth: '700px', margin: '0 auto' }}>
@@ -720,7 +720,7 @@ export default function FactoryPage() {
                 href="/contact" 
                 style={{
                   padding: '16px 32px',
-                  background: '#3b82f6',
+                  background: 'var(--mw-cyan)',
                   color: 'white',
                   borderRadius: '8px',
                   textDecoration: 'none',

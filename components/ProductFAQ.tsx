@@ -8,7 +8,7 @@ export const ProductFAQ = () => {
       question: "Does Microwear support SDK for custom app development?",
       answer: (
         <>
-          Yes. For qualified OEM/ODM partners, Microwear (NJY Tech) provides
+          Yes. For qualified OEM partners, Microwear (NJY Tech) provides
           access to our BLE SDK. This allows your development team to build
           custom Android/iOS applications that interact directly with our
           devices (e.g., retrieving heart rate data from the Ultra 5X, or
@@ -21,7 +21,7 @@ export const ProductFAQ = () => {
         </>
       ),
       answerText:
-        "Yes. For qualified OEM/ODM partners, Microwear (NJY Tech) provides access to our BLE SDK. This allows your development team to build custom Android/iOS applications that interact directly with our devices. We currently support data integration with the MActivePro and HeyCyan ecosystem. Please contact our engineering team for the API documentation.",
+        "Yes. For qualified OEM partners, Microwear (NJY Tech) provides access to our BLE SDK. This allows your development team to build custom Android/iOS applications that interact directly with our devices. We currently support data integration with the MActivePro and HeyCyan ecosystem. Please contact our engineering team for the API documentation.",
       category: "SDK & Development",
     },
     {

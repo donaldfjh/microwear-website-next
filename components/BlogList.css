@@ -10,7 +10,7 @@
 
 .search-input:focus {
   outline: none;
-  border-color: #667eea;
+  border-color: var(--mw-cyan);
   box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 
@@ -21,7 +21,7 @@
   background: none;
   border: none;
   padding: 8px 12px;
-  color: #4a5568;
+  color: var(--mw-muted);
   cursor: pointer;
   border-radius: 6px;
   transition: all 0.2s;
@@ -30,12 +30,12 @@
 
 .category-list button:hover {
   background: #f7fafc;
-  color: #667eea;
+  color: var(--mw-cyan);
   transform: translateX(4px);
 }
 
 .category-list button.active {
-  background: #667eea;
+  background: var(--mw-cyan);
   color: white;
   font-weight: 600;
 }
@@ -43,7 +43,7 @@
 /* Tags as Buttons */
 .tags-cloud button.tag {
   background: #edf2f7;
-  color: #4a5568;
+  color: var(--mw-muted);
   border: 2px solid transparent;
   cursor: pointer;
   transition: all 0.2s;
@@ -51,13 +51,13 @@
 
 .tags-cloud button.tag:hover {
   background: #e2e8f0;
-  border-color: #667eea;
+  border-color: var(--mw-cyan);
 }
 
 .tags-cloud button.tag.active {
-  background: #667eea;
+  background: var(--mw-cyan);
   color: white;
-  border-color: #667eea;
+  border-color: var(--mw-cyan);
 }
 
 /* Sort Select */
@@ -67,14 +67,14 @@
   border: 2px solid #e2e8f0;
   border-radius: 8px;
   font-size: 0.95rem;
-  background: white;
+  background: linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035));
   cursor: pointer;
   transition: all 0.2s;
 }
 
 .sort-select:focus {
   outline: none;
-  border-color: #667eea;
+  border-color: var(--mw-cyan);
   box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 
@@ -85,13 +85,13 @@
   align-items: center;
   margin-bottom: 24px;
   padding: 16px 20px;
-  background: white;
+  background: linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035));
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .blog-results-info p {
-  color: #4a5568;
+  color: var(--mw-muted);
   font-size: 0.95rem;
   margin: 0;
 }
@@ -99,7 +99,7 @@
 .clear-filters-btn {
   padding: 8px 16px;
   background: #edf2f7;
-  color: #4a5568;
+  color: var(--mw-muted);
   border: none;
   border-radius: 6px;
   font-size: 0.9rem;
@@ -110,26 +110,26 @@
 
 .clear-filters-btn:hover {
   background: #e2e8f0;
-  color: #667eea;
+  color: var(--mw-cyan);
 }
 
 /* No Results */
 .no-results {
   text-align: center;
   padding: 80px 20px;
-  background: white;
+  background: linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035));
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .no-results h3 {
   font-size: 1.5rem;
-  color: #1a202c;
+  color: var(--mw-text);
   margin-bottom: 12px;
 }
 
 .no-results p {
-  color: #718096;
+  color: var(--mw-muted);
   font-size: 1rem;
 }
 
@@ -141,16 +141,16 @@
   gap: 12px;
   margin-top: 48px;
   padding: 24px;
-  background: white;
+  background: linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035));
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .pagination-btn {
   padding: 10px 20px;
-  background: white;
-  color: #667eea;
-  border: 2px solid #667eea;
+  background: linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035));
+  color: var(--mw-cyan);
+  border: 2px solid var(--mw-cyan);
   border-radius: 8px;
   font-weight: 600;
   cursor: pointer;
@@ -158,7 +158,7 @@
 }
 
 .pagination-btn:hover:not(:disabled) {
-  background: #667eea;
+  background: var(--mw-cyan);
   color: white;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
@@ -177,8 +177,8 @@
 .pagination-number {
   width: 40px;
   height: 40px;
-  background: white;
-  color: #4a5568;
+  background: linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035));
+  color: var(--mw-muted);
   border: 2px solid #e2e8f0;
   border-radius: 8px;
   font-weight: 500;
@@ -187,14 +187,14 @@
 }
 
 .pagination-number:hover {
-  border-color: #667eea;
-  color: #667eea;
+  border-color: var(--mw-cyan);
+  color: var(--mw-cyan);
 }
 
 .pagination-number.active {
-  background: #667eea;
+  background: var(--mw-cyan);
   color: white;
-  border-color: #667eea;
+  border-color: var(--mw-cyan);
 }
 
 /* Responsive */

@@ -1,10 +1,23 @@
 import { Suspense } from "react";
 import dynamic from "next/dynamic";
 import type { Metadata } from "next";
+import { Syne, Outfit } from "next/font/google";
 import "./globals.css";
 import { Navigation } from "@/components/Navigation";
 import { ComparisonProvider } from "@/contexts/ComparisonContext";
 import { ToastProvider } from "@/contexts/ToastContext";
+
+const syne = Syne({
+  subsets: ["latin"],
+  variable: "--font-syne",
+  display: "swap",
+});
+
+const outfit = Outfit({
+  subsets: ["latin"],
+  variable: "--font-outfit",
+  display: "swap",
+});
 
 // Lazy load non-critical components to reduce initial bundle size
 const FloatingContact = dynamic(() => import("@/components/FloatingContact").then((mod) => mod.FloatingContact), { ssr: false });
@@ -66,7 +79,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en">
+    <html lang="en" className={`${syne.variable} ${outfit.variable}`}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -83,7 +96,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body>
+      <body className={outfit.className}>
         <ToastProvider>
           <ComparisonProvider>
             <Suspense fallback={null}>

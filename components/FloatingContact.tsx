@@ -7,7 +7,7 @@ export const FloatingContact: React.FC = () => {
   // WhatsApp number from FooterBanner component: +852 6733 7121
   const whatsappNumber = "85267337121";
   const message = encodeURIComponent(
-    "Hi! I'm interested in Microwear OEM/ODM services."
+    "Hi! I'm interested in Microwear OEM services."
   );
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
 

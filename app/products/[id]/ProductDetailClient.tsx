@@ -201,9 +201,9 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
               <Link
                 href={getContactLink()}
                 className="btn btn-primary"
-                aria-label={`Contact factory about ${product.name} OEM/ODM`}
+                aria-label={`Contact factory about ${product.name} OEM`}
               >
-                {`Contact Factory to Buy ${product.name} (OEM/ODM)`}
+                {`Contact Factory to Buy ${product.name} (OEM)`}
               </Link>
               <button
                 className="btn btn-secondary"

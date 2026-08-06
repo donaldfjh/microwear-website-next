@@ -1,7 +1,7 @@
 .product-specs-section {
   padding: 4rem 2rem;
-  background-color: #f8f9fa;
-  border-top: 1px solid #e9ecef;
+  background-color: transparent;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .specs-container {
@@ -23,7 +23,7 @@
 .specs-header h2 {
   font-size: 1.75rem;
   font-weight: 700;
-  color: #1a202c;
+  color: var(--mw-text);
   margin: 0;
 }
 
@@ -32,7 +32,7 @@
   display: flex;
   gap: 1rem;
   margin-bottom: 1.5rem;
-  border-bottom: 2px solid #e2e8f0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .tab-btn {
@@ -41,7 +41,7 @@
   border: none;
   font-size: 1rem;
   font-weight: 600;
-  color: #718096;
+  color: var(--mw-muted);
   cursor: pointer;
   position: relative;
   bottom: -2px;
@@ -50,42 +50,51 @@
 }
 
 .tab-btn.active {
-  color: #2b6cb0;
-  border-bottom-color: #2b6cb0;
+  color: var(--mw-cyan);
+  border-bottom-color: var(--mw-cyan);
 }
 
 .tab-btn:hover:not(.active) {
-  color: #4a5568;
+  color: var(--mw-text);
 }
 
 /* Technical Specs Table */
 .technical-specs-table table {
   width: 100%;
   border-collapse: collapse;
-  background-color: #ffffff;
-  border-radius: 8px;
+  background: linear-gradient(
+    165deg,
+    rgba(255, 255, 255, 0.09) 0%,
+    rgba(255, 255, 255, 0.035) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--mw-shadow-soft);
 }
 
 .technical-specs-table tr:nth-child(odd) {
-  background-color: #f7fafc;
+  background-color: rgba(255, 255, 255, 0.03);
 }
 
 .technical-specs-table td {
   padding: 1rem 1.5rem;
-  border-bottom: 1px solid #edf2f7;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   font-size: 0.95rem;
+}
+
+.technical-specs-table tr:last-child td {
+  border-bottom: none;
 }
 
 .spec-label {
   font-weight: 600;
-  color: #4a5568;
+  color: var(--mw-muted);
   width: 30%;
 }
 
 .spec-value {
-  color: #2d3748;
+  color: var(--mw-text);
 }
 
 /* OEM Grid */
@@ -96,22 +105,26 @@
 }
 
 .oem-card {
-  background-color: #ffffff;
+  background: linear-gradient(
+    165deg,
+    rgba(255, 255, 255, 0.09) 0%,
+    rgba(255, 255, 255, 0.035) 100%
+  );
   padding: 1.5rem;
-  border-radius: 8px;
-  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   text-align: center;
   transition: all 0.2s;
 }
 
 .oem-card.available {
-  border-color: #90cdf4;
-  background-color: #ebf8ff;
+  border-color: rgba(94, 234, 212, 0.4);
+  background: rgba(94, 234, 212, 0.1);
 }
 
 .oem-icon {
   margin-bottom: 1rem;
-  color: #2b6cb0;
+  color: var(--mw-cyan);
   display: flex;
   justify-content: center;
 }
@@ -119,34 +132,43 @@
 .oem-card h4 {
   margin: 0 0 0.5rem 0;
   font-size: 1rem;
-  color: #2d3748;
+  color: var(--mw-text);
 }
 
 .oem-card p {
   margin: 0;
   font-size: 0.85rem;
-  color: #718096;
+  color: var(--mw-muted);
 }
 
 /* Sidebar */
 .specs-sidebar {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .usps-box {
-  background-color: #2d3748;
-  color: #ffffff;
+  background: linear-gradient(
+    165deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.04) 100%
+  );
+  color: var(--mw-text);
   padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: var(--mw-shadow-soft);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
 }
 
 .usps-box h3 {
   margin: 0 0 1rem 0;
   font-size: 1.1rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-weight: 700;
+  color: var(--mw-text);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
   padding-bottom: 0.5rem;
 }
 
@@ -163,48 +185,71 @@
   margin-bottom: 0.75rem;
   font-size: 0.95rem;
   line-height: 1.4;
+  color: var(--mw-text);
+}
+
+.usps-box li:last-child {
+  margin-bottom: 0;
 }
 
 .usps-box li svg {
-  color: #48bb78;
+  color: #5eead4;
   flex-shrink: 0;
   margin-top: 0.2rem;
 }
 
 .contact-card {
-  background-color: #ffffff;
+  background: linear-gradient(
+    165deg,
+    rgba(255, 255, 255, 0.09) 0%,
+    rgba(255, 255, 255, 0.035) 100%
+  );
   padding: 1.5rem;
-  border-radius: 8px;
-  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
   text-align: center;
+  box-shadow: var(--mw-shadow-soft);
 }
 
 .contact-card h4 {
   margin: 0 0 0.5rem 0;
   font-size: 1.1rem;
-  color: #2d3748;
+  font-weight: 700;
+  color: var(--mw-text);
 }
 
 .contact-card p {
-  margin: 0 0 1.5rem 0;
-  color: #718096;
+  margin: 0 0 1.25rem 0;
+  color: var(--mw-muted);
   font-size: 0.9rem;
+  line-height: 1.5;
 }
 
 .contact-btn {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background-color: #e53e3e;
-  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.5rem;
+  min-height: 48px;
+  background: linear-gradient(180deg, #7ef0dc 0%, #5eead4 48%, #2dd4bf 100%);
+  color: #04201c;
   text-decoration: none;
-  border-radius: 4px;
-  font-weight: 600;
-  transition: background-color 0.2s;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
+  box-sizing: border-box;
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.45) inset,
+    0 10px 24px rgba(94, 234, 212, 0.28);
 }
 
 .contact-btn:hover {
-  background-color: #c53030;
+  transform: translateY(-2px);
+  color: #04201c;
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.5) inset,
+    0 14px 32px rgba(94, 234, 212, 0.36);
 }
 
 /* Responsive */

@@ -37,7 +37,7 @@ export default function FAQPage() {
       id: 1,
       question: "What is the Minimum Order Quantity (MOQ) for OEM smartwatches?",
       answer:
-        "Our standard MOQ is 100 pieces per model for ODM products and 200-500 pieces for fully customized OEM designs. For trial orders or first-time partnerships, we offer flexible MOQ starting from 50 pieces. Contact our sales team to discuss your specific requirements and volume needs. Sample orders are available at any quantity for product evaluation."
+        "Our standard MOQ is 100 pieces per model for OEM orders. For trial orders or first-time partnerships, we offer flexible MOQ starting from 50 pieces. Contact our sales team to discuss your specific requirements and volume needs. Sample orders are available at any quantity for product evaluation."
     },
     {
       id: 2,
@@ -185,7 +185,7 @@ export default function FAQPage() {
             <ScrollReveal delay={0.1}>
               <div style={{
                 padding: '32px',
-                background: 'white',
+                background: 'linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035))', border: '1px solid rgba(255,255,255,0.1)', boxShadow: 'var(--mw-shadow-soft)',
                 borderRadius: '16px',
                 textAlign: 'center',
                 boxShadow: '0 4px 6px rgba(0,0,0,0.05)'
@@ -202,7 +202,7 @@ export default function FAQPage() {
             <ScrollReveal delay={0.2}>
               <div style={{
                 padding: '32px',
-                background: 'white',
+                background: 'linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035))', border: '1px solid rgba(255,255,255,0.1)', boxShadow: 'var(--mw-shadow-soft)',
                 borderRadius: '16px',
                 textAlign: 'center',
                 boxShadow: '0 4px 6px rgba(0,0,0,0.05)'
@@ -219,7 +219,7 @@ export default function FAQPage() {
             <ScrollReveal delay={0.3}>
               <div style={{
                 padding: '32px',
-                background: 'white',
+                background: 'linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035))', border: '1px solid rgba(255,255,255,0.1)', boxShadow: 'var(--mw-shadow-soft)',
                 borderRadius: '16px',
                 textAlign: 'center',
                 boxShadow: '0 4px 6px rgba(0,0,0,0.05)'
@@ -236,7 +236,7 @@ export default function FAQPage() {
             <ScrollReveal delay={0.4}>
               <div style={{
                 padding: '32px',
-                background: 'white',
+                background: 'linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035))', border: '1px solid rgba(255,255,255,0.1)', boxShadow: 'var(--mw-shadow-soft)',
                 borderRadius: '16px',
                 textAlign: 'center',
                 boxShadow: '0 4px 6px rgba(0,0,0,0.05)'
@@ -256,7 +256,7 @@ export default function FAQPage() {
       {/* FAQ Categories Navigation */}
       <section style={{
         padding: '40px 24px',
-        backgroundColor: 'white'
+        backgroundColor: 'transparent'
       }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', textAlign: 'center' }}>
           <ScrollReveal>
@@ -349,7 +349,7 @@ export default function FAQPage() {
                 style={{
                   display: 'inline-block',
                   padding: '16px 32px',
-                  background: 'white',
+                  background: 'linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035))', border: '1px solid rgba(255,255,255,0.1)', boxShadow: 'var(--mw-shadow-soft)',
                   color: '#0ea5e9',
                   borderRadius: '8px',
                   fontWeight: '600',

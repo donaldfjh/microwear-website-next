@@ -55,9 +55,9 @@ export const smartwatchFAQs: FAQItem[] = [
       "Yes, most Microwear smartwatches are IP68 waterproof rated, meaning they can withstand immersion in water up to 1.5 meters for 30 minutes. Some sport models offer even higher water resistance suitable for swimming.",
   },
   {
-    question: "Does Microwear offer OEM/ODM services?",
+    question: "Does Microwear offer OEM services?",
     answer:
-      "Yes, Microwear is a leading OEM/ODM smartwatch manufacturer with over 10 years of experience. We offer full customization services including design, firmware development, packaging, and certification support for global markets.",
+      "Yes, Microwear is a leading OEM smartwatch manufacturer with over 10 years of experience. We offer branding and configuration services including logo, firmware, packaging, and certification support for global markets.",
   },
   {
     question: "What health monitoring features do Microwear smartwatches have?",

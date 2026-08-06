@@ -9,7 +9,7 @@
 
 /* Hero Section */
 .faq-hero {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: radial-gradient(ellipse 60% 50% at 70% 20%, rgba(94,234,212,0.14), transparent 55%), linear-gradient(165deg, #0a1220, #060912);
   color: white;
   padding: 80px 20px;
   text-align: center;
@@ -64,7 +64,7 @@
 }
 
 .contact-box {
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: radial-gradient(ellipse 60% 50% at 70% 20%, rgba(94,234,212,0.1), transparent 55%), linear-gradient(165deg, #0a1220, #060912);
   border-radius: 16px;
   padding: 40px;
   text-align: center;
@@ -74,7 +74,7 @@
 .contact-box h2 {
   font-size: 1.8rem;
   margin-bottom: 12px;
-  color: #1a202c;
+  color: var(--mw-text);
 }
 
 .contact-box p {
@@ -118,7 +118,7 @@
 }
 
 .contact-btn.form {
-  background: #667eea;
+  background: var(--mw-cyan);
   color: white;
 }
 
@@ -134,10 +134,10 @@
 
 .category-title {
   font-size: 1.8rem;
-  color: #1a202c;
+  color: var(--mw-text);
   margin-bottom: 24px;
   padding-bottom: 12px;
-  border-bottom: 3px solid #667eea;
+  border-bottom: 3px solid var(--mw-cyan);
   display: inline-block;
 }
 
@@ -148,7 +148,7 @@
 }
 
 .faq-item {
-  background: white;
+  background: linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035));
   border: 2px solid #e2e8f0;
   border-radius: 12px;
   overflow: hidden;
@@ -156,7 +156,7 @@
 }
 
 .faq-item:hover {
-  border-color: #667eea;
+  border-color: var(--mw-cyan);
   box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
 }
 
@@ -164,13 +164,13 @@
   padding: 20px 24px;
   font-size: 1.1rem;
   font-weight: 600;
-  color: #1a202c;
+  color: var(--mw-text);
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  background: white;
+  background: linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035));
   transition: background 0.3s;
 }
 
@@ -184,7 +184,7 @@
 
 .toggle-icon {
   font-size: 1.5rem;
-  color: #667eea;
+  color: var(--mw-cyan);
   font-weight: 300;
   transition: transform 0.3s;
 }
@@ -205,7 +205,7 @@
 
 /* Still Have Questions */
 .faq-still-questions {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: radial-gradient(ellipse 60% 50% at 70% 20%, rgba(94,234,212,0.14), transparent 55%), linear-gradient(165deg, #0a1220, #060912);
   color: white;
   text-align: center;
   padding: 80px 20px;
@@ -229,8 +229,8 @@
 
 .cta-button {
   display: inline-block;
-  background: white;
-  color: #667eea;
+  background: linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035));
+  color: var(--mw-cyan);
   padding: 16px 40px;
   border-radius: 8px;
   text-decoration: none;

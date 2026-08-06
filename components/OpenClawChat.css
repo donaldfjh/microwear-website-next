@@ -26,7 +26,7 @@
 .chat-window {
   width: 380px;
   height: 520px;
-  background: white;
+  background: linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035));
   border-radius: 16px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -88,8 +88,8 @@
 }
 
 .message.assistant {
-  background: white;
-  color: #1e293b;
+  background: linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035));
+  color: var(--mw-text);
   align-self: flex-start;
   border: 1px solid #e2e8f0;
 }
@@ -115,7 +115,7 @@
 }
 
 .chat-input:focus {
-  border-color: #1c64f2;
+  border-color: var(--mw-cyan);
 }
 
 .send-btn {
@@ -146,7 +146,7 @@
 }
 
 .chat-footer a {
-  color: #1c64f2;
+  color: var(--mw-cyan);
   text-decoration: none;
   font-size: 13px;
 }

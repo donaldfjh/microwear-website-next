@@ -10,13 +10,13 @@ export const SEOTextBlock: React.FC<SEOTextBlockProps> = ({ category }) => {
     <section className={`seo-text-block ${category ? `seo-${category}` : ""}`}>
       <div className="seo-text-container">
         <h2 className="seo-text-title">
-          Microwear Smartwatch - Your Trusted OEM/ODM Manufacturer Partner
+          Microwear Smartwatch - Your Trusted OEM Manufacturer Partner
         </h2>
         <p className="seo-text-paragraph">
           As a leading <strong>microwear smartwatch manufacturer</strong> based in China,
           Microwear specializes in providing top-tier wearable technology
           solutions for global B2B brands. With over 10 years of expertise in{" "}
-          <strong>microwear smartwatch OEM/ODM services</strong>, we control the entire
+          <strong>microwear smartwatch OEM services</strong>, we control the entire
           supply chain from R&D to final assembly.
         </p>
         <p className="seo-text-paragraph">

@@ -3,7 +3,7 @@
   bottom: 24px;
   left: 50%;
   transform: translateX(-50%);
-  background: white;
+  background: linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035));
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   z-index: 999;
   padding: 0.75rem 1.5rem;
@@ -30,7 +30,7 @@
 
 .comparison-count {
   font-weight: 700;
-  color: #1a202c;
+  color: var(--mw-text);
   font-size: 1rem;
   white-space: nowrap;
 }
@@ -122,13 +122,13 @@
   left: 2px;
   width: 16px;
   height: 16px;
-  background-color: white;
+  background-color: transparent;
   border-radius: 50%;
   transition: transform 0.3s;
 }
 
 .toggle-switch-small input:checked + .toggle-slider-small {
-  background-color: #667eea;
+  background-color: var(--mw-cyan);
 }
 
 .toggle-switch-small input:checked + .toggle-slider-small::after {
@@ -158,7 +158,7 @@
 }
 
 .comparison-bar-action {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, var(--mw-cyan) 0%, #764ba2 100%);
   color: white;
   padding: 0.75rem 1.5rem;
   border-radius: 6px;

@@ -3,16 +3,16 @@
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 2rem;
   width: 100%;
+  padding: 8px 4px 20px;
 }
 
 .home-product-grid-empty {
   text-align: center;
   padding: 3rem;
-  color: #666;
+  color: var(--mw-muted);
   font-size: 1.125rem;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .home-product-grid {
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));

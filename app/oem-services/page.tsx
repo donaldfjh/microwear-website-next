@@ -1,17 +1,16 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import "./OEMServices.css";
 
 export const metadata: Metadata = {
-  title: "OEM/ODM Services | Custom Smartwatch & AI Glasses Manufacturing | Microwear",
+  title: "OEM Services | Custom Smartwatch & AI Glasses Manufacturing | Microwear",
   description:
-    "Microwear OEM/ODM services for smartwatches and AI glasses — custom logo, firmware, packaging, and hardware modifications. ISO9001 certified factory, MOQ 100pcs, 7-day sampling, 15-25 day production. CE, FCC, RoHS certified. Get free quote for custom wearable projects.",
+    "Microwear OEM services for smartwatches and AI glasses — custom logo, firmware, packaging, and catalog options. ISO9001 certified factory, MOQ 100pcs, 7-day sampling, 15-25 day production. CE, FCC, RoHS certified. Get free quote for custom wearable projects.",
   keywords: [
     "smartwatch OEM services",
     "AI glasses OEM manufacturer",
     "custom smartwatch manufacturer",
-    "ODM smartwatch supplier",
-    "ODM telephone glasses",
     "white label smartwatch",
     "custom logo smartwatch",
     "smartwatch private label",
@@ -22,15 +21,15 @@ export const metadata: Metadata = {
     "telephone glasses OEM",
     "camera glasses manufacturer",
     "smartwatch wholesale China",
-    "AI glasses ODM"
+    "AI glasses OEM"
   ],
   alternates: {
     canonical: "https://microwear.info/oem-services",
   },
   openGraph: {
-    title: "OEM/ODM Services | Smartwatch & AI Glasses Custom Manufacturing | Microwear",
+    title: "OEM Services | Smartwatch & AI Glasses Custom Manufacturing | Microwear",
     description:
-      "Full-service OEM/ODM smartwatch and AI glasses manufacturing from Microwear. Custom logo, firmware, packaging. ISO9001 certified, MOQ 100pcs, fast sampling.",
+      "Full-service OEM smartwatch and AI glasses manufacturing from Microwear. Custom logo, firmware, packaging. ISO9001 certified, MOQ 100pcs, fast sampling.",
     url: "https://microwear.info/oem-services",
     type: "website",
   },
@@ -129,9 +128,9 @@ export default function OEMServicesPage() {
   ];
 
   return (
-    <div className="oem-services-page" style={{ minHeight: '100vh' }}>
+    <div className="oem-services-page site-page">
       {/* Hero Section */}
-      <section style={{
+      <section className="oem-hero" style={{
         background: 'linear-gradient(135deg, #0f172a 0%, #1e293b 100%)',
         padding: '120px 24px 80px',
         textAlign: 'center',
@@ -145,16 +144,27 @@ export default function OEMServicesPage() {
               marginBottom: '24px',
               lineHeight: '1.2'
             }}>
-              OEM/ODM Smartwatch Services
+              OEM Smartwatch & AI Glasses Manufacturing
             </h1>
             <p style={{
               fontSize: '20px',
               lineHeight: '1.8',
-              color: '#94a3b8',
-              marginBottom: '40px'
+              color: 'var(--mw-muted)',
+              marginBottom: '24px'
             }}>
-              Full-service custom smartwatch manufacturing. From concept to delivery, 
-              we handle every detail of your OEM/ODM project with precision and care.
+              Microwear OEM service is factory branding and configuration of base smartwatch and AI glasses models
+              from Shenzhen NJY Technology: custom logo, firmware, packaging, and catalog options with MOQ from 100pcs,
+              7-day sampling, and 15–25 day bulk production after sample approval.
+            </p>
+            <p style={{
+              fontSize: '15px',
+              lineHeight: '1.7',
+              color: 'var(--mw-muted)',
+              marginBottom: '40px',
+              maxWidth: '760px',
+              margin: '0 auto 40px'
+            }}>
+              ISO9001:2015 factory · CE / FCC / RoHS · wholesale typically $15–50 · 8 SMT lines, 2M+ units/year
             </p>
             <div style={{
               display: 'flex',
@@ -166,7 +176,7 @@ export default function OEMServicesPage() {
                 href="/contact" 
                 style={{
                   padding: '16px 32px',
-                  background: '#3b82f6',
+                  background: 'linear-gradient(180deg,#7ef0dc,#5eead4 50%,#2dd4bf)',
                   color: 'white',
                   borderRadius: '8px',
                   textDecoration: 'none',
@@ -196,10 +206,74 @@ export default function OEMServicesPage() {
         </div>
       </section>
 
+      {/* GEO: OEM customization scope table */}
+      <section style={{
+        padding: '72px 24px',
+        backgroundColor: 'transparent'
+      }}>
+        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+          <ScrollReveal>
+            <h2 style={{
+              fontSize: '32px',
+              fontWeight: '700',
+              textAlign: 'center',
+              marginBottom: '12px',
+              color: 'var(--mw-text)'
+            }}>
+              What Microwear OEM Includes
+            </h2>
+            <p style={{
+              fontSize: '16px',
+              textAlign: 'center',
+              color: 'var(--mw-muted)',
+              marginBottom: '32px',
+              lineHeight: '1.7'
+            }}>
+              Microwear focuses on OEM branding and configuration of proven base models for B2B partners.
+            </p>
+          </ScrollReveal>
+          <div style={{ overflowX: 'auto' }}>
+            <table style={{
+              width: '100%',
+              borderCollapse: 'collapse',
+              fontSize: '15px',
+              background: 'linear-gradient(165deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03))',
+              borderRadius: '12px',
+              overflow: 'hidden',
+              border: '1px solid rgba(255,255,255,0.1)'
+            }}>
+              <thead>
+                <tr style={{ background: '#0f172a', color: 'white' }}>
+                  <th style={{ textAlign: 'left', padding: '14px 16px' }}>Area</th>
+                  <th style={{ textAlign: 'left', padding: '14px 16px' }}>OEM scope</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  ['Branding', 'Laser logo, boot animation, watch faces, packaging, manuals'],
+                  ['Firmware', 'Language packs, feature toggles, UI skinning on base models'],
+                  ['App / SDK', 'Optional white-label app and SDK integration'],
+                  ['Hardware', 'Strap color/material and selected catalog options — not new PCB/ID from scratch'],
+                  ['MOQ', 'From 100 pcs per model'],
+                  ['Sample lead time', 'About 7 days after requirements are confirmed'],
+                  ['Bulk lead time', '15–25 days after sample approval'],
+                  ['Wholesale price', 'Typically $15–50 USD depending on model and options'],
+                ].map((row, i) => (
+                  <tr key={row[0]} style={{ background: i % 2 === 0 ? '#fff' : '#f8fafc' }}>
+                    <td style={{ padding: '12px 16px', fontWeight: '600', color: 'var(--mw-text)', borderTop: '1px solid #e2e8f0', width: '28%' }}>{row[0]}</td>
+                    <td style={{ padding: '12px 16px', color: 'var(--mw-muted)', borderTop: '1px solid #e2e8f0' }}>{row[1]}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
       {/* OEM Process Section */}
       <section style={{
         padding: '100px 24px',
-        backgroundColor: '#f8fafc'
+        backgroundColor: 'transparent'
       }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <ScrollReveal>
@@ -208,14 +282,14 @@ export default function OEMServicesPage() {
               fontWeight: '700',
               textAlign: 'center',
               marginBottom: '16px',
-              color: '#1e293b'
+              color: 'var(--mw-text)'
             }}>
               OEM Service Process
             </h2>
             <p style={{
               fontSize: '18px',
               textAlign: 'center',
-              color: '#64748b',
+              color: 'var(--mw-muted)',
               marginBottom: '64px',
               maxWidth: '700px',
               margin: '0 auto 64px'
@@ -234,9 +308,9 @@ export default function OEMServicesPage() {
               <ScrollReveal key={index} delay={index * 0.1}>
                 <div style={{
                   padding: '32px',
-                  background: 'white',
+                  background: 'linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035))',
                   borderRadius: '16px',
-                  boxShadow: '0 4px 6px rgba(0,0,0,0.05)',
+                  boxShadow: 'var(--mw-shadow-soft)',
                   position: 'relative',
                   overflow: 'hidden'
                 }}>
@@ -256,14 +330,14 @@ export default function OEMServicesPage() {
                     fontSize: '20px',
                     fontWeight: '600',
                     marginBottom: '12px',
-                    color: '#1e293b'
+                    color: 'var(--mw-text)'
                   }}>
                     {item.title}
                   </h3>
                   <p style={{
                     fontSize: '15px',
                     lineHeight: '1.7',
-                    color: '#64748b'
+                    color: 'var(--mw-muted)'
                   }}>
                     {item.description}
                   </p>
@@ -277,7 +351,7 @@ export default function OEMServicesPage() {
       {/* Customization Options Section */}
       <section style={{
         padding: '100px 24px',
-        backgroundColor: 'white'
+        backgroundColor: 'transparent'
       }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <ScrollReveal>
@@ -286,14 +360,14 @@ export default function OEMServicesPage() {
               fontWeight: '700',
               textAlign: 'center',
               marginBottom: '16px',
-              color: '#1e293b'
+              color: 'var(--mw-text)'
             }}>
               Customization Options
             </h2>
             <p style={{
               fontSize: '18px',
               textAlign: 'center',
-              color: '#64748b',
+              color: 'var(--mw-muted)',
               marginBottom: '64px',
               maxWidth: '700px',
               margin: '0 auto 64px'
@@ -312,16 +386,16 @@ export default function OEMServicesPage() {
               <ScrollReveal key={index} delay={index * 0.1}>
                 <div style={{
                   padding: '32px',
-                  background: '#f8fafc',
+                  background: 'linear-gradient(165deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03))',
                   borderRadius: '16px',
-                  border: '1px solid #e2e8f0'
+                  border: '1px solid rgba(255,255,255,0.1)'
                 }}>
                   <div style={{ fontSize: '36px', marginBottom: '16px' }}>{category.icon}</div>
                   <h3 style={{
                     fontSize: '20px',
                     fontWeight: '600',
                     marginBottom: '20px',
-                    color: '#1e293b'
+                    color: 'var(--mw-text)'
                   }}>
                     {category.category}
                   </h3>
@@ -334,12 +408,12 @@ export default function OEMServicesPage() {
                       <li key={idx} style={{
                         padding: '8px 0',
                         fontSize: '15px',
-                        color: '#475569',
+                        color: 'var(--mw-muted)',
                         display: 'flex',
                         alignItems: 'center',
                         gap: '10px'
                       }}>
-                        <span style={{ color: '#3b82f6' }}>✓</span>
+                        <span style={{ color: 'var(--mw-cyan)' }}>✓</span>
                         {option}
                       </li>
                     ))}
@@ -368,7 +442,7 @@ export default function OEMServicesPage() {
             </h2>
             <p style={{
               fontSize: '18px',
-              color: '#94a3b8',
+              color: 'var(--mw-muted)',
               marginBottom: '48px'
             }}>
               Flexible order quantities and fast turnaround for your business needs
@@ -388,14 +462,14 @@ export default function OEMServicesPage() {
                 borderRadius: '16px',
                 border: '1px solid rgba(255,255,255,0.1)'
               }}>
-                <div style={{ fontSize: '48px', fontWeight: '700', color: '#3b82f6', marginBottom: '8px' }}>
+                <div style={{ fontSize: '48px', fontWeight: '700', color: 'var(--mw-cyan)', marginBottom: '8px' }}>
                   100 pcs
                 </div>
-                <div style={{ fontSize: '16px', color: '#94a3b8' }}>
+                <div style={{ fontSize: '16px', color: 'var(--mw-muted)' }}>
                   Standard MOQ
                 </div>
-                <p style={{ fontSize: '14px', color: '#64748b', marginTop: '12px' }}>
-                  Per model for OEM/ODM orders. Lower quantities available for trial orders.
+                <p style={{ fontSize: '14px', color: 'var(--mw-muted)', marginTop: '12px' }}>
+                  Per model for OEM orders. Lower quantities available for trial orders.
                 </p>
               </div>
             </ScrollReveal>
@@ -407,13 +481,13 @@ export default function OEMServicesPage() {
                 borderRadius: '16px',
                 border: '1px solid rgba(255,255,255,0.1)'
               }}>
-                <div style={{ fontSize: '48px', fontWeight: '700', color: '#3b82f6', marginBottom: '8px' }}>
+                <div style={{ fontSize: '48px', fontWeight: '700', color: 'var(--mw-cyan)', marginBottom: '8px' }}>
                   7 Days
                 </div>
-                <div style={{ fontSize: '16px', color: '#94a3b8' }}>
+                <div style={{ fontSize: '16px', color: 'var(--mw-muted)' }}>
                   Sample Lead Time
                 </div>
-                <p style={{ fontSize: '14px', color: '#64748b', marginTop: '12px' }}>
+                <p style={{ fontSize: '14px', color: 'var(--mw-muted)', marginTop: '12px' }}>
                   Functional prototypes ready within 7 days of requirement confirmation.
                 </p>
               </div>
@@ -426,13 +500,13 @@ export default function OEMServicesPage() {
                 borderRadius: '16px',
                 border: '1px solid rgba(255,255,255,0.1)'
               }}>
-                <div style={{ fontSize: '48px', fontWeight: '700', color: '#3b82f6', marginBottom: '8px' }}>
+                <div style={{ fontSize: '48px', fontWeight: '700', color: 'var(--mw-cyan)', marginBottom: '8px' }}>
                   15-25 Days
                 </div>
-                <div style={{ fontSize: '16px', color: '#94a3b8' }}>
+                <div style={{ fontSize: '16px', color: 'var(--mw-muted)' }}>
                   Mass Production
                 </div>
-                <p style={{ fontSize: '14px', color: '#64748b', marginTop: '12px' }}>
+                <p style={{ fontSize: '14px', color: 'var(--mw-muted)', marginTop: '12px' }}>
                   Production time after sample approval. Varies by order quantity and customization.
                 </p>
               </div>
@@ -449,7 +523,7 @@ export default function OEMServicesPage() {
               <h3 style={{ fontSize: '20px', fontWeight: '600', marginBottom: '16px' }}>
                 📦 Volume Discounts Available
               </h3>
-              <p style={{ fontSize: '15px', color: '#94a3b8', lineHeight: '1.7' }}>
+              <p style={{ fontSize: '15px', color: 'var(--mw-muted)', lineHeight: '1.7' }}>
                 Orders above 1,000 units qualify for tiered pricing. Contact our sales team for 
                 custom quotes based on your specific requirements and annual volume commitments.
               </p>
@@ -461,7 +535,7 @@ export default function OEMServicesPage() {
       {/* Success Cases Section */}
       <section style={{
         padding: '100px 24px',
-        backgroundColor: '#f8fafc'
+        backgroundColor: 'transparent'
       }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
           <ScrollReveal>
@@ -470,14 +544,14 @@ export default function OEMServicesPage() {
               fontWeight: '700',
               textAlign: 'center',
               marginBottom: '16px',
-              color: '#1e293b'
+              color: 'var(--mw-text)'
             }}>
               Success Cases
             </h2>
             <p style={{
               fontSize: '18px',
               textAlign: 'center',
-              color: '#64748b',
+              color: 'var(--mw-muted)',
               marginBottom: '64px'
             }}>
               Real projects delivered for our B2B partners worldwide
@@ -492,21 +566,21 @@ export default function OEMServicesPage() {
             <ScrollReveal delay={0.1}>
               <div style={{
                 padding: '32px',
-                background: 'white',
+                background: 'linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035))',
                 borderRadius: '16px',
-                boxShadow: '0 4px 6px rgba(0,0,0,0.05)'
+                boxShadow: 'var(--mw-shadow-soft)'
               }}>
-                <div style={{ fontSize: '14px', color: '#3b82f6', fontWeight: '600', marginBottom: '12px' }}>
+                <div style={{ fontSize: '14px', color: 'var(--mw-cyan)', fontWeight: '600', marginBottom: '12px' }}>
                   🇩🇪 German Electronics Distributor
                 </div>
-                <h3 style={{ fontSize: '20px', fontWeight: '600', marginBottom: '12px', color: '#1e293b' }}>
+                <h3 style={{ fontSize: '20px', fontWeight: '600', marginBottom: '12px', color: 'var(--mw-text)' }}>
                   Custom Fitness Smartwatch Line
                 </h3>
-                <p style={{ fontSize: '15px', color: '#64748b', lineHeight: '1.7', marginBottom: '16px' }}>
+                <p style={{ fontSize: '15px', color: 'var(--mw-muted)', lineHeight: '1.7', marginBottom: '16px' }}>
                   Developed a white-label fitness smartwatch with custom German UI, health sensors, 
                   and EU-compliant packaging. 5,000 units ordered in first batch.
                 </p>
-                <div style={{ fontSize: '14px', color: '#94a3b8' }}>
+                <div style={{ fontSize: '14px', color: 'var(--mw-muted)' }}>
                   <strong>Customization:</strong> Logo, firmware, packaging, sensors
                 </div>
               </div>
@@ -515,21 +589,21 @@ export default function OEMServicesPage() {
             <ScrollReveal delay={0.2}>
               <div style={{
                 padding: '32px',
-                background: 'white',
+                background: 'linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035))',
                 borderRadius: '16px',
-                boxShadow: '0 4px 6px rgba(0,0,0,0.05)'
+                boxShadow: 'var(--mw-shadow-soft)'
               }}>
-                <div style={{ fontSize: '14px', color: '#3b82f6', fontWeight: '600', marginBottom: '12px' }}>
+                <div style={{ fontSize: '14px', color: 'var(--mw-cyan)', fontWeight: '600', marginBottom: '12px' }}>
                   🇺🇸 US Health Tech Startup
                 </div>
-                <h3 style={{ fontSize: '20px', fontWeight: '600', marginBottom: '12px', color: '#1e293b' }}>
+                <h3 style={{ fontSize: '20px', fontWeight: '600', marginBottom: '12px', color: 'var(--mw-text)' }}>
                   ECG Smartwatch with Custom App
                 </h3>
-                <p style={{ fontSize: '15px', color: '#64748b', lineHeight: '1.7', marginBottom: '16px' }}>
+                <p style={{ fontSize: '15px', color: 'var(--mw-muted)', lineHeight: '1.7', marginBottom: '16px' }}>
                   Full OEM solution including ECG sensor integration, custom mobile app development, 
                   and FDA documentation support. Now their flagship product.
                 </p>
-                <div style={{ fontSize: '14px', color: '#94a3b8' }}>
+                <div style={{ fontSize: '14px', color: 'var(--mw-muted)' }}>
                   <strong>Customization:</strong> Hardware, app, cloud platform
                 </div>
               </div>
@@ -538,21 +612,21 @@ export default function OEMServicesPage() {
             <ScrollReveal delay={0.3}>
               <div style={{
                 padding: '32px',
-                background: 'white',
+                background: 'linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035))',
                 borderRadius: '16px',
-                boxShadow: '0 4px 6px rgba(0,0,0,0.05)'
+                boxShadow: 'var(--mw-shadow-soft)'
               }}>
-                <div style={{ fontSize: '14px', color: '#3b82f6', fontWeight: '600', marginBottom: '12px' }}>
+                <div style={{ fontSize: '14px', color: 'var(--mw-cyan)', fontWeight: '600', marginBottom: '12px' }}>
                   🇦🇪 UAE Trading Company
                 </div>
-                <h3 style={{ fontSize: '20px', fontWeight: '600', marginBottom: '12px', color: '#1e293b' }}>
+                <h3 style={{ fontSize: '20px', fontWeight: '600', marginBottom: '12px', color: 'var(--mw-text)' }}>
                   Multi-Brand Smartwatch Portfolio
                 </h3>
-                <p style={{ fontSize: '15px', color: '#64748b', lineHeight: '1.7', marginBottom: '16px' }}>
+                <p style={{ fontSize: '15px', color: 'var(--mw-muted)', lineHeight: '1.7', marginBottom: '16px' }}>
                   Ongoing partnership supplying 3 different smartwatch models with unique branding 
                   for different market segments. 20,000+ units annually.
                 </p>
-                <div style={{ fontSize: '14px', color: '#94a3b8' }}>
+                <div style={{ fontSize: '14px', color: 'var(--mw-muted)' }}>
                   <strong>Customization:</strong> Multiple SKUs, branding, packaging
                 </div>
               </div>
@@ -561,24 +635,127 @@ export default function OEMServicesPage() {
         </div>
       </section>
 
+      {/* GEO FAQ + Schema */}
+      <section style={{
+        padding: '80px 24px',
+        backgroundColor: '#0f172a',
+        color: 'white'
+      }}>
+        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+          <h2 style={{
+            fontSize: '32px',
+            fontWeight: '700',
+            textAlign: 'center',
+            marginBottom: '12px'
+          }}>
+            OEM FAQ
+          </h2>
+          <p style={{
+            textAlign: 'center',
+            color: 'var(--mw-muted)',
+            marginBottom: '40px',
+            fontSize: '16px'
+          }}>
+            Direct answers buyers ask when sourcing a custom smartwatch OEM manufacturer in China.
+          </p>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+            gap: '20px'
+          }}>
+            {[
+              {
+                q: 'What does Microwear OEM service include?',
+                a: 'Microwear OEM covers branding and configuration on existing smartwatch or AI glasses base models — laser logo, boot animation, packaging, watch faces, and firmware language packs — with MOQ from 100pcs.'
+              },
+              {
+                q: 'What is the MOQ for custom smartwatch manufacturing?',
+                a: 'Standard MOQ is 100 pieces per model. Trial quantities may be discussed for first-time partners depending on the base model and options selected.'
+              },
+              {
+                q: 'How long do OEM samples and bulk orders take?',
+                a: 'Samples are typically ready in 7 days after requirements are confirmed. Mass production usually takes 15–25 days after sample approval.'
+              },
+              {
+                q: 'Can Microwear provide SDK and white-label apps?',
+                a: 'Yes. Firmware feature toggles, multi-language UI, SDK for app integration, and white-label mobile app options are available under OEM projects.'
+              },
+            ].map((item) => (
+              <div key={item.q} style={{
+                padding: '24px',
+                background: 'rgba(255,255,255,0.05)',
+                borderRadius: '14px',
+                border: '1px solid rgba(255,255,255,0.08)'
+              }}>
+                <h3 style={{ fontSize: '17px', fontWeight: '600', color: '#60a5fa', marginBottom: '10px' }}>{item.q}</h3>
+                <p style={{ fontSize: '14px', lineHeight: '1.7', color: 'var(--mw-muted)', margin: 0 }}>{item.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What does Microwear OEM service include?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Microwear OEM covers branding and configuration on existing smartwatch or AI glasses base models — laser logo, boot animation, packaging, watch faces, and firmware language packs — with MOQ from 100pcs."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What is the MOQ for custom smartwatch manufacturing?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Standard MOQ is 100 pieces per model. Trial quantities may be discussed for first-time partners depending on the base model and options selected."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How long do OEM samples and bulk orders take?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Samples are typically ready in 7 days after requirements are confirmed. Mass production usually takes 15–25 days after sample approval."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can Microwear provide SDK and white-label apps?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Firmware feature toggles, multi-language UI, SDK for app integration, and white-label mobile app options are available under OEM projects."
+                  }
+                }
+              ]
+            })
+          }}
+        />
+      </section>
+
       {/* SEO Text Section - B2B Keyword Density */}
       <section style={{
         padding: '60px 24px',
-        background: '#f8f9fa'
+        background: 'transparent'
       }}>
         <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-          <h2 style={{ fontSize: '28px', fontWeight: '700', marginBottom: '24px', textAlign: 'center', color: '#1a1a1a' }}>
-            Microwear OEM/ODM — Full-Service Wearable Technology Manufacturing
+          <h2 style={{ fontSize: '28px', fontWeight: '700', marginBottom: '24px', textAlign: 'center', color: 'var(--mw-text)' }}>
+            What is Microwear OEM manufacturing?
           </h2>
-          <div style={{ lineHeight: '1.8', fontSize: '16px', color: '#555' }}>
+          <div style={{ lineHeight: '1.8', fontSize: '16px', color: 'var(--mw-muted)' }}>
             <p style={{ marginBottom: '16px' }}>
-              <strong>Microwear</strong> is a leading <strong>smartwatch OEM manufacturer</strong> and <strong>AI glasses factory</strong> in Shenzhen, China. Our OEM/ODM services cover the entire product lifecycle — from concept design and prototyping to mass production and global shipping. With ISO9001 certification and 8 SMT production lines, we deliver <strong>custom smartwatch manufacturing</strong> at scale.
+              <strong>Microwear OEM manufacturing</strong> is the factory service that brands and configures proven wearable base models for B2B buyers. As a Shenzhen <strong>smartwatch OEM manufacturer</strong> and <strong>AI glasses factory</strong>, Microwear handles logo, firmware, packaging, sampling, mass production, and export documentation under ISO9001:2015 with 8 SMT lines and 2M+ annual capacity.
             </p>
             <p style={{ marginBottom: '16px' }}>
-              Beyond smartwatches, Microwear also offers <strong>AI glasses OEM</strong> and <strong>telephone glasses ODM</strong> services. Our AI glasses with camera, voice assistant, and AR capabilities are gaining traction among B2B buyers looking for next-generation wearable products. Whether you need <strong>camera glasses manufacturer</strong> partnership or <strong>telephone glasses factory</strong> sourcing, Microwear has the expertise and capacity.
+              For <strong>custom smartwatch manufacturing</strong>, buyers typically request OEM branding on catalog models — logo, packaging, firmware language, and optional SDK/app white-label. The same workflow supports <strong>AI glasses OEM</strong> and telephone/camera glasses projects for partners expanding beyond wrist wearables.
             </p>
             <p>
-              Our <strong>smartwatch wholesale</strong> program supports orders from 100pcs to 100,000+ units, with flexible payment terms and dedicated account management. Every OEM project includes free samples, 24-hour quote response, and after-sales support. <a href="/contact?subject=OEM Inquiry" style={{ color: '#0ea5e9', textDecoration: 'underline' }}>Start your OEM project today</a>.
+              Practical baselines: MOQ from 100pcs, wholesale commonly $15–50, samples in about 7 days, bulk in 15–25 days after approval. Final cost and schedule depend on components and options selected — request a current factory quote before locking volume. <Link href="/contact?subject=OEM Inquiry" style={{ color: '#0ea5e9', textDecoration: 'underline' }}>Start your OEM project</Link>.
             </p>
           </div>
         </div>
@@ -587,7 +764,7 @@ export default function OEMServicesPage() {
       {/* CTA Section */}
       <section style={{
         padding: '80px 24px',
-        backgroundColor: 'white',
+        backgroundColor: 'transparent',
         textAlign: 'center'
       }}>
         <div style={{ maxWidth: '700px', margin: '0 auto' }}>
@@ -596,13 +773,13 @@ export default function OEMServicesPage() {
               fontSize: '32px',
               fontWeight: '700',
               marginBottom: '16px',
-              color: '#1e293b'
+              color: 'var(--mw-text)'
             }}>
               Ready to Start Your OEM Project?
             </h2>
             <p style={{
               fontSize: '18px',
-              color: '#64748b',
+              color: 'var(--mw-muted)',
               marginBottom: '32px',
               lineHeight: '1.7'
             }}>
@@ -614,7 +791,7 @@ export default function OEMServicesPage() {
                 href="/contact" 
                 style={{
                   padding: '16px 32px',
-                  background: '#3b82f6',
+                  background: 'linear-gradient(180deg,#7ef0dc,#5eead4 50%,#2dd4bf)',
                   color: 'white',
                   borderRadius: '8px',
                   textDecoration: 'none',
@@ -628,8 +805,8 @@ export default function OEMServicesPage() {
                 href="/factory" 
                 style={{
                   padding: '16px 32px',
-                  background: '#f1f5f9',
-                  color: '#1e293b',
+                  background: 'rgba(255,255,255,0.06)',
+                  color: 'var(--mw-text)',
                   borderRadius: '8px',
                   textDecoration: 'none',
                   fontWeight: '600',
