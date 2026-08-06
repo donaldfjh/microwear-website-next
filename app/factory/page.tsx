@@ -260,9 +260,7 @@ export default function FactoryPage() {
                   padding: '32px 24px',
                   background: 'linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035))', border: '1px solid rgba(255,255,255,0.1)', boxShadow: 'var(--mw-shadow-soft)',
                   borderRadius: '16px',
-                  textAlign: 'center',
-                  boxShadow: '0 4px 6px rgba(0,0,0,0.05)'
-                }}>
+                  textAlign: 'center',}}>
                   <div style={{ fontSize: '36px', marginBottom: '12px' }}>{stat.icon}</div>
                   <div style={{
                     fontSize: '32px',
@@ -399,8 +397,6 @@ export default function FactoryPage() {
                   padding: '32px',
                   background: 'linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035))', border: '1px solid rgba(255,255,255,0.1)', boxShadow: 'var(--mw-shadow-soft)',
                   borderRadius: '16px',
-                  boxShadow: '0 4px 6px rgba(0,0,0,0.05)',
-                  border: '1px solid #e2e8f0'
                 }}>
                   <div style={{ fontSize: '42px', marginBottom: '16px' }}>{cert.icon}</div>
                   <h3 style={{
@@ -621,9 +617,7 @@ export default function FactoryPage() {
                 <div style={{
                   padding: '32px',
                   background: 'linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035))', border: '1px solid rgba(255,255,255,0.1)', boxShadow: 'var(--mw-shadow-soft)',
-                  borderRadius: '16px',
-                  boxShadow: '0 4px 6px rgba(0,0,0,0.05)'
-                }}>
+                  borderRadius: '16px',}}>
                   <h3 style={{
                     fontSize: '20px',
                     fontWeight: '600',

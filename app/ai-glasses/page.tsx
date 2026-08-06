@@ -444,9 +444,10 @@ export default function AIGlassesPage() {
               {/* W Ai 4 Specs Card */}
               <div style={{
                 padding: '32px',
-                background: 'linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035))', border: '1px solid rgba(255,255,255,0.1)', boxShadow: 'var(--mw-shadow-soft)',
+                background: 'linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035))',
+                border: '1px solid rgba(255,255,255,0.1)',
+                boxShadow: 'var(--mw-shadow-soft)',
                 borderRadius: '16px',
-                boxShadow: '0 4px 6px rgba(0,0,0,0.05)'
               }}>
                 <h3 style={{
                   fontSize: '24px',
@@ -505,9 +506,10 @@ export default function AIGlassesPage() {
               {/* W AI 3 Specs Card */}
               <div style={{
                 padding: '32px',
-                background: 'linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035))', border: '1px solid rgba(255,255,255,0.1)', boxShadow: 'var(--mw-shadow-soft)',
+                background: 'linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035))',
+                border: '1px solid rgba(255,255,255,0.1)',
+                boxShadow: 'var(--mw-shadow-soft)',
                 borderRadius: '16px',
-                boxShadow: '0 4px 6px rgba(0,0,0,0.05)'
               }}>
                 <h3 style={{
                   fontSize: '24px',

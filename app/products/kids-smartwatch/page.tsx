@@ -107,9 +107,7 @@ export default function KidsSmartwatchPage() {
             <div style={{
               padding: '32px',
               background: 'linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035))', border: '1px solid rgba(255,255,255,0.1)', boxShadow: 'var(--mw-shadow-soft)',
-              borderRadius: '12px',
-              boxShadow: '0 4px 6px rgba(0,0,0,0.1)'
-            }}>
+              borderRadius: '12px',}}>
               <div style={{ fontSize: '40px', marginBottom: '16px' }}>📍</div>
               <h3 style={{ fontSize: '22px', fontWeight: '600', marginBottom: '12px', color: '#1e293b' }}>
                 GPS Tracking
@@ -122,9 +120,7 @@ export default function KidsSmartwatchPage() {
             <div style={{
               padding: '32px',
               background: 'linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035))', border: '1px solid rgba(255,255,255,0.1)', boxShadow: 'var(--mw-shadow-soft)',
-              borderRadius: '12px',
-              boxShadow: '0 4px 6px rgba(0,0,0,0.1)'
-            }}>
+              borderRadius: '12px',}}>
               <div style={{ fontSize: '40px', marginBottom: '16px' }}>🆘</div>
               <h3 style={{ fontSize: '22px', fontWeight: '600', marginBottom: '12px', color: '#1e293b' }}>
                 SOS Emergency
@@ -137,9 +133,7 @@ export default function KidsSmartwatchPage() {
             <div style={{
               padding: '32px',
               background: 'linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035))', border: '1px solid rgba(255,255,255,0.1)', boxShadow: 'var(--mw-shadow-soft)',
-              borderRadius: '12px',
-              boxShadow: '0 4px 6px rgba(0,0,0,0.1)'
-            }}>
+              borderRadius: '12px',}}>
               <div style={{ fontSize: '40px', marginBottom: '16px' }}>👨‍👩‍👧</div>
               <h3 style={{ fontSize: '22px', fontWeight: '600', marginBottom: '12px', color: '#1e293b' }}>
                 Parental Controls
@@ -230,7 +224,6 @@ export default function KidsSmartwatchPage() {
               background: 'linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035))', border: '1px solid rgba(255,255,255,0.1)', boxShadow: 'var(--mw-shadow-soft)',
               borderRadius: '12px',
               overflow: 'hidden',
-              boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
               transition: 'transform 0.2s'
             }}>
               <div style={{

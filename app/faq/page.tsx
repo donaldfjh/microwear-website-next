@@ -187,9 +187,7 @@ export default function FAQPage() {
                 padding: '32px',
                 background: 'linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035))', border: '1px solid rgba(255,255,255,0.1)', boxShadow: 'var(--mw-shadow-soft)',
                 borderRadius: '16px',
-                textAlign: 'center',
-                boxShadow: '0 4px 6px rgba(0,0,0,0.05)'
-              }}>
+                textAlign: 'center',}}>
                 <div style={{ fontSize: '42px', fontWeight: '700', color: '#0ea5e9', marginBottom: '8px' }}>
                   100 pcs
                 </div>
@@ -204,9 +202,7 @@ export default function FAQPage() {
                 padding: '32px',
                 background: 'linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035))', border: '1px solid rgba(255,255,255,0.1)', boxShadow: 'var(--mw-shadow-soft)',
                 borderRadius: '16px',
-                textAlign: 'center',
-                boxShadow: '0 4px 6px rgba(0,0,0,0.05)'
-              }}>
+                textAlign: 'center',}}>
                 <div style={{ fontSize: '42px', fontWeight: '700', color: '#0ea5e9', marginBottom: '8px' }}>
                   $15-80
                 </div>
@@ -221,9 +217,7 @@ export default function FAQPage() {
                 padding: '32px',
                 background: 'linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035))', border: '1px solid rgba(255,255,255,0.1)', boxShadow: 'var(--mw-shadow-soft)',
                 borderRadius: '16px',
-                textAlign: 'center',
-                boxShadow: '0 4px 6px rgba(0,0,0,0.05)'
-              }}>
+                textAlign: 'center',}}>
                 <div style={{ fontSize: '42px', fontWeight: '700', color: '#0ea5e9', marginBottom: '8px' }}>
                   15-25
                 </div>
@@ -238,9 +232,7 @@ export default function FAQPage() {
                 padding: '32px',
                 background: 'linear-gradient(165deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035))', border: '1px solid rgba(255,255,255,0.1)', boxShadow: 'var(--mw-shadow-soft)',
                 borderRadius: '16px',
-                textAlign: 'center',
-                boxShadow: '0 4px 6px rgba(0,0,0,0.05)'
-              }}>
+                textAlign: 'center',}}>
                 <div style={{ fontSize: '42px', fontWeight: '700', color: '#0ea5e9', marginBottom: '8px' }}>
                   7+
                 </div>
