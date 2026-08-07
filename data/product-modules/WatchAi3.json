@@ -6,13 +6,15 @@
   "priceRange": "$18-32",
   "category": "Business",
   "images": [
+    "/images/products/Watch-Ai-3/Black.png",
+    "/images/products/Watch-Ai-3/Silver.png",
     "/images/products/Watch-Ai-3/main1.webp",
     "/images/products/Watch-Ai-3/main2.webp",
     "/images/products/Watch-Ai-3/main3.webp",
-    "/images/products/Watch-Ai-3/main4.webp",
-    "/images/products/Watch-Ai-3/main5.webp",
     "/images/products/Watch-Ai-3/main6.webp",
-    "/images/products/Watch-Ai-3/main7.webp"
+    "/images/products/Watch-Ai-3/main7.webp",
+    "/images/products/Watch-Ai-3/main4.webp",
+    "/images/products/Watch-Ai-3/main5.webp"
   ],
   "specifications": {
     "display": "1.45-inch HD Full-Version, Always-On Display",
@@ -61,7 +63,7 @@
       "price": 18,
       "color": "Black",
       "bandMaterial": "Silicone",
-      "image": "/images/products/Watch-Ai-3/black.webp"
+      "image": "/images/products/Watch-Ai-3/Black.png"
     },
     {
       "id": "Watch-Ai-3-silver",
@@ -69,7 +71,7 @@
       "price": 18,
       "color": "Silver",
       "bandMaterial": "Silicone",
-      "image": "/images/products/Watch-Ai-3/silver.webp"
+      "image": "/images/products/Watch-Ai-3/Silver.png"
     }
   ],
   "useCase": {

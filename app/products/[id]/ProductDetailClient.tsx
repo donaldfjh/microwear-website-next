@@ -26,6 +26,8 @@ const getColorHex = (colorName: string): string => {
     red: "#DC3545",
     gray: "#6C757D",
     grey: "#6C757D",
+    starlight: "#E8E0D5",
+    star: "#E8E0D5",
     brown: "#8B4513",
     orange: "#FF8C00",
     purple: "#6F42C1",
@@ -145,13 +147,23 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
               <div className="color-selector-section">
                 <h2>Available Colors</h2>
                 <div className="color-options">
-                  {product.variants.map((variant: ProductVariant) => (
+                  {product.variants.map((variant: ProductVariant, index: number) => {
+                    const isSelected =
+                      selectedVariant != null &&
+                      ((selectedVariant.id &&
+                        variant.id &&
+                        selectedVariant.id === variant.id) ||
+                        (selectedVariant.color === variant.color &&
+                          selectedVariant.name === variant.name &&
+                          selectedVariant.image === variant.image));
+
+                    return (
                     <button
-                      key={variant.id}
-                      className={`color-option ${
-                        selectedVariant?.id === variant.id ? "selected" : ""
-                      }`}
+                      key={`${variant.id || "variant"}-${variant.color || index}-${index}`}
+                      type="button"
+                      className={`color-option ${isSelected ? "selected" : ""}`}
                       onClick={() => setSelectedVariant(variant)}
+                      aria-pressed={isSelected}
                       aria-label={`Select ${variant.color} color`}
                       title={variant.name}
                     >
@@ -161,14 +173,18 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
                           backgroundColor: getColorHex(variant.color || ""),
                           border:
                             variant.color?.toLowerCase() === "white" ||
-                            variant.color?.toLowerCase() === "silver"
-                              ? "1px solid #ddd"
+                            variant.color?.toLowerCase() === "silver" ||
+                            variant.color?.toLowerCase() === "starlight" ||
+                            variant.color?.toLowerCase() === "grey" ||
+                            variant.color?.toLowerCase() === "gray"
+                              ? "1px solid rgba(220, 228, 236, 0.45)"
                               : "none",
                         }}
                       />
                       <span className="color-name">{variant.color}</span>
                     </button>
-                  ))}
+                    );
+                  })}
                 </div>
                 {selectedVariant && (
                   <div className="selected-variant-info">

@@ -12,7 +12,10 @@ interface ImageGalleryProps {
 export const ImageGallery: React.FC<ImageGalleryProps> = ({ images, alt }) => {
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
 
-  // Auto-play: cycle through images every 3 seconds
+  useEffect(() => {
+    setSelectedImageIndex(0);
+  }, [images]);
+
   useEffect(() => {
     if (images.length <= 1) return;
 
@@ -21,7 +24,7 @@ export const ImageGallery: React.FC<ImageGalleryProps> = ({ images, alt }) => {
     }, 3000);
 
     return () => clearInterval(interval);
-  }, [images.length]);
+  }, [images]);
 
   if (!images || images.length === 0) {
     return (
@@ -31,11 +34,6 @@ export const ImageGallery: React.FC<ImageGalleryProps> = ({ images, alt }) => {
     );
   }
 
-  const handleThumbnailClick = (index: number) => {
-    setSelectedImageIndex(index);
-  };
-
-  // Generate descriptive alt text for each image
   const getImageAlt = (index: number) => {
     const imageDescriptions = [
       "Product Overview",
@@ -68,10 +66,10 @@ export const ImageGallery: React.FC<ImageGalleryProps> = ({ images, alt }) => {
           {images.map((image, index) => (
             <button
               key={index}
-              className={`thumbnail ${
-                index === selectedImageIndex ? "active" : ""
+              className={`thumbnail${
+                index === selectedImageIndex ? " active" : ""
               }`}
-              onClick={() => handleThumbnailClick(index)}
+              onClick={() => setSelectedImageIndex(index)}
               aria-label={`View image ${index + 1}`}
             >
               <Image

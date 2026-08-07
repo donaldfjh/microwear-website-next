@@ -5,11 +5,15 @@
     "description": "Premium smartwatch with advanced health tracking and stunning AMOLED display. Perfect for fitness enthusiasts and professionals alike.",
     "price": 18,
     "images": [
-      "/images/products/MA35-00.webp",
+      "/images/products/MA35Black01.png",
+      "/images/products/MA35Silver01.png",
+      "/images/products/MA35Gold01.png",
+      "/images/products/MA35BlackOrange01.png",
       "/images/products/MA35-01.webp",
+      "/images/products/MA35-04.webp",
+      "/images/products/MA35-00.webp",
       "/images/products/MA35-02.webp",
       "/images/products/MA35-03.webp",
-      "/images/products/MA35-04.webp",
       "/images/products/MA35-05.webp",
       "/images/products/MA35-06.webp",
       "/images/products/MA35-07.webp"
@@ -53,7 +57,7 @@
         "price": 18,
         "color": "Black",
         "bandMaterial": "Silicone",
-        "image": "/images/products/MA35Black01.webp"
+        "image": "/images/products/MA35Black01.png"
       },
       {
         "id": "mw-pro-x1-silver",
@@ -61,23 +65,23 @@
         "price": 18,
         "color": "Silver",
         "bandMaterial": "Silicone",
-        "image": "/images/products/MA35Silver01.webp"
+        "image": "/images/products/MA35Silver01.png"
       },
       {
-        "id": "mw-pro-x1-leather",
+        "id": "ma35-gold",
         "name": "Classic Leather",
         "price": 18,
         "color": "Gold",
         "bandMaterial": "Silicone",
-        "image": "/images/products/MA35Gold01.webp"
+        "image": "/images/products/MA35Gold01.png"
       },
       {
-        "id": "mw-pro-x1-leather",
+        "id": "ma35-orange",
         "name": "Orange Leather",
         "price": 18,
         "color": "Orange",
         "bandMaterial": "Silicone",
-        "image": "/images/products/MA35BlackOrange01.webp"
+        "image": "/images/products/MA35BlackOrange01.png"
       }
     ],
     "features": [
@@ -101,11 +105,12 @@
     "description": "Premium smartwatch with advanced health tracking and stunning AMOLED display. Perfect for fitness enthusiasts and professionals alike.",
     "price": 18,
     "images": [
+      "/images/products/w11pblack.png",
       "/images/products/w11poverall.webp",
-      "/images/products/w11pblack.webp",
-      "/images/products/w11ppink.webp",
-      "/images/products/w11psilver.webp",
-      "/images/products/w11pScreen.webp"
+      "/images/products/w11ppink.png",
+      "/images/products/w11psilver.png",
+      "/images/products/w11pScreen.webp",
+      "/images/products/w11pOrange.webp"
     ],
     "specifications": {
       "display": "2.07, AMOLED, 410x480 pixels, Always-On Display",
@@ -146,7 +151,7 @@
         "price": 18,
         "color": "Black",
         "bandMaterial": "Silicone",
-        "image": "/images/products/w11pblack.webp"
+        "image": "/images/products/w11pblack.png"
       },
       {
         "id": "mw-pro-x1-silver",
@@ -154,18 +159,18 @@
         "price": 18,
         "color": "Silver",
         "bandMaterial": "Silicone",
-        "image": "/images/products/w11psilver.webp"
+        "image": "/images/products/w11psilver.png"
       },
       {
-        "id": "mw-pro-x1-leather",
+        "id": "w12pro-rose-gold",
         "name": "Classic Leather",
         "price": 18,
         "color": "Rose Gold",
         "bandMaterial": "Silicone",
-        "image": "/images/products/w11ppink.webp"
+        "image": "/images/products/w11ppink.png"
       },
       {
-        "id": "mw-pro-x1-leather",
+        "id": "w12pro-orange",
         "name": "Orange Leather",
         "price": 18,
         "color": "Orange",
@@ -195,10 +200,8 @@
     "price": 10,
     "images": [
       "/images/products/S11OverAll.png",
-      "/images/products/w11pblack.webp",
-      "/images/products/w11psilver.webp",
-      "/images/products/w11ppink.webp",
-      "/images/products/S11Function1.png"
+      "/images/products/S11Function1.png",
+      "/images/products/S11Function2.png"
     ],
     "specifications": {
       "display": "2.06, IPS, 240x294 pixels",
@@ -226,23 +229,7 @@
         "price": 10,
         "color": "Black",
         "bandMaterial": "Silicone",
-        "image": "/images/products/w11pblack.webp"
-      },
-      {
-        "id": "mw-fit-lite-silver",
-        "name": "Matte Silver",
-        "price": 10,
-        "color": "Silver",
-        "bandMaterial": "Silicone",
-        "image": "/images/products/w11psilver.webp"
-      },
-      {
-        "id": "mw-fit-lite-roseGold",
-        "name": "Matte Rose Gold",
-        "price": 10,
-        "color": "Rose Gold",
-        "bandMaterial": "Silicone",
-        "image": "/images/products/w11ppink.webp"
+        "image": "/images/products/S11OverAll.png"
       }
     ],
     "highlights": [
@@ -272,8 +259,8 @@
     "description": "Rugged sports watch designed for extreme athletes. Military-grade durability meets cutting-edge performance tracking.",
     "price": 10,
     "images": [
-      "/images/products/Ultra5Overall.jpg",
       "/images/products/Ultra5Black.png",
+      "/images/products/Ultra5Overall.jpg",
       "/images/products/Ultra5Silver.png",
       "/images/products/Ultra5whatsapp.jpg",
       "/images/products/Ultra5Detail3.jpg",
@@ -339,20 +326,20 @@
       "title": "Why this is perfect for Outdoor Adventurers?",
       "content": "Built with military-grade durability and precise GPS, the Ultra 5 withstands extreme conditions while providing critical metrics for hikers, runners, and explorers."
     },
-    "priceRange": "10 - 13" 
+    "priceRange": "10 - 13"
   },
   {
     "id": "mw-classic-steel",
     "name": "Microwear Watch MA31",
     "description": "Elegant hybrid smartwatch with traditional watch aesthetics. Seamlessly blend timeless style with modern technology.",
     "images": [
-      "/images/products/MA31Overall.jpg",
-      "/images/products/MA31Gray.jpg",
-      "/images/products/MA31Green1.jpg",
-      "/images/products/MA31Red.jpg",
-      "/images/products/MA31Black.jpg",
-      "/images/products/MA31Detail1.jpg",
+      "/images/products/MA31Black.png",
+      "/images/products/MA31Gray.png",
+      "/images/products/MA31Green1.png",
+      "/images/products/MA31Red.png",
       "/images/products/MA31AI.jpg",
+      "/images/products/MA31Overall.jpg",
+      "/images/products/MA31Detail1.jpg",
       "/images/products/MA31Assist.jpg",
       "/images/products/MA31WhatsApp.jpg"
     ],
@@ -392,28 +379,28 @@
         "name": "Gray",
         "color": "Gray",
         "bandMaterial": "Stainless Steel",
-        "image": "/images/products/MA31Gray.jpg"
+        "image": "/images/products/MA31Gray.png"
       },
       {
         "id": "mw-classic-steel-gold",
         "name": "Red",
         "color": "Red",
         "bandMaterial": "Stainless Steel",
-        "image": "/images/products/MA31Red.jpg"
+        "image": "/images/products/MA31Red.png"
       },
       {
         "id": "mw-classic-steel-leather",
         "name": "Black",
         "color": "Black",
         "bandMaterial": "Genuine Leather",
-        "image": "/images/products/MA31Black.jpg"
+        "image": "/images/products/MA31Black.png"
       },
       {
         "id": "mw-classic-steel-Green",
         "name": "Green",
         "color": "Green",
         "bandMaterial": "Genuine Leather",
-        "image": "/images/products/MA31Green1.jpg"
+        "image": "/images/products/MA31Green1.png"
       }
     ],
     "features": [
@@ -434,11 +421,11 @@
     "name": "Watch Su02",
     "description": "Safe and fun smartwatch designed specifically for children. Keep your kids active and connected with parental controls.",
     "images": [
-      "/images/products/su02Overall.jpg",
       "/images/products/Su02Black.png",
       "/images/products/Su02White.png",
       "/images/products/Su02Purple.png",
       "/images/products/su02Detail1.jpg",
+      "/images/products/su02Overall.jpg",
       "/images/products/su02Detail2.jpg",
       "/images/products/su02Detail3.jpg",
       "/images/products/su02Detail4.jpg"
@@ -511,12 +498,15 @@
     "name": "Microwear Watch MA25",
     "description": "Best OEM Smartwatch for Women's Health (Period Tracking & ECG) | Microwear",
     "images": [
+      "/images/products/ma25Black.png",
+      "/images/products/ma25Gray.png",
       "/images/products/ma25OverAll.jpg",
-      "/images/products/ma25Gray.jpg",
       "/images/products/ma25F1.jpg",
       "/images/products/ma25F2.jpg",
       "/images/products/ma25F3.jpg",
       "/images/products/ma25F4.jpg",
+      "/images/products/MA25.png",
+      "/images/products/ma25Pink.png",
       "/images/products/ma25F5.jpg"
     ],
     "specifications": {
@@ -558,28 +548,28 @@
         "id": "mw-health-plus-white",
         "name": "gray",
         "color": "Gray",
-        "image": "/images/products/ma25Gray.jpg",
+        "image": "/images/products/ma25Gray.png",
         "bandMaterial": "Medical-grade Silicone"
       },
       {
         "id": "mw-health-plus-black",
         "name": "Black",
         "color": "Black",
-        "image": "/images/products/ma25Black.jpg",
+        "image": "/images/products/ma25Black.png",
         "bandMaterial": "Medical-grade Silicone"
       },
       {
         "id": "mw-health-plus-Purple",
         "name": "Purple",
         "color": "Purple",
-        "image": "/images/products/MA25.jpg",
+        "image": "/images/products/MA25.png",
         "bandMaterial": "Medical-grade Silicone"
       },
       {
         "id": "mw-health-plus-pink",
         "name": "Pink",
         "color": "Pink",
-        "image": "/images/products/ma25Pink.jpg",
+        "image": "/images/products/ma25Pink.png",
         "bandMaterial": "Medical-grade Silicone"
       }
     ],
@@ -604,8 +594,9 @@
     "name": "Microwear Watch MA18",
     "description": "Medical-grade health monitoring smartwatch. Advanced sensors for comprehensive health insights and wellness tracking.",
     "images": [
+      "/images/products/ma18silver.png",
+      "/images/products/ma18Dark.png",
       "/images/products/ma18Overall.webp",
-      "/images/products/ma18silver.webp",
       "/images/products/ma18F1.webp",
       "/images/products/ma18F2.webp",
       "/images/products/ma18F3.webp",
@@ -652,14 +643,14 @@
         "id": "mw-health-plus-white",
         "name": "Silver",
         "color": "Silver",
-        "image": "/images/products/ma18silver.webp",
+        "image": "/images/products/ma18silver.png",
         "bandMaterial": "Medical-grade Silicone"
       },
       {
         "id": "mw-health-plus-black",
         "name": "Black",
         "color": "Black",
-        "image": "/images/products/ma18Dark.webp",
+        "image": "/images/products/ma18Dark.png",
         "bandMaterial": "Medical-grade Silicone"
       }
     ],
@@ -684,6 +675,7 @@
     "name": "Microwear Watch MA15MAX",
     "description": "Health monitoring smartwatch. Advanced sensors for comprehensive wellness tracking.",
     "images": [
+      "/images/products/MA15MAXBlackGreen-01.png",
       "/images/products/MA15MAX_01.webp",
       "/images/products/MA15MAX_03.webp",
       "/images/products/MA15MAX_04.webp",
@@ -728,10 +720,9 @@
         "id": "mw-health-plus-white",
         "name": "Black Green",
         "color": "Black Green",
-        "image": "/images/products/MA15MAXBlackGreen-01.webp",
+        "image": "/images/products/MA15MAXBlackGreen-01.png",
         "bandMaterial": "22mm standard Easy-kit changing straps"
       }
-
     ],
     "features": [
       "ECG",
@@ -754,11 +745,12 @@
     "name": "Microwear AI 3 Smart Audio Glasses OEM (Blue Light Blocking)",
     "description": "Next-generation smart glasses with integrated AI assistant, open-ear audio, and heads-up display. Experience the future of wearable computing. White label smart glasses for health monitoring projects and AR navigation solutions.",
     "images": [
-      "/images/glasses/01.webp",
+      "/images/glasses/04.png",
       "/images/glasses/02.webp",
       "/images/glasses/03.webp",
-      "/images/glasses/04.webp",
       "/images/glasses/06.webp",
+      "/images/glasses/glasses1.webp",
+      "/images/glasses/01.webp",
       "/images/glasses/08.webp",
       "/images/glasses/09.webp"
     ],
@@ -822,13 +814,14 @@
     "description": "Next-generation smart glasses with integrated AI assistant, open-ear audio, and heads-up display. Experience the future of wearable computing. Ideal white label smart glasses for health monitoring projects, industrial remote assistance, and hands-free logistics.",
     "price": 50,
     "images": [
-      "/images/AI_PRO/14.webp",
+      "/images/AI_PRO/16.png",
       "/images/AI_PRO/15.webp",
-      "/images/AI_PRO/16.webp",
-      "/images/AI_PRO/17.webp",
       "/images/AI_PRO/18.webp",
       "/images/AI_PRO/19.webp",
-      "/images/AI_PRO/20.webp"
+      "/images/AI_PRO/20.webp",
+      "/images/AI_PRO/Pro_3.webp",
+      "/images/AI_PRO/14.webp",
+      "/images/AI_PRO/17.webp"
     ],
     "specifications": {
       "display": "Micro-OLED Heads-up Display",
@@ -892,13 +885,14 @@
     "description": "Next-generation smart glasses with integrated AI assistant. Best budget smartwatch alternative and smart glasses for corporate gifts, tech promotions, and employee wellness programs.",
     "price": 50,
     "images": [
-      "/images/AI_4/01.webp",
+      "/images/AI_4/12.png",
       "/images/AI_4/02.webp",
       "/images/AI_4/03.webp",
       "/images/AI_4/08.webp",
       "/images/AI_4/09.webp",
-      "/images/AI_4/10.webp",
-      "/images/AI_4/11.webp"
+      "/images/AI_4/11.webp",
+      "/images/AI_4/01.webp",
+      "/images/AI_4/10.webp"
     ],
     "specifications": {
       "display": "Micro-OLED Heads-up Display",
@@ -938,7 +932,7 @@
         "price": 50,
         "color": "Black",
         "bandMaterial": "TR90 Polymer",
-        "image": "/images/AI_4/12.webp"
+        "image": "/images/AI_4/12.png"
       }
     ],
     "features": [

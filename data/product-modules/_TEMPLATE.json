@@ -6,7 +6,7 @@
   "priceRange": "$18-32",
   "category": "Business",
   "images": [
-    "/images/products/YOUR-PRODUCT-ID/00-overall.webp",
+    "/images/products/YOUR-PRODUCT-ID/Black.png",
     "/images/products/YOUR-PRODUCT-ID/01.webp",
     "/images/products/YOUR-PRODUCT-ID/02.webp",
     "/images/products/YOUR-PRODUCT-ID/03.webp"
@@ -56,7 +56,7 @@
       "price": 18,
       "color": "Black",
       "bandMaterial": "Silicone",
-      "image": "/images/products/YOUR-PRODUCT-ID/black.webp"
+      "image": "/images/products/YOUR-PRODUCT-ID/Black.png"
     },
     {
       "id": "YOUR-PRODUCT-ID-silver",
@@ -64,7 +64,7 @@
       "price": 18,
       "color": "Silver",
       "bandMaterial": "Silicone",
-      "image": "/images/products/YOUR-PRODUCT-ID/silver.webp"
+      "image": "/images/products/YOUR-PRODUCT-ID/Silver.png"
     }
   ],
   "useCase": {

@@ -1,11 +1,14 @@
 {
   "id": "Watch-Ai-4",
   "name": "Microwear Watch Ai 4",
-  "description": "AI-powered smartwatch with advanced health tracking and stunning AMOLED like display. Perfect for fitness enthusiasts and professionals alike.",
+  "description": "B2B AI smartwatch with 2.0\" AMOLED, on-wrist WhatsApp/Telegram, BT calling, NFC & QR pay, and ChatGPT-ready voice — built for wholesale and white-label OEM.",
   "price": 18,
   "priceRange": "$18-32",
   "category": "Business",
   "images": [
+    "/images/products/Watch-Ai-4/Black1.png",
+    "/images/products/Watch-Ai-4/Grey.png",
+    "/images/products/Watch-Ai-4/Star.png",
     "/images/products/Watch-Ai-4/01.webp",
     "/images/products/Watch-Ai-4/02.webp",
     "/images/products/Watch-Ai-4/03.webp",
@@ -14,13 +17,14 @@
     "/images/products/Watch-Ai-4/06.webp"
   ],
   "specifications": {
-    "display": "2.0, AMOLED, 410x502 pixels, Always-On Display",
+    "display": "2.0\" AMOLED, 410×502, Always-On Display",
     "processor": "Dual-core 192MHz",
     "battery": "300mAh, up to 5 days typical use",
     "waterResistance": "IP68",
     "connectivity": [
       "Bluetooth 5.3",
-      "GPS"
+      "GPS",
+      "NFC"
     ],
     "sensors": [
       "Heart Rate",
@@ -31,49 +35,62 @@
       "iOS 12+",
       "Android 6.0+"
     ],
-    "dimensions": "46 x 40 x 10 mm",
+    "dimensions": "46 × 40 × 10 mm",
     "weight": "45g (without strap)",
-    "chipset": "",
-    "appName": "",
-    "certification": "CE, FCC, RoHS",
-    "materials": "Zinc alloy + Silicone"
+    "chipset": "Dual-core wearable SoC",
+    "appName": "Da Fit / OEM app (white-label on request)",
+    "certification": "CE, FCC, RoHS, ISO9001",
+    "materials": "Zinc alloy case + silicone band"
   },
   "highlights": [
-    "2.0, AMOLED, 410x502 pixels, Always-On Display",
-    "Dual-core 192MHz",
-    "300mAh, up to 5 days typical use",
-    "IP68 Waterproof",
-    "Heart Rate Monitor",
-    "SpO2",
-    "Sleep Tracking"
+    "2.0\" AMOLED Always-On display",
+    "WhatsApp & Telegram on wrist",
+    "Magic BT calling + AI voice / ChatGPT-ready",
+    "NFC & QR payment support",
+    "IP68 swim-ready + full health suite",
+    "500+ free watch faces",
+    "MOQ 100pcs · 7-day samples · custom logo"
   ],
   "features": [
+    "WhatsApp & Telegram",
+    "BT Calling",
+    "AI Voice / ChatGPT",
+    "NFC & QR Pay",
+    "GPS",
     "IP68 Waterproof",
-    "Heart Rate Monitor",
-    "SpO2",
-    "Sleep Tracking"
+    "Heart Rate & SpO2",
+    "Sleep Tracking",
+    "500+ Watch Faces"
   ],
   "variants": [
     {
-      "id": "Watch-Ai-3-black",
+      "id": "Watch-Ai-4-black",
       "name": "Midnight Black",
       "price": 18,
       "color": "Black",
       "bandMaterial": "Silicone",
-      "image": "/images/products/Watch-Ai-3/black.webp"
+      "image": "/images/products/Watch-Ai-4/Black1.png"
     },
     {
-      "id": "Watch-Ai-3-silver",
-      "name": "Arctic Silver",
+      "id": "Watch-Ai-4-grey",
+      "name": "Space Grey",
       "price": 18,
-      "color": "Silver",
+      "color": "Grey",
       "bandMaterial": "Silicone",
-      "image": "/images/products/Watch-Ai-3/silver.webp"
+      "image": "/images/products/Watch-Ai-4/Grey.png"
+    },
+    {
+      "id": "Watch-Ai-4-star",
+      "name": "Starlight",
+      "price": 18,
+      "color": "Starlight",
+      "bandMaterial": "Silicone",
+      "image": "/images/products/Watch-Ai-4/Star.png"
     }
   ],
   "useCase": {
-    "title": "Why this is perfect for Fitness Enthusiasts and Professionals?",
-    "content": "The Watch Ai 4 is perfect for fitness enthusiasts and professionals alike. It has a 2.0, AMOLED, 410x502 pixels, Always-On Display, Dual-core 192MHz, 300mAh, up to 5 days typical use, IP68 Waterproof, Heart Rate Monitor, SpO2, and Sleep Tracking. It is also compatible with iOS 12+ and Android 6.0+."
+    "title": "Why distributors choose Watch Ai 4",
+    "content": "Watch Ai 4 targets retail and brand partners who need an AI-forward SKU without a high MOQ. Messaging apps, BT calling, and pay features sell on the shelf; IP68 plus health tracking covers fitness buyers. Laser logo, boot screen, custom strap, and gift box options support white-label launches from 100 pcs, with samples in about 7 days."
   },
   "oemOptions": {
     "laserLogo": true,
@@ -85,6 +102,7 @@
   "distributorUSPs": [
     "MOQ 100pcs",
     "7-day samples",
-    "Custom logo available"
+    "Custom logo / boot screen / gift box",
+    "Wholesale $18–32"
   ]
 }
