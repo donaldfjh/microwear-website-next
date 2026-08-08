@@ -1,0 +1,98 @@
+{
+  "id": "Watch-Ai-5",
+  "name": "Microwear Watch Ai 5",
+  "description": "AI-powered smartwatch with advanced health tracking and a vivid AMOLED-like display. Built for fitness buyers and B2B white-label partners.",
+  "price": 18,
+  "priceRange": "$18-32",
+  "category": "Business",
+  "images": [
+    "/images/products/Watch-Ai-5/Black.png",
+    "/images/products/Watch-Ai-5/Silver.png",
+    "/images/products/Watch-Ai-5/RoseGold.png",
+    "/images/products/Watch-Ai-5/01.webp",
+    "/images/products/Watch-Ai-5/02.webp",
+    "/images/products/Watch-Ai-5/03.webp",
+    "/images/products/Watch-Ai-5/04.webp",
+    "/images/products/Watch-Ai-5/05.webp",
+    "/images/products/Watch-Ai-5/06.webp"
+  ],
+  "specifications": {
+    "display": "2.0, AMOLED, 410x502 pixels, Always-On Display",
+    "processor": "Dual-core 192MHz",
+    "battery": "300mAh, up to 5 days typical use",
+    "waterResistance": "IP68",
+    "connectivity": [
+      "Bluetooth 5.3",
+      "GPS"
+    ],
+    "sensors": [
+      "Heart Rate",
+      "SpO2",
+      "Accelerometer"
+    ],
+    "compatibility": [
+      "iOS 12+",
+      "Android 6.0+"
+    ],
+    "dimensions": "46 x 40 x 10 mm",
+    "weight": "45g (without strap)",
+    "chipset": "",
+    "appName": "",
+    "certification": "CE, FCC, RoHS",
+    "materials": "Zinc alloy + Silicone"
+  },
+  "highlights": [
+    "IP68 Waterproof",
+    "Heart Rate Monitor",
+    "SpO2",
+    "Sleep Tracking"
+  ],
+  "features": [
+    "IP68 Waterproof",
+    "Heart Rate Monitor",
+    "SpO2",
+    "Sleep Tracking"
+  ],
+  "variants": [
+    {
+      "id": "Watch-Ai-5-black",
+      "name": "Midnight Black",
+      "price": 18,
+      "color": "Black",
+      "bandMaterial": "Silicone",
+      "image": "/images/products/Watch-Ai-5/Black.png"
+    },
+    {
+      "id": "Watch-Ai-5-silver",
+      "name": "Arctic Silver",
+      "price": 18,
+      "color": "Silver",
+      "bandMaterial": "Silicone",
+      "image": "/images/products/Watch-Ai-5/Silver.png"
+    },
+    {
+      "id": "Watch-Ai-5-gold",
+      "name": "Rose Gold",
+      "price": 18,
+      "color": "Rose Gold",
+      "bandMaterial": "Silicone",
+      "image": "/images/products/Watch-Ai-5/RoseGold.png"
+    }
+  ],
+  "useCase": {
+    "title": "Why this is perfect for [目标客户]?",
+    "content": "一段英文说明，解释这款产品适合谁、为什么适合。"
+  },
+  "oemOptions": {
+    "laserLogo": true,
+    "bootScreen": true,
+    "customStrap": true,
+    "giftBox": true,
+    "appSdk": false
+  },
+  "distributorUSPs": [
+    "MOQ 100pcs",
+    "7-day samples",
+    "Custom logo available"
+  ]
+}
