@@ -1,0 +1,122 @@
+.product-spin {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  width: 100%;
+}
+
+.product-spin__stage {
+  width: 100%;
+  max-width: 520px;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  cursor: grab;
+  touch-action: pan-y;
+  user-select: none;
+  background:
+    radial-gradient(
+      ellipse 70% 55% at 50% 40%,
+      rgba(255, 255, 255, 0.92) 0%,
+      rgba(232, 238, 244, 0.88) 45%,
+      rgba(200, 214, 228, 0.55) 100%
+    ),
+    linear-gradient(165deg, #f4f7fa 0%, #d8e2ec 100%);
+  border: 1px solid rgba(220, 228, 236, 0.35);
+  box-shadow:
+    var(--mw-shadow-soft),
+    inset 0 1px 0 rgba(255, 255, 255, 0.65);
+  perspective: 900px;
+}
+
+.product-spin__stage.is-dragging {
+  cursor: grabbing;
+}
+
+.product-spin__frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 7%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.05s linear;
+  filter: drop-shadow(0 18px 28px rgba(16, 24, 40, 0.22));
+  transform: translateZ(0);
+}
+
+.product-spin__frame.is-active {
+  opacity: 1;
+}
+
+.product-spin__hint {
+  position: absolute;
+  left: 50%;
+  bottom: 14px;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-family: var(--mw-font-body, inherit);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: rgba(18, 24, 32, 0.72);
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(220, 228, 236, 0.55);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  pointer-events: none;
+  opacity: 0.92;
+  transition: opacity 0.25s ease;
+}
+
+.product-spin__stage.is-dragging .product-spin__hint {
+  opacity: 0;
+}
+
+.product-spin__hint-icon {
+  font-size: 0.85rem;
+  line-height: 1;
+}
+
+.product-spin__dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 0.15rem 0;
+}
+
+.product-spin__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background: rgba(168, 192, 212, 0.45);
+  transition: background 0.2s ease, transform 0.2s ease, width 0.2s ease;
+}
+
+.product-spin__dot:hover {
+  background: rgba(168, 192, 212, 0.75);
+}
+
+.product-spin__dot.is-active {
+  width: 18px;
+  background: rgba(18, 24, 32, 0.72);
+}
+
+@media (max-width: 640px) {
+  .product-spin__hint {
+    font-size: 0.68rem;
+    bottom: 10px;
+  }
+}

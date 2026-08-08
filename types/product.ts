@@ -51,4 +51,6 @@ export interface Product {
     title: string;
     content: string;
   };
+  /** Ordered frames for lightweight drag-to-rotate 3D preview */
+  spinViews?: string[];
 }

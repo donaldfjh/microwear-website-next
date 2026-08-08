@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { ImageGallery } from "@/components/ImageGallery";
+import { ProductSpinViewer } from "@/components/ProductSpinViewer";
 import { useComparison } from "@/contexts/ComparisonContext";
 import { useToast } from "@/contexts/ToastContext";
 import { Breadcrumb } from "@/components/Breadcrumb";
@@ -46,6 +47,10 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
   const { showToast } = useToast();
   const [selectedVariant, setSelectedVariant] = useState<ProductVariant | null>(
     null
+  );
+  const hasSpinViews = Boolean(product.spinViews && product.spinViews.length > 1);
+  const [galleryMode, setGalleryMode] = useState<"spin" | "photos">(
+    hasSpinViews ? "spin" : "photos"
   );
 
   // Set initial variant when product loads
@@ -127,11 +132,40 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
       <div className="product-detail-container">
         <div className="product-detail-gallery">
           <ScrollReveal delay={0.1}>
-            <ImageGallery
-              images={getDisplayImages()}
-              alt={imageAlt}
-              key={selectedVariant?.id || "default"}
-            />
+            {hasSpinViews && (
+              <div className="gallery-mode-toggle" role="tablist" aria-label="Gallery mode">
+                <button
+                  type="button"
+                  role="tab"
+                  aria-selected={galleryMode === "spin"}
+                  className={`gallery-mode-toggle__btn${galleryMode === "spin" ? " is-active" : ""}`}
+                  onClick={() => setGalleryMode("spin")}
+                >
+                  360°
+                </button>
+                <button
+                  type="button"
+                  role="tab"
+                  aria-selected={galleryMode === "photos"}
+                  className={`gallery-mode-toggle__btn${galleryMode === "photos" ? " is-active" : ""}`}
+                  onClick={() => setGalleryMode("photos")}
+                >
+                  Photos
+                </button>
+              </div>
+            )}
+            {hasSpinViews && galleryMode === "spin" ? (
+              <ProductSpinViewer
+                frames={product.spinViews!}
+                alt={imageAlt}
+              />
+            ) : (
+              <ImageGallery
+                images={getDisplayImages()}
+                alt={imageAlt}
+                key={selectedVariant?.id || "default"}
+              />
+            )}
           </ScrollReveal>
         </div>
 

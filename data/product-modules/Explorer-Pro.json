@@ -1,0 +1,119 @@
+{
+  "id": "Explorer-Pro",
+  "name": "Microwear Explorer Pro",
+  "description": "AI-powered smartwatch with advanced health tracking and a vivid AMOLED-like display. Built for fitness buyers and B2B white-label partners.",
+  "price": 18,
+  "priceRange": "$18-32",
+  "category": "Business",
+  "images": [
+    "/images/products/Explorer-pro/BlackEx.webp",
+    "/images/products/Explorer-pro/BlackOrange.webp",
+    "/images/products/Explorer-pro/TitaniumOrange.webp",
+    "/images/products/Explorer-pro/TitaniumStar.webp",
+    "/images/products/Explorer-pro/01.webp",
+    "/images/products/Explorer-pro/02.webp",
+    "/images/products/Explorer-pro/03.webp",
+    "/images/products/Explorer-pro/04.webp",
+    "/images/products/Explorer-pro/05.webp",
+    "/images/products/Explorer-pro/06.webp"
+  ],
+  "specifications": {
+    "display": "1.45-inch HD Full-Version, Always-On Display",
+    "processor": "Dual-core 192MHz",
+    "battery": "350mAh, up to 5 days typical use",
+    "waterResistance": "IP68",
+    "connectivity": [
+      "Bluetooth 5.3",
+      "GPS"
+    ],
+    "sensors": [
+      "Heart Rate",
+      "SpO2",
+      "Accelerometer"
+    ],
+    "compatibility": [
+      "iOS 12+",
+      "Android 6.0+"
+    ],
+    "dimensions": "46 x 40 x 10 mm",
+    "weight": "45g (without strap)",
+    "chipset": "",
+    "appName": "",
+    "certification": "CE, FCC, RoHS",
+    "materials": "Zinc alloy + Silicone"
+  },
+  "highlights": [
+    "1.45-inch HD Full-Version, Always-On Display",
+    "Dual-core 192MHz",
+    "350mAh, up to 5 days typical use",
+    "IP68 Waterproof",
+    "Heart Rate Monitor",
+    "SpO2",
+    "Sleep Tracking"
+  ],
+  "features": [
+    "IP68 Waterproof",
+    "Heart Rate Monitor",
+    "SpO2",
+    "Sleep Tracking"
+  ],
+  "variants": [
+    {
+      "id": "Explorer-Pro-black",
+      "name": "Black Explorer Pro",
+      "price": 18,
+      "color": "Black",
+      "bandMaterial": "Silicone",
+      "image": "/images/products/Explorer-pro/BlackEx.webp"
+    },
+    {
+      "id": "Explorer-Pro-black-orange",
+      "name": "Black Orange Explorer Pro",
+      "price": 18,
+      "color": "Black Orange",
+      "bandMaterial": "Silicone",
+      "image": "/images/products/Explorer-pro/BlackOrange.webp"
+    },
+    {
+      "id": "Explorer-Pro-titanium-orange",
+      "name": "Titanium Orange Explorer Pro",
+      "price": 18,
+      "color": "Titanium Orange",
+      "bandMaterial": "Silicone",
+      "image": "/images/products/Explorer-pro/TitaniumOrange.webp"
+    },
+    {
+      "id": "Explorer-Pro-titanium-star",
+      "name": "Titanium Star Explorer Pro",
+      "price": 18,
+      "color": "Titanium Star",
+      "bandMaterial": "Silicone",
+      "image": "/images/products/Explorer-pro/TitaniumStar.webp"
+    }
+  ],
+  "useCase": {
+    "title": "Why this is perfect for Fitness Enthusiasts and Professionals?",
+    "content": "The Watch Ai 3 is perfect for fitness enthusiasts and professionals alike. It has a 1.45-inch HD Full-Version, Always-On Display, Dual-core 192MHz, 350mAh, up to 5 days typical use, IP68 Waterproof, Heart Rate Monitor, SpO2, and Sleep Tracking. It is also compatible with iOS 12+ and Android 6.0+."
+  },
+  "oemOptions": {
+    "laserLogo": true,
+    "bootScreen": true,
+    "customStrap": true,
+    "giftBox": true,
+    "appSdk": false
+  },
+  "distributorUSPs": [
+    "MOQ 100pcs",
+    "7-day samples",
+    "Custom logo available"
+  ],
+  "spinViews": [
+    "/images/products/Explorer-pro/spin-01.webp",
+    "/images/products/Explorer-pro/spin-02.webp",
+    "/images/products/Explorer-pro/spin-03v2.webp",
+    "/images/products/Explorer-pro/spin-04.webp",
+    "/images/products/Explorer-pro/spin-05v2.webp",
+    "/images/products/Explorer-pro/spin-06.webp"
+  ]
+}
+
