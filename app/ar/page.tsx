@@ -5,7 +5,11 @@ export const metadata: Metadata = {
   title: "شركة Microwear لتصنيع الساعات الذكية | OEM",
   description: "شركة Microwear - شركة تصنيع ساعات ذكية معتمدة ISO9001. تواصل معنا لعرض سعر المصنع، MOQ 200 قطعة. عينات مجانية، توصيل خلال 7-15 يوم. خدمة عملاء باللغة العربية.",
   alternates: {
-    canonical: "https://microwear.info/ar/",
+    canonical: "https://microwear.info/ar",
+    languages: {
+      ar: "https://microwear.info/ar",
+      en: "https://microwear.info",
+    },
   },
 };
 

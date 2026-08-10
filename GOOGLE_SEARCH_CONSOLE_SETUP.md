@@ -159,7 +159,7 @@ A: 项目配置为每次构建时自动更新。当你添加新内容时，重�
 
 1. 查看 [Google Search Console 帮助中心](https://support.google.com/webmasters)
 2. 访问 [Next.js SEO 文档](https://nextjs.org/learn/seo/introduction-to-seo)
-3. 查看 [next-sitemap 文档](https://github.com/iamvishnusankar/next-sitemap)
+3. 查看 [Next.js Metadata 文件约定](https://nextjs.org/docs/app/api-reference/file-conventions/metadata/sitemap)（`app/sitemap.ts` 与 `app/robots.ts`）
 
 ---
 
