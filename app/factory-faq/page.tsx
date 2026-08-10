@@ -6,7 +6,7 @@ import "./FactoryFAQ.css";
 export const metadata: Metadata = {
   title: "Microwear Factory FAQ | MOQ, Pricing, Certifications & OEM Services",
   description:
-    "Frequently asked questions about Microwear factory. Learn about MOQ (100pcs), pricing ($15-50), certifications (CE, RoHS, FCC, ISO9001), lead time, OEM services, and how to place orders.",
+    "Frequently asked questions about Microwear factory. Learn about MOQ (200pcs), factory quotes, certifications (CE, RoHS, FCC, ISO9001), lead time, OEM services, and how to place orders.",
   keywords: [
     "Microwear FAQ",
     "smartwatch MOQ",
@@ -37,7 +37,7 @@ export default function FactoryFAQ() {
         "name": "Who is Microwear?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Microwear is a leading smartwatch and AI glasses manufacturer established in 2008, specializing in OEM services for B2B clients worldwide. We are a Shenzhen-based factory with 300+ employees, 1000+ patents, and ISO9001 certification. We export to 100+ countries with offices in 10+ countries."
+          "text": "Microwear is a leading smartwatch and AI glasses manufacturer established in 2008, specializing in OEM services for B2B clients worldwide. We are a Shenzhen-based factory with 200+ employees, 1000+ patents, and ISO9001 certification. We export to 30+ countries with offices in 10+ countries."
         }
       },
       {
@@ -45,7 +45,7 @@ export default function FactoryFAQ() {
         "name": "What is Microwear's MOQ (Minimum Order Quantity)?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Our MOQ is 100 pieces for most smartwatch models. We offer flexible terms for trial orders and can discuss lower quantities for long-term partnership prospects."
+          "text": "Our MOQ is 200 pieces for smartwatch and AI glasses models. We offer flexible terms for trial orders and can discuss options for long-term partnership prospects."
         }
       },
       {
@@ -61,7 +61,7 @@ export default function FactoryFAQ() {
         "name": "What is the price range for Microwear smartwatches?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Our wholesale price range is $15-50 USD per unit, depending on the model, features, order quantity, and customization level. Basic fitness tracker models start at $15, while advanced AI-powered smartwatches with premium materials range from $35-50. Bulk orders (1000+ pcs) qualify for volume discounts."
+          "text": "Unit pricing depends on model, features, order quantity, and customization level. Contact us for a factory quote tailored to your requirements. Bulk orders may qualify for volume discounts."
         }
       },
       {
@@ -93,7 +93,7 @@ export default function FactoryFAQ() {
         "name": "Is Microwear a legitimate and verified company?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, Microwear is a fully verified and legitimate manufacturer. We are registered as Shenzhen NJY Technology Co., Ltd since 2008. We hold ISO9001 certification, have 1000+ patents, employ 300+ staff, and export to 100+ countries. We welcome factory audits and can provide business licenses, certifications, and client references upon request."
+          "text": "Yes, Microwear is a fully verified and legitimate manufacturer. We are registered as Shenzhen NJY Technology Co., Ltd since 2008. We hold ISO9001 certification, have 1000+ patents, employ 200+ staff, and export to 30+ countries. We welcome factory audits and can provide business licenses, certifications, and client references upon request."
         }
       },
       {
@@ -125,7 +125,7 @@ export default function FactoryFAQ() {
         "name": "Do you provide samples before bulk orders?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, we provide samples for quality evaluation. Sample cost: $50-100 per unit (refundable upon bulk order). Sample lead time: 3-5 days for existing models, 7-10 days for customized samples. Sample shipping: Via DHL, FedEx, or UPS (customer pays shipping). Sample cost is fully refundable when you place an order of 500+ pieces."
+          "text": "Yes, we provide samples for quality evaluation. Sample pricing is available on request (refundable upon qualifying bulk order). Sample lead time: 3-5 days for existing models, 7-10 days for customized samples. Sample shipping: Via DHL, FedEx, or UPS (customer pays shipping)."
         }
       },
       {
@@ -181,7 +181,7 @@ export default function FactoryFAQ() {
         "name": "Are there alternatives to Ray-Ban Meta glasses from Microwear?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes! Microwear offers AI glasses that serve as excellent alternatives to Ray-Ban Meta glasses. Our AI glasses feature: HD cameras (1080p/4K recording), Open-ear audio speakers, Voice assistant integration (Alexa, Google Assistant), Long battery life (8-12 hours), Lightweight design (30-40g), Custom branding options. We offer OEM services for AI glasses with competitive pricing ($35-80 wholesale) and MOQ from 100 pieces."
+          "text": "Yes! Microwear offers AI glasses that serve as excellent alternatives to Ray-Ban Meta glasses. Our AI glasses feature: HD cameras (1080p/4K recording), Open-ear audio speakers, Voice assistant integration (Alexa, Google Assistant), Long battery life (8-12 hours), Lightweight design (30-40g), Custom branding options. We offer OEM services for AI glasses with factory quotes on request and MOQ from 200 pieces."
         }
       },
       {
@@ -201,11 +201,11 @@ export default function FactoryFAQ() {
       questions: [
         {
           q: "Who is Microwear?",
-          a: "Microwear is a leading smartwatch and AI glasses manufacturer established in 2008, specializing in OEM services for B2B clients worldwide. We are a Shenzhen-based factory with 300+ employees, 1000+ patents, and ISO9001 certification. We export to 100+ countries with offices in 10+ countries."
+          a: "Microwear is a leading smartwatch and AI glasses manufacturer established in 2008, specializing in OEM services for B2B clients worldwide. We are a Shenzhen-based factory with 200+ employees, 1000+ patents, and ISO9001 certification. We export to 30+ countries with offices in 10+ countries."
         },
         {
           q: "Is Microwear a legitimate and verified company?",
-          a: "Yes, Microwear is fully verified and legitimate. We are registered as Shenzhen NJY Technology Co., Ltd since 2008, hold ISO9001 certification, have 1000+ patents, employ 300+ staff, and export to 100+ countries. We welcome factory audits and can provide business licenses, certifications, and client references upon request."
+          a: "Yes, Microwear is fully verified and legitimate. We are registered as Shenzhen NJY Technology Co., Ltd since 2008, hold ISO9001 certification, have 1000+ patents, employ 200+ staff, and export to 30+ countries. We welcome factory audits and can provide business licenses, certifications, and client references upon request."
         },
         {
           q: "How to verify if Microwear is a legitimate manufacturer?",
@@ -218,15 +218,15 @@ export default function FactoryFAQ() {
       questions: [
         {
           q: "What is Microwear's MOQ (Minimum Order Quantity)?",
-          a: "Our MOQ is 100 pieces for most smartwatch models. We offer flexible terms for trial orders and can discuss lower quantities for long-term partnership prospects."
+          a: "Our MOQ is 200 pieces for smartwatch and AI glasses models. We offer flexible terms for trial orders and can discuss options for long-term partnership prospects."
         },
         {
           q: "What is the price range for Microwear smartwatches?",
-          a: "Our wholesale price range is $15-50 USD per unit. Basic fitness trackers start at $15, while advanced AI-powered smartwatches with premium materials range from $35-50. Bulk orders (1000+ pcs) qualify for volume discounts. Final pricing depends on model, features, quantity, and customization."
+          a: "Unit pricing depends on model, features, quantity, and customization. Contact us for a factory quote. Bulk orders may qualify for volume discounts."
         },
         {
           q: "Do you provide samples before bulk orders?",
-          a: "Yes, samples available at $50-100 per unit (refundable upon bulk order of 500+ pcs). Sample lead time: 3-5 days for existing models, 7-10 days for customized. Shipping via DHL/FedEx/UPS (customer pays). Sample cost fully refundable with qualifying orders."
+          a: "Yes, samples are available on request (refundable upon qualifying bulk order). Sample lead time: 3-5 days for existing models, 7-10 days for customized. Shipping via DHL/FedEx/UPS (customer pays)."
         }
       ]
     },
@@ -294,7 +294,7 @@ export default function FactoryFAQ() {
         },
         {
           q: "Are there alternatives to Ray-Ban Meta glasses?",
-          a: "Yes! Our AI glasses are excellent alternatives: HD cameras (1080p/4K), Open-ear audio, Voice assistant (Alexa, Google), 8-12hr battery, Lightweight (30-40g), Custom branding. Wholesale $35-80, MOQ from 100 pieces."
+          a: "Yes! Our AI glasses are excellent alternatives: HD cameras (1080p/4K), Open-ear audio, Voice assistant (Alexa, Google), 8-12hr battery, Lightweight (30-40g), Custom branding. Contact for factory quote, MOQ from 200 pieces."
         }
       ]
     },
@@ -341,7 +341,7 @@ export default function FactoryFAQ() {
               <span className="stat-label">Patents Held</span>
             </div>
             <div className="stat">
-              <span className="stat-number">300+</span>
+              <span className="stat-number">200+</span>
               <span className="stat-label">Team Members</span>
             </div>
           </div>

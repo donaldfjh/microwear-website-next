@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Health Smartwatch OEM | ECG SpO2 Watch Manufacturer | Microwear",
-  description: "Health smartwatch OEM with ECG, SpO2, blood pressure monitoring. FDA-cleared devices available. Medical-grade sensors. CE, FCC certified. MOQ 100pcs.",
+  description: "Health smartwatch OEM with ECG, SpO2, blood pressure monitoring. FDA-cleared devices available. Medical-grade sensors. CE, FCC certified. MOQ 200pcs.",
   keywords: [
     "health smartwatch OEM",
     "ECG watch manufacturer",
@@ -171,7 +171,7 @@ export default function HealthSmartwatchPage() {
               <h3 style={{ fontSize: '18px', fontWeight: '600', marginBottom: '8px' }}>
                 Low MOQ
               </h3>
-              <p style={{ color: '#94a3b8' }}>Starting from 100pcs</p>
+              <p style={{ color: '#94a3b8' }}>Starting from 200pcs</p>
             </div>
             <div style={{ textAlign: 'center', padding: '24px' }}>
               <div style={{ fontSize: '36px', marginBottom: '12px' }}>🔬</div>

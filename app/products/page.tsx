@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Microwear Smartwatch Collection | OEM Manufacturer Wholesale Bulk 2026",
   description:
-    "Browse 20+ Microwear smartwatch models — fitness trackers, health watches, rugged & kids smartwatches. OEM manufacturer direct, wholesale bulk from $15, MOQ 100pcs. ISO9001, CE/FCC/RoHS. Free samples. 500+ B2B partners.",
+    "Browse 20+ Microwear smartwatch models — fitness trackers, health watches, rugged & kids smartwatches. OEM manufacturer direct, wholesale bulk, MOQ 200pcs. ISO9001, CE/FCC/RoHS. Free samples. 500+ B2B partners.",
   keywords: [
     "microwear smartwatch",
     "microwear smartwatches",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Microwear Smartwatch Collection | OEM Factory Direct",
     description:
-      "Complete microwear smartwatch collection - 20+ models for B2B wholesale. ISO9001 certified factory, MOQ 200pcs, $15-50. Free samples, custom logo, SDK support.",
+      "Complete microwear smartwatch collection - 20+ models for B2B wholesale. ISO9001 certified factory, MOQ 200pcs. Contact for factory quote. Free samples, custom logo, SDK support.",
     type: "website",
   },
 };
@@ -53,7 +53,7 @@ export default async function ProductsPage() {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Microwear Smartwatch OEM Manufacturer | Wholesale B2B Bulk Orders",
-    "description": "Complete microwear smartwatch OEM product catalog - ISO9001 certified manufacturer direct. B2B wholesale pricing $15-50, bulk orders welcome. Custom logo, SDK, packaging. Every microwear smartwatch features advanced health tracking, GPS, premium build. Smartwatch microwear factory with 10+ years expertise. MOQ 200pcs, free samples, 24h quotes, 7-15 day lead time. Professional smartwatch microwear manufacturer for global B2B partners.",
+    "description": "Complete microwear smartwatch OEM product catalog - ISO9001 certified manufacturer direct. B2B wholesale bulk orders welcome. Custom logo, SDK, packaging. Every microwear smartwatch features advanced health tracking, GPS, premium build. Smartwatch microwear factory with 10+ years expertise. MOQ 200pcs, contact for factory quote, free samples, 24h quotes, 7-15 day lead time. Professional smartwatch microwear manufacturer for global B2B partners.",
     "url": "https://microwear.info/products",
     "keywords": "microwear smartwatch, microwear smartwatches, microwear smart watch, smartwatch microwear, microwear smartwatch manufacturer, microwear smartwatch factory, wholesale smartwatch bulk, bulk smartwatch orders, OEM smartwatch, B2B smartwatch manufacturer, smartwatch microwear factory, microwear factory direct, smartwatch manufacturer China, microwear bulk orders, smartwatch OEM factory, microwear supplier, microwear OEM manufacturer, smartwatch microwear wholesale",
     "mainEntity": {
@@ -73,22 +73,13 @@ export default async function ProductsPage() {
           "category": product.category,
           "offers": {
             "@type": "Offer",
-            "price": "15.00",
-            "priceCurrency": "USD",
-            "priceValidUntil": "2027-03-21",
             "availability": "https://schema.org/InStock",
             "seller": {
               "@type": "Organization",
               "name": "Microwear"
             },
             "businessFunction": "wholesale",
-            "priceSpecification": {
-              "@type": "PriceSpecification",
-              "price": "15.00",
-              "minPrice": "15.00",
-              "maxPrice": "80.00",
-              "priceCurrency": "USD"
-            }
+            "description": "Contact for factory quote. MOQ 200 pcs."
           }
         }
       }))
@@ -141,8 +132,8 @@ export default async function ProductsPage() {
               <div style={{ fontSize: '14px', opacity: 0.8 }}>Smartwatch Models</div>
             </div>
             <div>
-              <div style={{ fontSize: '36px', fontWeight: '700', color: '#4CAF50' }}>$15-50</div>
-              <div style={{ fontSize: '14px', opacity: 0.8 }}>Wholesale Price</div>
+              <div style={{ fontSize: '36px', fontWeight: '700', color: '#4CAF50' }}>Quote</div>
+              <div style={{ fontSize: '14px', opacity: 0.8 }}>Factory Quote</div>
             </div>
             <div>
               <div style={{ fontSize: '36px', fontWeight: '700', color: '#4CAF50' }}>200pcs</div>
@@ -258,7 +249,7 @@ export default async function ProductsPage() {
               What is the MOQ for Microwear smartwatch OEM orders?
             </h3>
             <p style={{ color: 'var(--mw-muted)', lineHeight: '1.6' }}>
-              Our standard MOQ is 100 pieces per model for OEM orders. We offer flexible terms for first-time B2B partners and provide free samples for qualified buyers.
+              Our standard MOQ is 200 pieces per model for OEM orders. We offer flexible terms for first-time B2B partners and provide free samples for qualified buyers.
             </p>
           </div>
           
@@ -327,7 +318,7 @@ export default async function ProductsPage() {
                 "name": "What is the MOQ for Microwear smartwatch OEM orders?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Our standard MOQ is 100 pieces per model for OEM orders. We offer flexible terms for first-time B2B partners and provide free samples for qualified buyers."
+                  "text": "Our standard MOQ is 200 pieces per model for OEM orders. We offer flexible terms for first-time B2B partners and provide free samples for qualified buyers."
                 }
               },
               {
@@ -387,10 +378,10 @@ export default async function ProductsPage() {
           </h2>
           <div style={{ lineHeight: '1.8', fontSize: '16px', color: 'var(--mw-muted)' }}>
             <p style={{ marginBottom: '16px' }}>
-              <strong>Microwear smartwatch</strong> is a trusted brand among B2B buyers worldwide. As one of the leading <strong>smartwatch OEM manufacturers in China</strong>, Microwear offers 20+ smartwatch models with advanced features including health monitoring, GPS tracking, AMOLED displays, and long battery life — all at competitive wholesale prices starting from $15.
+              <strong>Microwear smartwatch</strong> is a trusted brand among B2B buyers worldwide. As one of the leading <strong>smartwatch OEM manufacturers in China</strong>, Microwear offers 20+ smartwatch models with advanced features including health monitoring, GPS tracking, AMOLED displays, and long battery life — contact us for a factory quote tailored to your specs.
             </p>
             <p style={{ marginBottom: '16px' }}>
-              Every <strong>Microwear smart watch</strong> is manufactured in our ISO9001 certified factory in Shenzhen, with CE, FCC, and RoHS certifications for global market compliance. Whether you need <strong>smartwatch wholesale bulk orders</strong>, custom logo engraving, or complete white-label solutions, Microwear delivers factory-direct pricing with MOQ starting from just 100 pieces.
+              Every <strong>Microwear smart watch</strong> is manufactured in our ISO9001 certified factory in Shenzhen, with CE, FCC, and RoHS certifications for global market compliance. Whether you need <strong>smartwatch wholesale bulk orders</strong>, custom logo engraving, or complete white-label solutions, Microwear delivers factory-direct OEM with MOQ starting from 200 pieces.
             </p>
             <p>
               Our <strong>Microwear smartwatches</strong> are trusted by 500+ B2B partners across 30+ countries. From fitness trackers to rugged smartwatches, kids smartwatches to health monitoring devices — we have the right product for your target market. <a href="/contact?subject=Smartwatch Wholesale" style={{ color: 'var(--mw-cyan)', textDecoration: 'underline' }}>Request a free quote today</a>. Learn more about our company on our <a href="/about" style={{ color: 'var(--mw-cyan)', textDecoration: 'underline' }}>About Microwear</a> page. Explore our <a href="/ai-glasses" style={{ color: 'var(--mw-cyan)', textDecoration: 'underline' }}>AI glasses collection</a> for next-gen wearable solutions.

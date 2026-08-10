@@ -3,7 +3,7 @@
   "name": "Microwear YOUR MODEL",
   "description": "一句话产品描述（英文，会显示在产品列表和详情页）",
   "price": 18,
-  "priceRange": "$18-32",
+  "priceRange": "Contact for factory quote",
   "category": "Business",
   "images": [
     "/images/products/YOUR-PRODUCT-ID/Black.png",
@@ -79,7 +79,7 @@
     "appSdk": false
   },
   "distributorUSPs": [
-    "MOQ 100pcs",
+    "MOQ 200pcs",
     "7-day samples",
     "Custom logo available"
   ]

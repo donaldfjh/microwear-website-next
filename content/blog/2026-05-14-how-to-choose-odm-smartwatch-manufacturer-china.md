@@ -77,7 +77,7 @@ Before committing to a partnership, thorough due diligence is essential. Here ar
 - Do you offer reduced MOQs for first-time buyers?
 - Are there volume discounts for larger orders?
 
-**Tip:** Look for manufacturers offering **MOQs as low as 100 units** for ODM products. This allows you to test market response before scaling. Microwear offers entry-level MOQs starting at 100 units for select models, making them accessible for startups and established brands alike.
+**Tip:** Look for manufacturers offering **flexible MOQs around 200 units** for ODM products. This allows you to test market response before scaling. Microwear offers entry-level MOQs starting at 200 units, making them accessible for startups and established brands alike.
 
 ---
 
@@ -239,7 +239,7 @@ Microwear exemplifies what B2B buyers should look for in a Chinese ODM smartwatc
 |-----------|-------------------|
 | **Experience** | 15+ years in wearable manufacturing |
 | **Team Size** | 200+ employees across R&D, production, QC |
-| **MOQ** | From 100 units for ODM models |
+| **MOQ** | From 200 units for ODM models |
 | **Certifications** | ISO 9001, CE, FCC, RoHS, Bluetooth SIG |
 | **Monthly Capacity** | 50,000+ units with scaling capability |
 | **QC Process** | 12-point inspection, <0.3% defect rate |

@@ -1,76 +1,55 @@
 import React from "react";
+import { SEO_CONFIG, FACTS } from "@/lib/seo-config";
 
 /**
- * Organization Schema - 企业组织结构化数据
- * 用于增强品牌在搜索引擎中的展示
+ * Organization Schema — always driven by SEO_CONFIG (GEO single source of truth)
  */
 export const OrganizationSchema: React.FC = () => {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://microwear.info";
+  const baseUrl = SEO_CONFIG.site.url;
+  const { company, contact, social } = SEO_CONFIG;
 
   const schema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Microwear",
-    alternateName: "Microwear Technology Co., Ltd.",
-    url: baseUrl,
-    logo: `${baseUrl}/logo.png`,
-    description:
-      "Leading OEM smartwatch manufacturer specializing in health monitoring, GPS tracking, and AI-powered wearable devices.",
-    foundingDate: "2015",
-    founders: [
-      {
-        "@type": "Person",
-        name: "Microwear Team",
-      },
-    ],
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "Shenzhen",
-      addressRegion: "Guangdong",
-      addressCountry: "CN",
-    },
-    contactPoint: [
-      {
-        "@type": "ContactPoint",
-        telephone: "+86-755-8888-8888",
-        contactType: "sales",
-        availableLanguage: ["English", "Chinese"],
-      },
-      {
-        "@type": "ContactPoint",
-        telephone: "+86-755-8888-8889",
-        contactType: "customer support",
-        availableLanguage: ["English", "Chinese"],
-      },
-    ],
-    sameAs: [
-      "https://www.facebook.com/microwearofficial",
-      "https://twitter.com/microwear",
-      "https://www.linkedin.com/company/microwear",
-      "https://www.youtube.com/microwearofficial",
-    ],
-    brand: {
-      "@type": "Brand",
-      name: "Microwear",
-      logo: `${baseUrl}/logo.png`,
-    },
-    knowsAbout: [
-      "Smartwatch Manufacturing",
-      "Wearable Technology",
-      "Health Monitoring Devices",
-      "GPS Tracking",
-      "OEM Services",
-      "AI Smart Glasses",
-    ],
+    "@id": `${baseUrl}/#organization`,
+    name: company.name,
+    legalName: company.legalName,
+    url: `${baseUrl}/`,
+    logo: `${baseUrl}/images/logos/image.png`,
+    description: company.description,
+    foundingDate: company.foundingDate,
     numberOfEmployees: {
       "@type": "QuantitativeValue",
-      value: "200-500",
+      minValue: 200,
+      unitText: "employees",
     },
-    annualRevenue: {
-      "@type": "QuantitativeValue",
-      value: "10M-50M USD",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: contact.address.street,
+      addressLocality: contact.address.city,
+      addressRegion: contact.address.region,
+      postalCode: contact.address.postalCode,
+      addressCountry: contact.address.country,
     },
-    slogan: "Your Trusted OEM Smartwatch Partner",
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: contact.phone,
+      email: contact.email,
+      contactType: "sales",
+      availableLanguage: ["English", "Chinese"],
+    },
+    sameAs: [
+      social.facebook,
+      social.linkedin,
+      social.youtube,
+      social.twitter,
+      social.instagram,
+    ],
+    areaServed: `${FACTS.markets} countries`,
+    makesOffer: {
+      "@type": "Offer",
+      description: `MOQ ${FACTS.moqWatchShort}. ${FACTS.quoteCta}.`,
+    },
   };
 
   return (
@@ -81,33 +60,4 @@ export const OrganizationSchema: React.FC = () => {
   );
 };
 
-/**
- * WebSite Schema - 网站结构化数据
- * 用于增强搜索站点链接搜索框
- */
-export const WebSiteSchema: React.FC = () => {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://microwear.info";
-
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    name: "Microwear - OEM Smartwatch Manufacturer",
-    url: baseUrl,
-    potentialAction: {
-      "@type": "SearchAction",
-      target: {
-        "@type": "EntryPoint",
-        urlTemplate: `${baseUrl}/products?search={search_term_string}`,
-      },
-      "query-input": "required name=search_term_string",
-    },
-    inLanguage: "en-US",
-  };
-
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-    />
-  );
-};
+export default OrganizationSchema;

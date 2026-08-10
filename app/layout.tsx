@@ -6,6 +6,7 @@ import "./globals.css";
 import { Navigation } from "@/components/Navigation";
 import { ComparisonProvider } from "@/contexts/ComparisonContext";
 import { ToastProvider } from "@/contexts/ToastContext";
+import { SEO_CONFIG, FACTS } from "@/lib/seo-config";
 
 const syne = Syne({
   subsets: ["latin"],
@@ -19,82 +20,213 @@ const outfit = Outfit({
   display: "swap",
 });
 
-// Lazy load non-critical components to reduce initial bundle size
-const FloatingContact = dynamic(() => import("@/components/FloatingContact").then((mod) => mod.FloatingContact), { ssr: false });
-const FloatingComparisonBar = dynamic(() => import("@/components/FloatingComparisonBar").then((mod) => mod.FloatingComparisonBar), { ssr: false });
-const OpenClawChat = dynamic(() => import("@/components/OpenClawChat").then((mod) => mod.OpenClawChat), { ssr: false });
+const FloatingContact = dynamic(
+  () =>
+    import("@/components/FloatingContact").then((mod) => mod.FloatingContact),
+  { ssr: false }
+);
+const FloatingComparisonBar = dynamic(
+  () =>
+    import("@/components/FloatingComparisonBar").then(
+      (mod) => mod.FloatingComparisonBar
+    ),
+  { ssr: false }
+);
+const OpenClawChat = dynamic(
+  () => import("@/components/OpenClawChat").then((mod) => mod.OpenClawChat),
+  { ssr: false }
+);
+
+const baseUrl = SEO_CONFIG.site.url;
 
 export const metadata: Metadata = {
-  title: "Microwear | Smart Watch & AI Glasses OEM Manufacturer from China (2008)",
-  description:
-    "Microwear - ISO9001 certified smart watch & AI glasses OEM manufacturer since 2008. MOQ 100pcs, $15-50 wholesale. 8 SMT lines, 2M+ units/year. Free samples, 24h quotes. CE/FCC/RoHS certified. Get your quote today!",
+  title: `Microwear | Smartwatch & AI Glasses OEM Manufacturer China (Since ${FACTS.founded})`,
+  description: `Microwear (${FACTS.legalName}) is a Shenzhen smartwatch and AI glasses OEM/ODM factory founded in ${FACTS.founded}. MOQ ${FACTS.moqWatchShort}, ${FACTS.employees} staff, ${FACTS.smtLines} SMT lines, ${FACTS.capacity} units/year. ${FACTS.certsShort}. Serving ${FACTS.partners} B2B partners in ${FACTS.markets} countries. ${FACTS.quoteCta}.`,
   icons: {
     icon: "/images/logos/image.svg",
     shortcut: "/images/logos/image.svg",
     apple: "/images/logos/image.svg",
   },
-  metadataBase: new URL("https://microwear.info"),
+  metadataBase: new URL(baseUrl),
   alternates: {
     canonical: "/",
   },
   manifest: "/manifest.json",
   openGraph: {
-    title: "Microwear - Professional Smart Watch Manufacturer",
-    description:
-      "Discover premium smartwatches and OEM solutions at Microwear.",
-    url: "https://microwear.info/",
+    title: "Microwear | Smartwatch & AI Glasses OEM Manufacturer",
+    description: `OEM/ODM factory in Shenzhen since ${FACTS.founded}. MOQ ${FACTS.moqWatchShort}. ${FACTS.quoteCta}.`,
+    url: `${baseUrl}/`,
     type: "website",
     locale: "en_US",
-    siteName: "Microwear",
+    siteName: SEO_CONFIG.site.name,
   },
 };
+
+function buildGeoJsonLd() {
+  const { company, contact, social, business } = SEO_CONFIG;
+  const logoUrl = `${baseUrl}/images/logos/image.png`;
+
+  // Direct-answer entity block AI systems can quote
+  const organization = {
+    "@context": "https://schema.org",
+    "@type": ["Organization", "Corporation"],
+    "@id": `${baseUrl}/#organization`,
+    name: company.name,
+    legalName: company.legalName,
+    alternateName: [company.legalName, "Microwear OEM Factory"],
+    url: `${baseUrl}/`,
+    logo: {
+      "@type": "ImageObject",
+      url: logoUrl,
+    },
+    image: logoUrl,
+    description: company.description,
+    foundingDate: company.foundingDate,
+    slogan: company.slogan,
+    numberOfEmployees: {
+      "@type": "QuantitativeValue",
+      minValue: 200,
+      unitText: "employees",
+    },
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: contact.address.street,
+      addressLocality: contact.address.city,
+      addressRegion: contact.address.region,
+      postalCode: contact.address.postalCode,
+      addressCountry: contact.address.country,
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: contact.geo.latitude,
+      longitude: contact.geo.longitude,
+    },
+    contactPoint: [
+      {
+        "@type": "ContactPoint",
+        telephone: contact.phone,
+        email: contact.email,
+        contactType: "sales",
+        areaServed: "Worldwide",
+        availableLanguage: ["English", "Chinese"],
+      },
+    ],
+    sameAs: [
+      social.facebook,
+      social.linkedin,
+      social.youtube,
+      social.twitter,
+      social.instagram,
+    ],
+    knowsAbout: [
+      "Smartwatch OEM manufacturing",
+      "AI glasses OEM",
+      "ODM wearables",
+      "White-label smartwatches",
+      "ISO9001 wearable production",
+    ],
+    brand: {
+      "@type": "Brand",
+      name: company.name,
+      logo: logoUrl,
+    },
+    areaServed: {
+      "@type": "Place",
+      name: `${company.marketsCount} countries`,
+    },
+    makesOffer: {
+      "@type": "Offer",
+      name: "Smartwatch and AI glasses OEM/ODM",
+      description: `Standard MOQ ${FACTS.moqWatchShort} for smartwatches and AI glasses. ${FACTS.certsShort}. ${FACTS.quoteCta}. Unit prices are not published online.`,
+      availability: "https://schema.org/InStock",
+      url: `${baseUrl}/contact`,
+    },
+    hasCredential: business.certifications.map((name) => ({
+      "@type": "EducationalOccupationalCredential",
+      credentialCategory: "certification",
+      name,
+    })),
+  };
+
+  const website = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${baseUrl}/#website`,
+    name: company.name,
+    url: `${baseUrl}/`,
+    publisher: { "@id": `${baseUrl}/#organization` },
+    inLanguage: "en",
+    description: company.description,
+    potentialAction: {
+      "@type": "SearchAction",
+      target: `${baseUrl}/products?q={search_term_string}`,
+      "query-input": "required name=search_term_string",
+    },
+  };
+
+  // FAQ-style entity answers — high citation value for AI engines
+  const entityFaq = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": `${baseUrl}/#entity-faq`,
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What is Microwear?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `Microwear (${company.legalName}) is a smartwatch and AI glasses OEM/ODM manufacturer founded in ${company.foundingDate} in Shenzhen, China. The factory runs ${company.smtLines} SMT lines with ${company.capacity} units/year capacity and ${company.employees} staff.`,
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is Microwear's MOQ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `Standard MOQ is ${FACTS.moqWatchShort} for smartwatches and ${FACTS.moqGlasses} for AI glasses. ${FACTS.quoteCta}.`,
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Where is Microwear located?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `Microwear headquarters and factory are in Nanshan District, Shenzhen, China (${contact.address.street}).`,
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What certifications does Microwear have?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `Microwear products and factory support ${FACTS.certsShort} (and CCC where applicable).`,
+        },
+      },
+    ],
+  };
+
+  return [organization, website, entityFaq];
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const organizationSchema = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    name: "Microwear",
-    url: "https://microwear.info/",
-    logo: "https://microwear.info/images/logos/image.png",
-    description:
-      "Professional Smart Watch Manufacturer and OEM Service Provider",
-    keywords: "Smart Watch OEM, Wearable Tech Factory, Microwear",
-    address: {
-      "@type": "PostalAddress",
-      addressCountry: "CN",
-    },
-    contactPoint: {
-      "@type": "ContactPoint",
-      contactType: "sales",
-      areaServed: "Global",
-    },
-    sameAs: [
-      "https://www.facebook.com/MicrowearOfficial",
-      "https://www.youtube.com/@Microwear",
-    ],
-  };
+  const jsonLdBlocks = buildGeoJsonLd();
 
   return (
     <html lang="en" className={`${syne.variable} ${outfit.variable}`}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        {/* Preload hero image for LCP optimization */}
-        <link
-          rel="preload"
-          as="image"
-          href="/images/products/w11poverall.webp"
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(organizationSchema),
-          }}
-        />
+        <link rel="preload" as="image" href="/images/products/w11poverall.webp" />
+        {jsonLdBlocks.map((block, index) => (
+          <script
+            key={index}
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(block) }}
+          />
+        ))}
       </head>
       <body className={outfit.className}>
         <ToastProvider>

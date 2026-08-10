@@ -11,7 +11,7 @@ interface ContactPageProps {
 export const metadata: Metadata = {
   title: "Contact Microwear | Get Free Quote for OEM Smart Watch | Bulk Orders",
   description:
-    "Contact Microwear for smartwatch OEM inquiries. MOQ 500pcs, free samples for qualified partners, 24h prototyping. Email: donaldfang@njytech.com.cn | WhatsApp: +852 6733 7121. Get your custom quote today!",
+    "Contact Microwear for smartwatch OEM inquiries. MOQ 200pcs, free samples for qualified partners, 24h prototyping. Email: donaldfang@njytech.com.cn | WhatsApp: +852 6733 7121. Get your custom quote today!",
   keywords: ["smartwatch OEM quote", "bulk order smartwatch", "contact manufacturer", "wholesale smartwatch"],
   alternates: {
     canonical: "https://microwear.info/contact",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Contact Microwear | Get Free Quote for OEM Smart Watch",
     description:
-      "Contact Microwear for smartwatch OEM inquiries. MOQ 500pcs, free samples, 24h prototyping.",
+      "Contact Microwear for smartwatch OEM inquiries. MOQ 200pcs, free samples, 24h prototyping.",
   },
 };
 
@@ -81,7 +81,7 @@ export default function ContactPage({ searchParams }: ContactPageProps) {
       "https://twitter.com/microwear",
       "https://instagram.com/microwear"
     ],
-    "priceRange": "$$",
+    "priceRange": "Contact for factory quote",
     "paymentAccepted": ["T/T", "PayPal", "L/C", "Western Union"],
     "currenciesAccepted": "USD"
   };

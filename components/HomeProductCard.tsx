@@ -35,7 +35,7 @@ export const HomeProductCard: React.FC<HomeProductCardProps> = ({
               height={300}
               sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 300px"
             />
-            <div className="moq-badge">MOQ: 500 Pcs</div>
+            <div className="moq-badge">MOQ: 200 Pcs</div>
           </div>
 
           <div className="home-product-card-content">

@@ -72,7 +72,7 @@ export const smartwatchFAQs: FAQItem[] = [
   {
     question: "What is the minimum order quantity (MOQ) for wholesale?",
     answer:
-      "For standard models, our MOQ starts from 100 units. For customized OEM orders, the MOQ is typically 500-1000 units depending on the level of customization required.",
+      "For smartwatches and AI glasses, our MOQ starts from 200 units. Fully custom designs may require higher volumes depending on the level of customization — contact us to discuss your project.",
   },
 ];
 

@@ -3,14 +3,14 @@ import Link from "next/link";
 
 interface B2BInfoBoxProps {
   moq?: number;
+  /** @deprecated Unit prices are not shown publicly — ignored */
   priceRange?: string;
   leadTime?: string;
   certifications?: string[];
 }
 
 export const B2BInfoBox: React.FC<B2BInfoBoxProps> = ({
-  moq = 100,
-  priceRange,
+  moq = 200,
   leadTime = "15-25 days",
   certifications = ["CE", "FCC", "RoHS", "ISO9001"],
 }) => {
@@ -23,10 +23,8 @@ export const B2BInfoBox: React.FC<B2BInfoBoxProps> = ({
           <p className="b2b-info-box__value">{moq} pcs</p>
         </div>
         <div>
-          <span className="b2b-info-box__label">Price Range</span>
-          <p className="b2b-info-box__value">
-            {priceRange || "Contact for pricing"}
-          </p>
+          <span className="b2b-info-box__label">Pricing</span>
+          <p className="b2b-info-box__value">Contact for factory quote</p>
         </div>
         <div>
           <span className="b2b-info-box__label">Lead Time</span>

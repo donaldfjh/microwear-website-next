@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Fitness Tracker Manufacturer | Fitness Band OEM Factory | Microwear",
-  description: "Leading fitness tracker and fitness band OEM manufacturer. Heart rate, SpO2, GPS tracking. MOQ 100pcs, CE/FCC certified. Custom design, 7-day samples. Bulk orders welcome.",
+  description: "Leading fitness tracker and fitness band OEM manufacturer. Heart rate, SpO2, GPS tracking. MOQ 200pcs, CE/FCC certified. Custom design, 7-day samples. Bulk orders welcome.",
   keywords: [
     "fitness tracker manufacturer",
     "fitness band OEM",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Fitness Tracker Manufacturer | Fitness Band OEM Factory | Microwear",
-    description: "Leading fitness tracker and fitness band OEM manufacturer. Heart rate, SpO2, GPS tracking. MOQ 100pcs, CE/FCC certified.",
+    description: "Leading fitness tracker and fitness band OEM manufacturer. Heart rate, SpO2, GPS tracking. MOQ 200pcs, CE/FCC certified.",
     url: "https://microwear.info/products/fitness-tracker",
     type: "website",
   },
@@ -53,7 +53,7 @@ export default function FitnessTrackerPage() {
             margin: '0 auto 40px'
           }}>
             Professional fitness tracker factory with advanced health monitoring, sports tracking, and long battery life. 
-            CE/FCC certified, MOQ 100pcs, custom design available.
+            CE/FCC certified, MOQ 200pcs, custom design available.
           </p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center' }}>
             <Link href="/contact" style={{
@@ -171,7 +171,7 @@ export default function FitnessTrackerPage() {
               <h3 style={{ fontSize: '18px', fontWeight: '600', marginBottom: '8px' }}>
                 Low MOQ
               </h3>
-              <p style={{ color: '#94a3b8' }}>Starting from 100pcs</p>
+              <p style={{ color: '#94a3b8' }}>Starting from 200pcs</p>
             </div>
             <div style={{ textAlign: 'center', padding: '24px' }}>
               <div style={{ fontSize: '36px', marginBottom: '12px' }}>🎨</div>

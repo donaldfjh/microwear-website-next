@@ -240,8 +240,7 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
           {/* B2B Info Box */}
           <ScrollReveal delay={0.35}>
             <B2BInfoBox 
-              moq={100} 
-              priceRange={product.priceRange || undefined}
+              moq={200}
               leadTime="15-25 days"
             />
           </ScrollReveal>

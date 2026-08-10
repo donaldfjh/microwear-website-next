@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Rugged Smartwatch Manufacturer | Military Grade Watch OEM | Microwear",
-  description: "Rugged smartwatch OEM manufacturer. IP68, MIL-STD-810H certified. Outdoor, industrial, tactical models. Custom firmware available. MOQ 100pcs. Factory direct.",
+  description: "Rugged smartwatch OEM manufacturer. IP68, MIL-STD-810H certified. Outdoor, industrial, tactical models. Custom firmware available. MOQ 200pcs. Factory direct.",
   keywords: [
     "rugged smartwatch manufacturer",
     "military smartwatch OEM",
@@ -171,7 +171,7 @@ export default function RuggedSmartwatchPage() {
               <h3 style={{ fontSize: '18px', fontWeight: '600', marginBottom: '8px' }}>
                 Low MOQ
               </h3>
-              <p style={{ color: '#94a3b8' }}>Starting from 100pcs</p>
+              <p style={{ color: '#94a3b8' }}>Starting from 200pcs</p>
             </div>
             <div style={{ textAlign: 'center', padding: '24px' }}>
               <div style={{ fontSize: '36px', marginBottom: '12px' }}>⚙️</div>

@@ -146,7 +146,7 @@ Or browse our [**full product catalog**](/products) to see our existing smart gl
 
 **About Microwear:**
 
-Microwear is a leading OEM manufacturer of smartwatches and AI glasses, serving 500+ B2B partners across 50+ countries. With 10+ years of experience, ISO9001 certification, and 3 R&D centers, we help brands bring innovative wearables to market faster. Contact us at +852 6733 7121 or visit [microwear.info](https://microwear.info).
+Microwear is a leading OEM manufacturer of smartwatches and AI glasses, serving 500+ B2B partners across 30+ countries. With 10+ years of experience, ISO9001 certification, and 3 R&D centers, we help brands bring innovative wearables to market faster. Contact us at +852 6733 7121 or visit [microwear.info](https://microwear.info).
 
 ---
 

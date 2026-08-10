@@ -20,7 +20,7 @@ export function B2BTrustSection() {
       description: "Global B2B Clients",
     },
     {
-      value: "300+",
+      value: "1000+",
       label: "Patents",
       description: "Core Technologies",
     },
@@ -46,7 +46,7 @@ export function B2BTrustSection() {
     {
       company: "Middle East Electronics Retailer",
       quote:
-        "The W AI 3 camera glasses are perfect for our market. Great price point ($40-60 wholesale), excellent Sony sensor quality. Our B2B customers love them.",
+        "The W AI 3 camera glasses are perfect for our market. Strong value for our wholesale channel, excellent Sony sensor quality. Our B2B customers love them.",
       author: "Ahmed K.",
       role: "Product Manager",
       rating: 5,

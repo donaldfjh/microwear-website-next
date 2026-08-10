@@ -17,9 +17,9 @@ export const WhyChooseUs: React.FC = () => {
     },
     {
       icon: "📦",
-      title: "Low MOQ 100pcs",
+      title: "MOQ 200pcs",
       description:
-        "Start from 100pcs - perfect for startups and SMEs. Flexible negotiation for long-term B2B partnerships.",
+        "Start from 200pcs - perfect for startups and SMEs. Flexible negotiation for long-term B2B partnerships.",
     },
     {
       icon: "⚡",
@@ -37,7 +37,7 @@ export const WhyChooseUs: React.FC = () => {
       icon: "🌍",
       title: "Global Shipping",
       description:
-        "DDP, FOB, CIF - flexible shipping terms. Experience with 50+ countries. Reliable logistics partners.",
+        "DDP, FOB, CIF - flexible shipping terms. Experience with 30+ countries. Reliable logistics partners.",
     },
   ];
 

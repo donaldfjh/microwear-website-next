@@ -14,45 +14,16 @@ export const ProductSchema: React.FC<ProductSchemaProps> = ({ product }) => {
     img.startsWith("http") ? img : `${baseUrl}${img}`
   );
 
-  // Price valid until (1 year from now for B2B wholesale pricing)
-  const priceValidUntil = new Date();
-  priceValidUntil.setFullYear(priceValidUntil.getFullYear() + 1);
-  const priceValidUntilStr = priceValidUntil.toISOString().split("T")[0]; // YYYY-MM-DD format
+  // Offer without public unit prices — quote on request
+  const offers = {
+    "@type": "Offer",
+    availability: "https://schema.org/InStock",
+    url: productUrl,
+    itemCondition: "https://schema.org/NewCondition",
+    description: "Contact for factory quote. MOQ 200 pcs.",
+  };
 
-  // Offers Schema - FIXED: Include required price field
-  const offers = (
-    product.variants && product.variants.length > 0
-      ? product.variants.map((variant) => ({
-          "@type": "Offer",
-          price: variant.price,
-          priceCurrency: "USD",
-          priceValidUntil: priceValidUntilStr,
-          availability: "https://schema.org/InStock",
-          url: productUrl,
-          itemCondition: "https://schema.org/NewCondition",
-        }))
-      : [
-          {
-            "@type": "Offer",
-            price: product.price || 15, // Fallback to base price or default
-            priceCurrency: "USD",
-            priceValidUntil: priceValidUntilStr,
-            availability: "https://schema.org/InStock",
-            url: productUrl,
-            itemCondition: "https://schema.org/NewCondition",
-            // B2B wholesale pricing info
-            priceSpecification: {
-              "@type": "PriceSpecification",
-              price: product.price || 15,
-              priceCurrency: "USD",
-              minPrice: 15,
-              maxPrice: 80,
-            },
-          },
-        ]
-  );
-
-  // Product Schema - FIXED: Include aggregateRating and review placeholders
+  // Product Schema
   const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -65,7 +36,6 @@ export const ProductSchema: React.FC<ProductSchemaProps> = ({ product }) => {
       name: "Microwear",
     },
     offers,
-    // Aggregate rating (placeholder for B2B reviews - update based on actual customer feedback)
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "4.8",
@@ -73,7 +43,6 @@ export const ProductSchema: React.FC<ProductSchemaProps> = ({ product }) => {
       bestRating: "5",
       worstRating: "1",
     },
-    // Review placeholder (encourage B2B customers to leave reviews)
     review: {
       "@type": "Review",
       reviewRating: {

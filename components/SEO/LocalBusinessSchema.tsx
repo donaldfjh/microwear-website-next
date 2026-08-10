@@ -26,7 +26,7 @@ export const LocalBusinessSchema: React.FC = () => {
       "https://microwear.info/images/products/fac2.png",
       "https://microwear.info/images/products/w11poverall.webp"
     ],
-    "description": "Leading smartwatch and AI glasses OEM manufacturer with 15+ years experience. ISO9001 certified factory specializing in B2B wholesale, custom smartwatch manufacturing, and wearable technology solutions. MOQ 200pcs, wholesale pricing $15-50, free samples for qualified partners.",
+    "description": "Leading smartwatch and AI glasses OEM manufacturer with 15+ years experience. ISO9001 certified factory specializing in B2B wholesale, custom smartwatch manufacturing, and wearable technology solutions. MOQ 200pcs, contact for factory quote, free samples for qualified partners.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "JiaDa R&D Building, North Hi-Tech Park, Nanshan District",
@@ -80,7 +80,7 @@ export const LocalBusinessSchema: React.FC = () => {
       "https://instagram.com/microwear",
       "https://www.youtube.com/@Microwear"
     ],
-    "priceRange": "$$",
+    "priceRange": "Contact for factory quote",
     "paymentAccepted": ["T/T", "PayPal", "L/C", "Western Union", "Alipay"],
     "currenciesAccepted": "USD",
     "areaServed": [

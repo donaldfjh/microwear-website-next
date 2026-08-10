@@ -22,7 +22,7 @@ export function ManufacturingCapacity() {
               <div className="capacity-icon">🏭</div>
               <h3 className="capacity-card-title">Production Capacity</h3>
               <ul className="capacity-list">
-                <li><strong>500+</strong> Manufacturing Team</li>
+                <li><strong>200+</strong> Manufacturing Team</li>
                 <li><strong>8</strong> Automated Production Lines</li>
                 <li><strong>800,000+</strong> Monthly Output</li>
                 <li><strong>10M+</strong> Annual Production Capacity</li>
@@ -93,7 +93,7 @@ export function ManufacturingCapacity() {
               <span className="metric-label">Global B2B Partners</span>
             </div>
             <div className="metric-item">
-              <span className="metric-number">50+</span>
+              <span className="metric-number">30+</span>
               <span className="metric-label">Countries Served</span>
             </div>
             <div className="metric-item">

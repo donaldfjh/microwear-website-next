@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title:
     "OEM Smart Glasses Manufacturer | AI/AR/Camera/Telephone Eyewear Factory",
   description:
-    "Professional OEM manufacturer for smart glasses, AR glasses, camera glasses, and telephone glasses. Custom design, firmware, branding. MOQ 500pcs. CE/FCC certified. Get factory direct quote today.",
+    "Professional OEM manufacturer for smart glasses, AR glasses, camera glasses, and telephone glasses. Custom design, firmware, branding. MOQ 200pcs. CE/FCC certified. Get factory direct quote today.",
   keywords: [
     "smart glasses manufacturer",
     "AR glasses factory",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "OEM Smart Glasses Manufacturer | AI/AR/Camera/Telephone Eyewear Factory",
     description:
-      "Professional OEM manufacturer for smart glasses, AR glasses, camera glasses, and telephone glasses. Custom design, firmware, branding. MOQ 500pcs. CE/FCC certified.",
+      "Professional OEM manufacturer for smart glasses, AR glasses, camera glasses, and telephone glasses. Custom design, firmware, branding. MOQ 200pcs. CE/FCC certified.",
     type: "website",
     images: [
       "https://microwear.info/images/glasses/glasses1.webp"
@@ -70,22 +70,13 @@ export default function AIGlassesPage() {
     offers: {
       "@type": "Offer",
       url: "https://microwear.info/products/chatgpt-compatible-smart-glasses-anti-leakage-ai4",
-      price: "25.00",
-      priceCurrency: "USD",
-      priceValidUntil: "2027-03-21",
       itemCondition: "https://schema.org/NewCondition",
       availability: "https://schema.org/InStock",
       seller: {
         "@type": "Organization",
         name: "NJY Technology",
       },
-      priceSpecification: {
-        "@type": "PriceSpecification",
-        price: "25.00",
-        minPrice: "25.00",
-        maxPrice: "60.00",
-        priceCurrency: "USD"
-      }
+      description: "Contact for factory quote. MOQ 200 pcs.",
     },
     aggregateRating: {
       "@type": "AggregateRating",
@@ -148,7 +139,7 @@ export default function AIGlassesPage() {
       id: 3,
       question: "Is NJY Technology a factory or trading company?",
       answer:
-        "NJY Technology is a manufacturer established in 2008 with 450+ employees and over 300 core patents. We provide OEM services for global brands.",
+        "NJY Technology is a manufacturer established in 2008 with 200+ employees and over 300 core patents. We provide OEM services for global brands.",
     },
   ];
 
@@ -879,7 +870,7 @@ export default function AIGlassesPage() {
           <ScrollReveal>
             <div className="categories-cta">
               <h3>Need Custom Smart Glasses?</h3>
-              <p>We provide OEM services for all glasses categories. MOQ 500pcs, 15-25 day production.</p>
+              <p>We provide OEM services for all glasses categories. MOQ 200pcs, 15-25 day production.</p>
               <Link href="/contact?subject=Custom Smart Glasses Project" className="btn btn-primary">
                 Start Your OEM Project
               </Link>
@@ -906,7 +897,7 @@ export default function AIGlassesPage() {
               </div>
               <div className="trust-item">
                 <h4>Scale</h4>
-                <p>450+ Employees, 300+ Core Patents</p>
+                <p>200+ Employees, 300+ Core Patents</p>
               </div>
               <div className="trust-item">
                 <h4>Certifications</h4>

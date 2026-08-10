@@ -2,9 +2,9 @@ import { NextRequest, NextResponse } from "next/server";
 
 // 预设客服回复规则（不依赖外部API）
 const FAQ_RULES: Record<string, string> = {
-  moq: "📦 Our MOQ (Minimum Order Quantity):\n\n• **Smartwatch**: 100 pcs\n• **AI Glasses**: 500 pcs\n\nContact us for smaller pilot orders! WhatsApp: +852 6733 7121",
+  moq: "📦 Our MOQ (Minimum Order Quantity):\n\n• **Smartwatch**: 200 pcs\n• **AI Glasses**: 200 pcs\n\nContact us for pilot-order options! WhatsApp: +852 6733 7121",
   
-  price: "💰 **Price Range**:\n\n• **Smartwatch**: $15-80 USD (depends on features)\n• **AI Glasses**: $50-150 USD\n\nGet exact quote for your specs! Fill our contact form or WhatsApp us.",
+  price: "💰 **Pricing**:\n\nUnit pricing depends on model, features, and order volume. Contact us for a factory quote tailored to your specs — fill our contact form or WhatsApp us.",
   
   certification: "✅ **Our Certifications**:\n\n• ISO9001 Quality Management\n• CE (European conformity)\n• FCC (US Federal Communications)\n• RoHS (Environmental compliance)\n• REACH (Chemical safety)\n\nAll products meet international B2B standards!",
   
@@ -16,7 +16,7 @@ const FAQ_RULES: Record<string, string> = {
   
   warranty: "🔧 **Warranty & Support**:\n\n• 1-year warranty\n• Free repair for quality issues\n• Technical support via WhatsApp/Email\n• Replacement parts available\n\nLong-term partnership guaranteed!",
   
-  factory: "🏭 **Factory Capacity**:\n\n• 8 SMT production lines\n• 2M+ units/year\n• 500+ skilled workers\n• Located in Shenzhen, China\n\nVisit us for factory tour!",
+  factory: "🏭 **Factory Capacity**:\n\n• 8 SMT production lines\n• 2M+ units/year\n• 200+ skilled workers\n• Located in Shenzhen, China\n\nVisit us for factory tour!",
   
   ai_glasses: "🤖 **AI Glasses Models**:\n\n• **W Ai 4**: ChatGPT Ready, voice assistant (38g ultra-light)\n• **W AI 3**: 8MP camera, video recording, real-time translation\n\nRevolutionary wearable AI technology!",
   

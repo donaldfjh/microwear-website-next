@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title:
     "Microwear — Official Site | Smartwatch & AI Glasses OEM Manufacturer China",
   description:
-    "Microwear — official smartwatch & AI glasses manufacturer. Explore our Microwear smartwatch collection, AI-powered glasses, and wearable devices. ISO9001 certified OEM factory, wholesale bulk orders from $15. 500+ B2B partners worldwide. Get free quote today.",
+    "Microwear — official smartwatch & AI glasses manufacturer. Explore our Microwear smartwatch collection, AI-powered glasses, and wearable devices. ISO9001 certified OEM factory, wholesale bulk orders, MOQ 200pcs. 500+ B2B partners worldwide. Get free quote today.",
   keywords: [
     "Microwear",
     "Microwear smartwatch",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     "smartwatch wholesale bulk",
     "custom smartwatch OEM",
     "white label smartwatch",
-    "smartwatch MOQ 100",
+    "smartwatch MOQ 200",
     "smartwatch bulk order",
   ],
   alternates: {
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     title:
       "Microwear Official | Smartwatch & AI Glasses OEM Manufacturer from China",
     description:
-      "Microwear official website — leading smartwatch and AI glasses OEM manufacturer from Shenzhen, China. 15+ years B2B experience, ISO9001 certified. Wholesale pricing, MOQ 100pcs. 500+ B2B partners worldwide.",
+      "Microwear official website — leading smartwatch and AI glasses OEM manufacturer from Shenzhen, China. 15+ years B2B experience, ISO9001 certified. Contact for factory quote, MOQ 200pcs. 500+ B2B partners worldwide.",
     url: "https://microwear.info/",
     type: "website",
   },
@@ -57,12 +57,12 @@ const glanceRows: [string, string][] = [
   ["Company", "Microwear (Shenzhen NJY Technology Co., Ltd)"],
   ["Founded", "2008 — 15+ years wearable OEM"],
   ["Location", "Nanshan, Shenzhen, China"],
-  ["MOQ", "From 100 pcs per model"],
+  ["MOQ", "From 200 pcs per model"],
   [
-    "Wholesale price range",
-    "Typically $15–50 USD (model & customization dependent)",
+    "Pricing",
+    "Contact for factory quote",
   ],
-  ["Production capacity", "8 SMT lines, 2M+ units/year, 300+ staff"],
+  ["Production capacity", "8 SMT lines, 2M+ units/year, 200+ staff"],
   [
     "Lead time",
     "Samples in 7 days; bulk 15–25 days after sample approval",
@@ -149,11 +149,11 @@ const faqs = [
   },
   {
     q: "What is the MOQ and wholesale price for Microwear?",
-    a: "Standard MOQ starts at 100 pieces per model. Wholesale pricing typically ranges from $15–50 USD depending on sensors, display, and customization. Qualified B2B buyers can request free samples; quotes are usually returned within 24 hours.",
+    a: "Standard MOQ starts at 200 pieces per model for smartwatches and AI glasses. Unit pricing depends on sensors, display, and customization — contact us for a factory quote. Qualified B2B buyers can request free samples; quotes are usually returned within 24 hours.",
   },
   {
     q: "Where is Microwear located?",
-    a: "Microwear headquarters and factory are in Nanshan District, Shenzhen, China. The facility operates 8 SMT lines, employs 300+ staff, and ships CE/FCC/RoHS-certified wearables worldwide.",
+    a: "Microwear headquarters and factory are in Nanshan District, Shenzhen, China. The facility operates 8 SMT lines, employs 200+ staff, and ships CE/FCC/RoHS-certified wearables worldwide.",
   },
   {
     q: "What certifications does Microwear have?",
@@ -243,7 +243,7 @@ export default async function HomePage() {
 
       <HeroSection
         title="Smartwatch & AI Glasses OEM Manufacturer"
-        subtitle="Microwear is a Shenzhen-based smartwatch and AI glasses OEM manufacturer founded in 2008. MOQ from 100pcs, wholesale typically $15–50, ISO9001 / CE / FCC / RoHS certified — serving 500+ B2B partners across 30+ countries."
+        subtitle="Microwear is a Shenzhen-based smartwatch and AI glasses OEM manufacturer founded in 2008. MOQ from 200pcs, contact for factory quote, ISO9001 / CE / FCC / RoHS certified — serving 500+ B2B partners across 30+ countries."
         ctaText="Get Free Quote"
         ctaLink="/contact"
         secondaryCtaText="View Products"
@@ -414,7 +414,7 @@ export default async function HomePage() {
                 Buyers comparing a{" "}
                 <strong className="accent">smartwatch manufacturer in China</strong>{" "}
                 typically evaluate MOQ, certifications, and lead time.
-                Microwear&apos;s baseline is MOQ 100pcs, ISO9001 / CE / FCC /
+                Microwear&apos;s baseline is MOQ 200pcs, ISO9001 / CE / FCC /
                 RoHS, 7-day sampling, and 15–25 day bulk production after sample
                 approval.
               </p>
@@ -447,9 +447,9 @@ export default async function HomePage() {
               <p>
                 The <strong>Microwear smartwatch</strong> catalog includes
                 fitness, health, rugged, kids, and GPS models for{" "}
-                <strong className="accent">custom OEM orders</strong> from 100
-                pieces. Typical wholesale sits in the $15–50 range; exact quotes
-                depend on sensors, display, and branding scope.{" "}
+                <strong className="accent">custom OEM orders</strong> from 200
+                pieces. Exact quotes depend on sensors, display, and branding
+                scope — contact for a factory quote.{" "}
                 <Link href="/products">Explore the smartwatch collection →</Link>
               </p>
               <p>
@@ -475,7 +475,7 @@ export default async function HomePage() {
       <section className="home-cta-banner">
         <div className="glass-panel">
           <h2>Ready to Start Your OEM Project?</h2>
-          <p>Get a free quote within 24 hours. MOQ starts from 100pcs.</p>
+          <p>Get a free quote within 24 hours. MOQ starts from 200pcs.</p>
           <Link href="/contact" className="home-btn home-btn--primary">
             Get Free Quote
           </Link>

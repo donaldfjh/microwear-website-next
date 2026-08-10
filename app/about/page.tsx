@@ -7,7 +7,7 @@ import "./AboutPage.css";
 export const metadata: Metadata = {
   title: "About Microwear | Smartwatch & AI Glasses OEM Manufacturer Since 2008",
   description:
-    "About Microwear — Shenzhen NJY Technology, a leading smartwatch and AI glasses OEM manufacturer from China since 2008. ISO9001 certified factory, 300+ employees, 8 SMT lines, 2M+ units/year. 500+ B2B partners in 30+ countries. Custom smartwatch OEM, wholesale bulk orders from $15. CE/FCC/RoHS certified.",
+    "About Microwear — Shenzhen NJY Technology, a leading smartwatch and AI glasses OEM manufacturer from China since 2008. ISO9001 certified factory, 200+ employees, 8 SMT lines, 2M+ units/year. 500+ B2B partners in 30+ countries. Custom smartwatch OEM, wholesale bulk orders, MOQ 200pcs. CE/FCC/RoHS certified.",
   keywords: [
     "about Microwear",
     "Microwear manufacturer",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About Microwear | Smart Watch OEM Manufacturer Since 2008 | ISO9001 Factory",
     description:
-      "Microwear is a leading smartwatch manufacturer with 15+ years experience. ISO9001 certified OEM factory with 300+ employees, 1000+ patents.",
+      "Microwear is a leading smartwatch manufacturer with 15+ years experience. ISO9001 certified OEM factory with 200+ employees, 1000+ patents.",
   },
 };
 
@@ -89,7 +89,7 @@ export default function AboutPage() {
           "itemOffered": {
             "@type": "Product",
             "name": "OEM Smart Watch Manufacturing",
-            "description": "Custom smartwatch manufacturing with MOQ 100pcs"
+            "description": "Custom smartwatch manufacturing with MOQ 200pcs"
           }
         }
       ]
@@ -115,7 +115,7 @@ export default function AboutPage() {
 
           <div className="about-hero__stats">
             <div className="about-hero__stat">
-              <div className="about-hero__stat-num">300+</div>
+              <div className="about-hero__stat-num">200+</div>
               <div className="about-hero__stat-label">Employees</div>
               <div className="about-hero__stat-desc">Skilled workforce</div>
             </div>
@@ -174,10 +174,10 @@ export default function AboutPage() {
               <div className="service-content">
                 <h3 className="service-title">Smart Watch OEM</h3>
                 <p className="service-desc">
-                  Full-scale smartwatch manufacturing with MOQ 100pcs. Custom branding, firmware, and packaging solutions.
+                  Full-scale smartwatch manufacturing with MOQ 200pcs. Custom branding, firmware, and packaging solutions.
                 </p>
                 <div className="service-features">
-                  <span className="feature-tag">MOQ 100pcs</span>
+                  <span className="feature-tag">MOQ 200pcs</span>
                   <span className="feature-tag">Custom Logo</span>
                   <span className="feature-tag">SDK Support</span>
                 </div>
@@ -315,7 +315,7 @@ export default function AboutPage() {
                 <div className="story-stats">
                   <div className="stat-item">
                     <div className="stat-icon">👥</div>
-                    <div className="stat-number">300+</div>
+                    <div className="stat-number">200+</div>
                     <div className="stat-label">Skilled Employees</div>
                   </div>
                   <div className="stat-item">
@@ -594,7 +594,7 @@ export default function AboutPage() {
                 <div className="prod-desc">Annual production capacity</div>
               </div>
               <div className="prod-stat">
-                <div className="prod-number">300+</div>
+                <div className="prod-number">200+</div>
                 <div className="prod-label">Employees</div>
                 <div className="prod-desc">Skilled workforce</div>
               </div>
@@ -620,10 +620,10 @@ export default function AboutPage() {
               </h2>
               <div style={{ lineHeight: '1.8', fontSize: '16px', color: 'var(--mw-muted)' }}>
                 <p style={{ marginBottom: '16px' }}>
-                  <strong>Microwear</strong> (Shenzhen NJY Technology Co., Ltd) is a professional <strong>smartwatch OEM manufacturer</strong> and <strong>AI glasses factory</strong> based in Shenzhen, China. Since 2008, we have grown from a small R&D team into a modern high-tech enterprise with 300+ employees, 8 SMT production lines, and an annual capacity of 2M+ units.
+                  <strong>Microwear</strong> (Shenzhen NJY Technology Co., Ltd) is a professional <strong>smartwatch OEM manufacturer</strong> and <strong>AI glasses factory</strong> based in Shenzhen, China. Since 2008, we have grown from a small R&D team into a modern high-tech enterprise with 200+ employees, 8 SMT production lines, and an annual capacity of 2M+ units.
                 </p>
                 <p style={{ marginBottom: '16px' }}>
-                  Our <strong>Microwear smartwatch</strong> product line covers fitness trackers, health smartwatches, rugged smartwatches, kids smartwatches, and GPS watches — all available for <strong>custom OEM orders</strong> with MOQ starting from 100 pieces. In 2023, we expanded into next-generation wearable technology with our <strong>AI glasses</strong> featuring camera modules, ChatGPT integration, and ultra-lightweight 38g design.
+                  Our <strong>Microwear smartwatch</strong> product line covers fitness trackers, health smartwatches, rugged smartwatches, kids smartwatches, and GPS watches — all available for <strong>custom OEM orders</strong> with MOQ starting from 200 pieces. In 2023, we expanded into next-generation wearable technology with our <strong>AI glasses</strong> featuring camera modules, ChatGPT integration, and ultra-lightweight 38g design.
                 </p>
                 <p>
                   As an <strong>ISO9001:2015 certified manufacturer</strong>, every Microwear product carries CE, FCC, and RoHS certifications. We serve 500+ B2B partners across 30+ countries, from startups to enterprise brands. Whether you need <strong>smartwatch wholesale bulk orders</strong>, custom firmware, or complete white-label solutions, Microwear delivers factory-direct pricing with 7-day sampling and 15-25 day production turnaround.
@@ -647,11 +647,11 @@ export default function AboutPage() {
               </div>
               <div className="faq-item">
                 <h3>What is the MOQ for Microwear OEM orders?</h3>
-                <p>Our standard MOQ starts from 100 pieces for smartwatch OEM orders and 50 pieces for AI Glasses. We offer flexible terms for first-time partners and provide free samples for qualified B2B buyers.</p>
+                <p>Our standard MOQ starts from 200 pieces for smartwatch and AI glasses OEM orders. We offer flexible terms for first-time partners and provide free samples for qualified B2B buyers.</p>
               </div>
               <div className="faq-item">
                 <h3>Is Microwear a certified manufacturer?</h3>
-                <p>Yes, Microwear is ISO9001:2015 certified with CE, FCC, and RoHS certifications for all products. Our factory operates 8 SMT production lines with an annual capacity of 2M+ units and 300+ skilled employees.</p>
+                <p>Yes, Microwear is ISO9001:2015 certified with CE, FCC, and RoHS certifications for all products. Our factory operates 8 SMT production lines with an annual capacity of 2M+ units and 200+ skilled employees.</p>
               </div>
               <div className="faq-item">
                 <h3>Where is Microwear located?</h3>
@@ -687,7 +687,7 @@ export default function AboutPage() {
                     "name": "What is the MOQ for Microwear OEM orders?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Our standard MOQ starts from 100 pieces for smartwatch OEM orders and 50 pieces for AI Glasses. We offer flexible terms for first-time partners and provide free samples for qualified B2B buyers."
+                      "text": "Our standard MOQ starts from 200 pieces for smartwatch and AI glasses OEM orders. We offer flexible terms for first-time partners and provide free samples for qualified B2B buyers."
                     }
                   },
                   {
@@ -695,7 +695,7 @@ export default function AboutPage() {
                     "name": "Is Microwear a certified manufacturer?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes, Microwear is ISO9001:2015 certified with CE, FCC, and RoHS certifications for all products. Our factory operates 8 SMT production lines with an annual capacity of 2M+ units and 300+ skilled employees."
+                      "text": "Yes, Microwear is ISO9001:2015 certified with CE, FCC, and RoHS certifications for all products. Our factory operates 8 SMT production lines with an annual capacity of 2M+ units and 200+ skilled employees."
                     }
                   },
                   {

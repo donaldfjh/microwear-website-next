@@ -6,7 +6,7 @@ import "./OEMServices.css";
 export const metadata: Metadata = {
   title: "OEM Services | Custom Smartwatch & AI Glasses Manufacturing | Microwear",
   description:
-    "Microwear OEM services for smartwatches and AI glasses — custom logo, firmware, packaging, and catalog options. ISO9001 certified factory, MOQ 100pcs, 7-day sampling, 15-25 day production. CE, FCC, RoHS certified. Get free quote for custom wearable projects.",
+    "Microwear OEM services for smartwatches and AI glasses — custom logo, firmware, packaging, and catalog options. ISO9001 certified factory, MOQ 200pcs, 7-day sampling, 15-25 day production. CE, FCC, RoHS certified. Get free quote for custom wearable projects.",
   keywords: [
     "smartwatch OEM services",
     "AI glasses OEM manufacturer",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "OEM Services | Smartwatch & AI Glasses Custom Manufacturing | Microwear",
     description:
-      "Full-service OEM smartwatch and AI glasses manufacturing from Microwear. Custom logo, firmware, packaging. ISO9001 certified, MOQ 100pcs, fast sampling.",
+      "Full-service OEM smartwatch and AI glasses manufacturing from Microwear. Custom logo, firmware, packaging. ISO9001 certified, MOQ 200pcs, fast sampling.",
     url: "https://microwear.info/oem-services",
     type: "website",
   },
@@ -153,7 +153,7 @@ export default function OEMServicesPage() {
               marginBottom: '24px'
             }}>
               Microwear OEM service is factory branding and configuration of base smartwatch and AI glasses models
-              from Shenzhen NJY Technology: custom logo, firmware, packaging, and catalog options with MOQ from 100pcs,
+              from Shenzhen NJY Technology: custom logo, firmware, packaging, and catalog options with MOQ from 200pcs,
               7-day sampling, and 15–25 day bulk production after sample approval.
             </p>
             <p style={{
@@ -164,7 +164,7 @@ export default function OEMServicesPage() {
               maxWidth: '760px',
               margin: '0 auto 40px'
             }}>
-              ISO9001:2015 factory · CE / FCC / RoHS · wholesale typically $15–50 · 8 SMT lines, 2M+ units/year
+              ISO9001:2015 factory · CE / FCC / RoHS · contact for factory quote · 8 SMT lines, 2M+ units/year
             </p>
             <div style={{
               display: 'flex',
@@ -254,10 +254,10 @@ export default function OEMServicesPage() {
                   ['Firmware', 'Language packs, feature toggles, UI skinning on base models'],
                   ['App / SDK', 'Optional white-label app and SDK integration'],
                   ['Hardware', 'Strap color/material and selected catalog options — not new PCB/ID from scratch'],
-                  ['MOQ', 'From 100 pcs per model'],
+                  ['MOQ', 'From 200 pcs per model'],
                   ['Sample lead time', 'About 7 days after requirements are confirmed'],
                   ['Bulk lead time', '15–25 days after sample approval'],
-                  ['Wholesale price', 'Typically $15–50 USD depending on model and options'],
+                  ['Pricing', 'Contact for factory quote'],
                 ].map((row, i) => (
                   <tr key={row[0]} style={{ background: i % 2 === 0 ? '#fff' : '#f8fafc' }}>
                     <td style={{ padding: '12px 16px', fontWeight: '600', color: 'var(--mw-text)', borderTop: '1px solid #e2e8f0', width: '28%' }}>{row[0]}</td>
@@ -463,13 +463,13 @@ export default function OEMServicesPage() {
                 border: '1px solid rgba(255,255,255,0.1)'
               }}>
                 <div style={{ fontSize: '48px', fontWeight: '700', color: 'var(--mw-cyan)', marginBottom: '8px' }}>
-                  100 pcs
+                  200 pcs
                 </div>
                 <div style={{ fontSize: '16px', color: 'var(--mw-muted)' }}>
                   Standard MOQ
                 </div>
                 <p style={{ fontSize: '14px', color: 'var(--mw-muted)', marginTop: '12px' }}>
-                  Per model for OEM orders. Lower quantities available for trial orders.
+                  Per model for OEM orders. Contact us to discuss pilot options.
                 </p>
               </div>
             </ScrollReveal>
@@ -666,11 +666,11 @@ export default function OEMServicesPage() {
             {[
               {
                 q: 'What does Microwear OEM service include?',
-                a: 'Microwear OEM covers branding and configuration on existing smartwatch or AI glasses base models — laser logo, boot animation, packaging, watch faces, and firmware language packs — with MOQ from 100pcs.'
+                a: 'Microwear OEM covers branding and configuration on existing smartwatch or AI glasses base models — laser logo, boot animation, packaging, watch faces, and firmware language packs — with MOQ from 200pcs.'
               },
               {
                 q: 'What is the MOQ for custom smartwatch manufacturing?',
-                a: 'Standard MOQ is 100 pieces per model. Trial quantities may be discussed for first-time partners depending on the base model and options selected.'
+                a: 'Standard MOQ is 200 pieces per model for smartwatches and AI glasses. Pilot options may be discussed for first-time partners depending on the base model and options selected.'
               },
               {
                 q: 'How long do OEM samples and bulk orders take?',
@@ -705,7 +705,7 @@ export default function OEMServicesPage() {
                   "name": "What does Microwear OEM service include?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Microwear OEM covers branding and configuration on existing smartwatch or AI glasses base models — laser logo, boot animation, packaging, watch faces, and firmware language packs — with MOQ from 100pcs."
+                    "text": "Microwear OEM covers branding and configuration on existing smartwatch or AI glasses base models — laser logo, boot animation, packaging, watch faces, and firmware language packs — with MOQ from 200pcs."
                   }
                 },
                 {
@@ -713,7 +713,7 @@ export default function OEMServicesPage() {
                   "name": "What is the MOQ for custom smartwatch manufacturing?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Standard MOQ is 100 pieces per model. Trial quantities may be discussed for first-time partners depending on the base model and options selected."
+                    "text": "Standard MOQ is 200 pieces per model for smartwatches and AI glasses. Pilot options may be discussed for first-time partners depending on the base model and options selected."
                   }
                 },
                 {
@@ -755,7 +755,7 @@ export default function OEMServicesPage() {
               For <strong>custom smartwatch manufacturing</strong>, buyers typically request OEM branding on catalog models — logo, packaging, firmware language, and optional SDK/app white-label. The same workflow supports <strong>AI glasses OEM</strong> and telephone/camera glasses projects for partners expanding beyond wrist wearables.
             </p>
             <p>
-              Practical baselines: MOQ from 100pcs, wholesale commonly $15–50, samples in about 7 days, bulk in 15–25 days after approval. Final cost and schedule depend on components and options selected — request a current factory quote before locking volume. <Link href="/contact?subject=OEM Inquiry" style={{ color: '#0ea5e9', textDecoration: 'underline' }}>Start your OEM project</Link>.
+              Practical baselines: MOQ from 200pcs, contact for factory quote, samples in about 7 days, bulk in 15–25 days after approval. Final cost and schedule depend on components and options selected — request a current factory quote before locking volume. <Link href="/contact?subject=OEM Inquiry" style={{ color: '#0ea5e9', textDecoration: 'underline' }}>Start your OEM project</Link>.
             </p>
           </div>
         </div>

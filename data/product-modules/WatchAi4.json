@@ -3,7 +3,7 @@
   "name": "Microwear Watch Ai 4",
   "description": "B2B AI smartwatch with 2.0\" AMOLED, on-wrist WhatsApp/Telegram, BT calling, NFC & QR pay, and ChatGPT-ready voice — built for wholesale and white-label OEM.",
   "price": 18,
-  "priceRange": "$18-32",
+  "priceRange": "Contact for factory quote",
   "category": "Business",
   "images": [
     "/images/products/Watch-Ai-4/Black1.png",
@@ -49,7 +49,7 @@
     "NFC & QR payment support",
     "IP68 swim-ready + full health suite",
     "500+ free watch faces",
-    "MOQ 100pcs · 7-day samples · custom logo"
+    "MOQ 200pcs · 7-day samples · custom logo"
   ],
   "features": [
     "WhatsApp & Telegram",
@@ -90,7 +90,7 @@
   ],
   "useCase": {
     "title": "Why distributors choose Watch Ai 4",
-    "content": "Watch Ai 4 targets retail and brand partners who need an AI-forward SKU without a high MOQ. Messaging apps, BT calling, and pay features sell on the shelf; IP68 plus health tracking covers fitness buyers. Laser logo, boot screen, custom strap, and gift box options support white-label launches from 100 pcs, with samples in about 7 days."
+    "content": "Watch Ai 4 targets retail and brand partners who need an AI-forward SKU without a high MOQ. Messaging apps, BT calling, and pay features sell on the shelf; IP68 plus health tracking covers fitness buyers. Laser logo, boot screen, custom strap, and gift box options support white-label launches from 200 pcs, with samples in about 7 days."
   },
   "oemOptions": {
     "laserLogo": true,
@@ -100,9 +100,9 @@
     "appSdk": false
   },
   "distributorUSPs": [
-    "MOQ 100pcs",
+    "MOQ 200pcs",
     "7-day samples",
     "Custom logo / boot screen / gift box",
-    "Wholesale $18–32"
+    "Contact for factory quote"
   ]
 }

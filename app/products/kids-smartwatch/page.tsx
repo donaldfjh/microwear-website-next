@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Kids Smartwatch OEM | GPS Watch for Children Factory | Microwear",
-  description: "Kids smartwatch OEM manufacturer with GPS tracking, SOS button, parental controls. CE/FCC/RoHS certified. MOQ 100pcs. Custom design available. Trusted by 50+ kids brands.",
+  description: "Kids smartwatch OEM manufacturer with GPS tracking, SOS button, parental controls. CE/FCC/RoHS certified. MOQ 200pcs. Custom design available. Trusted by 50+ kids brands.",
   keywords: [
     "kids smartwatch OEM",
     "children GPS watch factory",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Kids Smartwatch OEM | GPS Watch for Children Factory | Microwear",
-    description: "Kids smartwatch OEM manufacturer with GPS tracking, SOS button, parental controls. CE/FCC/RoHS certified. MOQ 100pcs.",
+    description: "Kids smartwatch OEM manufacturer with GPS tracking, SOS button, parental controls. CE/FCC/RoHS certified. MOQ 200pcs.",
     url: "https://microwear.info/products/kids-smartwatch",
     type: "website",
   },
@@ -171,7 +171,7 @@ export default function KidsSmartwatchPage() {
               <h3 style={{ fontSize: '18px', fontWeight: '600', marginBottom: '8px' }}>
                 Low MOQ
               </h3>
-              <p style={{ color: '#94a3b8' }}>Starting from 100pcs</p>
+              <p style={{ color: '#94a3b8' }}>Starting from 200pcs</p>
             </div>
             <div style={{ textAlign: 'center', padding: '24px' }}>
               <div style={{ fontSize: '36px', marginBottom: '12px' }}>🎨</div>

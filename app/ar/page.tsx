@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "شركة Microwear لتصنيع الساعات الذكية | OEM",
-  description: "شركة Microwear - شركة تصنيع ساعات ذكية معتمدة ISO9001. أسعار الجملة 15-50 دولار، MOQ 200 قطعة. عينات مجانية، توصيل خلال 7-15 يوم. خدمة عملاء باللغة العربية.",
+  description: "شركة Microwear - شركة تصنيع ساعات ذكية معتمدة ISO9001. تواصل معنا لعرض سعر المصنع، MOQ 200 قطعة. عينات مجانية، توصيل خلال 7-15 يوم. خدمة عملاء باللغة العربية.",
   alternates: {
     canonical: "https://microwear.info/ar/",
   },

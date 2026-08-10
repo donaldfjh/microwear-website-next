@@ -5,7 +5,7 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 export const metadata: Metadata = {
   title: "Our Factory | Smartwatch Manufacturing Facility | Microwear",
   description:
-    "Microwear factory: 15,000㎡ facility, 450+ employees, 8 SMT production lines. ISO9001, CE, FCC, RoHS certified. Advanced QC systems, 2M+ units annual capacity. Factory tours welcome.",
+    "Microwear factory: 15,000㎡ facility, 200+ employees, 8 SMT production lines. ISO9001, CE, FCC, RoHS certified. Advanced QC systems, 2M+ units annual capacity. Factory tours welcome.",
   keywords: [
     "smartwatch factory",
     "wearable manufacturing facility",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Our Factory | Smartwatch Manufacturing Facility | Microwear",
     description:
-      "Tour our 15,000㎡ smartwatch manufacturing facility. ISO9001 certified, 450+ employees, advanced QC systems. Production capacity 2M+ units annually.",
+      "Tour our 15,000㎡ smartwatch manufacturing facility. ISO9001 certified, 200+ employees, advanced QC systems. Production capacity 2M+ units annually.",
     url: "https://microwear.info/factory",
     type: "website",
   },
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 export default function FactoryPage() {
   const factoryStats = [
     { value: "15,000㎡", label: "Factory Area", icon: "🏭" },
-    { value: "450+", label: "Skilled Employees", icon: "👥" },
+    { value: "200+", label: "Skilled Employees", icon: "👥" },
     { value: "8", label: "SMT Production Lines", icon: "⚙️" },
     { value: "2M+", label: "Annual Capacity", icon: "📦" },
     { value: "15+", label: "Years Experience", icon: "📅" },
@@ -303,12 +303,12 @@ export default function FactoryPage() {
             }}>
               <p style={{ marginBottom: '20px' }}>
                 Microwear operates a state-of-the-art <strong>15,000 square meter manufacturing facility</strong> in 
-                Shenzhen, China&apos;s electronics manufacturing hub. Established in 2010, our factory has grown to become 
+                Shenzhen, China&apos;s electronics manufacturing hub. Established in 2008, our factory has grown to become 
                 a trusted partner for 500+ B2B clients worldwide.
               </p>
               <p style={{ marginBottom: '20px' }}>
                 Our facility houses <strong>8 automated SMT production lines</strong> and <strong>8 assembly lines</strong>, 
-                capable of producing over <strong>2 million units annually</strong>. With 450+ skilled employees including 
+                capable of producing over <strong>2 million units annually</strong>. With 200+ skilled employees including 
                 50+ engineers in our R&D department, we maintain full control over the entire manufacturing process from 
                 component sourcing to final packaging.
               </p>

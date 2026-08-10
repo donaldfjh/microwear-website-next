@@ -37,13 +37,13 @@ export default function FAQPage() {
       id: 1,
       question: "What is the Minimum Order Quantity (MOQ) for OEM smartwatches?",
       answer:
-        "Our standard MOQ is 100 pieces per model for OEM orders. For trial orders or first-time partnerships, we offer flexible MOQ starting from 50 pieces. Contact our sales team to discuss your specific requirements and volume needs. Sample orders are available at any quantity for product evaluation."
+        "Our standard MOQ is 200 pieces per model for OEM smartwatch and AI glasses orders. Contact our sales team to discuss your specific requirements and volume needs. Sample orders are available for product evaluation."
     },
     {
       id: 2,
       question: "What is the pricing range for bulk smartwatch orders?",
       answer:
-        "Wholesale pricing varies based on model, customization level, and order volume:\n\n• Basic fitness trackers: $15-25 per unit (MOQ 200+)\n• Mid-range smartwatches: $25-45 per unit (MOQ 200+)\n• Premium AMOLED models: $45-80 per unit (MOQ 100+)\n• AI smart glasses: $25-60 per unit (MOQ 200+)\n\nVolume discounts available for orders above 1,000 units. Custom firmware, packaging, and branding may add 10-30% to base pricing. Get a detailed quote by submitting your requirements through our contact form."
+        "Unit pricing depends on model, customization level, and order volume. We do not publish fixed wholesale tiers — contact us for a factory quote tailored to your specs. Volume discounts are available for larger orders. Custom firmware, packaging, and branding may affect final pricing. Submit your requirements through our contact form for a detailed quote."
     },
     {
       id: 3,
@@ -73,7 +73,7 @@ export default function FAQPage() {
       id: 7,
       question: "Do you provide free samples?",
       answer:
-        "Yes! We offer free samples for qualified B2B buyers:\n\n• 1-2 sample units available at no product cost\n• You only cover shipping cost ($30-50 via DHL/FedEx)\n• Sample fee fully refunded when you place bulk order (MOQ 200+ pcs)\n• Sample production time: 7-10 working days\n\nRequest samples through our contact page. We evaluate your business profile (company website, purchase intent) before shipping. Samples help you verify quality, features, and customization options before committing to bulk orders."
+        "Yes! We offer free samples for qualified B2B buyers:\n\n• 1-2 sample units available at no product cost\n• You only cover shipping (via DHL/FedEx)\n• Sample fee fully refunded when you place a bulk order (MOQ 200+ pcs)\n• Sample production time: 7-10 working days\n\nRequest samples through our contact page. We evaluate your business profile (company website, purchase intent) before shipping. Samples help you verify quality, features, and customization options before committing to bulk orders."
     },
     {
       id: 8,
@@ -103,7 +103,7 @@ export default function FAQPage() {
       id: 12,
       question: "What makes Microwear different from other smartwatch manufacturers?",
       answer:
-        "Microwear stands out in 5 key areas:\n\n🏭 Production Capacity: 15,000㎡ factory, 450+ employees, 8 SMT lines, 2M+ units/year\n\n✅ Quality Assurance: <0.3% defect rate, ISO9001 certified, 100% QC inspection\n\n🔧 Customization Depth: Full OEM from design to firmware, 1000+ patents, custom AI integration\n\n🚚 Speed: 7-day samples, 15-day bulk production, real-time updates\n\n🤝 Partnership Focus: Dedicated account managers, flexible MOQ, volume discounts, long-term support\n\n15+ years experience serving 500+ B2B partners across 30+ countries. We don't just manufacture - we build your wearable brand together."
+        "Microwear stands out in 5 key areas:\n\n🏭 Production Capacity: 15,000㎡ factory, 200+ employees, 8 SMT lines, 2M+ units/year\n\n✅ Quality Assurance: <0.3% defect rate, ISO9001 certified, 100% QC inspection\n\n🔧 Customization Depth: Full OEM from design to firmware, 1000+ patents, custom AI integration\n\n🚚 Speed: 7-day samples, 15-day bulk production, real-time updates\n\n🤝 Partnership Focus: Dedicated account managers, flexible MOQ, volume discounts, long-term support\n\n15+ years experience serving 500+ B2B partners across 30+ countries. We don't just manufacture - we build your wearable brand together."
     }
   ];
 
@@ -189,7 +189,7 @@ export default function FAQPage() {
                 borderRadius: '16px',
                 textAlign: 'center',}}>
                 <div style={{ fontSize: '42px', fontWeight: '700', color: '#0ea5e9', marginBottom: '8px' }}>
-                  100 pcs
+                  200 pcs
                 </div>
                 <div style={{ fontSize: '14px', color: '#64748b' }}>
                   Minimum Order
@@ -204,10 +204,10 @@ export default function FAQPage() {
                 borderRadius: '16px',
                 textAlign: 'center',}}>
                 <div style={{ fontSize: '42px', fontWeight: '700', color: '#0ea5e9', marginBottom: '8px' }}>
-                  $15-80
+                  Quote
                 </div>
                 <div style={{ fontSize: '14px', color: '#64748b' }}>
-                  Unit Price Range
+                  Factory Quote
                 </div>
               </div>
             </ScrollReveal>
