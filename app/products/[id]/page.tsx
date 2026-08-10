@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 import { getProducts, getProductById } from "@/lib/products";
 import { ProductDetailClient } from "./ProductDetailClient";
 import { ProductSchema } from "@/components/SEO/ProductSchema";
-import { BreadcrumbSchema } from "@/components/SEO/BreadcrumbSchema";
 import type { Metadata } from "next";
 import "./ProductDetailPage.css";
 
@@ -173,13 +172,7 @@ export default async function ProductDetailPage({
 
   return (
     <div className="product-detail-page">
-      {/* SEO: Breadcrumb Schema for better navigation in search results */}
-      <BreadcrumbSchema 
-        items={[
-          { name: "Products", url: "/products" },
-          { name: product.name, url: `/products/${params.id}` }
-        ]} 
-      />
+      {/* BreadcrumbList is emitted by the visible <Breadcrumb> inside ProductDetailClient */}
       <ProductSchema product={product} />
       <Suspense fallback={<div>Loading product details...</div>}>
         <ProductDetailClient product={product} />

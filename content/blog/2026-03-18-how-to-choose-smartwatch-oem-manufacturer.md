@@ -59,13 +59,15 @@ This guide covers the essentials: MOQ, certifications, pricing, and how to avoid
 
 ### 3. MOQ & Pricing
 
-**ODM (logo only)** — 100-500 units @ $25-$45
+Customization depth drives both the minimum quantity and the unit cost:
 
-**ODM (custom packaging)** — 500-1,000 units @ $23-$42
+**ODM (logo only)** — lowest MOQ, lowest tooling cost
 
-**OEM (minor modifications)** — 1,000-3,000 units @ $20-$40
+**ODM (custom packaging)** — adds packaging design and print setup
 
-**OEM (full custom)** — 3,000-5,000+ units @ $18-$35
+**OEM (minor modifications)** — adds firmware or sensor changes
+
+**OEM (full custom)** — highest MOQ, adds mould and certification costs
 
 **Volume discounts:** 5-20% off for orders over 1,000 units
 

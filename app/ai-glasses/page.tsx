@@ -78,26 +78,6 @@ export default function AIGlassesPage() {
       },
       description: "Contact for factory quote. MOQ 200 pcs.",
     },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.7",
-      reviewCount: "89",
-      bestRating: "5",
-      worstRating: "1"
-    },
-    review: {
-      "@type": "Review",
-      reviewRating: {
-        "@type": "Rating",
-        ratingValue: "5",
-        bestRating: "5"
-      },
-      author: {
-        "@type": "Organization",
-        name: "Tech Distributor"
-      },
-      reviewBody: "Outstanding AI glasses with excellent ChatGPT integration. The 38g weight makes them perfect for all-day wear. Great OEM partner for wearable tech."
-    },
     additionalProperty: [
       {
         "@type": "PropertyValue",
@@ -884,6 +864,7 @@ export default function AIGlassesPage() {
         items={aiFaqItems}
         title="Common Questions (B2B)"
         subtitle="Frequently asked questions about our AI Smart Glasses OEM services"
+        schemaId="https://microwear.info/ai-glasses#faq"
       />
 
       {/* Trust & Factory Info */}

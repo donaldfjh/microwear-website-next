@@ -4,9 +4,12 @@ import { HomeProductGrid } from "@/components/HomeProductGrid";
 import { LocalBusinessSchema } from "@/components/SEO/LocalBusinessSchema";
 import { getProducts } from "@/lib/products";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { SEO_CONFIG } from "@/lib/seo-config";
 import Link from "next/link";
 import type { Metadata } from "next";
 import "./HomePage.css";
+
+const SITE_URL = SEO_CONFIG.site.url;
 
 export const metadata: Metadata = {
   title:
@@ -180,45 +183,13 @@ export default async function HomePage() {
   const products = await getProducts();
   const featuredProducts = products.slice(0, 6);
 
-  const organizationSchema = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    name: "Microwear",
-    url: "https://microwear.info",
-    logo: "https://microwear.info/logo.png",
-    description:
-      "Professional smartwatch OEM manufacturer with 15+ years experience. CE, FCC, RoHS certified factory serving 500+ B2B partners worldwide.",
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "Shenzhen",
-      addressCountry: "CN",
-    },
-    contactPoint: {
-      "@type": "ContactPoint",
-      telephone: "+852 6733 7121",
-      contactType: "sales",
-      areaServed: "Global",
-    },
-  };
-
-  const webSiteSchema = {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    name: "Microwear",
-    url: "https://microwear.info",
-    potentialAction: {
-      "@type": "SearchAction",
-      target: {
-        "@type": "EntryPoint",
-        urlTemplate: "https://microwear.info/products?q={search_term_string}",
-      },
-      "query-input": "required name=search_term_string",
-    },
-  };
-
+  // Organization / WebSite entities live in the root layout (single @id per entity).
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    "@id": `${SITE_URL}/#homepage-faq`,
+    isPartOf: { "@id": `${SITE_URL}/#website` },
+    about: { "@id": `${SITE_URL}/#organization` },
     mainEntity: faqs.map((item) => ({
       "@type": "Question",
       name: item.q,
@@ -231,14 +202,6 @@ export default async function HomePage() {
 
   return (
     <div className="home-page">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }}
-      />
       <LocalBusinessSchema />
 
       <HeroSection

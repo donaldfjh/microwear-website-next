@@ -15,6 +15,7 @@ export const Breadcrumb: React.FC<BreadcrumbProps> = ({ product }) => {
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
+    "@id": `${baseUrl}/products/${product.id}#breadcrumb`,
     itemListElement: [
       {
         "@type": "ListItem",

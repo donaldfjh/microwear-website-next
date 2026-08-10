@@ -20,7 +20,7 @@ export function B2BTrustSection() {
       description: "Global B2B Clients",
     },
     {
-      value: "1000+",
+      value: "300+",
       label: "Patents",
       description: "Core Technologies",
     },

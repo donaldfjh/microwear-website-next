@@ -199,7 +199,7 @@ If you're looking for a smartwatch OEM manufacturer, contact us:
 - 📄 **[Download Product Catalog →](/catalog)** - View full product line
 - 🏭 **[Book Factory Tour →](/factory-tour)** - On-site capacity inspection
 
-> ⏰ **Limited Offer:** This month's customers get free app customization service worth $500 (first 10 clients only)
+> ⏰ **For new partners:** Free app customization support is available for qualifying OEM projects — ask your account manager for details.
 
 ---
 

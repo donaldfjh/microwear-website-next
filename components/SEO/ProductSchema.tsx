@@ -23,87 +23,44 @@ export const ProductSchema: React.FC<ProductSchemaProps> = ({ product }) => {
     description: "Contact for factory quote. MOQ 200 pcs.",
   };
 
-  // Product Schema
+  // Mirror the visible spec table so the key specs stay machine-readable
+  const specProperties = (
+    [
+      ["Battery", product.specifications.battery],
+      ["Display", product.specifications.display],
+      ["Water resistance", product.specifications.waterResistance],
+    ] as const
+  )
+    .filter(([, value]) => Boolean(value))
+    .map(([name, value]) => ({
+      "@type": "PropertyValue",
+      name,
+      value,
+    }));
+
   const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
+    "@id": `${productUrl}#product`,
     name: product.name,
     description: product.description,
     image: images,
     sku: product.id,
+    url: productUrl,
     brand: {
       "@type": "Brand",
       name: "Microwear",
     },
     offers,
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.8",
-      reviewCount: "127",
-      bestRating: "5",
-      worstRating: "1",
-    },
-    review: {
-      "@type": "Review",
-      reviewRating: {
-        "@type": "Rating",
-        ratingValue: "5",
-        bestRating: "5",
-      },
-      author: {
-        "@type": "Organization",
-        name: "B2B Partner",
-      },
-      reviewBody: "Excellent OEM partner with reliable quality and timely delivery.",
-    },
+    manufacturer: { "@id": `${baseUrl}/#organization` },
+    ...(specProperties.length ? { additionalProperty: specProperties } : {}),
   };
 
-  // Dynamic FAQ Generation
-  const batteryLife = product.specifications.battery || "3-5 days typical use";
-  const waterproof = product.specifications.waterResistance || "IP68 Water Resistant";
-  const display = product.specifications.display || "HD Display";
-
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: `What is the battery life of the ${product.name}?`,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: `The ${product.name} features a long-lasting battery that provides approximately ${batteryLife} on a single charge, depending on usage patterns.`
-        }
-      },
-      {
-        "@type": "Question",
-        name: `Is the ${product.name} waterproof?`,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: `Yes, the ${product.name} is rated ${waterproof}, making it suitable for daily use and exposure to water.`
-        }
-      },
-      {
-        "@type": "Question",
-        name: `What is the display size of the ${product.name}?`,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: `The ${product.name} comes with a ${display}, offering clear visuals and easy navigation.`
-        }
-      }
-    ]
-  };
-
+  // The page's visible FAQ section owns the FAQPage node, so only Product is emitted here.
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-    </>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+    />
   );
 };

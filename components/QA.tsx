@@ -51,12 +51,15 @@ export interface QAProps {
   items?: QAItem[];
   title?: string;
   subtitle?: string;
+  /** Stable @id so each page declares exactly one FAQPage node. */
+  schemaId?: string;
 }
 
 export const QA: React.FC<QAProps> = ({ 
   items = qaData, 
   title = "Smart Watch Frequently Asked Questions", 
-  subtitle = "Everything you need to know about MicroWear smartwatches" 
+  subtitle = "Everything you need to know about MicroWear smartwatches",
+  schemaId
 }) => {
   return (
     <section className="qa-section">
@@ -82,6 +85,7 @@ export const QA: React.FC<QAProps> = ({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "FAQPage",
+              ...(schemaId ? { "@id": schemaId } : {}),
               mainEntity: items.map((q) => ({
                 "@type": "Question",
                 name: q.question,

@@ -2,7 +2,10 @@ import React from "react";
 import Image from "next/image";
 import { Metadata } from "next";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { SEO_CONFIG, FACTS } from "@/lib/seo-config";
 import "./AboutPage.css";
+
+const SITE_URL = SEO_CONFIG.site.url;
 
 export const metadata: Metadata = {
   title: "About Microwear | Smartwatch & AI Glasses OEM Manufacturer Since 2008",
@@ -35,65 +38,21 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About Microwear | Smart Watch OEM Manufacturer Since 2008 | ISO9001 Factory",
     description:
-      "Microwear is a leading smartwatch manufacturer with 15+ years experience. ISO9001 certified OEM factory with 200+ employees, 1000+ patents.",
+      "Microwear is a leading smartwatch manufacturer with 15+ years experience. ISO9001 certified OEM factory with 200+ employees, 300+ patents.",
   },
 };
 
 export default function AboutPage() {
-  // JSON-LD Structured Data for Organization
-  const organizationSchema = {
+  // AboutPage node only — the Organization entity is declared once in the root layout.
+  const aboutPageSchema = {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Microwear",
-    "alternateName": "Shenzhen NJY Technology Co., Ltd",
-    "url": "https://microwear.info",
-    "logo": "https://microwear.info/logo.png",
-    "description": "Leading smartwatch manufacturer with 15+ years experience, ISO9001 certified OEM factory",
-    "foundingDate": "2008",
-    "founders": [
-      {
-        "@type": "Person",
-        "name": "Microwear Team"
-      }
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "JiaDa R&D Building, North Hi-Tech Park, Nanshan District",
-      "addressLocality": "Shenzhen",
-      "postalCode": "518057",
-      "addressCountry": "CN"
-    },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+852 6733 7121",
-      "email": "donaldfang@njytech.com.cn",
-      "contactType": "sales",
-      "areaServed": "Global",
-      "availableLanguage": ["English", "Chinese"]
-    },
-    "sameAs": [
-      "https://www.facebook.com/profile.php?id=61578917438987",
-      "https://www.linkedin.com/in/donald-microwear/",
-      "https://twitter.com/microwear",
-      "https://instagram.com/microwear"
-    ],
-    "numberOfEmployees": 300,
-    "knowsAbout": ["Smart Watch", "Wearable Technology", "OEM Manufacturing"],
-    "award": "1000+ Patents",
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Smart Watch Product Line",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Product",
-            "name": "OEM Smart Watch Manufacturing",
-            "description": "Custom smartwatch manufacturing with MOQ 200pcs"
-          }
-        }
-      ]
-    }
+    "@type": "AboutPage",
+    "@id": `${SITE_URL}/about#webpage`,
+    url: `${SITE_URL}/about`,
+    name: "About Microwear",
+    isPartOf: { "@id": `${SITE_URL}/#website` },
+    mainEntity: { "@id": `${SITE_URL}/#organization` },
+    description: `Microwear (${FACTS.legalName}) is a smartwatch and AI glasses OEM/ODM factory founded in ${FACTS.founded} in Shenzhen, China, with ${FACTS.employees} staff and ${FACTS.patents} patents.`,
   };
 
   return (
@@ -101,7 +60,7 @@ export default function AboutPage() {
       <div className="about-page">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutPageSchema) }}
       />
       {/* Hero — full-bleed; scoped classes avoid collision with homepage HeroSection.css */}
       <section className="about-hero">
@@ -569,7 +528,7 @@ export default function AboutPage() {
               </div>
               <div className="cert-card">
                 <div className="cert-icon">🔬</div>
-                <h3>1000+ Patents</h3>
+                <h3>300+ Patents</h3>
                 <p>Core Technology Patents Owned</p>
               </div>
             </div>
@@ -665,6 +624,9 @@ export default function AboutPage() {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "FAQPage",
+                "@id": `${SITE_URL}/about#faq`,
+                "isPartOf": { "@id": `${SITE_URL}/about#webpage` },
+                "about": { "@id": `${SITE_URL}/#organization` },
                 "mainEntity": [
                   {
                     "@type": "Question",

@@ -139,7 +139,7 @@ Don't risk your brand with uncertified suppliers. Microwear's ISO9001 and CE cer
 2. **[Request free samples →](/contact)** – Evaluate quality firsthand
 3. **[Get a custom quote →](/contact)** – Discuss your OEM/ODM project
 
-**MOQ:** 500-3,000 units depending on customization  
+**MOQ:** From 200 units per model  
 **Lead Time:** 15-30 days (ODM), 10-16 weeks (OEM)  
 **Certifications:** ISO9001, CE, FCC, RoHS, BQB included
 

@@ -85,9 +85,10 @@ function buildGeoJsonLd() {
     slogan: company.slogan,
     numberOfEmployees: {
       "@type": "QuantitativeValue",
-      minValue: 200,
+      minValue: Number.parseInt(company.employees, 10),
       unitText: "employees",
     },
+    award: `${company.patents} patents`,
     address: {
       "@type": "PostalAddress",
       streetAddress: contact.address.street,
@@ -164,48 +165,9 @@ function buildGeoJsonLd() {
     },
   };
 
-  // FAQ-style entity answers — high citation value for AI engines
-  const entityFaq = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "@id": `${baseUrl}/#entity-faq`,
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "What is Microwear?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: `Microwear (${company.legalName}) is a smartwatch and AI glasses OEM/ODM manufacturer founded in ${company.foundingDate} in Shenzhen, China. The factory runs ${company.smtLines} SMT lines with ${company.capacity} units/year capacity and ${company.employees} staff.`,
-        },
-      },
-      {
-        "@type": "Question",
-        name: "What is Microwear's MOQ?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: `Standard MOQ is ${FACTS.moqWatchShort} for smartwatches and ${FACTS.moqGlasses} for AI glasses. ${FACTS.quoteCta}.`,
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Where is Microwear located?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: `Microwear headquarters and factory are in Nanshan District, Shenzhen, China (${contact.address.street}).`,
-        },
-      },
-      {
-        "@type": "Question",
-        name: "What certifications does Microwear have?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: `Microwear products and factory support ${FACTS.certsShort} (and CCC where applicable).`,
-        },
-      },
-    ],
-  };
-
-  return [organization, website, entityFaq];
+  // FAQPage is emitted per page where the Q&A is visible (homepage, /faq, /factory-faq),
+  // so the sitewide layout only carries the entity + website nodes.
+  return [organization, website];
 }
 
 export default function RootLayout({

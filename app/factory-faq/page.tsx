@@ -37,7 +37,7 @@ export default function FactoryFAQ() {
         "name": "Who is Microwear?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Microwear is a leading smartwatch and AI glasses manufacturer established in 2008, specializing in OEM services for B2B clients worldwide. We are a Shenzhen-based factory with 200+ employees, 1000+ patents, and ISO9001 certification. We export to 30+ countries with offices in 10+ countries."
+          "text": "Microwear is a leading smartwatch and AI glasses manufacturer established in 2008, specializing in OEM services for B2B clients worldwide. We are a Shenzhen-based factory with 200+ employees, 300+ patents, and ISO9001 certification. We export to 30+ countries with offices in 10+ countries."
         }
       },
       {
@@ -93,7 +93,7 @@ export default function FactoryFAQ() {
         "name": "Is Microwear a legitimate and verified company?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, Microwear is a fully verified and legitimate manufacturer. We are registered as Shenzhen NJY Technology Co., Ltd since 2008. We hold ISO9001 certification, have 1000+ patents, employ 200+ staff, and export to 30+ countries. We welcome factory audits and can provide business licenses, certifications, and client references upon request."
+          "text": "Yes, Microwear is a fully verified and legitimate manufacturer. We are registered as Shenzhen NJY Technology Co., Ltd since 2008. We hold ISO9001 certification, have 300+ patents, employ 200+ staff, and export to 30+ countries. We welcome factory audits and can provide business licenses, certifications, and client references upon request."
         }
       },
       {
@@ -201,11 +201,11 @@ export default function FactoryFAQ() {
       questions: [
         {
           q: "Who is Microwear?",
-          a: "Microwear is a leading smartwatch and AI glasses manufacturer established in 2008, specializing in OEM services for B2B clients worldwide. We are a Shenzhen-based factory with 200+ employees, 1000+ patents, and ISO9001 certification. We export to 30+ countries with offices in 10+ countries."
+          a: "Microwear is a leading smartwatch and AI glasses manufacturer established in 2008, specializing in OEM services for B2B clients worldwide. We are a Shenzhen-based factory with 200+ employees, 300+ patents, and ISO9001 certification. We export to 30+ countries with offices in 10+ countries."
         },
         {
           q: "Is Microwear a legitimate and verified company?",
-          a: "Yes, Microwear is fully verified and legitimate. We are registered as Shenzhen NJY Technology Co., Ltd since 2008, hold ISO9001 certification, have 1000+ patents, employ 200+ staff, and export to 30+ countries. We welcome factory audits and can provide business licenses, certifications, and client references upon request."
+          a: "Yes, Microwear is fully verified and legitimate. We are registered as Shenzhen NJY Technology Co., Ltd since 2008, hold ISO9001 certification, have 300+ patents, employ 200+ staff, and export to 30+ countries. We welcome factory audits and can provide business licenses, certifications, and client references upon request."
         },
         {
           q: "How to verify if Microwear is a legitimate manufacturer?",
@@ -337,7 +337,7 @@ export default function FactoryFAQ() {
               <span className="stat-label">Countries Served</span>
             </div>
             <div className="stat">
-              <span className="stat-number">1000+</span>
+              <span className="stat-number">300+</span>
               <span className="stat-label">Patents Held</span>
             </div>
             <div className="stat">

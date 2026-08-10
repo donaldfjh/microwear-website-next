@@ -91,7 +91,7 @@ export default function FAQPage() {
       id: 10,
       question: "Can you manufacture custom smartwatch designs?",
       answer:
-        "Absolutely! We specialize in custom OEM smartwatch manufacturing:\n\n• Custom case design, shape, and dimensions\n• Unique strap materials and colors\n• Custom sensor configurations (ECG, SpO2, GPS, NFC)\n• Display selection (AMOLED, LCD, round/square)\n• Brand-specific boot animations and UI\n• Custom packaging and accessories\n\nCustom design projects require:\n• 3D models or concept drawings\n• Minimum MOQ 500 pieces for fully custom designs\n• 4-6 weeks development time\n• NDA available for confidential designs\n\nOur engineering team has 1000+ patents and can transform your concept into reality."
+        "Absolutely! We specialize in custom OEM smartwatch manufacturing:\n\n• Custom case design, shape, and dimensions\n• Unique strap materials and colors\n• Custom sensor configurations (ECG, SpO2, GPS, NFC)\n• Display selection (AMOLED, LCD, round/square)\n• Brand-specific boot animations and UI\n• Custom packaging and accessories\n\nCustom design projects require:\n• 3D models or concept drawings\n• Minimum MOQ 200 pieces for fully custom designs\n• 4-6 weeks development time\n• NDA available for confidential designs\n\nOur engineering team has 300+ patents and can transform your concept into reality."
     },
     {
       id: 11,
@@ -103,32 +103,14 @@ export default function FAQPage() {
       id: 12,
       question: "What makes Microwear different from other smartwatch manufacturers?",
       answer:
-        "Microwear stands out in 5 key areas:\n\n🏭 Production Capacity: 15,000㎡ factory, 200+ employees, 8 SMT lines, 2M+ units/year\n\n✅ Quality Assurance: <0.3% defect rate, ISO9001 certified, 100% QC inspection\n\n🔧 Customization Depth: Full OEM from design to firmware, 1000+ patents, custom AI integration\n\n🚚 Speed: 7-day samples, 15-day bulk production, real-time updates\n\n🤝 Partnership Focus: Dedicated account managers, flexible MOQ, volume discounts, long-term support\n\n15+ years experience serving 500+ B2B partners across 30+ countries. We don't just manufacture - we build your wearable brand together."
+        "Microwear stands out in 5 key areas:\n\n🏭 Production Capacity: 15,000㎡ factory, 200+ employees, 8 SMT lines, 2M+ units/year\n\n✅ Quality Assurance: <0.3% defect rate, ISO9001 certified, 100% QC inspection\n\n🔧 Customization Depth: Full OEM from design to firmware, 300+ patents, custom AI integration\n\n🚚 Speed: 7-day samples, 15-day bulk production, real-time updates\n\n🤝 Partnership Focus: Dedicated account managers, flexible MOQ, volume discounts, long-term support\n\n15+ years experience serving 500+ B2B partners across 30+ countries. We don't just manufacture - we build your wearable brand together."
     }
   ];
 
-  // FAQ Schema for SEO
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": faqItems.map((item) => ({
-      "@type": "Question",
-      name: item.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: item.answer
-      }
-    }))
-  };
-
   return (
     <div className="faq-page">
-      {/* SEO: Structured Data */}
+      {/* SEO: Structured Data — the FAQPage node is emitted once by <QA> below */}
       <BreadcrumbSchema items={[{ name: "FAQ", url: "/faq" }]} />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
 
       {/* Hero Section */}
       <section style={{
@@ -301,6 +283,7 @@ export default function FAQPage() {
             items={faqItems}
             title="B2B FAQ"
             subtitle="Comprehensive answers to smartwatch OEM manufacturing questions"
+            schemaId="https://microwear.info/faq#faq"
           />
         </div>
       </section>

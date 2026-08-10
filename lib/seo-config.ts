@@ -21,7 +21,7 @@ export const SEO_CONFIG = {
       "Microwear (Shenzhen NJY Technology Co., Ltd) is a smartwatch and AI glasses OEM/ODM manufacturer founded in 2008 in Shenzhen, China. ISO9001-certified factory with 200+ staff, 8 SMT lines, and 2M+ units/year capacity, serving 500+ B2B partners across 30+ countries.",
     slogan: "Redefining wearable technology for the modern lifestyle",
     employees: "200+",
-    patents: "1000+",
+    patents: "300+",
     partners: "500+",
     marketsCount: "30+",
     capacity: "2M+",

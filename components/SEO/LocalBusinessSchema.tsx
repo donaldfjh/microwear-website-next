@@ -8,7 +8,8 @@ export const LocalBusinessSchema: React.FC = () => {
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://microwear.info/#organization",
+    "@id": "https://microwear.info/#localbusiness",
+    "parentOrganization": { "@id": "https://microwear.info/#organization" },
     "name": "Microwear",
     "alternateName": [
       "Shenzhen NJY Technology Co., Ltd",
@@ -170,13 +171,6 @@ export const LocalBusinessSchema: React.FC = () => {
           ]
         }
       ]
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "reviewCount": "127",
-      "bestRating": "5",
-      "worstRating": "1"
     },
     "award": [
       "ISO9001:2015 Certified",
