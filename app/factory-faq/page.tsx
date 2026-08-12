@@ -333,7 +333,7 @@ export default function FactoryFAQ() {
               <span className="stat-label">Years Experience</span>
             </div>
             <div className="stat">
-              <span className="stat-number">100+</span>
+              <span className="stat-number">30+</span>
               <span className="stat-label">Countries Served</span>
             </div>
             <div className="stat">
